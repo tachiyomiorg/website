@@ -105,17 +105,49 @@ body {
 -------------------------------------------------- */
 
 .step {
-display: inline-block;
+	padding: 5px;
+}
+
+.step-number {
+	display: inline-block;
     color: #fff;
     width: 22px;
     height: 22px;
-    background-color: #2E84BF;
-    margin-right: 4px;
+    background-color: #54759E;
+    margin-right: 2px;
     text-align: center;
     line-height: 22px;
     border-radius: 50%;
+	margin-top: 5px;
+}
+
+.step-img {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	max-width: 325px;
 }
 
 a {
-	color: #2E84BF;
+	color: #54759E;
+}
+
+a.step-number:hover {
+	background-color: #435E7E;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+:target {
+	-webkit-animation: target-fade 3s 1;
+	-moz-animation: target-fade 3s 1;
+}
+
+@-webkit-keyframes target-fade {
+	0% { background-color: rgba(255,255,0,.25); }
+	100% { background-color: rgba(255,255,0,0); }
+}
+
+@-moz-keyframes target-fade {
+	0% { background-color: rgba(255,255,0,.25); }
+	100% { background-color: rgba(255,255,0,0); }
 }
