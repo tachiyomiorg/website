@@ -1,153 +1,175 @@
-html,
-body {
-  height: 100%;
+html, body {
+	height: 100%;
 }
-
 body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
 }
-
 .form-signin {
-  width: 100%;
-  max-width: 480px;
-  padding: 15px;
-  margin: auto;
+	width: 100%;
+	max-width: 500px;
+	padding: 15px;
+	margin: auto;
 }
-
 .form-label-group {
-  position: relative;
-  margin-bottom: 1rem;
+	position: relative;
+	margin-bottom: 1rem;
 }
-
-.form-label-group > input,
-.form-label-group > label {
-  height: 3.125rem;
-  padding: .75rem;
+.form-label-group>input, .form-label-group>label {
+	height: 3.125rem;
+	padding: .75rem;
 }
-
-.form-label-group > label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  margin-bottom: 0; /* Override default `<label>` margin */
-  line-height: 1.5;
-  color: #495057;
-  pointer-events: none;
-  cursor: text; /* Match the input under the label */
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  transition: all .1s ease-in-out;
+.form-label-group>label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	/* Override default `<label>` margin */
+	line-height: 1.5;
+	color: #495057;
+	pointer-events: none;
+	cursor: text;
+	/* Match the input under the label */
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	transition: all .1s ease-in-out;
 }
-
 .form-label-group input::-webkit-input-placeholder {
-  color: transparent;
+	color: transparent;
 }
-
 .form-label-group input:-ms-input-placeholder {
-  color: transparent;
+	color: transparent;
 }
-
 .form-label-group input::-ms-input-placeholder {
-  color: transparent;
+	color: transparent;
 }
-
 .form-label-group input::-moz-placeholder {
-  color: transparent;
+	color: transparent;
 }
-
 .form-label-group input::placeholder {
-  color: transparent;
+	color: transparent;
 }
-
 .form-label-group input:not(:placeholder-shown) {
-  padding-top: 1.25rem;
-  padding-bottom: .25rem;
+	padding-top: 1.25rem;
+	padding-bottom: .25rem;
 }
-
-.form-label-group input:not(:placeholder-shown) ~ label {
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  font-size: 12px;
-  color: #777;
+.form-label-group input:not(:placeholder-shown)~label {
+	padding-top: .25rem;
+	padding-bottom: .25rem;
+	font-size: 12px;
+	color: #777;
 }
-
 /* Fallback for Edge
 -------------------------------------------------- */
-@supports (-ms-ime-align: auto) {
-  .form-label-group > label {
-    display: none;
-  }
-  .form-label-group input::-ms-input-placeholder {
-    color: #777;
-  }
-}
 
+@supports (-ms-ime-align: auto) {
+	.form-label-group>label {
+		display: none;
+	}
+	.form-label-group input::-ms-input-placeholder {
+		color: #777;
+	}
+}
 /* Fallback for IE
 -------------------------------------------------- */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-label-group > label {
-    display: none;
-  }
-  .form-label-group input:-ms-input-placeholder {
-    color: #777;
-  }
-}
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.form-label-group>label {
+		display: none;
+	}
+	.form-label-group input:-ms-input-placeholder {
+		color: #777;
+	}
+}
 /* Custom
 -------------------------------------------------- */
 
+.mainstep {
+	color: #000;
+}
 .step {
 	padding: 5px;
 }
-
 .step-number {
 	display: inline-block;
-    color: #fff;
-    width: 22px;
-    height: 22px;
-    background-color: #54759E;
-    margin-right: 2px;
-    text-align: center;
-    line-height: 22px;
-    border-radius: 50%;
+	color: #fff;
+	width: 22px;
+	height: 22px;
+	background-color: #54759E;
+	margin-right: 2px;
+	text-align: center;
+	line-height: 22px;
+	border-radius: 50%;
 	margin-top: 5px;
 }
-
 .step-img {
 	padding-top: 10px;
 	padding-bottom: 5px;
 	max-width: 325px;
 }
-
+.faq {
+	padding: 5px;
+}
+.faq-question {
+	font-size: 112.5%;
+	color: #e83e8c;
+	word-break: break-word;
+}
+.faq-answer {
+	font-size: 112.5%;
+	color: #54759E;
+	word-break: break-word;
+}
 a {
 	color: #54759E;
 }
-
+a:hover {
+	text-decoration: none;
+}
+a>.mainstep:hover {
+	color: #54759E;
+}
 a.step-number:hover {
 	background-color: #435E7E;
 	color: #ffffff;
 	text-decoration: none;
 }
-
+a.faq-question:hover {
+	background-color: #00000000;
+	color: #e83e8c;
+	font-weight: 500;
+	text-decoration: none;
+}
+a.faq-answer:hover {
+	background-color: #00000000;
+	color: #54759E;
+	font-weight: 500;
+	text-decoration: none;
+}
 :target {
 	-webkit-animation: target-fade 3s 1;
 	-moz-animation: target-fade 3s 1;
 }
-
 @-webkit-keyframes target-fade {
-	0% { background-color: rgba(255,255,0,.25); }
-	100% { background-color: rgba(255,255,0,0); }
+	0% {
+		background-color: rgba(255, 255, 0, .25);
+	}
+	100% {
+		background-color: rgba(255, 255, 0, 0);
+	}
 }
-
 @-moz-keyframes target-fade {
-	0% { background-color: rgba(255,255,0,.25); }
-	100% { background-color: rgba(255,255,0,0); }
+	0% {
+		background-color: rgba(255, 255, 0, .25);
+	}
+	100% {
+		background-color: rgba(255, 255, 0, 0);
+	}
 }
