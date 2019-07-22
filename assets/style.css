@@ -12,7 +12,7 @@ body {
 }
 .form-signin {
 	width: 100%;
-	max-width: 500px;
+	max-width: 525px;
 	padding: 15px;
 	margin: auto;
 }
@@ -172,4 +172,15 @@ a.faq-answer:hover {
 	100% {
 		background-color: rgba(255, 255, 0, 0);
 	}
+}
+
+hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
 }
