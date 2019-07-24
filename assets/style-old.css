@@ -1,0 +1,138 @@
+html, body {
+	height: 100%;
+}
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
+}
+.tachiyomi-guide {
+	width: 100%;
+	max-width: 560px;
+	padding: 15px;
+	margin: auto;
+}
+
+.mainstep {
+	color: #000;
+}
+.step {
+	padding: 5px;
+}
+.step-number {
+	display: inline-block;
+	color: #fff;
+	width: 22px;
+	height: 22px;
+	background-color: #54759E;
+	margin-right: 2px;
+	text-align: center;
+	line-height: 22px;
+	border-radius: 50%;
+	margin-top: 5px;
+}
+.step-img {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	max-width: 325px;
+}
+.faq {
+	padding: 5px;
+}
+.faq-question {
+	font-size: 112.5%;
+	color: #e83e8c;
+	word-break: break-word;
+}
+.faq-answer {
+	font-size: 112.5%;
+	color: #54759E;
+	word-break: break-word;
+}
+a {
+	color: #54759E;
+}
+a:hover {
+	text-decoration: none;
+}
+a>.mainstep:hover {
+	color: #54759E;
+}
+a.step-number:hover {
+	background-color: #435E7E;
+	color: #ffffff;
+	text-decoration: none;
+}
+a.faq-question:hover {
+	background-color: #00000000;
+	color: #e83e8c;
+	font-weight: 500;
+	text-decoration: none;
+}
+a.faq-answer:hover {
+	background-color: #00000000;
+	color: #54759E;
+	font-weight: 500;
+	text-decoration: none;
+}
+:target {
+	-webkit-animation: target-fade 3s 1;
+	-moz-animation: target-fade 3s 1;
+}
+@-webkit-keyframes target-fade {
+	0% {
+		background-color: rgba(255, 255, 0, .25);
+	}
+	100% {
+		background-color: rgba(255, 255, 0, 0);
+	}
+}
+@-moz-keyframes target-fade {
+	0% {
+		background-color: rgba(255, 255, 0, .25);
+	}
+	100% {
+		background-color: rgba(255, 255, 0, 0);
+	}
+}
+
+hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+img {
+	margin: 2px;
+}
+
+/** */
+nav[data-toggle="toc"] {
+  top: 42px;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+  */
+}

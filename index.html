@@ -3,105 +3,156 @@
 <head>
 	<title>Tachiyomi Installation</title>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="" name="description">
 	<link href="favicon.ico" rel="icon">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/style.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
 </head>
-<body>
-	<form class="tachiyomi-guide">
-		<div class="text-center mb-4">
-			<img class="mb-4" src="assets/app-icon.png">
-			<h1 class="h3 mb-3 font-weight-normal">Getting started with Tachiyomi</h1>
-			<p><a href="https://github.com/inorichi/tachiyomi" target="_blank">Tachiyomi</a> is a free and open source manga reader for Android.</p>
-		</div>
-		<div class="text-left">
-			<div id="installation">
-				<a href="#installation">
-				<h1 class="h5 font-weight-normal mainstep">Installation</h1></a>
-				<div class="step" id="step1">
-					<p><a class="step-number" href="#step1">1</a> Download the latest stable release from <a href="https://github.com/inorichi/tachiyomi/releases/tag/v0.8.4">GitHub.</a></p>
-					<p class="text-center"><code>tachiyomi-vX.Y.Z.apk</code></p>
-				</div>
-				<div class="step" id="step2">
-					<p><a class="step-number" href="#step2">2</a> Open and install the <code>.apk</code> file you just downloaded from GitHub.</p>
-					<div class="d-flex justify-content-center">
-						<a href="assets/step-install.jpg"><img class="lazyload step-img" src="assets/step-install.jpg" data-src="assets/step-install.jpg"></a>
-					</div>
-				</div>
-				<hr>
+<body data-spy="scroll" data-target="#toc">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<nav class="sticky-top" data-toggle="toc" id="toc"></nav>
 			</div>
-			<div id="extensions">
-				<a href="#extensions">
-				<h1 class="h5 font-weight-normal mainstep">Extensions</h1></a>
-				<div class="step" id="step3">
-					<p><a class="step-number" href="#step3">3</a> Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.</p>
-					<div class="d-flex justify-content-center">
-						<a href="assets/step-extensions.gif"><img class="lazyload step-img" src="assets/step-extensions.png" data-src="assets/step-extensions.gif"></a>
-					</div>
+			<div class="col-sm-6">
+				<div class="text-center mb-4">
+					<img class="mb-4" src="assets/tachiyomi.png">
+					<h1 class="h3 mb-3 font-weight-normal">Getting started with Tachiyomi</h1>
+					<p><a href="https://github.com/inorichi/tachiyomi" target="_blank">Tachiyomi</a> is a free and open source manga reader for Android.</p>
 				</div>
-				<div class="step" id="step4">
-					<p><a class="step-number" href="#step4">4</a> In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and it will bring up the extension installer. If your phone does not allow third-party installations, follow <a href="#how-do-i-allow-third-party-installations-on-my-phone">this</a> guide.</p>
-					<p>If you successfully installed MangaDex then it should now show up in the <code>Catalogues</code> tab. The items appearing here are called <code>Sources</code>, an extension can contain multiple sources.</p>
-					<div class="d-flex justify-content-center">
-						<a href="assets/step-catalogues.png"><img class="lazyload step-img" src="assets/step-catalogues.png" data-src="assets/step-catalogues.png"></a>
-					</div>
-				</div>
-				<hr>
-			</div>
-			<div id="library">
-				<a href="#library">
-				<h1 class="h5 font-weight-normal mainstep">Library</h1></a>
-				<div class="step" id="step5">
-					<p><a class="step-number" href="#step5">5</a> To find manga, you can now either use the <code>Latest</code> button on your source, or you can use <code>Browse</code> and search for it.</p>
-				</div>
-				<div class="step" id="step6">
-					<p><a class="step-number" href="#step6">6</a> Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.</p>
-					<p>It should now appear in your <code>My library</code> tab, ready to be read!</p>
-					<div class="d-flex justify-content-center">
-						<a href="assets/step-save.gif"><img class="lazyload step-img" src="assets/step-save.png" data-src="assets/step-save.gif"></a>
-					</div>
-				</div>
-				<hr>
-			</div>
-			<h1 class="h3 font-weight-normal">Frequently Asked Questions</h1>
-			<div class="faq" id="what-are-some-good-extensions">
-				<p><a class="faq-question" href="#what-are-some-good-extensions">Q</a> What are some good extensions?</p>
-				<p><a class="faq-answer" href="#what-are-some-good-extensions">A</a> The most popular is MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contains sources which hosts directly from the scanlators own websites.</p>
-				<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
-			</div>
-			<hr>
-			<div class="faq" id="how-do-i-allow-third-party-installations-on-my-phone">
-				<p><a class="faq-question" href="#how-do-i-allow-third-party-installations-on-my-phone">Q</a> How do I allow third-party installations on my phone?</p>
-				<p><a class="faq-answer" href="#how-do-i-allow-third-party-installations-on-my-phone">A</a> When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
-				<p>Two example videos, left one is for newer Androids.</p>
+				<h2 class="h3 mb-3 font-weight-normal">Installation</h2>
+				<h3 class="h5 mb-3 font-weight-normal">Downloading and Installing</h3>
+				<p>Download the latest stable release of Tachiyomi from <a href="https://github.com/inorichi/tachiyomi/releases/tag/v0.8.4">GitHub.</a></p>
+				<p><code>tachiyomi-vX.Y.Z.apk</code></p>
+				<p>Open and install the <code>.apk</code> file you just downloaded from GitHub.</p>
 				<div class="d-flex justify-content-center">
-					<a href="assets/step-unknownapps-post8.gif"><img class="lazyload" data-src="assets/step-unknownapps-post8.gif" width="180"></a>
-					<a href="assets/step-unknownapps-pre8.gif"><img class="lazyload" data-src="assets/step-unknownapps-pre8.gif" width="180"></a>
+					<a href="assets/install.jpg"><img class="mb-4" src="assets/install.jpg"></a>
 				</div>
-				<hr>
-			</div>
-			<div class="faq" id="im-not-getting-any-results-when-browsing-mangadex">
-				<p><a class="faq-question" href="#im-not-getting-any-results-when-browsing-mangadex">Q</a> I'm not getting any results when browsing MangaDex.</p>
-				<p><a class="faq-answer" href="#im-not-getting-any-results-when-browsing-mangadex">A</a> Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the three-dot button in the top-right corner and then the <code>Open in web view</code> button. Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
-				<hr>
-			</div>
-			<div>
-				<p class="faq" id="im-getting-no-results-found-when-trying-to-browse-mangadex-after-logging-in"><a class="faq-question" href="#im-getting-no-results-found-when-trying-to-browse-mangadex-after-logging-in">Q</a> I'm getting "No results found" when trying to browse MangaDex after logging in.</p>
-				<p><a class="faq-answer" href="#im-getting-no-results-found-when-trying-to-browse-mangadex-after-logging-in">A</a> Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the three-dot button in the top-right corner and then the <code>Open in web view</code> button. Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code></p>
-				<hr>
+				<h3 class="h5 mb-3 font-weight-normal">Your first extension</h3>
+				<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.</p>
+				<div class="d-flex justify-content-center">
+					<a href="assets/extensions.gif"><img class="lazyload mb-4" data-src="assets/extensions.gif" src="assets/extensions.png"></a>
+				</div>
+				<p>In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and it will bring up the extension installer. If your phone does not allow third-party installations, follow <a href="#how-do-i-allow-third-party-installations-on-my-phone" id="how-do-i-allow-third-party-installations-on-my-phone-link">this</a> guide.</p>
+				<h3 class="h5 mb-3 font-weight-normal">Exploring the catalogue</h3>
+				<p>If you successfully installed MangaDex then it should now show up in the <code>Catalogues</code> tab. The items appearing here are called <code>Sources</code>, an extension can contain multiple sources.</p>
+				<div class="d-flex justify-content-center">
+					<a href="assets/catalogues.png"><img class="mb-4" src="assets/catalogues.png"></a>
+				</div>
+				<h3 class="h5 mb-3 font-weight-normal">Adding manga to your library</h3>
+				<p>To find and add manga, you can now either use the <code>Latest</code> button on your source, or you can use <code>Browse</code> and search for it.</p>
+				<p>Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.</p>
+				<p>It should now appear in your <code>My library</code> tab, ready to be read!</p>
+				<div class="d-flex justify-content-center">
+					<a href="assets/addtolibrary.gif"><img class="lazyload mb-4" data-src="assets/addtolibrary.gif" src="assets/addtolibrary.png"></a>
+				</div>
+				<div class="mb-4">
+					<h2 class="h3 mb-3 font-weight-normal">Frequently Asked Questions</h2>
+					<div class="mb-5" id="accordion">
+						<div class="card">
+							<div class="card-header" id="what-are-some-good-extensions">
+								<h3 class="mb-0"><button aria-controls="collapseOne" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseOne" data-toggle="collapse">What are some good extensions?</button></h5>
+							</div>
+							<div aria-labelledby="what-are-some-good-extensions" class="collapse" data-parent="#accordion" id="collapseOne">
+								<div class="card-body">
+									<p>The most popular is MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contains sources which hosts directly from the scanlators own websites.</p>
+									<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="how-do-i-allow-third-party-installations-on-my-phone">
+								<h3 class="mb-0"><button aria-controls="collapseTwo" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseTwo" data-toggle="collapse">How do I allow third-party installations on my phone?</button></h5>
+							</div>
+							<div aria-labelledby="how-do-i-allow-third-party-installations-on-my-phone" class="collapse" data-parent="#accordion" id="collapseTwo">
+								<div class="card-body">
+									<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
+									<p>Two example videos, left one is for newer Androids.</p>
+									<div class="d-flex justify-content-center">
+										<a href="assets/unknownapps-android8.gif"><img class="lazyload" data-src="assets/unknownapps-android8.gif" width="260"></a> <a href="assets/unknownapps-android7.gif"><img class="lazyload" data-src="assets/unknownapps-android7.gif" width="260"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="im-not-getting-any-results-when-browsing-mangadex">
+								<h3 class="mb-0"><button aria-controls="collapseThree" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseThree" data-toggle="collapse">I'm not getting any results when browsing MangaDex...</button></h5>
+							</div>
+							<div aria-labelledby="im-not-getting-any-results-when-browsing-mangadex" class="collapse" data-parent="#accordion" id="collapseThree">
+								<div class="card-body">
+									<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
+									<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="ive-logged-in-to-mangadex-and-still-isnt-getting-results">
+								<h3 class="mb-0"><button aria-controls="collapseFour" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseFour" data-toggle="collapse">I've logged in to MangaDex and still isn't getting results...</button></h5>
+							</div>
+							<div aria-labelledby="ive-logged-in-to-mangadex-and-still-isnt-getting-results" class="collapse" data-parent="#accordion" id="collapseFour">
+								<div class="card-body">
+									<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
+									<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="h3 mb-3 font-weight-normal">Advanced Features</h2>
+					<h3 class="h5 mb-3 font-weight-normal">Customization</h3>
+					<p>To be added.</p>
+					<h3 class="h5 mb-3 font-weight-normal">Creating Categories</h3>
+					<p>To be added.</p>
+					<h3 class="h5 mb-3 font-weight-normal">Moving Categories</h3>
+					<p>To be added.</p>
+					<h3 class="h5 mb-3 font-weight-normal">Adding Trackers</h3>
+					<p>To be added.</p>
+					<h3 class="h5 mb-3 font-weight-normal">Duplicate Chapters</h3>
+					<p>Every now and then you find a manga that is translated by more than one group, because of this you get two releases for every chapter in the manga. This is very irritating because every time you finish a chapter, there is a second copy of the same chapter that pops up after it.</p>
+					<p>To automatically skip a translation group while reading, go to the manga's chapter list and click on the three dots in the upper right hand corner. From there, click on Sorting mode and select By chapter number. You won't see any changes but, when you start reading you'll automatically skip the duplicate releasescitation.</p>
+					<h3 class="h5 mb-3 font-weight-normal">Source Migration</h3>
+					<p>This is used when the source you are using is taken down or there are no plans to fix it, but it exists on other sources. It transfers all the data from that manga entry over to the other source with only needing for you to edit the title if the title on the source you're transferring from and the source you're transferring to do not have the same title.</p>
+					<p>To do this, you'll have to go to the top right corner of the library and press the overflow menu (3 dot menu), and tap <code>Source Migration</code></p>
+					<p>Then, you scroll down to the source you're transferring from and tap select. Then scroll down to the title you're transferring and tap that.</p>
+					<p>After that, Tachiyomi will do a global search of all the sources you have installed and enabled. Change the search query if you're not able to find the manga you want.</p>
+					<p>Once you find the manga you want, you just tap it, check the parts of the manga data you want to transfer over, and you're done.</p>
+					<h3 class="h5 mb-3 font-weight-normal">Downloading Manga</h3>
+					<p>To be added.</p>
+					<h3 class="h5 mb-3 font-weight-normal">Local Manga</h3>
+					<p>To begin, you have to place your manga inside the folder <code>Tachiyomi/local</code> located in the root of your internal storage or external SD card, usually <code>/sdcard</code> and <code>/storage/18F5-2C11</code> (with different values).</p>
+					<p>After that, they will be shown in the catalogue as a new source. Remember to give the app disk permissions on Android 6.0 and higher. If you add more chapters later you'll have to manually refresh the chapter list (by pulling down the list).</p>
+					<p>Supported chapter formats are directories with pictures inside, ZIP/CBZ, RAR/CBR and EPUB. But expect better performance with directories and ZIP/CBZ.</p>
+					<p>You can also place your chapters or manga in both storages and Tachiyomi will merge them. For example, with</p>
+					<p><code>/sdcard/Tachiyomi/local/my manga/ch1</code></p>
+					<p>and</p>
+					<p><code>/storage/18F5-2C11/Tachiyomi/local/my manga/ch2</code></p>
+					<p>the app will see two chapters in a single manga.</p>
+					<p>The path to the folder (or archive) with images must contain both the manga title and the chapter name (as seen above).</p>
+					<p>You can then access the manga in <code>Catalogues &gt; Local manga</code>.</p>
+					<h2 class="h3 mb-3 font-weight-normal">Related Links</h2>
+					<h3 class="h5 mb-3 font-weight-normal"><a href="https://github.com/inorichi/tachiyomi/">Github</a></h3>
+					<h3 class="h5 mb-3 font-weight-normal"><a href="https://github.com/inorichi/tachiyomi/wiki">Wiki</a></h3>
+					<h3 class="h5 mb-3 font-weight-normal"><a href="https://discord.gg/tachiyomi">Discord</a></h3>
+				</div>
 			</div>
 		</div>
-		<div>
-			<p class="mt-5 text-muted text-center">More frequently asked questions can be found <a href="https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions" target="_blank">here</a></p>
-		</div>
-	</form>
-	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script> 
-	<script>$("img.lazyload").lazyload();</script>
+	</div><!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script> 
+	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js">
+	</script> 
+	<script>
+	$("img.lazyload").lazyload();
+	</script> 
+	<script>
+	       $('#how-do-i-allow-third-party-installations-on-my-phone-link').click(function(e) {
+	       $('#collapseTwo').collapse('show');        
+	       });
+	</script>
 </body>
 </html>
