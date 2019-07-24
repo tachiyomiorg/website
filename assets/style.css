@@ -7,22 +7,9 @@ body {
 	background-color: #f5f5f5;
 }
 
-hr { 
-    display: block;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}
-
 img {
 	margin: 2px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	max-width: 325px;	
+	max-width: 325px;
 }
 
 .btn-link {
@@ -44,6 +31,10 @@ img {
     margin-bottom: 0;
     background-color: transparent!important;
     border-bottom: 1px solid rgba(0,0,0,.125)!important;
+}
+
+summary > * {
+	display: inline;
 }
 
 /** */

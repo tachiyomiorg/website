@@ -7,8 +7,8 @@
 	<meta content="" name="description">
 	<link href="favicon.ico" rel="icon">
 	<link href="assets/style.css" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
+	<link href="assets/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/bootstrap-toc.min.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#toc">
 	<div class="container">
@@ -28,77 +28,71 @@
 				<p><code>tachiyomi-vX.Y.Z.apk</code></p>
 				<p>Open and install the <code>.apk</code> file you just downloaded from GitHub.</p>
 				<div class="d-flex justify-content-center">
-					<a href="assets/install.jpg"><img class="mb-4" src="assets/install.jpg"></a>
+					<img class="mb-4" src="assets/install.jpg" intrinsicsize="1076x608" width="269" height="152">
 				</div>
 				<h3 class="h5 mb-3 font-weight-normal">Your first extension</h3>
 				<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.</p>
-				<div class="d-flex justify-content-center">
-					<a href="assets/extensions.gif"><img class="lazyload mb-4" data-src="assets/extensions.gif" src="assets/extensions.png"></a>
-				</div>
-				<p>In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and it will bring up the extension installer. If your phone does not allow third-party installations, follow <a href="#how-do-i-allow-third-party-installations-on-my-phone" id="how-do-i-allow-third-party-installations-on-my-phone-link">this</a> guide.</p>
+				<figure class="d-flex justify-content-center">
+					<video preload="metadata" autoplay muted loop loading="lazy" poster="assets/extensions.png" intrinsicsize="600x1089" width="300" height="544">
+						<source src="assets/extensions.mp4" type="video/mp4" />
+						<source src="assets/extensions.webm" type="video/webm" />
+						<img src="assets/extensions.gif" alt width="300" height="544"/>
+					</video>
+				</figure>
+				<p>In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and it will bring up the extension installer. If your phone does not allow third-party installations, follow <a href="#third-party-installs">this</a> guide.</p>
 				<h3 class="h5 mb-3 font-weight-normal">Exploring the catalogue</h3>
 				<p>If you successfully installed MangaDex then it should now show up in the <code>Catalogues</code> tab. The items appearing here are called <code>Sources</code>, an extension can contain multiple sources.</p>
 				<div class="d-flex justify-content-center">
-					<a href="assets/catalogues.png"><img class="mb-4" src="assets/catalogues.png"></a>
+					<img class="mb-4" src="assets/catalogues.png" loading="lazy" intrinsicsize="1080x828" width="270" height="207">
 				</div>
 				<h3 class="h5 mb-3 font-weight-normal">Adding manga to your library</h3>
 				<p>To find and add manga, you can now either use the <code>Latest</code> button on your source, or you can use <code>Browse</code> and search for it.</p>
 				<p>Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.</p>
 				<p>It should now appear in your <code>My library</code> tab, ready to be read!</p>
-				<div class="d-flex justify-content-center">
-					<a href="assets/addtolibrary.gif"><img class="lazyload mb-4" data-src="assets/addtolibrary.gif" src="assets/addtolibrary.png"></a>
-				</div>
+				<figure class="d-flex justify-content-center">
+					<video preload="metadata" autoplay muted loop loading="lazy" poster="assets/addtolibrary.png" intrinsicsize="600x1089" width="300" height="544">
+						<source src="assets/addtolibrary.mp4" type="video/mp4" />
+						<source src="assets/addtolibrary.webm" type="video/webm" />
+						<img src="assets/addtolibrary.gif" alt width="300" height="544"/>
+					</video>
+				</figure>
 				<div class="mb-4">
 					<h2 class="h3 mb-3 font-weight-normal">Frequently Asked Questions</h2>
-					<div class="mb-5" id="accordion">
-						<div class="card">
-							<div class="card-header" id="headerOne">
-								<h3 class="mb-0"><button aria-controls="collapseOne" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseOne" data-toggle="collapse">What are some good extensions?</button></h5>
-							</div>
-							<div aria-labelledby="headerOne" class="collapse" data-parent="#accordion" id="collapseOne">
-								<div class="card-body">
-									<p>The most popular is MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contains sources which hosts directly from the scanlators own websites.</p>
-									<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headerTwo">
-								<h3 class="mb-0"><button aria-controls="collapseTwo" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseTwo" data-toggle="collapse">How do I allow third-party installations on my phone?</button></h5>
-							</div>
-							<div aria-labelledby="headerTwo" class="collapse" data-parent="#accordion" id="collapseTwo">
-								<div class="card-body">
-									<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
-									<p>Two example videos, left one is for newer Androids.</p>
-									<div class="d-flex justify-content-center">
-										<a href="assets/unknownapps-android8.gif"><img class="lazyload" data-src="assets/unknownapps-android8.gif" width="180"></a>
-										<a href="assets/unknownapps-android7.gif"><img class="lazyload" data-src="assets/unknownapps-android7.gif" width="180"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headerThree">
-								<h3 class="mb-0"><button aria-controls="collapseThree" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseThree" data-toggle="collapse">I'm not getting any results when browsing MangaDex...</button></h5>
-							</div>
-							<div aria-labelledby="headerThree" class="collapse" data-parent="#accordion" id="collapseThree">
-								<div class="card-body">
-									<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-									<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headerFour">
-								<h3 class="mb-0"><button aria-controls="collapseFour" aria-expanded="false" class="btn btn-link collapsed" data-target="#collapseFour" data-toggle="collapse">I've logged in to MangaDex and still isn't getting results...</button></h5>
-							</div>
-							<div aria-labelledby="headerFour" class="collapse" data-parent="#accordion" id="collapseFour">
-								<div class="card-body">
-									<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-									<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.</p>
-								</div>
-							</div>
-						</div>
+					<div class="mb-5 accordion">
+						<details>
+							<summary><h3 id="well-known-extensions">What are some good extensions?</h3></summary>
+							<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contain sources which host directly from the scanlators own websites.</p>
+							<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
+						</details>
+						<details>
+							<summary><h3 id="third-party-installs">How do I allow third-party installations on my phone?</h3></summary>
+							<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
+							<p>Two example videos, left one is for newer Androids.</p>
+							<figure class="d-flex justify-content-center">
+								<video preload="metadata" autoplay muted loop loading="lazy" poster="assets/unknownapps-android8.png" intrinsicsize="400x688" width="200" height="344">
+									<source src="assets/unknownapps-android8.mp4" type="video/mp4" />
+									<source src="assets/unknownapps-android8.webm" type="video/webm" />
+									<img src="assets/unknownapps-android8.gif" alt width="200" height="344"/>
+								</video>
+							</figure>
+							<figure class="d-flex justify-content-center">
+								<video preload="metadata" autoplay muted loop loading="lazy" poster="assets/unknownapps-android7.png" intrinsicsize="400x688" width="200" height="344">
+									<source src="assets/unknownapps-android7.mp4" type="video/mp4" />
+									<source src="assets/unknownapps-android7.webm" type="video/webm" />
+									<img src="assets/unknownapps-android7.gif" alt width="200" height="344"/>
+								</video>
+							</figure>
+						</details>
+						<details>
+							<summary><h3 id="mangadex-no-results">I'm not getting any results when searching/browsing MangaDex...</h3></summary>
+							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
+							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
+						</details>
+						<details>
+							<summary><h3 id="mangadex-still-no-results">I've logged in to MangaDex and still no results...</h3></summary>
+							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
+							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.</p>
+						</details>
 					</div>
 					<h2 class="h3 mb-3 font-weight-normal">Advanced Features</h2>
 					<!--<h3 class="h5 mb-3 font-weight-normal">Customization</h3>
@@ -138,22 +132,18 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-	</script> 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-	</script> 
-	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js">
-	</script> 
-	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js">
-	</script> 
+	</div>
+	<!-- Scripts to be removed when possible -->
+	<script src="assets/jquery.slim.min.js"></script>
+	<script src="assets/bootstrap.min.js"></script>
+	<script src="assets/bootstrap-toc.min.js"></script>
 	<script>
-	$("img.lazyload").lazyload();
-	</script> 
-	<script>
-	       $('#how-do-i-allow-third-party-installations-on-my-phone-link').click(function(e) {
-	       $('#collapseTwo').collapse('show');        
-	       });
+		addEventListener("hashchange", e => {
+			var q = document.querySelector(location.hash)
+			if (q instanceof HTMLHeadingElement && q.parentElement.parentElement instanceof HTMLDetailsElement) {
+				q.parentElement.parentElement.open = true;
+			}
+		})
 	</script>
 </body>
 </html>
