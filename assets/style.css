@@ -12,6 +12,10 @@ img {
 	max-width: 325px;
 }
 
+.row {
+	padding-bottom: 3em;
+}
+
 .btn-link {
 	font-weight: 400!important;
 }
@@ -35,6 +39,10 @@ img {
 
 summary > * {
 	display: inline;
+}
+
+summary {
+padding-top: 0.5em;
 }
 
 /** */
