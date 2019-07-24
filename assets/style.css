@@ -9,7 +9,7 @@ body {
 
 img {
 	margin: 2px;
-	max-width: 325px;	
+	max-width: 325px;
 }
 
 .btn-link {
@@ -31,6 +31,10 @@ img {
     margin-bottom: 0;
     background-color: transparent!important;
     border-bottom: 1px solid rgba(0,0,0,.125)!important;
+}
+
+summary > * {
+	display: inline;
 }
 
 /** */

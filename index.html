@@ -59,13 +59,13 @@
 				<div class="mb-4">
 					<h2 class="h3 mb-3 font-weight-normal">Frequently Asked Questions</h2>
 					<div class="mb-5 accordion">
-						<details id="well-known-extensions">
-							<summary>What are some good extensions?</summary>
+						<details>
+							<summary><h3 id="well-known-extensions">What are some good extensions?</h3></summary>
 							<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contain sources which host directly from the scanlators own websites.</p>
 							<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
 						</details>
-						<details id="third-party-installs">
-							<summary>How do I allow third-party installations on my phone?</summary>
+						<details>
+							<summary><h3 id="third-party-installs">How do I allow third-party installations on my phone?</h3></summary>
 							<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
 							<p>Two example videos, left one is for newer Androids.</p>
 							<figure class="d-flex justify-content-center">
@@ -84,12 +84,12 @@
 							</figure>
 						</details>
 						<details>
-							<summary>I'm not getting any results when browsing MangaDex...</summary>
+							<summary><h3 id="mangadex-no-results">I'm not getting any results when searching/browsing MangaDex...</h3></summary>
 							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
 							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
 						</details>
 						<details>
-							<summary>I've logged in to MangaDex and still isn't getting results...</summary>
+							<summary><h3 id="mangadex-still-no-results">I've logged in to MangaDex and still no results...</h3></summary>
 							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
 							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.</p>
 						</details>
@@ -134,13 +134,15 @@
 		</div>
 	</div>
 	<!-- Scripts to be removed when possible -->
-	<script src="assets/jquery.slim.min.js"></script> 
-	<script src="assets/bootstrap.min.js"></script> 
-	<script src="assets/bootstrap-toc.min.js"></script> 
+	<script src="assets/jquery.slim.min.js"></script>
+	<script src="assets/bootstrap.min.js"></script>
+	<script src="assets/bootstrap-toc.min.js"></script>
 	<script>
 		addEventListener("hashchange", e => {
-			let q = document.querySelector(location.hash)
-			if (q instanceof HTMLDetailsElement) { q.open = true; }
+			var q = document.querySelector(location.hash)
+			if (q instanceof HTMLHeadingElement && q.parentElement.parentElement instanceof HTMLDetailsElement) {
+				q.parentElement.parentElement.open = true;
+			}
 		})
 	</script>
 </body>
