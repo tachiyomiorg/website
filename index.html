@@ -34,7 +34,7 @@
 				<h3 class="h5 mb-3 font-weight-normal">Your first extension</h3>
 				<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.</p>
 				<figure class="d-flex justify-content-center">
-					<video preload="none" autoplay muted loop loading="lazy" poster="assets/extensions.png" intrinsicsize="600x1089" width="300" height="544">
+					<video playsinline preload="none" muted loop loading="lazy" poster="assets/extensions.png" intrinsicsize="600x1089" width="300" height="544">
 						<source src="assets/extensions.mp4" type="video/mp4" />
 						<source src="assets/extensions.webm" type="video/webm" />
 						<noscript><img src="assets/extensions.gif" alt width="300" height="544"/></noscript>
@@ -51,7 +51,7 @@
 				<p>Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.</p>
 				<p>It should now appear in your <code>My library</code> tab, ready to be read!</p>
 				<figure class="d-flex justify-content-center">
-					<video preload="none" autoplay muted loop loading="lazy" poster="assets/addtolibrary.png" intrinsicsize="600x1089" width="300" height="544">
+					<video playsinline preload="none" muted loop loading="lazy" poster="assets/addtolibrary.png" intrinsicsize="600x1089" width="300" height="544">
 						<source src="assets/addtolibrary.mp4" type="video/mp4" />
 						<source src="assets/addtolibrary.webm" type="video/webm" />
 						<noscript><img src="assets/addtolibrary.gif" alt width="300" height="544"/></noscript>
@@ -70,14 +70,14 @@
 							<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
 							<p>Two example videos, left one is for newer Androids.</p>
 							<figure class="d-flex justify-content-center">
-								<video preload="none" autoplay muted loop loading="lazy" poster="assets/unknownapps-android8.png" intrinsicsize="400x688" width="200" height="344">
+								<video playsinline preload="none" muted loop loading="lazy" poster="assets/unknownapps-android8.png" intrinsicsize="400x688" width="200" height="344">
 									<source src="assets/unknownapps-android8.mp4" type="video/mp4" />
 									<source src="assets/unknownapps-android8.webm" type="video/webm" />
 									<noscript><img src="assets/unknownapps-android8.gif" alt width="200" height="344"/></noscript>
 								</video>
 							</figure>
 							<figure class="d-flex justify-content-center">
-								<video preload="none" autoplay muted loop loading="lazy" poster="assets/unknownapps-android7.png" intrinsicsize="400x688" width="200" height="344">
+								<video playsinline preload="none" muted loop loading="lazy" poster="assets/unknownapps-android7.png" intrinsicsize="400x688" width="200" height="344">
 									<source src="assets/unknownapps-android7.mp4" type="video/mp4" />
 									<source src="assets/unknownapps-android7.webm" type="video/webm" />
 									<noscript><img src="assets/unknownapps-android7.gif" alt width="200" height="344"/></noscript>
@@ -120,6 +120,19 @@
 				q.parentElement.parentElement.open = true;
 			}
 		})
+		if ('IntersectionObserver' in self) {
+			const mo = new IntersectionObserver(i => {
+				for (const s of i) {
+					/** @type {HTMLVideoElement} */
+					const v = s.target;
+					if (s.isIntersecting && v.paused) {
+						v.load()
+						v.play()
+					} else if (!v.paused) v.pause()
+				}
+			})
+			for (let v of document.querySelectorAll('video')) { mo.observe(v) }
+		}
 	</script>
 </body>
 </html>
