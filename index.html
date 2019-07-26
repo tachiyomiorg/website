@@ -110,12 +110,12 @@
 	<script src="assets/bootstrap-toc.min.js"></script>
 	<!-- convenence script -->
 	<script>
-		addEventListener("hashchange", e => {
+		addEventListener("hashchange", () => {
 			var q = document.querySelector(location.hash)
-			if (q instanceof HTMLHeadingElement && q.parentElement.parentElement instanceof HTMLDetailsElement) {
+			if (q instanceof HTMLHeadingElement && q.parentElement.parentElement instanceof HTMLDetailsElement)
 				q.parentElement.parentElement.open = true;
-			}
 		})
+		if (location.hash) requestAnimationFrame(() => dispatchEvent(new HashChangeEvent("hashchange")));
 		if ('IntersectionObserver' in self) {
 			const mo = new IntersectionObserver(i => {
 				for (const s of i) {
