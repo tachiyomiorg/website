@@ -1,118 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
 	<title>Tachiyomi Guide</title>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta content="" name="description">
-	<link href="favicon.ico" rel="icon">
-	<link href="assets/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/bootstrap-toc.min.css" rel="stylesheet">
-	<link href="assets/style.css" rel="stylesheet">
+	<meta charset=utf-8>
+	<meta content="width=device-width, initial-scale=1" name=viewport>
+	<meta content="" name=description>
+	<link href=favicon.ico rel=icon>
+	<link href="assets/bootstrap.min.css" rel=stylesheet>
+	<link href="assets/bootstrap-toc.min.css" rel=stylesheet>
+	<link href="assets/style.css" rel=stylesheet>
 </head>
-<body data-spy="scroll" data-target="#toc">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<nav class="sticky-top" data-toggle="toc" id="toc"><!--toc--></nav>
+<body data-spy=scroll data-target="#toc">
+	<div class=container>
+		<div class=row>
+			<div class=col-sm-3>
+				<nav class=sticky-top data-toggle=toc id=toc><!--toc--></nav>
 			</div>
-			<div class="col-sm-6">
-				<div class="text-center mb-4">
-					<img src="assets/tachiyomi.png">
-					<h1>Getting started with Tachiyomi</h1>
-					<p><a href="https://github.com/inorichi/tachiyomi" target="_blank">Tachiyomi</a> is a free and open source manga reader for Android.</p>
+			<div class=col-sm-6>
+				<div class="text-center mb-4"> <img src="assets/tachiyomi.png">
+					<h1 id=getting-started-with-tachiyomi>Getting started with Tachiyomi</h1>
+					<p><a href="https://github.com/inorichi/tachiyomi" target="_blank">Tachiyomi</a> is a free and open source manga reader for Android.
 				</div>
-				<h2>Installation</h2>
-				<h3>Downloading and Installing</h3>
-				<p>Download the latest stable release of Tachiyomi from <a href="https://github.com/inorichi/tachiyomi/releases/tag/v0.8.4">GitHub.</a></p>
-				<p><code>tachiyomi-vX.Y.Z.apk</code></p>
-				<p>If you want to try new features before they get to the stable release, you can download the dev version <a href="http://tachiyomi.kanade.eu/latest">here</a>.</p>
-				<p>Open and install the <code>.apk</code> file you just downloaded from GitHub.</p>
+				<h2 id=installation>Installation</h2>
+				<h3 id=downloading-and-installing>Downloading and Installing</h3>
+				<p>Download the latest stable release of Tachiyomi from <a href="https://github.com/inorichi/tachiyomi/releases/tag/v0.8.4">GitHub.</a>
+				<p><code>tachiyomi-vX.Y.Z.apk</code>
+				<p>If you want to try new features before they get to the stable release, you can download the dev version <a href="http://tachiyomi.kanade.eu/latest">here</a>.
+				<p>Open and install the <code>.apk</code> file you just downloaded from GitHub.
 				<div class="d-flex justify-content-center">
-					<img src="assets/install.jpg" intrinsicsize="1076x608" width="269" height="152">
+					<img height=152 intrinsicsize=1076x608 src="assets/install.jpg" width=269>
 				</div>
-				<h3>Your first extension</h3>
-				<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.</p>
+				<h3 id=your-first-extension>Your first extension</h3>
+				<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.
 				<figure>
-					<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/extensions.png" intrinsicsize="600x1089" width="300" height="544">
-						<source src="assets/extensions.mp4" type="video/mp4" />
-						<source src="assets/extensions.webm" type="video/webm" />
-						<noscript><img src="assets/extensions.gif" alt width="300" height="544"/></noscript>
+					<video controls crossorigin=use-credentials height=544 intrinsicsize=600x1089 loading=lazy loop muted playsinline poster="assets/extensions.png" preload=none width=300>
+						<source src="assets/extensions.mp4" type="video/mp4">
+						<source src="assets/extensions.webm" type="video/webm">
+						<noscript><img alt height=544 loading=lazy src="assets/extensions.gif" width=300></noscript>
 					</video>
 				</figure>
 				<p>In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and it will bring up the extension installer. If your phone does not allow third-party installations, follow <a href="#third-party-installs">this</a> guide.</p>
 				<h3>Exploring the catalogue</h3>
 				<p>Now that you've installed the MangaDex extension it should show up in the <code>Catalogues</code> tab. The items appearing here are called <code>Sources</code>, an extension can contain multiple sources.</p>
 				<div class="d-flex justify-content-center">
-					<img src="assets/catalogues.png" loading="lazy" intrinsicsize="1080x828" width="270" height="272">
+					<img src="assets/catalogues.png" loading="lazy" intrinsicsize="500x505" width="270" height="273">
 				</div>
-				<h3>Adding manga to your library</h3>
+				<h3 id=adding-manga-to-your-library>Adding manga to your library</h3>
 				<p>To find and add manga, you can now either use the <code>Latest</code> button on your source, or you can use <code>Browse</code> and search for it.</p>
 				<p>Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.</p>
 				<p>It should now appear in your <code>My library</code> tab, ready to be read!</p>
 				<figure>
-					<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/addtolibrary.png" intrinsicsize="600x1089" width="300" height="544">
-						<source src="assets/addtolibrary.mp4" type="video/mp4" />
-						<source src="assets/addtolibrary.webm" type="video/webm" />
-						<noscript><img src="assets/addtolibrary.gif" alt width="300" height="544"/></noscript>
+					<video controls crossorigin=use-credentials height=500 intrinsicsize=500x1000 loading=lazy loop muted playsinline poster="assets/addtolibrary.png" preload=none width=250>
+						<source src="assets/addtolibrary.mp4" type="video/mp4">
+						<source src="assets/addtolibrary.webm" type="video/webm">
+						<noscript><img alt height=500 loading=lazy src="assets/addtolibrary.gif" width=250></noscript>
 					</video>
 				</figure>
-				<div class="mb-4">
-					<h2>Frequently Asked Questions</h2>
+				<div class=mb-4>
+					<h2 id=frequently-asked-questions>Frequently Asked Questions</h2>
 					<div class="mb-5 accordion">
 						<details>
-							<summary><h3>What are some good extensions?</h3></summary>
-							<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contain sources which host directly from the scanlators own websites.</p>
-							<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
+							<summary><h3 id=what-are-some-good-extensions>What are some good extensions?</h3></summary>
+							<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contain sources which host directly from the scanlators own websites.
+							<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.
 						</details>
 						<details>
-							<summary><h3>How do I allow third-party installations on my phone?</h3></summary>
-							<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
-							<p>Two example videos, left one is for newer Androids.</p>
+							<summary><h3 id=how-do-i-allow-third-party-installations>How do I allow third-party installations on my phone?</h3></summary>
+							<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.
+							<p>Two example videos, left one is for newer Androids.
 							<figure>
-								<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/unknownapps-android8.png" intrinsicsize="400x688" width="200" height="344">
-									<source src="assets/unknownapps-android8.mp4" type="video/mp4" />
-									<source src="assets/unknownapps-android8.webm" type="video/webm" />
-									<noscript><img src="assets/unknownapps-android8.gif" alt width="200" height="344"/></noscript>
+								<video controls crossorigin=use-credentials height=344 intrinsicsize=400x688 loading=lazy loop muted playsinline poster="assets/unknownapps-android8.png" preload=none width=200>
+									<source src="assets/unknownapps-android8.mp4" type="video/mp4">
+									<source src="assets/unknownapps-android8.webm" type="video/webm">
+									<noscript><img alt height=344 loading=lazy src="assets/unknownapps-android8.gif" width=200></noscript>
 								</video>
-								<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/unknownapps-android7.png" intrinsicsize="400x688" width="200" height="344">
-									<source src="assets/unknownapps-android7.mp4" type="video/mp4" />
-									<source src="assets/unknownapps-android7.webm" type="video/webm" />
-									<noscript><img src="assets/unknownapps-android7.gif" alt width="200" height="344"/></noscript>
+								<video controls crossorigin=use-credentials height=344 intrinsicsize=400x688 loading=lazy loop muted playsinline poster="assets/unknownapps-android7.png" preload=none width=200>
+									<source src="assets/unknownapps-android7.mp4" type="video/mp4">
+									<source src="assets/unknownapps-android7.webm" type="video/webm">
+									<noscript><img alt height=344 loading=lazy src="assets/unknownapps-android7.gif" width=200></noscript>
 								</video>
 							</figure>
 						</details>
 						<details>
-							<summary><h3>I'm not getting any results when searching/browsing MangaDex.</h3></summary>
-							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
+							<summary><h3 id=im-not-getting-any-results-when-searchin>I'm not getting any results when searching/browsing MangaDex...</h3></summary>
+							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.
+							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.
 						</details>
 						<details>
-							<summary><h3>I've logged in to MangaDex and still no results.</h3></summary>
-							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.</p>
+							<summary><h3 id=ive-logged-in-to-mangadex-and-still-no-r>I've logged in to MangaDex and still no results...</h3></summary>
+							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.
+							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.
 						</details>
 						<details>
-							<summary><h3>The extensions won't install.</h3></summary>
-							<p>In some cases your phone might have some issues downloading the extensions, in those cases you can try installing them yourselves directly from the source. <a href="https://github.com/inorichi/tachiyomi-extensions/tree/repo/apk" target="_blank">Here</a>'s the repository for the files.</p>
-							<p>To install just download the <code>.apk</code> file for the extension you want and then install it, like how you installed Tachiyomi.</p>
+							<summary><h3 id=the-extensions-wont-install...>The extensions won't install...</h3></summary>
+							<p>In some cases your phone might have some issues downloading the extensions, in those cases you can try installing them yourselves directly from the source. <a href="https://github.com/inorichi/tachiyomi-extensions/tree/repo/apk" target="_blank">Here</a>'s the repository for the files.
+							<p>To install just download the <code>.apk</code> file for the extension you want and then install it, like how you installed Tachiyomi.
 						</details>
 						<details>
-							<summary><h3>Does Tachiyomi have automatic updates?</h3></summary>
+							<summary><h3 id=does-tachiyomi-have-automatic-updates>Does Tachiyomi have automatic updates?</h3></summary>
 							<p>The Tachiyomi app now has in-app updating for both stable and dev versions. If you go to <code>Settings > About > Version</code> to check for updates, you can force an update there or wait for the app to notify you.</p>
 						</details>
 						<details>
-							<summary><h3>Why are some images not displayed?</h3></summary>
+							<summary><h3 id=why-are-some-images-not-displayed>Why are some images not displayed?</h3></summary>
 							<p>Aside from network issues, it could be because the images are too big or the decoder doesn't support that image.</p>
 						</details>
 						<p class="mt-5 text-muted">More frequently asked questions can be found <a href="https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions" target="_blank">here</a>.</p>
 					</div>
-					<h2>Related Links</h2>
-					<h3><a href="https://github.com/inorichi/tachiyomi/">Github</a></h3>
+					<h2 id=related-links>Related Links</h2>
+					<h3 id=github><a href="https://github.com/inorichi/tachiyomi/">Github</a></h3>
 					<p>At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. It's here we store our FOSS (Free and open source software) code for Tachiyomi.</p>
-					<h3><a href="https://github.com/inorichi/tachiyomi/wiki">GitHub Wiki</a></h3>
+					<h3 id=wiki><a href="https://github.com/inorichi/tachiyomi/wiki">GitHub Wiki</a></h3>
 					<p>Every GitHub repository comes equipped with a section for hosting documentation, called a wiki. Here you can find out more about features and how to fix a problem you might have.</p>
-					<h3><a href="https://discord.gg/tachiyomi">Discord</a></h3>
+					<h3 id=discord><a href="https://discord.gg/tachiyomi">Discord</a></h3>
 					<p>Discord is a proprietary freeware VoIP application and digital distribution platform that specializes in text, image, video and audio communication between users in a chat channel. Join our Discord server for chatting or if you want help.</p>
 				</div>
 			</div>
@@ -127,13 +126,14 @@
 	<script src="assets/jquery.slim.min.js"></script>
 	<script src="assets/bootstrap.min.js"></script>
 	<script src="assets/bootstrap-toc.min.js"></script>
+	<!-- convenence script -->
 	<script>
-		addEventListener("hashchange", e => {
+		addEventListener("hashchange", () => {
 			var q = document.querySelector(location.hash)
-			if (q instanceof HTMLHeadingElement && q.parentElement.parentElement instanceof HTMLDetailsElement) {
+			if (q instanceof HTMLHeadingElement && q.parentElement.parentElement instanceof HTMLDetailsElement)
 				q.parentElement.parentElement.open = true;
-			}
 		})
+		if (location.hash) requestAnimationFrame(() => dispatchEvent(new HashChangeEvent("hashchange")));
 		if ('IntersectionObserver' in self) {
 			const mo = new IntersectionObserver(i => {
 				for (const s of i) {
