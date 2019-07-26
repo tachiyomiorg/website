@@ -1,113 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
 	<title>Tachiyomi Guide</title>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta content="" name="description">
-	<link href="favicon.ico" rel="icon">
-	<link href="assets/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/bootstrap-toc.min.css" rel="stylesheet">
-	<link href="assets/style.css" rel="stylesheet">
+	<meta charset=utf-8>
+	<meta content="width=device-width, initial-scale=1" name=viewport>
+	<meta content="" name=description>
+	<link href=favicon.ico rel=icon>
+	<link href="assets/bootstrap.min.css" rel=stylesheet>
+	<link href="assets/bootstrap-toc.min.css" rel=stylesheet>
+	<link href="assets/style.css" rel=stylesheet>
 </head>
-<body data-spy="scroll" data-target="#toc">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<nav class="sticky-top" data-toggle="toc" id="toc"><!--toc--></nav>
+
+<body data-spy=scroll data-target="#toc">
+	<div class=container>
+		<div class=row>
+			<div class=col-sm-3>
+				<nav class=sticky-top data-toggle=toc id=toc><!--begin-toc-->
+					<ul class=toc>
+						<li><a href="#getting-started-with-tachiyomi">Getting started with Tachiyomi</a>
+							<ul class=toc>
+								<li><a href="#installation">Installation</a>
+									<ul class=toc>
+										<li><a href="#downloading-and-installing">Downloading and Installing</a>
+										<li><a href="#your-first-extension">Your first extension</a>
+										<li><a href="#exploring-the-catalogue">Exploring the catalogue</a>
+										<li><a href="#adding-manga-to-your-library">Adding manga to your library</a>
+									</ul>
+								<li><a href="#frequently-asked-questions">Frequently Asked Questions</a>
+									<ul class=toc>
+										<li><a href="#what-are-some-good-extensions">What are some good extensions?</a>
+										<li><a href="#how-do-i-allow-third-party-installations">How do I allow third-party installations on my phone?</a>
+										<li><a href="#im-not-getting-any-results-when-searchin">I'm not getting any results when searching/browsing MangaDex...</a>
+										<li><a href="#ive-logged-in-to-mangadex-and-still-no-r">I've logged in to MangaDex and still no results...</a>
+										<li><a href="#the-extensions-wont-install...">The extensions won't install...</a>
+									</ul>
+								<li><a href="#related-links">Related Links</a>
+									<ul class=toc>
+										<li><a href="#github">Github</a>
+										<li><a href="#wiki">Wiki</a>
+										<li><a href="#discord">Discord</a>
+									</ul>
+							</ul>
+					</ul>
+<!--end-toc--></nav>
 			</div>
-			<div class="col-sm-6">
-				<div class="text-center mb-4">
-					<img src="assets/tachiyomi.png">
-					<h1>Getting started with Tachiyomi</h1>
-					<p><a href="https://github.com/inorichi/tachiyomi" target="_blank">Tachiyomi</a> is a free and open source manga reader for Android.</p>
+
+			<div class=col-sm-6>
+				<div class="text-center mb-4"> <img src="assets/tachiyomi.png">
+					<h1 id=getting-started-with-tachiyomi>Getting started with Tachiyomi</h1>
+
+					<p><a href="https://github.com/inorichi/tachiyomi" target="_blank">Tachiyomi</a> is a free and open source manga reader for Android.
 				</div>
-				<h2>Installation</h2>
-				<h3>Downloading and Installing</h3>
-				<p>Download the latest stable release of Tachiyomi from <a href="https://github.com/inorichi/tachiyomi/releases/tag/v0.8.4">GitHub.</a></p>
-				<p><code>tachiyomi-vX.Y.Z.apk</code></p>
-				<p>If you want to try new features before they get to the stable release, you can download the dev version <a href="http://tachiyomi.kanade.eu/latest">here</a>.</p>
-				<p>Open and install the <code>.apk</code> file you just downloaded from GitHub.</p>
-				<div class="d-flex justify-content-center">
-					<img src="assets/install.jpg" intrinsicsize="1076x608" width="269" height="152">
-				</div>
-				<h3>Your first extension</h3>
-				<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.</p>
+
+				<h2 id=installation>Installation</h2>
+
+				<h3 id=downloading-and-installing>Downloading and Installing</h3>
+
+				<p>Download the latest stable release of Tachiyomi from <a href="https://github.com/inorichi/tachiyomi/releases/tag/v0.8.4">GitHub.</a>
+
+				<p><code>tachiyomi-vX.Y.Z.apk</code>
+
+				<p>If you want to try new features before they get to the stable release, you can download the dev version <a href="http://tachiyomi.kanade.eu/latest">here</a>.
+
+				<p>Open and install the <code>.apk</code> file you just downloaded from GitHub.
+
+				<div class="d-flex justify-content-center"> <img height=152 intrinsicsize=1076x608 src="assets/install.jpg" width=269></div>
+
+				<h3 id=your-first-extension>Your first extension</h3>
+
+				<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.
+
 				<figure>
-					<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/extensions.png" intrinsicsize="600x1089" width="300" height="544">
-						<source src="assets/extensions.mp4" type="video/mp4" />
-						<source src="assets/extensions.webm" type="video/webm" />
-						<noscript><img src="assets/extensions.gif" alt width="300" height="544"/></noscript>
-					</video>
-				</figure>
-				<p>In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and it will bring up the extension installer. If your phone does not allow third-party installations, follow <a href="#third-party-installs">this</a> guide.</p>
-				<h3>Exploring the catalogue</h3>
-				<p>Now that you've installed the MangaDex extension it should show up in the <code>Catalogues</code> tab. The items appearing here are called <code>Sources</code>, an extension can contain multiple sources.</p>
-				<div class="d-flex justify-content-center">
-					<img src="assets/catalogues.png" loading="lazy" intrinsicsize="1080x828" width="270" height="207">
-				</div>
-				<h3>Adding manga to your library</h3>
-				<p>To find and add manga, you can now either use the <code>Latest</code> button on your source, or you can use <code>Browse</code> and search for it.</p>
-				<p>Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.</p>
-				<p>It should now appear in your <code>My library</code> tab, ready to be read!</p>
-				<figure>
-					<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/addtolibrary.png" intrinsicsize="600x1089" width="300" height="544">
-						<source src="assets/addtolibrary.mp4" type="video/mp4" />
-						<source src="assets/addtolibrary.webm" type="video/webm" />
-						<noscript><img src="assets/addtolibrary.gif" alt width="300" height="544"/></noscript>
-					</video>
-				</figure>
-				<div class="mb-4">
-					<h2>Frequently Asked Questions</h2>
+					<video controls crossorigin=use-credentials height=544 intrinsicsize=600x1089 loading=lazy loop muted playsinline poster="assets/extensions.png" preload=none width=300>
+					<source src="assets/extensions.mp4" type="video/mp4">
+
+					<source src="assets/extensions.webm" type="video/webm">
+					<noscript><img alt height=544 src="assets/extensions.gif" width=300></noscript>
+					</video></figure>
+
+				<p>In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and it will bring up the extension installer. If your phone does not allow third-party installations, follow <a href="#third-party-installs">this</a> guide.
+
+				<h3 id=exploring-the-catalogue>Exploring the catalogue</h3>
+
+				<p>Now that you've installed the MangaDex extension it should show up in the <code>Catalogues</code> tab. The items appearing here are called <code>Sources</code>, an extension can contain multiple sources.
+
+				<div class="d-flex justify-content-center"> <img height=207 intrinsicsize=1080x828 loading=lazy src="assets/catalogues.png" width=270></div>
+
+				<h3 id=adding-manga-to-your-library>Adding manga to your library</h3>
+
+				<p>To find and add manga, you can now either use the <code>Latest</code> button on your source, or you can use <code>Browse</code> and search for it.
+
+				<p>Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.
+
+				<p>It should now appear in your <code>My library</code> tab, ready to be read!
+
+				<figure> <video controls crossorigin=use-credentials height=544 intrinsicsize=600x1089 loading=lazy loop muted playsinline poster="assets/addtolibrary.png" preload=none width=300>
+					<source src="assets/addtolibrary.mp4" type="video/mp4">
+
+					<source src="assets/addtolibrary.webm" type="video/webm">
+					</video><noscript><img alt height=544 src="assets/addtolibrary.gif" width=300></noscript></figure>
+
+				<div class=mb-4>
+					<h2 id=frequently-asked-questions>Frequently Asked Questions</h2>
+
 					<div class="mb-5 accordion">
-						<details>
-							<summary><h3>What are some good extensions?</h3></summary>
-							<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contain sources which host directly from the scanlators own websites.</p>
-							<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
+						<details> <summary></summary>
+							<h3 id=what-are-some-good-extensions>What are some good extensions?</h3>
+
+							<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contain sources which host directly from the scanlators own websites.
+
+							<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.
 						</details>
-						<details>
-							<summary><h3>How do I allow third-party installations on my phone?</h3></summary>
-							<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
-							<p>Two example videos, left one is for newer Androids.</p>
-							<figure>
-								<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/unknownapps-android8.png" intrinsicsize="400x688" width="200" height="344">
-									<source src="assets/unknownapps-android8.mp4" type="video/mp4" />
-									<source src="assets/unknownapps-android8.webm" type="video/webm" />
-									<noscript><img src="assets/unknownapps-android8.gif" alt width="200" height="344"/></noscript>
-								</video>
-								<video crossorigin="use-credentials" controls playsinline preload="none" muted loop loading="lazy" poster="assets/unknownapps-android7.png" intrinsicsize="400x688" width="200" height="344">
-									<source src="assets/unknownapps-android7.mp4" type="video/mp4" />
-									<source src="assets/unknownapps-android7.webm" type="video/webm" />
-									<noscript><img src="assets/unknownapps-android7.gif" alt width="200" height="344"/></noscript>
-								</video>
-							</figure>
+
+						<details> <summary></summary>
+							<h3 id=how-do-i-allow-third-party-installations>How do I allow third-party installations on my phone?</h3>
+
+							<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.
+
+							<p>Two example videos, left one is for newer Androids.
+
+							<figure> <video controls crossorigin=use-credentials height=344 intrinsicsize=400x688 loading=lazy loop muted playsinline poster="assets/unknownapps-android8.png" preload=none width=200>
+								<source src="assets/unknownapps-android8.mp4" type="video/mp4">
+
+								<source src="assets/unknownapps-android8.webm" type="video/webm">
+								</video><noscript><img alt height=344 src="assets/unknownapps-android8.gif" width=200></noscript> <video controls crossorigin=use-credentials height=344 intrinsicsize=400x688 loading=lazy loop muted playsinline poster="assets/unknownapps-android7.png" preload=none width=200>
+								<source src="assets/unknownapps-android7.mp4" type="video/mp4">
+
+								<source src="assets/unknownapps-android7.webm" type="video/webm">
+								<noscript><img alt height=344 src="assets/unknownapps-android7.gif" width=200></noscript>
+							</video></figure>
 						</details>
-						<details>
-							<summary><h3>I'm not getting any results when searching/browsing MangaDex...</h3></summary>
-							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
+
+						<details> <summary></summary>
+							<h3 id=im-not-getting-any-results-when-searchin>I'm not getting any results when searching/browsing MangaDex...</h3>
+
+							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.
+
+							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.
 						</details>
-						<details>
-							<summary><h3>I've logged in to MangaDex and still no results...</h3></summary>
-							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.</p>
+
+						<details> <summary></summary>
+							<h3 id=ive-logged-in-to-mangadex-and-still-no-r>I've logged in to MangaDex and still no results...</h3>
+
+							<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, enter a random manga and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.
+
+							<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.
 						</details>
-						<details>
-							<summary><h3>The extensions won't install...</h3></summary>
-							<p>In some cases your phone might have some issues downloading the extensions, in those cases you can try installing them yourselves directly from the source. <a href="https://github.com/inorichi/tachiyomi-extensions/tree/repo/apk" target="_blank">Here</a>'s the repository for the files.</p>
-							<p>To install just download the <code>.apk</code> file for the extension you want and then install it, like how you installed Tachiyomi.</p>
+
+						<details> <summary></summary>
+							<h3 id=the-extensions-wont-install...>The extensions won't install...</h3>
+
+							<p>In some cases your phone might have some issues downloading the extensions, in those cases you can try installing them yourselves directly from the source. <a href="https://github.com/inorichi/tachiyomi-extensions/tree/repo/apk" target="_blank">Here</a>'s the repository for the files.
+
+							<p>To install just download the <code>.apk</code> file for the extension you want and then install it, like how you installed Tachiyomi.
 						</details>
-						<p class="mt-5 text-muted">More frequently asked questions can be found <a href="https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions" target="_blank">here</a>.</p>
+
+						<p class="mt-5 text-muted">More frequently asked questions can be found <a href="https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions" target="_blank">here</a>.
 					</div>
-					<h2>Related Links</h2>
-					<h3><a href="https://github.com/inorichi/tachiyomi/">Github</a></h3>
-					<h3><a href="https://github.com/inorichi/tachiyomi/wiki">Wiki</a></h3>
-					<h3><a href="https://discord.gg/tachiyomi">Discord</a></h3>
+
+					<h2 id=related-links>Related Links</h2>
+
+					<h3 id=github><a href="https://github.com/inorichi/tachiyomi/">Github</a></h3>
+
+					<h3 id=wiki><a href="https://github.com/inorichi/tachiyomi/wiki">Wiki</a></h3>
+
+					<h3 id=discord><a href="https://discord.gg/tachiyomi">Discord</a></h3>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Scripts to be removed when possible -->
+
 	<script src="assets/jquery.slim.min.js"></script>
 	<script src="assets/bootstrap.min.js"></script>
 	<script src="assets/bootstrap-toc.min.js"></script>
