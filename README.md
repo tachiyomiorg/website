@@ -1,2 +1,2 @@
-# soitora.github.io
-Test repository for Tachiyomi Guides
+# ![app icon](./assets/media/tachiyomi.png)Tachiyomi Guide
+Repository for the Tachiyomi Guide website.
