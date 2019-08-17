@@ -1,2 +1,2 @@
-# ![app icon](./assets/media/tachiyomi.png)Tachiyomi Guide
-Repository for the Tachiyomi Guide website.
+# ![app icon](./assets/media/tachiyomi.png)Tachiyomi Website
+Repository for the Tachiyomi website.
