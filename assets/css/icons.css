@@ -1,0 +1,174 @@
+@font-face {
+	font-family: 'icomoon';
+	src:  url('fonts/icomoon.eot?8u5tsc');
+	src:  url('fonts/icomoon.eot?8u5tsc#iefix') format('embedded-opentype'),
+	url('fonts/icomoon.ttf?8u5tsc') format('truetype'),
+	url('fonts/icomoon.woff?8u5tsc') format('woff'),
+	url('fonts/icomoon.svg?8u5tsc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github-square:before {
+	content: "\f092";
+}
+.icon-github:before {
+	content: "\f09b";
+}
+.icon-bars:before {
+	content: "\f0c9";
+}
+.icon-navicon:before {
+	content: "\f0c9";
+}
+.icon-reorder:before {
+	content: "\f0c9";
+}
+.icon-github-alt:before {
+	content: "\f113";
+}
+.icon-windows:before {
+	content: "\f17a";
+}
+.icon-android3:before {
+	content: "\f17b";
+}
+.icon-slack:before {
+	content: "\f198";
+}
+.icon-reddit:before {
+	content: "\f1a1";
+}
+.icon-reddit-square:before {
+	content: "\f1a2";
+}
+.icon-git-square:before {
+	content: "\f1d2";
+}
+.icon-git:before {
+	content: "\f1d3";
+}
+.icon-reddit-alien:before {
+	content: "\f281";
+}
+.icon-hashtag:before {
+	content: "\f292";
+}
+.icon-gitlab:before {
+	content: "\f296";
+}
+.icon-google-plus-circle:before {
+	content: "\f2b3";
+}
+.icon-google-plus-official:before {
+	content: "\f2b3";
+}
+.icon-document-download:before {
+	content: "\e900";
+}
+.icon-document-zip:before {
+	content: "\e908";
+}
+.icon-zip:before {
+	content: "\e909";
+}
+.icon-cloud-download:before {
+	content: "\e901";
+}
+.icon-document-file-zip:before {
+	content: "\e902";
+}
+.icon-document-file-zip1:before {
+	content: "\e903";
+}
+.icon-document-file-rar:before {
+	content: "\e904";
+}
+.icon-document-file-rar1:before {
+	content: "\e905";
+}
+.icon-presentation:before {
+	content: "\e00e";
+}
+.icon-edit:before {
+	content: "\e01c";
+}
+.icon-hourglass:before {
+	content: "\e01f";
+}
+.icon-puzzle:before {
+	content: "\e026";
+}
+.icon-telescope:before {
+	content: "\e02a";
+}
+.icon-tools:before {
+	content: "\e033";
+}
+.icon-magnifying-glass:before {
+	content: "\e037";
+}
+.icon-genius:before {
+	content: "\e046";
+}
+.icon-download:before {
+	content: "\e04d";
+}
+.icon-clock:before {
+	content: "\e055";
+}
+.icon-alarmclock:before {
+	content: "\e059";
+}
+.icon-refresh:before {
+	content: "\e05a";
+}
+.icon-android1:before {
+	content: "\e906";
+	color: #a4c639;
+}
+.icon-discord:before {
+	content: "\ed84";
+	color: #7289da;
+}
+.icon-discourse:before {
+	content: "\ed85";
+}
+.icon-git2:before {
+	content: "\ed86";
+	color: #f05032;
+}
+.icon-github1:before {
+	content: "\e907";
+}
+.icon-reddit1:before {
+	content: "\ed83";
+	color: #ff4500;
+}
+.icon-github2:before {
+	content: "\ed87";
+}
+.icon-android:before {
+	content: "\eac0";
+}
+.icon-reddit2:before {
+	content: "\ed88";
+}
+.icon-git1:before {
+	content: "\ed89";
+}

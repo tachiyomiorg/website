@@ -1,167 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Tachiyomi Guide</title>
-		<meta charset="utf-8" />
-		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<meta content="" name="description" />
-		<link href="favicon.ico" rel="icon" />
-		<link href="assets/css/bootstrap-4.3.1.min.css" rel="stylesheet" />
-		<link href="assets/css/bootstrap-toc-1.0.1.min.css" rel="stylesheet" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body data-spy="scroll" data-target="#toc">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<nav class="sticky-top" data-toggle="toc" id="toc"><!--toc--></nav>
-				</div>
-				<div class="col-sm-6">
-					<div class="text-center mb-4"> <img src="assets/media/tachiyomi.png" />
-						<h1 id="getting-started-with-tachiyomi">Getting started with Tachiyomi</h1>
-						<p><a href="https://github.com/inorichi/tachiyomi" target="_blank">Tachiyomi</a> is a free and open source manga reader for Android.</p>
-					</div>
-					<h2 id="installation">Installation</h2>
-					<h3 id="downloading-and-installing">Downloading and installing</h3>
-					<p>Download the latest stable release of Tachiyomi from <a href="https://github.com/inorichi/tachiyomi/releases/tag/v0.8.4">GitHub.</a></p>
-					<p><code>tachiyomi-vX.Y.Z.apk</code></p>
-					<p>If you want to try new features before they get to the stable release, you can download the dev version <a href="http://tachiyomi.kanade.eu/latest">here</a>.</p>
-					<p>Open and install the <code>.apk</code> file you just downloaded from GitHub.</p>
-					<div class="d-flex justify-content-center"> <img height="145" intrinsicsize="1000x500" src="assets/media/installprompt.png" width="300" /></div>
-					<h3 id="installing-an-extension">Installing an extension</h3>
-					<p>Now that Tachiyomi is installed, open the app and navigate to the <code>Extensions</code> tab.</p>
-					<p>In this guide we will use MangaDex, our most popular extension. Press the <code>Install</code> button and accept the installation prompt that will be shown.</p>
-					<p>If you're getting stopped by a security prompt and don't know what to do you can read this FAQ section: <a href="#how-do-i-allow-third-party-installations"><span class="mt-5 text-muted">("How do I allow third-party installations on my phone?")</span></a></p>
-					<figure>
-						<video controls="controls" crossorigin="use-credentials" height="534" intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" poster="assets/media/extensioninstaller.png" preload="none" width="300">
-							<source src="assets/media/extensioninstaller.webm" type="video/webm" />
-							<source src="assets/media/extensioninstaller.mp4" type="video/mp4" />
-						</video>
-					</figure>
-					<h3 id="adding-manga-to-your-library">Adding manga to your library</h3>
-					<p>Now that you've installed the MangaDex extension it should show up in the <code>Catalogues</code> tab. The items appearing here are called <code>Sources</code> <span class="mt-5 text-muted">(can also be called Catalogues)</span>, an extension can contain multiple sources.</p>
-					<p>To find and add manga, you can now either use the <code>Latest</code> button on your source, or you can use <code>Browse</code> and search for it.</p>
-					<p>Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.</p>
-					<p>It should now appear in your <code>My library</code> tab, ready to be read!</p>
-					<figure>
-						<video controls="controls" crossorigin="use-credentials" height="534" intrinsicsize="500x1000" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" poster="assets/media/addtolibrary.png" preload="none" width="300">
-							<source src="assets/media/addtolibrary.webm" type="video/webm" />
-							<source src="assets/media/addtolibrary.mp4" type="video/mp4" />
-						</video>
-					</figure>
-					<div class="mb-4">
-						<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-						<div class="mb-5 accordion">
-							<details>
-								<summary><h3 id="what-are-some-good-extensions">What are some good extensions?</h3></summary>
-								<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and ComiCake which contain sources which host directly from the scanlators own websites.</p>
-								<p><a href="https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0" target="_blank">Here</a>'s a good spreadsheet showing the different extensions and their sources.</p>
-							</details>
-							<details>
-								<summary><h3 id="how-do-i-allow-third-party-installations">How do I allow third-party installations?</h3></summary>
-								<p>When installing your first extension and are promted that your phone isn't allowed to install unknown apps from that source, simply press the <code>Settings</code> button and then allow it.</p>
-								<p>Two example videos, left one is for newer Androids.</p>
-								<figure>
-									<video controls="controls" crossorigin="use-credentials" height="355" intrinsicsize="400x688" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" poster="assets/media/unknownapps-api28.png" preload="none" width="200">
-										<source src="assets/media/unknownapps-api28.webm" type="video/webm" />
-										<source src="assets/media/unknownapps-api28.mp4" type="video/mp4" />
-									</video>
-									<video controls="controls" crossorigin="use-credentials" height="355" intrinsicsize="400x688" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" poster="assets/media/unknownapps-api25.png" preload="none" width="200">
-										<source src="assets/media/unknownapps-api25.webm" type="video/webm" />
-										<source src="assets/media/unknownapps-api25.mp4" type="video/mp4" />
-									</video>
-								</figure>
-							</details>
-							<details>
-								<summary><h3 id="extensions-not-installing">Why won't the extensions install?</h3></summary>
-								<p>In some cases your phone might have some issues downloading the extensions, in those cases you can try installing them yourselves directly from the source. <a href="https://github.com/inorichi/tachiyomi-extensions/tree/repo/apk" target="_blank">Here</a>'s the repository for the files.</p>
-								<p>To install just download the <code>.apk</code> file for the extension you want and then install it, like how you installed Tachiyomi.</p>
-							</details>
-							<details>
-								<summary><h3 id="tachiyomi-automatic-updates">Does Tachiyomi have automatic updates?</h3></summary>
-								<p>The Tachiyomi app now has in-app updating for both stable and dev versions. If you go to <code>Settings > About > Version</code> to check for updates, you can force an update there or wait for the app to notify you.</p>
-							</details>
-							<details>
-								<summary><h3 id="image-display-issues">Why are some images not displayed?</h3></summary>
-								<p>Aside from network issues, it could be because the images are too big or the decoder doesn't support that image.</p>
-							</details>
-							<details>
-								<summary><h3 id="tachiyomi-menu-language">How do I change the app language?</h3></summary>
-								<p>Tachiyomi is (as of writing) available in 35 different languages.</p>
-								<p>By default, the app language follows the language setting of your device.</p>
-								<p>You can also set your own preferred language for Tachiyomi. Simply from side panel go to the <code>Settings > General > Language</code>.</p>
-								<p><code>Note:</code> Only the UI has been localized, content will still be using the language of the source selected (i.e. English for KissManga source, Some sources have multiple Language too).</p>
-								<p class="mt-5 text-muted">If you want to help translate Tachiyomi, read <a href="https://github.com/inorichi/tachiyomi/wiki/Translation" target="_blank">this</a>.</p>
-								<p><a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget" target="_blank"><img src="https://hosted.weblate.org/widgets/tachiyomi/-/multi-auto.svg" /></a></p>
-							</details>
-							<br />
-							<details>
-								<summary><h3 id="mangadex-no-results"><span class="mt-5 text-muted">Mangadex:</span> No results when browsing.</h3></summary>
-								<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, open any manga from the list and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-								<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then choose either <code>Sign up</code> or <code>Log in</code>.</p>
-							</details>
-							<details>
-								<summary><h3 id="mangadex-no-results-post-login"><span class="mt-5 text-muted">Mangadex:</span> No results when browsing even after login.</h3></summary>
-								<p>Go to <code>Browse</code>/<code>Latest</code> for MangaDex under <code>Catalogues</code>, open any manga from the list and then press the overflow menu (3 dot menu) in the top-right corner and then the <code>Open in web view</code> button.</p>
-								<p>Now go to the hamburger menu, press the <code>Manga</code> drop-down and then <code>Titles</code>. The last step is to go to the icon in the upper right that looks like four-boxes and select <code>Detailed</code>.</p>
-							</details>
-							<details>
-								<summary><h3 id="mangadex-chapters-from-mangaplus-broken"><span class="mt-5 text-muted">Mangadex:</span> Chapters from Mangaplus are broken.</h3></summary>
-								<p>Install the Mangaplus extension and then migrate the manga that uses Mangaplus on Mangadex onto the Mangaplus source.</p>
-							</details>
-							<details>
-								<summary><h3 id="mangarock-slow-updates"><span class="mt-5 text-muted">MangaRock:</span> Slow updates to Tachiyomi.</h3></summary>
-								<p>MangaRock's API updates less frequently than the app or the website, so you may need to wait a couple hours or more before it shows up in Tachiyomi.</p>
-							</details>
-							<details>
-								<summary><h3 id="madara-missing-leviatan-scans"><span class="mt-5 text-muted">Madara:</span> Leviatan Scans is missing.</h3></summary>
-								<p>Leviatan Scans has shifted from Madara to Genkan extension.</p>
-								<p>Install Genkan. Migrate all Leviatan scans. Update Madara.</p>
-							</details>
-							<p class="mt-5 text-muted">More frequently asked questions can be found <a href="https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions" target="_blank">here</a>.</p>
-						</div>
-						<h2 id="related-links">Related Links</h2>
-						<h3 id="github"><a href="https://github.com/inorichi/tachiyomi/">Github</a></h3>
-						<p>At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. It's here we store our FOSS (Free and open source software) code for Tachiyomi.</p>
-						<h3 id="wiki"><a href="https://github.com/inorichi/tachiyomi/wiki">GitHub Wiki</a></h3>
-						<p>Every GitHub repository comes equipped with a section for hosting documentation, called a wiki. Here you can find out more about features and how to fix a problem you might have.</p>
-						<h3 id="discord"><a href="https://discord.gg/tachiyomi">Discord</a></h3>
-						<p>Discord is a proprietary freeware VoIP application and digital distribution platform that specializes in text, image, video and audio communication between users in a chat channel. Join our Discord server for chatting or if you want help.</p>
+<head>
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tachiyomi</title>
+
+	<!-- PLUGINS CSS STYLE -->
+
+	<!-- Bootstrap -->
+	<link href="assets/css/bootstrap-material-design.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-toc-1.0.1.min.css" rel="stylesheet">
+	<!-- Material icons	-->
+	<link href="assets/css/material-icons.css" rel="stylesheet">
+	<!-- Custom icons	-->
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- CUSTOM CSS -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<!-- FAVICON -->
+	<link href="favicon.ico" rel="shortcut icon">
+
+</head>
+
+<body class="body-wrapper">
+<nav class="navbar main-nav navbar-expand-lg p-0 shadow fixed-top" id="menu" data-toggle="menu">
+	<div class="container">
+		<div class="menuGroup">
+		<a class="navbar-brand" href="index.html"><img src="assets/media/tachiyomi.png" alt="tachiyomi"></a>
+		<button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="material-icons">menu</span>
+		</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link active" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#features">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#guide">Guide</a>
+<!--					<a class="nav-link mobile" href="#guide2">Guide</a>-->
+				</li>
+				<li class="nav-item">
+					<a class="nav-link desktop" href="#faq">FAQ</a>
+					<a class="nav-link mobile" href="#faq2">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#issues">Issues</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!--==================================
+=            Hero Section            =
+===================================-->
+
+<section class="banner bg-white" id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 m-auto">
+				<!-- Banner Contents -->
+				<div class="block text-center">
+					<h1>Tachiyomi</h1>
+					<p>Tachiyomi is a free and open source manga reader for Android.</p>
+					<!-- Go to App page -->
+					<ul class="list-inline app-badge">
+						<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+						<li class="list-inline-item">
+							<div class="lastestRelease">
+								<p class="release-info"></p>
+								<span class="downloaded"></span><br>
+								<a class="download btn btn-primary stableRelease active"
+								   href="https://github.com/inorichi/tachiyomi/releases/latest"
+								   data-toggle="tooltip" data-placement="bottom" title="Version"><i
+									class="icon-download"></i> Stable </a>
+							</div>
+						</li>
+						<!-- Apple Store -->
+						<li class="list-inline-item">
+							<div class="devRelease">
+								<a class="download btn btn-secondary devRelease active" href="http://tachiyomi.kanade.eu/latest"
+								   data-toggle="tooltip" data-placement="bottom" title="Lastest development release"><i
+									class="icon-download"></i> Dev Release </a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="zipRelease">
+								<a class="download btn btn-info zipRelease active"
+								   href="https://api.github.com/repos/inorichi/tachiyomi/zipball/latest"
+								   data-toggle="tooltip" data-placement="bottom" title="Lastest stable zip release"><i
+									class="icon-document-file-zip"></i> Zip
+								</a>
+								<!-- <a href="#"><img src="images/app/appple-store.png" alt="Apple Store"></a> -->
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="tarRelease">
+								<a class="download btn btn-info tarRelease active"
+								   href="https://api.github.com/repos/inorichi/tachiyomi/tarball/latest"
+								   data-toggle="tooltip" data-placement="bottom" title="Lastest stable tar release"><i
+									class="icon-document-zip"></i> Tar </a>
+								<!-- <a href="#"><img src="images/app/appple-store.png" alt="Apple Store"></a> -->
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<a class="starGithub btn btn-info tarRelease active"
+							   href="https://github.com/inorichi/tachiyomi"
+							   data-toggle="tooltip" data-placement="bottom" title="Stargazers" target="_blank">
+								<i class="material-icons icon-github1"></i> <span>Stars</span></a>
+<!--							<iframe-->
+<!--								src="https://ghbtns.com/github-btn.html?user=inorichi&repo=tachiyomi&type=star&count=true"-->
+<!--								frameborder="0" scrolling="0" width="170px" height="30px" name="github"></iframe>-->
+						</li>
+					</ul>
+					<div class="appScreens">
+						<img class="img-fluid shadow desktop" src="assets/media/screens.png" alt="video-thumbnail">
+						<img class="img-fluid shadow mobile" src="assets/media/screens.gif" alt="video-thumbnail">
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer class="page-footer font-small blue">
-			<div class="footer-copyright text-center py-3"> <a href="https://github.com/Soitora/soitora.github.io">Project Repository</a></div>
-		</footer>
-		<!-- Scripts to be removed when possible -->
-		<script src="assets/js/jquery-3.4.1.slim.min.js" ></script>
-		<script src="assets/js/bootstrap-4.3.1.min.js"></script>
-		<script src="assets/js/bootstrap-toc-1.0.1.min.js"></script>
-		<!-- Convenience script -->
-		<script>
-		addEventListener("hashchange", () => {
-			var q = document.querySelector(location.hash)
-			if (q instanceof HTMLHeadingElement && q.parentElement.parentElement instanceof HTMLDetailsElement)
-				q.parentElement.parentElement.open = true;
-		})
-		if (location.hash) requestAnimationFrame(() => dispatchEvent(new HashChangeEvent("hashchange")));
-		if ('IntersectionObserver' in self) {
-			const mo = new IntersectionObserver(i => {
-				for (const s of i) {
-					/** @type {HTMLVideoElement} */
-					const v = s.target;
-					if (s.isIntersecting && v.paused) {
-						v.load()
-						v.play()
-					} else if (!v.paused) v.pause()
-				}
-			})
-			for (let v of document.querySelectorAll('video')) {
-				mo.observe(v)
-				v.controls = false
-			}
-		}
-		</script>
-	</body>
+	</div>
+</section>
+
+<!--====  End of Hero Section  ====-->
+
+<!--==============================
+=            Features            =
+===============================-->
+<section class="services section bg-primary" id="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Section Title -->
+				<div class="section-title">
+					<h2 class="text-white">Features</h2>
+					<!-- <p>Name makes it easy to stay on top of your Life Style.
+					No late tasks. No gimmicks.</p> -->
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<!-- Service 01 -->
+				<div class="service-block shadow">
+					<!-- Icon -->
+					<i class="material-icons">extension</i>
+					<h3>Extensions</h3>
+					<p>Online reading from sources such as KissManga, MangaDex, and more </p>
+					<p>Local reading of downloaded manga</p>
+				</div>
+				<!-- Service 02 -->
+				<div class="service-block shadow">
+					<!-- Icon -->
+					<i class="material-icons">chrome_reader_mode</i>
+					<h3>Customizable</h3>
+					<p> Configurable reader with multiple viewers, reading directions and other settings</p>
+					<p>Categories to organize your library</p>
+					<p>Light and dark themes</p>
+				</div>
+			</div>
+			<div class="col-lg-4 m-auto">
+				<div class="app-preview">
+					<img src="assets/media/screen.png" alt="screen">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<!-- Service 03 -->
+				<div class="service-block shadow">
+					<!-- Icon -->
+					<i class="material-icons">loop</i>
+					<h3>Tracking</h3>
+					<p>MyAnimeList, AniList, and Kitsu support</p>
+				</div>
+				<!-- Service 04 -->
+				<div class="service-block shadow">
+					<!-- Icon -->
+					<i class="material-icons">system_update_alt</i>
+					<i class="material-icons">backup</i>
+					<h3>Auto update and Backup</h3>
+					<p>Schedule updating your library for new chapters</p>
+					<p>Create backups locally to read offline or to your desired cloud service</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Services  ====-->
+
+<!--==================================
+=  		       Guide	 		     =
+===================================-->
+<section class="feature section bg-white" id="guide">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Section Title -->
+				<div class="section-title">
+					<h2>Guide</h2>
+					<!-- <p>Name makes it easy to stay on top of your Life Style.
+					No late tasks. No gimmicks.</p> -->
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="list_guide" class="w-100">
+				<div class="card">
+					<div class="card-header" id="installing_extension">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#extension" aria-expanded="true" aria-controls="extension">
+								Installing an extension
+							</button>
+						</h5>
+					</div>
+
+					<div id="extension" class="collapse" aria-labelledby="installing_extension" data-parent="#list_guide">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-12 col-md-5">
+									<video autoplay crossorigin="use-credentials" class="installing_extension centered"
+										   height="534" intrinsicsize="500x100"
+										   loading="lazy" loop="loop" muted="muted" playsinline="playsinline"
+										   poster="assets/media/extensioninstaller.png" preload="none" width="300">
+										<source src="assets/media/extensioninstaller.webm" type="video/webm"/>
+										<source src="assets/media/extensioninstaller.mp4" type="video/mp4"/>
+									</video>
+								</div>
+								<div class="col-sm-12 col-md-6 ml-auto">
+									<p>Now that Tachiyomi is installed, open the app and navigate to the <b class="">Extensions</b> tab.
+									</p>
+									<p>In this guide we will use MangaDex, our most popular extension. Press the <b class="">Install</b>
+										button and
+										accept the installation prompt that will be shown.</p>
+									<p>If you're getting stopped by a security prompt and don't know what to do you can read this
+										FAQ section: <a href="#faq" class="desktop"><span
+											class="mt-5 text-muted">("How do I allow third-party installations on my
+												phone?")</span></a></p>
+									<a href="#faq2" class="mobile"><span
+										class="mt-5 text-muted">("How do I allow third-party installations on my
+												phone?")</span></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="adding_manga_library">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#manga_library" aria-expanded="false" aria-controls="manga_library">
+								Adding manga to your library
+							</button>
+						</h5>
+					</div>
+					<div id="manga_library" class="collapse" aria-labelledby="adding_manga_library" data-parent="#list_guide">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-12 col-md-5">
+									<video autoplay crossorigin="use-credentials" class="adding_library centered" height="534"
+										   intrinsicsize="500x1000"
+										   loading="lazy" loop="loop" muted="muted" playsinline="playsinline"
+										   poster="assets/media/addtolibrary.png" preload="none" width="300">
+										<source src="assets/media/addtolibrary.webm" type="video/webm"/>
+										<source src="assets/media/addtolibrary.mp4" type="video/mp4"/>
+									</video>
+								</div>
+								<div class="col-sm-12 col-md-6 ml-auto">
+									<p>Now that you've installed the MangaDex extension it should show up in the <b class="">Catalogues</b>
+										tab. The
+										items appearing here are called <b class="">Sources</b> (can also be called Catalogues), an
+										extension can
+										contain multiple sources.</p>
+									<p>To find and add manga, you can now either use the <b class="">Latest</b> button on your source, or
+										you can
+										use <b class="">Browse</b> and search for it. </p>
+									<p>Now that you've found manga that you want to add to your library, click on it and then press
+										the blue bookmark button.</p>
+									<p>It should now appear in your <b class="">My library</b> tab, ready to be read!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  	End of Guide	   ====-->
+
+<!--==================================
+=                FAQ                 =
+===================================-->
+
+<section class="app-features section desktop" id="faq">
+	<div class="container">
+		<div class="row"><h2>Frequently Asked Questions</h2></div>
+		<div class="row">
+			<div class="col-4">
+				<div class="list-group" id="list-tab" role="tablist">
+					<a class="list-group-item list-group-item-action list-group-item border-bottom active"
+					   id="list-extensions-list" data-toggle="list" href="#list-extensions" role="tab"
+					   aria-controls="extensions">What are some good extensions?</a>
+					<a class="list-group-item list-group-item-action list-group-item border-bottom"
+					   id="list-third-party-list" data-toggle="list" href="#list-third-party" role="tab"
+					   aria-controls="third-party">How do I allow third-party installations?</a>
+					<a class="list-group-item list-group-item-action list-group-item border-bottom"
+					   id="list-extensions-install-list" data-toggle="list" href="#list-extensions-install"
+					   role="tab" aria-controls="extensions-install">Why won't the extensions install?</a>
+					<a class="list-group-item list-group-item-action list-group-item border-bottom" id="list-updates-list"
+					   data-toggle="list" href="#list-updates" role="tab" aria-controls="updates">Does Tachiyomi
+						have automatic updates?</a>
+					<a class="list-group-item list-group-item-action list-group-item border-bottom" id="list-displayed-list"
+					   data-toggle="list" href="#list-displayed" role="tab" aria-controls="displayed">Why are some
+						images not displayed?</a>
+					<a class="list-group-item list-group-item-action list-group-item" id="list-language-list"
+					   data-toggle="list" href="#list-language" role="tab" aria-controls="language">How do I change
+						the app language?</a>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="list-extensions" role="tabpanel"
+						 aria-labelledby="list-extensions-list">
+						<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host
+							content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and
+							ComiCake which contain sources which host directly from the scanlators own websites.
+							<br>
+							Here's a good spreadsheet showing the different extensions and their sources.</p>
+					</div>
+					<div class="tab-pane fade" id="list-third-party" role="tabpanel"
+						 aria-labelledby="list-third-party-list">
+						<div class="row">
+							<div class="">
+								<!-- crossorigin="use-credentials"  -->
+								<video autoplay crossorigin="use-credentials" height="355" intrinsicsize="400x688"
+									   loading="lazy" loop="loop"
+									   muted="muted" playsinline="playsinline" poster="assets/media/unknownapps-api25.png"
+									   preload="none" width="200">
+									<source src="assets/media/unknownapps-api25.webm" type="video/webm"/>
+									<source src="assets/media/unknownapps-api25.mp4" type="video/mp4"/>
+								</video>
+								<video autoplay height="355" intrinsicsize="400x688" loading="lazy" loop="loop"
+									   muted="muted" playsinline="playsinline" poster="assets/media/unknownapps-api28.png"
+									   preload="none" width="200">
+									<source src="assets/media/unknownapps-api28.webm" type="video/webm"/>
+									<source src="assets/media/unknownapps-api28.mp4" type="video/mp4"/>
+								</video>
+							</div>
+							<div class="">
+								<p>When installing your first extension and are promted that your phone isn't allowed to
+									install unknown apps from that source, simply press the <b class="">Settings</b> button
+									and then allow it.</p>
+								<p>Two example videos, left one is for newer Androids.</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="list-extensions-install" role="tabpanel"
+						 aria-labelledby="list-extensions-install-list">
+						<p>In some cases your phone might have some issues downloading the extensions, in those
+							cases you can try installing them yourselves directly from the source. Here's the
+							repository for the files.</p>
+						<p>To install just download the <b class="">.apk</b> file for the extension you want and then
+							install it,
+							like how you installed Tachiyomi.</p>
+					</div>
+					<div class="tab-pane fade" id="list-updates" role="tabpanel"
+						 aria-labelledby="list-updates-list">
+						<p> Tachiyomi app now has in-app updating for both stable and dev versions. If you go to
+							<b>Settings > About > Version</b> to check for updates, you can force an update there
+							or wait
+							for the app to notify you.</p>
+					</div>
+					<div class="tab-pane fade" id="list-displayed" role="tabpanel"
+						 aria-labelledby="list-displayed-list">
+						<p>Aside from network issues, it could be because the images are too big or the decoder
+							doesn't support that image.</p>
+					</div>
+					<div class="tab-pane fade" id="list-language" role="tabpanel"
+						 aria-labelledby="list-language-list">
+						<p>Tachiyomi is (as of writing) available in 35 different languages.</p>
+						<p>By default, the app language follows the language setting of your device.</p>
+						<p>You can also set your own preferred language for Tachiyomi. Simply from side panel go to
+							the <b class="">Settings > General > Language</b>.</p>
+						<p><b>Note</b>: Only the UI has been localized, content will still be
+							using the language of the
+							source selected (i.e. English for KissManga source, Some sources have multiple Language
+							too).</p>
+					</div>
+					<!-- <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div> -->
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<a href="https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions" class="btn btn-primary active centered">More FAQ</a>
+		</div>
+	</div>
+</section>
+
+<section class="call-to-action-app section mobile" id="faq2">
+	<div class="container">
+		<div class="row ml-auto align-self-center">
+			<h2>Frequently Asked Questions</h2>
+		</div>
+		<div class="row ml-auto align-self-center">
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+									aria-expanded="true" aria-controls="collapseOne">
+								What are some good extensions?
+							</button>
+						</h5>
+					</div>
+
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						<div class="card-body">
+							<p>The most popular are MangaDex, MangaRock and MangaSee, these are large sites which host
+								content from scanlators, there's also extensions like Genkan, Madara, FoolSlide and
+								ComiCake which contain sources which host directly from the scanlators own websites.
+								<br>
+								Here's a good spreadsheet showing the different extensions and their sources.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+									aria-expanded="false" aria-controls="collapseTwo">
+								How do I allow third-party installations?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						<div class="card-body">
+							<div class="inlineDisplay">
+								<!-- crossorigin="use-credentials"  -->
+								<video autoplay crossorigin="use-credentials" height="355" intrinsicsize="400x688"
+									   loading="lazy" loop="loop"
+									   muted="muted" playsinline="playsinline"
+									   poster="assets/media/unknownapps-api25.png"
+									   preload="none" width="200">
+									<source src="assets/media/unknownapps-api25.webm" type="video/webm"/>
+									<source src="assets/media/unknownapps-api25.mp4" type="video/mp4"/>
+								</video>
+								<video autoplay height="355" intrinsicsize="400x688" loading="lazy" loop="loop"
+									   muted="muted" playsinline="playsinline"
+									   poster="assets/media/unknownapps-api28.png"
+									   preload="none" width="200">
+									<source src="assets/media/unknownapps-api28.webm" type="video/webm"/>
+									<source src="assets/media/unknownapps-api28.mp4" type="video/mp4"/>
+								</video>
+							</div>
+							<div class="inlineDisplay">
+								<p>When installing your first extension and are promted that your phone isn't allowed to
+									install unknown apps from that source, simply press the <b class="">Settings</b> button
+									and then allow it.</p>
+								<p>Two example videos, left one is for newer Androids.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+									aria-expanded="false" aria-controls="collapseThree">
+								Why won't the extensions install?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+						<div class="card-body">
+							<p>In some cases your phone might have some issues downloading the extensions, in those
+								cases you can try installing them yourselves directly from the source. Here's the
+								repository for the files.</p>
+							<p>To install just download the <b class="">.apk</b> file for the extension you want and then
+								install it,
+								like how you installed Tachiyomi.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+									aria-expanded="false" aria-controls="collapseFour">
+								Does Tachiyomi have automatic updates?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+						<div class="card-body">
+							<p> Tachiyomi app now has in-app updating for both stable and dev versions. If you go to
+								<b class="">Settings > About > Version</b> to check for updates, you can force an update
+								there
+								or wait for the app to notify you.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFive">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+									aria-expanded="false" aria-controls="collapseFive">
+								Why are some images not displayed?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+						<div class="card-body">
+							<p>Aside from network issues, it could be because the images are too big or the decoder
+								doesn't support that image.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingSix">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+									aria-expanded="false" aria-controls="collapseSix">
+								How do I change the app language?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+						<div class="card-body">
+							<p>Tachiyomi is (as of writing) available in 35 different languages.</p>
+							<p>By default, the app language follows the language setting of your device.</p>
+							<p>You can also set your own preferred language for Tachiyomi. Simply from side panel go to
+								the <b class="">Settings > General > Language</b>.</p>
+							<p><span class="text-primary">Note</span>: Only the UI has been localized, content will
+								still be using the language of the
+								source selected (i.e. English for KissManga source, Some sources have multiple Language
+								too).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<a href="https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions" class="btn btn-primary active centered">More FAQ</a>
+		</div>
+	</div>
+</section>
+<!--====  End of FAQ  ====-->
+
+<section class="call-to-action-app section bg-white" id="issues">
+	<div class="container">
+		<h2>Lastest issues</h2>
+		<div class="list-group issuesList"></div>
+	</div>
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-12 m-md-auto align-self-center">
+				<div class="block">
+					<a href="index.html"><img src="assets/media/tachiyomi.png" alt="footer-logo"></a>
+					<!-- Social Site Icons -->
+					<ul class="social-icon list-inline">
+						<li class="list-inline-item">
+							<a href="https://github.com/inorichi/tachiyomi" target="_blank"><i class="icon-github"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.reddit.com/r/Tachiyomi/" target="_blank"><i class="icon-reddit-alien"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://discord.gg/tachiyomi" target="_blank"><i class="icon-discord"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div class="block-2">
+					<!-- heading -->
+					<h6>Menu</h6>
+					<!-- links -->
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#features">Feature</a></li>
+						<li class="desktop"><a href="#faq">FAQ</a></li>
+						<li class="mobile"><a href="#faq2">FAQ</a></li>
+						<li><a href="#guide">Guide</a></li>
+<!--						<li class="mobile"><a href="#guide2">Guide</a></li>-->
+						<li><a href="#issues">Issues</a></li>
+					</ul>
+				</div>
+			</div>
+<!--			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">-->
+<!--				<div class="block-2">-->
+<!--					&lt;!&ndash; heading &ndash;&gt;-->
+<!--					<h6>Resources</h6>-->
+<!--					&lt;!&ndash; links &ndash;&gt;-->
+<!--					<ul>-->
+<!--						<li><a href="#">Help & Support</a></li>-->
+<!--						<li><a href="#">Blog</a></li>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">-->
+<!--				<div class="block-2">-->
+<!--					&lt;!&ndash; heading &ndash;&gt;-->
+<!--					<h6>Company</h6>-->
+<!--					&lt;!&ndash; links &ndash;&gt;-->
+<!--					<ul>-->
+<!--						<li><a href="#">Contact</a></li>-->
+<!--						<li><a href="#">Investor</a></li>-->
+<!--						<li><a href="#">Terms</a></li>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--			</div>-->
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div class="block-2">
+					<!-- heading -->
+					<h6>Github links</h6>
+					<!-- links -->
+					<ul>
+						<li><a href="https://github.com/inorichi/tachiyomi" target="_blank">Repository</a></li>
+						<li><a href="https://github.com/inorichi/tachiyomi/wiki/FAQ" target="_blank">FAQ</a></li>
+						<li><a href="https://github.com/inorichi/tachiyomi/issues" target="_blank">Issues</a></li>
+						<li><a href="https://github.com/inorichi/tachiyomi/wiki/Extensions" target="_blank">Extensions</a></li>
+						<li><a href="https://github.com/inorichi/tachiyomi/wiki" target="_blank">Wiki</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- JAVASCRIPTS -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap-material-design.min.js"></script>
+<script src="assets/js/isInViewport.min.js"></script>
+<script src="assets/js/javascript.js"></script>
+</body>
+
 </html>
