@@ -2,8 +2,8 @@
 	"name": "tachiyomi-website",
 	"version": "0.0.0",
 	"scripts": {
-		"build": "cp -R src/ build/",
-		"deploy": "npm run build && gh-pages -d build"
+		"build": "cp -R src/ public/",
+		"serve": "npm run build && http-server"
 	},
 	"repository": {
 		"type": "git",
@@ -11,6 +11,6 @@
 	},
 	"private": true,
 	"devDependencies": {
-		"gh-pages": "^2.1.1"
+		"http-server": "^0.11.1"
 	}
 }

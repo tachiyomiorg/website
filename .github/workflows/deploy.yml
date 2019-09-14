@@ -1,0 +1,30 @@
+name: Build and deploy website
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Install Node v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Build website
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy website
+        uses: peaceiris/actions-gh-pages@v2.3.0
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
+        with:
+          emptyCommits: false
