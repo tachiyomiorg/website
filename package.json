@@ -1,0 +1,16 @@
+{
+	"name": "tachiyomi-website",
+	"version": "0.0.0",
+	"scripts": {
+		"build": "cp -R src/ build/",
+		"deploy": "npm run build && gh-pages -d build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tachiyomiorg/website.git"
+	},
+	"private": true,
+	"devDependencies": {
+		"gh-pages": "^2.1.1"
+	}
+}
