@@ -87,7 +87,11 @@ source, Some sources have multiple Language too).
 
 If you want to help translate Tachiyomi, read [this].
 
-![weblate](https://hosted.weblate.org/widgets/tachiyomi/-/multi-auto.svg)
+<figure>
+	<a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget" target="_blank">
+		<img src="https://hosted.weblate.org/widgets/tachiyomi/-/multi-auto.svg">
+	</a>
+</figure>
 
 [this]: https://github.com/inorichi/tachiyomi/wiki/Translation
 

@@ -39,7 +39,7 @@ module.exports = {
 				label: 'Português (Brasil)',
 				nav: [
 					{ text: 'Guia', link: '/pt/guide/' },
-					{ text: 'FAQ', link: '/faq/' },
+					{ text: 'FAQ', link: '/pt/faq/' },
 					{ text: 'Wiki', link: 'https://github.com/inorichi/tachiyomi/wiki' },
 					{ text: 'Discord', link: 'https://discord.gg/tachiyomi' }
 				],
