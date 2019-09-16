@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./src/assets/media/tachiyomi.png">Tachiyomi Website</h1>
+<h1 align="center"><img src="./src/.vuepress/public/assets/media/tachiyomi.png">Tachiyomi Website</h1>
 <p align="center">
   <a href="https://discord.gg/tachiyomi">
     <img src="https://img.shields.io/discord/349436576037732353.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
