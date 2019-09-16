@@ -6,7 +6,7 @@ actionText: Get Started →
 actionLink: /guide/
 features:
     - title: Extensions
-      details: Online reading from sources such as KissManga, MangaDex e mais.
+      details: Online reading from sources such as KissManga, MangaDex and more.
     - title: Tracking
       details: MyAnimeList, AniList and Kitsu support.
     - title: Configurable
