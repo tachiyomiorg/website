@@ -13,4 +13,4 @@ node_modules/
 npm-debug.log
 
 # Compiled site
-public/
+./public/

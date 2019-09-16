@@ -2,8 +2,8 @@
 	"name": "tachiyomi-website",
 	"version": "0.0.0",
 	"scripts": {
-		"build": "cp -R src/ public/",
-		"serve": "npm run build && http-server"
+		"build": "vuepress build src",
+		"serve": "vuepress dev src"
 	},
 	"repository": {
 		"type": "git",
@@ -11,6 +11,7 @@
 	},
 	"private": true,
 	"devDependencies": {
-		"http-server": "^0.11.1"
+		"http-server": "^0.11.1",
+		"vuepress": "^1.1.0"
 	}
 }
