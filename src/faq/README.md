@@ -6,9 +6,8 @@ sidebarDepth: 2
 
 # FAQ
 
-You can find more frequently asked questions [here].
-
-[here]: https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions
+You can find more frequently asked questions
+[here](https://github.com/inorichi/tachiyomi/wiki/FAQ#frequently-asked-questions).
 
 ## App questions
 
@@ -19,10 +18,8 @@ sites which host content from scanlators, there's also extensions like
 Genkan, Madara, FoolSlide and ComiCake which contain sources which
 host directly from the scanlators own websites.
 
-[Here] is a good spreadsheet showing the different extensions and
-their sources.
-
-[Here]: https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0
+[Here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
+is a good spreadsheet showing the different extensions and their sources.
 
 ### How do I allow third-party installations?
 
@@ -85,15 +82,13 @@ the language of the source selected (i.e. English for KissManga
 source, Some sources have multiple Language too).
 :::
 
-If you want to help translate Tachiyomi, read [this].
+If you want to help translate Tachiyomi, read [this](https://github.com/inorichi/tachiyomi/wiki/Translation).
 
 <figure>
 	<a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget" target="_blank">
 		<img src="https://hosted.weblate.org/widgets/tachiyomi/-/multi-auto.svg">
 	</a>
 </figure>
-
-[this]: https://github.com/inorichi/tachiyomi/wiki/Translation
 
 ## MangaDex
 

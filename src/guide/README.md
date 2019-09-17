@@ -5,12 +5,13 @@ lang: en-US
 
 ## Installation
 
-Download the latest stable release of Tachiyomi from [GitHub].
+Download the latest stable release of Tachiyomi from
+[GitHub](https://github.com/inorichi/tachiyomi/releases/latest).
 
 `tachiyomi-vX.Y.Z.apk`
 
 If you want to try new features before they get to the stable release,
-you can download the dev version [here].
+you can download the dev version [here](http://tachiyomi.kanade.eu/latest).
 
 Open and install the `.apk` file you just downloaded from GitHub.
 
@@ -18,9 +19,6 @@ Open and install the `.apk` file you just downloaded from GitHub.
 	<img height="145" intrinsicsize="1000x500" width="300"
 	  :src="$withBase('/assets/media/installprompt.png')">
 </figure>
-
-[GitHub]: https://github.com/inorichi/tachiyomi/releases/latest
-[here]: http://tachiyomi.kanade.eu/latest
 
 ## Installing an extension
 
@@ -68,5 +66,3 @@ It should now appear in your `My Library` tab, ready to be read!
 		<source :src="$withBase('/assets/media/addtolibrary.mp4')" type="video/mp4" />
 	</video>
 </figure>
-
-

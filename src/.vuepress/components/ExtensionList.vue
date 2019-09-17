@@ -20,12 +20,12 @@
 </template>
 
 <script>
-const axios = require('axios')
-const groupBy = require('lodash/groupBy')
-const sortBy = require('lodash/sortBy')
-const ISO6391 = require('iso-639-1').default
+import axios from 'axios';
+import groupBy from 'lodash.groupby';
+import sortBy from 'lodash.sortby';
+import ISO6391 from 'iso-639-1';
 
-const EXTENSION_JSON = 'https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/index.json'
+const EXTENSION_JSON = 'https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/index.json';
 
 export default {
 	data: function () {
@@ -36,60 +36,60 @@ export default {
 	methods: {
 		langName: code => code === 'all' ? 'All' : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`,
 		iconUrl (pkg) {
-			const pkgName = pkg.substring(0, pkg.lastIndexOf('.'))
-			return `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/icon/${pkgName}.png`
+			const pkgName = pkg.substring(0, pkg.lastIndexOf('.'));
+			return `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/icon/${pkgName}.png`;
 		},
 		apkUrl: apk => `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`
 	},
 	async beforeMount () {
-		const { data } = await axios.get(EXTENSION_JSON)
-		const values = Object.values(groupBy(data, 'lang'))
-		this.$data.extensions = sortBy(values, [g => this.langName(g[0].lang)])
+		const { data } = await axios.get(EXTENSION_JSON);
+		const values = Object.values(groupBy(data, 'lang'));
+		this.$data.extensions = sortBy(values, [g => this.langName(g[0].lang)]);
 	}
 }
 </script>
 
-<style>
+<style lang="scss">
 .extension {
 	display: flex;
 	align-items: center;
 	padding: 0.4em 0.2em;
-}
 
-.extension:not(:last-child) {
-	border-bottom: 1px solid #eaecef;
-}
+	&:not(:last-child) {
+		border-bottom: 1px solid #eaecef;
+	}
 
-.extension img {
-	margin-right: 0.5em;
-}
+	img {
+		margin-right: 0.5em;
+	}
 
-.extension .extension-text {
-	flex: 1;
-}
+	.extension-text {
+		flex: 1;
 
-.extension .extension-text .down {
-	font-size: 0.8rem;
-	font-family: monospace;
-	color: #6c757d;
-}
+		.down {
+			font-size: 0.8rem;
+			font-family: monospace;
+			color: #6c757d;
+		}
+	}
 
-.extension .button {
-    display: inline-block;
-	font-size: 0.8em;
-    color: #fff;
-    background-color: #2e84bf;
-    padding: 0.3rem;
-    border-radius: 4px;
-    transition: background-color 0.1s ease;
-    box-sizing: border-box;
-    border-bottom: 1px solid #2977ac;
-	text-transform: uppercase;
-}
+	.button {
+		display: inline-block;
+		font-size: 0.8em;
+		color: #fff;
+		background-color: #2e84bf;
+		padding: 0.3rem;
+		border-radius: 4px;
+		transition: background-color 0.1s ease;
+		box-sizing: border-box;
+		border-bottom: 1px solid #2977ac;
+		text-transform: uppercase;
 
-.extension .button:hover {
-	background-color: #3992cf;
-	text-decoration: none !important;
+		&:hover {
+			background-color: #3992cf;
+			text-decoration: none !important;
+		}
+	}
 }
 
 .bold {
