@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div v-for="extensionGroup in extensions" :key="extensionGroup[0].lang">
-			<h2>{{ langName(extensionGroup[0].lang) }}</h2>
+			<h3>{{ langName(extensionGroup[0].lang) }}</h3>
 			<div class="extension" v-for="extension in extensionGroup" :key="extension.apk">
 				<img :src="iconUrl(extension.apk)" width="42" height="42">
 				<div class="extension-text">
@@ -34,7 +34,7 @@ export default {
 		}
 	},
 	methods: {
-		langName: code => code === 'all' ? 'All' : ISO6391.getName(code),
+		langName: code => code === 'all' ? 'All' : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`,
 		iconUrl (pkg) {
 			const pkgName = pkg.substring(0, pkg.lastIndexOf('.'))
 			return `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/icon/${pkgName}.png`
