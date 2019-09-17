@@ -10,13 +10,15 @@ module.exports = {
 		nav: [
 			{ text: 'Guide', link: '/guide/' },
 			{ text: 'FAQ', link: '/faq/' },
+			{ text: 'Extensions', link: '/extensions/' },
 			{ text: 'Wiki', link: 'https://github.com/inorichi/tachiyomi/wiki' },
 			{ text: 'Discord', link: 'https://discord.gg/tachiyomi' }
 		],
 		sidebar: [
 			'/',
 			'/guide/',
-			'/faq/'
+			'/faq/',
+			'/extensions/'
 		],
 		lastUpdated: 'Last Updated'
 	}
