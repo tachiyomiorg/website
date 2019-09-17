@@ -92,10 +92,6 @@ export default {
 	}
 }
 
-.bold {
-	font-weight: bold;
-}
-
 @media (max-width: 767px) {
 	.extension .extension-text .down {
 		display: none;
