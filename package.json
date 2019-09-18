@@ -2,8 +2,8 @@
 	"name": "tachiyomi-website",
 	"version": "0.0.0",
 	"scripts": {
-		"build": "cp -R src/ public/",
-		"serve": "npm run build && http-server"
+		"build": "vuepress build src",
+		"serve": "vuepress dev src"
 	},
 	"repository": {
 		"type": "git",
@@ -11,6 +11,14 @@
 	},
 	"private": true,
 	"devDependencies": {
-		"http-server": "^0.11.1"
+		"node-sass": "^4.12.0",
+		"sass-loader": "^8.0.0",
+		"vuepress": "^1.1.0"
+	},
+	"dependencies": {
+		"axios": "^0.19.0",
+		"iso-639-1": "^2.1.0",
+		"lodash.groupby": "^4.6.0",
+		"lodash.sortby": "^4.7.0"
 	}
 }
