@@ -35,6 +35,14 @@ module.exports = {
 			{
 			'ga': 'UA-148212082-1'
 			}
+		],
+		[
+		  "container",
+		  {
+			type: "spoiler",
+			before: info => "<details><summary>" + info + "</summary>\n",
+			after: "</details>\n"
+		  }
 		]
 	]
 }
