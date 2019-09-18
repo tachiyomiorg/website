@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import groupBy from 'lodash.groupby';
 import sortBy from 'lodash.sortby';
 import ISO6391 from 'iso-639-1';
@@ -42,7 +41,9 @@ export default {
 		apkUrl: apk => `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`
 	},
 	async beforeMount () {
-		const { data } = await axios.get(EXTENSION_JSON);
+		const response = await fetch(EXTENSION_JSON);
+		const data = await response.json();
+
 		const values = Object.values(groupBy(data, 'lang'));
 		this.$data.extensions = sortBy(values, [g => this.langName(g[0].lang)]);
 	}
