@@ -8,16 +8,22 @@ module.exports = {
 		docsDir: 'src',
 		editLinks: true,
 		nav: [
-			{ text: 'Guide', link: '/guide/' },
-			{ text: 'FAQ', link: '/faq/' },
+			{ text: 'Guide', link: '/help/guide/' },
+			{ text: 'FAQ', link: '/help/faq/' },
 			{ text: 'Extensions', link: '/extensions/' },
 			{ text: 'Wiki', link: 'https://github.com/inorichi/tachiyomi/wiki' },
-			{ text: 'Discord', link: 'https://discord.gg/tachiyomi' }
+			{ text: 'Discord', link: 'https://discord.gg/tachiyomi' },
+			{ text: 'Reddit', link: 'https://reddit.com/r/Tachiyomi' }
 		],
 		sidebar: [
 			'/',
-			'/guide/',
-			'/faq/',
+			'/help/guide/',
+			{
+				title: 'FAQ',
+				path: '/help/faq/',
+				collapsable: false,
+				children: ['/help/faq/application/', '/help/faq/extensions/']
+			},
 			'/extensions/'
 		],
 		lastUpdated: 'Last Updated'
