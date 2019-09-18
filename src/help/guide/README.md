@@ -31,7 +31,7 @@ will be shown.
 
 If you're getting stopped by a security prompt and don't know what to do
 you can read this FAQ section: ["How do I allow third-party installations
-on my phone?"](/faq/extensions/#how-do-i-allow-third-party-installations).
+on my phone?"](/help/faq/extensions/#how-do-i-allow-third-party-installations).
 
 <figure class="centered">
 	<video autoplay crossorigin="use-credentials" height="534"
