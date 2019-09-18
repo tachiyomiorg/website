@@ -10,5 +10,5 @@ Here you can find the frequently asked questions.
 
 They are separated by the categories listed below.
 
-- [Application](/faq/application/)
-- [Extensions](/faq/extensions/)
+- [Application](/help/faq/application/)
+- [Extensions](/help/faq/extensions/)

@@ -3,7 +3,7 @@ home: true
 lang: en-US
 heroImage: /assets/media/hero.png
 actionText: Get Started →
-actionLink: /guide/
+actionLink: /help/guide/
 features:
     - title: Extensions
       details: Online reading from sources such as KissManga, MangaDex and more.
