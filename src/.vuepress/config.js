@@ -17,7 +17,12 @@ module.exports = {
 		sidebar: [
 			'/',
 			'/guide/',
-			'/faq/',
+			{
+				title: 'FAQ',
+				path: '/faq/',
+				collapsable: false,
+				children: ['/faq/application/', '/faq/extensions/']
+			},
 			'/extensions/'
 		],
 		lastUpdated: 'Last Updated'
