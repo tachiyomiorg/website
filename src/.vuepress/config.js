@@ -37,8 +37,8 @@ module.exports = {
 			{ 'ga': 'UA-148212082-1' }
 		],
 		[
-		"container",
-			{ type: "expander", before: info => "<details><summary>" + info + "</summary>\n", after: "</details>\n" }
+		'container',
+			{ type: 'expander', before: info => '<details><summary>' + info + '</summary>\n', after: '</details>\n' }
 		]
 	]
 }
