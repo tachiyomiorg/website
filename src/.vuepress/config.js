@@ -1,6 +1,6 @@
 module.exports = {
 	title: 'Tachiyomi',
-	description: 'Free and open source manga reader for Android',
+	description: 'Free and open source manga reader for Android.',
 	dest: './public',
 	themeConfig: {
 		repo: 'inorichi/tachiyomi',
@@ -21,5 +21,14 @@ module.exports = {
 			'/extensions/'
 		],
 		lastUpdated: 'Last Updated'
-	}
+	},
+	plugins: [
+		['@vuepress/back-to-top'],
+		[
+		'@vuepress/google-analytics',
+			{
+			'ga': 'UA-148212082-1'
+			}
+		]
+	]
 }

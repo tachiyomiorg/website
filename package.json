@@ -11,6 +11,8 @@
 	},
 	"private": true,
 	"devDependencies": {
+		"@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+		"@vuepress/plugin-google-analytics": "^1.1.0",
 		"node-sass": "^4.12.0",
 		"sass-loader": "^8.0.0",
 		"vuepress": "^1.1.0"
