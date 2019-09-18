@@ -38,7 +38,11 @@ module.exports = {
 		],
 		[
 		'container',
-			{ type: 'expander', before: info => '<details><summary>' + info + '</summary>\n', after: '</details>\n' }
+			{
+				type: 'expander',
+				before: info => `<details><summary>${info}</summary>\n`,
+				after: '</details>\n' 
+			}
 		]
 	]
 }
