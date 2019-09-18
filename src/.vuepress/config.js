@@ -29,20 +29,16 @@ module.exports = {
 		lastUpdated: 'Last Updated'
 	},
 	plugins: [
-		['@vuepress/back-to-top'],
 		[
-		'@vuepress/google-analytics',
-			{
-			'ga': 'UA-148212082-1'
-			}
+		'@vuepress/back-to-top'
 		],
 		[
-		  "container",
-		  {
-			type: "spoiler",
-			before: info => "<details><summary>" + info + "</summary>\n",
-			after: "</details>\n"
-		  }
+		'@vuepress/google-analytics',
+			{ 'ga': 'UA-148212082-1' }
+		],
+		[
+		"container",
+			{ type: "expander", before: info => "<details><summary>" + info + "</summary>\n", after: "</details>\n" }
 		]
 	]
 }

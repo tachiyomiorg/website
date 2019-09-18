@@ -70,7 +70,7 @@ a manga, you will need to reinstall the extensions you used to use. Which
 number in the menu corresponds to which is below. Be aware that Batoto is
 deprecated so you will need to migrate from that source to others.
 
-::: spoiler <b>Click to expand!</b>
+::: expander <strong>Click to expand!</strong>
 ::: tip
 1. Batoto
 2. Mangahere
@@ -131,7 +131,7 @@ settings and set WebView Implementation to Android System WebView.
 Some extensions contain multiple sources, look at the list below to find
 out which extension to install for the specific source that you want.
 
-::: spoiler <b>Click to expand!</b>
+::: expander <strong>Click to expand!</strong>
 ::: tip
 1. Comicake
    - Whim Scans
