@@ -5,10 +5,12 @@ lang: en-US
 
 ## Installation
 
-Download the latest stable release of Tachiyomi from
-[GitHub](https://github.com/inorichi/tachiyomi/releases/latest).
+[![github](https://img.shields.io/github/release/inorichi/tachiyomi.svg?style=for-the-badge&maxAge=600)](https://github.com/inorichi/tachiyomi/releases/latest) [![github downloads](https://img.shields.io/github/downloads/inorichi/tachiyomi/total.svg?style=for-the-badge&maxAge=600)](http://www.somsubhra.com/github-release-stats/?username=inorichi&repository=tachiyomi)
 
-`tachiyomi-vX.Y.Z.apk`
+You can download the latest version of `Tachiyomi` from the [GitHub releases](https://github.com/inorichi/tachiyomi/releases/latest).
+
+<Badge text="tachiyomi-vX.Y.Z.apk"/>
+
 
 If you want to try new features before they get to the stable release,
 you can download the dev version [here](http://tachiyomi.kanade.eu/latest).

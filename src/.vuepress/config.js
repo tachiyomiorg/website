@@ -34,6 +34,9 @@ module.exports = {
 		'@vuepress/back-to-top'
 		],
 		[
+		'reading-progress'
+		],
+		[
 		'@vuepress/google-analytics',
 			{ 'ga': 'UA-148212082-1' }
 		],
