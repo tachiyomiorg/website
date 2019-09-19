@@ -19,7 +19,7 @@ module.exports = {
 			'/',
 			{
 				title: 'Guides',
-				children: ['/help/guides/getting-started', '/help/guides/reading-local-manga']
+				children: ['/help/guides/getting-started', '/help/guides/reading-local-manga', '/help/guides/source-problems', '/help/guides/translation']
 			},
 			{
 				title: 'FAQ',

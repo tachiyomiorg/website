@@ -1,7 +1,9 @@
 ---
-title: Getting Started
+title: Getting started
 lang: en-US
 ---
+
+# Getting started
 
 ## Installation
 

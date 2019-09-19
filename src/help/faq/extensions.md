@@ -84,48 +84,6 @@ deprecated so you will need to migrate from that source to others.
 10. WieManga
 :::
 
-## Source problems
-
-Create your issue or see if it's already been listed
-[**here**](https://github.com/inorichi/tachiyomi-extensions/issues).
-
-### Why am I getting a 503 in (this source)?
-
-This may be on account that the source you selected has Cloudflare protection
-on, so you will need to do a captcha through webview (Not your browser).
-To do this, you will need to find a manga in your library that is from
-the source you're trying to access, tap on the overflow menu in the Info
-tab (3 dots), open in Webview, and do the captcha there (wait for the page
-to finish loading). Be sure to press back rather than exit the app and if
-that does not work, use the back arrow.
-
-### Cloudflare captcha
-
-Please note that webview is not the same as using your browser.
-Webview is a new feature introduced in stable version `0.8.4` to allow
-for log-in only features and solving captcha.
-
-You can find the web view option by opening a manga, then tapping the 3
-dots in the top right while in the `Info` tab. If you have no existing
-manga from the source, go to `Catalogues`, press `Browse` beside the
-source, and open a manga, following the above instructions.
-
-Once you are in webview, you will see a webpage and a bar on top with
-an arrow at the left side, pointing to the left edge of your screen.
-If there is no captcha on the webpage, initiate one by tapping a manga
-title, if possible. Once a captcha is shown, solve it. After that, use
-the aforementioned back arrow on the bar at the top of your screen to
-go back to your manga. Please do not use the back button on your phone
-as it does not work as expected.
-
-If webview doesn't work for you, please update the Android System WebView
-app through Play Store, then go to `Developer Options` in your phone's
-settings and set WebView Implementation to Android System WebView.
-
-<figure class="centered">
-	<img :src="$withBase('/assets/media/openinwebview.jpg')">
-</figure>
-
 ### Which sources are there in the multi-source extensions?
 
 Some extensions contain multiple sources, look at the list below to find
@@ -230,6 +188,50 @@ out which extension to install for the specific source that you want.
    - Valhalla Scans
    - NANI? Scans
 :::
+
+## Source problems
+
+Create your issue or see if it's already been listed
+[**here**](https://github.com/inorichi/tachiyomi-extensions/issues).
+
+You can read more about source problems in [our guide](../guides/source-problems.md).
+
+### Why am I getting a 503 in (this source)?
+
+This may be on account that the source you selected has Cloudflare protection
+on, so you will need to do a captcha through webview (Not your browser).
+To do this, you will need to find a manga in your library that is from
+the source you're trying to access, tap on the overflow menu in the Info
+tab (3 dots), open in Webview, and do the captcha there (wait for the page
+to finish loading). Be sure to press back rather than exit the app and if
+that does not work, use the back arrow.
+
+### Cloudflare captcha
+
+Please note that webview is not the same as using your browser.
+Webview is a new feature introduced in stable version `0.8.4` to allow
+for log-in only features and solving captcha.
+
+You can find the web view option by opening a manga, then tapping the 3
+dots in the top right while in the `Info` tab. If you have no existing
+manga from the source, go to `Catalogues`, press `Browse` beside the
+source, and open a manga, following the above instructions.
+
+Once you are in webview, you will see a webpage and a bar on top with
+an arrow at the left side, pointing to the left edge of your screen.
+If there is no captcha on the webpage, initiate one by tapping a manga
+title, if possible. Once a captcha is shown, solve it. After that, use
+the aforementioned back arrow on the bar at the top of your screen to
+go back to your manga. Please do not use the back button on your phone
+as it does not work as expected.
+
+If webview doesn't work for you, please update the Android System WebView
+app through Play Store, then go to `Developer Options` in your phone's
+settings and set WebView Implementation to Android System WebView.
+
+<figure class="centered">
+	<img :src="$withBase('/assets/media/openinwebview.jpg')">
+</figure>
 
 ### Error: java.lang Exception: Challenge not found
 
