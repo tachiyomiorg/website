@@ -65,10 +65,11 @@ so when upgrading or installing versions above this, installing the extensions
 you use will be required to install extensions from the extensions menu
 (the one with the puzzle piece).
 
-**B:** If you're getting a "Loader not implemented" error after clicking on
-a manga, you will need to reinstall the extensions you used to use. Which
-number in the menu corresponds to which is below. Be aware that Batoto is
-deprecated so you will need to migrate from that source to others.
+**B:** If you're getting a "Loader not implemented" error after clicking on a manga, you will need to reinstall the extensions you used to use. Which number in the menu corresponds to which is below.
+
+::: warning
+Be aware that Batoto is deprecated so you will need to migrate from that source to others.
+:::
 
 ::: expander <strong>Click to expand!</strong>
 ::: tip
@@ -86,8 +87,7 @@ deprecated so you will need to migrate from that source to others.
 
 ### Which sources are there in the multi-source extensions?
 
-Some extensions contain multiple sources, look at the list below to find
-out which extension to install for the specific source that you want.
+Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
 
 ::: expander <strong>Click to expand!</strong>
 ::: tip
@@ -189,50 +189,6 @@ out which extension to install for the specific source that you want.
    - NANI? Scans
 :::
 
-## Source problems
-
-Create your issue or see if it's already been listed
-[**here**](https://github.com/inorichi/tachiyomi-extensions/issues).
-
-You can read more about source problems in [our guide](../guides/source-problems.md).
-
-### Why am I getting a 503 in (this source)?
-
-This may be on account that the source you selected has Cloudflare protection
-on, so you will need to do a captcha through webview (Not your browser).
-To do this, you will need to find a manga in your library that is from
-the source you're trying to access, tap on the overflow menu in the Info
-tab (3 dots), open in Webview, and do the captcha there (wait for the page
-to finish loading). Be sure to press back rather than exit the app and if
-that does not work, use the back arrow.
-
-### Cloudflare captcha
-
-Please note that webview is not the same as using your browser.
-Webview is a new feature introduced in stable version `0.8.4` to allow
-for log-in only features and solving captcha.
-
-You can find the web view option by opening a manga, then tapping the 3
-dots in the top right while in the `Info` tab. If you have no existing
-manga from the source, go to `Catalogues`, press `Browse` beside the
-source, and open a manga, following the above instructions.
-
-Once you are in webview, you will see a webpage and a bar on top with
-an arrow at the left side, pointing to the left edge of your screen.
-If there is no captcha on the webpage, initiate one by tapping a manga
-title, if possible. Once a captcha is shown, solve it. After that, use
-the aforementioned back arrow on the bar at the top of your screen to
-go back to your manga. Please do not use the back button on your phone
-as it does not work as expected.
-
-If webview doesn't work for you, please update the Android System WebView
-app through Play Store, then go to `Developer Options` in your phone's
-settings and set WebView Implementation to Android System WebView.
-
-<figure class="centered">
-	<img :src="$withBase('/assets/media/openinwebview.jpg')">
-</figure>
-
 ### Error: java.lang Exception: Challenge not found
 
 Try closing (force-quit) and reopening Tachiyomi.
@@ -245,47 +201,40 @@ Try closing (force-quit) and reopening Tachiyomi.
 Make sure you're on app version `0.8.4` or higher.
 :::
 
-If you're not getting any results when searching MangaDex then
-you need to log in.
+If you're not getting any results when searching MangaDex then you need to log in.
 
-To do so, go to `Browse`/`Latest` for MangaDex under `Catalogues`, open
-any manga from the list and then press the overflow menu (3 dot menu)
-in the top-right corner and then the `Open in web view` button.
+To do so, go to `Browse`/`Latest` for MangaDex under `Catalogues`, open any manga from the list and then press the overflow menu (3 dot menu) in the top-right corner and then the `Open in web view` button.
 
-Now go to the hamburger menu, press the `Manga` drop-down and then
-choose either `Sign up` or `Log in` to proceed with the log in.
+Now go to the hamburger menu, press the `Manga` drop-down and then choose either `Sign up` or `Log in` to proceed with the log in.
 
 ### Alternate searching method
 
-In `Mangadex 1.2.52` and newer the extension allows you to search using
-the id number to find manga. To get the id number look at the URL of
-the manga you want to add.
+In `Mangadex 1.2.52` and newer the extension allows you to search using the id number to find manga. To get the id number look at the URL of the manga you want to add.
 
 An example search: `id:31477`.
 
 ### Chapters from Mangaplus are broken
 
-Install the Mangaplus extension and then migrate the manga that
-uses Mangaplus on Mangadex onto the Mangaplus source.
+Install the Mangaplus extension and then migrate the manga that uses Mangaplus on Mangadex onto the Mangaplus source.
 
 ## MangaRock
 
-### Regarding MangaRock going away:
+#### Regarding MangaRock going away:
 
 - You won't lose existing bookmarks or downloads.
 - Chapters will no longer be updated once MangaRock is dead.
-- There is no native way to automatically import your favorites from
-  MangaRock (although you can try [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi)).
+- There is no native way to automatically import your favorites from MangaRock (although you can try [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi)).
 - Popular alternatives: Mangasee, Kissmanga, MangaDex, Mangakakalot, Toonily.
 
-### Migrate to Tachiyomi
+::: tip
+Read more about the situation [here](https://mrcomics.com/).
+:::
 
-There is a tool to migrate from MangaRock to Tachiyomi courtesy of a member
-of our Discord server by the same name as the creator, but a computer is
-required to finish the migration successfully.
+#### Migrate to Tachiyomi
 
-Note that you must download the 64-bit version of Java or it will run
-out of memory. Access the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
+There is a tool to migrate from MangaRock to Tachiyomi courtesy of a member of our Discord server by the same name as the creator, but a computer is required to finish the migration successfully.
+
+Note that you must download the 64-bit version of Java or it will run out of memory. Access the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 
 ## Madara
 
@@ -299,6 +248,4 @@ Install Genkan. Migrate all Leviatan scans. Update Madara.
 
 ### Error: Page list is empty
 
-If you get this error then you need to solve the captcha on their website
-using your browser (*Google Chrome*, *Samsung Browser*, *Firefox*, *Opera*,
-etc.).
+If you get this error then you need to solve the captcha on their website using your browser (*Google Chrome*, *Samsung Browser*, *Firefox*, *Opera*, etc.).
