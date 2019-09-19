@@ -11,7 +11,7 @@ features:
       details: MyAnimeList, AniList and Kitsu support.
     - title: Configurable
       details: Reader with multiple viewers, reading directions and other settings.
-footer: Designed with VuePress | MIT Licensed
+footer: Apache Licensed | Copyright © 2015-present Javier Tomás
 ---
 
 ![screens](/assets/media/screens.png)
