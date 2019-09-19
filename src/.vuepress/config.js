@@ -8,7 +8,7 @@ module.exports = {
 		docsDir: 'src',
 		editLinks: true,
 		nav: [
-			{ text: 'Guide', link: '/help/guide/' },
+			{ text: 'Guides', link: '/help/guides/getting-started' },
 			{ text: 'FAQ', link: '/help/faq/' },
 			{ text: 'Extensions', link: '/extensions/' },
 			{ text: 'Wiki', link: 'https://github.com/inorichi/tachiyomi/wiki' },
@@ -17,11 +17,13 @@ module.exports = {
 		],
 		sidebar: [
 			'/',
-			'/help/guide/',
+			{
+				title: 'Guides',
+				children: ['/help/guides/getting-started', '/help/guides/reading-local-manga']
+			},
 			{
 				title: 'FAQ',
 				path: '/help/faq/',
-				collapsable: false,
 				children: ['/help/faq/application/', '/help/faq/extensions/']
 			},
 			'/extensions/'
@@ -41,7 +43,7 @@ module.exports = {
 			{
 				type: 'expander',
 				before: info => `<details><summary>${info}</summary>\n`,
-				after: '</details>\n' 
+				after: '</details>\n'
 			}
 		]
 	]
