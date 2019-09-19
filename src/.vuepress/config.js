@@ -19,13 +19,11 @@ module.exports = {
 			'/',
 			{
 				title: 'Guides',
-				collapsable: false,
 				children: ['/help/guides/getting-started', '/help/guides/reading-local-manga']
 			},
 			{
 				title: 'FAQ',
 				path: '/help/faq/',
-				collapsable: false,
 				children: ['/help/faq/application/', '/help/faq/extensions/']
 			},
 			'/extensions/'
