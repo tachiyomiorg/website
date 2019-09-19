@@ -19,8 +19,7 @@ module.exports = {
 			'/',
 			{
 				title: 'Guides',
-				children:
-				[
+				children: [
 				'/help/guides/getting-started',
 				'/help/guides/reading-local-manga',
 				'/help/guides/source-problems',
@@ -29,8 +28,7 @@ module.exports = {
 			},
 			{
 				title: 'FAQ',
-				children:
-				[
+				children: [
 				'/help/faq/application/',
 				'/help/faq/extensions/'
 				]
