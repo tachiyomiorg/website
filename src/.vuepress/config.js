@@ -33,6 +33,9 @@ module.exports = {
 		'@vuepress/back-to-top'
 		],
 		[
+		'reading-progress'
+		],
+		[
 		'@vuepress/google-analytics',
 			{ 'ga': 'UA-148212082-1' }
 		],
@@ -41,7 +44,7 @@ module.exports = {
 			{
 				type: 'expander',
 				before: info => `<details><summary>${info}</summary>\n`,
-				after: '</details>\n' 
+				after: '</details>\n'
 			}
 		]
 	]

@@ -22,6 +22,7 @@
 		"iso-639-1": "^2.1.0",
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
-		"vuepress-plugin-container": "^2.0.2"
+		"vuepress-plugin-container": "^2.0.2",
+		"vuepress-plugin-reading-progress": "^1.0.7"
 	}
 }
