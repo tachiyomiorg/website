@@ -9,7 +9,7 @@ module.exports = {
 		editLinks: true,
 		nav: [
 			{ text: 'Guides', link: '/help/guides/getting-started' },
-			{ text: 'FAQ', link: '/help/faq/' },
+			{ text: 'FAQ', link: '/help/faq/application' },
 			{ text: 'Extensions', link: '/extensions/' },
 			{ text: 'Wiki', link: 'https://github.com/inorichi/tachiyomi/wiki' },
 			{ text: 'Discord', link: 'https://discord.gg/tachiyomi' },
@@ -23,8 +23,7 @@ module.exports = {
 			},
 			{
 				title: 'FAQ',
-				path: '/help/faq/',
-				children: ['/help/faq/application/', '/help/faq/extensions/']
+				children: ['/help/faq/application', '/help/faq/extensions']
 			},
 			'/extensions/'
 		],
