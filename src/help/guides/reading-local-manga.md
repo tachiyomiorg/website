@@ -5,8 +5,6 @@ lang: en-US
 
 # Reading local manga
 
-Since `v0.5.0`, Tachiyomi supports local manga.
-
 You have to place your manga inside the folder `Tachiyomi/local` located in
 the root of your internal storage or external SD card, usually `/sdcard`
 and `/storage/18F5-2C11` (with different values).
