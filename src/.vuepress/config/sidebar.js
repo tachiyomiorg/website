@@ -11,7 +11,19 @@ module.exports = [
 		]
 	},
 	{
-		title: 'FAQ',
+		title: 'Manual',
+		sidebarDepth: 2,
+		children: [
+			'/help/manual/general',
+			'/help/manual/reader',
+			'/help/manual/downloads',
+			'/help/manual/tracking',
+			'/help/manual/backup',
+			'/help/manual/advanced'
+		]
+	},
+	{
+		title: 'Frequently Asked Questions',
 		sidebarDepth: 2,
 		children: [
 			'/help/faq/application',
