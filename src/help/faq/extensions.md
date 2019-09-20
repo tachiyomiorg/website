@@ -60,7 +60,7 @@ then press `Uninstall`.
 
 ### Why don't I have extensions or any sources in the catalog?
 
-**A:** Tachiyomi `0.8.4` and above no longer have pre-installed extensions,
+**A:** `Tachiyomi 0.8.4` and above no longer have pre-installed extensions,
 so when upgrading or installing versions above this, installing the extensions
 you use will be required to install extensions from the extensions menu
 (the one with the puzzle piece).
