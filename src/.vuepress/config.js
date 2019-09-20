@@ -29,8 +29,8 @@ module.exports = {
 			{
 				title: 'FAQ',
 				children: [
-				'/help/faq/application/',
-				'/help/faq/extensions/'
+				'/help/faq/application',
+				'/help/faq/extensions'
 				]
 			},
 			'/extensions/'
