@@ -3,6 +3,8 @@ title: Extensions
 lang: en-US
 ---
 
+# Extensions
+
 ## General
 
 ### What are some good extensions?

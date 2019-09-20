@@ -4,6 +4,7 @@ lang: en-US
 ---
 
 # Advanced
+:construction: :construction_worker_man: W.I.P. Description, help us improve through [here](https://github.com/tachiyomiorg/website/edit/master/src/help/guides/advanced.md)!
 
 ## Clear chapter cache
 :construction: :construction_worker_man: W.I.P.

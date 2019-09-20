@@ -3,6 +3,8 @@ title: Application
 lang: en-US
 ---
 
+# Application
+
 ## Library
 
 ### How can I see how many chapters I've downloaded?
