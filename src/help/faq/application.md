@@ -1,7 +1,6 @@
 ---
 title: Application
 lang: en-US
-sidebarDepth: 2
 ---
 
 ## Library

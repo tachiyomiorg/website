@@ -1,7 +1,6 @@
 ---
 title: Extensions
 lang: en-US
-sidebarDepth: 2
 ---
 
 ## General
