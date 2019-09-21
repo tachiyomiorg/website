@@ -8,7 +8,7 @@ sidebarDepth: 2
 
 ### What are some good extensions?
 
-The most popular are MangaDex, MangaRock and MangaSee, these are large
+The most popular are MangaDex, MangaSee and Mangakakalot, these are large
 sites which host content from scanlators, there's also extensions like
 Genkan, Madara, FoolSlide and ComiCake which contain sources which
 host directly from the scanlators own websites.
