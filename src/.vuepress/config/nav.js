@@ -49,11 +49,11 @@ module.exports = [
 						link: '/help/guides/categories'
 					},
 					{
-						text: 'Library Filters',
+						text: 'Library filters',
 						link: '/help/guides/library-filters'
 					},
 					{
-						text: 'Source Migration',
+						text: 'Source migration',
 						link: '/help/guides/source-migration'
 					}
 				]
