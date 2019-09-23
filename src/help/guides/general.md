@@ -10,7 +10,7 @@ General settings page for Tachiyomi, help us improve through [here](https://gith
 
 Changes the app language. There are 35 languages to choose from, alognside the default system language. The instruction to change language can be found [here](../faq/application.html#how-do-i-change-the-app-language). 
 
-## Dark mode
+## Application theme
 
 By default, Tachiyomi is in light mode. To change the theme to dark mode, go to `Settings` -> `General` -> `Application theme`. There are four options, `Main theme` (light), `Dark theme`, `AMOLED theme` and `Dark blue`. AMOLED theme is pure black. 
 
