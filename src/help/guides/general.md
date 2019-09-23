@@ -8,20 +8,20 @@ General settings page for Tachiyomi, help us improve through [here](https://gith
 
 ## Language
 
-Changes the app language. There are 35 languages to choose from, alognside the default system language. The instruction to change language can be found [here](../faq/application.html#how-do-i-change-the-app-language). 
+Changes the app language. There are 35 languages to choose from, alognside the default system language. 
 
 ## Application theme
 
 By default, Tachiyomi is in light mode. To change the theme to dark mode, go to `Settings` -> `General` -> `Application theme`. There are four options:
 
-### `Main theme` (light), 
-### `Dark theme` 
-### `AMOLED theme`(pure black)
-### `Dark blue` 
+##### `Main theme` (light) 
+##### `Dark theme` 
+##### `AMOLED theme`(pure black)
+##### `Dark blue` 
 
 ## Library manga per row
 
-Bookmarked manga in `My Library` can be categorized by manga per row for easier navigation, so that the thumbnails do not take up too much space. `Portrait` refers to the number of columns available in portrait mode, and `Landscape` refers to number of columns in landscape mode. Tachiyomi can be set to desired rotation orientation in [Rotation](../guides/reader.html#rotation) under `Reader`.
+Bookmarked manga in `My Library` can be categorized by manga per row for easier navigation, so that the thumbnails do not take up too much space. `Portrait` refers to the number of columns available in portrait mode, and `Landscape` refers to number of columns in landscape mode. Tachiyomi can be set to desired rotation orientation in `Rotation` under `Reader`.
 
 ## Start screen
 
@@ -29,7 +29,7 @@ This refers to what page the app starts on, which are `My library`, `Recently re
 
 ## Library update frequency
 
-This prompts Tachiyomi to automatically check for chapter update for bookmarked manga in `My library`, according to the desired frequency. It can set to `Manual` or up to 2 days. To manually check for chapter update, go to `Library updates`, then drag down screen and release. 
+This prompts Tachiyomi to automatically check for chapter update for bookmarked manga in `My library`, according to the desired frequency. It can set to `Manual` or up to 2 days. To manually check for chapter update, go to `Library updates`, then drag screen down and release. 
 
 ## Library update restrictions
 
