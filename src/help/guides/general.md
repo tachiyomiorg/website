@@ -12,7 +12,11 @@ Changes the app language. There are 35 languages to choose from, alognside the d
 
 ## Application theme
 
-By default, Tachiyomi is in light mode. To change the theme to dark mode, go to `Settings` -> `General` -> `Application theme`. There are four options, `Main theme` (light), `Dark theme`, `AMOLED theme` and `Dark blue`. AMOLED theme is pure black. 
+By default, Tachiyomi is in light mode. To change the theme to dark mode, go to `Settings` -> `General` -> `Application theme`. There are four options:
+###`Main theme` (light), 
+###`Dark theme`, 
+###`AMOLED theme`(pure black)
+###`Dark blue`. 
 
 ## Library manga per row
 
