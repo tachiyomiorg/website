@@ -7,51 +7,14 @@ module.exports = {
 		docsRepo: 'tachiyomiorg/website',
 		docsDir: 'src',
 		editLinks: true,
-		nav: [
-			{ text: 'Guides', link: '/help/guides/getting-started' },
-			{ text: 'FAQ', link: '/help/faq/application' },
-			{ text: 'Extensions', link: '/extensions/' },
-			{ text: 'Wiki', link: 'https://github.com/inorichi/tachiyomi/wiki' },
-			{ text: 'Discord', link: 'https://discord.gg/tachiyomi' },
-			{ text: 'Reddit', link: 'https://reddit.com/r/Tachiyomi' }
-		],
-		sidebar: [
-			'/',
-			{
-				title: 'Guides',
-				children: [
-				'/help/guides/getting-started',
-				'/help/guides/reading-local-manga',
-				'/help/guides/source-problems',
-				'/help/guides/translation'
-				]
-			},
-			{
-				title: 'FAQ',
-				children: [
-				'/help/faq/application',
-				'/help/faq/extensions'
-				]
-			},
-			'/extensions/'
-		],
+		nav: require('./config/nav'),
+		sidebar: require('./config/sidebar'),
 		lastUpdated: 'Last Updated'
 	},
-	plugins: [
-		[
-		'@vuepress/back-to-top'
-		],
-		[
-		'@vuepress/google-analytics',
-			{ 'ga': 'UA-148212082-1' }
-		],
-		[
-		'container',
-			{
-				type: 'expander',
-				before: info => `<details><summary>${info}</summary>\n`,
-				after: '</details>\n'
-			}
-		]
+	plugins: require('./config/plugins'),
+	extraWatchFiles: [
+		'.vuepress/config/nav.js',
+		'.vuepress/config/sidebar.js',
+		'.vuepress/config/plugins.js'
 	]
 }
