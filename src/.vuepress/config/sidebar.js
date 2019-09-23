@@ -2,6 +2,7 @@ module.exports = [
 	'/',
 	{
 		title: 'Guides',
+		path: '/help/guides/',
 		sidebarDepth: 2,
 		children: [
 			{
@@ -34,6 +35,7 @@ module.exports = [
 	},
 	{
 		title: 'Frequently Asked Questions',
+		path: '/help/faq/',
 		sidebarDepth: 2,
 		children: [
 			{
