@@ -14,6 +14,15 @@ module.exports = [
 						link: '/help/faq/extensions'
 					}
 				]
+			},
+			{
+				text: 'Contribution',
+				items: [
+					{
+						text: 'How can I help?',
+						link: '/help/faq/how-can-i-help'
+					}
+				]
 			}
 		]
 	},
@@ -34,6 +43,47 @@ module.exports = [
 					{
 						text: 'Source problems',
 						link: '/help/guides/source-problems'
+					},
+					{
+						text: 'Categories',
+						link: '/help/guides/categories'
+					},
+					{
+						text: 'Library Filters',
+						link: '/help/guides/library-filters'
+					},
+					{
+						text: 'Source Migration',
+						link: '/help/guides/source-migration'
+					}
+				]
+			},
+			{
+				text: 'Settings',
+				items: [
+					{
+						text: 'General',
+						link: '/help/guides/general'
+					},
+					{
+						text: 'Reader',
+						link: '/help/guides/reader'
+					},
+					{
+						text: 'Downloads',
+						link: '/help/guides/downloads'
+					},
+					{
+						text: 'Tracking',
+						link: '/help/guides/tracking'
+					},
+					{
+						text: 'Backup',
+						link: '/help/guides/backup'
+					},
+					{
+						text: 'Advanced',
+						link: '/help/guides/advanced'
 					}
 				]
 			}
