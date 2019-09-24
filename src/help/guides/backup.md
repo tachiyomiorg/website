@@ -8,13 +8,13 @@ lang: en-US
 
 
 ## Create backup
-Create backup lets you backup your library, tracking settings, and reading history. To create a backup go to `Settings > Backup` and then select `Create backup`, this will bring up a dialog letting you choose what to backup. Manga is greyed out becuase it will always be backup.
+Create backup lets you backup your library, tracking settings, and reading history. To create a backup go to `Settings > Backup` and then select `Create backup`, this will bring up a dialog letting you choose what to backup. Manga is greyed out because it will always be backed up.
 
 ## Restore backup
-Restore backup lets you restore your previous created backup. To restore a backup go to `Settings > Backup` and then select `Restore backup`, this will bring up a file explorer navigate to where you have stored your backup and select it.
+Restore backup lets you restore your previously created backup. To restore a backup go to `Settings > Backup` and then select `Restore backup`, this will bring up a file explorer. Proceed by navigating to where your stored backup is located then select it.
 
 ## Backup frequency
-Backup frequency lets you select a frequency which Tachiyomi will automatic backup your library. To setup Backup frequency go to `Settings > Backup` and the select `Backup frequency`, this will bring up a dialog letting you choose between preset backup frequencies.
+Backup frequency lets you select a frequency in which Tachiyomi will automatically backup your library. To setup Backup frequency go to `Settings > Backup` and the select `Backup frequency`, this will bring up a dialog letting you choose between preset backup frequencies.
 
 ## Backup directory
 Backup directory lets you choose where your automatic backup is stored.
