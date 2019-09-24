@@ -10,6 +10,7 @@
 	border-color: #2E84BF !important;
 }
 
+
 .home .hero img {
 	max-height: 120px !important;
 }
@@ -68,4 +69,12 @@ html {
 
 .expander_summary:focus {
 	outline: none !important;
+}
+
+.badge.default-indicator {
+	background-color: #2E84BF !important;
+}
+
+.badge.version-indicator {
+	background-color: #000000 !important;
 }
