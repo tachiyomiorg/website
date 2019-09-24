@@ -10,6 +10,45 @@
 	border-color: #2E84BF !important;
 }
 
+
+.home .hero img {
+	max-height: 120px !important;
+}
+
+.expander_details {
+	background-color: #f3f5f7;
+	color: #2E84BF;
+	border-left: 0.5rem solid #2E84BF;
+}
+
+.expander_details strong {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.expander_details ol {
+	padding: 0 0 1rem 1.5rem;
+	margin-left: 1rem;
+}
+
+.expander_details li {
+	font-weight: 500;
+}
+
+.expander_details ul li {
+	font-weight: 400;
+}
+
+.expander_summary {
+	padding: 1rem 1.5rem;
+}
+
+.expander_summary:focus {
+	outline: none !important;
+}
+
 .badge.default-indicator {
 	background-color: #2E84BF !important;
 }
@@ -17,4 +56,3 @@
 .badge.version-indicator {
 	background-color: #000000 !important;
 }
-

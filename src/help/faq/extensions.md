@@ -72,7 +72,6 @@ Be aware that Batoto is deprecated so you will need to migrate from that source 
 :::
 
 ::: expander <strong>Click to expand!</strong>
-::: tip
 1. Batoto
 2. Mangahere
 3. Mangafox
@@ -90,7 +89,6 @@ Be aware that Batoto is deprecated so you will need to migrate from that source 
 Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
 
 ::: expander <strong>Click to expand!</strong>
-::: tip
 1. Comicake
    - Whim Scans
    - Champion Scans
