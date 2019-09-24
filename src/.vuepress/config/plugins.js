@@ -17,9 +17,9 @@ module.exports = [
 		}
 	],
 	[
-		'clean-urls'
-	],
-	[
-		'dehydrate'
+		'clean-urls',
+		{
+			normalSuffix: '/'
+		}
 	]
 ];

@@ -23,7 +23,6 @@
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
 		"vuepress-plugin-clean-urls": "^1.0.3",
-		"vuepress-plugin-container": "^2.0.2",
-		"vuepress-plugin-dehydrate": "^1.0.3"
+		"vuepress-plugin-container": "^2.0.2"
 	}
 }
