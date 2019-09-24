@@ -216,6 +216,13 @@ export default {
 			max-width: 100%;
 			padding: 0 2.5rem;
 		}
+
+		.hero {
+			.action-button + .action-button {
+				margin-left: 0;
+				margin-top: 0.5rem;
+			}
+		}
 	}
 }
 
