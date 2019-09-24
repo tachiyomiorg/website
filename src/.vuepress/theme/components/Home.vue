@@ -51,12 +51,12 @@
 
 		<Content class="theme-default-content custom"/>
 
-		<div
+		<footer
 			class="footer"
 			v-if="data.footer"
 		>
 			{{ data.footer }}
-		</div>
+		</footer>
 	</main>
 </template>
 
@@ -65,7 +65,7 @@ import NavLink from '@parent-theme/components/NavLink.vue';
 
 import axios from 'axios';
 
-const RELEASE_URL = 'https://api.github.com/repos/inorichi/tachiyomi/releases/latest'
+const RELEASE_URL = 'https://api.github.com/repos/inorichi/tachiyomi/releases/latest';
 
 export default {
 	components: { NavLink },
