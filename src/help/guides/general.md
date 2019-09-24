@@ -61,7 +61,7 @@ This setting allows you to set how many manga show up per row. It can be between
 This setting changes what screen the app opens up to. It can be changed between `My library`, `Recently read`, and `Library updates`.
 
 ## Library update frequency <Badge text="Manual" type="default-indicator" vertical="middle"/>
-This setting changes how often the app is automatically updated. It can be changed from preset values between hourly and every 2 days.
+This setting changes how often the app automatically scans for manga updates. It can be changed from preset values between hourly and every 2 days.
 
 ## Library update restrictions <Badge text="False" type="default-indicator" vertical="middle"/>
 This setting allows you to keep certain categories from updating. If you have categories you don't want to update, because you have a category that you would not like to update, then you can use this setting to save time from updating. If you would like to update manga while this setting is on, pull down in the manga or chapters view to manually update
