@@ -18,8 +18,5 @@ module.exports = [
 	],
 	[
 		'clean-urls'
-	],
-	[
-		'dehydrate'
 	]
 ];
