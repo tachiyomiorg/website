@@ -17,10 +17,6 @@ module.exports = [
 		}
 	],
 	[
-		'clean-urls',
-		{
-			normalSuffix: '',
-			indexSuffix: ''
-		}
+		'clean-urls'
 	]
 ];
