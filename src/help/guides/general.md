@@ -11,9 +11,9 @@ The blue badges next to titles is how we indicate the default option, a yellow b
 ## Language <Badge text="System default" type="default-indicator" vertical="middle"/>
 The language of the app. If changed, all parts of the app change to the language. Defaults to system language. Does not affect which catalog languages are enabled. Currently, Tachiyomi supports 35 languages.
 
-- Tip: HELP US TRANSLATE.
+::: tip HELP US TRANSLATE!
 Tachiyomi relies on its users to help with translations, if you're up to the task then head to the [translation](../faq/how-can-i-help/#translation) section.
-
+:::
 
 ## Application theme <Badge text="Main theme" type="default-indicator" vertical="middle"/>
 How the app looks and what colors are used through the app. There are four themes included, consisting of a light theme and three dark themes.
