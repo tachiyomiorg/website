@@ -17,12 +17,17 @@
 				class="action"
 				v-if="data.actionText && data.actionLink"
 			>
-				<NavLink
+				<a
 					class="action-button"
-					v-if="tagName.length"
-					:item="downloadLink"
+					rel="noopener noreferrer"
+					:href="browserDownloadUrl || null"
+					title="Download latest release"
 					download
-				/>
+				>
+					<font-awesome-icon icon="download" />
+					<span>Download {{ tagName || 'vX.X.X' }}</span>
+				</a>
+
 				<NavLink
 					class="action-button secundary"
 					:item="actionLink"
@@ -82,17 +87,10 @@ export default {
 				link: this.data.actionLink,
 				text: this.data.actionText
 			};
-		},
-
-		downloadLink () {
-			return {
-				link: this.$data.browserDownloadUrl,
-				text: `Download ${this.$data.tagName}`
-			}
 		}
 	},
 
-	async beforeMount () {
+	async mounted () {
 		const { data } = await axios.get(RELEASE_URL);
 		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find(a => a.name.includes('.apk'));
@@ -147,22 +145,26 @@ export default {
 			box-sizing: border-box;
 			border-bottom: 1px solid darken($accentColor, 10%);
 
-			&[download] svg {
-				display: none;
-			}
-
 			&:hover {
 				background-color: lighten($accentColor, 10%);
 			}
 
 			&.secundary {
-				background-color: darken($borderColor, 10%);
-				color: lighten($textColor, 15%);
-				border-bottom-color: darken($borderColor, 20%);
+				background-color: darken($borderColor, 5%);
+				color: lighten($textColor, 25%);
+				border-bottom-color: darken($borderColor, 15%);
 
 				&:hover {
-					background-color: $borderColor;
+					background-color: lighten($borderColor, 5%);
 				}
+			}
+
+			svg + span {
+				margin-left: 0.5rem;
+			}
+
+			& + .action-button {
+				margin-left: 0.5rem;
 			}
 		}
 	}

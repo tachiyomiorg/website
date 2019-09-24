@@ -13,7 +13,14 @@
 						{{ extension.pkg }}
 					</div>
 				</div>
-				<a :href="apkUrl(extension.apk)" class="button" download>Download</a>
+				<a
+					:href="apkUrl(extension.apk)"
+					class="button"
+					title="Download APK"
+					download>
+					<font-awesome-icon icon="download" />
+					<span>Download</span>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -28,11 +35,12 @@ import ISO6391 from 'iso-639-1';
 const EXTENSION_JSON = 'https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/index.json';
 
 export default {
-	data: function () {
+	data () {
 		return {
 			extensions: []
 		}
 	},
+
 	methods: {
 		langName: code => code === 'all' ? 'All' : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`,
 		iconUrl (pkg) {
@@ -41,6 +49,7 @@ export default {
 		},
 		apkUrl: apk => `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`
 	},
+
 	async beforeMount () {
 		const { data } = await axios.get(EXTENSION_JSON);
 		const values = Object.values(groupBy(data, 'lang'));
@@ -78,7 +87,7 @@ export default {
 		font-size: 0.8em;
 		color: #fff;
 		background-color: #2e84bf;
-		padding: 0.3rem;
+		padding: 0.5rem;
 		border-radius: 4px;
 		transition: background-color 0.1s ease;
 		box-sizing: border-box;
@@ -89,12 +98,18 @@ export default {
 			background-color: #3992cf;
 			text-decoration: none !important;
 		}
+
+		svg + span {
+			margin-left: 0.25rem;
+		}
 	}
 }
 
 @media (max-width: 767px) {
-	.extension .extension-text .down {
-		display: none;
+	.extension {
+		.extension-text .down, .button span {
+			display: none;
+		}
 	}
 }
 </style>
