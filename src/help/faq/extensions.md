@@ -84,6 +84,10 @@ Be aware that Batoto is deprecated so you will need to migrate from that source 
 10. WieManga
 :::
 
+### Why can't I restore my backup?
+
+To restore backups, Tachiyomi requires to have extensions installed for the respective manga.
+
 ### Which sources are there in the multi-source extensions?
 
 Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
