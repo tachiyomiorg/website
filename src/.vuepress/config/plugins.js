@@ -15,5 +15,12 @@ module.exports = [
 			before: info => `<details><summary>${info}</summary>\n`,
 			after: '</details>\n'
 		}
+	],
+	[
+		'clean-urls',
+		{
+			normalSuffix: '',
+			indexSuffix: ''
+		}
 	]
 ];
