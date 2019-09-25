@@ -238,6 +238,10 @@ There is a tool to migrate from MangaRock to Tachiyomi courtesy of a member of o
 
 Note that you must download the 64-bit version of Java or it will run out of memory. Access the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 
+### Error: Value <url> at 0 of type java.lang.String cannot be converted to JSONObject
+
+If you get this error when opening Manga Rock chapters, try clearing your chapter cache (`Settings` > `Advanced`) and refreshing the chapters list.
+
 ## Madara
 
 ### Leviatan Scans is missing
