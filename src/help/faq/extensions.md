@@ -195,6 +195,10 @@ Some extensions contain multiple sources, look at the list below to find out whi
 
 Try closing (force-quit) and reopening Tachiyomi.
 
+### Error: Loader not implemented
+
+It means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
+
 ## MangaDex
 
 ### No results when searching
@@ -237,6 +241,10 @@ Read more about the situation [here](https://mrcomics.com/).
 There is a tool to migrate from MangaRock to Tachiyomi courtesy of a member of our Discord server by the same name as the creator, but a computer is required to finish the migration successfully.
 
 Note that you must download the 64-bit version of Java or it will run out of memory. Access the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
+
+### Error: Value <url> at 0 of type java.lang.String cannot be converted to JSONObject
+
+If you get this error when opening Manga Rock chapters, try clearing your chapter cache (`Settings` > `Advanced`) and refreshing the chapters list.
 
 ## Madara
 
