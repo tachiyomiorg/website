@@ -19,11 +19,62 @@ Supported chapter formats are directories with pictures inside, `ZIP`/`CBZ`, `RA
 
 You can also place your chapters or manga in both storages and Tachiyomi will merge them.
 
-**Example:**
-- `/sdcard/Tachiyomi/local/my manga/ch1`
-- `/storage/18F5-2C11/Tachiyomi/local/my manga/ch2`
+::: tip EXAMPLE
+<div class="side-by-side">
+	<ul class="file-tree">
+		<li>
+			/sdcard/Tachiyomi/local
+			<ul>
+				<li>
+					My manga
+					<ul>
+						<li>
+							ch1
+							<ul>
+								<li class="file">files</li>
+							</ul>
+						</li>
+						<li>
+							ch2
+							<ul>
+								<li class="file">files</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>&hellip;</li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="file-tree">
+		<li>
+			/storage/18F5-2C11/Tachiyomi/local
+			<ul>
+				<li>
+					My manga
+					<ul>
+						<li>
+							ch3
+							<ul>
+								<li class="file">files</li>
+							</ul>
+						</li>
+						<li>
+							ch4
+							<ul>
+								<li class="file">files</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>&hellip;</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+:::
 
-Tachiyomi will see two chapters in a single manga.
+Tachiyomi will see four chapters in a single manga.
 
 The path to the folder (or archive) with images must contain both the manga title and the chapter name (as seen above).
 

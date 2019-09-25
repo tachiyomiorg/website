@@ -56,3 +56,90 @@
 .badge.version-indicator {
 	background-color: #000000 !important;
 }
+
+.file-tree {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-size: 0.85rem;
+
+	li, ul {
+		position: relative;
+	}
+
+	li {
+		margin: 0;
+		padding-left: 1rem;
+		font-weight: bold;
+
+		&.file {
+			font-weight: normal;
+		}
+
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			left: 0em;
+		}
+
+		&::before {
+			border-top: 1px solid black;
+			top: 0.7em;
+			width: 0.5em;
+			height: 0;
+		}
+
+		&:last-child::after {
+			height: 0.7em;
+		}
+
+		&::after {
+			top: 0px;
+			border-left: 1px solid black;
+			height: 100%;
+			width: 0px;
+		}
+	}
+
+	ul {
+		margin-left: 1em;
+	}
+
+	& > li:first-child::before, & > li:first-child::after {
+		content: none;
+	}
+}
+
+.file-tree, .file-tree ul {
+	list-style: none;
+	padding: 0;
+}
+
+.side-by-side {
+	display: flex;
+	align-content: middle;
+	justify-content: center;
+
+	& > * {
+		width: 50%;
+	}
+
+	& > * + * {
+		border-left: 1px solid #aaa;
+	}
+}
+
+@media (max-width: 767px) {
+	.side-by-side {
+		flex-direction: column;
+
+		& > * {
+			width: 100%;
+		}
+
+		& > * + * {
+			margin-top: 0;
+			padding-top: 1em;
+			border-left: none;
+			border-top: 1px solid #aaa;
+		}
+	}
+}
