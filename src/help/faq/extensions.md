@@ -191,8 +191,6 @@ Some extensions contain multiple sources, look at the list below to find out whi
    - NANI? Scans
 :::
 
-### Error: 
-
 ### Error: java.lang Exception: Challenge not found
 
 Try closing (force-quit) and reopening Tachiyomi.
