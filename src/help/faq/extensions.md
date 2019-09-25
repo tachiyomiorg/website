@@ -191,6 +191,15 @@ Some extensions contain multiple sources, look at the list below to find out whi
    - NANI? Scans
 :::
 
+### Why can't I find manga in `Catalogues` search?
+
+It might be because the title is worded differently. Follow the steps below:
+
+- Look up the title on Google or a manga tracking service
+- See which site has the series
+- Download the extension for that source if it exists (see other FAQs if it is part of a multisource extension)
+- Go to Browse for source and search up manga name again
+
 ### Error: java.lang Exception: Challenge not found
 
 Try closing (force-quit) and reopening Tachiyomi.
