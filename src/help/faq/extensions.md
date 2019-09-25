@@ -195,6 +195,10 @@ Some extensions contain multiple sources, look at the list below to find out whi
 
 Try closing (force-quit) and reopening Tachiyomi.
 
+### Error: Loader not implemented
+
+It means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
+
 ## MangaDex
 
 ### No results when searching
