@@ -191,6 +191,15 @@ Some extensions contain multiple sources, look at the list below to find out whi
    - NANI? Scans
 :::
 
+### Why can't I find manga in `Catalogues` search?
+
+It might be because the title is worded differently. Follow the steps below:
+
+- Look up the title on Google or a manga tracking service
+- See which site has the series
+- Download the extension for that source if it exists (see other FAQs if it is part of a multisource extension)
+- Go to Browse for source and search up manga name again
+
 ### Error: java.lang Exception: Challenge not found
 
 Try closing (force-quit) and reopening Tachiyomi.
@@ -198,6 +207,10 @@ Try closing (force-quit) and reopening Tachiyomi.
 ### Error: Loader not implemented
 
 It means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
+
+### Error: Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject
+
+This means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga. 
 
 ## MangaDex
 
