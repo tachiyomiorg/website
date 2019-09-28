@@ -45,6 +45,18 @@ You can change the order of Categories, such as bring a certain Category to the 
 
 To do this, go to `My Library` > triple dots (`⋮`) > `Edit categories` then drag the triple bar icon (`≡`) up or down.
 
+::: expander <strong>Click to reveal video guide!</strong>
+<figure class="centered">
+	<video autoplay crossorigin="use-credentials" height="534"
+	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
+	  playsinline="playsinline" :poster="$withBase('/assets/media/reordercategories.png')"
+	  preload="none" width="300">
+		<source :src="$withBase('/assets/media/reordercategories.webm')" type="video/webm" />
+		<source :src="$withBase('/assets/media/reordercategories.mp4')" type="video/mp4" />
+	</video>
+</figure>
+:::
+
 ## Delete a Gategory
 
 You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categories` then long press the category you want to delete, then press the trash can icon.
