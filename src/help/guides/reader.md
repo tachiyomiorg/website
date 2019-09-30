@@ -43,27 +43,29 @@ All examples uses Zoom start position `Automatic`
 
 <figure class="centered">
 	<h4>Fit screen</h4>
-    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitscreen.png')">
+    <p>Will fit either to width or height depending on image dimensions</p>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitscreen.png')">
 </figure>
 <figure class="centered">
 	<h4>Stretch</h4>
-    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/stretch.png')">
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/stretch.png')">
 </figure>
 <figure class="centered">
 	<h4>Fit width</h4>
-	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitwidth.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitwidth.png')">
 </figure>
 <figure class="centered">
 	<h4>Fit height</h4>
-	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitheight.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitheight.png')">
 </figure>
 <figure class="centered">
 	<h4>Original size</h4>
-	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/originalsize.png')">
+    <p>Will be either zoom in or out depending on image dimensions</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/originalsize.png')">
 </figure>
 <figure class="centered">
 	<h4>Smart fit</h4>
-	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/smartfit.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/smartfit.png')">
 </figure>
 :::
 
@@ -107,14 +109,14 @@ This allows you to control what color the background should be in reader. Backgr
 
 ::: expander <strong>Examples</strong>
 <figure class="centered">
-    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/whitebackgroundreader.png')">
-    <h4>White</h4>
-    <p>Surrounds page with white. Make pages seemless with screen, black background pages will not.</p>
-</figure>
-<figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/blackbackgroundreader.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
     <h4>Black</h4>
     <p>Surrounds page with black. With a Amoled screen you can save some battery by using this to read some more series.</p>
+</figure>
+<figure class="centered">
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorwhite.png')">
+    <h4>White</h4>
+    <p>Surrounds page with white. Make pages seemless with screen, black background pages will not.</p>
 </figure>
 :::
 
@@ -143,27 +145,17 @@ Lets you use 32-bit color.
 ## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
 Adds a page between chapters display read chapter and upcoming chapter name and chapter number
 
-:construction: :construction_worker_man: Images not final
-
-::: expander <strong>Example</strong>
-<figure class="centered">
-    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/pagetransitions.png')">
-</figure>
-:::
-
 ## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
 Tries to remove exess white borders
-
-:construction: :construction_worker_man: Images not final
 
 ::: expander <strong>Example</strong>
 <figure class="centered">
     <h4>With crop borders</h4>
-    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/cropborderswith.png')">
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withcropborder.png')">
 </figure>
 <figure class="centered">
     <h4>Without crop borders</h4>
-    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/cropborderswithout.png')">
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withoutcropborder.png')">
 </figure>
 :::
 
