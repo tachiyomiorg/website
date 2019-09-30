@@ -35,77 +35,64 @@ You can change scale type when reading a chapter. By tapping the middle of the s
 select a different scale type under `Scale type`. This will change Scale type for all series.
 :::
 
-### Examples
-All examples uses Zoom start position `Automatic`
-
 :construction: :construction_worker_man: Images not final
 
-<carousel>
-	<slide>
-        <figure class="centered">
-		    <h4>Fit screen</h4>
-		    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitscreen.png')">
-        </figure>
-	</slide>
-	<slide>
-        <figure class="centered">
-		    <h4>Stretch</h4>
-		    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/stretch.png')">
-        </figure>
-	</slide>
-	<slide>
-        <figure class="centered">
-		    <h4>Fit width</h4>
-		    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitwidth.png')">
-        </figure>
-	</slide>
-	<slide>
-        <figure class="centered">
-		    <h4>Fit height</h4>
-		    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitheight.png')">
-        </figure>
-	</slide>
-	<slide>
-        <figure class="centered">
-		    <h4>Original size</h4>
-		    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/originalsize.png')">
-        </figure>
-	</slide>
-	<slide>
-        <figure class="centered">
-		    <h4>Smart fit</h4>
-		    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/smartfit.png')">
-        </figure>
-	</slide>
-</carousel>
+::: expander <strong>Examples</strong>
 
+All examples uses Zoom start position `Automatic`
+
+<figure class="centered">
+	<h4>Fit screen</h4>
+    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitscreen.png')">
+</figure>
+<figure class="centered">
+	<h4>Stretch</h4>
+    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/stretch.png')">
+</figure>
+<figure class="centered">
+	<h4>Fit width</h4>
+	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitwidth.png')">
+</figure>
+<figure class="centered">
+	<h4>Fit height</h4>
+	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/fitheight.png')">
+</figure>
+<figure class="centered">
+	<h4>Original size</h4>
+	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/originalsize.png')">
+</figure>
+<figure class="centered">
+	<h4>Smart fit</h4>
+	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/smartfit.png')">
+</figure>
+:::
 
 ## Zoom start position <Badge text="Automatic" type="default-indicator" vertical="middle" />
 Depending on your scale type the page can be wider than the screen and with zoom start position you can choose where
 Tachiyomi will start on that zoomed in page.
 
-### Examples
-All examples uses Scale type `Stretch`
-
 :construction: :construction_worker_man: Images not final
 
-<carousel>
-    <slide>
-        <h4>Left</h4>
-        <p>Will start at the left side of the page.</p>
-        <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/leftreader.png')">
-    </slide>
-    <slide>
-        <h4>Right</h4>
-        <p>Will start at the right side of the page.</p>
-        <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/rightreader.png')">
-    </slide>
-    <slide>
-        <h4>Center</h4>
-        <p>Will start at the center side of the page.</p>
-        <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/centerreader.png')">
-    </slide>
-</carousel>
+::: expander <strong>Examples</strong>
+
+All examples uses Scale type `Stretch`
+
+<figure class="centered">
+<h4>Left</h4>
+    <p>Will start at the left side of the page.</p>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionleft.png')">
+</figure>
+<figure class="centered">
+    <h4>Right</h4>
+    <p>Will start at the right side of the page.</p>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionright.png')">
+</figure>
+<figure class="centered">
+    <h4>Center</h4>
+    <p>Will start at the center side of the page.</p>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
+</figure>
+:::
 
 ## Rotation <Badge text="Free" type="default-indicator" vertical="middle" />
 This allows you to control how to screen is going to be oriented. `Free` lets you rotate the screen between portrait and
@@ -118,18 +105,18 @@ This allows you to control what color the background should be in reader. Backgr
 
 :construction: :construction_worker_man: Images not final
 
-<carousel>
-    <slide>
-        <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/blackbackgroundreader.png')">
-        <h4>Black</h4>
-        <p>Surrounds page with black. With a Amoled screen you can save some battery by using this to read some more series.</p>
-    </slide>
-    <slide>
-        <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/whitebackgroundreader.png')">
-        <h4>White</h4>
-        <p>Surrounds page with white. Make pages seemless with screen, black background pages will not.</p>
-    </slide>
-</carousel>
+::: expander <strong>Examples</strong>
+<figure class="centered">
+    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/whitebackgroundreader.png')">
+    <h4>White</h4>
+    <p>Surrounds page with white. Make pages seemless with screen, black background pages will not.</p>
+</figure>
+<figure class="centered">
+	<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/blackbackgroundreader.png')">
+    <h4>Black</h4>
+    <p>Surrounds page with black. With a Amoled screen you can save some battery by using this to read some more series.</p>
+</figure>
+:::
 
 ## Double tap animation speed <Badge text="Normal" type="default-indicator" vertical="middle" />
 Double tap animation speed changes the speed in which the zoom happends when double tapping.
@@ -158,15 +145,27 @@ Adds a page between chapters display read chapter and upcoming chapter name and 
 
 :construction: :construction_worker_man: Images not final
 
-<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/pagetransitions.png')">
+::: expander <strong>Example</strong>
+<figure class="centered">
+    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/pagetransitions.png')">
+</figure>
+:::
 
 ## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
 Tries to remove exess white borders
 
 :construction: :construction_worker_man: Images not final
 
-<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/cropborderswithout.png')">
-<img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/cropborderswith.png')">
+::: expander <strong>Example</strong>
+<figure class="centered">
+    <h4>With crop borders</h4>
+    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/cropborderswith.png')">
+</figure>
+<figure class="centered">
+    <h4>Without crop borders</h4>
+    <img height="400" intrinsicsize="208x500" width="166" :src="$withBase('/assets/media/cropborderswithout.png')">
+</figure>
+:::
 
 ## Tapping <Badge text="True" type="default-indicator" vertical="middle" />
 Tap to flip through pages. On left and right sides of screen.

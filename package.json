@@ -25,7 +25,6 @@
 		"iso-639-1": "^2.1.0",
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
-		"vue-carousel": "^0.18.0",
 		"vuepress-plugin-clean-urls": "^1.0.3",
 		"vuepress-plugin-container": "^2.0.2"
 	}
