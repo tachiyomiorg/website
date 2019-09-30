@@ -75,7 +75,7 @@ You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categori
 
 ## Add Manga to Category
 
-You can add a Manga to a Category by long pressing on the one you want to add. Then press the square looking icon (in the middle between pencil and three dots). Thereafter select which category you want it in. You can also add multiple manga to a category by selecting them when you see the square looking icon.
+You can add Manga to a Category by long pressing on the one you want to add. Then press the square looking icon (in the middle between pencil and three dots). Thereafter select which category you want it in. You can also add multiple manga to a category by selecting them when you see the square looking icon.
 
 ::: tip
 You can also add Manga to multiple Categories by selecting the categories you want to have it in
