@@ -14,6 +14,12 @@ If you want to see how many chapters you have downloaded for all manga on My Lib
 
 The URL to the cover has changed. To fix this, refresh the metadata of your library in `Settings > Advanced`.
 
+### How do I ignore chapters from certain scanlator groups?
+
+Every now and then you find a manga that is translated by more than one group, because of this you get multiple releases for every chapter in the manga.
+
+To automatically skip a translation group while reading, go to the manga's chapter list and click on the three dots in the upper right hand corner. From there, click on Sorting mode and select By chapter number. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
+
 ## Reader
 
 ### Why are some images not displayed?
