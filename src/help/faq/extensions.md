@@ -84,7 +84,7 @@ Be aware that Batoto is deprecated so you will need to migrate from that source 
 10. WieManga
 :::
 
-### How do I read `Latest` manga?
+### How do I read `Latest` manga from a source?
 
 To read Latest, go to `Catalogues` then click on `LATEST` (beside source name to the right). This will show all the last updated manga for that source. 
 
