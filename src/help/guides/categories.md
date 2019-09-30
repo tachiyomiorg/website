@@ -41,7 +41,7 @@ You can edit a Category in `My Library` > triple dots (`⋮`) > `Edit categories
 
 ## Change Category order
 
-You can change the order of Categories, such as bring a certain Category to the top. This category will appear as the first tab on `My Library`.
+You can change the order of Categories, such as bringing a certain Category to the top. This category will appear as the first tab on `My Library`.
 
 To do this, go to `My Library` > triple dots (`⋮`) > `Edit categories` then drag the triple bar icon (`≡`) up or down.
 
@@ -59,7 +59,7 @@ To do this, go to `My Library` > triple dots (`⋮`) > `Edit categories` then dr
 
 ## Delete a Gategory
 
-You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categories` then long press the category you want to delete, then press the trash can icon.
+You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categories` then long press the category you want to delete, and press the trash can icon (🗑️).
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
@@ -78,7 +78,7 @@ You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categori
 You can add a Manga to a Category by long pressing on the one you want to add. Then press the square looking icon (in the middle between pencil and three dots). Thereafter select which category you want it in. You can also add multiple manga to a category by selecting them when you see the square looking icon.
 
 ::: tip
-You can also add a Manga to multiple Categories by selecting the categories you want to have it in
+You can also add Manga to multiple Categories by selecting the categories you want to have it in
 :::
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
