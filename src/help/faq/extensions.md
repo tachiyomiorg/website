@@ -86,7 +86,7 @@ Be aware that Batoto is deprecated so you will need to migrate from that source 
 
 ### How do I read `Latest` manga?
 
-To read Latest, go to `Galleries` then click on `LATEST` (beside source name to the right). This will show all the last updated manga for that source. 
+To read Latest, go to `Catalogues` then click on `LATEST` (beside source name to the right). This will show all the last updated manga for that source. 
 
 ### Why can't I restore my backup?
 
