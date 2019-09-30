@@ -35,8 +35,6 @@ You can change scale type when reading a chapter. By tapping the middle of the s
 select a different scale type under `Scale type`. This will change Scale type for all series.
 :::
 
-:construction: :construction_worker_man: Images not final
-
 ::: expander <strong>Examples</strong>
 
 All examples uses Zoom start position `Automatic`
@@ -73,8 +71,6 @@ All examples uses Zoom start position `Automatic`
 Depending on your scale type the page can be wider than the screen and with zoom start position you can choose where
 Tachiyomi will start on that zoomed in page.
 
-:construction: :construction_worker_man: Images not final
-
 ::: expander <strong>Examples</strong>
 
 All examples uses Scale type `Stretch`
@@ -104,8 +100,6 @@ forces reader to be in portrait. `Force Landscape` forces reader to be in landsc
 ## Background color <Badge text="White" type="default-indicator" vertical="middle" />
 This allows you to control what color the background should be in reader. Background color can either be `Black` or
 `White`.
-
-:construction: :construction_worker_man: Images not final
 
 ::: expander <strong>Examples</strong>
 <figure class="centered">
