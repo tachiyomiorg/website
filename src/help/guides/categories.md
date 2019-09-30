@@ -92,9 +92,9 @@ You can also add Manga to multiple Categories by selecting the categories you wa
 </figure>
 :::
 
-## Delete Manga from Category
+## Remove Manga from Category
 
-You can delete a Manga from a Category by long pressing on the one you want. Then press the square looking icon. Thereafter deselect which category you want to remove it from. You can also remove multiple manga from a category by selecting them when you see the square looking icon.
+You can remove Manga from a Category by long pressing on the one you want. Then press the square looking icon. Thereafter deselect which category you want to remove it from. You can also remove multiple manga from a category by selecting them when you see the square looking icon.
 ::: tip
 You can remove a Manga to multiple Categories by selecting the categories you want to have it in
 :::
