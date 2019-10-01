@@ -3,7 +3,7 @@ module.exports = [
 		text: 'Need help?',
 		items: [
 			{
-				text: 'Regular',
+				text: 'General',
 				items: [
 					{
 						text: 'Application',
@@ -30,7 +30,7 @@ module.exports = [
 		text: 'Guides',
 		items: [
 			{
-				text: 'Regular',
+				text: 'General',
 				items: [
 					{
 						text: 'Getting started',
@@ -55,6 +55,35 @@ module.exports = [
 					{
 						text: 'Source migration',
 						link: '/help/guides/source-migration'
+					}
+				]
+			},
+			{
+				text: 'Menus',
+				items: [
+					{
+						text: 'My library',
+						link: '/help/guides/my-library'
+					},
+					{
+						text: 'Library updates',
+						link: '/help/guides/library-updates'
+					},
+					{
+						text: 'Recently read',
+						link: '/help/guides/recently-read'
+					},
+					{
+						text: 'Catalogues',
+						link: '/help/guides/catalogues'
+					},
+					{
+						text: 'Extensions',
+						link: '/help/guides/extensions'
+					},
+					{
+						text: 'Download queue',
+						link: '/help/guides/download-queue'
 					}
 				]
 			},
