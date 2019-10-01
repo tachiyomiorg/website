@@ -59,7 +59,7 @@ To do this, go to `My Library` > triple dots (`⋮`) > `Edit categories` then dr
 
 ## Delete a Category
 
-You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categories` then long press the category you want to delete, and press the trash can icon (🗑️).
+You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categories` then long press the category you want to delete, and press the trash can icon (<MaterialIcon icon-name="delete"/>).
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
@@ -75,7 +75,7 @@ You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categori
 
 ## Add Manga to Category
 
-You can add Manga to a Category by long pressing on the one you want to add. Then press the label icon (<MaterialIcon icon-name="label"/>) (in the middle between pencil and three dots). Thereafter select which category you want it in. You can also add multiple manga to a category by selecting them when you see the label icon (<MaterialIcon icon-name="label"/>).
+You can add Manga to a Category by long pressing on the one you want to add. Then press the label icon (<MaterialIcon icon-name="label"/>). Thereafter select which category you want it in. You can also add multiple manga to a category by selecting them when you see the label icon (<MaterialIcon icon-name="label"/>).
 
 ::: tip
 You can also add Manga to multiple Categories by selecting the categories you want to have it in
