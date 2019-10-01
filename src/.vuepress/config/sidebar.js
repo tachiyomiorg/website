@@ -6,7 +6,7 @@ module.exports = [
 		sidebarDepth: 2,
 		children: [
 			{
-				title: 'Regular',
+				title: 'General',
 				collapsable: false,
 				sidebarDepth: 2,
 				children: [
@@ -16,6 +16,19 @@ module.exports = [
 					'/help/guides/categories',
 					'/help/guides/library-filters',
 					'/help/guides/source-migration'
+				]
+			},
+			{
+				title: 'Menus',
+				collapsable: false,
+				sidebarDepth: 2,
+				children: [
+					'/help/guides/my-library',
+					'/help/guides/library-updates',
+					'/help/guides/recently-read',
+					'/help/guides/catalogues',
+					'/help/guides/extensions',
+					'/help/guides/download-queue'
 				]
 			},
 			{
@@ -39,7 +52,7 @@ module.exports = [
 		sidebarDepth: 2,
 		children: [
 			{
-				title: 'Regular',
+				title: 'General',
 				collapsable: false,
 				sidebarDepth: 2,
 				children: [
