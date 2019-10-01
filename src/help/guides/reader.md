@@ -4,40 +4,34 @@ lang: en-US
 ---
 
 # Reader
-:construction: :construction_worker_man: W.I.P. Description, help us improve through
-[here](https://github.com/tachiyomiorg/website/edit/master/src/help/guides/reader.md)!
+This section generally relates to the reading experience of the app and navigating the reader.
 
 ## Default viewer <Badge text="Left to Right" type="default-indicator" vertical="middle" />
-Default viewer lets you choose which way you want the reader to flip though pages.
+This setting sets the default direction the reader goes in when you open a manga.
+
+**Left to right**
+- Swipe left for next page. Swipe right for previous page.
+
+**Right to left**
+- Swipe right for next page. Swipe left for previous page. Default way of reading Manga.
+
+**Vertical**
+- Swipe up for next page. Swipe down for previous.
+
+**Webtoon**
+- Webtoon is like vertical but stitches all the images together into one stream.
 
 ::: tip
 You can have different Viewer for different series. By going to the series opening a chapter, tapping the middle of the
 screen, then pressing the gear icon, then select a different viewer in `View for this series`
 :::
 
-**Left to right**
-- Swipe left for next page. Swipe right for privious page. Perfect for reading Comics
-
-**Right to left**
-- Swipe right for next page. Swipe left for privious page. Perfect for reading Manga
-
-**Vertical**
-- Swipe up for next page. Swipe down for privious.
-
-**Webtoon**
-- Scroll through pages. Perfect for reading Webtoons
-
 ## Scale type <Badge text="Fit screen" type="default-indicator" vertical="middle" />
 Scale type lets you choose how the page fits to your screen.
 
-::: tip
-You can change scale type when reading a chapter. By tapping the middle of the screen, then press the gear icon, then
-select a different scale type under `Scale type`. This will change Scale type for all series.
-:::
+### Examples
 
-<h3>Examples</h3>
-
-All examples are illustrations and may not reflect what really happends
+All examples are illustrations and may not reflect what really happens.
 
 <div class="carousel" id="scale-type-carousel">
 <div class="carousel-cell">
@@ -75,6 +69,7 @@ All examples are illustrations and may not reflect what really happends
 <div class="carousel-cell">
     <figure class="centered">
 	    <h4>Smart fit</h4>
+        <p>Fits to the longest side of the image</p>
 	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/smartfit.png')">
     </figure>
 </div>
@@ -88,11 +83,16 @@ var config = {
 new Flickity('#scale-type-carousel', config);
 </script>
 
+::: tip
+You can change scale type when reading a chapter. By tapping the middle of the screen, then press the gear icon, then
+select a different scale type under `Scale type`. This will change Scale type for all series.
+:::
+
 ## Zoom start position <Badge text="Automatic" type="default-indicator" vertical="middle" />
 Depending on your scale type the page can be wider than the screen and with zoom start position you can choose where
 Tachiyomi will start on that zoomed in page.
 
-<h3>Examples</h3>
+### Examples
 
 All examples are illustrations
 
@@ -166,23 +166,23 @@ new Flickity('#background-color-carousel', config);
 Double tap animation speed changes the speed in which the zoom happends when double tapping.
 
 ## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
-Skip chapters marked read will skip chapters that you have marked as read when reading
-Example?
+This setting sets if read chapters or marked as read are skipped. To mark a chapter as read, tap the overflow (three-dot) icon and press 'Mark as Read.'
 
 ## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
-Fullscreen if true will hide notification bar and bottom navigation else it will show
+This setting sets if the notification and navigation bar are hidden while in the reader.
 
 ## Keep screen on <Badge text="True" type="default-indicator" vertical="middle" />
-Keep screen on if true will keep
+This setting keeps the device from going asleep while reading a manga.
 
 ## Show page number <Badge text="True" type="default-indicator" vertical="middle" />
-Displays current page number along with total page count
+This settings shows the page number at the bottom of the page in current page/total page format.
 
 ## 32-bit color <Badge text="False" type="default-indicator" vertical="middle" />
+This setting decodes images in ARGB888 format to allow the reader to display more colors.
+
 ::: warning
 This setting will only show up on Oreo or later
 :::
-Lets you use 32-bit color.
 
 ## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
 Adds a page between chapters display read chapter and upcoming chapter name and chapter number
@@ -214,20 +214,18 @@ new Flickity('#crop-borders-carousel', config);
 </script>
 
 ## Tapping <Badge text="True" type="default-indicator" vertical="middle" />
-Tap to flip through pages. On left and right sides of screen.
+This settings enables switching pages by tapping the sides of the screen.
 
 ## Long tap dialog <Badge text="True" type="default-indicator" vertical="middle" />
 If enabled when reading you can long tap to set the page as cover, share it, or save it.
 
 ## Volume keys <Badge text="False" type="default-indicator" vertical="middle" />
-Flip through pages with volume keys.
-- Volume up goes backward
-- Volume down goes forward
+This setting allows you to flip pages using the volume keys, with the volume up button going to the last page, and volume down is next page.
 
 ## Invert volume keys <Badge text="False" type="default-indicator" vertical="middle" />
+
+Reverse the functions of the volume keys to volume up being next page and volume down going to the last page. Can only be used when volume keys are enabled.
+
 ::: warning
 Disabled if Volume keys if False
 :::
-Invert direction of volume keys
-- Volume up goes forward
-- Volume down goes backward
