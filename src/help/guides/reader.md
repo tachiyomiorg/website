@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 # Reader
-This section relates to the reading experience of the app and navigating the reader.
+This section relates to the reading experience in the app and navigating the reader.
 
 ## Default viewer <Badge text="Left to Right" type="default-indicator" vertical="middle" />
 This setting sets the reader's default direction when you open a manga.
@@ -36,7 +36,7 @@ All examples are illustrations and may not reflect what actually happens.
 <div class="carousel-cell">
     <figure class="centered">
 	    <h4>Fit screen</h4>
-        <p>Will fit either to width or height depending on image dimensions</p>
+        <p>Will fit either to width or height depending on image resolution</p>
         <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitscreen.png')">
     </figure>
 </div>
@@ -61,7 +61,7 @@ All examples are illustrations and may not reflect what actually happens.
 <div class="carousel-cell">
     <figure class="centered">
 	    <h4>Original size</h4>
-        <p>Will be either zoom in or out depending on image dimensions</p>
+        <p>Will be either zoom in or out depending on image resolution</p>
 	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/originalsize.png')">
     </figure>
 </div>
@@ -112,7 +112,7 @@ All examples are illustrations
 <div class="carousel-cell">
     <figure class="centered">
 	    <h4>Center</h4>
-        <p>Will start at the center side of the page.</p>
+        <p>Will start at the center of the page.</p>
         <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
     </figure>
 </div>
