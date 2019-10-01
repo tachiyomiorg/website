@@ -57,7 +57,7 @@ To do this, go to `My Library` > triple dots (`⋮`) > `Edit categories` then dr
 </figure>
 :::
 
-## Delete a Gategory
+## Delete a Category
 
 You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categories` then long press the category you want to delete, and press the trash can icon (🗑️).
 
