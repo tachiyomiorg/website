@@ -183,8 +183,8 @@ This setting decodes images in ARGB888 format to allow the reader to display mor
 This setting will only show up on smartphones running Android Oreo and later versions.
 :::
 
-## Page transitions <Badge text="True" type="default-indicator" vertical="middle" /> <Badge text="Not working" type="function-indicator" vertical="middle" />
-Adds a page between chapters display read chapter and upcoming chapter name and chapter number
+## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
+This setting applies a smooth transition when tapping to change page.
 
 ## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
 Tries to remove excess white borders
