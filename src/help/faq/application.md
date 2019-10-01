@@ -20,6 +20,16 @@ Every now and then you find a manga that is translated by more than one group, b
 
 To automatically skip a translation group while reading, go to the manga's chapter list and click on the three dots in the upper right hand corner. From there, click on Sorting mode and select By chapter number. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
 
+### Why do I see `attempt to invoke virtual method 'com.hippo.unifile...`, what can I do to fix it?
+
+This error can be caused by a variety of reasons, all to do with storage.
+
+1. Most commonly it is caused by full storage, check to see if your device or SD Card is full
+1. Tachiyomi doesn't have access to SD card enabled in permissions for the app
+1. If you're downloading and this error pops up, that means the app might not be able to access the folder you're trying to download to.
+1. This may be because the folder is corrupted or does not exist. Use a file manager to check that the folder(s) actually exist and every folder in the sequence is available and accessible.
+1. The drive you're writing to is corrupted. Check using a file manager to see if it is accessible.
+
 ## Reader
 
 ### Why are some images not displayed?
@@ -88,13 +98,8 @@ If you want to help translate Tachiyomi, read our [guide](../guides/translation.
 
 ### iOS Version
 
-Is there an iOS version? No. Is there going to be? There are no plans for
-one since iOS and Android apps are nothing alike.
+Is there an iOS version? No. Is there going to be? There are no plans for one since iOS and Android apps are nothing alike.
 
 ### I lost everything, what now?
 
-Tachiyomi is still in beta. Some design changes or unexpected errors may
-lead to data loss. While I try for them not to happen, sometimes it is
-unavoidable. To avoid this in the future, you can use the automatic
-backup feature in Settings. If your file manager supports it, you may
-even backup to Google Drive.
+Tachiyomi is still in beta. Some design changes or unexpected errors may lead to data loss. While I try for them not to happen, sometimes it is unavoidable. To avoid this in the future, you can use the automatic backup feature in Settings. If your file manager supports it, you may even backup to Google Drive.
