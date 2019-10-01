@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="material-holder">
     <i class="material-icons">{{ iconName }}</i>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-div {
+.material-holder {
     color: #476582;
     background-color: rgba(27,31,35,0.05);    
     width: fit-content;
