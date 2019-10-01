@@ -226,6 +226,18 @@ To do so, go to `Browse`/`Latest` for MangaDex under `Catalogues`, open any mang
 
 Now go to the hamburger menu, press the `Manga` drop-down and then choose either `Sign up` or `Log in` to proceed with the log in.
 
+::: expander <strong>Click to reveal video guide!</strong>
+<figure class="centered">
+	<video autoplay crossorigin="use-credentials" height="534"
+	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
+	  playsinline="playsinline" :poster="$withBase('/assets/media/logintomangadex.png')"
+	  preload="none" width="300">
+		<source :src="$withBase('/assets/media/logintomangadex.webm')" type="video/webm" />
+		<source :src="$withBase('/assets/media/logintomangadex.mp4')" type="video/mp4" />
+	</video>
+</figure>
+:::
+
 ### Alternate searching method
 
 In `Mangadex 1.2.52` and newer the extension allows you to search using the id number to find manga. To get the id number look at the URL of the manga you want to add.
@@ -255,7 +267,7 @@ There is a tool to migrate from MangaRock to Tachiyomi courtesy of a member of o
 
 Note that you must download the 64-bit version of Java or it will run out of memory. Access the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 
-### Error: Value <url> at 0 of type java.lang.String cannot be converted to JSONObject
+### Error: Value `<url>` at 0 of type java.lang.String cannot be converted to JSONObject
 
 If you get this error when opening Manga Rock chapters, try clearing your chapter cache (`Settings` > `Advanced`) and refreshing the chapters list.
 
