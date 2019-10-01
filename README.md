@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./assets/media/tachiyomi.png">Tachiyomi Website</h1>
+<h1 align="center"><img src="./src/.vuepress/public/assets/media/tachiyomi.png">Tachiyomi Website</h1>
 <p align="center">
   <a href="https://discord.gg/tachiyomi">
     <img src="https://img.shields.io/discord/349436576037732353.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
@@ -6,9 +6,8 @@
 </p>
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Repositories
 
