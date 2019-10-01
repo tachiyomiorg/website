@@ -13,13 +13,21 @@ module.exports = {
 		docsDir: 'src',
 		editLinks: true,
 		nav: require('./config/nav'),
-		sidebar: require('./config/sidebar'),
+		sidebar: {
+			'/help/guides/': require('./config/sidebar/guides'),
+			'/help/faq/': require('./config/sidebar/faq'),
+			'/help/contribution': require('./config/sidebar/contribution'),
+			'/extensions': require('./config/sidebar/extensions')
+		},
 		lastUpdated: 'Last Updated'
 	},
 	plugins: require('./config/plugins'),
 	extraWatchFiles: [
 		'.vuepress/config/nav.js',
-		'.vuepress/config/sidebar.js',
-		'.vuepress/config/plugins.js'
+		'.vuepress/config/plugins.js',
+		'.vuepress/config/sidebar/guides.js',
+		'.vuepress/config/sidebar/faq.js',
+		'.vuepress/config/sidebar/contribution.js',
+		'.vuepress/config/sidebar/extensions.js'
 	]
 }

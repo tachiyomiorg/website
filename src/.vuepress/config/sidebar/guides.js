@@ -2,7 +2,7 @@ module.exports = [
 	'/',
 	{
 		title: 'Guides',
-		path: '/help/guides/',
+		collapsable: false,
 		sidebarDepth: 2,
 		children: [
 			{
@@ -41,34 +41,21 @@ module.exports = [
 					'/help/guides/downloads',
 					'/help/guides/tracking',
 					'/help/guides/backup',
-					'/help/guides/advanced'
+					'/help/guides/advanced',
 				]
-			}
+			},
 		]
 	},
 	{
 		title: 'Frequently Asked Questions',
-		path: '/help/faq/',
-		sidebarDepth: 2,
-		children: [
-			{
-				title: 'General',
-				collapsable: false,
-				sidebarDepth: 2,
-				children: [
-					'/help/faq/application',
-					'/help/faq/extensions'
-				]
-			},
-			{
-				title: 'Contribution',
-				collapsable: false,
-				sidebarDepth: 2,
-				children: [
-					'/help/faq/how-can-i-help'
-				]
-			}
-		]
+		path: '/help/faq/application',
 	},
-	'/extensions/'
+	{
+		title: 'Contribution',
+		path: '/help/contribution'
+	},
+	{
+		title: 'Available extensions',
+		path: '/extensions/'
+	}
 ];
