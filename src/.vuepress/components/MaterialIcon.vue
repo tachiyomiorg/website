@@ -15,12 +15,17 @@ export default {
 
 .material-holder {
     color: #476582;
-    background-color: rgba(27,31,35,0.05);    
-    width: fit-content;
+    background-color: rgba(27,31,35,0.05);
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+    font-size: 0.85em;
+    border-radius: 3px; 
     display: inline;
 }
 
 .material-icons {
-    font-size: 18px;
+    font-size: 16px;
+    position: relative;
+    top: 0.2rem;
 }
 </style>
