@@ -46,7 +46,7 @@ In this case it is a problem with the site.
 1. It may have been fixed already, but not released yet, so look at [closed](https://github.com/inorichi/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) issues as well.
 1. If you can't find the issue there, you can open a new one.
 
-## Solving a CAPTCHA <Badge text="0.8.4 +"/>
+## Solving a CAPTCHA <Badge text="0.8.4 +" vertical="middle"/>
 
 Please note that WebView is not the same as using your browser.
 WebView is a new feature introduced in stable version `0.8.4` to allow
