@@ -4,10 +4,10 @@ lang: en-US
 ---
 
 # Reader
-This section generally relates to the reading experience of the app and navigating the reader.
+This section relates to the reading experience in the app and navigating the reader.
 
 ## Default viewer <Badge text="Left to Right" type="default-indicator" vertical="middle" />
-This setting sets the default direction the reader goes in when you open a manga.
+This setting sets the reader's default direction when you open a manga.
 
 **Left to right**
 - Swipe left for next page. Swipe right for previous page.
@@ -22,22 +22,21 @@ This setting sets the default direction the reader goes in when you open a manga
 - Webtoon is like vertical but stitches all the images together into one stream.
 
 ::: tip
-You can have different Viewer for different series. By going to the series opening a chapter, tapping the middle of the
-screen, then pressing the gear icon, then select a different viewer in `View for this series`
+You can have different Viewer for different series. You can do this by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in `Viewer for this series`
 :::
 
 ## Scale type <Badge text="Fit screen" type="default-indicator" vertical="middle" />
-Scale type lets you choose how the page fits to your screen.
+Scale type lets you choose how the page fits in your screen.
 
 ### Examples
 
-All examples are illustrations and may not reflect what really happens.
+All examples are illustrations and may not reflect what actually happens.
 
 <div class="carousel" id="scale-type-carousel">
 <div class="carousel-cell">
     <figure class="centered">
 	    <h4>Fit screen</h4>
-        <p>Will fit either to width or height depending on image dimensions</p>
+        <p>Will fit either to width or height depending on image resolution</p>
         <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitscreen.png')">
     </figure>
 </div>
@@ -62,7 +61,7 @@ All examples are illustrations and may not reflect what really happens.
 <div class="carousel-cell">
     <figure class="centered">
 	    <h4>Original size</h4>
-        <p>Will be either zoom in or out depending on image dimensions</p>
+        <p>Will be either zoom in or out depending on image resolution</p>
 	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/originalsize.png')">
     </figure>
 </div>
@@ -84,12 +83,11 @@ new Flickity('#scale-type-carousel', config);
 </script>
 
 ::: tip
-You can change scale type when reading a chapter. By tapping the middle of the screen, then press the gear icon, then
-select a different scale type under `Scale type`. This will change Scale type for all series.
+You can change scale type when reading a chapter. Tap the middle of the screen, press the gear icon at the top, select a different scale type under `Scale type`. This will change Scale type for all series.
 :::
 
 ## Zoom start position <Badge text="Automatic" type="default-indicator" vertical="middle" />
-Depending on your scale type the page can be wider than the screen and with zoom start position you can choose where
+Depending on your scale type the page can be wider than the screen, and with zoom start position you can choose where
 Tachiyomi will start on that zoomed in page.
 
 ### Examples
@@ -114,7 +112,7 @@ All examples are illustrations
 <div class="carousel-cell">
     <figure class="centered">
 	    <h4>Center</h4>
-        <p>Will start at the center side of the page.</p>
+        <p>Will start at the center of the page.</p>
         <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
     </figure>
 </div>
@@ -129,9 +127,9 @@ new Flickity('#zoom-start-position-carousel', config);
 </script>
 
 ## Rotation <Badge text="Free" type="default-indicator" vertical="middle" />
-This allows you to control how to screen is going to be oriented. `Free` lets you rotate the screen between portrait and
+This allows you to control how the screen is going to be oriented. `Free` lets you rotate the screen between portrait and
 landscape. `Lock` will lock the orientation to whatever orientation you had before entering the reader. `Force Portrait`
-forces reader to be in portrait. `Force Landscape` forces reader to be in landscape.
+forces the reader to be in portrait. `Force Landscape` forces the reader to be in landscape.
 
 ## Background color <Badge text="White" type="default-indicator" vertical="middle" />
 This allows you to control what color the background should be in reader. Background color can either be `Black` or
@@ -142,14 +140,14 @@ This allows you to control what color the background should be in reader. Backgr
     <figure class="centered">
 	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
         <h4>Black</h4>
-        <p>Surrounds page with black. With a Amoled screen you can save some battery by using this to read some more series.</p>
+        <p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
     </figure>
 </div>
 <div class="carousel-cell">
     <figure class="centered">
 	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorwhite.png')">
         <h4>White</h4>
-        <p>Surrounds page with white. Make pages seemless with screen, black background pages will not.</p>
+        <p>Surrounds page with white. Makes pages seemless with the screen.</p>
     </figure>
 </div>
 </div>
@@ -163,16 +161,17 @@ new Flickity('#background-color-carousel', config);
 </script>
 
 ## Double tap animation speed <Badge text="Normal" type="default-indicator" vertical="middle" />
-Double tap animation speed changes the speed in which the zoom happends when double tapping.
+Double tap animation speed changes the speed in which the zoom happens when double tapping.
 
 ## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
-This setting sets if read chapters or marked as read are skipped. To mark a chapter as read, tap the overflow (three-dot) icon and press 'Mark as Read.'
+This setting allows the chapters marked as read to be skipped during reading. To mark a chapter as read, tap the overflow (three-dot) icon and press 'Mark as Read.'
+This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
 
 ## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
-This setting sets if the notification and navigation bar are hidden while in the reader.
+This setting specifies if the notification and navigation bar are to be hidden while in the reader.
 
 ## Keep screen on <Badge text="True" type="default-indicator" vertical="middle" />
-This setting keeps the device from going asleep while reading a manga.
+This setting determines if the device should be allowed to go to sleep while reading a manga.
 
 ## Show page number <Badge text="True" type="default-indicator" vertical="middle" />
 This settings shows the page number at the bottom of the page in current page/total page format.
@@ -181,25 +180,25 @@ This settings shows the page number at the bottom of the page in current page/to
 This setting decodes images in ARGB888 format to allow the reader to display more colors.
 
 ::: warning
-This setting will only show up on Oreo or later
+This setting will only show up on smartphones running Android 8.0 Oreo and later versions.
 :::
 
 ## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
-Adds a page between chapters display read chapter and upcoming chapter name and chapter number
+This setting applies a smooth transition when tapping to change page.
 
 ## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
-Tries to remove exess white borders
+Tries to remove excess white borders
 
 <div class="carousel" id="crop-borders-carousel">
 <div class="carousel-cell">
     <figure class="centered">
-	    <h4>With crop borders</h4>
+	    <h4>With Crop borders on</h4>
         <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withcropborder.png')">
     </figure>
 </div>
 <div class="carousel-cell">
     <figure class="centered">
-	    <h4>Without crop borders</h4>
+	    <h4>With Crop borders off</h4>
         <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withoutcropborder.png')">
     </figure>
 </div>
@@ -214,18 +213,18 @@ new Flickity('#crop-borders-carousel', config);
 </script>
 
 ## Tapping <Badge text="True" type="default-indicator" vertical="middle" />
-This settings enables switching pages by tapping the sides of the screen.
+This setting enables switching pages by tapping the sides of the screen.
 
 ## Long tap dialog <Badge text="True" type="default-indicator" vertical="middle" />
-If enabled when reading you can long tap to set the page as cover, share it, or save it.
+If enabled, you can long tap on the screen to get the options to set the current page as cover, share it, or save it.
 
 ## Volume keys <Badge text="False" type="default-indicator" vertical="middle" />
-This setting allows you to flip pages using the volume keys, with the volume up button going to the last page, and volume down is next page.
+This setting allows you to flip pages using the volume keys, with the volume up button going to the previous page, and volume down going to next page.
 
 ## Invert volume keys <Badge text="False" type="default-indicator" vertical="middle" />
 
-Reverse the functions of the volume keys to volume up being next page and volume down going to the last page. Can only be used when volume keys are enabled.
+Reverses the Volume keys function of volume up going to the next page and volume down going to the last page.
 
 ::: warning
-Disabled if Volume keys if False
+This setting can only be used when Volume keys setting is enabled.
 :::
