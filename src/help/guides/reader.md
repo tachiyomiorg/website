@@ -140,7 +140,7 @@ This allows you to control what color the background should be in reader. Backgr
     <figure class="centered">
 	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
         <h4>Black</h4>
-        <p>Surrounds page with black. With an Amoled screen you can save battery by using this.</p>
+        <p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
     </figure>
 </div>
 <div class="carousel-cell">
@@ -180,7 +180,7 @@ This settings shows the page number at the bottom of the page in current page/to
 This setting decodes images in ARGB888 format to allow the reader to display more colors.
 
 ::: warning
-This setting will only show up on smartphones running Android Oreo and later versions.
+This setting will only show up on smartphones running Android 8.0 Oreo and later versions.
 :::
 
 ## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
