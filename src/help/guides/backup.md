@@ -4,11 +4,11 @@ lang: en-US
 ---
 
 # Backup
-:construction: :construction_worker_man: W.I.P. Description, help us improve through [here](https://github.com/tachiyomiorg/website/edit/master/src/help/guides/backup.md)!
+This category of settings allows you to setup a backup and restore mechanism for the manga you are reading in the app.
 
 
 ## Create backup
-Create backup lets you backup your library, tracking settings, and reading history. To create a backup go to `Settings > Backup` and then select `Create backup`, this will bring up a dialog letting you choose what to backup. Manga is greyed out because it will always be backed up.
+Create backup lets you backup your library (titles, categories, read chapters), tracking settings, and reading history. This setting will bring up a dialog letting you choose what to backup. Manga is greyed out because it will always be backed up.
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
 	<video autoplay crossorigin="use-credentials" height="534"
@@ -22,7 +22,7 @@ Create backup lets you backup your library, tracking settings, and reading histo
 :::
 
 ## Restore backup
-Restore backup lets you restore your previously created backup. To restore a backup go to `Settings > Backup` and then select `Restore backup`, this will bring up a file explorer. Proceed by navigating to where your stored backup is located then select it.
+Restore backup lets you restore your previously created backup. This setting will bring up a file explorer for you. Proceed by navigating to where your stored backup is located and then select it.
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
 	<video autoplay crossorigin="use-credentials" height="534"
@@ -36,7 +36,7 @@ Restore backup lets you restore your previously created backup. To restore a bac
 :::
 
 ## Backup frequency
-Backup frequency lets you select a frequency in which Tachiyomi will automatically backup your library. To setup Backup frequency go to `Settings > Backup` and the select `Backup frequency`, this will bring up a dialog letting you choose between preset backup frequencies.
+Backup frequency lets you select a frequency in which Tachiyomi will automatically backup your library. This setting will bring up a dialog letting you choose between preset backup frequencies.
 
 ## Backup directory
 Backup directory lets you choose where your automatic backup is stored.
