@@ -1,0 +1,37 @@
+.guide
+	margin 1rem 0
+	padding .1rem 1.5rem
+	border-radius 0.4rem
+	background-color #f0f4f8
+	.title
+		font-weight bold
+
+.custom-block
+	&.aside
+		color transparentify($textColor, 0.4)
+		font-size 0.9rem
+		text-align right
+
+customBlockBorderRadius = '.custom-block.tip, .custom-block.warning, .custom-block.error'
+
+{customBlockBorderRadius}
+	border-radius 0rem 0.4rem 0.4rem 0rem
+
+.expander.content
+	.expander.expansion
+		font-weight bold
+
+.expander.content
+	margin 1rem 0
+	padding 1rem 1.5rem
+	border-radius 0.4rem
+	background-color #f0f4f8
+
+.expander.expansion:focus
+	outline none !important
+
+.expander.expansion
+	-webkit-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
