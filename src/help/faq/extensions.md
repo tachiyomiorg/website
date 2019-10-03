@@ -32,32 +32,31 @@ When installing your first extension and are prompted that your phone isn't allo
 
 <div class="carousel" id="unknown-source-carousel">
 <div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Android 8.0 and higher</h4>
-        <p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
+		<figure class="centered">
+			<h4>Android 8.0 and higher</h4>
+				<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
 		<video autoplay crossorigin="use-credentials" height="355" intrinsicsize="400x688" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" :poster="$withBase('/assets/media/unknownapps-api28.png')" preload="none" width="200">
 			<source :src="$withBase('/assets/media/unknownapps-api28.webm')" type="video/webm" />
 			<source :src="$withBase('/assets/media/unknownapps-api28.mp4')" type="video/mp4" />
 		</video>
-    </figure>
+		</figure>
 </div>
 <div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Android 7.1 and lower</h4>
+		<figure class="centered">
+			<h4>Android 7.1 and lower</h4>
 		<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
-		<video autoplay crossorigin="use-credentials" height="355" intrinsicsize="400x688" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" :poster="$withBase('/assets/media/unknownapps-api25.png')"
-	  preload="none" width="200">
+		<video autoplay crossorigin="use-credentials" height="355" intrinsicsize="400x688" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" :poster="$withBase('/assets/media/unknownapps-api25.png')" preload="none" width="200">
 			<source :src="$withBase('/assets/media/unknownapps-api25.webm')" type="video/webm" />
 			<source :src="$withBase('/assets/media/unknownapps-api25.mp4')" type="video/mp4" />
 		</video>
-    </figure>
+		</figure>
 </div>
 </div>
 <script>
 var config = {
-  adaptiveHeight: true,
-  wrapAround: true,
-  pageDots: false
+	adaptiveHeight: true,
+	wrapAround: true,
+	pageDots: false
 };
 new Flickity('#unknown-source-carousel', config);
 </script>
@@ -110,7 +109,7 @@ Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WW
 
 ### Why can't I find manga when searching catalogues?
 It might be because the title is worded differently. Follow any of the steps below:
-- Look up the title on [Google](https://google.com/) or a manga tracking service such as [AniList](https://anilist.co/home).
+- Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single site will not satisfy all your needs.
 - Download the extension for that source from **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** if it exists, read [this](/help/faq/extensions/#which-sources-are-there-in-the-multi-source-extensions) for a list of which extensions contains what sources.
 - Go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)** → **[Browse](/help/guides/catalogues/#browse)** on a source then search for the manga again.
@@ -140,9 +139,9 @@ To enter the **WebView** go to **[<MaterialIcon icon-name="explore"/> Catalogues
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
 	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/logintomangadex.png')"
-	  preload="none" width="300">
+		intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
+		playsinline="playsinline" :poster="$withBase('/assets/media/logintomangadex.png')"
+		preload="none" width="300">
 		<source :src="$withBase('/assets/media/logintomangadex.webm')" type="video/webm" />
 		<source :src="$withBase('/assets/media/logintomangadex.mp4')" type="video/mp4" />
 	</video>
@@ -185,12 +184,6 @@ Read more about the situation [here](https://mrcomics.com/).
 There is a tool to migrate from **MangaRock** to **Tachiyomi** courtesy of a member of our [Discord server](https://discord.gg/tachiyomi) by the same name as the creator, but a computer is required to finish the migration successfully.
 
 View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
-
-::: warning WARNING
-You must download the 64-bit version of Java or it will run out of memory.
-::: aside
-Download the latest Java [here](https://www.java.com/sv/download/manual.jsp)
-:::
 
 ### Why do I get `Value <url> at 0 of type java.lang.String cannot be converted to JSONObject`?
 If you get this error when opening **MangaRock** chapters, try clearing your chapter cache.
