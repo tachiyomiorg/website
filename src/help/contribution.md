@@ -4,10 +4,9 @@ lang: en-US
 ---
 
 # How can I help?
-:construction: :construction_worker_man: W.I.P. Description, help us improve through [here](https://github.com/tachiyomiorg/website/edit/master/src/help/faq/how-can-i-help.md)!
+:construction: :construction_worker_man: W.I.P.
 
 ## GitHub
-:construction: :construction_worker_man: W.I.P.
 
 ## Translation
 

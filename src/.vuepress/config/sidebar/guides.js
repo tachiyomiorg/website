@@ -42,6 +42,7 @@ module.exports = [
 					'/help/guides/tracking',
 					'/help/guides/backup',
 					'/help/guides/advanced',
+					'/help/guides/about'
 				]
 			},
 		]
