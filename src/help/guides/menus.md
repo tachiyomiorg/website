@@ -10,7 +10,7 @@ lang: en-US
 
 ### [<MaterialIcon icon-name="update"/> Library updates](/help/guides/library-updates)
 
-### [<MDI-Glasses/> Recently read](/help/guides/recently-read)
+### [<MaterialIcon icon-name="mdi-glasses" legacy /> Recently read](/help/guides/recently-read)
 
 ### [<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)
 
