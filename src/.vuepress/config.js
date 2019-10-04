@@ -12,6 +12,7 @@ module.exports = {
 		docsRepo: 'tachiyomiorg/website',
 		docsDir: 'src',
 		editLinks: true,
+		editLinkText: 'Help us improve this page',
 		nav: require('./config/nav'),
 		sidebar: {
 			'/help/guides/': require('./config/sidebar/guides'),
