@@ -5,7 +5,6 @@ module.exports = {
 	head: [
 		['script', { src: 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'} , ''],
 		['link', { rel: "stylesheet", type: "text/css", href: 'https://unpkg.com/flickity@2/dist/flickity.min.css'} , ''],
-		['link', { rel: "stylesheet", type: "text/css", href: '/assets/css/carousel.css'} , '']
 	],
 	themeConfig: {
 		repo: 'inorichi/tachiyomi',
