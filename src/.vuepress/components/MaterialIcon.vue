@@ -1,8 +1,8 @@
 <template>
-  <div class="icon-holder">
-    <i v-if="legacy" class="legacy-material-icons mdi" v-bind:class="iconName"></i>
-    <i v-else class="material-icons">{{ iconName }}</i>
-  </div>
+	<div class="icon-holder">
+		<i v-if="legacy" class="legacy-material-icons mdi" v-bind:class="iconName"></i>
+		<i v-else class="material-icons">{{ iconName }}</i>
+	</div>
 </template>
 
 <script>
@@ -14,16 +14,16 @@
  * Code example: <MaterialIcon icon-name="mdi-glasses" legacy />
 */
 export default {
-  props: {
-    legacy: {
-      type: Boolean,
-      default: false
-    },
-    iconName: {
-      type: String,
-      required: true
-    }
-  }
+	props: {
+		legacy: {
+			type: Boolean,
+			default: false
+		},
+		iconName: {
+			type: String,
+			required: true
+		}
+	}
 }
 </script>
 
@@ -32,20 +32,20 @@ export default {
 @import url("https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css");
 
 .icon-holder {
-    color: #476582;
-    margin: 0;
-    font-size: 0.85em;
-    border-radius: 3px;
-    display: inline;
+	color: #476582;
+	margin: 0;
+	font-size: 0.85em;
+	border-radius: 3px;
+	display: inline;
 }
 
 .material-icons {
-    font-size: 1.35em;
-    position: relative;
-    top: 0.2rem;
+	font-size: 1.35em;
+	position: relative;
+	top: 0.2rem;
 }
 
 .legacy-material-icons {
-    font-size: 1.35em;
+	font-size: 1.35em;
 }
 </style>
