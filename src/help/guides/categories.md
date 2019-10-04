@@ -13,12 +13,8 @@ To make a category, go to `My Library`, then click on the triple dots (`⋮`) on
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/createcategory.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/createcategory.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/createcategory.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-category-create.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-category-create.webm')" type="video/webm" />
 	</video>
 </figure>
 :::
@@ -29,12 +25,8 @@ You can edit a Category in `My Library` > triple dots (`⋮`) > `Edit categories
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/editcategory.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/editcategory.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/editcategory.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-category-edit.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-category-edit.webm')" type="video/webm" />
 	</video>
 </figure>
 :::
@@ -47,12 +39,8 @@ To do this, go to `My Library` > triple dots (`⋮`) > `Edit categories` then dr
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/reordercategories.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/reordercategories.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/reordercategories.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-category-reorder.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-category-reorder.webm')" type="video/webm" />
 	</video>
 </figure>
 :::
@@ -63,12 +51,8 @@ You can delete a Category in `My Library` > triple dots (`⋮`) > `Edit categori
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/removecategory.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/removecategory.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/removecategory.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-category-delete.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-category-delete.webm')" type="video/webm" />
 	</video>
 </figure>
 :::
@@ -82,12 +66,8 @@ You can also add Manga to multiple Categories by selecting the categories you wa
 :::
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/addmangatocategory.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/addmangatocategory.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/addmangatocategory.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-category-add-to.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-category-add-to.webm')" type="video/webm" />
 	</video>
 </figure>
 :::
@@ -100,12 +80,8 @@ You can move a Manga to multiple Categories by selecting the categories you want
 :::
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/removemangafromcategory.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/removemangafromcategory.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/removemangafromcategory.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-category-remove-from.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-category-remove-from.webm')" type="video/webm" />
 	</video>
 </figure>
 :::

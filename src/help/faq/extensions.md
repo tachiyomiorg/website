@@ -30,36 +30,26 @@ You can find the list of extensions to download [here](/extensions/)
 ### How do I allow third-party installations?
 When installing your first extension and are prompted that your phone isn't allowed to install unknown apps from that source, simply follow the prompt to allow it.
 
-<div class="carousel" id="unknown-source-carousel">
-<div class="carousel-cell">
-		<figure class="centered">
-			<h4>Android 8.0 and higher</h4>
-				<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
-		<video autoplay crossorigin="use-credentials" height="355" intrinsicsize="400x688" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" :poster="$withBase('/assets/media/unknownapps-api28.png')" preload="none" width="200">
-			<source :src="$withBase('/assets/media/unknownapps-api28.webm')" type="video/webm" />
-			<source :src="$withBase('/assets/media/unknownapps-api28.mp4')" type="video/mp4" />
-		</video>
-		</figure>
-</div>
-<div class="carousel-cell">
-		<figure class="centered">
-			<h4>Android 7.1 and lower</h4>
-		<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
-		<video autoplay crossorigin="use-credentials" height="355" intrinsicsize="400x688" loading="lazy" loop="loop" muted="muted" playsinline="playsinline" :poster="$withBase('/assets/media/unknownapps-api25.png')" preload="none" width="200">
-			<source :src="$withBase('/assets/media/unknownapps-api25.webm')" type="video/webm" />
-			<source :src="$withBase('/assets/media/unknownapps-api25.mp4')" type="video/mp4" />
-		</video>
-		</figure>
-</div>
-</div>
-<script>
-var config = {
-	adaptiveHeight: true,
-	wrapAround: true,
-	pageDots: false
-};
-new Flickity('#unknown-source-carousel', config);
-</script>
+<Carousel name="carousel-unknown-source">
+<CarouselItem>
+<figure class="centered">
+	<h4>Android 8.0 and higher</h4>
+	<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
+	<video :poster="$withBase('/assets/media/video-guide-unknownsources-android10.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-unknownsources-android10.webm')" type="video/webm" />
+	</video>
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+	<h4>Android 7.1 and lower</h4>
+	<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
+	<video :poster="$withBase('/assets/media/video-guide-unknownsources-android711.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-unknownsources-android711.webm')" type="video/webm" />
+	</video>
+</figure>
+</CarouselItem>
+</Carousel>
 
 ::: aside
 If you need more help regarding this, read [this](https://www.theandroidsoul.com/how-to-allow-apps-installation-from-unknown-sources-on-android-9-pie/)

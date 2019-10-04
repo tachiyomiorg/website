@@ -14,3 +14,6 @@ npm-debug.log
 
 # Compiled site
 /public/
+
+# Custom VSC workspace
+*.code-workspace
