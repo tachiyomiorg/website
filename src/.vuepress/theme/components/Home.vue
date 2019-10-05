@@ -163,6 +163,11 @@ export default {
 				margin-left: 0.5rem;
 			}
 
+			svg {
+				height: 1em;
+				width: 1em;
+			}
+
 			& + .action-button {
 				margin-left: 0.5rem;
 			}
