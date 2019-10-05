@@ -98,6 +98,16 @@ Read more [here](/help/guides/general/#language)
 :::
 
 ## Miscellaneous
+### What happened to the F-Droid version?
+F-Droid is no longer an officially supported option. Both the stable and dev builds now include an autoupdate mechanism.
+
+An unofficial F-Droid repo is available at [Efreak/tachiyomi-extensions](https://github.com/Efreak/tachiyomi-extensions).
+
+### Why do I get a `App not installed` error when installing?
+You may encounter this if you're installing an official build over an existing F-Droid build due to differing signatures.
+
+Backup your data, uninstall the app, then restore the data in the fresh install.
+
 ### iOS Version
 There is currently no iOS version and there are no plans for one and since iOS and Android apps don't share code it's hard to port.
 

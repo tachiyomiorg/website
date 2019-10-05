@@ -18,14 +18,17 @@ User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet sh
 Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
 :::
 
-### Why won't the extensions install?
-In some cases your phone might have some issues downloading the extensions, in those cases you can try installing them yourselves directly from the source.
-
-To install just download the file for the extension you want and then install it, like how you installed **Tachiyomi**.
+### How do I request a new extension?
+Open an issue [on GitHub](https://github.com/inorichi/tachiyomi-extensions/issues) if one does not already exist.
 
 ::: aside
 You can find the list of extensions to download [here](/extensions/)
 :::
+
+### Why won't the extensions install?
+In some cases your phone might have some issues downloading the extensions, in those cases you can try installing them yourselves directly from the source.
+
+To install just download the file for the extension you want and then install it, like how you installed **Tachiyomi**.
 
 ### How do I allow third-party installations?
 When installing your first extension and are prompted that your phone isn't allowed to install unknown apps from that source, simply follow the prompt to allow it.
@@ -115,6 +118,15 @@ It means that the respective extension for the manga is not installed. To fix, i
 
 #### Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject
 This means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
+
+#### HTTP error 503
+The source you selected may have Cloudflare protection on and is enforcing CAPTCHAs.
+
+1. Find a manga in your library that is from the source you're trying to access
+1. Tap on the overflow menu in the Info tab (3 dots)
+1. Open in Webview
+1. Complete the CAPTCHA if present and wait for the page to finish loading
+1. Press back rather than exiting the app and if that does not work, use the back arrow
 
 ## MangaDex
 
