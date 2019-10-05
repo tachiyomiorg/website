@@ -42,9 +42,9 @@ All of the above are very imprecise and fuzzy rules, because each site has their
 
 ### Everyone is having this problem
 In this case it is a problem with the site.
-1. Have a look at [open](https://github.com/inorichi/tachiyomi/issues) issues.
-1. It may have been fixed already, but not released yet, so look at [closed](https://github.com/inorichi/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) issues as well.
-1. If you can't find the issue there, you can open a new one.
+1. Have a look at open issues [for the app](https://github.com/inorichi/tachiyomi/issues) and/or [extensions](https://github.com/inorichi/tachiyomi-extensions/issues).
+1. It may have been fixed already, but not released yet, so look at closed issues ([app](https://github.com/inorichi/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) / [extensions](https://github.com/inorichi/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
+1. If you can't find the issue there, open a new one.
 
 ## Solving a CAPTCHA <Badge text="0.8.4 +" vertical="middle"/>
 
