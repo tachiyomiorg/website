@@ -11,12 +11,8 @@ This category of settings allows you to setup a backup and restore mechanism for
 Create backup lets you backup your library (titles, categories, read chapters), tracking settings, and reading history. This setting will bring up a dialog letting you choose what to backup. Manga is greyed out because it will always be backed up.
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/createbackup.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/createbackup.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/createbackup.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-backup-create.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-backup-create.webm')" type="video/webm" />
 	</video>
 </figure>
 :::
@@ -25,12 +21,8 @@ Create backup lets you backup your library (titles, categories, read chapters), 
 Restore backup lets you restore your previously created backup. This setting will bring up a file explorer for you. Proceed by navigating to where your stored backup is located and then select it.
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/restorebackup.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/restorebackup.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/restorebackup.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-backup-restore.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-backup-restore.webm')" type="video/webm" />
 	</video>
 </figure>
 :::

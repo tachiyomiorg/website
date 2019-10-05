@@ -33,12 +33,8 @@ Press the `Install` button and accept the installation prompt that will be shown
 If you're getting stopped by a security prompt and don't know what to do you can read this FAQ section: ["How do I allow third-party installations?"](/help/faq/extensions/#how-do-i-allow-third-party-installations).
 
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/extensioninstaller.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/extensioninstaller.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/extensioninstaller.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-extension-install.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-extension-install.webm')" type="video/webm" />
 	</video>
 </figure>
 
@@ -53,11 +49,7 @@ Now that you've found manga that you want to add to your library, click on it an
 It should now appear in your `My Library` tab, ready to be read!
 
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-	  intrinsicsize="500x1000" loading="lazy" loop="loop" muted="muted"
-	  playsinline="playsinline" :poster="$withBase('/assets/media/addtolibrary.png')"
-	  preload="none" width="300">
-		<source :src="$withBase('/assets/media/addtolibrary.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/addtolibrary.mp4')" type="video/mp4" />
+	<video :poster="$withBase('/assets/media/video-guide-library-add-to.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+		<source :src="$withBase('/assets/media/video-guide-library-add-to.webm')" type="video/webm" />
 	</video>
 </figure>
