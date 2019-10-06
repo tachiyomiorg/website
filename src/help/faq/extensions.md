@@ -38,7 +38,7 @@ When installing your first extension and are prompted that your phone isn't allo
 <figure class="centered">
 	<h4>Android 8.0 and higher</h4>
 	<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
-	<video :poster="$withBase('/assets/media/video-guide-unknownsources-android10.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+	<video muted loop controls :poster="$withBase('/assets/media/video-guide-unknownsources-android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
 		<source :src="$withBase('/assets/media/video-guide-unknownsources-android10.webm')" type="video/webm" />
 	</video>
 </figure>
@@ -47,7 +47,7 @@ When installing your first extension and are prompted that your phone isn't allo
 <figure class="centered">
 	<h4>Android 7.1 and lower</h4>
 	<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
-	<video :poster="$withBase('/assets/media/video-guide-unknownsources-android711.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
+	<video muted loop controls :poster="$withBase('/assets/media/video-guide-unknownsources-android711.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
 		<source :src="$withBase('/assets/media/video-guide-unknownsources-android711.webm')" type="video/webm" />
 	</video>
 </figure>
@@ -137,15 +137,10 @@ If you're not getting any results when searching MangaDex then you need to log i
 To enter the **WebView** go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)** → **[Browse](/help/guides/catalogues/#browse)**/**[Latest](/help/guides/catalogues/#latest)** next to **MangaDex**, open any manga from the list and then press the **<MaterialIcon icon-name="more_vert"/> Overflow menu** in the top-right corner and then press **Open in web view**.
 :::
 
-
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video autoplay crossorigin="use-credentials" height="534"
-		intrinsicsize="500x100" loading="lazy" loop="loop" muted="muted"
-		playsinline="playsinline" :poster="$withBase('/assets/media/logintomangadex.png')"
-		preload="none" width="300">
-		<source :src="$withBase('/assets/media/logintomangadex.webm')" type="video/webm" />
-		<source :src="$withBase('/assets/media/logintomangadex.mp4')" type="video/mp4" />
+	<video muted loop controls :poster="$withBase('/assets/media/video-guide-mangadex-no-results.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/assets/media/video-guide-mangadex-no-results.webm')" type="video/webm"/>
 	</video>
 </figure>
 :::
