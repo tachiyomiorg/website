@@ -32,55 +32,47 @@ Scale type lets you choose how the page fits in your screen.
 
 All examples are illustrations and may not reflect what actually happens.
 
-<div class="carousel" id="scale-type-carousel">
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Fit screen</h4>
-        <p>Will fit either to width or height depending on image resolution</p>
-        <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitscreen.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Stretch</h4>
-        <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/stretch.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Fit width</h4>
-	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitwidth.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Fit height</h4>
-	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitheight.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Original size</h4>
-        <p>Will be either zoom in or out depending on image resolution</p>
-	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/originalsize.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Smart fit</h4>
-        <p>Fits to the longest side of the image</p>
-	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/smartfit.png')">
-    </figure>
-</div>
-</div>
-<script>
-var config = {
-  adaptiveHeight: true,
-  wrapAround: true,
-  pageDots: false
-};
-new Flickity('#scale-type-carousel', config);
-</script>
+<Carousel name="carousel-scale-type">
+<CarouselItem>
+<figure class="centered">
+    <h4>Fit screen</h4>
+    <p>Will fit either to width or height depending on image resolution</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitscreen.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>Stretch</h4>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/stretch.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>Fit width</h4>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitwidth.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>Fit height</h4>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitheight.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>Original size</h4>
+    <p>Will be either zoom in or out depending on image resolution</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/originalsize.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>Smart fit</h4>
+    <p>Fits to the longest side of the image</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/smartfit.png')">
+</figure>
+</CarouselItem>
+</Carousel>
 
 ::: tip
 You can change scale type when reading a chapter. Tap the middle of the screen, press the gear icon at the top, select a different scale type under `Scale type`. This will change Scale type for all series.
@@ -94,37 +86,29 @@ Tachiyomi will start on that zoomed in page.
 
 All examples are illustrations
 
-<div class="carousel" id="zoom-start-position-carousel">
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Left</h4>
-        <p>Will start at the left side of the page.</p>
-        <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionleft.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Right</h4>
-        <p>Will start at the right side of the page.</p>
-        <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionright.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>Center</h4>
-        <p>Will start at the center of the page.</p>
-        <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
-    </figure>
-</div>
-</div>
-<script>
-var config = {
-  adaptiveHeight: true,
-  wrapAround: true,
-  pageDots: false
-};
-new Flickity('#zoom-start-position-carousel', config);
-</script>
+<Carousel name="carousel-zoom-start-position">
+<CarouselItem>
+<figure class="centered">
+    <h4>Left</h4>
+    <p>Will start at the left side of the page.</p>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionleft.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>Right</h4>
+    <p>Will start at the right side of the page.</p>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionright.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>Center</h4>
+    <p>Will start at the center of the page.</p>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
+</figure>
+</CarouselItem>
+</Carousel>
 
 ## Rotation <Badge text="Free" type="default-indicator" vertical="middle" />
 This allows you to control how the screen is going to be oriented. `Free` lets you rotate the screen between portrait and
@@ -135,30 +119,22 @@ forces the reader to be in portrait. `Force Landscape` forces the reader to be i
 This allows you to control what color the background should be in reader. Background color can either be `Black` or
 `White`.
 
-<div class="carousel" id="background-color-carousel">
-<div class="carousel-cell">
-    <figure class="centered">
-	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
-        <h4>Black</h4>
-        <p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorwhite.png')">
-        <h4>White</h4>
-        <p>Surrounds page with white. Makes pages seemless with the screen.</p>
-    </figure>
-</div>
-</div>
-<script>
-var config = {
-  adaptiveHeight: true,
-  wrapAround: true,
-  pageDots: false
-};
-new Flickity('#background-color-carousel', config);
-</script>
+<Carousel name="carousel-background-color">
+<CarouselItem>
+<figure class="centered">
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
+    <h4>Black</h4>
+    <p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorwhite.png')">
+    <h4>White</h4>
+    <p>Surrounds page with white. Makes pages seemless with the screen.</p>
+</figure>
+</CarouselItem>
+</Carousel>
 
 ## Double tap animation speed <Badge text="Normal" type="default-indicator" vertical="middle" />
 Double tap animation speed changes the speed in which the zoom happens when double tapping.
@@ -189,28 +165,20 @@ This setting applies a smooth transition when tapping to change page.
 ## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
 Tries to remove excess white borders
 
-<div class="carousel" id="crop-borders-carousel">
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>With Crop borders on</h4>
-        <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withcropborder.png')">
-    </figure>
-</div>
-<div class="carousel-cell">
-    <figure class="centered">
-	    <h4>With Crop borders off</h4>
-        <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withoutcropborder.png')">
-    </figure>
-</div>
-</div>
-<script>
-var config = {
-  adaptiveHeight: true,
-  wrapAround: true,
-  pageDots: false
-};
-new Flickity('#crop-borders-carousel', config);
-</script>
+<Carousel name="carousel-crop-borders">
+<CarouselItem>
+<figure class="centered">
+    <h4>With Crop borders on</h4>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withcropborder.png')">
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+    <h4>With Crop borders off</h4>
+    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withoutcropborder.png')">
+</figure>
+</CarouselItem>
+</Carousel>
 
 ## Tapping <Badge text="True" type="default-indicator" vertical="middle" />
 This setting enables switching pages by tapping the sides of the screen.
