@@ -32,11 +32,13 @@ Press the `Install` button and accept the installation prompt that will be shown
 
 If you're getting stopped by a security prompt and don't know what to do you can read this FAQ section: ["How do I allow third-party installations?"](/help/faq/extensions/#how-do-i-allow-third-party-installations).
 
+::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video :poster="$withBase('/assets/media/video-guide-extension-install.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
-		<source :src="$withBase('/assets/media/video-guide-extension-install.webm')" type="video/webm" />
+	<video muted loop controls :poster="$withBase('/assets/media/video-guide-extension-install.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/assets/media/video-guide-extension-install.webm')" type="video/webm"/>
 	</video>
 </figure>
+:::
 
 ## Adding manga to your library
 
@@ -48,8 +50,10 @@ Now that you've found manga that you want to add to your library, click on it an
 
 It should now appear in your `My Library` tab, ready to be read!
 
+::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
-	<video :poster="$withBase('/assets/media/video-guide-library-add-to.png')" height="500" autoplay="autoplay" loop="loop" preload="none" loading="lazy" crossorigin="use-credentials" playsinline="playsinline"   >
-		<source :src="$withBase('/assets/media/video-guide-library-add-to.webm')" type="video/webm" />
+	<video muted loop controls :poster="$withBase('/assets/media/video-guide-library-add-to.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/assets/media/video-guide-library-add-to.webm')" type="video/webm"/>
 	</video>
 </figure>
+:::
