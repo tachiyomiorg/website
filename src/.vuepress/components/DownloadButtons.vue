@@ -27,7 +27,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 * {
-  font-family: 'Open Sans', 'sans-serif';
+	font-family: 'Open Sans', 'sans-serif';
 }
 
 ul {
