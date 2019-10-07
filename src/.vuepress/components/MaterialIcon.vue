@@ -1,6 +1,6 @@
 <template>
-	<div class="icon-holder">
-		<i v-if="legacy" class="legacy-material-icons mdi" v-bind:class="iconName"></i>
+	<div :class="name" class="material-holder">
+		<i v-if="legacy" :class="iconName" class="material-legacy-icons mdi"></i>
 		<i v-else class="material-icons">{{ iconName }}</i>
 	</div>
 </template>
@@ -19,6 +19,10 @@ export default {
 			type: Boolean,
 			default: false
 		},
+		name: {
+			type: String,
+			default: ""
+		},
 		iconName: {
 			type: String,
 			required: true
@@ -31,7 +35,7 @@ export default {
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css");
 
-.icon-holder {
+.material-holder {
 	color: #476582;
 	margin: 0;
 	font-size: 0.85em;
@@ -45,7 +49,7 @@ export default {
 	top: 0.2rem;
 }
 
-.legacy-material-icons {
+.material-legacy-icons {
 	font-size: 1.35em;
 }
 </style>
