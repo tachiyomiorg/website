@@ -1,5 +1,5 @@
 <template>
-	<ul class="noSelect download-list">
+	<ul class="no-select download-list">
 		<li>
 			<a class="download-link" rel="noopener noreferrer" :href="browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest'" :title="tagName" download>
 				<div class="download-button stable">
@@ -23,7 +23,7 @@
 	</ul>
 </template>
 
-<style scoped lang="stylus">
+<style scoped lang="scss">
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
@@ -33,13 +33,13 @@
 ul {
 	width: 100%;
 	text-align: center;
-	margin: 10px 0 0 0;
+	margin: .625em 0 0 0;
 	padding: 0;
 }
 
 li {
 	display: inline-block;
-	margin: 5px 10px 5px 10px;
+	margin: .3125em .625em .3125em .625em;
 }
 
 a.download-link {
@@ -52,10 +52,10 @@ a.download-link {
 		justify-content: center;
 		align-items: center;
 		background-color: #2E84BF;
-		width: 11em;
-		height: 3.7em;
-		border-radius: 5px;
-		padding: 0em 1em 0em 1em;
+		width: 11.25em;
+		height: 3.75em;
+		border-radius: .3125em;
+		padding: 0 1em 0 1em;
 		&.stable {
 			background-color: #2E84BF;
 			&:hover {
@@ -69,26 +69,27 @@ a.download-link {
 			}
 		}
 		.download-area {
-			font-size: 1.1em;
+			font-size: 1.125em;
 			color: #FFFFFF;
 			display: flex;
 			align-items: center;
 			.download-icons {
 				color: #FFFFFF;
-				max-width: 32px;
+				max-width: 2em;
+				font-size: .875em;
 			}
 			.download-get_app {
-				margin-left: 3px;
-				margin-right: 4px;
+				margin-left: .188em;
+				margin-right: .250em;
 			}
 			.download-bug_report {
-				margin-right: 4px;
+				margin-right: .250em;
 			}
 			.download-text-stable {
-				margin-right: 6px;
+				margin-right: .375em;
 			}
 			.download-text-dev {
-				margin-right: 1px;
+				margin-right: .063em;
 			}
 		}
 	}

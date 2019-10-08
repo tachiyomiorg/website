@@ -1,10 +1,10 @@
 import './styles/index.scss';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faDownload, faBug } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faDownload, faBug);
+library.add(faDownload);
 
 export default ({
 	Vue, // the version of Vue being used in the VuePress app
