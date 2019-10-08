@@ -25,9 +25,9 @@
 
 <style scoped lang="stylus">
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
-	font-family: 'Open Sans', 'sans-serif';
+	font-family: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 ul {
