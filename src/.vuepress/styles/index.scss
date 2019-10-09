@@ -1,0 +1,143 @@
+.centered {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.custom-block.tip {
+	border-color: #2E84BF !important;
+}
+
+.home .hero img {
+	max-height: 120px !important;
+}
+
+.badge.default-indicator {
+	background-color: #2E84BF !important;
+}
+
+.badge.version-indicator {
+	background-color: #000000 !important;
+}
+
+.file-tree {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-size: 0.85rem;
+
+	li, ul {
+		position: relative;
+	}
+
+	li {
+		margin: 0;
+		padding-left: 1rem;
+		font-weight: bold;
+
+		&.file {
+			font-weight: normal;
+		}
+
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			left: 0em;
+		}
+
+		&::before {
+			border-top: 1px solid black;
+			top: 0.7em;
+			width: 0.5em;
+			height: 0;
+		}
+
+		&:last-child::after {
+			height: 0.7em;
+		}
+
+		&::after {
+			top: 0px;
+			border-left: 1px solid black;
+			height: 100%;
+			width: 0px;
+		}
+	}
+
+	ul {
+		margin-left: 1em;
+	}
+
+	& > li:first-child::before, & > li:first-child::after {
+		content: none;
+	}
+}
+
+.file-tree, .file-tree ul {
+	list-style: none;
+	padding: 0;
+}
+
+.side-by-side {
+	display: flex;
+	align-content: middle;
+	justify-content: center;
+
+	& > * {
+		width: 50%;
+	}
+
+	& > * + * {
+		border-left: 1px solid #aaa;
+	}
+}
+
+@media (max-width: 767px) {
+	.side-by-side {
+		flex-direction: column;
+
+		& > * {
+			width: 100%;
+		}
+
+		& > * + * {
+			margin-top: 0;
+			padding-top: 1em;
+			border-left: none;
+			border-top: 1px solid #aaa;
+		}
+	}
+}
+
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+	color: #3D3D3D !important;
+	border: 0px solid #808080 !important;
+	border-bottom: 1px solid #EAECEF !important;
+	background-color: #FFFFFF !important;
+	font-weight: 400 !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--text {
+	font-size: 0.8rem !important;
+	color: #808080 !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+	color: #2E84BF !important;
+}
+
+.algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
+	background: #FFFFFF !important;
+}
+
+.algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column-text {
+	color: #A1A1A1 !important;
+	font-weight: 400 !important;
+}
