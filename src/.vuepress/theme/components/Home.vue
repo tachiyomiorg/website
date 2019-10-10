@@ -29,7 +29,7 @@
 				</a>
 
 				<NavLink
-					class="action-button secundary"
+					class="action-button secondary"
 					:item="actionLink"
 				/>
 			</p>
@@ -149,7 +149,7 @@ export default {
 				background-color: lighten($accentColor, 10%);
 			}
 
-			&.secundary {
+			&.secondary {
 				background-color: darken($borderColor, 5%);
 				color: lighten($textColor, 25%);
 				border-bottom-color: darken($borderColor, 15%);

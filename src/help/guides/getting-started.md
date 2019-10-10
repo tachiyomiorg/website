@@ -7,7 +7,7 @@ lang: en-US
 
 ## Installation
 
-[![github](https://img.shields.io/github/release/inorichi/tachiyomi.svg?style=for-the-badge&maxAge=600)](https://github.com/inorichi/tachiyomi/releases/latest) [![github downloads](https://img.shields.io/github/downloads/inorichi/tachiyomi/total.svg?style=for-the-badge&maxAge=600)](http://www.somsubhra.com/github-release-stats/?username=inorichi&repository=tachiyomi)
+<DownloadButtons/>
 
 You can download the latest version of `Tachiyomi` from the [GitHub releases](https://github.com/inorichi/tachiyomi/releases/latest).
 
