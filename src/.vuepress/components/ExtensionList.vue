@@ -18,7 +18,7 @@
 					class="button"
 					title="Download APK"
 					download>
-					<font-awesome-icon icon="download" />
+					<MaterialIcon icon-name="get_app"/>
 					<span>Download</span>
 				</a>
 			</div>
@@ -99,7 +99,11 @@ export default {
 			text-decoration: none !important;
 		}
 
-		svg + span {
+		i {
+			color: #fff;
+		}
+
+		div.material-holder + span {
 			margin-left: 0.25rem;
 		}
 	}

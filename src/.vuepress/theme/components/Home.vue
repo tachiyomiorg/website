@@ -24,7 +24,7 @@
 					title="Download latest release"
 					download
 				>
-					<font-awesome-icon icon="download" />
+					<MaterialIcon icon-name="get_app"/>
 					<span>Download {{ tagName || 'vX.X.X' }}</span>
 				</a>
 
@@ -159,13 +159,12 @@ export default {
 				}
 			}
 
-			svg + span {
+			div.material-holder + span {
 				margin-left: 0.5rem;
 			}
 
-			svg {
-				height: 1em;
-				width: 1em;
+			i {
+				color: #fff;
 			}
 
 			& + .action-button {
