@@ -26,7 +26,7 @@
 				>
 					<div class="icon-holder">
 						<MaterialIcon icon-name="get_app"/>
-						<span>Download {{ tagName || 'vX.X.X' }}</span>
+						<span>Download {{ tagName || 'v0.8.4' }}</span>
 					</div>
 				</a>
 
