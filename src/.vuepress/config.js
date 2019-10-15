@@ -3,6 +3,11 @@ module.exports = {
 	description: 'Free and open source manga reader for Android.',
 	dest: './public',
 	head: [
+		['link', { rel: "preconnect", href: 'https://cdn.materialdesignicons.com/', crossorigin:""} , ''],
+		['link', { rel: "preconnect", href: 'https://fonts.gstatic.com', crossorigin:""} , ''],
+		['link', { rel: "stylesheet", href: 'https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css', crossorigin:""} , ''],
+		['link', { rel: "stylesheet", href: 'https://fonts.googleapis.com/css?family=Open+Sans'} , ''],
+		['link', { rel: "stylesheet", href: 'https://fonts.googleapis.com/icon?family=Material+Icons'} , ''],
 		['script', { src: 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'} , ''],
 		['link', { rel: "stylesheet", type: "text/css", href: 'https://unpkg.com/flickity@2/dist/flickity.min.css'} , ''],
 	],

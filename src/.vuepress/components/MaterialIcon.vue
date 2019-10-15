@@ -32,10 +32,8 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css");
-
 .material-holder {
+	font-family: 'Material Design Icons', 'Material Icons', sans-serif;
 	color: #476582;
 	margin: 0;
 	font-size: 0.85em;
