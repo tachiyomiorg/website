@@ -24,8 +24,10 @@
 					title="Download latest release"
 					download
 				>
-					<MaterialIcon icon-name="get_app"/>
-					<span>Download {{ tagName || 'vX.X.X' }}</span>
+					<div class="icon-holder">
+						<MaterialIcon icon-name="get_app"/>
+						<span>Download {{ tagName || 'vX.X.X' }}</span>
+					</div>
 				</a>
 
 				<NavLink
@@ -136,7 +138,7 @@ export default {
 
 		.action-button {
 			display: inline-block;
-			font-size: 1.2rem;
+			font-size: 1.125rem;
 			color: #fff;
 			background-color: $accentColor;
 			padding: 0.8rem 1.6rem;
@@ -159,12 +161,24 @@ export default {
 				}
 			}
 
-			div.material-holder + span {
-				margin-left: 0.5rem;
+			.icon-holder {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.material-holder + span {
+				margin-left: .375em;
+			}
+
+			.download-get_app {
+				margin-left: .188em;
+				margin-right: .250em;
 			}
 
 			i {
 				color: #fff;
+				max-width: 2em;
 			}
 
 			& + .action-button {
