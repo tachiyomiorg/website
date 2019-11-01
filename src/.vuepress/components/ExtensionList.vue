@@ -2,25 +2,32 @@
 	<div>
 		<div v-for="extensionGroup in extensions" :key="extensionGroup[0].lang">
 			<h3>{{ langName(extensionGroup[0].lang) }}</h3>
-			<div class="extension" v-for="extension in extensionGroup" :key="extension.apk">
-				<img :src="iconUrl(extension.apk)" width="42" height="42">
-				<div class="extension-text">
-					<div class="upper">
-						<span class="bold">{{ extension.name.split(': ')[1] }}</span>
-						<Badge :text="'v' + extension.version"/>
+			<div 
+				class="anchor" 
+				v-for="extension in extensionGroup" 
+				:key="extension.apk" 
+				:id="extension.name.split(': ')[1]">
+				<div class="extension">
+					<a :href="`#${extension.name.split(': ')[1]}`" aria-hidden="true" class="header-anchor"># </a>
+					<img :src="iconUrl(extension.apk)" width="42" height="42">
+					<div class="extension-text">
+						<div class="upper">
+							<span class="bold">{{ extension.name.split(': ')[1] }}</span>
+							<Badge :text="'v' + extension.version"/>
+						</div>
+						<div class="down">
+							{{ extension.pkg }}
+						</div>
 					</div>
-					<div class="down">
-						{{ extension.pkg }}
-					</div>
+					<a
+						:href="apkUrl(extension.apk)"
+						class="button"
+						title="Download APK"
+						download>
+						<font-awesome-icon icon="download" />
+						<span>Download</span>
+					</a>
 				</div>
-				<a
-					:href="apkUrl(extension.apk)"
-					class="button"
-					title="Download APK"
-					download>
-					<font-awesome-icon icon="download" />
-					<span>Download</span>
-				</a>
 			</div>
 		</div>
 	</div>
@@ -54,6 +61,12 @@ export default {
 		const { data } = await axios.get(EXTENSION_JSON);
 		const values = Object.values(groupBy(data, 'lang'));
 		this.$data.extensions = sortBy(values, [g => this.langName(g[0].lang)]);
+	},
+
+	updated () {
+		if (location.hash) {
+			location.replace(location.hash);
+		}
 	}
 }
 </script>
@@ -64,8 +77,14 @@ export default {
 	align-items: center;
 	padding: 0.4em 0.2em;
 
-	&:not(:last-child) {
-		border-bottom: 1px solid #eaecef;
+	&:hover {
+		.header-anchor {
+			opacity: 1;
+		}
+	}
+
+	.header-anchor {
+		font-size: 1.2em;
 	}
 
 	img {
@@ -101,6 +120,21 @@ export default {
 
 		svg + span {
 			margin-left: 0.25rem;
+		}
+	}
+}
+
+.anchor {
+	margin-top: -3.9em;
+	padding-top: 3.9em;
+	
+	&:not(:last-child) {
+		border-bottom: 1px solid #eaecef;
+	}
+
+	&:target {
+		.extension {
+			background: #f1f8ff;
 		}
 	}
 }
