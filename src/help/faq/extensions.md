@@ -12,8 +12,12 @@ sites which host content from scanlators, there's also extensions like
 **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which
 host directly from the scanlators own websites.
 
+**Mangakakalot** and **Manganelo** have been moved to **Mangabox**, which is a multi-source extension. More information about multi-source extension is given below.
+
 ::: guide
-User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different extensions and their sources.
+Multi-source extensions are special extensions which, unlike regular extensions, contain multiple sources (which are usually similar). For example, Mangabox contains Mangakakalot, Manganelo, Mangabat etc.
+
+User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the multi-source extensions and their sources.
 ::: aside
 Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
 :::
