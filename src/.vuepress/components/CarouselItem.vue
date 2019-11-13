@@ -1,5 +1,5 @@
 <template>
-	<div class="slide" v-bind:id="name">
+	<div class="slide" :id="name">
 		<slot />
 	</div>
 </template>

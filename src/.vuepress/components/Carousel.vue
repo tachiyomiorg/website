@@ -1,57 +1,55 @@
 <template>
-	<div class="carousel-root">
-		<agile class="carousel" :options="config" v-bind:id="name">
-			<slot />
-			<template slot="prevButton">
-				<MaterialIcon iconName="navigate_next" />
-			</template>
-    		<template slot="nextButton">
-				<MaterialIcon iconName="navigate_next" />
-			</template>
-		</agile>
-	</div>
+	<agile :options="config" :id="name">
+		<slot />
+		<template slot="prevButton">
+			<MaterialIcon iconName="navigate_next" />
+		</template>
+    	<template slot="nextButton">
+			<MaterialIcon iconName="navigate_next" />
+		</template>
+	</agile>
 </template>
 
 <script>
 export default {
+	name: "carousel",
 	props: {
 		name: {
-		type: String,
-		required: true
-	},
-	config: {
-		type: Object,
-		default: function () {
-			return {
-				navButtons: true,
-				centerMode: true
+			type: String,
+			default: "carousel"
+		},
+		config: {
+			type: Object,
+			default: function () {
+				return {
+					navButtons: true,
+					centerMode: true
+				}
 			}
 		}
-	}
 	}
 }
 </script>
 
 <style>
-.carousel {
+.agile {
 	background: #F0F4F8;
 	border-radius: 1em;
 }
 
 .agile__nav-button {
-		background: hsla(0,0%,100%,.75);
-		border: none;
-		color: rgba(44, 62, 80);
-		cursor: pointer;
-		font-size: 24px;
-		height: 50px;
-		top: 50% !important;
-		transform: translateY(-50%);
-		position: absolute;
-		top: 0;
-		transition-duration: .3s;
-		width: 50px;
-		border-radius: 99em;
+	background: hsla(0,0%,100%,.75);
+	border: none;
+	color: rgba(44, 62, 80);
+	cursor: pointer;
+	font-size: 24px;
+	height: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	transition-duration: .3s;
+	width: 50px;
+	border-radius: 99em;
 }
 
 .agile__nav-button:hover {
