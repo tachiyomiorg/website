@@ -1,12 +1,8 @@
 <template>
 	<div class="carousel-root">
-		<div class="carousel" v-bind:id="name">
+		<agile class="carousel" :options="config" v-bind:id="name">
 			<slot />
-		</div>
-		<script>
-			var config = {{ config }};
-			new Flickity("#{{ name }}", config)
-		</script>
+		</agile>
 	</div>
 </template>
 
@@ -21,9 +17,9 @@ export default {
 		type: Object,
 		default: function () {
 			return {
-				adaptiveHeight: true,
-				wrapAround: true,
-				pageDots: false
+				navButtons: false,
+				centerMode: true,
+				infinite: true,
 			}
 		}
 	}
