@@ -1,5 +1,5 @@
 <template>
-	<div class="carousel-cell" v-bind:id="name">
+	<div class="slide" :id="name">
 		<slot />
 	</div>
 </template>
@@ -17,9 +17,9 @@ export default {
 </script>
 
 <style>
-.carousel-cell {
-	width: 100%;
-	margin-right: 16px;
-	margin-left: 16px;
+.slide {
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 </style>
