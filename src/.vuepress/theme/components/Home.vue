@@ -22,7 +22,7 @@
 					rel="noopener noreferrer"
 					:href="browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest'"
 					title="Download latest release"
-					:download="browserDownloadUrl ? true : false"
+					:download="browserDownloadUrl ? '' : null"
 				>
 					<font-awesome-icon icon="download" />
 					<span>Download {{ tagName || 'vX.X.X' }}</span>
