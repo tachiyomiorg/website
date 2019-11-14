@@ -20,9 +20,9 @@
 				<a
 					class="action-button"
 					rel="noopener noreferrer"
-					:href="browserDownloadUrl || null"
+					:href="browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest'"
 					title="Download latest release"
-					download
+					:download="browserDownloadUrl ? '' : null"
 				>
 					<font-awesome-icon icon="download" />
 					<span>Download {{ tagName || 'vX.X.X' }}</span>
