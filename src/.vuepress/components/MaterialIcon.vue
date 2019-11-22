@@ -33,7 +33,6 @@ export default {
 
 <style scoped>
 .material-holder {
-	font-family: 'Material Design Icons', 'Material Icons', sans-serif;
 	color: #476582;
 	margin: 0;
 	font-size: 0.85em;
@@ -42,12 +41,26 @@ export default {
 }
 
 .material-icons {
+	font-family: 'Material Icons';
 	font-size: 1.35em;
+	font-style: normal;
 	position: relative;
 	top: 0.2rem;
+	font-weight: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
 }
 
 .material-legacy-icons {
+	font-family: 'Material Design Icons';
 	font-size: 1.35em;
+	font-style: normal;
 }
 </style>
