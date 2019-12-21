@@ -8,7 +8,7 @@ features:
     - title: Extensions
       details: Online reading from sources such as KissManga, MangaDex and more.
     - title: Tracking
-      details: MyAnimeList, AniList and Kitsu support.
+      details: MyAnimeList, AniList, Kitsu and Shikimori support.
     - title: Configurable
       details: Reader with multiple viewers, reading directions and other settings.
 footer: Apache Licensed | Copyright © 2015-present Javier Tomás
