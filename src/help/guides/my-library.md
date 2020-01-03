@@ -4,7 +4,6 @@ lang: en-US
 ---
 
 # My library
-:construction: :construction_worker_man: W.I.P.
 
 ## Filter options
 ### Filter
@@ -16,6 +15,7 @@ lang: en-US
 #### Completed
 
 ### Sort
+Changes the order according to the user's preferences. Defaults to whatever order the user used last, or alphabetical if the user has not selected anything yet.
 #### Alphabetically
 #### Last read
 #### Last updated
