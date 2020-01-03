@@ -12,3 +12,6 @@ These are separated by the language they publish in and ordered alphabetically.
 This button allows you to enter the source with a search button and other search features such as genre filtering and sort order. It sorts by the default order that the source sets.
 ### Latest
 This button allows you to enter the source and see the latest entries from that source without any search features.
+
+###Searching globally
+The top right magnifying glass icon can be tapped to search every enabled source.
