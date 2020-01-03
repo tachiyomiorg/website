@@ -7,6 +7,7 @@ lang: en-US
 This category of features under the catalog page in the app allows you to change what is seen on the page.
 
 ### Sources
+These are separated by the language they publish in and ordered alphabetically.
 ### Browse
 This button allows you to enter the source with a search button and other search features such as genre filtering and sort order. It sorts by the default order that the source sets.
 ### Latest
