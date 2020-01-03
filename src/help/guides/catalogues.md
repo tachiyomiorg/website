@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 # Catalogues
-:construction: :construction_worker_man: W.I.P.
+This category of features under the catalog page in the app allows you to change what is seen on the page.
 
 ### Sources
 
