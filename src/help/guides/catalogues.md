@@ -15,3 +15,6 @@ This button allows you to enter the source and see the latest entries from that 
 
 ###Searching globally
 The top right magnifying glass icon can be tapped to search every enabled source.
+
+###Enabling and Disabling sources in the list
+Tapping the tap right cog will open up a page with all the sources on it. Uncheck sources to prevent them from showing up in the list when entering catalog and vice versa. Turn off languages to prevent all sources from that language from showing up in the list.
