@@ -9,5 +9,5 @@ This category of features under the catalog page in the app allows you to change
 ### Sources
 
 ### Browse
-
+This button allows you to enter the source with a search button and other search features such as genre filtering and sort order. It sorts by the default order that the source sets.
 ### Latest
