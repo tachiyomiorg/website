@@ -12,7 +12,7 @@ The blue badges next to titles is how we indicate the default option, a yellow b
 The language of the app. If changed, all parts of the app change to the language. Defaults to system language. Does not affect which catalog languages are enabled. Currently, Tachiyomi supports 35 languages.
 
 ::: tip HELP US TRANSLATE!
-Tachiyomi relies on its users to help with translations, if you're up to the task then head to the [translation](../faq/how-can-i-help/#translation) section.
+Tachiyomi relies on its users to help with translations, if you're up to the task then head to the [translation](../contribution/#translation) section.
 :::
 
 ## Application theme <Badge text="Main theme" type="default-indicator" vertical="middle"/>
