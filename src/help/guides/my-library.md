@@ -19,7 +19,7 @@ Changes the order according to the user's preferences. Defaults to whatever orde
 #### Alphabetically
 Sorts titles from A to Z including words like "the", "a", and "an".
 #### Last read
-Sorts by the the last time the user has read something from an manga.
+Sorts by the last time the user has read something from a manga.
 #### Last updated
 Sorts by the last time there was a new chapter for an manga.
 #### Unread
