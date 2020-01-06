@@ -13,7 +13,7 @@ This button allows you to enter the source with a search button and other search
 ### Latest
 This button allows you to enter the source and see the latest entries from that source without any search features. Some sources do not have this functionality, so the button does not appear on those sources
 
-###Searching globally
+### Global search
 The top right magnifying glass icon can be tapped to search every enabled source.
 
 ### Toggle displayed sources
