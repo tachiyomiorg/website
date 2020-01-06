@@ -33,6 +33,6 @@ Sorts by the source the manga is from, alphabetically by source, then alphabetic
 Displays a grid of manga.
 
 #### List
-Displays a list of manga.
+Displays the manga in a list format.
 #### Download badges
 If you want to see how many chapters you have downloaded for all manga in [My library](/help/guides/my-library), then enable this option. It will appear as a red badge similiar to the unread chapters badge.
