@@ -30,7 +30,7 @@ Sorts by the total chapters there are in a manga.
 Sorts by the source the manga is from, alphabetically by source, then alphabetically by the title.
 ### Display
 #### Grid
-Displays a grid of manga.
+Displays the manga in a grid format.
 
 #### List
 Displays the manga in a list format.
