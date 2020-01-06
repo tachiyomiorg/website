@@ -7,7 +7,7 @@ lang: en-US
 This section of features and options in the right sidebar under my library allows you to change what is shown in the library, sorted and displayed.
 ## Filter options
 ### Filter
-Shows any manga that have these features and excludes any that don't
+Shows any manga that has these features and excludes any that don't.
 #### Downloaded
 If the manga has downloaded chapters they will show up using this filter option.
 #### Unread
