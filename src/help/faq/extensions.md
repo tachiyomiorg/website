@@ -89,7 +89,7 @@ Read more about Batoto shutting down [here](https://goboiano.com/manga-scanlatio
 :::
 
 ### ### Why are my extensions not showing up in Catalogues?
-If you have freshly installed/reinstalled Tachiyomi app, the installed extensions won't show up in `Catalogues` until you enable them. To do this, go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)**→**[<MaterialIcon icon-name="settings_applications"/> Sources](/help/guides/catalogues/#sources)** . After that, enable the language of your extensions (such as All, English, Spanish etc) and then enable the sources you want to see in `Catalogues`.
+If you have freshly reinstalled Tachiyomi app, the installed extensions won't show up in `Catalogues` until you enable them. To do this, go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)**→**[<MaterialIcon icon-name="settings_applications"/> Sources](/help/guides/catalogues/#sources)** . After that, enable the language of your extensions (such as All, English, Spanish etc) and then enable the sources you want to see in `Catalogues`.
 
 ### Why can't I restore my backup?
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
