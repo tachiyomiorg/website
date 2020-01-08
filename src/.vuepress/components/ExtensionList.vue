@@ -33,7 +33,7 @@
 						title="Download APK"
 						download
 					>
-						<FontAwesomeIcon icon="download" />
+						<MaterialIcon icon-name="cloud_download" />
 						<span>Download</span>
 					</a>
 				</div>
@@ -132,8 +132,12 @@ export default {
 			text-decoration: none !important;
 		}
 
-		svg + span {
-			margin-left: 0.25rem;
+		.material-holder {
+			color: #fff;
+
+			+ span {
+				margin-left: 0.25rem;
+			}
 		}
 	}
 }
