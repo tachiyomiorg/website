@@ -2,7 +2,7 @@
 home: true
 lang: en-US
 heroImage: /assets/media/hero.png
-actionText: Get Started →
+actionText: Get started →
 actionLink: /help/guides/getting-started
 features:
     - title: Extensions
