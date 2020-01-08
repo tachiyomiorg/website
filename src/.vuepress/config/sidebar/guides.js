@@ -45,6 +45,17 @@ module.exports = [
 					'/help/guides/about'
 				]
 			},
+			{
+				title: 'Forks',
+				collapsable: false,
+				sidebarDepth: 2,
+				children: [
+					'/help/guides/tachiyomi-neko',
+					'/help/guides/tachiyomi-j2k',
+					'/help/guides/tachiyomi-eh',
+					'/help/guides/tachiyomi-az',
+				]
+			}
 		]
 	},
 	{
