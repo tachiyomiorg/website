@@ -182,13 +182,21 @@ Read about source migration [here](/help/guides/source-migration/)
 - Popular alternatives are **MangaDex**, **MangaSee** and **Mangakakalot**.
 
 ::: tip Out of the loop?
-Read more about the situation [here](https://mrcomics.com/).
+Read more about the situation [here](https://mangarock.com/).
 :::
 
 #### Migrate to Tachiyomi
 There is a tool to migrate from **MangaRock** to **Tachiyomi** courtesy of a member of our [Discord server](https://discord.gg/tachiyomi) by the same name as the creator, but a computer is required to finish the migration successfully.
 
 View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
+
+#### Restore a backup from the MangaRock source
+It's not currently possible to restore backup from MangaRock officially, as the MangaRock source is dead. There is however an unofficial method to restore/backup all manga from the MangaRock source.
+
+1. Uninstall the MangaRock extension.
+1. Install the [DummyRock](https://cdn.discordapp.com/attachments/403520500443119619/663671637052489728/tachiyomi-en.dummyrock-v1.2.1-debug.apk) `.apk`. 
+1. Go to **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** menu and press **Trust** to proceed.
+1. Restore backup.
 
 ### Why do I get `Value <url> at 0 of type java.lang.String cannot be converted to JSONObject`?
 If you get this error when opening **MangaRock** chapters, try clearing your chapter cache.
