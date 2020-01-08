@@ -1,7 +1,7 @@
 import './styles/index.scss';
 import './styles/fonts.scss'
 
-import { VueAgile as Agile } from 'vue-agile'
+import { VueAgile } from 'vue-agile'
 
 export default ({
 	Vue, // the version of Vue being used in the VuePress app
@@ -9,5 +9,6 @@ export default ({
 	router, // the router instance for the app
 	siteData // site metadata
 }) => {
-	Vue.component('Agile', Agile)
+	// eslint-disable-next-line vue/match-component-file-name
+	Vue.component('Agile', VueAgile)
 };
