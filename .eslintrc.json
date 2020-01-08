@@ -1,0 +1,22 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"extends": [
+		"plugin:vue/essential",
+		"vuepress",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"vue",
+		"prettier"
+	],
+	"rules": {
+		"prettier/prettier": ["error"]
+	}
+}
