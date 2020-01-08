@@ -190,7 +190,7 @@ There is a tool to migrate from **MangaRock** to **Tachiyomi** courtesy of a mem
 
 View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 
-#### Restore backup from  the MangaRock source
+#### Restore a backup from the MangaRock source
 It's not currently possible to restore backup from MangaRock officially, as the MangaRock source is dead. There is however an unofficial method to restore/backup all manga from the MangaRock source.
 
 1. Uninstall the MangaRock extension.
