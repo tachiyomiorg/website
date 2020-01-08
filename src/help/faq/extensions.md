@@ -88,6 +88,14 @@ Be aware that **Batoto** is deprecated so you will need to migrate from that sou
 Read more about Batoto shutting down [here](https://goboiano.com/manga-scanlation-site-batoto-to-close-down/)
 :::
 
+### Why are my extensions not showing up in Catalogues?
+If you've freshly reinstalled the **Tachiyomi** app, the installed extensions might not show up 
+in **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)** until you enable them. 
+
+::: guide GUIDE
+To fix this, go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)**→**[<MaterialIcon icon-name="settings"/> Sources](/help/guides/catalogues/#sources)**. Now you can proceed to enabling your desired sources.
+:::
+
 ### Why can't I restore my backup?
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
 
