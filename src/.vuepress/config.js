@@ -13,8 +13,7 @@ module.exports = {
 		logo: '/assets/media/logo.svg',
 		algolia: {
 			apiKey: 'fc1c45b5a3835e1882cbbf0751dfe705',
-			indexName: 'tachiyomi',
-			debug: true
+			indexName: 'tachiyomi'
 		},
 		editLinks: true,
 		editLinkText: 'Help us improve this page',

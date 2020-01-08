@@ -115,29 +115,3 @@
 	-ms-user-select: none;
 	user-select: none;
 }
-
-.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-	color: #3D3D3D !important;
-	border: 0px solid #808080 !important;
-	border-bottom: 1px solid #EAECEF !important;
-	background-color: #FFFFFF !important;
-	font-weight: 400 !important;
-}
-
-.algolia-autocomplete .algolia-docsearch-suggestion--text {
-	font-size: 0.8rem !important;
-	color: #808080 !important;
-}
-
-.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
-	color: #2E84BF !important;
-}
-
-.algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
-	background: #FFFFFF !important;
-}
-
-.algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column-text {
-	color: #A1A1A1 !important;
-	font-weight: 400 !important;
-}
