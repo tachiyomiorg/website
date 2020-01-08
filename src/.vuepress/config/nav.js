@@ -15,7 +15,8 @@ module.exports = [
 				items: [
 					{ text: 'General', link: '/help/guides/getting-started' },
 					{ text: 'Menus', link: '/help/guides/menus' },
-					{ text: 'Settings', link: '/help/guides/settings' }
+					{ text: 'Settings', link: '/help/guides/settings' },
+					{ text: 'Forks', link: '/help/guides/forks' }
 				]
 			},
 			{
