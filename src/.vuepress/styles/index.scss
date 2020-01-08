@@ -115,3 +115,11 @@
 	-ms-user-select: none;
 	user-select: none;
 }
+
+a.nav-link.action-button.secondary {
+	margin-top: .5em;
+	font-family: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 1.125em;
+	border-radius: .3125em;
+	border-bottom: none;
+}

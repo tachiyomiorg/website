@@ -17,16 +17,8 @@
 				class="action"
 				v-if="data.actionText && data.actionLink"
 			>
-				<a
-					class="action-button"
-					rel="noopener noreferrer"
-					:href="browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest'"
-					title="Download latest release"
-					:download="browserDownloadUrl ? '' : null"
-				>
-					<font-awesome-icon icon="download" />
-					<span>Download {{ tagName || 'vX.X.X' }}</span>
-				</a>
+				<DownloadButtons
+				/>
 
 				<NavLink
 					class="action-button secondary"
