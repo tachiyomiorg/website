@@ -1,19 +1,19 @@
 <template>
-	<div class="slide" :id="name">
+	<div :id="name" class="slide">
 		<slot />
 	</div>
 </template>
 
 <script>
 export default {
-	name: "carousel-item",
+	name: "CarouselItem",
 	props: {
 		name: {
 			type: String,
 			default: "carousel-cell"
 		}
 	}
-}
+};
 </script>
 
 <style>

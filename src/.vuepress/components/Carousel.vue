@@ -1,18 +1,18 @@
 <template>
-	<agile :options="config" :id="name">
+	<Agile :id="name" :options="config">
 		<slot />
 		<template slot="prevButton">
-			<MaterialIcon iconName="navigate_next" />
+			<MaterialIcon icon-name="navigate_next" />
 		</template>
-    	<template slot="nextButton">
-			<MaterialIcon iconName="navigate_next" />
+		<template slot="nextButton">
+			<MaterialIcon icon-name="navigate_next" />
 		</template>
-	</agile>
+	</Agile>
 </template>
 
 <script>
 export default {
-	name: "carousel",
+	name: "Carousel",
 	props: {
 		name: {
 			type: String,
@@ -20,25 +20,25 @@ export default {
 		},
 		config: {
 			type: Object,
-			default: function () {
+			default: function() {
 				return {
 					navButtons: true,
 					centerMode: true
-				}
+				};
 			}
 		}
 	}
-}
+};
 </script>
 
 <style>
 .agile {
-	background: #F0F4F8;
+	background: #f0f4f8;
 	border-radius: 1em;
 }
 
 .agile__nav-button {
-	background: hsla(0,0%,100%,.75);
+	background: hsla(0, 0%, 100%, 0.75);
 	border: none;
 	color: rgba(44, 62, 80);
 	cursor: pointer;
@@ -47,13 +47,13 @@ export default {
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
-	transition-duration: .3s;
+	transition-duration: 0.3s;
 	width: 50px;
 	border-radius: 99em;
 }
 
 .agile__nav-button:hover {
-	background-color: rgba(0,0,0, .5);
+	background-color: rgba(0, 0, 0, 0.5);
 	opacity: 1;
 }
 
@@ -62,7 +62,7 @@ export default {
 }
 
 .agile__nav-button--prev i {
-	transform: rotateZ(180deg)
+	transform: rotateZ(180deg);
 }
 
 .agile__nav-button--next {
@@ -81,8 +81,8 @@ export default {
 }
 
 .agile__dot button {
-	background-color: hsla(0,0%,100%,.75);
-	border: 1px solid hsla(0,0%,100%,.75);
+	background-color: hsla(0, 0%, 100%, 0.75);
+	border: 1px solid hsla(0, 0%, 100%, 0.75);
 	border-radius: 50%;
 	cursor: pointer;
 	display: block;
@@ -91,7 +91,7 @@ export default {
 	line-height: 0;
 	margin: 0;
 	padding: 0;
-	transition-duration: .3s;
+	transition-duration: 0.3s;
 	width: 10px;
 }
 

@@ -1,18 +1,22 @@
 <template>
 	<div :class="name" class="material-holder">
-		<i v-if="legacy" :class="iconName" class="material-legacy-icons mdi"></i>
+		<i
+			v-if="legacy"
+			:class="iconName"
+			class="material-legacy-icons mdi"
+		></i>
 		<i v-else class="material-icons">{{ iconName }}</i>
 	</div>
 </template>
 
 <script>
-/** 
+/**
  * For material icon references use https://material.io/resources/icons/
  * Code example: <MaterialIcon icon-name="android" />
- * 
+ *
  * For material icon references use http://materialdesignicons.com/
  * Code example: <MaterialIcon icon-name="mdi-glasses" legacy />
-*/
+ */
 export default {
 	props: {
 		legacy: {
@@ -28,7 +32,7 @@ export default {
 			required: true
 		}
 	}
-}
+};
 </script>
 
 <style scoped>
@@ -41,7 +45,7 @@ export default {
 }
 
 .material-icons {
-	font-family: 'Material Icons';
+	font-family: "Material Icons";
 	font-size: 1.35em;
 	font-style: normal;
 	position: relative;
@@ -54,12 +58,12 @@ export default {
 	white-space: nowrap;
 	word-wrap: normal;
 	direction: ltr;
-	-webkit-font-feature-settings: 'liga';
+	-webkit-font-feature-settings: "liga";
 	-webkit-font-smoothing: antialiased;
 }
 
 .material-legacy-icons {
-	font-family: 'Material Design Icons';
+	font-family: "Material Design Icons";
 	font-size: 1.35em;
 	font-style: normal;
 }

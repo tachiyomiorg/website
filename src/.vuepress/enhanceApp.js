@@ -1,12 +1,7 @@
 import './styles/index.scss';
 import './styles/fonts.scss'
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { VueAgile } from 'vue-agile'
-
-library.add(faDownload);
 
 export default ({
 	Vue, // the version of Vue being used in the VuePress app
@@ -14,6 +9,6 @@ export default ({
 	router, // the router instance for the app
 	siteData // site metadata
 }) => {
-	Vue.component('font-awesome-icon', FontAwesomeIcon);
-	Vue.component('agile', VueAgile)
+	// eslint-disable-next-line vue/match-component-file-name
+	Vue.component('Agile', VueAgile)
 };
