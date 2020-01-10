@@ -23,7 +23,7 @@ You can then access the manga in `Catalogues > Local manga`.
 
 ## Folder Structure
 
-Tachiyomi requires a specific folder structure for local mangas to be correctly processed. Local mangas will be read from the `Tachiyomi/local`folder. Each Manga musst have a `Manga` folder and a `Chapter`folder. Images will then go into the chapter folder. See below for more information on archive files. You can refer to the following example:
+Tachiyomi requires a specific folder structure for local manga to be correctly processed. Local manga will be read from the `Tachiyomi/local` folder. Each manga must have a `Manga` folder and a `Chapter` folder. Images will then go into the chapter folder. See below for more information on archive files. You can refer to the following example:
 
 ::: tip EXAMPLE
 <div class="side-by-side">
@@ -86,7 +86,7 @@ The path to the folder with images must contain both the manga title and the cha
 
 ## Archive Files
 
-Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside is not. Any folers inside the archive file are ignored. You must place the archive inside the `Manga` folder where the name will become the `Chapter` title. All images inside the archive regardless of folder structure will become pages for that chapter. 
+Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside is not. Any folders inside the archive file are ignored. You must place the archive inside the `Manga` folder where the name will become the `Chapter` title. All images inside the archive regardless of folder structure will become pages for that chapter. 
 
 ::: tip ZIP EXAMPLE
 <ul class="file-tree">
