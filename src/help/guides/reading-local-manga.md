@@ -78,7 +78,7 @@ Tachiyomi will see four chapters in a single manga.
 
 The path to the folder with images must contain both the manga title and the chapter name (as seen above). 
 
-Folders inside archives such as `ZIP`/`CBZ` are not currently supported. You must place the archive inside the manga folder where the name will become the chapter title and all the images inside will become pages for that chapter. 
+Folders inside archives such as `ZIP`/`CBZ` are not currently supported and are ignored. You must place the archive inside the manga folder where the name will become the chapter title. All images inside the archive regardless of folder structure will become pages for that chapter. 
 
 ::: tip ZIP EXAMPLE
 <div class="side-by-side">
@@ -98,7 +98,12 @@ Folders inside archives such as `ZIP`/`CBZ` are not currently supported. You mus
 						<li>
 							ch2.zip
 							<ul>
-								<li class="file">img files</li>
+								<li>
+									ch2
+									<ul>
+										<li class="file">img files</li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 					</ul>
