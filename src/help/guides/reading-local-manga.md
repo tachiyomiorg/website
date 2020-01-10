@@ -81,7 +81,6 @@ The path to the folder with images must contain both the manga title and the cha
 Folders inside archives such as `ZIP`/`CBZ` are not currently supported and are ignored. You must place the archive inside the manga folder where the name will become the chapter title. All images inside the archive regardless of folder structure will become pages for that chapter. 
 
 ::: tip ZIP EXAMPLE
-<div class="side-by-side">
 	<ul class="file-tree">
 		<li>
 			/sdcard/Tachiyomi/local
@@ -112,7 +111,6 @@ Folders inside archives such as `ZIP`/`CBZ` are not currently supported and are 
 			</ul>
 		</li>
 	</ul>
-</div>
 :::
 
 You can then access the manga in `Catalogues > Local manga`.
