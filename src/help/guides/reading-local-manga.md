@@ -76,6 +76,38 @@ You can also place your chapters or manga in both storages and Tachiyomi will me
 
 Tachiyomi will see four chapters in a single manga.
 
-The path to the folder (or archive) with images must contain both the manga title and the chapter name (as seen above).
+The path to the folder with images must contain both the manga title and the chapter name (as seen above). 
+
+Folders inside archives such as `ZIP`/`CBZ` are not currently supported. You must place the archive inside the manga folder where the name will become the chapter title and all the images inside will become pages for that chapter. 
+
+::: tip ZIP EXAMPLE
+<div class="side-by-side">
+	<ul class="file-tree">
+		<li>
+			/sdcard/Tachiyomi/local
+			<ul>
+				<li>
+					My manga
+					<ul>
+						<li>
+							ch1.zip
+							<ul>
+								<li class="file">img files</li>
+							</ul>
+						</li>
+						<li>
+							ch2.zip
+							<ul>
+								<li class="file">img files</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>&hellip;</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+:::
 
 You can then access the manga in `Catalogues > Local manga`.
