@@ -5,9 +5,9 @@ lang: en-US
 
 # Reading local manga
 
-You have to place your manga inside the folder `Tachiyomi/local` located in the root of your internal storage or external SD card, usually `/sdcard` and `/storage/18F5-2C11` (with different values).
+You have to first create a folder named `local` in Tachiyomi folder, which is located in the phone's `Internal storage` or external SD card. Then place your manga inside `Tachiyomi/local` folder.
 
-After that, they will be shown in the catalogue as a new source.
+After that, the manga be can be found in `Local manga`, which is located under `Catalogues` as a new source.
 
 ::: warning IMPORTANT
 Remember to give the app disk permissions on Android 6 and newer.
