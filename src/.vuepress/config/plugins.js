@@ -43,4 +43,10 @@ module.exports = [
 			defaultTitle: ""
 		}
 	],
+	[
+		"vuepress-plugin-sitemap",
+		{
+			hostname: "https://tachiyomi.org"
+		}
+	]
 ];

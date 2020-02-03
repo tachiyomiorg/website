@@ -34,6 +34,7 @@
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
 		"material-design-icons": "^3.0.1",
-		"vue-sweetalert2": "^3.0.3"
+		"vue-sweetalert2": "^3.0.3",
+		"vuepress-plugin-sitemap": "^2.3.1"
 	}
 }
