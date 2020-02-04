@@ -35,3 +35,13 @@ customBlockBorderRadius = '.custom-block.tip, .custom-block.warning, .custom-blo
 	-moz-user-select none
 	-ms-user-select none
 	user-select none
+
+
+.navbar
+	img.logo
+		/* Bring navbar-name closer to navbar-logo */
+		margin-right 0
+	.site-name.can-hide
+		/* Display navbar-name even for small screens */
+		@media (max-width: 720px)
+			display inherit
