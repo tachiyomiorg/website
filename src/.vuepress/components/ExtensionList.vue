@@ -85,84 +85,51 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.extension {
-	display: flex;
-	align-items: center;
-	padding: 0.4em 0.2em;
-
-	&:hover {
-		.header-anchor {
-			opacity: 1;
-		}
-	}
-
-	.header-anchor {
-		font-size: 1.2em;
-	}
-
-	img {
-		margin-right: 0.5em;
-	}
-
-	.extension-text {
-		flex: 1;
-
-		.down {
-			font-size: 0.8rem;
-			font-family: monospace;
-			color: #6c757d;
-		}
-	}
-
-	.button {
-		display: inline-block;
-		font-size: 0.8em;
-		color: #fff;
-		background-color: #2e84bf;
-		padding: 0.5rem;
-		border-radius: 4px;
-		transition: background-color 0.1s ease;
-		box-sizing: border-box;
-		border-bottom: 1px solid #2977ac;
-		text-transform: uppercase;
-
-		&:hover {
-			background-color: #3992cf;
-			text-decoration: none !important;
-		}
-
-		.material-holder {
-			color: #fff;
-
-			+ span {
-				margin-left: 0.25rem;
-			}
-		}
-	}
-}
-
-.anchor {
-	margin-top: -3.9em;
-	padding-top: 3.9em;
-
-	&:not(:last-child) {
-		border-bottom: 1px solid #eaecef;
-	}
-
-	&:target {
-		.extension {
-			background: #f1f8ff;
-		}
-	}
-}
-
-@media (max-width: 767px) {
-	.extension {
-		.extension-text .down,
-		.button span {
-			display: none;
-		}
-	}
-}
+<style lang="stylus">
+.anchor
+	margin-top -3.9em
+	padding-top 3.9em
+	.extension
+		align-items center
+		display flex
+		padding 0.4em 0.2em
+		.header-anchor
+			font-size 1.2em
+		&:hover .header-anchor
+			opacity 1
+		img
+			margin-right 0.5em
+		.extension-text
+			flex 1
+			.down
+				color #6c757d
+				font-family monospace
+				font-size 0.8rem
+		.button
+			background-color #2e84bf
+			border-bottom 1px solid #2977ac
+			border-radius 4px
+			box-sizing border-box
+			color #fff
+			display inline-block
+			font-size 0.8em
+			padding 0.5rem
+			text-transform uppercase
+			transition background-color 0.1s ease
+			&:hover
+				background-color #3992cf
+				text-decoration none !important
+			.material-holder
+				color #fff
+				+ span
+					margin-left 0.25rem
+		&:not(:last-child)
+			border-bottom 1px solid #eaecef
+		&:target
+			.extension
+				background #f1f8ff
+		@media (max-width: 767px)
+			.extension-text .down
+			.button span
+				display none
 </style>

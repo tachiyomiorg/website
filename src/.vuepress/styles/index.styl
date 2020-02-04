@@ -1,37 +1,123 @@
-.guide
-	margin 1rem 0
-	padding .1rem 1.5rem
-	border-radius 0.4rem
-	background-color #f0f4f8
-	.title
-		font-weight bold
+// Custom rules
+user-select()
+	-webkit-user-select arguments
+	-moz-user-select arguments
+	-ms-user-select arguments
+	user-select arguments
 
+// Custom block containers
 .custom-block
+	&.tip
+	&.warning
+	&.error
+	&.danger
+		border-radius 0.4rem
 	&.aside
 		color transparentify($textColor, 0.4)
 		font-size 0.9rem
 		text-align right
 
-customBlockBorderRadius = '.custom-block.tip, .custom-block.warning, .custom-block.error'
-
-{customBlockBorderRadius}
-	border-radius 0rem 0.4rem 0.4rem 0rem
-
-.expander.content
-	.expander.expansion
+// Guide container
+.guide
+	background-color $containerBackground
+	border-radius 0.4rem
+	margin 1rem 0
+	padding 0.1rem 1.5rem
+	.title
 		font-weight bold
 
-.expander.content
+// Expander container
+.expander
+	background-color $containerBackground
+	border-radius 0.4rem
 	margin 1rem 0
 	padding 1rem 1.5rem
-	border-radius 0.4rem
-	background-color #f0f4f8
+	.expansion
+		user-select none
+		font-weight bold
+		&:focus
+			outline none
 
-.expander.expansion:focus
-	outline none !important
+// File tree
+.file-tree
+	font-family source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+	font-size 0.85rem
+	list-style none
+	padding 0
+	li
+	ul
+		position relative
+	li
+		font-weight bold
+		margin 0
+		padding-left 1rem
+		&.file
+			font-weight normal
+		&::before
+		&::after
+			content ''
+			left 0
+			position absolute
+		&::before
+			border-top 1px solid #000000
+			height 0
+			top 0.7em
+			width 0.5em
+		&:last-child::after
+			height 0.7em
+		&::after
+			border-left 1px solid #000000
+			height 100%
+			top 0
+			width 0
+	ul
+		list-style none
+		margin-left 1em
+		padding 0
+	& > li:first-child::before
+	& > li:first-child::after
+		content none
 
-.expander.expansion
-	-webkit-user-select none
-	-moz-user-select none
-	-ms-user-select none
-	user-select none
+.side-by-side
+	align-content middle
+	display flex
+	justify-content center
+	& > *
+		width 50%
+	& > * + *
+		border-left 1px solid #aaaaaa
+	@media (max-width: $MQMobile)
+		flex-direction column
+		& > *
+			width 100%
+		& > * + *
+			border-left none
+			border-top 1px solid #aaaaaa
+			margin-top 0
+			padding-top 1em
+
+// Badge styling
+.badge
+	&.default-indicator
+		background-color $accentColor !important
+	&.version-indicator
+		background-color $badgeVersionColor !important
+
+// Index changes
+main.home
+	.hero img
+		max-height 8em
+	.action a.nav-link.action-button.secondary
+		border-bottom none
+		border-radius 0.3125em
+		font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+		font-size 1.125em
+		margin-top 0.5em
+
+// Center align class
+.centered
+	text-align center
+
+// Bold class
+.bold
+	font-weight bold

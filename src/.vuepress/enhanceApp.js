@@ -1,5 +1,4 @@
-import './styles/index.scss';
-import './styles/fonts.scss'
+import './styles/fonts.styl'
 
 import { VueAgile } from 'vue-agile'
 

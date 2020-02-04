@@ -17,7 +17,7 @@ module.exports = [
 		{
 			type: "expander",
 			before: info =>
-				`<details class="expander content"><summary class="expander expansion">${info}</summary>`,
+				`<details class="expander"><summary class="expansion">${info}</summary>`,
 			after: "</details>"
 		}
 	],
