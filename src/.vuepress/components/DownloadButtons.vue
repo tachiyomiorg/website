@@ -44,62 +44,62 @@
 
 <style scoped lang="stylus">
 *
-    font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+	font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
 
 ul
-    margin 0.625em 0 0
-    padding 0
-    text-align center
-    width 100%
-    -webkit-touch-callout none
-    -webkit-user-select none
-    -moz-user-select none
-    -ms-user-select none
-    user-select none
+	margin 0.625em 0 0
+	padding 0
+	text-align center
+	width 100%
+	-webkit-touch-callout none
+	-webkit-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
 
 li
-    display inline-block
-    margin 0.3125em 0.625em
+	display inline-block
+	margin 0.3125em 0.625em
 
 a.download-link
-    &:hover
-        text-decoration none
-    .download-button
-        align-items center
-        background-color #2e84bf
-        border-radius 0.3125em
-        cursor pointer
-        display flex
-        height 3.75em
-        justify-content center
-        padding 0 1em
-        width 11.25em
-        &.stable
-            background-color #2e84bf
-            &:hover
-                filter brightness(110%)
-        &.dev
-            background-color #476582
-            &:hover
-                filter brightness(110%)
-        .download-area
-            align-items center
-            color #ffffff
-            display flex
-            font-size 1.125em
-            .download-icons
-                color #ffffff
-                font-size 0.875em
-                max-width 2em
-            .download-get_app
-                margin-left 0.188em
-                margin-right 0.25em
-            .download-bug_report
-                margin-right 0.25em
-            .download-text-stable
-                margin-right 0.375em
-            .download-text-dev
-                margin-right 0.063em
+	&:hover
+		text-decoration none
+	.download-button
+		align-items center
+		background-color #2e84bf
+		border-radius 0.3125em
+		cursor pointer
+		display flex
+		height 3.75em
+		justify-content center
+		padding 0 1em
+		width 11.25em
+		&.stable
+			background-color #2e84bf
+			&:hover
+				filter brightness(110%)
+		&.dev
+			background-color #476582
+			&:hover
+				filter brightness(110%)
+		.download-area
+			align-items center
+			color #ffffff
+			display flex
+			font-size 1.125em
+			.download-icons
+				color #ffffff
+				font-size 0.875em
+				max-width 2em
+			.download-get_app
+				margin-left 0.188em
+				margin-right 0.25em
+			.download-bug_report
+				margin-right 0.25em
+			.download-text-stable
+				margin-right 0.375em
+			.download-text-dev
+				margin-right 0.063em
 </style>
 
 <script>
