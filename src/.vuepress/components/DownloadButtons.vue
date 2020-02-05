@@ -1,5 +1,5 @@
 <template>
-	<ul class="no-select download-list">
+	<ul class="download-list">
 		<li>
 			<a
 				class="download-link"
@@ -42,77 +42,60 @@
 	</ul>
 </template>
 
-<style scoped lang="scss">
-* {
-	font-family: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
-}
+<style scoped lang="stylus">
+*
+	font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
 
-ul {
-	width: 100%;
-	text-align: center;
-	margin: 0.625em 0 0 0;
-	padding: 0;
-}
+ul
+	margin 0.625em 0 0
+	padding 0
+	text-align center
+	user-select none
+	width 100%
 
-li {
-	display: inline-block;
-	margin: 0.3125em 0.625em 0.3125em 0.625em;
-}
+li
+	display inline-block
+	margin 0.3125em 0.625em
 
-a.download-link {
-	&:hover {
-		text-decoration: none;
-	}
-	.download-button {
-		display: flex;
-		cursor: pointer;
-		justify-content: center;
-		align-items: center;
-		background-color: #2e84bf;
-		width: 11.25em;
-		height: 3.75em;
-		border-radius: 0.3125em;
-		padding: 0 1em 0 1em;
-		&.stable {
-			background-color: #2e84bf;
-			&:hover {
-				filter: brightness(110%);
-			}
-		}
-		&.dev {
-			background-color: #476582;
-			&:hover {
-				filter: brightness(110%);
-			}
-		}
-		.download-area {
-			font-size: 1.125em;
-			color: #ffffff;
-			display: flex;
-			align-items: center;
-			.download-icons {
-				color: #ffffff;
-				max-width: 2em;
-				font-size: 0.875em;
-			}
-			.download-get_app {
-				margin-left: 0.188em;
-				margin-right: 0.25em;
-			}
-			.download-bug_report {
-				margin-right: 0.25em;
-			}
-			.download-text-stable {
-				margin-right: 0.375em;
-			}
-			.download-text-dev {
-				margin-right: 0.063em;
-			}
-		}
-	}
-}
+a.download-link
+	&:hover
+		text-decoration none
+	.download-button
+		align-items center
+		background-color #2e84bf
+		border-radius 0.3125em
+		cursor pointer
+		display flex
+		height 3.75em
+		justify-content center
+		padding 0 1em
+		width 11.25em
+		&.stable
+			background-color #2e84bf
+			&:hover
+				filter brightness(110%)
+		&.dev
+			background-color #476582
+			&:hover
+				filter brightness(110%)
+		.download-area
+			align-items center
+			color #ffffff
+			display flex
+			font-size 1.125em
+			.download-icons
+				color #ffffff
+				font-size 0.875em
+				max-width 2em
+			.download-get_app
+				margin-left 0.188em
+				margin-right 0.25em
+			.download-bug_report
+				margin-right 0.25em
+			.download-text-stable
+				margin-right 0.375em
+			.download-text-dev
+				margin-right 0.063em
 </style>
 
 <script>
