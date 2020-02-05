@@ -17,9 +17,24 @@
 				class="action"
 				v-if="data.actionText && data.actionLink"
 			>
-				<DownloadButtons
-				/>
-
+				<a
+					class="action-button stable"
+					:title="this.$data.tagName"
+					:href="this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest'"
+					download
+				>
+					<MaterialIcon icon-name="get_app"/>
+					Stable release
+				</a>
+				<a
+					class="action-button dev"
+					href="http://tachiyomi.kanade.eu/latest"
+					download
+				>
+					<MaterialIcon icon-name="bug_report"/>
+					Dev release
+				</a>
+				<br>
 				<NavLink
 					class="action-button secondary"
 					:item="actionLink"
