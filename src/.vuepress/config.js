@@ -10,6 +10,7 @@ module.exports = {
 		repo: 'inorichi/tachiyomi',
 		docsRepo: 'tachiyomiorg/website',
 		docsDir: 'src',
+		logo: '/assets/media/logo.svg',
 		editLinks: true,
 		editLinkText: 'Help us improve this page',
 		nav: require('./config/nav'),

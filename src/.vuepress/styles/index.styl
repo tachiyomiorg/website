@@ -114,6 +114,16 @@ main.home
 		font-size 1.125em
 		margin-top 0.5em
 
+// Navbar Changes
+.navbar
+	img.logo
+		/* Bring navbar-name closer to navbar-logo */
+		margin-right 0
+	.site-name.can-hide
+		/* Display navbar-name even for small screens */
+		@media (max-width: $MQMobile)
+			display inherit
+
 // Center align class
 .centered
 	text-align center
