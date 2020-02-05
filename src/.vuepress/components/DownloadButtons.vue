@@ -50,12 +50,8 @@ ul
 	margin 0.625em 0 0
 	padding 0
 	text-align center
-	width 100%
-	-webkit-touch-callout none
-	-webkit-user-select none
-	-moz-user-select none
-	-ms-user-select none
 	user-select none
+	width 100%
 
 li
 	display inline-block
