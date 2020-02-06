@@ -1,7 +1,7 @@
 ---
 home: true
 lang: en-US
-heroImage: /assets/media/hero.png
+heroImage: /assets/media/hero.svg
 actionText: Get started →
 actionLink: /help/guides/getting-started
 features:
