@@ -104,19 +104,28 @@ user-select()
 		background-color $badgeVersionColor !important
 
 // Index changes
-main.home
+.home
+	max-width $homePageWidth
 	.hero img
 		max-height $heroImageHeight
 	.action
 		user-select none
 		a
 			cursor pointer
+	.feature
+		text-align left
+		p
+			height 5em
+		img
+			max-width 100%
+			max-height 35em
 
 // Index download modal
 .download-container
 	.download-title
 		border-bottom-width 0
 	.download-footer
+		padding-top 0
 		border-top-width 0
 	.download-cancel-button
 		background-color $accentColorSecondary

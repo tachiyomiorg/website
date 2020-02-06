@@ -41,6 +41,10 @@
 			>
 				<h2>{{ feature.title }}</h2>
 				<p>{{ feature.details }}</p>
+				<img
+				v-if="feature.image"
+				:src="$withBase(feature.image)"
+				>
 			</div>
 		</div>
 
@@ -90,7 +94,7 @@ export default {
 		showDownloads() {
 			this.$swal({
 				title: 'Download',
-				text: 'Select your version of Tachiyomi to download',
+				text: 'Select a version to use',
 				confirmButtonText: 'Stable',
 				cancelButtonText: 'Dev',
 				footer: '<a href="/help/guides/getting-started/">Which version do I select?</a>',
@@ -153,7 +157,6 @@ export default {
 // Use Stylus to use the layout variables.
 .home {
 	padding: $navbarHeight 2rem 0;
-	max-width: 960px;
 	margin: 0px auto;
 	display: block;
 
@@ -162,7 +165,6 @@ export default {
 
 		img {
 			max-width: 100%;
-			max-height: 280px;
 			display: block;
 			margin: 3rem auto 1.5rem;
 		}
@@ -286,7 +288,6 @@ export default {
 
 		.hero {
 			img {
-				max-height: 210px;
 				margin: 2rem auto 1.2rem;
 			}
 
