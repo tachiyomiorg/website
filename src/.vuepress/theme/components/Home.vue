@@ -119,7 +119,7 @@ export default {
 						focusConfirm: false,
 						timer: 5000,
 						timerProgressBar: true
-					}),
+					})
 					window.location.assign(this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest');
 				} else if (
 					result.dismiss === this.$swal.DismissReason.cancel
@@ -131,7 +131,7 @@ export default {
 						focusConfirm: false,
 						timer: 5000,
 						timerProgressBar: true
-					}),
+					})
 					window.location.assign('http://tachiyomi.kanade.eu/latest');
 				}
 			})
