@@ -107,35 +107,22 @@ user-select()
 main.home
 	.hero img
 		max-height 8em
-	.action a.action-button
-		border-radius 0.3125em
-		font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
-		font-size 1.125em
-		margin-top 0.5em
-		width 12.5rem
-		.material-icons
-			color #ffffff
-			top 0.2em
-		&.stable
-			background-color $accentColor
-			border-bottom-color darken($accentColor, 5)
-			color #ffffff
-			&:hover
-				background-color lighten($accentColor, 10)
-				transition background-color 0.1s ease
-		&.dev
-			background-color $accentColorSecondary
-			border-bottom-color darken($accentColorSecondary, 5)
-			color #ffffff
-			&:hover
-				background-color lighten($accentColorSecondary, 10)
-				transition background-color 0.1s ease
+	.action
+		user-select none
+		a
+			cursor pointer
+
+// Index download modal
+.download-container
+	.download-title
+		border-bottom-width 0
+	.download-footer
+		border-top-width 0
+	.download-cancel-button
+		background-color $accentColorSecondary
 
 // Navbar Changes
 .navbar
-	img.logo
-		/* Bring navbar-name closer to navbar-logo */
-		margin-right 0
 	.site-name.can-hide
 		/* Display navbar-name even for small screens */
 		@media (max-width: $MQMobile)

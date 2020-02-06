@@ -18,23 +18,11 @@
 				v-if="data.actionText && data.actionLink"
 			>
 				<a
-					class="action-button stable"
-					:title="this.$data.tagName"
-					:href="this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest'"
-					download
+					@click="showDownloads"
+					class="action-button download"
 				>
-					<MaterialIcon icon-name="get_app"/>
-					Stable release
+					Download ↓
 				</a>
-				<a
-					class="action-button dev"
-					href="http://tachiyomi.kanade.eu/latest"
-					download
-				>
-					<MaterialIcon icon-name="bug_report"/>
-					Dev release
-				</a>
-				<br>
 				<NavLink
 					class="action-button secondary"
 					:item="actionLink"
@@ -94,6 +82,59 @@ export default {
 				link: this.data.actionLink,
 				text: this.data.actionText
 			};
+		}
+
+	},
+
+	methods: {
+		showDownloads() {
+			this.$swal({
+				title: 'Download',
+				text: 'Select your version of Tachiyomi to download',
+				confirmButtonText: 'Stable',
+				cancelButtonText: 'Dev',
+				footer: '<a href="/help/guides/getting-started/">Which version do I select?</a>',
+				showCloseButton: true,
+				showCancelButton: true,
+				focusConfirm: false,
+				customClass: {
+					actions: 'download-actions',
+					cancelButton: 'download-cancel-button',
+					closeButton: 'download-close-button',
+					confirmButton: 'download-confirm-button',
+					container: 'download-container',
+					content: 'download-content',
+					footer: 'download-footer',
+					header: 'download-header',
+					icon: 'download-icon',
+					popup: 'download-popup',
+					title: 'download-title'
+				}
+			}).then((result) => {
+				if (result.value) {
+					this.$swal({
+						title: 'Downloading',
+						text: 'Stable version is being downloaded.',
+						icon: 'success',
+						focusConfirm: false,
+						timer: 5000,
+						timerProgressBar: true
+					}),
+					window.location.assign(this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest');
+				} else if (
+					result.dismiss === this.$swal.DismissReason.cancel
+				) {
+					this.$swal({
+						title: 'Downloading',
+						text: 'Dev version is being downloaded.',
+						icon: 'success',
+						focusConfirm: false,
+						timer: 5000,
+						timerProgressBar: true
+					}),
+					window.location.assign('http://tachiyomi.kanade.eu/latest');
+				}
+			})
 		}
 	},
 
