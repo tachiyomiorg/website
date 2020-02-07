@@ -183,7 +183,7 @@ Read about source migration [here](/help/guides/source-migration/)
 
 #### Regarding MangaRock going away:
 - You won't lose existing bookmarks or downloads.
-- Chapters will no longer be updated or once **MangaRock** is dead.
+- Chapters are no longer updated since **MangaRock** is dead.
 - Favorites from **MangaRock** source will no longer be backed up, however backup restoration is possible.
 - There is no native way to automatically import your favorites from MangaRock, but you can try [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 - Popular alternatives are **MangaDex**, **MangaSee** and **Mangakakalot**.
