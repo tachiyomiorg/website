@@ -128,7 +128,7 @@ export default {
 					})
 					window.location.assign(this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest');
 				} else if (
-					result.dismiss === this.$swal.DismissReason.cancel
+					result.dismiss === 'cancel'
 				) {
 					this.$swal({
 						title: 'Downloading',
