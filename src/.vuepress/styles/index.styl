@@ -111,11 +111,11 @@ user-select()
 	.action
 		user-select none
 		a
-			border-radius 0.5rem
+			border-radius 0.25rem
 			cursor pointer
 			font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
 			font-size 1.125em
-			width 12rem
+			width 10.5rem
 	.feature
 		text-align center
 		p
@@ -126,19 +126,26 @@ user-select()
 
 // Index download modal
 .download-container
-	.download-confirm-button
-	.download-cancel-button
-		font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
-		font-size 1.2em
-		height 3em
+	button
 		user-select none
-		width 8em
+	.download-stable-button
+	.download-dev-button
+	.download-confirm-button
+		border-radius 0.25rem
+		font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+		font-size 1.125em
+		height 3rem
+		width 8.5rem
+		&:focus
+			outline none
+			outline-style solid
+	.download-confirm-button
 	.download-title
 		border-bottom-width 0
 	.download-footer
 		border-top-width 0
 		padding-top 0
-	.download-cancel-button
+	.download-dev-button
 		background-color $accentColorSecondary
 
 // Navbar Changes

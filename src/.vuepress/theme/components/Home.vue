@@ -99,15 +99,15 @@ export default {
 				confirmButtonAriaLabel: 'Stable',
 				cancelButtonText: 'Dev',
 				cancelButtonAriaLabel: 'Dev',
-				footer: '<a href="/help/guides/getting-started/">Which version do I select?</a>',
+				footer: '<a href="/help/faq/application/#what-is-the-dev-version-of-tachiyomi">Which version do I select?</a>',
 				showCloseButton: true,
 				showCancelButton: true,
 				focusConfirm: false,
 				customClass: {
 					actions: 'download-actions',
-					cancelButton: 'download-cancel-button',
+					cancelButton: 'download-dev-button',
 					closeButton: 'download-close-button',
-					confirmButton: 'download-confirm-button',
+					confirmButton: 'download-stable-button',
 					container: 'download-container',
 					content: 'download-content',
 					footer: 'download-footer',
@@ -123,8 +123,13 @@ export default {
 						text: 'Stable version is being downloaded.',
 						icon: 'success',
 						focusConfirm: false,
+						focusCancel: false,
 						timer: 5000,
-						timerProgressBar: true
+						timerProgressBar: true,
+						customClass: {
+							confirmButton: 'download-confirm-button',
+							container: 'download-container'
+						}
 					})
 					window.location.assign(this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest');
 				} else if (
@@ -132,11 +137,16 @@ export default {
 				) {
 					this.$swal({
 						title: 'Downloading',
-						text: 'Dev version is being downloaded.',
+						text: 'Development version is being downloaded.',
 						icon: 'success',
 						focusConfirm: false,
+						focusCancel: false,
 						timer: 5000,
-						timerProgressBar: true
+						timerProgressBar: true,
+						customClass: {
+							confirmButton: 'download-confirm-button',
+							container: 'download-container'
+						}
 					})
 					window.location.assign('http://tachiyomi.kanade.eu/latest');
 				}
