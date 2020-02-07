@@ -7,13 +7,19 @@ sidebarDepth: 2
 ## General
 
 ### What are some good extensions?
-The most popular are **MangaDex**, **MangaSee** and **Mangakakalot**, these are large
-sites which host content from scanlators, there's also extensions like
-**Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which
-host directly from the scanlators own websites.
+The most popular are **MangaDex**, **MangaSee** and **Mangakakalot**, these are large sites which host content from scanlators. Description of some popular sources are listed below:
+
+- Fastest manga updates: **Mangadex** and scanlator sources
+- Largest manga library: **Mangakakalot** (found in **Mangabox** extension)
+- High quality scans and official translation: **Mangasee**
+- Webtoons and Manhwa/Manhua: **Toonily** (found in **Madara** extension), **Webtoons.com**, **Mangazuki.me** (also in **Madara** extension)
+- Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu** (similar to Mangago.me)
+- Other popular sources: **Kissmanga**, **Mangapark**, **Mangahere**, **Manhwa18.net** (in **FMReader** extension)
+
+Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites. 
 
 ::: guide
-User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different extensions and their sources.
+User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different mulit-source extensions and their sources.
 ::: aside
 Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
 :::
