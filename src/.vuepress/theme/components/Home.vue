@@ -94,9 +94,11 @@ export default {
 		showDownloads() {
 			this.$swal({
 				title: 'Download',
-				text: 'Select a version to use',
+				text: 'Select which version to use',
 				confirmButtonText: 'Stable',
+				confirmButtonAriaLabel: 'Stable',
 				cancelButtonText: 'Dev',
+				cancelButtonAriaLabel: 'Dev',
 				footer: '<a href="/help/guides/getting-started/">Which version do I select?</a>',
 				showCloseButton: true,
 				showCancelButton: true,
@@ -156,17 +158,17 @@ export default {
 <style lang="stylus">
 // Use Stylus to use the layout variables.
 .home {
-	padding: $navbarHeight 2rem 0;
-	margin: 0px auto;
 	display: block;
+	margin: 0px auto;
+	padding: $navbarHeight 2rem 0;
 
 	.hero {
 		text-align: center;
 
 		img {
-			max-width: 100%;
 			display: block;
 			margin: 3rem auto 1.5rem;
+			max-width: 100%;
 		}
 
 		h1 {
@@ -178,22 +180,20 @@ export default {
 		}
 
 		.description {
-			max-width: 35rem;
+			color: lighten($textColor, 40%);
 			font-size: 1.6rem;
 			line-height: 1.3;
-			color: lighten($textColor, 40%);
+			max-width: 35rem;
 		}
 
 		.action-button {
-			display: inline-block;
-			font-size: 1.2rem;
-			color: #fff;
 			background-color: $accentColor;
-			padding: 0.8rem 1.6rem;
-			border-radius: 4px;
-			transition: background-color .1s ease;
-			box-sizing: border-box;
 			border-bottom: 1px solid darken($accentColor, 10%);
+			box-sizing: border-box;
+			color: #fff;
+			display: inline-block;
+			padding: 0.8rem 1.6rem;
+			transition: background-color .1s ease;
 
 			&:hover {
 				background-color: lighten($accentColor, 10%);
@@ -201,8 +201,8 @@ export default {
 
 			&.secondary {
 				background-color: darken($borderColor, 5%);
-				color: lighten($textColor, 25%);
 				border-bottom-color: darken($borderColor, 15%);
+				color: lighten($textColor, 25%);
 
 				&:hover {
 					background-color: lighten($borderColor, 5%);
@@ -225,27 +225,27 @@ export default {
 	}
 
 	.features {
+		align-content: stretch;
+		align-items: flex-start;
 		border-top: 1px solid $borderColor;
-		padding: 1.2rem 0;
-		margin-top: 2.5rem;
 		display: flex;
 		flex-wrap: wrap;
-		align-items: flex-start;
-		align-content: stretch;
 		justify-content: space-between;
+		margin-top: 2.5rem;
+		padding: 1.2rem 0;
 	}
 
 	.feature {
-		flex-grow: 1;
 		flex-basis: 30%;
+		flex-grow: 1;
 		max-width: 30%;
 
 		h2 {
+			border-bottom: none;
+			color: lighten($textColor, 10%);
 			font-size: 1.4rem;
 			font-weight: 500;
-			border-bottom: none;
 			padding-bottom: 0;
-			color: lighten($textColor, 10%);
 		}
 
 		p {
@@ -254,10 +254,10 @@ export default {
 	}
 
 	.footer {
-		padding: 2.5rem;
 		border-top: 1px solid $borderColor;
-		text-align: center;
 		color: lighten($textColor, 25%);
+		padding: 2.5rem;
+		text-align: center;
 	}
 }
 
