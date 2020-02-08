@@ -1,4 +1,5 @@
 import './styles/fonts.styl'
+import './styles/animations.styl'
 import 'sweetalert2/dist/sweetalert2.min.css';
 
 import { VueAgile } from 'vue-agile';

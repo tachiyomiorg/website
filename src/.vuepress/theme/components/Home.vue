@@ -113,6 +113,12 @@ export default {
 					icon: 'download-icon',
 					popup: 'download-popup',
 					title: 'download-title'
+				},
+				showClass: {
+					popup: 'animated zoomIn fastest'
+				},
+				hideClass: {
+					popup: 'animated zoomOut faster'
 				}
 			}).then((result) => {
 				if (result.value) {
@@ -127,6 +133,12 @@ export default {
 						customClass: {
 							confirmButton: 'download-confirm-button',
 							container: 'download-container'
+						},
+						showClass: {
+							popup: 'animated pulse faster'
+						},
+						hideClass: {
+							popup: 'animated zoomOut faster'
 						}
 					})
 					window.location.assign(this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest');
@@ -144,6 +156,12 @@ export default {
 						customClass: {
 							confirmButton: 'download-confirm-button',
 							container: 'download-container'
+						},
+						showClass: {
+							popup: 'animated pulse faster'
+						},
+						hideClass: {
+							popup: 'animated zoomOut faster'
 						}
 					})
 					window.location.assign('http://tachiyomi.kanade.eu/latest');
