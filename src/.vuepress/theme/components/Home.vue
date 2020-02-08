@@ -21,7 +21,7 @@
 					@click="showDownloads"
 					class="action-button download"
 				>
-					Download ↓
+					<MaterialIcon icon-name="cloud_download" /> Download
 				</a>
 				<NavLink
 					class="action-button secondary"
@@ -182,162 +182,107 @@ export default {
 </script>
 
 <style lang="stylus">
-// Use Stylus to use the layout variables.
-.home {
-	display: block;
-	margin: 0px auto;
-	padding: $navbarHeight 2rem 0;
+.home
+	display block
+	margin 0 auto
+	padding $navbarHeight 2rem 0
+	.hero
+		text-align center
+		img
+			display block
+			margin 3rem auto 1.5rem
+			max-width 100%
+		h1
+			font-size 3rem
+		h1
+		.description
+		.action
+			margin 1.8rem auto
+		.description
+			color lighten($textColor, 40%)
+			font-size 1.6rem
+			line-height 1.3
+			max-width 35rem
+		.action-button
+			background-color $accentColor
+			border-bottom 1px solid darken($accentColor, 10%)
+			box-sizing border-box
+			color #fff
+			display inline-block
+			padding 0.8rem 1.6rem
+			transition background-color 0.1s ease
+			&:hover
+				background-color lighten($accentColor, 10%)
+			&.secondary
+				background-color darken($borderColor, 5%)
+				border-bottom-color darken($borderColor, 15%)
+				color lighten($textColor, 25%)
+				&:hover
+					background-color lighten($borderColor, 5%)
+			svg + span
+				margin-left 0.5rem
+			svg
+				height 1em
+				width 1em
+			& + .action-button
+				margin-left 0.5rem
+	.features
+		align-content stretch
+		align-items flex-start
+		border-top 1px solid $borderColor
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		margin-top 2.5rem
+		padding 1.2rem 0
+	.feature
+		flex-basis 30%
+		flex-grow 1
+		max-width 30%
+		h2
+			border-bottom none
+			color lighten($textColor, 10%)
+			font-size 1.4rem
+			font-weight 500
+			padding-bottom 0
+		p
+			color lighten($textColor, 25%)
+	.footer
+		border-top 1px solid $borderColor
+		color lighten($textColor, 25%)
+		padding 2.5rem
+		text-align center
 
-	.hero {
-		text-align: center;
+@media (max-width: $MQMobile)
+	.home
+		.features
+			flex-direction column
+		.feature
+			max-width 100%
+			padding 0 2.5rem
+		.hero
+			.action-button + .action-button
+				margin-left 0
+				margin-top 0.5rem
 
-		img {
-			display: block;
-			margin: 3rem auto 1.5rem;
-			max-width: 100%;
-		}
-
-		h1 {
-			font-size: 3rem;
-		}
-
-		h1, .description, .action {
-			margin: 1.8rem auto;
-		}
-
-		.description {
-			color: lighten($textColor, 40%);
-			font-size: 1.6rem;
-			line-height: 1.3;
-			max-width: 35rem;
-		}
-
-		.action-button {
-			background-color: $accentColor;
-			border-bottom: 1px solid darken($accentColor, 10%);
-			box-sizing: border-box;
-			color: #fff;
-			display: inline-block;
-			padding: 0.8rem 1.6rem;
-			transition: background-color .1s ease;
-
-			&:hover {
-				background-color: lighten($accentColor, 10%);
-			}
-
-			&.secondary {
-				background-color: darken($borderColor, 5%);
-				border-bottom-color: darken($borderColor, 15%);
-				color: lighten($textColor, 25%);
-
-				&:hover {
-					background-color: lighten($borderColor, 5%);
-				}
-			}
-
-			svg + span {
-				margin-left: 0.5rem;
-			}
-
-			svg {
-				height: 1em;
-				width: 1em;
-			}
-
-			& + .action-button {
-				margin-left: 0.5rem;
-			}
-		}
-	}
-
-	.features {
-		align-content: stretch;
-		align-items: flex-start;
-		border-top: 1px solid $borderColor;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin-top: 2.5rem;
-		padding: 1.2rem 0;
-	}
-
-	.feature {
-		flex-basis: 30%;
-		flex-grow: 1;
-		max-width: 30%;
-
-		h2 {
-			border-bottom: none;
-			color: lighten($textColor, 10%);
-			font-size: 1.4rem;
-			font-weight: 500;
-			padding-bottom: 0;
-		}
-
-		p {
-			color: lighten($textColor, 25%);
-		}
-	}
-
-	.footer {
-		border-top: 1px solid $borderColor;
-		color: lighten($textColor, 25%);
-		padding: 2.5rem;
-		text-align: center;
-	}
-}
-
-@media (max-width: $MQMobile) {
-	.home {
-		.features {
-			flex-direction: column;
-		}
-
-		.feature {
-			max-width: 100%;
-			padding: 0 2.5rem;
-		}
-
-		.hero {
-			.action-button + .action-button {
-				margin-left: 0;
-				margin-top: 0.5rem;
-			}
-		}
-	}
-}
-
-@media (max-width: $MQMobileNarrow) {
-	.home {
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
-
-		.hero {
-			img {
-				margin: 2rem auto 1.2rem;
-			}
-
-			h1 {
-				font-size: 2rem;
-			}
-
-			h1, .description, .action {
-				margin: 1.2rem auto;
-			}
-
-			.description {
-				font-size: 1.2rem;
-			}
-
-			.action-button {
-				font-size: 1rem;
-				padding: 0.6rem 1.2rem;
-			}
-
-			.feature h2 {
-				font-size: 1.25rem;
-			}
-		}
-	}
-}
+@media (max-width: $MQMobileNarrow)
+	.home
+		padding-left 1.5rem
+		padding-right 1.5rem
+		.hero
+			img
+				margin 2rem auto 1.2rem
+			h1
+				font-size 2rem
+			h1
+			.description
+			.action
+				margin 1.2rem auto
+			.description
+				font-size 1.2rem
+			.action-button
+				font-size 1rem
+				padding 0.6rem 1.2rem
+			.feature h2
+				font-size 1.25rem
 </style>

@@ -14,8 +14,8 @@
 				<div class="download-button stable">
 					<span class="download-area">
 						<MaterialIcon
-							name="download-get_app download-icons"
-							icon-name="get_app"
+							name="download-cloud_download download-icons"
+							icon-name="cloud_download"
 						/>
 						<span class="download-text-stable download-text"
 							>Stable release</span
@@ -44,7 +44,7 @@
 
 <style scoped lang="stylus">
 *
-	font-family $buttonFont
+	font-family $buttonFontFamily
 
 ul
 	margin 0.625em 0 0
@@ -87,15 +87,15 @@ a.download-link
 				color #ffffff
 				font-size 0.875em
 				max-width 2em
-			.download-get_app
-				margin-left 0.188em
-				margin-right 0.25em
+			.download-cloud_download
+				margin-left 0.2em
+				margin-right 0.5em
 			.download-bug_report
 				margin-right 0.25em
 			.download-text-stable
 				margin-right 0.375em
 			.download-text-dev
-				margin-right 0.063em
+				margin-right 0.05em
 </style>
 
 <script>
