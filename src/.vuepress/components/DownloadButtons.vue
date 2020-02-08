@@ -44,7 +44,7 @@
 
 <style scoped lang="stylus">
 *
-	font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+	font-family $buttonFont
 
 ul
 	margin 0.625em 0 0
@@ -62,8 +62,8 @@ a.download-link
 		text-decoration none
 	.download-button
 		align-items center
-		background-color #2e84bf
-		border-radius 0.3125em
+		background-color $accentColor
+		border-radius $buttonBorderRadius
 		cursor pointer
 		display flex
 		height 3.75em
@@ -71,11 +71,11 @@ a.download-link
 		padding 0 1em
 		width 11.25em
 		&.stable
-			background-color #2e84bf
+			background-color $accentColor
 			&:hover
 				filter brightness(110%)
 		&.dev
-			background-color #476582
+			background-color $accentColorSecondary
 			&:hover
 				filter brightness(110%)
 		.download-area
