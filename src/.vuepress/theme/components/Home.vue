@@ -5,35 +5,29 @@
 				v-if="data.heroImage"
 				:src="$withBase(data.heroImage)"
 				:alt="data.heroAlt || 'hero'"
-			>
+			/>
 
-			<h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || $title || 'Hello' }}</h1>
+			<h1 v-if="data.heroText !== null" id="main-title">
+				{{ data.heroText || $title || "Tachiyomi" }}
+			</h1>
 
 			<p class="description">
-				{{ data.tagline || $description || 'Welcome to your VuePress site' }}
+				{{
+					data.tagline ||
+						$description ||
+						"Free and open source manga reader for Android."
+				}}
 			</p>
 
-			<p
-				class="action"
-				v-if="data.actionText && data.actionLink"
-			>
-				<a
-					@click="showDownloads"
-					class="action-button download"
-				>
+			<p class="action" v-if="data.actionText && data.actionLink">
+				<a @click="showDownloads" class="action-button download">
 					<MaterialIcon icon-name="cloud_download" /> Download
 				</a>
-				<NavLink
-					class="action-button secondary"
-					:item="actionLink"
-				/>
+				<NavLink class="action-button secondary" :item="actionLink" />
 			</p>
 		</header>
 
-		<div
-			class="features"
-			v-if="data.features && data.features.length"
-		>
+		<div class="features" v-if="data.features && data.features.length">
 			<div
 				class="feature"
 				v-for="(feature, index) in data.features"
@@ -41,144 +35,139 @@
 			>
 				<h2>{{ feature.title }}</h2>
 				<p>{{ feature.details }}</p>
-				<img
-				v-if="feature.image"
-				:src="$withBase(feature.image)"
-				>
+				<img v-if="feature.image" :src="$withBase(feature.image)" />
 			</div>
 		</div>
 
-		<Content class="theme-default-content custom"/>
+		<Content class="theme-default-content custom" />
 
-		<footer
-			class="footer"
-			v-if="data.footer"
-		>
+		<footer class="footer" v-if="data.footer">
 			{{ data.footer }}
 		</footer>
 	</main>
 </template>
 
 <script>
-import NavLink from '@parent-theme/components/NavLink.vue';
+import NavLink from "@parent-theme/components/NavLink.vue";
 
-import axios from 'axios';
+import axios from "axios";
 
-const RELEASE_URL = 'https://api.github.com/repos/inorichi/tachiyomi/releases/latest';
+const RELEASE_URL =
+	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
 export default {
 	components: { NavLink },
 
-	data () {
+	data() {
 		return {
-			tagName: '',
-			browserDownloadUrl: '',
-		}
+			tagName: "",
+			browserDownloadUrl: ""
+		};
 	},
 
 	computed: {
-		data () {
+		data() {
 			return this.$page.frontmatter;
 		},
 
-		actionLink () {
+		actionLink() {
 			return {
 				link: this.data.actionLink,
 				text: this.data.actionText
 			};
 		}
-
 	},
 
 	methods: {
 		showDownloads() {
 			this.$swal({
-				title: 'Download',
-				text: 'Select which version to use',
-				confirmButtonText: 'Stable',
-				confirmButtonAriaLabel: 'Stable',
-				cancelButtonText: 'Dev',
-				cancelButtonAriaLabel: 'Dev',
+				title: "Download",
+				text: "Select which version to use",
+				confirmButtonText: "Stable",
+				confirmButtonAriaLabel: "Stable",
+				cancelButtonText: "Dev",
+				cancelButtonAriaLabel: "Dev",
 				showCloseButton: true,
 				showCancelButton: true,
 				focusConfirm: false,
 				customClass: {
-					actions: 'download-actions',
-					cancelButton: 'download-dev-button',
-					closeButton: 'download-close-button',
-					confirmButton: 'download-stable-button',
-					container: 'download-container',
-					content: 'download-content',
-					header: 'download-header',
-					icon: 'download-icon',
-					popup: 'download-popup',
-					title: 'download-title'
+					actions: "download-actions",
+					cancelButton: "download-dev-button",
+					closeButton: "download-close-button",
+					confirmButton: "download-stable-button",
+					container: "download-container",
+					content: "download-content",
+					header: "download-header",
+					icon: "download-icon",
+					popup: "download-popup",
+					title: "download-title"
 				},
 				showClass: {
-					popup: 'animated zoomIn fastest'
+					popup: "animated zoomIn fastest"
 				},
 				hideClass: {
-					popup: 'animated zoomOut faster'
+					popup: "animated zoomOut faster"
 				}
-			}).then((result) => {
+			}).then(result => {
 				if (result.value) {
 					this.$swal({
-						title: 'Downloading',
-						text: 'Stable version is being downloaded.',
-						icon: 'success',
+						title: "Downloading",
+						text: "Stable version is being downloaded.",
+						icon: "success",
 						focusConfirm: false,
 						focusCancel: false,
 						timer: 5000,
 						timerProgressBar: true,
 						customClass: {
-							confirmButton: 'download-confirm-button',
-							container: 'download-container'
+							confirmButton: "download-confirm-button",
+							container: "download-container"
 						},
 						showClass: {
-							popup: 'animated pulse faster'
+							popup: "animated pulse faster"
 						},
 						hideClass: {
-							popup: 'animated zoomOut faster'
+							popup: "animated zoomOut faster"
 						}
-					})
-					window.location.assign(this.$data.browserDownloadUrl || 'https://github.com/inorichi/tachiyomi/releases/latest');
-				} else if (
-					result.dismiss === 'cancel'
-				) {
+					});
+					window.location.assign(
+						this.$data.browserDownloadUrl ||
+							"https://github.com/inorichi/tachiyomi/releases/latest"
+					);
+				} else if (result.dismiss === "cancel") {
 					this.$swal({
-						title: 'Downloading',
-						text: 'Development version is being downloaded.',
-						icon: 'success',
+						title: "Downloading",
+						text: "Development version is being downloaded.",
+						icon: "success",
 						focusConfirm: false,
 						focusCancel: false,
 						timer: 5000,
 						timerProgressBar: true,
 						customClass: {
-							confirmButton: 'download-confirm-button',
-							container: 'download-container'
+							confirmButton: "download-confirm-button",
+							container: "download-container"
 						},
 						showClass: {
-							popup: 'animated pulse faster'
+							popup: "animated pulse faster"
 						},
 						hideClass: {
-							popup: 'animated zoomOut faster'
+							popup: "animated zoomOut faster"
 						}
-					})
-					window.location.assign('http://tachiyomi.kanade.eu/latest');
+					});
+					window.location.assign("http://tachiyomi.kanade.eu/latest");
 				}
-			})
+			});
 		}
 	},
 
-	async mounted () {
+	async mounted() {
 		const { data } = await axios.get(RELEASE_URL);
 		// Maybe eventually some release has more than the apk in assets.
-		const apkAsset = data.assets.find(a => a.name.includes('.apk'));
+		const apkAsset = data.assets.find(a => a.name.includes(".apk"));
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
 	}
-}
+};
 </script>
 
 <style lang="stylus">
