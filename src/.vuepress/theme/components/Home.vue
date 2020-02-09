@@ -21,7 +21,7 @@
 
 			<p class="action" v-if="data.actionText && data.actionLink">
 				<a @click="showDownloads" class="action-button download">
-					<MaterialIcon icon-name="cloud_download" iconOnly /> Download
+					Download ↓
 				</a>
 				<NavLink class="action-button secondary" :item="actionLink" />
 			</p>
