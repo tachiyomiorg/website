@@ -1,11 +1,10 @@
 <template>
-	<div :class="name" class="material-holder">
-		<i
-			v-if="legacy"
-			:class="iconName"
-			class="material-legacy-icons mdi"
-		></i>
-		<i v-else class="material-icons">{{ iconName }}</i>
+	<i v-if="iconOnly" class="material-icons">{{ iconName }}</i>
+	<div v-else-if="legacy" :class="name" class="material-holder">
+		<i :class="iconName" class="material-legacy-icons mdi"></i>
+	</div>
+	<div v-else :class="name" class="material-holder">
+		<i class="material-icons">{{ iconName }}</i>
 	</div>
 </template>
 
@@ -19,6 +18,10 @@
  */
 export default {
 	props: {
+		iconOnly: {
+			type: Boolean,
+			default: false
+		},
 		legacy: {
 			type: Boolean,
 			default: false
@@ -35,36 +38,33 @@ export default {
 };
 </script>
 
-<style scoped>
-.material-holder {
-	color: #476582;
-	margin: 0;
-	font-size: 0.85em;
-	border-radius: 3px;
-	display: inline;
-}
+<style lang="stylus" scoped>
+.material-holder
+	color #476582
+	margin 0
+	font-size 0.85em
+	border-radius 3px
+	display inline
 
-.material-icons {
-	font-family: "Material Icons";
-	font-size: 1.35em;
-	font-style: normal;
-	position: relative;
-	top: 0.2rem;
-	font-weight: normal;
-	line-height: 1;
-	letter-spacing: normal;
-	text-transform: none;
-	display: inline-block;
-	white-space: nowrap;
-	word-wrap: normal;
-	direction: ltr;
-	-webkit-font-feature-settings: "liga";
-	-webkit-font-smoothing: antialiased;
-}
+.material-icons
+	font-family 'Material Icons'
+	font-size 1.35em
+	font-style normal
+	position relative
+	top 0.2rem
+	font-weight normal
+	line-height 1
+	letter-spacing normal
+	text-transform none
+	display inline-block
+	white-space nowrap
+	word-wrap normal
+	direction ltr
+	font-feature-settings 'liga'
+	-webkit-font-smoothing antialiased
 
-.material-legacy-icons {
-	font-family: "Material Design Icons";
-	font-size: 1.35em;
-	font-style: normal;
-}
+.material-legacy-icons
+	font-family 'Material Design Icons'
+	font-size 1.35em
+	font-style normal
 </style>
