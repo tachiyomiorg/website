@@ -5,13 +5,19 @@ user-select()
 	-ms-user-select arguments
 	user-select arguments
 
+font-feature-settings()
+	-webkit-font-feature-settings arguments
+	-moz-font-feature-settings arguments
+	-ms-font-feature-settings arguments
+	font-feature-settings arguments
+
 // Custom block containers
 .custom-block
 	&.tip
 	&.warning
 	&.error
 	&.danger
-		border-radius 0.4rem
+		border-radius $containerBorderRadius
 	&.aside
 		color transparentify($textColor, 0.4)
 		font-size 0.9rem
@@ -19,8 +25,8 @@ user-select()
 
 // Guide container
 .guide
-	background-color $containerBackground
-	border-radius 0.4rem
+	background-color $containerBackgroundColor
+	border-radius $containerBorderRadius
 	margin 1rem 0
 	padding 0.1rem 1.5rem
 	.title
@@ -28,8 +34,8 @@ user-select()
 
 // Expander container
 .expander
-	background-color $containerBackground
-	border-radius 0.4rem
+	background-color $containerBackgroundColor
+	border-radius $containerBorderRadius
 	margin 1rem 0
 	padding 1rem 1.5rem
 	.expansion
@@ -40,7 +46,7 @@ user-select()
 
 // File tree
 .file-tree
-	font-family source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+	font-family $codeFontFamily
 	font-size 0.85rem
 	list-style none
 	padding 0
@@ -104,21 +110,56 @@ user-select()
 		background-color $badgeVersionColor !important
 
 // Index changes
-main.home
+.home
+	max-width $homePageWidth
 	.hero img
-		max-height 8em
-	.action a.nav-link.action-button.secondary
-		border-bottom none
-		border-radius 0.3125em
-		font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+		max-height $heroImageHeight
+	.action
+		user-select none
+		a
+			border-radius $buttonBorderRadius
+			cursor pointer
+			font-family $buttonFontFamily
+			font-size 1.125em
+			width 10.5rem
+		.material-icons
+			font-size 1.125em
+			color #ffffff
+			margin-right 2px
+	.feature
+		text-align center
+		p
+			height 5em
+		img
+			max-height 28em
+			max-width 100%
+
+// Index download modal
+.download-container
+	button
+		user-select none
+	.download-stable-button
+	.download-dev-button
+	.download-confirm-button
+		border-radius $buttonBorderRadius
+		font-family $buttonFontFamily
 		font-size 1.125em
-		margin-top 0.5em
+		height 3rem
+		width 8.5rem
+		&:focus
+			outline none
+			outline-style solid
+	.download-confirm-button
+	.download-title
+		border-bottom-width 0
+	.download-footer
+		border-top-width 0
+		padding-top 0
+	.download-dev-button
+		background-color $accentColorSecondary
 
 // Navbar Changes
 .navbar
-	img.logo
-		/* Bring navbar-name closer to navbar-logo */
-		margin-right 0
 	.site-name.can-hide
 		/* Display navbar-name even for small screens */
 		@media (max-width: $MQMobile)

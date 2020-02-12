@@ -14,8 +14,8 @@
 				<div class="download-button stable">
 					<span class="download-area">
 						<MaterialIcon
-							name="download-get_app download-icons"
-							icon-name="get_app"
+							name="download-cloud_download download-icons"
+							icon-name="cloud_download"
 						/>
 						<span class="download-text-stable download-text"
 							>Stable release</span
@@ -44,7 +44,7 @@
 
 <style scoped lang="stylus">
 *
-	font-family 'Open Sans', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+	font-family $buttonFontFamily
 
 ul
 	margin 0.625em 0 0
@@ -62,8 +62,8 @@ a.download-link
 		text-decoration none
 	.download-button
 		align-items center
-		background-color #2e84bf
-		border-radius 0.3125em
+		background-color $accentColor
+		border-radius $buttonBorderRadius
 		cursor pointer
 		display flex
 		height 3.75em
@@ -71,11 +71,11 @@ a.download-link
 		padding 0 1em
 		width 11.25em
 		&.stable
-			background-color #2e84bf
+			background-color $accentColor
 			&:hover
 				filter brightness(110%)
 		&.dev
-			background-color #476582
+			background-color $accentColorSecondary
 			&:hover
 				filter brightness(110%)
 		.download-area
@@ -87,15 +87,15 @@ a.download-link
 				color #ffffff
 				font-size 0.875em
 				max-width 2em
-			.download-get_app
-				margin-left 0.188em
-				margin-right 0.25em
+			.download-cloud_download
+				margin-left 0.2em
+				margin-right 0.5em
 			.download-bug_report
 				margin-right 0.25em
 			.download-text-stable
 				margin-right 0.375em
 			.download-text-dev
-				margin-right 0.063em
+				margin-right 0.05em
 </style>
 
 <script>

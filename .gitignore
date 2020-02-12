@@ -15,5 +15,6 @@ npm-debug.log
 # Compiled site
 /public/
 
-# Custom VSC workspace
+# Ignore Visual Studio Code files
 *.code-workspace
+.vscode/launch.json
