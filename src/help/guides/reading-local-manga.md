@@ -128,8 +128,8 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 Starting with development version `r1628` and above, it is now possible to add details to local manga. Like manga from other catalogs, you add information about the manga such as the author, artist, description, and genre tags. 
 
 To import details along with your local manga, you have to create a file called `details.json` and place it within the manga folder. This file will contain the extended details about the manga in the `json` format. You can see the example below on how to build the file. Once the file is there, the app should load the data when you first open the manga or you can pull down to refresh the details. 
-You can copy the following example and edit the details as needed:
 
+You can copy the following example and edit the details as needed:
 ``` json
 {
 "title": "Example Title",
