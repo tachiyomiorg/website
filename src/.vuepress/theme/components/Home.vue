@@ -133,7 +133,13 @@ export default {
 						this.$data.browserDownloadUrl ||
 							"https://github.com/inorichi/tachiyomi/releases/latest"
 					);
-					ga("send", "event", "Button", "Click", "Stable download");
+					window.ga(
+						"send",
+						"event",
+						"Button",
+						"Click",
+						"Stable download"
+					);
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
 						title: "Downloading",
@@ -155,7 +161,13 @@ export default {
 						}
 					});
 					window.location.assign("http://tachiyomi.kanade.eu/latest");
-					ga("send", "event", "Button", "Click", "Dev download");
+					window.ga(
+						"send",
+						"event",
+						"Button",
+						"Click",
+						"Dev download"
+					);
 				}
 			});
 		}
