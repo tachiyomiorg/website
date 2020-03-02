@@ -19,6 +19,7 @@ This fork is a free and open source manga reader for [MangaDex](https://mangadex
 For full list of features, visit the GitHub page.
 :::
 
+- **Features a recommendations tab** (ALPHA)
 - **Built in login with 2FA support**
 - **Different theme**
 - **Minor UI changes**
