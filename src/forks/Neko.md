@@ -1,6 +1,7 @@
 ---
 title: Neko
 lang: en-US
+sidebar: false
 ---
 
 # <img class="headerLogo" :src="$withBase('/assets/media/fork-Neko-icon.png')"> Neko
@@ -10,16 +11,16 @@ lang: en-US
 ## Introduction
 **[Neko](https://github.com/CarlosEsco/Neko)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[CarlosEsco](https://github.com/CarlosEsco)**.
 
-This fork is a free and open source manga reader for [MangaDex](https://mangadex.org/).
+This [MangaDex](https://mangadex.org/) focused fork enhances your reading with native integration and recommendations.
 
 <img :src="$withBase('/assets/media/fork-Neko-banner.png')"/>
 
 ## Features
 ::: aside
-For full list of features, visit the GitHub page.
+For a full list of features, visit the GitHub page.
 :::
 
-- **Features a recommendations tab** (ALPHA)
+- **Features a recommendations tab** <Badge text="Alpha"/>
 - **Built in login with 2FA support**
 - **Different theme**
 - **Minor UI changes**

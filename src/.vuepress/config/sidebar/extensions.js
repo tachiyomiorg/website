@@ -13,6 +13,10 @@ module.exports = [
 		path: '/help/guides/getting-started',
 	},
 	{
+		title: 'Forks',
+		path: '/forks/'
+	},
+	{
 		title: 'Contribution',
 		path: '/help/contribution'
 	}

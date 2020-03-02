@@ -1,12 +1,8 @@
 module.exports = [
 	'/',
 	{
-		title: 'Contribution',
-		collapsable: false,
-		sidebarDepth: 1,
-		children: [
-			'/help/contribution'
-		]
+		title: 'Forks',
+		path: '/forks/'
 	},
 	{
 		title: 'Frequently Asked Questions',
@@ -17,8 +13,8 @@ module.exports = [
 		path: '/help/guides/getting-started',
 	},
 	{
-		title: 'Forks',
-		path: '/forks/'
+		title: 'Contribution',
+		path: '/help/contribution'
 	},
 	{
 		title: 'Available extensions',

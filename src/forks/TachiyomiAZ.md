@@ -1,6 +1,7 @@
 ---
 title: TachiyomiAZ
 lang: en-US
+sidebar: false
 ---
 
 # <img class="headerLogo" :src="$withBase('/assets/media/fork-AZ-icon.png')"> TachiyomiAZ

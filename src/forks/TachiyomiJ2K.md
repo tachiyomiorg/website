@@ -1,6 +1,7 @@
 ---
 title: TachiyomiJ2K
 lang: en-US
+sidebar: false
 ---
 
 # <img class="headerLogo" :src="$withBase('/assets/media/fork-J2K-icon.png')"> TachiyomiJ2K
@@ -16,7 +17,7 @@ This fork adds certain enhancements that is not yet present in the original app.
 
 ## Features
 ::: aside
-For full list of features, visit the GitHub page.
+For a full list of features, visit the GitHub page.
 :::
 
 - **Android 10 Edge to Edge support**
@@ -25,6 +26,7 @@ For full list of features, visit the GitHub page.
 - **Automatic background based on manga page**
   - For those that like having a white background to match the content, this will automatically set the background to match for moments such as a flashback section of a manga.
 - **Notification separation of updating library and new chapters**
+- **Automatically checks for extension updates**
 - **Multi Source Migration from Library**
 - **Reader seekbar overrides switch app gesture in Android 10, so no more accidents for that**
 - **[New material snackbar](https://raw.githubusercontent.com/Jays2Kings/tachiyomi/master/.github/readme-images/material%20snackbar.png)**
@@ -36,7 +38,6 @@ For full list of features, visit the GitHub page.
 - **Webview Navigation**
 - **Range Select for Library and Chapters**
   - *Long Press* on an item then long press on another to select everything in between.
-- **Automatically checks for extension updates**
 - **Batch Auto-Source Migration**
   - *Taken from [TachiyomiEH](/help/guides/tachiyomi-eh).*
 - **Drag & Drop Sorting in Library**
@@ -46,5 +47,4 @@ For full list of features, visit the GitHub page.
 - **Restoring backups in the background**
   - *Taken from [Neko](/help/guides/tachiyomi-neko).*
 - **Expanding manga thumbnails**
-- **Automatically check for extension updates**
 - **More Material Stuff**

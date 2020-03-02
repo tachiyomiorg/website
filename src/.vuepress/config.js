@@ -18,7 +18,8 @@ module.exports = {
 			'/help/guides/': require('./config/sidebar/guides'),
 			'/help/faq/': require('./config/sidebar/faq'),
 			'/help/contribution': require('./config/sidebar/contribution'),
-			'/extensions': require('./config/sidebar/extensions')
+			'/extensions': require('./config/sidebar/extensions'),
+			'/forks': require('./config/sidebar/forks')
 		},
 		lastUpdated: 'Last Updated'
 	},

@@ -44,23 +44,16 @@ module.exports = [
 					'/help/guides/advanced',
 					'/help/guides/about'
 				]
-			},
-			{
-				title: 'Forks',
-				collapsable: false,
-				sidebarDepth: 2,
-				children: [
-					'/help/guides/tachiyomi-neko',
-					'/help/guides/tachiyomi-j2k',
-					'/help/guides/tachiyomi-eh',
-					'/help/guides/tachiyomi-az',
-				]
 			}
 		]
 	},
 	{
 		title: 'Frequently Asked Questions',
 		path: '/help/faq/application',
+	},
+	{
+		title: 'Forks',
+		path: '/forks/'
 	},
 	{
 		title: 'Contribution',
