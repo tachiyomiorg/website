@@ -3,6 +3,26 @@ title: TachiyomiEH
 lang: en-US
 ---
 
-# TachiyomiEH
+# <img class="headerLogo" :src="$withBase('/assets/media/fork-EH-icon.png')"> TachiyomiEH
 
-#### GitHub: [https://github.com/NerdNumber9/TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)
+<forkButtons forkName="TachiyomiEH" downloadLink="https://api.github.com/repos/NerdNumber9/TachiyomiEH/releases/latest" githubLink="window.open('https://github.com/NerdNumber9/TachiyomiEH')"/>
+
+## Introduction
+**[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
+
+<img :src="$withBase('/assets/media/fork-EH-banner.png')"/>
+
+## Features
+::: aside
+For full list of features, visit the GitHub page.
+:::
+
+- **Sync your favorites with your EHentai/ExHentai account**
+- **Search through your favorites by tag/language/artist**
+- **Open galleries in an incognito browser window**
+- **Faster download engine in the reader**
+- **Fingerprint/PIN app lock**
+- **Batch import gallery URLs**
+  - import single URLs by pasting them into the catalogue search box
+- **Automatic catcha solving**
+- **Open gallery URLs directly in Tachiyomi**
