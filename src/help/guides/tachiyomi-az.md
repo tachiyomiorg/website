@@ -13,8 +13,11 @@ lang: en-US
 This fork fixes bugs and adds features. It is more actively maintained than **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** at the moment.
 
 ## Features
-::: aside
-For full list of features, visit the GitHub page.
-:::
 
-*Developer has yet to include a feature list*
+- **Restoring backups in the background**
+- **Fixed Tsumino and Hitomi**
+- **Language filtering search options for nHentai**
+- **Tri-state filter when filtering in library**
+- **Random bugfixes**
+
+<img :src="$withBase('/assets/media/fork-AZ-symbol.png')">
