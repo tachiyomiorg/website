@@ -1,102 +1,13 @@
 <template>
-	<ul class="download-list">
-		<li>
-			<a
-				class="download-link"
-				rel="noopener noreferrer"
-				:href="
-					browserDownloadUrl ||
-						'https://github.com/inorichi/tachiyomi/releases/latest'
-				"
-				:title="tagName"
-				download
-			>
-				<div class="download-button stable">
-					<span class="download-area">
-						<MaterialIcon
-							name="download-cloud_download download-icons"
-							icon-name="cloud_download"
-						/>
-						<span class="download-text-stable download-text"
-							>Stable release</span
-						>
-					</span>
-				</div>
-			</a>
-		</li>
-		<li>
-			<a class="download-link" href="http://tachiyomi.kanade.eu/latest">
-				<div class="download-button dev">
-					<div class="download-area">
-						<MaterialIcon
-							name="download-bug_report download-icons"
-							icon-name="bug_report"
-						/>
-						<span class="download-text-dev download-text"
-							>Dev release</span
-						>
-					</div>
-				</div>
-			</a>
-		</li>
-	</ul>
+	<div class="downloadContainer">
+		<button class="downloadStableButton" @click="downloadStable">
+			Stable
+		</button>
+		<button class="downloadDevButton" @click="downloadDev">
+			Dev
+		</button>
+	</div>
 </template>
-
-<style scoped lang="stylus">
-*
-	font-family $buttonFontFamily
-
-ul
-	margin 0.625em 0 0
-	padding 0
-	text-align center
-	user-select none
-	width 100%
-
-li
-	display inline-block
-	margin 0.3125em 0.625em
-
-a.download-link
-	&:hover
-		text-decoration none
-	.download-button
-		align-items center
-		background-color $accentColor
-		border-radius $buttonBorderRadius
-		cursor pointer
-		display flex
-		height 3.75em
-		justify-content center
-		padding 0 1em
-		width 11.25em
-		&.stable
-			background-color $accentColor
-			&:hover
-				filter brightness(110%)
-		&.dev
-			background-color $accentColorSecondary
-			&:hover
-				filter brightness(110%)
-		.download-area
-			align-items center
-			color #ffffff
-			display flex
-			font-size 1.125em
-			.download-icons
-				color #ffffff
-				font-size 0.875em
-				max-width 2em
-			.download-cloud_download
-				margin-left 0.2em
-				margin-right 0.5em
-			.download-bug_report
-				margin-right 0.25em
-			.download-text-stable
-				margin-right 0.375em
-			.download-text-dev
-				margin-right 0.05em
-</style>
 
 <script>
 import axios from "axios";
@@ -119,6 +30,84 @@ export default {
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+	},
+
+	methods: {
+		downloadStable() {
+			this.$swal({
+				title: "Downloading",
+				text: "Stable version is being downloaded.",
+				icon: "success",
+				focusConfirm: false,
+				focusCancel: false,
+				timer: 5000,
+				timerProgressBar: true,
+				customClass: {
+					confirmButton: "download-confirm-button",
+					container: "download-container"
+				},
+				showClass: {
+					popup: "animated pulse faster"
+				},
+				hideClass: {
+					popup: "animated zoomOut faster"
+				}
+			});
+			window.location.assign(this.$data.browserDownloadUrl || RELEASE_URL);
+			window.ga("send", "event", "Button", "Click", "Stable download - Getting Started");
+		},
+		downloadDev() {
+			this.$swal({
+				title: "Downloading",
+				text: "Dev version is being downloaded.",
+				icon: "success",
+				focusConfirm: false,
+				focusCancel: false,
+				timer: 5000,
+				timerProgressBar: true,
+				customClass: {
+					confirmButton: "download-confirm-button",
+					container: "download-container"
+				},
+				showClass: {
+					popup: "animated pulse faster"
+				},
+				hideClass: {
+					popup: "animated zoomOut faster"
+				}
+			});
+			window.location.assign("http://tachiyomi.kanade.eu/latest");
+			window.ga("send", "event", "Button", "Click", "Dev download - Getting Started");
+		}
 	}
 };
 </script>
+
+<style lang="stylus">
+.downloadContainer
+	user-select none
+	text-align center
+	margin 0.3125rem
+	.downloadStableButton
+	.downloadDevButton
+		border-style none
+		padding 0.625 2em
+		margin 0.3125rem
+		border-radius $buttonBorderRadius
+		font-family $buttonFontFamily
+		font-size 1.125em
+		color white
+		height 3rem
+		width 8.5rem
+		&:focus
+			outline none
+			outline-style solid
+		&:hover
+			cursor pointer
+			text-decoration none !important
+			background-image linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
+	.downloadStableButton
+		background-color $accentColor
+	.downloadDevButton
+		background-color $accentColorSecondary
+</style>

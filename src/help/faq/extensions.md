@@ -183,7 +183,8 @@ Read about source migration [here](/help/guides/source-migration/)
 
 #### Regarding MangaRock going away:
 - You won't lose existing bookmarks or downloads.
-- Chapters will no longer be updated once **MangaRock** is dead.
+- Chapters are no longer updated since **MangaRock** is dead.
+- Favorites from **MangaRock** source will no longer be backed up, however backup restoration is possible.
 - There is no native way to automatically import your favorites from MangaRock, but you can try [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 - Popular alternatives are **MangaDex**, **MangaSee** and **Mangakakalot**.
 
@@ -200,7 +201,7 @@ View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tac
 It's not currently possible to restore backup from MangaRock officially, as the MangaRock source is dead. There is however an unofficial method to restore/backup all manga from the MangaRock source.
 
 1. Uninstall the MangaRock extension.
-1. Install the [DummyRock](https://cdn.discordapp.com/attachments/403520500443119619/663671637052489728/tachiyomi-en.dummyrock-v1.2.1-debug.apk) `.apk`. 
+1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file. 
 1. Go to **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** menu and press **Trust** to proceed.
 1. Restore backup.
 

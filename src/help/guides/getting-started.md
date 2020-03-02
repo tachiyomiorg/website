@@ -9,17 +9,14 @@ lang: en-US
 
 <DownloadButtons/>
 
-You can download the latest version of `Tachiyomi` from the [GitHub releases](https://github.com/inorichi/tachiyomi/releases/latest).
+You can download the latest version of **Tachiyomi** from any of the above buttons.
 
-<Badge text="tachiyomi-vX.Y.Z.apk"/>
+If you want to try new features before they get to the stable release, you can download the dev version.
 
-
-If you want to try new features before they get to the stable release, you can download the dev version [here](http://tachiyomi.kanade.eu/latest).
-
-Open and install the `.apk` file you just downloaded from GitHub.
+Open and install the `.apk` file you just downloaded.
 
 <figure class="centered">
-	<img height="145" intrinsicsize="1000x500" width="300"
+	<img height="128"
 	  :src="$withBase('/assets/media/installprompt.png')">
 </figure>
 
