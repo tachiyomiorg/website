@@ -6,7 +6,7 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/media/fork-Neko-icon.png')"> Neko
 
-<forkButtons forkName="Neko" downloadLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" githubLink="window.open('https://github.com/CarlosEsco/Neko')"/>
+<ForkButtons forkName="Neko" downloadLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" githubLink="window.open('https://github.com/CarlosEsco/Neko')"/>
 
 ## Introduction
 **[Neko](https://github.com/CarlosEsco/Neko)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[CarlosEsco](https://github.com/CarlosEsco)**.

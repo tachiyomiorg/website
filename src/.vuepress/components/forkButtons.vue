@@ -56,7 +56,7 @@ export default {
 		downloadFork() {
 			this.$swal({
 				title: "Downloading",
-				text: `${this.$props.forkName} is being downloaded.`,
+				text: this.$props.forkName + " is being downloaded.",
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -74,7 +74,7 @@ export default {
 				}
 			});
 			window.location.assign(this.$data.browserDownloadUrl || this.$props.downloadLink);
-			window.ga("send", "event", "Button", "Click", `${this.$props.forkName} download - Forks`);
+			window.ga("send", "event", "Button", "Click", this.$props.forkName + " download - Forks");
 		}
 	}
 };

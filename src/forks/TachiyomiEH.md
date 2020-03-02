@@ -6,7 +6,7 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/media/fork-EH-icon.png')"> TachiyomiEH
 
-<forkButtons forkName="TachiyomiEH" downloadLink="https://api.github.com/repos/NerdNumber9/TachiyomiEH/releases/latest" githubLink="window.open('https://github.com/NerdNumber9/TachiyomiEH')"/>
+<ForkButtons forkName="TachiyomiEH" downloadLink="https://api.github.com/repos/NerdNumber9/TachiyomiEH/releases/latest" githubLink="window.open('https://github.com/NerdNumber9/TachiyomiEH')"/>
 
 ## Introduction
 **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
