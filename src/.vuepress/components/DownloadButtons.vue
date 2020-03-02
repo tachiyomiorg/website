@@ -3,7 +3,9 @@
 		<button class="downloadStableButton" @click="downloadStable">
 			Stable
 		</button>
-		<button class="downloadDevButton" @click="downloadDev">Dev</button>
+		<button class="downloadDevButton" @click="downloadDev">
+			Dev
+		</button>
 	</div>
 </template>
 
@@ -32,9 +34,7 @@ export default {
 
 	methods: {
 		downloadStable() {
-			window.location.assign(
-				this.$data.browserDownloadUrl || RELEASE_URL
-			);
+			window.location.assign(this.$data.browserDownloadUrl || RELEASE_URL);
 			window.ga("send", "event", "Button", "Click", "Stable download");
 		},
 		downloadDev() {
@@ -53,7 +53,7 @@ export default {
 	.downloadStableButton
 	.downloadDevButton
 		border-style none
-		padding 11.25px 36px
+		padding 0.625 2em
 		margin 0.3125rem
 		border-radius $buttonBorderRadius
 		font-family $buttonFontFamily
