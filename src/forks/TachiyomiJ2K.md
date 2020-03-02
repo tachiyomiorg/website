@@ -9,7 +9,7 @@ sidebar: false
 <ForkButtons forkName="TachiyomiJ2K" downloadLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" githubLink="window.open('https://github.com/Jays2Kings/tachiyomiJ2K')"/>
 
 ## Introduction
-**[TachiyomiJ2K](https://github.com/Jays2Kings/tachiyomiJ2K)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
+**[TachiyomiJ2K](https://github.com/Jays2Kings/tachiyomiJ2K)** is a fork based off of **Tachiyomi** maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
 
 This fork adds certain enhancements that is not yet present in the original app.
 
@@ -35,7 +35,6 @@ For a full list of features, visit the GitHub page.
   - Per-category/Drag & drop sorting
   - Tri-state/Negative filters
   - Multi-source migration
-- **Webview Navigation**
 - **[Share sheets upgrade for Android 10](https://raw.githubusercontent.com/Jays2Kings/tachiyomi/master/.github/readme-images/share%20menu.png)**
 - **Range Select for Library and Chapters**
   - *Long Press* on an item then long press on another to select everything in between.
