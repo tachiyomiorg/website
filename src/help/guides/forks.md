@@ -5,14 +5,22 @@ lang: en-US
 
 # Forks
 
-### [<MaterialIcon icon-name="chrome_reader_mode"/> Neko](/help/guides/tachiyomi-neko)
-A Free, Open source unofficial manga reader for MangaDex and a fork of Tachiyomi
+## <img class="headerLogo" :src="$withBase('/assets/media/fork-Neko-icon.png')"> [Neko](/help/guides/tachiyomi-neko)
+**[Neko](https://github.com/CarlosEsco/Neko)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[CarlosEsco](https://github.com/CarlosEsco)**.
 
-### [<MaterialIcon icon-name="chrome_reader_mode"/> TachiyomiJ2K](/help/guides/tachiyomi-j2k)
-TachiyomiJ2K is a based off of the original Tachiyomi app and adds certain enhancements.
+This fork is a free and open source manga reader for [MangaDex](https://mangadex.org/).
 
-### [<MaterialIcon icon-name="chrome_reader_mode"/> TachiyomiEH](/help/guides/tachiyomi-eh)
-TachiyomiEH is a free and open source manga and hentai reader for Android and is based off of the original Tachiyomi app.
+## <img class="headerLogo" :src="$withBase('/assets/media/fork-J2K-icon.png')"> [TachiyomiJ2K](/help/guides/tachiyomi-j2k)
+**[TachiyomiJ2K](https://github.com/Jays2Kings/tachiyomiJ2K)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
 
-### [<MaterialIcon icon-name="chrome_reader_mode"/> TachiyomiAZ](/help/guides/tachiyomi-az)
-TachiyomiAZ is a fork of TachiyomiEH, with bugfixes and added features. It is more actively maintained than TachiyomiEH at the moment.
+This fork adds certain enhancements that is not yet present in the original app.
+
+## <img class="headerLogo" :src="$withBase('/assets/media/fork-EH-icon.png')"> [TachiyomiEH](/help/guides/tachiyomi-eh)
+**[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
+
+This fork is a free and open source hentai reader.
+
+## <img class="headerLogo" :src="$withBase('/assets/media/fork-AZ-icon.png')"> [TachiyomiAZ](/help/guides/tachiyomi-az)
+**[TachiyomiAZ](https://github.com/az4521/TachiyomiAZ)** is a fork based off of **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** maintained by **[az4521](https://github.com/az4521)**.
+
+This fork fixes bugs and adds features. It is more actively maintained than **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** at the moment.t.

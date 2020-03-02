@@ -10,6 +10,8 @@ lang: en-US
 ## Introduction
 **[Neko](https://github.com/CarlosEsco/Neko)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[CarlosEsco](https://github.com/CarlosEsco)**.
 
+This fork is a free and open source manga reader for [MangaDex](https://mangadex.org/).
+
 <img :src="$withBase('/assets/media/fork-Neko-banner.png')"/>
 
 ## Features

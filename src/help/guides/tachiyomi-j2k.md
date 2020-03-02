@@ -10,6 +10,8 @@ lang: en-US
 ## Introduction
 **[TachiyomiJ2K](https://github.com/Jays2Kings/tachiyomiJ2K)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
 
+This fork adds certain enhancements that is not yet present in the original app.
+
 <img :src="$withBase('/assets/media/fork-J2K-banner.gif')"/>
 
 ## Features

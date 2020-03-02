@@ -10,6 +10,8 @@ lang: en-US
 ## Introduction
 **[TachiyomiAZ](https://github.com/az4521/TachiyomiAZ)** is a fork based off of **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** maintained by **[az4521](https://github.com/az4521)**.
 
+This fork fixes bugs and adds features. It is more actively maintained than **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** at the moment.
+
 ## Features
 ::: aside
 For full list of features, visit the GitHub page.

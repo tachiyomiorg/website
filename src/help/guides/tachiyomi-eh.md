@@ -10,6 +10,8 @@ lang: en-US
 ## Introduction
 **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** is a fork based off of **[Tachiyomi](https://github.com/inorichi/tachiyomi)** maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
 
+This fork is a free and open source hentai reader.
+
 <img :src="$withBase('/assets/media/fork-EH-banner.png')"/>
 
 ## Features
