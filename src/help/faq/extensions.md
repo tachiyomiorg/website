@@ -201,7 +201,7 @@ View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tac
 It's not currently possible to restore backup from MangaRock officially, as the MangaRock source is dead. There is however an unofficial method to restore/backup all manga from the MangaRock source.
 
 1. Uninstall the MangaRock extension.
-1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) `.apk`. 
+1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file. 
 1. Go to **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** menu and press **Trust** to proceed.
 1. Restore backup.
 
