@@ -35,11 +35,11 @@ export default {
 	methods: {
 		downloadStable() {
 			window.location.assign(this.$data.browserDownloadUrl || RELEASE_URL);
-			window.ga("send", "event", "Button", "Click", "Stable download");
+			window.ga("send", "event", "Button", "Click", "Stable download - Getting Started");
 		},
 		downloadDev() {
 			window.location.assign("http://tachiyomi.kanade.eu/latest");
-			window.ga("send", "event", "Button", "Click", "Dev download");
+			window.ga("send", "event", "Button", "Click", "Dev download - Getting Started");
 		}
 	}
 };
