@@ -57,25 +57,25 @@ export default {
 			window.ga("send", "event", "Button", "Click", "Stable download - Getting Started");
 		},
 		downloadDev() {
-		this.$swal({
-			title: "Downloading",
-			text: "Dev version is being downloaded.",
-			icon: "success",
-			focusConfirm: false,
-			focusCancel: false,
-			timer: 5000,
-			timerProgressBar: true,
-			customClass: {
-				confirmButton: "download-confirm-button",
-				container: "download-container"
-			},
-			showClass: {
-				popup: "animated pulse faster"
-			},
-			hideClass: {
-				popup: "animated zoomOut faster"
-			}
-		});
+			this.$swal({
+				title: "Downloading",
+				text: "Dev version is being downloaded.",
+				icon: "success",
+				focusConfirm: false,
+				focusCancel: false,
+				timer: 5000,
+				timerProgressBar: true,
+				customClass: {
+					confirmButton: "download-confirm-button",
+					container: "download-container"
+				},
+				showClass: {
+					popup: "animated pulse faster"
+				},
+				hideClass: {
+					popup: "animated zoomOut faster"
+				}
+			});
 			window.location.assign("http://tachiyomi.kanade.eu/latest");
 			window.ga("send", "event", "Button", "Click", "Dev download - Getting Started");
 		}
