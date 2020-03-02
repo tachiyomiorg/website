@@ -23,4 +23,4 @@ This fork is a free and open source hentai reader.
 ## <img class="headerLogo" :src="$withBase('/assets/media/fork-AZ-icon.png')"> [TachiyomiAZ](/help/guides/tachiyomi-az)
 **[TachiyomiAZ](https://github.com/az4521/TachiyomiAZ)** is a fork based off of **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** maintained by **[az4521](https://github.com/az4521)**.
 
-This fork fixes bugs and adds features. It is more actively maintained than **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** at the moment.t.
+This fork fixes bugs and adds features. It is more actively maintained than **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** at the moment.
