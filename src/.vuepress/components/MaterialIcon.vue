@@ -13,7 +13,7 @@
  * For material icon references use https://material.io/resources/icons/
  * Code example: <MaterialIcon icon-name="android" />
  *
- * For material icon references use http://materialdesignicons.com/
+ * For material icon references use https://materialdesignicons.com/
  * Code example: <MaterialIcon icon-name="mdi-glasses" legacy />
  */
 export default {
