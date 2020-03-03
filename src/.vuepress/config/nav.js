@@ -24,16 +24,7 @@ module.exports = [
 			}
 		]
 	},
-	{
-		text: "Forks",
-		link: "/forks/",
-		items: [
-			{ text: "Neko", link: "/forks/Neko" },
-			{ text: "TachiyomiJ2K", link: "/forks/TachiyomiJ2K" },
-			{ text: "TachiyomiEH", link: "/forks/TachiyomiEH" },
-			{ text: "TachiyomiAZ", link: "/forks/TachiyomiAZ" }
-		]
-	},
+	{ text: "Forks", link: "/forks/" },
 	{ text: "Extensions", link: "/extensions/" },
 	{ text: "Discord", link: "https://discord.gg/tachiyomi" },
 	{ text: "Reddit", link: "https://reddit.com/r/Tachiyomi" }
