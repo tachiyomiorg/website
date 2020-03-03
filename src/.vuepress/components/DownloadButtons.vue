@@ -76,7 +76,7 @@ export default {
 					popup: "animated zoomOut faster"
 				}
 			});
-			window.location.assign("http://tachiyomi.kanade.eu/latest");
+			window.location.assign("https://tachiyomi.kanade.eu/latest");
 			window.ga("send", "event", "Button", "Click", "Dev download - Getting Started");
 		}
 	}
