@@ -9,14 +9,14 @@ sidebar: false
 <ForkButtons forkName="TachiyomiEH" downloadLink="https://api.github.com/repos/NerdNumber9/TachiyomiEH/releases/latest" githubLink="window.open('https://github.com/NerdNumber9/TachiyomiEH')"/>
 
 ## Introduction
-**[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)** is a fork based off of **Tachiyomi** maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
+**TachiyomiEH** is maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
 
-This fork adds features that enhances the hentai experience with integrations to popular sevices such as E-Hentai, nHentai and more.
+This fork adds features that enhances the hentai experience with integrations to popular sevices such as **E-Hentai**, **nHentai** and more.
 
 <img :src="$withBase('/assets/media/fork-EH-banner.png')"/>
 
 ## Features
-::: aside
+::: aside-guide
 For a full list of features, visit the GitHub page.
 :::
 

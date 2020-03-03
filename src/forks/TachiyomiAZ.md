@@ -9,9 +9,9 @@ sidebar: false
 <ForkButtons forkName="TachiyomiAZ" downloadLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" githubLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
 
 ## Introduction
-**[TachiyomiAZ](https://github.com/az4521/TachiyomiAZ)** is a fork based off of **[TachiyomiEH](/forks/TachiyomiEH)** maintained by **[az4521](https://github.com/az4521)**.
+**TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)**.
 
-This fork fixes bugs and adds features. It is more actively maintained than **[TachiyomiEH](/forks/TachiyomiEH)** at the moment.
+This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it fixes bugs and adds features.
 
 ## Features
 

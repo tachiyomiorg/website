@@ -9,14 +9,14 @@ sidebar: false
 <ForkButtons forkName="Neko" downloadLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" githubLink="window.open('https://github.com/CarlosEsco/Neko')"/>
 
 ## Introduction
-**[Neko](https://github.com/CarlosEsco/Neko)** is a fork based off of **Tachiyomi** maintained by **[CarlosEsco](https://github.com/CarlosEsco)**.
+**Neko** is maintained by **[CarlosEsco](https://github.com/CarlosEsco)**.
 
-This [MangaDex](https://mangadex.org/) focused fork enhances your reading with native integration and recommendations.
+This **MangaDex** focused fork enhances your reading with native integration and recommendations.
 
 <img :src="$withBase('/assets/media/fork-Neko-banner.png')"/>
 
 ## Features
-::: aside
+::: aside-guide
 For a full list of features, visit the GitHub page.
 :::
 

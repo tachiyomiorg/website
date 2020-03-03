@@ -9,14 +9,14 @@ sidebar: false
 <ForkButtons forkName="TachiyomiJ2K" downloadLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" githubLink="window.open('https://github.com/Jays2Kings/tachiyomiJ2K')"/>
 
 ## Introduction
-**[TachiyomiJ2K](https://github.com/Jays2Kings/tachiyomiJ2K)** is a fork based off of **Tachiyomi** maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
+**TachiyomiJ2K** is maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
 
-This fork adds certain enhancements that is not yet present in the original app.
+This fork adds certain enhancements that is not yet present in the base app.
 
 <img :src="$withBase('/assets/media/fork-J2K-banner.gif')"/>
 
 ## Features
-::: aside
+::: aside-guide
 For a full list of features, visit the GitHub page.
 :::
 

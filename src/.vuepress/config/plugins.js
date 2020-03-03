@@ -35,5 +35,12 @@ module.exports = [
 			type: "aside",
 			defaultTitle: ""
 		}
+	],
+	[
+		"vuepress-plugin-container",
+		{
+			type: "aside-guide",
+			defaultTitle: ""
+		}
 	]
 ];
