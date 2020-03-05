@@ -22,6 +22,13 @@ font-feature-settings()
 		color transparentify($textColor, 0.4)
 		font-size 0.9rem
 		text-align right
+	&.aside-guide
+		font-size 0.9rem
+		text-align left
+		p
+			margin-top: 0
+		a
+			color $accentColorSecondary
 
 // Guide container
 .guide
@@ -138,25 +145,26 @@ font-feature-settings()
 .download-container
 	button
 		user-select none
-	.download-stable-button
-	.download-dev-button
-	.download-confirm-button
-		border-radius $buttonBorderRadius
-		font-family $buttonFontFamily
-		font-size 1.125em
-		height 3rem
-		width 8.5rem
-		&:focus
-			outline none
-			outline-style solid
-	.download-confirm-button
+	.download-actions
+		.download-stable-button
+		.download-dev-button
+		.download-confirm-button
+			border-bottom-width 0
+			border-radius $buttonBorderRadius
+			font-family $buttonFontFamily
+			font-size 1.125em
+			height 3rem
+			width 8.5rem
+			&:focus
+				outline none
+				outline-style solid
+		.download-dev-button
+			background-color $accentColorSecondary
 	.download-title
 		border-bottom-width 0
 	.download-footer
 		border-top-width 0
 		padding-top 0
-	.download-dev-button
-		background-color $accentColorSecondary
 
 // Navbar Changes
 .navbar
@@ -164,6 +172,12 @@ font-feature-settings()
 		/* Display navbar-name even for small screens */
 		@media (max-width: $MQMobile)
 			display inherit
+
+// Page Header Logo
+.headerLogo
+	vertical-align middle
+	height 3rem
+	margin-bottom .625rem
 
 // Center align class
 .centered

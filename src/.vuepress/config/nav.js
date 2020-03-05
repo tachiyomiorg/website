@@ -15,20 +15,17 @@ module.exports = [
 				items: [
 					{ text: "General", link: "/help/guides/getting-started" },
 					{ text: "Menus", link: "/help/guides/menus" },
-					{ text: "Settings", link: "/help/guides/settings" },
-					{ text: "Forks", link: "/help/guides/forks" }
+					{ text: "Settings", link: "/help/guides/settings" }
 				]
 			},
 			{
 				text: "Contribution",
 				items: [{ text: "How can I help?", link: "/help/contribution" }]
-			},
-			{
-				text: "Available extensions",
-				items: [{ text: "List", link: "/extensions/" }]
 			}
 		]
 	},
+	{ text: "Forks", link: "/forks/" },
+	{ text: "Extensions", link: "/extensions/" },
 	{ text: "Discord", link: "https://discord.gg/tachiyomi" },
 	{ text: "Reddit", link: "https://reddit.com/r/Tachiyomi" }
 ];
