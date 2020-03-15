@@ -13,13 +13,6 @@
 import axios from "axios";
 
 export default {
-	data() {
-		return {
-			tagName: "",
-			browserDownloadUrl: ""
-		};
-	},
-
 	props: {
 		forkName: {
 			type: String,
@@ -41,6 +34,12 @@ export default {
 			type: String,
 			required: true
 		}
+	},
+	data() {
+		return {
+			tagName: "",
+			browserDownloadUrl: ""
+		};
 	},
 
 	async mounted() {
@@ -73,8 +72,16 @@ export default {
 					popup: "animated zoomOut faster"
 				}
 			});
-			window.location.assign(this.$data.browserDownloadUrl || this.$props.downloadLink);
-			window.ga("send", "event", "Button", "Click", this.$props.forkName + " download - Forks");
+			window.location.assign(
+				this.$data.browserDownloadUrl || this.$props.downloadLink
+			);
+			window.ga(
+				"send",
+				"event",
+				"Button",
+				"Click",
+				this.$props.forkName + " download - Forks"
+			);
 		}
 	}
 };

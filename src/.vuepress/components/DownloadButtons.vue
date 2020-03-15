@@ -53,8 +53,16 @@ export default {
 					popup: "animated zoomOut faster"
 				}
 			});
-			window.location.assign(this.$data.browserDownloadUrl || RELEASE_URL);
-			window.ga("send", "event", "Button", "Click", "Stable download - Getting Started");
+			window.location.assign(
+				this.$data.browserDownloadUrl || RELEASE_URL
+			);
+			window.ga(
+				"send",
+				"event",
+				"Button",
+				"Click",
+				"Stable download - Getting Started"
+			);
 		},
 		downloadDev() {
 			this.$swal({
@@ -77,7 +85,13 @@ export default {
 				}
 			});
 			window.location.assign("https://tachiyomi.kanade.eu/latest");
-			window.ga("send", "event", "Button", "Click", "Dev download - Getting Started");
+			window.ga(
+				"send",
+				"event",
+				"Button",
+				"Click",
+				"Dev download - Getting Started"
+			);
 		}
 	}
 };
