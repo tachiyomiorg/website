@@ -1,14 +1,16 @@
 name: Build and deploy website
+
 on:
   push:
     branches:
       - master
+
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Install Node v12
         uses: actions/setup-node@v1
@@ -20,12 +22,15 @@ jobs:
           npm install
           npm run build
 
-      - name: Add nojekyll
+      - name: Add .nojekyll
         run: touch ./public/.nojekyll
 
       - name: Deploy website
-        uses: peaceiris/actions-gh-pages@v2.3.0
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./public
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./public
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: ${{ github.event.head_commit.message }}
