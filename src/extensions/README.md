@@ -5,8 +5,8 @@ lang: en-US
 
 # Extensions
 
-## Sources
-::: expander
+## Multi-sources
+::: expander Click to expand!
 <ExtensionSourceList/>
 :::
 

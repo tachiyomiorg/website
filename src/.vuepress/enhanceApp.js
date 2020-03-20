@@ -1,9 +1,13 @@
 import './styles/fonts.styl'
 import './styles/animations.styl'
+
 import 'sweetalert2/dist/sweetalert2.min.css';
+import 'vuesax/dist/vuesax.css'
+import 'material-icons/iconfont/material-icons.css';
 
 import { VueAgile } from 'vue-agile';
 import VueSweetalert2 from 'vue-sweetalert2';
+import Vuesax from 'vuesax'
 
 export default ({
 	Vue, // the version of Vue being used in the VuePress app
@@ -14,4 +18,5 @@ export default ({
 	// eslint-disable-next-line vue/match-component-file-name
 	Vue.component('Agile', VueAgile);
 	Vue.use(VueSweetalert2);
+	Vue.use(Vuesax);
 };
