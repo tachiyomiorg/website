@@ -133,7 +133,7 @@ It means that the respective extension for the manga is not installed. To fix, i
 #### Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject
 This means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
 
-#### HTTP error 503
+#### HTTP error 403
 The source you selected may have Cloudflare protection on and is enforcing CAPTCHAs.
 
 1. Find a manga in your library that is from the source you're trying to access
