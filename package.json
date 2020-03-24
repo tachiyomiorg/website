@@ -29,17 +29,12 @@
 		"xlsx": "^0.14.3"
 	},
 	"dependencies": {
-		"@handsontable/vue": "^4.1.1",
 		"@mdi/font": "^5.0.45",
 		"axios": "^0.19.2",
-		"handsontable": "^7.4.2",
 		"iso-639-1": "^2.1.1",
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
 		"material-design-icons": "^3.0.1",
-		"material-icons": "^0.3.1",
-		"vue-handsontable-official": "^1.1.1",
 		"vue-sweetalert2": "^3.0.3",
-		"vuesax": "^3.11.13"
 	}
 }

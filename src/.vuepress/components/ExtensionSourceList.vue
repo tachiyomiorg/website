@@ -111,9 +111,6 @@ tr
 td
 	border none
 
-details[open] summary
-	content "Language"
-
 details > summary
 	padding 2px 6px
 	width 15em
