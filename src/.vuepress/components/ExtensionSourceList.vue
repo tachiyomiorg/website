@@ -10,7 +10,7 @@
 				<th>Source & Extension</th>
 				<th>Notes</th>
 			</thead>
-			<tr v-for="i in tableMultiSource">
+			<tr v-for="i in tableMultiSource" :key="i['Source Name']">
 				<td>
 					<img
 						class="extensionLogo"
@@ -30,20 +30,6 @@
 </template>
 
 <script>
-if (
-	jQuery("details.tableMultiSource")
-		.click()
-		.attr("open")
-) {
-	jQuery("summary.tableMultiSource").text("Close");
-} else if (
-	jQuery("details.tableMultiSource")
-		.click()
-		.attr("")
-) {
-	jQuery("summary.tableMultiSource").text("Show");
-}
-
 import tableMultiSource from "../public/xlsx_data/Multi-source, multi-language.json";
 import tableWebtoons from "../public/xlsx_data/Manhwamanhuawebtoons.json";
 import tableWesternComics from "../public/xlsx_data/Western comics.json";
@@ -83,6 +69,9 @@ details
 			margin-bottom 1rem
 			&::after
 				content attr(data-open)
+			&:focus
+				outline none !important
+
 	&.tableMultiSource
 		padding-top 1rem
 		&:not([open])
@@ -93,6 +82,8 @@ details
 				padding 1rem
 				&::after
 					content attr(data-close)
+				&:focus
+					outline none !important
 
 table
 	display inline
