@@ -25,7 +25,8 @@
 		"vue-agile": "^1.0.11",
 		"vuepress": "^1.3.1",
 		"vuepress-plugin-clean-urls": "^1.1.1",
-		"vuepress-plugin-container": "^2.1.2"
+		"vuepress-plugin-container": "^2.1.2",
+		"xlsx": "^0.14.3"
 	},
 	"dependencies": {
 		"@handsontable/vue": "^4.1.1",
