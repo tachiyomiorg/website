@@ -12,9 +12,10 @@ The most popular are **MangaDex**, **MangaSee** and **Mangakakalot**, these are 
 - Fastest manga updates: **Mangadex** and scanlator sources
 - Largest manga library: **Mangakakalot** (found in **Mangabox** extension)
 - High quality scans and official translation: **Mangasee**
-- Webtoons and Manhwa/Manhua: **Toonily** (found in **Madara** extension), **Webtoons.com**, **Mangazuki.me** (also in **Madara** extension)
-- Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu** (similar to Mangago.me)
-- Other popular sources: **Kissmanga**, **Mangapark**, **Mangahere**, **Manhwa18.net** (in **FMReader** extension)
+- Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
+- Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (also in **Madara** extension)
+- Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **MyReadingManga** (for Yaoi)
+- Other popular sources: **Mangahere**, **Mangapark**, **Manhwa18.net** (in **FMReader** extension)
 
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites. 
 
