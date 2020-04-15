@@ -19,8 +19,11 @@ The most popular are **MangaDex**, **MangaSee** and **Mangakakalot**, these are 
 
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites. 
 
+### Which sources are in the multi-source extensions?
+Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
+
 ::: guide
-User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different mulit-source extensions and their sources.
+User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different multi-source extensions and their sources.
 ::: aside
 Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
 :::
@@ -106,14 +109,6 @@ To fix this, go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guid
 ### Why can't I restore my backup?
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
 
-### Which sources are there in the multi-source extensions?
-Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
-
-::: guide
-User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different extensions and their sources.
-::: aside
-Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
-:::
 
 ### Why can't I find manga when searching catalogues?
 It might be because the title is worded differently. Follow any of the steps below:
