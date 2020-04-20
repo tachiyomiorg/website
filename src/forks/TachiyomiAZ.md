@@ -23,7 +23,7 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 - **HBrowse**
 - **Perv Eden**
 
-**Delegated Sources(Sources with added features if installed)**
+**Delegated Sources** (Sources with added features if installed)
 - **Puruin**
 - **Tsumino**
 - **HentaiCafe (Foolside)**
