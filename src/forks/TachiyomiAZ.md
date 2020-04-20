@@ -27,8 +27,6 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 - Puruin
 - Tsumino
 - HentaiCafe (Foolside)
-
-
 **From EH:**
 - **Save Searches for use later**
 - **AutoScroll**
