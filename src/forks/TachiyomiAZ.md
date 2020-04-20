@@ -15,7 +15,7 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 
 ## Features
 
-**Special Sources(integrated plus added features)**
+**Special Sources** (integrated plus added features)
 - **E-Hentai/ExHentai**
 - **nhentai**
 - **hitomi.la**
