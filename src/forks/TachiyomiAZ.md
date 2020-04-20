@@ -38,14 +38,14 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 - Batch import E-Hentai/ExHentai URLs (import single URLs by pasting them into the source search box)
 - Automatic CAPTCHA solving
 **From EH and fixed/changed:**
-- **Auto Migration (Originally from EH, it was then improved in J2k, and we have reintegrated the J2k version)**
-- **Merged Sources (Merge 2 or more versions of a manga to get chapters from all of them)**
-- **App and notification lock with fingerprint and PIN unlock**
-- **Restoring backups in the background**
-- **Fixed Tsumino and Hitomi**
-- **Language filtering search options for nHentai**
-- **Tri-state filter when filtering in library**
-- **Random bugfixes**
+- Auto Migration (Originally from EH, it was then improved in J2k, and we have reintegrated the J2k version)
+- Merged Sources (Merge 2 or more versions of a manga to get chapters from all of them)
+- App and notification lock with fingerprint and PIN unlock
+- Restoring backups in the background
+- Fixed Tsumino and Hitomi
+- Language filtering search options for nHentai
+- Tri-state filter when filtering in library
+- Random bugfixes
 
 
 **Original AZ Features:**
