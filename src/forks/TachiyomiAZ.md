@@ -49,7 +49,7 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 
 
 **Original AZ Features:**
-- **Grid view corner rounding configuration**
+- Grid view corner rounding configuration
 
 
 
