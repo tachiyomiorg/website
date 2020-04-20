@@ -27,6 +27,7 @@ This fork adds features that enhances the hentai experience with integrations to
 
 ## <img class="headerLogo" :src="$withBase('/assets/media/fork-AZ-icon.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
 ::: aside-guide
-Maintained by [az4521](https://github.com/az4521)
+Maintained by [az4521](https://github.com/az4521) and [Syer10](https://github.com/jobobby04)
 :::
-This fork is based off of **TachiyomiEH**, it fixes bugs and adds features.
+
+TachiyomiAZ is a fork based off of **TachiyomiEH**, it has most features and fixes from Dev, as well as features from J2k. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style
