@@ -47,7 +47,6 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 - Tri-state filter when filtering in library
 - Random bugfixes
 
-
 **Original AZ Features:**
 - Grid view corner rounding configuration
 
