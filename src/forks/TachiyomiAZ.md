@@ -14,7 +14,6 @@ sidebar: false
 This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from Dev, as well as features from J2k. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style.
 
 ## Features
-
 **Special Sources** (integrated plus added features)
 - E-Hentai/ExHentai
 - nHentai
