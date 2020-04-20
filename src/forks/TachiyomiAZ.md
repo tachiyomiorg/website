@@ -24,9 +24,9 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 - Perv Eden
 
 **Delegated Sources** (Sources with added features if installed)
-- **Puruin**
-- **Tsumino**
-- **HentaiCafe (Foolside)**
+- Puruin
+- Tsumino
+- HentaiCafe (Foolside)
 
 
 **From EH:**
