@@ -23,7 +23,7 @@ This fork adds certain enhancements that is not yet present in the base app.
 ::: aside-guide
 Maintained by [NerdNumber9](https://github.com/NerdNumber9)
 :::
-This fork adds features that enhances the hentai experience with integrations to popular sevices such as **E-Hentai**, **nHentai** and more.
+This fork adds features that enhances the hentai experience with integrations to popular sevices such as **E-Hentai**, **nHentai** and more. At the moment, it is **deprecated** as the developer does not have time to maintain it. Use TachiyomiAZ instead
 
 ## <img class="headerLogo" :src="$withBase('/assets/media/fork-AZ-icon.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
 ::: aside-guide
