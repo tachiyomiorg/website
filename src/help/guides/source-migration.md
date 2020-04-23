@@ -5,8 +5,14 @@ lang: en-US
 
 # Source migration
 
+Migration is the process of moving manga from one source to another while keeping your current progress. This is used often when a source is no longer accessible or you want to move it off one source to another for a myriad of reasons. 
+
 ::: tip
 This is useful when the source you are using is taken down or there are no plans to fix it, but it exists on other sources.
+:::
+
+::: tip
+Make sure you have a backup, if anything goes wrong.
 :::
 
 Source migration transfers all the data (Chapters, Categories and Tracking) from a bookmarked manga over to the another source.
@@ -15,3 +21,4 @@ Source migration transfers all the data (Chapters, Categories and Tracking) from
 1. Scroll down to the source you're transferring from and tap `SELECT`.
 1. Scroll down to the title you're transferring and tap that. Tachiyomi will do a global search of all the sources you have installed and enabled. Change the search query if you're not able to find the manga you want.
 1. Once you find the manga you want, you just tap it, check the parts of the manga data you want to transfer over, and you're done.
+
