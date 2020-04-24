@@ -81,7 +81,7 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 
 ## Application Updates
 ### How do I enable automatic updates?
-The **Tachiyomi** app now has in-app updating for both stable and development versions. It happens automatically in the background if you got **[Check for updates](/help/guides/about/#check-for-updates)** enabled.
+The **Tachiyomi** app now has in-app updating for both stable and preview versions. It happens automatically in the background if you got **[Check for updates](/help/guides/about/#check-for-updates)** enabled.
 ::: guide
 If you go to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → **[<MaterialIcon icon-name="help"/> About](/help/guides/about)** you will find the **[Check for updates](/help/guides/about/#check-for-updates)** toggle, you can also press **[Version](/help/guides/about/#version)** to force check for updates.
 :::
@@ -99,7 +99,7 @@ Read more [here](/help/guides/general/#language)
 
 ## Miscellaneous
 ### What happened to the F-Droid version?
-F-Droid is no longer an officially supported option. Both the stable and dev builds now include an autoupdate mechanism.
+F-Droid is no longer an officially supported option. Both the stable and preview builds now include an auto-update mechanism.
 
 An unofficial F-Droid repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
 
