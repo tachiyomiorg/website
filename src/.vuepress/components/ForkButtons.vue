@@ -80,7 +80,7 @@ export default {
 				"event",
 				"Button",
 				"Click",
-				this.$props.forkName + " download - Forks"
+				"Download - " + this.$props.forkName + " [Forks]"
 			);
 		}
 	}

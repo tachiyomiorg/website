@@ -138,7 +138,7 @@ export default {
 						"event",
 						"Button",
 						"Click",
-						"Stable download"
+						"Download - Tachiyomi [Home]"
 					);
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
@@ -166,7 +166,7 @@ export default {
 						"event",
 						"Button",
 						"Click",
-						"Dev download"
+						"Download - Tachiyomi Preview [Home]"
 					);
 				}
 			});

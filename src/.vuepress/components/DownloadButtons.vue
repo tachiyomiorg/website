@@ -61,7 +61,7 @@ export default {
 				"event",
 				"Button",
 				"Click",
-				"Stable download - Getting Started"
+				"Download - Tachiyomi [Getting started]"
 			);
 		},
 		downloadDev() {
@@ -90,7 +90,7 @@ export default {
 				"event",
 				"Button",
 				"Click",
-				"Dev download - Getting Started"
+				"Download - Tachiyomi Preview [Getting started]"
 			);
 		}
 	}
