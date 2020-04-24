@@ -4,7 +4,7 @@ lang: en-US
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/assets/media/fork-EH-icon.png')"> TachiyomiEH
+# <img class="headerLogo" :src="$withBase('/assets/media/fork-EH-icon.png')"> TachiyomiEH <Badge text="Deprecated" type="error" vertical="middle" />
 
 <ForkButtons forkName="TachiyomiEH" downloadLink="https://api.github.com/repos/NerdNumber9/TachiyomiEH/releases/latest" githubLink="window.open('https://github.com/NerdNumber9/TachiyomiEH')"/>
 
@@ -12,6 +12,8 @@ sidebar: false
 **TachiyomiEH** is maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
 
 This fork adds features that enhances the hentai experience with integrations to popular sevices such as **E-Hentai**, **nHentai** and more.
+
+At the moment, it is **deprecated** as the developer does not have time to maintain it. Use [TachiyomiAZ](/forks/TachiyomiAZ) instead.
 
 <img :src="$withBase('/assets/media/fork-EH-banner.png')"/>
 
