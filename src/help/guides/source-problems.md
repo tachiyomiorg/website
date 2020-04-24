@@ -23,7 +23,7 @@ lang: en-US
 1. Ask other users to try the action that gives you the error.
 
 ::: tip Bonus step
-Try the latest dev version, your issue may have been fixed. Also check versions of your extensions.
+Try the latest preview version, your issue may have been fixed. Also check versions of your extensions.
 :::
 
 If any of these help go to [it only happens to me](#it-only-happens-to-me).
