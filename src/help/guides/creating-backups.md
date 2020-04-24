@@ -26,7 +26,7 @@ Restoring is done from the [<MaterialIcon icon-name="cloud_upload"/> Backup](/he
 
 ## Transferring downloads
 
-You can also transfer downloaded manga chapters from one version of **Tachiyomi** to another.
+You can transfer downloaded manga chapters from one version of **Tachiyomi** to another.
 
 ::: guide
 You can do this by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → [<MaterialIcon icon-name="get_app"/> Downloads](/help/guides/downloads) and then set the download directory to that of the download folder of your old **Tachiyomi**, then restore the backup.
