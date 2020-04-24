@@ -81,14 +81,15 @@ export default {
 	methods: {
 		showDownloads() {
 			this.$swal({
-				title: "Download",
-				text: "Select which version to use",
-				confirmButtonText: "Stable",
-				confirmButtonAriaLabel: "Stable",
-				cancelButtonText: "Dev",
-				cancelButtonAriaLabel: "Dev",
+				title: "Get Tachiyomi for Android",
+				html:
+					"Living on the edge? Get the <a href='https://tachiyomi.kanade.eu/latest' download>preview</a>.",
+				confirmButtonText:
+					"Download",
+				confirmButtonAriaLabel: "Download",
+				footer: "Android 5.0 or higher",
 				showCloseButton: true,
-				showCancelButton: true,
+				showCancelButton: false,
 				focusConfirm: false,
 				customClass: {
 					actions: "download-actions",
@@ -98,6 +99,7 @@ export default {
 					container: "download-container",
 					content: "download-content",
 					header: "download-header",
+					footer: "download-footer",
 					icon: "download-icon",
 					popup: "download-popup",
 					title: "download-title"
@@ -114,8 +116,7 @@ export default {
 						title: "Downloading",
 						text: "Stable version is being downloaded.",
 						icon: "success",
-						focusConfirm: false,
-						focusCancel: false,
+						focusConfirm: true,
 						timer: 5000,
 						timerProgressBar: true,
 						customClass: {
@@ -139,34 +140,6 @@ export default {
 						"Button",
 						"Click",
 						"Stable download"
-					);
-				} else if (result.dismiss === "cancel") {
-					this.$swal({
-						title: "Downloading",
-						text: "Development version is being downloaded.",
-						icon: "success",
-						focusConfirm: false,
-						focusCancel: false,
-						timer: 5000,
-						timerProgressBar: true,
-						customClass: {
-							confirmButton: "download-confirm-button",
-							container: "download-container"
-						},
-						showClass: {
-							popup: "animated pulse faster"
-						},
-						hideClass: {
-							popup: "animated zoomOut faster"
-						}
-					});
-					window.location.assign("https://tachiyomi.kanade.eu/latest");
-					window.ga(
-						"send",
-						"event",
-						"Button",
-						"Click",
-						"Dev download"
 					);
 				}
 			});
@@ -207,15 +180,15 @@ export default {
 			line-height 1.3
 			max-width 35rem
 		.action-button
-			background-color $accentColor
-			border-bottom 1px solid darken($accentColor, 10%)
+			background-color $accentColorSecondary
+			border-bottom 1px solid darken($accentColorSecondary, 10%)
 			box-sizing border-box
 			color #fff
 			display inline-block
 			padding 0.8rem 1.6rem
 			transition background-color 0.1s ease
 			&:hover
-				background-color lighten($accentColor, 10%)
+				background-color lighten($accentColorSecondary, 10%)
 			&.secondary
 				background-color darken($borderColor, 5%)
 				border-bottom-color darken($borderColor, 15%)

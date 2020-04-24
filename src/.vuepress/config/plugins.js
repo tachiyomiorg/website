@@ -13,6 +13,12 @@ module.exports = [
 		}
 	],
 	[
+		"vuepress-plugin-google-tag-manager",
+		{
+			gtm: "GTM-KDRWJ5M"
+		}
+	],
+	[
 		"vuepress-plugin-container",
 		{
 			type: "expander",

@@ -145,27 +145,31 @@ font-feature-settings()
 .download-container
 	button
 		user-select none
+	.swal2-styled
+		padding .625em 1em
 	.download-actions
 		.download-stable-button
 		.download-dev-button
 		.download-confirm-button
+			background-color $accentColorSecondary
+			color white
 			border-bottom-width 0
-			border-radius $buttonBorderRadius
+			border-radius $borderRadiusButton
+			font-size 1.25rem
 			font-family $buttonFontFamily
-			font-size 1.125em
-			height 3rem
-			width 8.5rem
+			font-weight 200
+			height 3.25rem
+			width 50%
 			&:focus
 				outline none
 				outline-style solid
-		.download-dev-button
-			background-color $accentColorSecondary
 	.download-title
 		border-bottom-width 0
 	.download-footer
+		font-size 0.8rem
+		margin-top 0
 		border-top-width 0
 		padding-top 0
-
 // Navbar Changes
 .navbar
 	.site-name.can-hide
