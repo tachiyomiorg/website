@@ -97,7 +97,7 @@ export default {
 		border-radius $buttonBorderRadius
 		border-style none
 		color white
-		font-family $buttonFontFamily
+		font-family $fontFamily
 		font-size 1.125em
 		height 3rem
 		margin 0.3125rem

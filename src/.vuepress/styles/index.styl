@@ -126,9 +126,9 @@ font-feature-settings()
 		a
 			border-radius $buttonBorderRadius
 			cursor pointer
-			font-family $buttonFontFamily
+			font-family $fontFamily
 			font-size 1.125em
-			width 10.5rem
+			width 12rem
 		.material-icons
 			font-size 1.125em
 			color #ffffff
@@ -143,11 +143,13 @@ font-feature-settings()
 
 // Index download modal
 .download-container
+	font-family $fontFamily
 	button
 		user-select none
 	.swal2-styled
 		padding .625em 1em
 	.download-actions
+		margin-top 0.5em
 		.download-stable-button
 		.download-dev-button
 		.download-confirm-button
@@ -156,7 +158,7 @@ font-feature-settings()
 			border-bottom-width 0
 			border-radius $borderRadiusButton
 			font-size 1.25rem
-			font-family $buttonFontFamily
+			font-family $fontFamily
 			font-weight 200
 			height 3.25rem
 			width 50%
@@ -165,11 +167,19 @@ font-feature-settings()
 				outline-style solid
 	.download-title
 		border-bottom-width 0
+		font-weight 500
+	.download-content
+		font-size 1em
+		padding-bottom 0
+		margin-bottom 0
 	.download-footer
 		font-size 0.8rem
-		margin-top 0
-		border-top-width 0
-		padding-top 0
+		#download-preview
+			color $accentColor
+			padding-left 3px
+			&:hover
+				cursor pointer
+				color $accentColorSecondary
 // Navbar Changes
 .navbar
 	.site-name.can-hide

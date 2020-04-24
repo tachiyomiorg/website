@@ -108,7 +108,7 @@ export default {
 		padding 0.625 2em
 		margin 0.3125rem
 		border-radius $buttonBorderRadius
-		font-family $buttonFontFamily
+		font-family $fontFamily
 		font-size 1.125em
 		color white
 		height 3rem

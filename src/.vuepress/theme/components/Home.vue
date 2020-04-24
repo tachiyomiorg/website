@@ -83,11 +83,11 @@ export default {
 			this.$swal({
 				title: "Get Tachiyomi for Android",
 				html:
-					"Living on the edge? Get the <a href='https://tachiyomi.kanade.eu/latest' download>preview</a>.",
+					"Requires Android 4.1 or newer.",
 				confirmButtonText:
 					"Download",
 				confirmButtonAriaLabel: "Download",
-				footer: "Android 5.0 or higher",
+				footer: `Living on the edge? Get the <a id="download-preview" onclick="swal.closeModal();">preview</a>.`,
 				showCloseButton: true,
 				showCancelButton: false,
 				focusConfirm: false,
@@ -113,15 +113,18 @@ export default {
 			}).then(result => {
 				if (result.value) {
 					this.$swal({
-						title: "Downloading",
-						text: "Stable version is being downloaded.",
+						title: "Tachiyomi is being downloaded",
 						icon: "success",
-						focusConfirm: true,
+						focusConfirm: false,
 						timer: 5000,
 						timerProgressBar: true,
 						customClass: {
+							actions: "download-actions",
 							confirmButton: "download-confirm-button",
-							container: "download-container"
+							container: "download-container",
+							header: "download-header",
+							footer: "download-footer",
+							title: "download-title downloading"
 						},
 						showClass: {
 							popup: "animated pulse faster"
@@ -139,10 +142,22 @@ export default {
 						"event",
 						"Button",
 						"Click",
-						"Stable download"
+						"Download - Tachiyomi"
 					);
 				}
 			});
+			$("#download-preview").click(function () {
+				window.location.assign(
+					"https://tachiyomi.kanade.eu/latest"
+				);
+				window.ga(
+					"send",
+					"event",
+					"Button",
+					"Click",
+					"Download - Tachiyomi Preview"
+				);
+        	});
 		}
 	},
 
@@ -159,6 +174,7 @@ export default {
 
 <style lang="stylus">
 .home
+	font-family $fontFamily
 	display block
 	margin 0 auto
 	padding $navbarHeight 2rem 0
@@ -169,16 +185,20 @@ export default {
 			margin 3rem auto 1.5rem
 			max-width 100%
 		h1
+			font-family $fontFamily
 			font-size 3rem
+			font-weight 500
 		h1
 		.description
 		.action
+			font-family $fontFamily
 			margin 1.8rem auto
 		.description
 			color lighten($textColor, 40%)
 			font-size 1.6rem
 			line-height 1.3
-			max-width 35rem
+			max-width 36rem
+			font-weight 300
 		.action-button
 			background-color $accentColorSecondary
 			border-bottom 1px solid darken($accentColorSecondary, 10%)

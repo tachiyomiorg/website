@@ -3,8 +3,9 @@ module.exports = {
 	description: 'Free and open source manga reader for Android.',
 	dest: './public',
 	head: [
-		['link', { rel: "preconnect", href: 'https://fonts.gstatic.com', crossorigin:""} , ''],
-		['link', { rel: "stylesheet", href: 'https://fonts.googleapis.com/css?family=Open+Sans'} , ''],
+		['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin:''} , ''],
+		['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'} , ''],
+		['script', { src: 'https://code.jquery.com/jquery-3.3.1.min.js'} , ''],
 	],
 	themeConfig: {
 		repo: 'inorichi/tachiyomi',
