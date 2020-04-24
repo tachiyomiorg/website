@@ -1,10 +1,10 @@
 <template>
 	<div class="downloadContainer">
 		<button class="downloadStableButton" @click="downloadStable">
-			Stable
+			{{ downloadStableLabel }}
 		</button>
-		<button class="downloadDevButton" @click="downloadDev">
-			Dev
+		<button class="downloadPreviewButton" @click="downloadPreview">
+			{{ downloadPreviewLabel }}
 		</button>
 	</div>
 </template>
@@ -16,10 +16,29 @@ const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
 export default {
+	props: {
+		downloadStableTag: {
+			type: String,
+			required: true
+		},
+		downloadPreviewTag: {
+			type: String,
+			required: true
+		},
+		downloadStableLabel: {
+			type: String,
+			default: "Stable"
+		},
+		downloadPreviewLabel: {
+			type: String,
+			default: "Preview"
+		}
+	},
+
 	data() {
 		return {
 			tagName: "",
-			browserDownloadUrl: ""
+			browserDownloadUrl: "",
 		};
 	},
 
@@ -36,7 +55,7 @@ export default {
 		downloadStable() {
 			this.$swal({
 				title: "Downloading",
-				text: "Stable version is being downloaded.",
+				text: this.downloadStableLabel + " version is being downloaded.",
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -61,13 +80,14 @@ export default {
 				"event",
 				"Button",
 				"Click",
-				"Download - Tachiyomi [Getting started]"
+				"Download - " + this.$props.downloadStableTag + " [" + this.$page.title + "]"
 			);
+			console.log("Download - " + this.$props.downloadStableTag + " [" + this.$page.title + "]");
 		},
-		downloadDev() {
+		downloadPreview() {
 			this.$swal({
 				title: "Downloading",
-				text: "Dev version is being downloaded.",
+				text: this.downloadPreviewLabel + " version is being downloaded.",
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -90,8 +110,9 @@ export default {
 				"event",
 				"Button",
 				"Click",
-				"Download - Tachiyomi Preview [Getting started]"
+				"Download - " + this.$props.downloadPreviewTag + " [" + this.$page.title + "]"
 			);
+			console.log("Download - " + this.$props.downloadPreviewTag + " [" + this.$page.title + "]");
 		}
 	}
 };
@@ -103,7 +124,7 @@ export default {
 	text-align center
 	margin 0.3125rem
 	.downloadStableButton
-	.downloadDevButton
+	.downloadPreviewButton
 		border-style none
 		padding 0.625 2em
 		margin 0.3125rem
@@ -122,6 +143,6 @@ export default {
 			background-image linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
 	.downloadStableButton
 		background-color $accentColor
-	.downloadDevButton
+	.downloadPreviewButton
 		background-color $accentColorSecondary
 </style>

@@ -7,7 +7,7 @@ lang: en-US
 
 ## Installation
 
-<DownloadButtons/>
+<DownloadButtons downloadStableTag="Tachiyomi" downloadPreviewTag="Tachiyomi Preview"/>
 
 You can download the latest version of **Tachiyomi** from any of the above buttons.
 
