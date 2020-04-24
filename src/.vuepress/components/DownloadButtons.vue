@@ -3,8 +3,8 @@
 		<button class="downloadStableButton" @click="downloadStable">
 			Stable
 		</button>
-		<button class="downloadDevButton" @click="downloadDev">
-			Dev
+		<button class="downloadPreviewButton" @click="downloadPreview">
+			Preview
 		</button>
 	</div>
 </template>
@@ -64,10 +64,10 @@ export default {
 				"Stable download - Getting Started"
 			);
 		},
-		downloadDev() {
+		downloadPreview() {
 			this.$swal({
 				title: "Downloading",
-				text: "Dev version is being downloaded.",
+				text: "Preview version is being downloaded.",
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -103,7 +103,7 @@ export default {
 	text-align center
 	margin 0.3125rem
 	.downloadStableButton
-	.downloadDevButton
+	.downloadPreviewButton
 		border-style none
 		padding 0.625 2em
 		margin 0.3125rem
@@ -122,6 +122,6 @@ export default {
 			background-image linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
 	.downloadStableButton
 		background-color $accentColor
-	.downloadDevButton
+	.downloadPreviewButton
 		background-color $accentColorSecondary
 </style>

@@ -85,14 +85,14 @@ export default {
 				text: "Select which version to use",
 				confirmButtonText: "Stable",
 				confirmButtonAriaLabel: "Stable",
-				cancelButtonText: "Dev",
-				cancelButtonAriaLabel: "Dev",
+				cancelButtonText: "Preview",
+				cancelButtonAriaLabel: "Preview",
 				showCloseButton: true,
 				showCancelButton: true,
 				focusConfirm: false,
 				customClass: {
 					actions: "download-actions",
-					cancelButton: "download-dev-button",
+					cancelButton: "download-preview-button",
 					closeButton: "download-close-button",
 					confirmButton: "download-stable-button",
 					container: "download-container",
@@ -143,7 +143,7 @@ export default {
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
 						title: "Downloading",
-						text: "Development version is being downloaded.",
+						text: "Preview version is being downloaded.",
 						icon: "success",
 						focusConfirm: false,
 						focusCancel: false,
