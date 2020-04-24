@@ -11,11 +11,11 @@ module.exports = [
 				sidebarDepth: 2,
 				children: [
 					'/help/guides/getting-started',
-					'/help/guides/reading-local-manga',
 					'/help/guides/source-problems',
-					'/help/guides/categories',
-					'/help/guides/library-filters',
-					'/help/guides/source-migration'
+					'/help/guides/source-migration',
+					'/help/guides/creating-backups',
+					'/help/guides/reading-local-manga',
+					'/help/guides/categories'
 				]
 			},
 			{
