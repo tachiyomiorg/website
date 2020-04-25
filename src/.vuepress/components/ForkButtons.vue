@@ -83,7 +83,7 @@ export default {
 			window.ga(
 				"set",
 				"dimension1",
-				this.$page.title
+				"Forks"
 			);
 			window.ga(
 				"send",
