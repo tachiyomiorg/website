@@ -76,11 +76,21 @@ export default {
 				this.$data.browserDownloadUrl || this.$props.downloadLink
 			);
 			window.ga(
+				"set",
+				"metric1",
+				this.$props.forkName
+			);
+			window.ga(
+				"set",
+				"dimension1",
+				this.$page.title
+			);
+			window.ga(
 				"send",
 				"event",
 				"Button",
 				"Click",
-				"Download - " + this.$props.forkName + " [Forks]"
+				"User download"
 			);
 		}
 	}

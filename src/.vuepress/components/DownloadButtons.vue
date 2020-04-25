@@ -15,6 +15,9 @@ import axios from "axios";
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
+const PREVIEW_URL =
+	"https://tachiyomi.kanade.eu/latest";
+
 export default {
 	props: {
 		downloadStableTag: {
@@ -32,6 +35,12 @@ export default {
 		downloadPreviewLabel: {
 			type: String,
 			default: "Preview"
+		},
+		downloadStableUrl: {
+			type: String
+		},
+		downloadPreviewUrl: {
+			type: String
 		}
 	},
 
@@ -73,16 +82,25 @@ export default {
 				}
 			});
 			window.location.assign(
-				this.$data.browserDownloadUrl || RELEASE_URL
+				this.$props.downloadStableUrl || this.$data.browserDownloadUrl || RELEASE_URL
+			);
+			window.ga(
+				"set",
+				"metric1",
+				this.$props.downloadStableTag
+			);
+			window.ga(
+				"set",
+				"dimension1",
+				this.$page.title
 			);
 			window.ga(
 				"send",
 				"event",
 				"Button",
 				"Click",
-				"Download - " + this.$props.downloadStableTag + " [" + this.$page.title + "]"
+				"User download"
 			);
-			console.log("Download - " + this.$props.downloadStableTag + " [" + this.$page.title + "]");
 		},
 		downloadPreview() {
 			this.$swal({
@@ -104,15 +122,26 @@ export default {
 					popup: "animated zoomOut faster"
 				}
 			});
-			window.location.assign("https://tachiyomi.kanade.eu/latest");
+			window.location.assign(
+				this.$props.downloadPreviewUrl || PREVIEW_URL
+			);
+			window.ga(
+				"set",
+				"metric1",
+				this.$props.downloadStableTag
+			);
+			window.ga(
+				"set",
+				"dimension1",
+				this.$page.title
+			);
 			window.ga(
 				"send",
 				"event",
 				"Button",
 				"Click",
-				"Download - " + this.$props.downloadPreviewTag + " [" + this.$page.title + "]"
+				"User download"
 			);
-			console.log("Download - " + this.$props.downloadPreviewTag + " [" + this.$page.title + "]");
 		}
 	}
 };
