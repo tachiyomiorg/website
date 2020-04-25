@@ -24,7 +24,7 @@ This fork adds certain enhancements that is not yet present in the base app.
 Maintained by [az4521](https://github.com/az4521) and [Syer10](https://github.com/jobobby04)
 :::
 
-TachiyomiAZ is a fork based off of **TachiyomiEH**, it has most features and fixes from Dev, as well as features from J2k. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style
+TachiyomiAZ is a fork based off of **TachiyomiEH**, it has most features and fixes from Preview, as well as features from J2k. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style
 
 ## <img class="headerLogo" :src="$withBase('/assets/media/fork-EH-icon.png')"> [TachiyomiEH](/forks/TachiyomiEH) <Badge text="Deprecated" type="error" vertical="middle" />
 ::: aside-guide

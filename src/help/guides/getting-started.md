@@ -11,7 +11,7 @@ lang: en-US
 
 You can download the latest version of **Tachiyomi** from any of the above buttons.
 
-If you want to try new features before they get to the stable release, you can download the dev version.
+If you want to try new features before they get to the stable release, you can download the preview version.
 
 Open and install the `.apk` file you just downloaded.
 

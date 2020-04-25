@@ -52,7 +52,7 @@ This setting allows you to keep manga that sources have mark as finished from up
 ## Categories to include in global update <Badge text="All" type="default-indicator" vertical="middle"/>
 This setting allows you to change which categories are updated when a manual (pull down in library) or automatic update occurs.
 
-## Library update order <Badge text="Alphabetically" type="default-indicator" vertical="middle"/> <Badge text="Dev" type="version-indicator" vertical="middle"/>
+## Library update order <Badge text="Alphabetically" type="default-indicator" vertical="middle"/>
 This setting allows you to update in different orders, in alphabetical or in the order of the last updated manga.
 
 ## Default category <Badge text="Always ask" type="default-indicator" vertical="middle"/>
