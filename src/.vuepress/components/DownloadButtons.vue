@@ -128,7 +128,7 @@ export default {
 			window.ga(
 				"set",
 				"metric1",
-				this.$props.downloadStableTag
+				this.$props.downloadPreviewTag
 			);
 			window.ga(
 				"set",
