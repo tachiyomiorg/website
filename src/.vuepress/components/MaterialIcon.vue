@@ -38,7 +38,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .material-holder
 	color #476582
 	margin 0
