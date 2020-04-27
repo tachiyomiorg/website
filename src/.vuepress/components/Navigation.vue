@@ -1,13 +1,13 @@
 <template>
 	<span v-if="nav.link" class="app-navigation" title="App navigation">
 		<a class="app-link" :href="nav.link">
-			<MaterialIcon class="app-icon" :icon-name="nav.icon" />
+			<MaterialIcon v-if="nav.icon" class="app-icon" :iconName="nav.icon" />
 			<span class="app-label">{{ nav.text }}</span>
 			<slot />
 		</a>
 	</span>
 	<span v-else class="app-navigation" title="App navigation">
-		<MaterialIcon class="app-icon" :icon-name="nav.icon" />
+		<MaterialIcon v-if="nav.icon" class="app-icon" :iconName="nav.icon" />
 		<span class="app-label">{{ nav.text }}</span>
 		<slot />
 	</span>
@@ -87,10 +87,6 @@ export default {
 			.app-icon,
 			.app-label
 				color $accentColor
-	.material-icons
-		margin-left 0px
-		&:empty
-			margin-left -5px !important
 	&:hover
 		cursor default
 </style>
