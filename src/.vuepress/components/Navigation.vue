@@ -1,5 +1,12 @@
 <template>
-	<span class="app-navigation">
+	<span v-if="link" class="app-navigation" title="App navigational">
+		<a class="app-link" :href="link">
+			<MaterialIcon class="app-icon" :icon-name="icon" />
+			<span class="app-label">{{ text }}</span>
+			<slot />
+		</a>
+	</span>
+	<span v-else class="app-navigation" title="App navigation">
 		<MaterialIcon class="app-icon" :icon-name="icon" />
 		<span class="app-label">{{ text }}</span>
 		<slot />
@@ -7,6 +14,9 @@
 </template>
 
 <script>
+/**
+ * Code example: <Navigation item="library" />
+ */
 export default {
 	props: {
 		item: {
@@ -49,7 +59,7 @@ export default {
 				bookmarked: "favorite",
 				set_categories: "label",
 				share: "share",
-				webview: "public"
+				webview: "public",
 			}[this.item];
 		},
 		text() {
@@ -89,7 +99,18 @@ export default {
 				webview: "WebView",
 				/* Sources */
 				latest: "LATEST",
-				browse: "BROWSE"
+				browse: "BROWSE",
+			}[this.item];
+		},
+		link() {
+			return {
+				/* Settings */
+				settings_general: "/help/guides/general/",
+				settings_reader: "/help/guides/reader",
+				settings_downloads: "/help/guides/downloads",
+				settings_tracking: "/help/guides/tracking",
+				settings_backup: "/help/guides/backup",
+				settings_advanced: "/help/guides/advanced",
 			}[this.item];
 		}
 	}
@@ -106,8 +127,17 @@ export default {
 		font-size 1em
 	.app-icon
 		vertical-align middle
+	.app-link
+		&:hover
+			cursor pointer
+			text-decoration none !important
+			.app-icon,
+			.app-label
+				color $accentColor
 	.material-icons
 		margin-left 0px
 		&:empty
 			margin-left -5px !important
+	&:hover
+		cursor default
 </style>
