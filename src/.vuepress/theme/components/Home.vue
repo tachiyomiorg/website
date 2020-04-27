@@ -137,13 +137,13 @@ export default {
 					);
 					window.ga(
 						"set",
-						"metric1",
-						"Tachiyomi"
+						"dimension1",
+						this.$page.title
 					);
 					window.ga(
 						"set",
-						"dimension1",
-						this.$page.title
+						"dimension2",
+						"Tachiyomi"
 					);
 					window.ga(
 						"send",
@@ -177,13 +177,13 @@ export default {
 					);
 					window.ga(
 						"set",
-						"metric1",
-						"Tachiyomi Preview"
+						"dimension1",
+						this.$page.title
 					);
 					window.ga(
 						"set",
-						"dimension1",
-						this.$page.title
+						"dimension2",
+						"Tachiyomi Preview"
 					);
 					window.ga(
 						"send",

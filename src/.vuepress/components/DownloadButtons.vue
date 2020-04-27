@@ -86,13 +86,13 @@ export default {
 			);
 			window.ga(
 				"set",
-				"metric1",
-				this.$props.downloadStableTag
+				"dimension1",
+				this.$page.title
 			);
 			window.ga(
 				"set",
-				"dimension1",
-				this.$page.title
+				"dimension2",
+				this.$props.downloadStableTag
 			);
 			window.ga(
 				"send",
@@ -127,13 +127,13 @@ export default {
 			);
 			window.ga(
 				"set",
-				"metric1",
-				this.$props.downloadPreviewTag
+				"dimension1",
+				this.$page.title
 			);
 			window.ga(
 				"set",
-				"dimension1",
-				this.$page.title
+				"dimension2",
+				this.$props.downloadPreviewTag
 			);
 			window.ga(
 				"send",

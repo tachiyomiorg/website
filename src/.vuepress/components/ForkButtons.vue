@@ -77,13 +77,13 @@ export default {
 			);
 			window.ga(
 				"set",
-				"metric1",
-				this.$props.forkName
+				"dimension1",
+				"Forks"
 			);
 			window.ga(
 				"set",
-				"dimension1",
-				"Forks"
+				"dimension2",
+				this.$props.forkName
 			);
 			window.ga(
 				"send",
