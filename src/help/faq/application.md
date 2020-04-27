@@ -7,13 +7,10 @@ sidebarDepth: 2
 ## Library
 
 ### How can I see how many chapters I've downloaded?
-This can be done by enabling [Download badges](/help/guides/my-library/#download-badges).
+This can be done by enabling **Download badges** under **<MaterialIcon icon-name="class"/> My library**.
 
 ::: guide
-Enable it by going to **[<MaterialIcon icon-name="class"/> My library](/help/guides/my-library)** → **[<MaterialIcon icon-name="filter_list"/> Filter](/help/guides/my-library/#filter-options)** → **[Display](/help/guides/my-library/#display)** section then checking the **[Download badges](/help/guides/my-library/#download-badges)** option in the bottom.
-::: aside
-Read more [here](/help/guides/my-library/#download-badges)
-:::
+Enable it by going to **<MaterialIcon icon-name="class"/> My library** → **<MaterialIcon icon-name="filter_list"/> Filter** → **Display** section then checking the **Download badges** option in the bottom.
 
 ### Some covers are white after restoring from backup
 The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
@@ -25,13 +22,10 @@ Read more [here](/help/guides/advanced/#refresh-library-metadata)
 :::
 
 ### How do I ignore chapters from certain scanlator groups?
-Every now and then you find a manga that is translated by more than one group, because of this you get multiple releases for every chapter in the manga. To fix this the easiest way is to change sorting to [Total chapters](/help/guides/my-library/#total-chapters). You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
+Every now and then you find a manga that is translated by more than one group, because of this you get multiple releases for every chapter in the manga. To fix this the easiest way is to change sorting to **Total chapters**. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
 
 ::: guide
-Change library sorting by going to **[<MaterialIcon icon-name="class"/> My library](/help/guides/my-library)** → **[<MaterialIcon icon-name="filter_list"/> Filter](/help/guides/my-library/#filter-options)** → **[Sort](/help/guides/my-library/#sort)** section then in this case selecting **[Total chapters](/help/guides/my-library/#total-chapters)**.
-::: aside
-Read more [here](/help/guides/my-library/#total-chapters)
-:::
+Change library sorting by going to **<MaterialIcon icon-name="class"/> My library** → **<MaterialIcon icon-name="filter_list"/> Filter** → **Sort** section then in this case selecting **Total chapters**.
 
 ### Why do I see `attempt to invoke virtual method 'com.hippo.unifile...`?
 This error can be caused by a variety of reasons, all to do with storage.
