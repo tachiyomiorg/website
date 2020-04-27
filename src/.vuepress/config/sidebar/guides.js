@@ -19,19 +19,6 @@ module.exports = [
 				]
 			},
 			{
-				title: 'Menus',
-				collapsable: false,
-				sidebarDepth: 2,
-				children: [
-					'/help/guides/my-library',
-					'/help/guides/library-updates',
-					'/help/guides/recently-read',
-					'/help/guides/catalogues',
-					'/help/guides/extensions',
-					'/help/guides/download-queue'
-				]
-			},
-			{
 				title: 'Settings',
 				collapsable: false,
 				sidebarDepth: 2,

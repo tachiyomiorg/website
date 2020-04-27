@@ -18,7 +18,7 @@ Backups can hold the following information:
 
 Restoring is done from the [<MaterialIcon icon-name="cloud_upload"/> Backup](/help/guides/backup) settings. To restore without issues be sure to:
 
-* Install all the [<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions) that were installed at the time of the backup.
+* Install all the <MaterialIcon icon-name="extension"/> Extensions that were installed at the time of the backup.
 * Log into the [<MaterialIcon icon-name="autorenew"/> Tracking](/help/guides/tracking) services that you use.
 * Log into **MangaDex** using **Webview** [as explained here](/help/faq/extensions/#no-results-when-searching).
 * You're able to access all the sources through the **WebView**.

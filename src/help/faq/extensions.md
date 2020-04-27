@@ -17,7 +17,7 @@ The most popular are **MangaDex**, **MangaSee** and **Mangakakalot**, these are 
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **MyReadingManga** (for Yaoi)
 - Other popular sources: **Mangahere**, **Mangapark**, **Manhwa18.net** (in **FMReader** extension)
 
-Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites. 
+Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
 
 ### Which sources are in the multi-source extensions?
 Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
@@ -72,11 +72,11 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your phones settings or you go can do it in the app.
 
 ::: guide
-To uninstall an extension from within **Tachiyomi**, go to **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** then tap **Uninstall** on the extension you want to remove.
+To uninstall an extension from within **Tachiyomi**, go to **<MaterialIcon icon-name="extension"/> Extensions** then tap **Uninstall** on the extension you want to remove.
 :::
 
 ### Why don't I have extensions or any sources in the catalogue?
-- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** menu.
+- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the **<MaterialIcon icon-name="extension"/> Extensions** menu.
 - If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use. Which number in the menu corresponds to which is below.
 
 ::: expander <strong>Click to expand!</strong>
@@ -99,11 +99,10 @@ Read more about Batoto shutting down [here](https://goboiano.com/manga-scanlatio
 :::
 
 ### Why are my extensions not showing up in Catalogues?
-If you've freshly reinstalled the **Tachiyomi** app, the installed extensions might not show up 
-in **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)** until you enable them. 
+If you've freshly reinstalled the **Tachiyomi** app, the installed extensions might not show up in **<MaterialIcon icon-name="explore"/> Catalogues** until you enable them.
 
 ::: guide GUIDE
-To fix this, go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)**→**[<MaterialIcon icon-name="settings"/> Sources](/help/guides/catalogues/#sources)**. Now you can proceed to enabling your desired sources.
+To fix this, go to **<MaterialIcon icon-name="explore"/> Catalogues**→**[<MaterialIcon icon-name="settings"/> Sources](/help/guides/catalogues/#sources)**. Now you can proceed to enabling your desired sources.
 :::
 
 ### Why can't I restore my backup?
@@ -114,8 +113,8 @@ To restore backups, **Tachiyomi** requires to have extensions installed for the 
 It might be because the title is worded differently. Follow any of the steps below:
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single site will not satisfy all your needs.
-- Download the extension for that source from **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** if it exists, read [this](/help/faq/extensions/#which-sources-are-there-in-the-multi-source-extensions) for a list of which extensions contains what sources.
-- Go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)** → **[Browse](/help/guides/catalogues/#browse)** on a source then search for the manga again.
+- Download the extension for that source from **<MaterialIcon icon-name="extension"/> Extensions** if it exists, read [this](/help/faq/extensions/#which-sources-are-there-in-the-multi-source-extensions) for a list of which extensions contains what sources.
+- Go to **<MaterialIcon icon-name="explore"/> Catalogues** → **[Browse](/help/guides/catalogues/#browse)** on a source then search for the manga again.
 
 
 ### Some common errors you might encounter
@@ -144,7 +143,7 @@ The source you selected may have Cloudflare protection on and is enforcing CAPTC
 If you're not getting any results when searching MangaDex then you need to log in. To do so enter the **WebView** for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
 
 ::: guide
-To enter the **WebView** go to **[<MaterialIcon icon-name="explore"/> Catalogues](/help/guides/catalogues)** → **[Browse](/help/guides/catalogues/#browse)**/**[Latest](/help/guides/catalogues/#latest)** next to **MangaDex**, open any manga from the list and then press the **<MaterialIcon icon-name="more_vert"/> Overflow menu** in the top-right corner and then press **Open in web view**.
+To enter the **WebView** go to **<MaterialIcon icon-name="explore"/> Catalogues** → **[Browse](/help/guides/catalogues/#browse)**/**[Latest](/help/guides/catalogues/#latest)** next to **MangaDex**, open any manga from the list and then press the **<MaterialIcon icon-name="more_vert"/> Overflow menu** in the top-right corner and then press **Open in web view**.
 :::
 
 ::: expander <strong>Click to reveal video guide!</strong>
@@ -197,8 +196,8 @@ View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tac
 It's not currently possible to restore backup from MangaRock officially, as the MangaRock source is dead. There is however an unofficial method to restore/backup all manga from the MangaRock source.
 
 1. Uninstall the MangaRock extension.
-1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file. 
-1. Go to **[<MaterialIcon icon-name="extension"/> Extensions](/help/guides/extensions)** menu and press **Trust** to proceed.
+1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file.
+1. Go to **<MaterialIcon icon-name="extension"/> Extensions** menu and press **Trust** to proceed.
 1. Restore backup.
 
 ### Why do I get `Value <url> at 0 of type java.lang.String cannot be converted to JSONObject`?
