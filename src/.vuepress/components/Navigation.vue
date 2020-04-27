@@ -21,51 +21,52 @@ export default {
 	props: {
 		item: {
 			type: String,
-			required: true
-		}
+			required: true,
+		},
 	},
 	computed: {
 		nav() {
+			// prettier-ignore
 			return {
 				/* Menus */
-				library: { icon:"collections_bookmark", text:"Library" },
-				updates: { icon:"new_releases", text:"Updates" },
-				history: { icon:"history", text:"History" },
-				sources: { icon:"explore", text:"Sources" },
-				more: { icon:"more_horiz", text:"More" },
+				library: { text: "Library", icon: "collections_bookmark" },
+				updates: { text: "Updates", icon: "new_releases" },
+				history: { text: "History", icon: "history" },
+				sources: { text: "Sources", icon: "explore" },
+				more: { text: "More", icon: "more_horiz" },
 				/* Actions */
-				search: { icon:"search", text:"Search" },
-				filter: { icon:"filter_list", text:"Filter" },
-				update_library: { icon:"refresh", text:"Update library" },
+				search: { text: "Search", icon: "search" },
+				filter: { text: "Filter", icon: "filter_list" },
+				update_library: { text: "Update library", icon: "refresh" },
 				/* More */
-				downloaded_only: { icon:"cloud_off", text:"Downloaded only" },
-				extensions: { icon:"extension", text:"Extensions" },
-				download_queue: { icon:"get_app", text:"Download queue" },
-				source_migration: { icon:"compare_arrows", text:"Source migration" },
-				settings: { icon:"settings", text:"Settings" },
-				about: { icon:"info", text:"About" },
-				help: { icon:"help", text:"Help" },
+				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
+				extensions: { text: "Extensions", icon: "extension" },
+				download_queue: { text: "Download queue", icon: "get_app" },
+				source_migration: { text: "Source migration", icon: "compare_arrows" },
+				settings: { text: "Settings", icon: "settings" },
+				about: { text: "About", icon: "info" },
+				help: { text: "Help", icon: "help" },
 				/* Settings */
-				settings_general: { icon:"tune", text:"General", link:"/help/guides/general" },
-				settings_library: { icon:"collections_bookmark", text:"Library" },
-				settings_reader: { icon:"chrome_reader_mode", text:"Reader", link:"/help/guides/reader" },
-				settings_downloads: { icon:"get_app", text:"Downloads", link:"/help/guides/downloads" },
-				settings_tracking: { icon:"autorenew", text:"Tracking", link:"/help/guides/tracking" },
-				settings_backup: { icon:"backup", text:"Backup", link:"/help/guides/backup" },
-				settings_security: { icon:"security", text:"Security" },
-				settings_advanced: { icon:"code", text:"Advanced", link:"/help/guides/advanced" },
+				settings_general: { text: "General", icon: "tune", link: "/help/guides/general" },
+				settings_library: { text: "Library", icon: "collections_bookmark" },
+				settings_reader: { text: "Reader", icon: "chrome_reader_mode", link: "/help/guides/reader" },
+				settings_downloads: { text: "Downloads", icon: "get_app", link: "/help/guides/downloads" },
+				settings_tracking: { text: "Tracking", icon: "autorenew", link: "/help/guides/tracking" },
+				settings_backup: { text: "Backup", icon: "backup", link: "/help/guides/backup" },
+				settings_security: { text: "Security", icon: "security" },
+				settings_advanced: { text: "Advanced", icon: "code", link: "/help/guides/advanced" },
 				/* Library info */
-				bookmark: { icon:"favorite_border", text:"Add to library" },
-				bookmarked: { icon:"favorite", text:"In library" },
-				set_categories: { icon:"label", text:"Set categories" },
-				share: { icon:"share", text:"Share" },
-				webview: { icon:"public", text:"WebView" },
+				bookmark: { text: "Add to library", icon: "favorite_border" },
+				bookmarked: { text: "In library", icon: "favorite" },
+				set_categories: { text: "Set categories", icon: "label" },
+				share: { text: "Share", icon: "share" },
+				webview: { text: "WebView", icon: "public" },
 				/* Sources */
-				latest: { text:"LATEST" },
-				browse: { text:"BROWSE" },
+				latest: { text: "LATEST" },
+				browse: { text: "BROWSE" },
 			}[this.item];
-		}
-	}
+		},
+	},
 };
 </script>
 
