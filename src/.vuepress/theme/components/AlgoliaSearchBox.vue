@@ -78,53 +78,66 @@ export default {
 .algolia-search-wrapper
   & > span
     vertical-align middle
+  &.search-box
+    input
+      border-radius 6px
   .algolia-autocomplete
     line-height normal
     .ds-dropdown-menu
       background-color #fff
-      border 1px solid #999
+      border 1px solid #dde0e5
       border-radius 4px
       font-size 16px
       margin 6px 0 0
       padding 4px
       text-align left
       &:before
-        border-color #999
+        border-color #dde0e5
       [class*=ds-dataset-]
         border none
         padding 0
       .ds-suggestions
         margin-top 0
       .ds-suggestion
-        border-bottom 1px solid $borderColor
+        border-bottom none
+        &:last-child
+          border-bottom 1px solid $borderColor
+    .algolia-docsearch-suggestion--text
+      font-size 0.7em
     .algolia-docsearch-suggestion--highlight
-      color #2c815b
+      color $accentColor
+      font-weight 600
+      background rgba(143,187,237,0.05)
     .algolia-docsearch-suggestion
       border-color $borderColor
       padding 0
       .algolia-docsearch-suggestion--category-header
+        border 0px
+        border-bottom 1px solid #EAECEF
+        border-top 1px solid #EAECEF
         padding 5px 10px
         margin-top 0
-        background $accentColor
-        color #fff
+        background transparent
+        color $accentColor
         font-weight 600
         .algolia-docsearch-suggestion--highlight
           background rgba(255, 255, 255, 0.6)
       .algolia-docsearch-suggestion--wrapper
         padding 0
       .algolia-docsearch-suggestion--title
-        font-weight 600
+        font-weight 400
         margin-bottom 0
         color $textColor
       .algolia-docsearch-suggestion--subcategory-column
         vertical-align top
         padding 5px 7px 5px 5px
         border-color $borderColor
-        background #f1f3f5
+        background #fff
         &:after
           display none
       .algolia-docsearch-suggestion--subcategory-column-text
-        color #555
+        color $accentColorSecondary
+        font-weight 600
     .algolia-docsearch-footer
       border-color $borderColor
     .ds-cursor .algolia-docsearch-suggestion--content
