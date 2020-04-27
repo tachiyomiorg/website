@@ -89,7 +89,7 @@ export default {
       border-radius 4px
       font-size 16px
       margin 6px 0 0
-      padding 4px
+      padding 12px
       text-align left
       &:before
         border-color #dde0e5
@@ -100,8 +100,6 @@ export default {
         margin-top 0
       .ds-suggestion
         border-bottom none
-        &:last-child
-          border-bottom 1px solid $borderColor
     .algolia-docsearch-suggestion--text
       font-size 0.7em
     .algolia-docsearch-suggestion--highlight
@@ -115,16 +113,16 @@ export default {
       .algolia-docsearch-suggestion--category-header
         border 0px
         border-bottom 1px solid #EAECEF
-        border-top 1px solid #EAECEF
         padding 5px 10px
         margin-top 0
         background transparent
-        color $accentColor
-        font-weight 600
+        color $textColor
+        font-weight 400
         .algolia-docsearch-suggestion--highlight
           background rgba(255, 255, 255, 0.6)
       .algolia-docsearch-suggestion--wrapper
         padding 0
+        padding-top 0.5rem
       .algolia-docsearch-suggestion--title
         font-weight 500
         margin-bottom 0
@@ -137,7 +135,7 @@ export default {
         &:after
           display none
       .algolia-docsearch-suggestion--subcategory-column-text
-        color $accentColorSecondary
+        color lighten($accentColorSecondary, 40%)
         font-weight 400
     .algolia-docsearch-footer
       border-color $borderColor
