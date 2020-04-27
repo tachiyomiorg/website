@@ -1,5 +1,5 @@
 <template>
-	<span v-if="link" class="app-navigation" title="App navigational">
+	<span v-if="link" class="app-navigation" title="App navigation">
 		<a class="app-link" :href="link">
 			<MaterialIcon class="app-icon" :icon-name="icon" />
 			<span class="app-label">{{ text }}</span>
@@ -15,7 +15,7 @@
 
 <script>
 /**
- * Code example: <Navigation item="library" />
+ * Code example: <Navigation item="library"/>
  */
 export default {
 	props: {
