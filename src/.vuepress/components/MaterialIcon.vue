@@ -11,10 +11,10 @@
 <script>
 /**
  * For material icon references use https://material.io/resources/icons/
- * Code example: <MaterialIcon icon-name="android" />
+ * Code example: <MaterialIcon iconName="android" />
  *
  * For material icon references use https://materialdesignicons.com/
- * Code example: <MaterialIcon icon-name="mdi-glasses" legacy />
+ * Code example: <MaterialIcon iconName="mdi-glasses" legacy />
  */
 export default {
 	props: {
@@ -38,7 +38,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .material-holder
 	color #476582
 	margin 0
