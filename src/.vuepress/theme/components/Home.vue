@@ -55,6 +55,9 @@ import axios from "axios";
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
+const PREVIEW_URL =
+	"https://tachiyomi.kanade.eu/latest";
+
 export default {
 	components: { NavLink },
 
@@ -130,16 +133,9 @@ export default {
 						}
 					});
 					window.location.assign(
-						this.$data.browserDownloadUrl ||
-							"https://github.com/inorichi/tachiyomi/releases/latest"
+						this.$data.browserDownloadUrl || RELEASE_URL
 					);
-					window.ga(
-						"send",
-						"event",
-						"Button",
-						"Click",
-						"Stable download"
-					);
+					window.ga("send", "event", "Action", "Download", "Tachiyomi");
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
 						title: "Downloading",
@@ -160,14 +156,10 @@ export default {
 							popup: "animated zoomOut faster"
 						}
 					});
-					window.location.assign("https://tachiyomi.kanade.eu/latest");
-					window.ga(
-						"send",
-						"event",
-						"Button",
-						"Click",
-						"Dev download"
+					window.location.assign(
+						PREVIEW_URL
 					);
+					window.ga("send", "event", "Action", "Download", "Tachiyomi Preview");
 				}
 			});
 		}
