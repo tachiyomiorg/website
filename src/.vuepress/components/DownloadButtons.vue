@@ -84,9 +84,7 @@ export default {
 			window.location.assign(
 				this.$props.downloadStableUrl || this.$data.browserDownloadUrl || RELEASE_URL
 			);
-			window.ga("send", "event", "Button", "Click", {
-				'dimension1': this.$page.title, 'dimension2': this.$props.downloadStableTag
-			});
+			window.ga("send", "event", "Action", "Download", this.downloadStableLabel);
 		},
 		downloadPreview() {
 			this.$swal({
@@ -111,9 +109,7 @@ export default {
 			window.location.assign(
 				this.$props.downloadPreviewUrl || PREVIEW_URL
 			);
-			window.ga("send", "event", "Button", "Click", {
-				'dimension1': this.$page.title, 'dimension2': this.$props.downloadPreviewTag
-			});
+			window.ga("send", "event", "Action", "Download", this.downloadPreviewLabel);
 		}
 	}
 };
