@@ -84,7 +84,7 @@ export default {
 			window.location.assign(
 				this.$props.downloadStableUrl || this.$data.browserDownloadUrl || RELEASE_URL
 			);
-			window.ga("send", "event", "Action", "Download", this.downloadStableLabel);
+			window.ga("send", "event", "Action", "Download", this.downloadStableTag);
 		},
 		downloadPreview() {
 			this.$swal({
@@ -109,7 +109,7 @@ export default {
 			window.location.assign(
 				this.$props.downloadPreviewUrl || PREVIEW_URL
 			);
-			window.ga("send", "event", "Action", "Download", this.downloadPreviewLabel);
+			window.ga("send", "event", "Action", "Download", this.downloadPreviewTag);
 		}
 	}
 };
