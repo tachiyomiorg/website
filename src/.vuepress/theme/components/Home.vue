@@ -135,8 +135,9 @@ export default {
 					window.location.assign(
 						this.$data.browserDownloadUrl || RELEASE_URL
 					);
-					window.ga("set", { 'dimension1': 'Home', 'dimension2': 'Tachiyomi' });
-					window.ga("send", "event", "Button", "Click", "User download");
+					window.ga("send", "event", "Button", "Click", {
+						'dimension1': 'Home', 'dimension2': 'Tachiyomi'
+					});
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
 						title: "Downloading",
@@ -160,8 +161,9 @@ export default {
 					window.location.assign(
 						PREVIEW_URL
 					);
-					window.ga("set", { 'dimension1': 'Home', 'dimension2': 'Tachiyomi' });
-					window.ga("send", "event", "Button", "Click", "User download");
+					window.ga("send", "event", "Button", "Click", {
+						'dimension1': 'Home', 'dimension2': 'Tachiyomi Preview'
+					});
 				}
 			});
 		}
