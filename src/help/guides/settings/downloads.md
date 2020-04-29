@@ -15,7 +15,7 @@ This setting allows you to set where downloads are to be read from and downloade
 This setting makes the [Download new chapters](#download-new-chapters) option only download when you're connected to Wi-Fi, and not data.
 
 ## Remove when marked as read <Badge text="False" type="default-indicator" vertical="middle"/>
-This setting removes a downloaded chapter after you've used the overflow (3 dot menu next to each chapter) and marked it as read.
+This setting removes a downloaded chapter after you've used the <Navigation item="old_overflow"/> and marked it as read.
 
 ## Remove after read <Badge text="Disabled" type="default-indicator" vertical="middle"/>
 This setting removes a downloaded chapter after you've reached the last page and exited the reader.

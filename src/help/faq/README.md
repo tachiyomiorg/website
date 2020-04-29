@@ -11,17 +11,17 @@ sidebarDepth: 2
 ### Library
 
 #### How can I see how many chapters I've downloaded?
-This can be done by enabling **Download badges** under **<MaterialIcon icon-name="class"/> My library**.
+This can be done by enabling **Download badges** under <Navigation item="old_library"/>.
 
 ::: guide
-Enable it by going to **<MaterialIcon icon-name="class"/> My library** → **<MaterialIcon icon-name="filter_list"/> Filter** → **Display** section then checking the **Download badges** option in the bottom.
+Enable it by going to <Navigation item="old_library"/> → <Navigation item="filter"/> → **Display** section then checking the **Download badges** option in the bottom.
 :::
 
 #### Some covers are white after restoring from backup
 The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
 
 ::: guide
-Refresh your metadata by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="code"/> Advanced](/help/guides/settings/advanced)** then pressing **[Refresh library metadata](/help/guides/settings/advanced/#refresh-library-metadata)**.
+Refresh your metadata by going to <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **[Refresh library metadata](/help/guides/settings/advanced/#refresh-library-metadata)**.
 ::: aside
 Read more [here](/help/guides/settings/advanced/#refresh-library-metadata)
 :::
@@ -30,7 +30,7 @@ Read more [here](/help/guides/settings/advanced/#refresh-library-metadata)
 Every now and then you find a manga that is translated by more than one group, because of this you get multiple releases for every chapter in the manga. To fix this the easiest way is to change sorting to **Total chapters**. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
 
 ::: guide
-Change library sorting by going to **<MaterialIcon icon-name="class"/> My library** → **<MaterialIcon icon-name="filter_list"/> Filter** → **Sort** section then in this case selecting **Total chapters**.
+Change library sorting by going to <Navigation item="old_library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
 :::
 
 #### Why do I see `attempt to invoke virtual method 'com.hippo.unifile...`?
@@ -83,7 +83,7 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 #### How do I enable automatic updates?
 The **Tachiyomi** app now has in-app updating for both stable and preview versions. It happens automatically in the background if you got **[Check for updates](/help/guides/settings/about/#check-for-updates)** enabled.
 ::: guide
-If you go to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="help"/> About](/help/guides/settings/about)** you will find the **[Check for updates](/help/guides/settings/about/#check-for-updates)** toggle, you can also press **[Version](/help/guides/settings/about/#version)** to force check for updates.
+If you go to <Navigation item="settings"/> → <Navigation item="old_about"/> you will find the **[Check for updates](/help/guides/settings/about/#check-for-updates)** toggle, you can also press **[Version](/help/guides/settings/about/#version)** to force check for updates.
 :::
 
 ### User Interface
@@ -92,7 +92,7 @@ If you go to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/sett
 Only the UI has been localized, language in manga will still be using the language of the source selected.
 
 ::: guide
-You can change language by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="tune"/> General](/help/guides/settings/general)** then pressing **[Language](/help/guides/settings/general/#language)**.
+You can change language by going to <Navigation item="settings"/> → <Navigation item="settings_general"/> then pressing **[Language](/help/guides/settings/general/#language)**.
 ::: aside
 Read more [here](/help/guides/settings/general/#language)
 :::
@@ -188,11 +188,11 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your phones settings or you go can do it in the app.
 
 ::: guide
-To uninstall an extension from within **Tachiyomi**, go to **<MaterialIcon icon-name="extension"/> Extensions** then tap **Uninstall** on the extension you want to remove.
+To uninstall an extension from within **Tachiyomi**, go to <Navigation item="old_extensions"/> then tap **Uninstall** on the extension you want to remove.
 :::
 
 #### Why don't I have extensions or any sources in the catalogue?
-- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the **<MaterialIcon icon-name="extension"/> Extensions** menu.
+- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="old_extensions"/> menu.
 - If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use. Which number in the menu corresponds to which is below.
 
 ::: expander <strong>Click to expand!</strong>
@@ -215,10 +215,10 @@ Read more about Batoto shutting down [here](https://goboiano.com/manga-scanlatio
 :::
 
 #### Why are my extensions not showing up in Catalogues?
-If you've freshly reinstalled the **Tachiyomi** app, the installed extensions might not show up in **<MaterialIcon icon-name="explore"/> Catalogues** until you enable them.
+If you've freshly reinstalled the **Tachiyomi** app, the installed extensions might not show up in <Navigation item="old_catalogues"/> until you enable them.
 
 ::: guide GUIDE
-To fix this, go to **<MaterialIcon icon-name="explore"/> Catalogues**→**[<MaterialIcon icon-name="settings"/> Sources](/help/guides/catalogues/#sources)**. Now you can proceed to enabling your desired sources.
+To fix this, go to <Navigation item="old_catalogues"/> → **Sources**. Now you can proceed to enabling your desired sources.
 :::
 
 #### Why can't I restore my backup?
@@ -229,8 +229,8 @@ To restore backups, **Tachiyomi** requires to have extensions installed for the 
 It might be because the title is worded differently. Follow any of the steps below:
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single site will not satisfy all your needs.
-- Download the extension for that source from **<MaterialIcon icon-name="extension"/> Extensions** if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
-- Go to **<MaterialIcon icon-name="explore"/> Catalogues** → **[Browse](/help/guides/catalogues/#browse)** on a source then search for the manga again.
+- Download the extension for that source from <Navigation item="old_extensions"/> if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
+- Go to <Navigation item="old_catalogues"/> → <Navigation item="browse"/> on a source then search for the manga again.
 
 
 #### Some common errors you might encounter
@@ -248,10 +248,10 @@ This means that the manga has been licensed and can no longer be read on that so
 The source you selected may have Cloudflare protection on and is enforcing CAPTCHAs.
 
 1. Find a manga in your library that is from the source you're trying to access
-1. Tap on the overflow menu in the Info tab (3 dots)
-1. Open in Webview
-1. Complete the CAPTCHA if present and wait for the page to finish loading
-1. Press back rather than exiting the app and if that does not work, use the back arrow
+2. Tap on the <Navigation item="old_overflow"/> in the **Info** tab
+3. Open in WebView
+4. Complete the CAPTCHA if present and wait for the page to finish loading
+5. Press back rather than exiting the app and if that does not work, use the back arrow
 
 ### MangaDex
 
@@ -259,7 +259,7 @@ The source you selected may have Cloudflare protection on and is enforcing CAPTC
 If you're not getting any results when searching MangaDex then you need to log in. To do so enter the **WebView** for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
 
 ::: guide
-To enter the **WebView** go to **<MaterialIcon icon-name="explore"/> Catalogues** → **[Browse](/help/guides/catalogues/#browse)**/**[Latest](/help/guides/catalogues/#latest)** next to **MangaDex**, open any manga from the list and then press the **<MaterialIcon icon-name="more_vert"/> Overflow menu** in the top-right corner and then press **Open in web view**.
+To enter the **WebView** go to <Navigation item="old_catalogues"/> → <Navigation item="browse"/>/<Navigation item="latest"/> next to **MangaDex**, open any manga from the list and then press the <Navigation item="old_overflow"/> in the top-right corner and then press **Open in web view**.
 :::
 
 ::: expander <strong>Click to reveal video guide!</strong>
@@ -313,14 +313,14 @@ It's not currently possible to restore backup from MangaRock officially, as the 
 
 1. Uninstall the MangaRock extension.
 1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file.
-1. Go to **<MaterialIcon icon-name="extension"/> Extensions** menu and press **Trust** to proceed.
+1. Go to <Navigation item="old_extensions"/> menu and press **Trust** to proceed.
 1. Restore backup.
 
 #### Why do I get `Value url at 0 of type java.lang.String cannot be converted to JSONObject`?
 If you get this error when opening **MangaRock** chapters, try clearing your chapter cache.
 
 ::: guide
-Chapter cache can be cleared by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="code"/> Advanced](/help/guides/settings/advanced)** then pressing [Clear chapter cache](/help/guides/settings/advanced/#clear-chapter-cache).
+Chapter cache can be cleared by going to <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing [Clear chapter cache](/help/guides/settings/advanced/#clear-chapter-cache).
 ::: aside
 Read more about clearing chapter cache [here](/help/guides/settings/advanced/#clear-chapter-cache)
 :::
