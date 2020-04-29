@@ -16,10 +16,10 @@ Backups can hold the following information:
 
 ## Restoring
 
-Restoring is done from the [<MaterialIcon icon-name="cloud_upload"/> Backup](/help/guides/backup) settings. To restore without issues be sure to:
+Restoring is done from the [<MaterialIcon icon-name="cloud_upload"/> Backup](/help/guides/settings/backup) settings. To restore without issues be sure to:
 
 * Install all the <MaterialIcon icon-name="extension"/> Extensions that were installed at the time of the backup.
-* Log into the [<MaterialIcon icon-name="autorenew"/> Tracking](/help/guides/tracking) services that you use.
+* Log into the [<MaterialIcon icon-name="autorenew"/> Tracking](/help/guides/settings/tracking) services that you use.
 * Log into **MangaDex** using **Webview** [as explained here](/help/faq/#no-results-when-searching).
 * You're able to access all the sources through the **WebView**.
 * Be on a consistent internet connection.
@@ -29,7 +29,7 @@ Restoring is done from the [<MaterialIcon icon-name="cloud_upload"/> Backup](/he
 You can transfer downloaded manga chapters from one version of **Tachiyomi** to another.
 
 ::: guide
-You can do this by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → [<MaterialIcon icon-name="get_app"/> Downloads](/help/guides/downloads) and then set the download directory to that of the download folder of your old **Tachiyomi**, then restore the backup.
+You can do this by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → [<MaterialIcon icon-name="get_app"/> Downloads](/help/guides/settings/downloads) and then set the download directory to that of the download folder of your old **Tachiyomi**, then restore the backup.
 :::
 
 ## Turning on auto-backups
@@ -37,7 +37,7 @@ You can do this by going to **[<MaterialIcon icon-name="settings"/> Settings](/h
 It is highly recommended you turn on auto backups, this will ensure you can recover if need be.
 
 ::: guide
-You can do this by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → [<MaterialIcon icon-name="cloud_upload"/> Backup](/help/guides/backup) and then setting a [backup frequency](/help/guides/backup/#backup-frequency). In the case of a catastrophic failure, at least you will be able to recover.
+You can do this by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → [<MaterialIcon icon-name="cloud_upload"/> Backup](/help/guides/settings/backup) and then setting a [backup frequency](/help/guides/settings/backup/#backup-frequency). In the case of a catastrophic failure, at least you will be able to recover.
 :::
 
 ## Forks information

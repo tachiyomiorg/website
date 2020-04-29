@@ -21,9 +21,9 @@ Enable it by going to **<MaterialIcon icon-name="class"/> My library** → **<Ma
 The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
 
 ::: guide
-Refresh your metadata by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → **[<MaterialIcon icon-name="code"/> Advanced](/help/guides/advanced)** then pressing **[Refresh library metadata](/help/guides/advanced/#refresh-library-metadata)**.
+Refresh your metadata by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="code"/> Advanced](/help/guides/settings/advanced)** then pressing **[Refresh library metadata](/help/guides/settings/advanced/#refresh-library-metadata)**.
 ::: aside
-Read more [here](/help/guides/advanced/#refresh-library-metadata)
+Read more [here](/help/guides/settings/advanced/#refresh-library-metadata)
 :::
 
 #### How do I ignore chapters from certain scanlator groups?
@@ -81,9 +81,9 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 
 ### Application Updates
 #### How do I enable automatic updates?
-The **Tachiyomi** app now has in-app updating for both stable and preview versions. It happens automatically in the background if you got **[Check for updates](/help/guides/about/#check-for-updates)** enabled.
+The **Tachiyomi** app now has in-app updating for both stable and preview versions. It happens automatically in the background if you got **[Check for updates](/help/guides/settings/about/#check-for-updates)** enabled.
 ::: guide
-If you go to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → **[<MaterialIcon icon-name="help"/> About](/help/guides/about)** you will find the **[Check for updates](/help/guides/about/#check-for-updates)** toggle, you can also press **[Version](/help/guides/about/#version)** to force check for updates.
+If you go to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="help"/> About](/help/guides/settings/about)** you will find the **[Check for updates](/help/guides/settings/about/#check-for-updates)** toggle, you can also press **[Version](/help/guides/settings/about/#version)** to force check for updates.
 :::
 
 ### User Interface
@@ -92,9 +92,9 @@ If you go to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/sett
 Only the UI has been localized, language in manga will still be using the language of the source selected.
 
 ::: guide
-You can change language by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → **[<MaterialIcon icon-name="tune"/> General](/help/guides/general)** then pressing **[Language](/help/guides/general/#language)**.
+You can change language by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="tune"/> General](/help/guides/settings/general)** then pressing **[Language](/help/guides/settings/general/#language)**.
 ::: aside
-Read more [here](/help/guides/general/#language)
+Read more [here](/help/guides/settings/general/#language)
 :::
 
 ### Miscellaneous
@@ -115,7 +115,7 @@ There is currently no iOS version and there are no plans for one and since iOS a
 **Tachiyomi** is still in beta and some design changes or unexpected errors may lead to data loss. While we try for them not to happen, sometimes it is unavoidable. To avoid this in the future, you can use the automatic backup feature.
 
 ::: aside
-Learn how to backup [here](/help/guides/backup/)
+Learn how to backup [here](/help/guides/settings/backup/)
 :::
 
 ## Extensions
@@ -320,9 +320,9 @@ It's not currently possible to restore backup from MangaRock officially, as the 
 If you get this error when opening **MangaRock** chapters, try clearing your chapter cache.
 
 ::: guide
-Chapter cache can be cleared by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings)** → **[<MaterialIcon icon-name="code"/> Advanced](/help/guides/advanced)** then pressing [Clear chapter cache](/help/guides/advanced/#clear-chapter-cache).
+Chapter cache can be cleared by going to **[<MaterialIcon icon-name="settings"/> Settings](/help/guides/settings/)** → **[<MaterialIcon icon-name="code"/> Advanced](/help/guides/settings/advanced)** then pressing [Clear chapter cache](/help/guides/settings/advanced/#clear-chapter-cache).
 ::: aside
-Read more about clearing chapter cache [here](/help/guides/advanced/#clear-chapter-cache)
+Read more about clearing chapter cache [here](/help/guides/settings/advanced/#clear-chapter-cache)
 :::
 
 ### Madara
