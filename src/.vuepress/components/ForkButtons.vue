@@ -75,13 +75,7 @@ export default {
 			window.location.assign(
 				this.$data.browserDownloadUrl || this.$props.downloadLink
 			);
-			window.ga(
-				"send",
-				"event",
-				"Button",
-				"Click",
-				this.$props.forkName + " download - Forks"
-			);
+			window.ga("send", "event", "Action", "Download", this.$props.forkName);
 		}
 	}
 };

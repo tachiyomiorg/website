@@ -1,10 +1,10 @@
 <template>
 	<div class="downloadContainer">
 		<button class="downloadStableButton" @click="downloadStable">
-			Stable
+			{{ downloadStableLabel }}
 		</button>
 		<button class="downloadPreviewButton" @click="downloadPreview">
-			Preview
+			{{ downloadPreviewLabel }}
 		</button>
 	</div>
 </template>
@@ -15,11 +15,39 @@ import axios from "axios";
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
+const PREVIEW_URL =
+	"https://tachiyomi.kanade.eu/latest";
+
 export default {
+	props: {
+		downloadStableTag: {
+			type: String,
+			required: true
+		},
+		downloadPreviewTag: {
+			type: String,
+			required: true
+		},
+		downloadStableLabel: {
+			type: String,
+			default: "Stable"
+		},
+		downloadPreviewLabel: {
+			type: String,
+			default: "Preview"
+		},
+		downloadStableUrl: {
+			type: String
+		},
+		downloadPreviewUrl: {
+			type: String
+		}
+	},
+
 	data() {
 		return {
 			tagName: "",
-			browserDownloadUrl: ""
+			browserDownloadUrl: "",
 		};
 	},
 
@@ -36,7 +64,7 @@ export default {
 		downloadStable() {
 			this.$swal({
 				title: "Downloading",
-				text: "Stable version is being downloaded.",
+				text: this.downloadStableLabel + " version is being downloaded.",
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -54,20 +82,14 @@ export default {
 				}
 			});
 			window.location.assign(
-				this.$data.browserDownloadUrl || RELEASE_URL
+				this.$props.downloadStableUrl || this.$data.browserDownloadUrl || RELEASE_URL
 			);
-			window.ga(
-				"send",
-				"event",
-				"Button",
-				"Click",
-				"Stable download - Getting Started"
-			);
+			window.ga("send", "event", "Action", "Download", this.downloadStableTag);
 		},
 		downloadPreview() {
 			this.$swal({
 				title: "Downloading",
-				text: "Preview version is being downloaded.",
+				text: this.downloadPreviewLabel + " version is being downloaded.",
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -84,14 +106,10 @@ export default {
 					popup: "animated zoomOut faster"
 				}
 			});
-			window.location.assign("https://tachiyomi.kanade.eu/latest");
-			window.ga(
-				"send",
-				"event",
-				"Button",
-				"Click",
-				"Dev download - Getting Started"
+			window.location.assign(
+				this.$props.downloadPreviewUrl || PREVIEW_URL
 			);
+			window.ga("send", "event", "Action", "Download", this.downloadPreviewTag);
 		}
 	}
 };
