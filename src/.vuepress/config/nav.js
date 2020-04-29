@@ -5,10 +5,7 @@ module.exports = [
 		items: [
 			{
 				text: "Frequently Asked Questions",
-				items: [
-					{ text: "Application", link: "/help/faq/application" },
-					{ text: "Extensions", link: "/help/faq/extensions" }
-				]
+				link: "/help/faq/"
 			},
 			{
 				text: "Guides",

@@ -36,7 +36,7 @@ module.exports = [
 	},
 	{
 		title: 'Frequently Asked Questions',
-		path: '/help/faq/application',
+		path: '/help/faq/',
 	},
 	{
 		title: 'Forks',

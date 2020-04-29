@@ -27,7 +27,7 @@ Now that Tachiyomi is installed, open the app and navigate to the `Extensions` t
 In this guide we will use MangaDex, our most popular extension.
 Press the `Install` button and accept the installation prompt that will be shown.
 
-If you're getting stopped by a security prompt and don't know what to do you can read this FAQ section: ["How do I allow third-party installations?"](/help/faq/extensions/#how-do-i-allow-third-party-installations).
+If you're getting stopped by a security prompt and don't know what to do you can read this FAQ section: ["How do I allow third-party installations?"](/help/faq/#how-do-i-allow-third-party-installations).
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
