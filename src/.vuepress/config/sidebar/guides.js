@@ -23,13 +23,13 @@ module.exports = [
 				collapsable: false,
 				sidebarDepth: 2,
 				children: [
-					'/help/guides/general',
-					'/help/guides/reader',
-					'/help/guides/downloads',
-					'/help/guides/tracking',
-					'/help/guides/backup',
-					'/help/guides/advanced',
-					'/help/guides/about'
+					'/help/guides/settings/general',
+					'/help/guides/settings/reader',
+					'/help/guides/settings/downloads',
+					'/help/guides/settings/tracking',
+					'/help/guides/settings/backup',
+					'/help/guides/settings/advanced',
+					'/help/guides/settings/about'
 				]
 			}
 		]
