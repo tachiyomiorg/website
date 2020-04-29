@@ -24,10 +24,6 @@ module.exports = {
 		lastUpdated: 'Last Updated'
 	},
 	plugins: require('./config/plugins'),
-	markdown: {
-		toc: { includeLevel: [ 1, 2 ] },
-		extractHeaders: [ 'h1', 'h2', 'h3', 'h4' ]
-	},
 	extraWatchFiles: [
 		'.vuepress/config/nav.js',
 		'.vuepress/config/plugins.js',
