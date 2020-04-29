@@ -6,8 +6,6 @@ sidebarDepth: 2
 
 # Frequently Asked Questions
 
-[[toc]]
-
 ## Application
 
 ### Library
@@ -17,6 +15,7 @@ This can be done by enabling **Download badges** under **<MaterialIcon icon-name
 
 ::: guide
 Enable it by going to **<MaterialIcon icon-name="class"/> My library** → **<MaterialIcon icon-name="filter_list"/> Filter** → **Display** section then checking the **Download badges** option in the bottom.
+:::
 
 #### Some covers are white after restoring from backup
 The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
@@ -32,6 +31,7 @@ Every now and then you find a manga that is translated by more than one group, b
 
 ::: guide
 Change library sorting by going to **<MaterialIcon icon-name="class"/> My library** → **<MaterialIcon icon-name="filter_list"/> Filter** → **Sort** section then in this case selecting **Total chapters**.
+:::
 
 #### Why do I see `attempt to invoke virtual method 'com.hippo.unifile...`?
 This error can be caused by a variety of reasons, all to do with storage.
@@ -229,7 +229,7 @@ To restore backups, **Tachiyomi** requires to have extensions installed for the 
 It might be because the title is worded differently. Follow any of the steps below:
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single site will not satisfy all your needs.
-- Download the extension for that source from **<MaterialIcon icon-name="extension"/> Extensions** if it exists, read [this](/help/faq/extensions/#which-sources-are-there-in-the-multi-source-extensions) for a list of which extensions contains what sources.
+- Download the extension for that source from **<MaterialIcon icon-name="extension"/> Extensions** if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
 - Go to **<MaterialIcon icon-name="explore"/> Catalogues** → **[Browse](/help/guides/catalogues/#browse)** on a source then search for the manga again.
 
 
@@ -273,7 +273,7 @@ To enter the **WebView** go to **<MaterialIcon icon-name="explore"/> Catalogues*
 ::: tip
 Make sure you're on app version **0.8.4** or higher.
 ::: aside
-Make sure you stay up to date by reading [this](/help/faq/application/#how-do-i-enable-automatic-updates)
+Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::
 
 #### Alternate searching method
