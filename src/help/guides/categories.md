@@ -21,7 +21,7 @@ To make a category, go to <Navigation item="old_library"/>, then click on the <N
 
 ## Edit a Category
 
-You can edit a Category in <Navigation item="old_library"/> > <Navigation item="old_overflow"/> > **Edit categories** then long press the category you want to edit, then press the pencil icon.
+You can edit a Category in <Navigation item="old_library"/> → <Navigation item="old_overflow"/> → **Edit categories** then long press the category you want to edit, then press the pencil icon.
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
@@ -35,7 +35,7 @@ You can edit a Category in <Navigation item="old_library"/> > <Navigation item="
 
 You can change the order of Categories, such as bringing a certain Category to the top. This category will appear as the first tab on <Navigation item="old_library"/>.
 
-To do this, go to <Navigation item="old_library"/> > <Navigation item="old_overflow"/> > **Edit categories** then drag the triple bar icon **(`≡`)** up or down.
+To do this, go to <Navigation item="old_library"/> → <Navigation item="old_overflow"/> → **Edit categories** then drag the triple bar icon **(`≡`)** up or down.
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
@@ -47,7 +47,7 @@ To do this, go to <Navigation item="old_library"/> > <Navigation item="old_overf
 
 ## Delete a Category
 
-You can delete a Category in <Navigation item="old_library"/> > <Navigation item="old_overflow"/> > **Edit categories** then long press the category you want to delete, and press the trash can icon (<MaterialIcon icon-name="delete"/>).
+You can delete a Category in <Navigation item="old_library"/> → <Navigation item="old_overflow"/> → **Edit categories** then long press the category you want to delete, and press the trash can icon (<MaterialIcon icon-name="delete"/>).
 
 ::: expander <strong>Click to reveal video guide!</strong>
 <figure class="centered">
