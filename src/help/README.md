@@ -6,4 +6,4 @@ sidebar: false
 
 # Help
 
-Choose between [guides](guides/general/) and [frequently asked questions](faq/application/).
+Choose between [guides](guides/getting-started/) and [frequently asked questions](faq/).
