@@ -64,7 +64,7 @@ export default {
 				bookmarked: { text: "In library", icon: "favorite" },
 				set_categories: { text: "Set categories", icon: "label" },
 				share: { text: "Share", icon: "share" },
-				WebView: { text: "WebView", icon: "public" },
+				webview: { text: "WebView", icon: "public" },
 				/* Sources */
 				latest: { text: "LATEST" },
 				browse: { text: "BROWSE" },
