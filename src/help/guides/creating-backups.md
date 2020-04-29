@@ -20,7 +20,7 @@ Restoring is done from the [<MaterialIcon icon-name="cloud_upload"/> Backup](/he
 
 * Install all the <MaterialIcon icon-name="extension"/> Extensions that were installed at the time of the backup.
 * Log into the [<MaterialIcon icon-name="autorenew"/> Tracking](/help/guides/tracking) services that you use.
-* Log into **MangaDex** using **Webview** [as explained here](/help/faq/extensions/#no-results-when-searching).
+* Log into **MangaDex** using **Webview** [as explained here](/help/faq/#no-results-when-searching).
 * You're able to access all the sources through the **WebView**.
 * Be on a consistent internet connection.
 
