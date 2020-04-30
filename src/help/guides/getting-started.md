@@ -25,7 +25,7 @@ Find the extension that you'd like to use then press the <Navigation item="insta
 ::: guide Security prompt
 You *might* be stopped by a security prompt while attempting to install an extension. If that were to happen then you need to allow <Navigation item="tachiyomi"/> the permission to *install unknown apps*.
 ::: aside
-Learn how you can do so [here](/help/faq/extensions/#how-do-i-allow-third-party-installations)
+Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installations)
 :::
 
 ## Adding manga to your library
@@ -41,5 +41,5 @@ To find and add manga, you can now use either the <Navigation item="button_lates
 Now that you've presumably found manga that you want to add, click on it and then press the <Navigation item="bookmark"/> button, it should now appear in your <Navigation item="library"/> ready to be read!
 
 ::: guide Global search
-You can search for manga across all your sources by using <Navigation item="search"/> located in the top-right of the <Navigation item="sources"/> tab.
+You can search for manga globally across all your sources by using <Navigation item="search"/> located in the top-right of <Navigation item="browse"/> → <Navigation item="tab_sources"/>.
 :::
