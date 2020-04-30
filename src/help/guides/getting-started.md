@@ -41,7 +41,7 @@ If you're getting stopped by a security prompt and don't know what to do you can
 
 Now that you've installed the MangaDex extension it should show up in the <Navigation item="old_catalogues"/> tab. The items appearing here are called **Sources** (can also be called **Catalogues**), an extension can contains *multiple* sources.
 
-To find and add manga, you can now either use the <Navigation item="latest"/> button on your source, or you can use <Navigation item="browse"/> and search for it.
+To find and add manga, you can now either use the <Navigation item="button_latest"/> button on your source, or you can use <Navigation item="button_browse"/> and search for it.
 
 Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.
 
