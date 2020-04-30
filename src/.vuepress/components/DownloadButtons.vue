@@ -37,10 +37,12 @@ export default {
 			default: "Preview"
 		},
 		downloadStableUrl: {
-			type: String
+			type: String,
+			default: undefined
 		},
 		downloadPreviewUrl: {
-			type: String
+			type: String,
+			default: undefined
 		}
 	},
 
