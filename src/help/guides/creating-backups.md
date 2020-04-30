@@ -18,7 +18,7 @@ Backups can hold the following information:
 
 Restoring is done from the <Navigation item="old_backup"/> settings. To restore without issues be sure to:
 
-* Install all the <Navigation item="extensions"/> Extensions that were installed at the time of the backup.
+* Install all the <Navigation item="tab_extensions"/> that were installed at the time of the backup.
 * Log into the <Navigation item="settings_tracking"/> services that you use.
 * Log into **MangaDex** using **WebView** [as explained here](/help/faq/#no-results-when-searching).
 * You're able to access all the sources through the **WebView**.
