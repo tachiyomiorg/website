@@ -1,8 +1,5 @@
 <template>
-	<i v-if="iconOnly" class="material-icons">{{ iconName }}</i>
-	<div v-else-if="legacy" :class="name" class="material-holder">
-		<i :class="iconName" class="material-legacy-icons mdi"></i>
-	</div>
+	<i v-if="iconOnly" :class="name" class="material-icons">{{ iconName }}</i>
 	<div v-else :class="name" class="material-holder">
 		<i class="material-icons">{{ iconName }}</i>
 	</div>
@@ -12,17 +9,10 @@
 /**
  * For material icon references use https://material.io/resources/icons/
  * Code example: <MaterialIcon iconName="android" />
- *
- * For material icon references use https://materialdesignicons.com/
- * Code example: <MaterialIcon iconName="mdi-glasses" legacy />
  */
 export default {
 	props: {
 		iconOnly: {
-			type: Boolean,
-			default: false
-		},
-		legacy: {
 			type: Boolean,
 			default: false
 		},
@@ -63,8 +53,4 @@ export default {
 	font-feature-settings 'liga'
 	-webkit-font-smoothing antialiased
 
-.material-legacy-icons
-	font-family 'Material Design Icons'
-	font-size 1.35em
-	font-style normal
 </style>
