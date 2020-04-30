@@ -30,8 +30,6 @@ export default {
 
 	async mounted() {
 		const { data } = await axios.get(RELEASE_URL);
-		// Maybe eventually some release has more than the apk in assets.
-		const apkAsset = data.assets.find(a => a.name.includes(".apk"));
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 	},
