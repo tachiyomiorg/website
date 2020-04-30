@@ -1,6 +1,6 @@
 <template>
 	<span v-if="nav.link" class="app-navigation" title="App navigation">
-		<a class="app-link" :href="nav.link">
+		<a class="app-link" :href="nav.link + entry">
 			<MaterialIcon v-if="nav.icon" class="app-icon" :iconName="nav.icon" />
 			<span class="app-label">{{ nav.text }}</span>
 			<slot />
@@ -23,6 +23,10 @@ export default {
 			type: String,
 			required: true,
 		},
+		entry: {
+			type: String,
+			default: "",
+		},
 	},
 	computed: {
 		nav() {
@@ -43,7 +47,7 @@ export default {
 				extensions: { text: "Extensions", icon: "extension" },
 				download_queue: { text: "Download queue", icon: "get_app" },
 				source_migration: { text: "Source migration", icon: "compare_arrows" },
-				settings: { text: "Settings", icon: "settings" },
+				settings: { text: "Settings", icon: "settings", link: "/help/guides/settings/" },
 				about: { text: "About", icon: "info" },
 				help: { text: "Help", icon: "help" },
 				/* Settings */
@@ -64,6 +68,13 @@ export default {
 				/* Sources */
 				latest: { text: "LATEST" },
 				browse: { text: "BROWSE" },
+				/* Legacy */
+				old_library: { text: "My library", icon: "class" },
+				old_about: { text: "About", icon: "help", link: "/help/guides/settings/about" },
+				old_catalogues: { text: "Catalogues", icon: "explore" },
+				old_overflow: { text: "Overflow menu", icon: "more_vert" },
+				old_backup: { text: "Backup", icon: "cloud_upload", link: "/help/guides/settings/backup" },
+				old_extensions: { text: "Extensions", icon: "extension" },
 			}[this.item];
 		},
 	},

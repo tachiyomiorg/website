@@ -38,7 +38,7 @@ How the app looks and what colors are used through the app. There are four theme
 This setting allows you to set how many manga show up per row. It can be between 1 and 10 and can be set to differing amounts depending on the orientation you want.
 
 ## Start screen <Badge text="My library" type="default-indicator" vertical="middle"/>
-This setting changes what screen the app opens up to. It can be changed between `My library`, `Recently read` and `Library updates`.
+This setting changes what screen the app opens up to. It can be changed between **My library**, **Recently read** and **Library updates**.
 
 ## Library update frequency <Badge text="Manual" type="default-indicator" vertical="middle"/>
 This setting changes how often the app automatically scans bookmarked manga for chapter updates. It can be changed from preset values between hourly and every 2 days.

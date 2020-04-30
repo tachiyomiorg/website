@@ -8,7 +8,7 @@ lang: en-US
 Migration is the process of moving manga from one source to another while keeping your current progress and data. This is used often when a source is no longer accessible or you want to move it off one source to another for a myriad of reasons.
 
 ::: guide
-1. Go to **<MaterialIcon icon-name="class"/> My library**, open the **<MaterialIcon icon-name="more_vert"/> Overflow menu**, and then tap **<MaterialIcon icon-name="compare_arrows"/> Source migration**.
+1. Go to <Navigation item="old_library"/>, open the <Navigation item="old_overflow"/>, and then tap <Navigation item="source_migration"/>.
 1. Select the **Source** you're migrating from.
 1. Find and select the title that you want to migrate.
 

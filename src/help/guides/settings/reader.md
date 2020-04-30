@@ -22,7 +22,7 @@ This setting sets the reader's default direction when you open a manga.
 - Webtoon is like vertical but stitches all the images together into one stream.
 
 ::: tip
-You can have different Viewer for different series. You can do this by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in `Viewer for this series`
+You can have different Viewer for different series. You can do this by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**
 :::
 
 ## Scale type <Badge text="Fit screen" type="default-indicator" vertical="middle" />
@@ -75,7 +75,7 @@ All examples are illustrations and may not reflect what actually happens.
 </Carousel>
 
 ::: tip
-You can change scale type when reading a chapter. Tap the middle of the screen, press the gear icon at the top, select a different scale type under `Scale type`. This will change Scale type for all series.
+You can change scale type when reading a chapter. Tap the middle of the screen, press the gear icon at the top, select a different scale type under **Scale type**. This will change Scale type for all series.
 :::
 
 ## Zoom start position <Badge text="Automatic" type="default-indicator" vertical="middle" />
@@ -111,13 +111,16 @@ All examples are illustrations
 </Carousel>
 
 ## Rotation <Badge text="Free" type="default-indicator" vertical="middle" />
-This allows you to control how the screen is going to be oriented. `Free` lets you rotate the screen between portrait and
-landscape. `Lock` will lock the orientation to whatever orientation you had before entering the reader. `Force Portrait`
-forces the reader to be in portrait. `Force Landscape` forces the reader to be in landscape.
+This allows you to control how the screen is going to be oriented.
+
+- **Free** lets you rotate the screen between portrait and landscape.
+- **Lock** will lock the orientation to whatever orientation you had before entering the reader.
+- **Force Portrait** forces the reader to be in portrait.
+- **Force Landscape** forces the reader to be in landscape.
 
 ## Background color <Badge text="White" type="default-indicator" vertical="middle" />
-This allows you to control what color the background should be in reader. Background color can either be `Black` or
-`White`.
+This allows you to control what color the background should be in reader. Background color can either be **Black** or
+**White**.
 
 <Carousel name="carousel-background-color">
 <CarouselItem>
@@ -140,7 +143,7 @@ This allows you to control what color the background should be in reader. Backgr
 Double tap animation speed changes the speed in which the zoom happens when double tapping.
 
 ## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
-This setting allows the chapters marked as read to be skipped during reading. To mark a chapter as read, tap the overflow (three-dot) icon and press 'Mark as Read.'
+This setting allows the chapters marked as read to be skipped during reading. To mark a chapter as read, tap the <Navigation item="old_overflow"/> and press **Mark as Read**.
 This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
 
 ## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
@@ -153,7 +156,7 @@ This setting determines if the device should be allowed to go to sleep while rea
 This settings shows the page number at the bottom of the page in current page/total page format.
 
 ## 32-bit color <Badge text="False" type="default-indicator" vertical="middle" />
-This setting decodes images in ARGB888 format to allow the reader to display more colors.
+This setting decodes images in `ARGB888` format to allow the reader to display more colors.
 
 ::: warning
 This setting will only show up on smartphones running Android 8.0 Oreo and later versions.
