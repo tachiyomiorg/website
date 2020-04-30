@@ -13,14 +13,14 @@ sidebar: false
 
 This fork adds certain enhancements that is not yet present in the base app.
 
-<img :src="$withBase('/assets/media/fork-J2K-banner.gif')"/>
+<img :src="$withBase('/assets/media/fork-J2K-banner.png')"/>
 
 ## Features
 ::: aside-guide
 For a full list of features, visit the GitHub page.
 :::
 
-- **New Manga details screens**
+- **New Manga details screen**
 - **New Recents page**
   - Providing quick access to newly added manga, new chapters, and to continue where you left on in a series
 - **Android 10 Edge to Edge support**
