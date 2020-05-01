@@ -10,7 +10,7 @@ features:
       image: /assets/media/my-library.png
     - title: Tracking
       details: Automatically keep track of your manga with MyAnimeList, AniList, Kitsu and Shikimori.
-      image: /assets/media/catalogues.png
+      image: /assets/media/browse.png
     - title: Configurable
       details: Reader with multiple viewers, reading directions and other settings.
       image: /assets/media/manga.png
