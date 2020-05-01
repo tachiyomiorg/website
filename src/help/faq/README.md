@@ -271,7 +271,7 @@ To enter the **WebView** go to <Navigation item="old_catalogues"/> → <Navigati
 :::
 
 ::: tip
-Make sure you're on app version **0.8.4** or higher.
+Make sure you're on app version **0.8.5** or higher.
 ::: aside
 Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::
@@ -292,38 +292,19 @@ Read about source migration [here](/help/guides/source-migration/)
 
 ### MangaRock
 
-##### Regarding MangaRock going away:
-- You won't lose existing bookmarks or downloads.
-- Chapters are no longer updated since **MangaRock** is dead.
-- Favorites from **MangaRock** source will no longer be backed up, however backup restoration is possible.
-- There is no native way to automatically import your favorites from MangaRock, but you can try [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
-- Popular alternatives are **MangaDex**, **MangaSee** and **Mangakakalot**.
-
-::: tip Out of the loop?
-Read more about the situation [here](https://mangarock.com/).
-:::
-
 ##### Migrate to Tachiyomi
-There is a tool to migrate from **MangaRock** to **Tachiyomi** courtesy of a member of our [Discord server](https://discord.gg/tachiyomi) by the same name as the creator, but a computer is required to finish the migration successfully.
+There is a tool to migrate **MangaRock** favorites to **Tachiyomi**, courtesy of a member of our [Discord server](https://discord.gg/tachiyomi) by the same name as the creator, but a computer is required to finish the migration successfully.
 
 View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 
 ##### Restore a backup from the MangaRock source
-It's not currently possible to restore backup from MangaRock officially, as the MangaRock source is dead. There is however an unofficial method to restore/backup all manga from the MangaRock source.
+There is an unofficial method to restore/backup all manga from the MangaRock source.
 
-1. Uninstall the MangaRock extension.
 1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file.
 1. Go to <Navigation item="old_extensions"/> menu and press **Trust** to proceed.
 1. Restore backup.
 
-#### Why do I get `Value url at 0 of type java.lang.String cannot be converted to JSONObject`?
-If you get this error when opening **MangaRock** chapters, try clearing your chapter cache.
-
-::: guide
-Chapter cache can be cleared by going to <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing [Clear chapter cache](/help/guides/settings/advanced/#clear-chapter-cache).
-::: aside
-Read more about clearing chapter cache [here](/help/guides/settings/advanced/#clear-chapter-cache)
-:::
+It is possible to Auto-Migrate MangaRock favorites to another source by using [TachiyomiJ2K](/forks/TachiyomiJ2K) or [TachiyomiAZ](/forks/TachiyomiAZ) fork.
 
 ### Madara
 
@@ -332,5 +313,25 @@ Read more about clearing chapter cache [here](/help/guides/settings/advanced/#cl
 
 ### KissManga
 
-#### Why do I get `Page list is empty`?
-If you get this error then you need to solve the **CAPTCHA** on their website using your browser (*Google Chrome*, *Samsung Browser*, *Firefox*, *Opera*, etc.).
+#### KissManga extension is missing
+Kissmanga is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate Kissmanga favorites in library to a different source.
+
+::: aside
+Read more about source migration [here](/help/guides/source-migration/#source-migration)
+:::
+
+### Mangakakalot
+
+#### Page list is empty
+Mangakakalot has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From Mangakakalot extension to the Mangakakalot extension — manually. You can also migrate to another MangaBox source as they have nearly the same catalog.
+
+#### Image could not be decoded 
+Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
+
+### Japscan
+Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
+
+### Webtoons
+
+#### Page list is empty
+You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
