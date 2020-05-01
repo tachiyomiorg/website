@@ -36,12 +36,12 @@ For a full list of features, visit the GitHub page.
   - Per-category/Drag & drop sorting
   - Tri-state/Negative filters
   - Multi-source migration
-  - Sort by Date Added (*Taken from [Neko](/help/guides/tachiyomi-neko).*)
+  - Sort by Date Added (*Taken from [Neko](/forks/Neko).*)
 - **[Share sheets upgrade for Android 10](https://raw.githubusercontent.com/Jays2Kings/tachiyomi/master/.github/readme-images/share%20menu.png)**
 - **Batch Auto-Source Migration**
-  - *Taken from [TachiyomiEH](/help/guides/tachiyomi-eh).*
+  - *Taken from [TachiyomiEH](/forks/TachiyomiEH).*
 - **Recently Read goes all the way back to the beginning of time**
 - **Restoring backups in the background**
-  - *Taken from [Neko](/help/guides/tachiyomi-neko).*
+  - *Taken from [Neko](/forks/Neko).*
 - **Expanding manga thumbnails**
 - **A lot more Material Design 2 additions**
