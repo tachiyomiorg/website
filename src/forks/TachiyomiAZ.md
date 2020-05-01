@@ -6,7 +6,7 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/media/fork-AZ-icon.png')"> TachiyomiAZ
 
-<ForkButtons forkName="TachiyomiAZ" downloadLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" githubLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
+<ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
 
 ## Introduction
 **TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)** and [Syer10](https://github.com/jobobby04).
