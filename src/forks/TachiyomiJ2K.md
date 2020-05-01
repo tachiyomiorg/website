@@ -6,7 +6,7 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/media/fork-J2K-icon.png')"> TachiyomiJ2K
 
-<ForkButtons forkName="TachiyomiJ2K" downloadLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" githubLink="window.open('https://github.com/Jays2Kings/tachiyomiJ2K')"/>
+<ForkButtons forkName="TachiyomiJ2K" downloadForkLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" githubForkLink="window.open('https://github.com/Jays2Kings/tachiyomiJ2K')"/>
 
 ## Introduction
 **TachiyomiJ2K** is maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.

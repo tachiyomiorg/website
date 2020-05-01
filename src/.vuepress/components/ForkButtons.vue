@@ -1,10 +1,10 @@
 <template>
 	<div class="downloadContainer">
-		<button class="downloadForkButton" @click="downloadFork">
-			{{ downloadLabel }}
+		<button class="downloadForkButton" :style="downloadForkStyle" @click="downloadFork">
+			{{ downloadForkLabel }}
 		</button>
-		<button class="githubForkButton" :onclick="githubLink">
-			{{ githubLabel }}
+		<button class="githubForkButton" :style="githubForkStyle" :onclick="githubForkLink">
+			{{ githubForkLabel }}
 		</button>
 	</div>
 </template>
@@ -18,21 +18,29 @@ export default {
 			type: String,
 			required: true
 		},
-		downloadLabel: {
+		downloadForkLabel: {
 			type: String,
 			default: "Download"
 		},
-		downloadLink: {
+		downloadForkLink: {
 			type: String,
 			required: true
 		},
-		githubLabel: {
+		downloadForkStyle: {
+			type: String,
+			default: ""
+		},
+		githubForkLabel: {
 			type: String,
 			default: "GitHub"
 		},
-		githubLink: {
+		githubForkLink: {
 			type: String,
 			required: true
+		},
+		githubForkStyle: {
+			type: String,
+			default: ""
 		}
 	},
 	data() {
@@ -43,7 +51,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(this.$props.downloadLink);
+		const { data } = await axios.get(this.$props.downloadForkLink);
 		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find(a => a.name.includes(".apk"));
 		// Set the values.
@@ -73,7 +81,7 @@ export default {
 				}
 			});
 			window.location.assign(
-				this.$data.browserDownloadUrl || this.$props.downloadLink
+				this.$data.browserDownloadUrl || this.$props.downloadForkLink
 			);
 			window.ga("send", "event", "Action", "Download", this.$props.forkName);
 		}
