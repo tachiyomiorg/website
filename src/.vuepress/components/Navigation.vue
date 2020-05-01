@@ -1,12 +1,12 @@
 <template>
-	<span v-if="nav.link" class="app-navigation" title="App navigation">
+	<span v-if="nav.link" class="app-navigation" :class="nav.class" title="App navigation">
 		<a class="app-link" :href="nav.link + entry">
 			<MaterialIcon v-if="nav.icon" class="app-icon" :iconName="nav.icon" />
 			<span class="app-label">{{ nav.text }}</span>
 			<slot />
 		</a>
 	</span>
-	<span v-else class="app-navigation" title="App navigation">
+	<span v-else class="app-navigation" :class="nav.class" title="App navigation">
 		<MaterialIcon v-if="nav.icon" class="app-icon" :iconName="nav.icon" />
 		<span class="app-label">{{ nav.text }}</span>
 		<slot />
@@ -36,7 +36,7 @@ export default {
 				library: { text: "Library", icon: "collections_bookmark" },
 				updates: { text: "Updates", icon: "new_releases" },
 				history: { text: "History", icon: "history" },
-				sources: { text: "Sources", icon: "explore" },
+				browse: { text: "Browse", icon: "explore" },
 				more: { text: "More", icon: "more_horiz" },
 				/* Actions */
 				search: { text: "Search", icon: "search" },
@@ -44,7 +44,6 @@ export default {
 				update_library: { text: "Update library", icon: "refresh" },
 				/* More */
 				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
-				extensions: { text: "Extensions", icon: "extension" },
 				download_queue: { text: "Download queue", icon: "get_app" },
 				source_migration: { text: "Source migration", icon: "compare_arrows" },
 				settings: { text: "Settings", icon: "settings", link: "/help/guides/settings/" },
@@ -65,9 +64,16 @@ export default {
 				set_categories: { text: "Set categories", icon: "label" },
 				share: { text: "Share", icon: "share" },
 				webview: { text: "WebView", icon: "public" },
-				/* Sources */
-				latest: { text: "LATEST" },
-				browse: { text: "BROWSE" },
+				/* Browse */
+				button_latest: { text: "LATEST" },
+				button_browse: { text: "BROWSE" },
+				tab_sources: { text: "SOURCES" },
+				tab_extensions: { text: "EXTENSIONS" },
+				/* Sites */
+				tachiyomi: { text: "Tachiyomi" },
+				mangadex: { text: "MangaDex" },
+				/* Misc */
+				install: { text: "INSTALL", class:"ext-installation" },
 				/* Legacy */
 				old_library: { text: "My library", icon: "class" },
 				old_about: { text: "About", icon: "help", link: "/help/guides/settings/about" },
@@ -98,6 +104,14 @@ export default {
 			.app-icon,
 			.app-label
 				color $accentColor
+	.app-image
+		max-height 1.5em
+		vertical-align sub
+	&.ext-installation
+		border 1px solid $accentColorSecondary
+		padding 0px 0px 2px 4px
+		margin-right 5px
+		border-radius 4px
 	&:hover
 		cursor default
 </style>

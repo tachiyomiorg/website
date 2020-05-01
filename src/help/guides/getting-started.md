@@ -9,48 +9,37 @@ lang: en-US
 
 <DownloadButtons downloadStableTag="Tachiyomi" downloadPreviewTag="Tachiyomi Preview"/>
 
-You can download the latest version of **Tachiyomi** from any of the above buttons.
-
-If you want to try new features before they get to the stable release, you can download the preview version.
-
-Open and install the **`.apk`** file you just downloaded.
-
-<figure class="centered">
-	<img height="128"
-	  :src="$withBase('/assets/media/installprompt.png')">
-</figure>
+You can download the latest version of <Navigation item="tachiyomi"/> by clicking either of the above buttons.
+When you've completed the download, open the <VersionTag fileName/> file and proceed with installing it.
 
 ## Installing an extension
 
-Now that Tachiyomi is installed, open the app and navigate to the <Navigation item="old_extensions"/> tab.
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-extension-install.webm)
+:::
 
-In this guide we will use MangaDex, our most popular extension.
-Press the **Install** button and accept the installation prompt that will be shown.
+Now that <Navigation item="tachiyomi"/> is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the <Navigation item="tab_extensions"/> tab.
 
-If you're getting stopped by a security prompt and don't know what to do you can read this FAQ section: ["How do I allow third-party installations?"](/help/faq/#how-do-i-allow-third-party-installations).
+Find the extension that you'd like to use then press the <Navigation item="install"/> button next to your desired extension and then accept the installation prompt.
 
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-extension-install.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-extension-install.webm')" type="video/webm"/>
-	</video>
-</figure>
+::: guide Security prompt
+You *might* be stopped by a security prompt while attempting to install an extension. If that were to happen then you need to allow <Navigation item="tachiyomi"/> the permission to *install unknown apps*.
+::: aside
+Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installations)
 :::
 
 ## Adding manga to your library
 
-Now that you've installed the MangaDex extension it should show up in the <Navigation item="old_catalogues"/> tab. The items appearing here are called **Sources** (can also be called **Catalogues**), an extension can contains *multiple* sources.
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-library-add-to.webm)
+:::
 
-To find and add manga, you can now either use the <Navigation item="latest"/> button on your source, or you can use <Navigation item="browse"/> and search for it.
+Now that you've installed the desired extension it will show in the <Navigation item="tab_sources"/> tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
 
-Now that you've found manga that you want to add to your library, click on it and then press the blue bookmark button.
+To find and add manga, you can now use either the <Navigation item="button_latest"/> button and explore recently updated manga from that source or you can use the <Navigation item="button_browse"/> button and search for it.
 
-It should now appear in your <Navigation item="old_library"/> tab, ready to be read!
+Now that you've presumably found manga that you want to add, click on it and then press the <Navigation item="bookmark"/> button, it should now appear in your <Navigation item="library"/> ready to be read!
 
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-library-add-to.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-library-add-to.webm')" type="video/webm"/>
-	</video>
-</figure>
+::: guide Global search
+You can search for manga globally across all your sources by using <Navigation item="search"/> located in the top-right of <Navigation item="browse"/> → <Navigation item="tab_sources"/>.
 :::

@@ -230,7 +230,7 @@ It might be because the title is worded differently. Follow any of the steps bel
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single site will not satisfy all your needs.
 - Download the extension for that source from <Navigation item="old_extensions"/> if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
-- Go to <Navigation item="old_catalogues"/> → <Navigation item="browse"/> on a source then search for the manga again.
+- Go to <Navigation item="old_catalogues"/> → <Navigation item="button_browse"/> on a source then search for the manga again.
 
 
 #### Some common errors you might encounter
@@ -259,7 +259,7 @@ The source you selected may have Cloudflare protection on and is enforcing CAPTC
 If you're not getting any results when searching MangaDex then you need to log in. To do so enter the **WebView** for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
 
 ::: guide
-To enter the **WebView** go to <Navigation item="old_catalogues"/> → <Navigation item="browse"/>/<Navigation item="latest"/> next to **MangaDex**, open any manga from the list and then press the <Navigation item="old_overflow"/> in the top-right corner and then press **Open in web view**.
+To enter the **WebView** go to <Navigation item="old_catalogues"/> → <Navigation item="button_browse"/>/<Navigation item="button_latest"/> next to **MangaDex**, open any manga from the list and then press the <Navigation item="old_overflow"/> in the top-right corner and then press **Open in web view**.
 :::
 
 ::: expander <strong>Click to reveal video guide!</strong>
