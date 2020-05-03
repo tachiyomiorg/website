@@ -271,7 +271,7 @@ To enter the **WebView** go to <Navigation item="old_catalogues"/> → <Navigati
 :::
 
 ::: tip
-Make sure you're on app version **0.8.5** or higher.
+Make sure you're on app version **0.9.2** or higher.
 ::: aside
 Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::
@@ -282,6 +282,9 @@ Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-autom
 ::: guide
 An example search would be **`id:23427`** which would return results for [Candy & Cigarettes](https://mangadex.org/title/23427/candy-cigarettes)
 :::
+
+#### Duplicate chapters in MangaDex
+This can be solved by opening Mangadex in WebView and block the scanlator group whose chapter you don't want to see.
 
 #### Chapters from Mangaplus are broken
 Install the **Mangaplus** extension instead and then migrate the manga that uses **Mangaplus** on **MangaDex** onto the **Mangaplus** source.
@@ -327,6 +330,11 @@ Mangakakalot has created new entries for manga again on their site. Some old ent
 
 #### Image could not be decoded 
 Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
+
+### MangaPark
+
+#### Duplicate chapters in MangaPark
+This can be solved by going to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. After that, click on **MangaPark** extension and then `Chapter List Source`. Choose an option like `Smart list` or `Priorize source`. Finally, go back to MangaPark's chapter list and refresh. 
 
 ### Japscan
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
