@@ -334,7 +334,10 @@ Open manga in Webview and wait for the image to comes up. If the image isn't loa
 ### MangaPark
 
 #### Duplicate chapters in MangaPark
-This can be solved by going to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. After that, click on **MangaPark** extension and then `Chapter List Source`. Choose an option like `Smart list` or `Priorize source`. Finally, go back to MangaPark's chapter list and refresh. 
+1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. 
+1. Click on **MangaPark** extension and then `Chapter List Source`. 
+1. Choose an option like `Smart list` or `Priorize source`. 
+1. Go back to MangaPark's chapter list and refresh. 
 
 ### Japscan
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
