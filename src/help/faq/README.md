@@ -334,6 +334,8 @@ Open manga in Webview and wait for the image to comes up. If the image isn't loa
 ### MangaPark
 
 #### Duplicate chapters in MangaPark
+To solve this issue, follow the below step.
+
 1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. 
 1. Click on **MangaPark** extension and then `Chapter List Source`. 
 1. Choose an option like `Smart list` or `Priorize source`. 
