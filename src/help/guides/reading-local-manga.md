@@ -5,17 +5,15 @@ lang: en-US
 
 # Reading local manga
 
-You have to first create a folder named `local` in Tachiyomi folder, which is located in the phone's **Internal storage** or external SD card. Then place your manga inside `Tachiyomi/local` folder.
+Follow the steps below to create local manga.
 
-After that, the manga be can be found in **Local manga**, which is located under <Navigation item="old_catalogues"/> as a new source.
+1. Create a folder named `local` in Tachiyomi folder, which is located in the phone's **Internal storage** or external SD card. 
+1. Place manga inside `Tachiyomi/local` folder.
+1. You can then access the manga in <Navigation item="browse"/> → **Local source**.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
 
-Supported chapter formats are directories with pictures inside, `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
-
-You can also place your chapters or manga in both storages and Tachiyomi will merge them.
-
-You can then access the manga in <Navigation item="old_catalogues"/> → **Local manga**.
+Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png` etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
 
 ::: warning IMPORTANT
 Remember to give the app disk permissions on Android 6 and newer.
@@ -123,7 +121,8 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 
 
 ## Advanced
-### Local Manga Details
+
+### Editing local manga details
 
 It is possible to add details to local manga. Like manga from other catalogs, you add information about the manga such as the author, artist, description, and genre tags.
 
