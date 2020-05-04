@@ -50,7 +50,7 @@ In this case it is a problem with the site.
 
 **Please note that WebView is not the same as using your browser.**
 
-You can open Webview in two of the following ways:
+You can open WebView in two of the following ways:
 
 * If you already have a manga in **Library**
   * Open the manga in **Library**, then click on the <Navigation item="webview"/> on the **INFO** tab. 
@@ -61,7 +61,7 @@ Once in WebView, you will see a webpage and a bar on top with an arrow at the le
 If there is no CAPTCHA on the webpage, initiate one by tapping a manga title, if possible. Once a CAPTCHA is shown, solve it. After that, use the aforementioned back arrow on the bar at the top of your screen to go back to your manga. Please do not use the back button on your phone as it does not work as expected.
 
 ::: tip
-If WebView doesn't work for you, please update the **Android System WebView** app through [Play Store](https://play.google.com/store/apps/details?id=com.google.android.WebView), then go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to Android System WebView. If Android System Webview doesn't work, set **Google Chrome** as default in Webview Implementation.
+If WebView doesn't work for you, please update the **Android System WebView** app through [Play Store](https://play.google.com/store/apps/details?id=com.google.android.WebView), then go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to Android System WebView. If Android System WebView doesn't work, set **Google Chrome** as default in WebView Implementation.
 :::
 
 <figure class="centered">
