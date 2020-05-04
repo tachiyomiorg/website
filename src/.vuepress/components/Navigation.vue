@@ -41,6 +41,7 @@ export default {
 				/* Actions */
 				search: { text: "Search", icon: "search" },
 				filter: { text: "Filter", icon: "filter_list" },
+				edit: { text: "Edit", icon: "edit" },
 				update_library: { text: "Update library", icon: "refresh" },
 				/* More */
 				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
