@@ -122,7 +122,7 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 
 ## Advanced
 
-### Editing local manga Details
+### Editing local manga details
 
 It is possible to add details to local manga. Like manga from other catalogs, you add information about the manga such as the author, artist, description, and genre tags.
 
