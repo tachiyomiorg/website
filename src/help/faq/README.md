@@ -120,7 +120,7 @@ Learn how to create Auto-backup [here](/help/guides/creating-backups/#turning-on
 ### General
 
 #### What are some recommended extensions?
-While Tachiyomi does not officially endorse or recommended any manga website, below listed are some of the most popular sources as reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
+While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
 
 - Fastest manga updates: **Mangadex** and scanlator sources
 - All around decent: **MangaNelo** and **Mangakakalot** (both in **Mangabox** extension)
