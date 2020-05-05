@@ -81,11 +81,11 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 
 ### Application Updates
 #### How do I enable automatic updates?
-From version **0.9.0** and onwards, Tachiyomi has Auto-update for the app enabled by default. 
+From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
 ### User Interface
 #### Can I change the app language?
-**Tachiyomi** is as of writing available in 40 different languages. By default, the app follows the language used on your device.
+**Tachiyomi** is translated in 40+ different languages.. By default, the app follows the language used on your device.
 Only the UI has been localized, language in manga will still be using the language of the source selected.
 
 ::: guide
@@ -112,7 +112,7 @@ There is currently no iOS version and there are no plans for one and since iOS a
 **Tachiyomi** is still in beta and some design changes or unexpected errors may lead to data loss. While we try for them not to happen, sometimes it is unavoidable. To avoid this in the future, you can use the automatic backup feature.
 
 ::: aside
-Learn how to create Auto-backup [here](/help/guides/creating-backups/#turning-on-auto-backups/)
+Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
 :::
 
 ## Extensions
@@ -138,6 +138,8 @@ Most of the scanlator sources are part of **Multi-source** extensions, which con
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have highest scan quality. 
 
 Some popular scanlator sources are **Jaimini's Box** (in **FoolSlide** extension), **MerakiScans**, **Hatigarm Scans** (in **Genkan** extension) etc.
+
+Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
 
 #### Which sources are in the multi-source extensions?
 Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
@@ -211,6 +213,14 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="bro
 9. Mangasee
 10. WieManga
 :::
+
+#### How do see sources of other languages?
+
+You do this by following the steps below.
+
+1. Go to <Navigation item="browse"/> → **SOURCES**.
+1. Click on <Navigation item="filter"/> on the top right corner. 
+1. Scroll down until you find the language of your source and click on  <Navigation item="toggle"/> to enable.
 
 #### Why can't I restore my backup?
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
