@@ -220,7 +220,7 @@ You do this by following the steps below.
 
 1. Go to <Navigation item="browse"/> → **SOURCES**.
 1. Click on <Navigation item="filter"/> on the top right corner. 
-1. Scroll down until you find the language of your source and click on  <Navigation item="toggle"/> to enable.
+1. Scroll down until you find the language of your source and enable it.
 
 #### Why can't I restore my backup?
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
