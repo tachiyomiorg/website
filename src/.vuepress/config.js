@@ -16,7 +16,7 @@ module.exports = {
 		['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
 		['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#2e84bf' }],
 		['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
-		['meta', { name: 'msapplication-TileColor', content: '#2e84bf' }]
+		['meta', { name: 'msapplication-TileColor', content: '#2e84bf' }],
 		// Custom headers
 		['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin:''}],
 		['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'}],
