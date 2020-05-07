@@ -7,6 +7,13 @@ module.exports = [
 		}
 	],
 	[
+		"@vuepress/pwa",
+		{
+			serviceWorker: true,
+			updatePopup: true
+		}
+	],
+	[
 		"@vuepress/google-analytics",
 		{
 			ga: "UA-148212082-1"
