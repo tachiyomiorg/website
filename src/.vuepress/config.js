@@ -1,16 +1,41 @@
+const ogPrefix = 'og: http://ogp.me/ns#';
+const ogTitle = 'Tachiyomi';
+const ogDescription = 'Free and open source manga reader for Android.';
+const ogColor = '#2e84bf';
+
 module.exports = {
-	title: 'Tachiyomi',
-	description: 'Free and open source manga reader for Android.',
 	dest: './public',
+	temp: './node_modules/.temp/theme',
+
+	title: ogTitle,
+	description: ogDescription,
+
+	// prettier-ignore
 	head: [
-		['link', { rel: "preconnect", href: 'https://fonts.gstatic.com', crossorigin:""} , ''],
-		['link', { rel: "stylesheet", href: 'https://fonts.googleapis.com/css?family=Open+Sans'} , ''],
+		['link', { rel: 'icon', href: '/favicon.ico' }],
+		['link', { rel: 'manifest', href: '/manifest.json' }],
+		['meta', { prefix: ogPrefix, property: 'og:url', content: 'https://tachiyomi.org/' }],
+		['meta', { prefix: ogPrefix, property: 'og:image', content: 'https://tachiyomi.org/img/logo.png' }],
+		['meta', { prefix: ogPrefix, property: 'og:type', content: 'website' }],
+		['meta', { prefix: ogPrefix, property: 'og:title', content: ogTitle }],
+		['meta', { prefix: ogPrefix, property: 'og:description', content: ogDescription }],
+		['meta', { prefix: ogPrefix, property: 'twitter:title', content: ogTitle }],
+		['meta', { name: 'theme-color', content: ogColor }],
+		['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+		['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+		['link', { rel: 'apple-touch-icon', href: `/img/apple-touch-icon.png` }],
+		['link', { rel: 'mask-icon', href: '/img/safari-pinned-tab.svg', color: ogColor }],
+		['meta', { name: 'msapplication-TileImage', content: '/img/mstile-150x150.png' }],
+		['meta', { name: 'msapplication-TileColor', content: ogColor }],
+		['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin:''}],
+		['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'}],
 	],
+
 	themeConfig: {
+		logo: '/img/logo.svg',
 		repo: 'inorichi/tachiyomi',
 		docsRepo: 'tachiyomiorg/website',
 		docsDir: 'src',
-		logo: '/assets/media/logo.svg',
 		algolia: {
 			apiKey: 'fc1c45b5a3835e1882cbbf0751dfe705',
 			indexName: 'tachiyomi'
@@ -18,6 +43,7 @@ module.exports = {
 		searchPlaceholder: 'Search...',
 		editLinks: true,
 		editLinkText: 'Help us improve this page',
+		lastUpdated: 'Last Updated',
 		nav: require('./config/nav'),
 		sidebar: {
 			'/help/guides/': require('./config/sidebar/guides'),
@@ -25,8 +51,7 @@ module.exports = {
 			'/help/contribution': require('./config/sidebar/contribution'),
 			'/extensions': require('./config/sidebar/extensions'),
 			'/forks': require('./config/sidebar/forks')
-		},
-		lastUpdated: 'Last Updated'
+		}
 	},
 	plugins: require('./config/plugins'),
 	extraWatchFiles: [
