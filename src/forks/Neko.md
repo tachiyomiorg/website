@@ -9,7 +9,7 @@ sidebar: false
 <ForkButtons forkName="Neko" downloadForkLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" downloadForkStyle="background-color:#3DDA83;color:#000000;" githubForkLink="window.open('https://github.com/CarlosEsco/Neko')"/>
 
 ## About
-This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [TachiyomiJ2K](/forks/TachiyomiJ2K). This contains features specific to **MangaDex** that those versions cannot offer. It also features almost every feature that **J2K** has except for other sources and local sources.
+This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [TachiyomiJ2K](/forks/TachiyomiJ2K). This contains features specific to **MangaDex** that those versions cannot offer. It also features almost every feature that **J2K** has except for extensions(aka other sources), custom covers, and local manga.
 
 ## Screenshots
 <img :src="$withBase('/assets/media/fork-Neko-banner.png')"/>
@@ -19,6 +19,7 @@ This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [
 - MDList support
 - Similar Manga recommendations
 - Manually sync of Manga to and from **MangaDex** follows list
+- Ability to filter chapters and skip by scanlator group 
 
 ## Credits
 - [Inorichi](https://github.com/inorichi/) for making the original **Tachiyomi** 
