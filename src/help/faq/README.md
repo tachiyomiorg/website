@@ -11,17 +11,17 @@ sidebarDepth: 2
 ### Library
 
 #### How can I see how many chapters I've downloaded?
-This can be done by enabling **Download badges** under <Navigation item="old_library"/>.
+This can be done by enabling **Download badges** under <Navigation item="library"/>.
 
 ::: guide
-Enable it by going to <Navigation item="old_library"/> → <Navigation item="filter"/> → **Display** section then checking the **Download badges** option in the bottom.
+Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **DISPLAY** section then checking the **Download badges** option in the bottom.
 :::
 
 #### Some covers are white after restoring from backup
 The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
 
 ::: guide
-Refresh your metadata by going to <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **[Refresh library metadata](/help/guides/settings/advanced/#refresh-library-metadata)**.
+Refresh your metadata by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **[Refresh library metadata](/help/guides/settings/advanced/#refresh-library-metadata)**.
 ::: aside
 Read more [here](/help/guides/settings/advanced/#refresh-library-metadata)
 :::
@@ -30,7 +30,7 @@ Read more [here](/help/guides/settings/advanced/#refresh-library-metadata)
 Every now and then you find a manga that is translated by more than one group, because of this you get multiple releases for every chapter in the manga. To fix this the easiest way is to change sorting to **Total chapters**. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
 
 ::: guide
-Change library sorting by going to <Navigation item="old_library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
+Change library sorting by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
 :::
 
 #### Why do I see `attempt to invoke virtual method 'com.hippo.unifile...`?
@@ -81,27 +81,24 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 
 ### Application Updates
 #### How do I enable automatic updates?
-The **Tachiyomi** app now has in-app updating for both stable and preview versions. It happens automatically in the background if you got **[Check for updates](/help/guides/settings/about/#check-for-updates)** enabled.
-::: guide
-If you go to <Navigation item="settings"/> → <Navigation item="old_about"/> you will find the **[Check for updates](/help/guides/settings/about/#check-for-updates)** toggle, you can also press **[Version](/help/guides/settings/about/#version)** to force check for updates.
-:::
+From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
 ### User Interface
 #### Can I change the app language?
-**Tachiyomi** is as of writing available in 35 different languages. By default, the app follows the language used on your device.
+**Tachiyomi** is translated in 40+ different languages.. By default, the app follows the language used on your device.
 Only the UI has been localized, language in manga will still be using the language of the source selected.
 
 ::: guide
-You can change language by going to <Navigation item="settings"/> → <Navigation item="settings_general"/> then pressing **[Language](/help/guides/settings/general/#language)**.
+You can change language by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_general"/> then pressing **[Language](/help/guides/settings/general/#language)**.
 ::: aside
 Read more [here](/help/guides/settings/general/#language)
 :::
 
 ### Miscellaneous
 #### What happened to the F-Droid version?
-F-Droid is no longer an officially supported option. Both the stable and preview builds now include an auto-update mechanism.
+F-Droid is no longer supported. Both the Stable and Preview builds are now automatically updated.
 
-An unofficial F-Droid repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
+An unofficial F-Droid repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net). 
 
 #### Why do I get a `App not installed` error when installing?
 You may encounter this if you're installing an official build over an existing F-Droid build due to differing signatures.
@@ -115,25 +112,34 @@ There is currently no iOS version and there are no plans for one and since iOS a
 **Tachiyomi** is still in beta and some design changes or unexpected errors may lead to data loss. While we try for them not to happen, sometimes it is unavoidable. To avoid this in the future, you can use the automatic backup feature.
 
 ::: aside
-Learn how to backup [here](/help/guides/settings/backup/)
+Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
 :::
 
 ## Extensions
 
 ### General
 
-#### What are some good extensions?
-The most popular are **MangaDex**, **MangaSee** and **Mangakakalot**, these are large sites which host content from scanlators. Description of some popular sources are listed below:
+#### What are some recommended extensions?
+While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
 
 - Fastest manga updates: **Mangadex** and scanlator sources
-- Largest manga library: **Mangakakalot** (found in **Mangabox** extension)
-- High quality scans and official translation: **Mangasee**
+- All around decent: **MangaNelo** and **Mangakakalot** (both in **Mangabox** extension)
+- Largest manga library: **MangaPark** (found in **Mangabox** extension)
+- High quality scans and official translation: **MangaSee**
 - Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
-- Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (also in **Madara** extension)
-- Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **MyReadingManga** (for Yaoi)
-- Other popular sources: **Mangahere**, **Mangapark**, **Manhwa18.net** (in **FMReader** extension)
+- Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
+- Western comics: **ReadComicOnline** and **ComicExtra**
+- Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
+- Other popular sources: **Mangahere**, **Manhwa18.net** (in **FMReader** extension), **ReadManhwa**, **MangaOwl**
 
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
+
+#### What are scanlator sources?
+Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have highest scan quality. 
+
+Some popular scanlator sources are **Jaimini's Box** (in **FoolSlide** extension), **MerakiScans**, **Hatigarm Scans** (in **Genkan** extension) etc.
+
+Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
 
 #### Which sources are in the multi-source extensions?
 Some extensions contain multiple sources, look at the list below to find out which extension to install for the specific source that you want.
@@ -188,11 +194,11 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your phones settings or you go can do it in the app.
 
 ::: guide
-To uninstall an extension from within **Tachiyomi**, go to <Navigation item="old_extensions"/> then tap **Uninstall** on the extension you want to remove.
+To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **EXTENSIONS** then tap **Uninstall** on the extension you want to remove.
 :::
 
 #### Why don't I have extensions or any sources in the catalogue?
-- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="old_extensions"/> menu.
+- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="browse"/> → **EXTENSIONS** menu.
 - If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use. Which number in the menu corresponds to which is below.
 
 ::: expander <strong>Click to expand!</strong>
@@ -208,18 +214,13 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="old
 10. WieManga
 :::
 
-::: warning
-Be aware that **Batoto** is deprecated so you will need to migrate from that source to others.
-::: aside
-Read more about Batoto shutting down [here](https://goboiano.com/manga-scanlation-site-batoto-to-close-down/)
-:::
+#### How do see sources of other languages?
 
-#### Why are my extensions not showing up in Catalogues?
-If you've freshly reinstalled the **Tachiyomi** app, the installed extensions might not show up in <Navigation item="old_catalogues"/> until you enable them.
+You do this by following the steps below.
 
-::: guide GUIDE
-To fix this, go to <Navigation item="old_catalogues"/> → **Sources**. Now you can proceed to enabling your desired sources.
-:::
+1. Go to <Navigation item="browse"/> → **SOURCES**.
+1. Click on <Navigation item="filter"/> on the top right corner. 
+1. Scroll down until you find the language of your source and enable it.
 
 #### Why can't I restore my backup?
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
@@ -228,9 +229,9 @@ To restore backups, **Tachiyomi** requires to have extensions installed for the 
 #### Why can't I find manga when searching catalogues?
 It might be because the title is worded differently. Follow any of the steps below:
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
-- See which site has the series, often a single site will not satisfy all your needs.
-- Download the extension for that source from <Navigation item="old_extensions"/> if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
-- Go to <Navigation item="old_catalogues"/> → <Navigation item="button_browse"/> on a source then search for the manga again.
+- See which site has the series, often a single source will not satisfy all your needs.
+- Download the extension for that source from <Navigation item="browse"/> → **EXTENSIONS** if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
+- Go to <Navigation item="browse"/> → <Navigation item="button_browse"/> on a source then search for the manga again.
 
 
 #### Some common errors you might encounter
@@ -248,7 +249,7 @@ This means that the manga has been licensed and can no longer be read on that so
 The source you selected may have Cloudflare protection on and is enforcing CAPTCHAs.
 
 1. Find a manga in your library that is from the source you're trying to access
-2. Tap on the <Navigation item="old_overflow"/> in the **Info** tab
+2. Tap on the <Navigation item="webview"/> in the **Info** tab
 3. Open in WebView
 4. Complete the CAPTCHA if present and wait for the page to finish loading
 5. Press back rather than exiting the app and if that does not work, use the back arrow
@@ -259,7 +260,7 @@ The source you selected may have Cloudflare protection on and is enforcing CAPTC
 If you're not getting any results when searching MangaDex then you need to log in. To do so enter the **WebView** for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
 
 ::: guide
-To enter the **WebView** go to <Navigation item="old_catalogues"/> → <Navigation item="button_browse"/>/<Navigation item="button_latest"/> next to **MangaDex**, open any manga from the list and then press the <Navigation item="old_overflow"/> in the top-right corner and then press **Open in web view**.
+To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_browse"/>/<Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
 :::
 
 ::: expander <strong>Click to reveal video guide!</strong>
@@ -284,14 +285,44 @@ An example search would be **`id:23427`** which would return results for [Candy 
 :::
 
 #### Duplicate chapters in MangaDex
-This can be solved by opening Mangadex in WebView and block the scanlator group whose chapter you don't want to see.
+This can be solved by opening MangaDex in WebView and block the scanlator group whose chapter you don't want to see.
 
 #### Chapters from Mangaplus are broken
-Install the **Mangaplus** extension instead and then migrate the manga that uses **Mangaplus** on **MangaDex** onto the **Mangaplus** source.
+Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the manga that uses **MANGA Plus** on **MangaDex** onto the **MANGA Plus** source.
 
 ::: aside
 Read about source migration [here](/help/guides/source-migration/)
 :::
+
+### Mangakakalot
+
+#### Page list is empty
+Mangakakalot has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From Mangakakalot extension to the Mangakakalot extension — manually. You can also migrate to another MangaBox source as they have nearly the same catalog.
+
+#### Image could not be decoded 
+Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
+
+#### Source URL changed
+
+This means that the manga is dead and needs to migrated it to Mangakakalot or a different source. Refer to the guide for Page list empty above.
+
+### MangaPark
+
+#### Duplicate chapters in MangaPark
+To solve this issue, follow the below steps.
+
+1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. 
+1. Click on **MangaPark** extension and then `Chapter List Source`. 
+1. Choose an option like `Smart list` or `Priorize source`. 
+1. Go back to MangaPark's chapter list and refresh.
+
+### Webtoons
+
+#### Page list is empty
+You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
+
+### Japscan
+Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
 
 ### MangaRock
 
@@ -304,47 +335,16 @@ View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tac
 There is an unofficial method to restore/backup all manga from the MangaRock source.
 
 1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file.
-1. Go to <Navigation item="old_extensions"/> menu and press **Trust** to proceed.
+1. Go to <Navigation item="browse"/> → **EXTENSIONS** and press **Trust** to proceed.
 1. Restore backup.
 
 It is possible to Auto-Migrate MangaRock favorites to another source by using [TachiyomiJ2K](/forks/TachiyomiJ2K) or [TachiyomiAZ](/forks/TachiyomiAZ) fork.
 
-### Madara
-
-#### Leviatan Scans is missing
-**Leviatan Scans** has shifted from **Madara** to **Genkan** extension. Install **Genkan**, migrate all **Leviatan scans** then update **Madara**.
-
 ### KissManga
 
 #### KissManga extension is missing
-Kissmanga is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate Kissmanga favorites in library to a different source.
+Kissmanga is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in library to a different source.
 
 ::: aside
 Read more about source migration [here](/help/guides/source-migration/#source-migration)
 :::
-
-### Mangakakalot
-
-#### Page list is empty
-Mangakakalot has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From Mangakakalot extension to the Mangakakalot extension — manually. You can also migrate to another MangaBox source as they have nearly the same catalog.
-
-#### Image could not be decoded 
-Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
-
-### MangaPark
-
-#### Duplicate chapters in MangaPark
-To solve this issue, follow the below step.
-
-1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. 
-1. Click on **MangaPark** extension and then `Chapter List Source`. 
-1. Choose an option like `Smart list` or `Priorize source`. 
-1. Go back to MangaPark's chapter list and refresh. 
-
-### Japscan
-Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
-
-### Webtoons
-
-#### Page list is empty
-You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
