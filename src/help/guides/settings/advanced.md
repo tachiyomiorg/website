@@ -16,7 +16,7 @@ This setting clears all cookies from Tachiyomi and the WebView browser. Doing so
 This function removes entries of manga that are not in the library. It is useful for correcting any errors that have updated yet.
 
 ## Refresh library metadata
-This setting refreshes entries in the library to the latest version from the source. It updates the cover, green, description, and the complete status of the entry.
+This setting refreshes entries in the library to the latest version from the source. It updates the cover, genre, description, and the complete status of the entry.
 
 ## Refresh tracking metadata
 This setting refreshes all tracking info to the most recent version grabbed from the tracking service, such as completed status, rating, and the last chapter read number.
