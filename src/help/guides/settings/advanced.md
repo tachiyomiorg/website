@@ -1,3 +1,8 @@
+---
+title: Advanced
+lang: en-US
+---
+
 # Advanced
 The features in this section mostly relate to keeping entries up to date or clearing unnecessary things from the app.
 
