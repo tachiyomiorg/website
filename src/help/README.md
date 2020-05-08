@@ -1,5 +1,6 @@
 ---
 title: Help
+description: An overview of help pages you can access quickly.
 lang: en-US
 sidebar: false
 ---

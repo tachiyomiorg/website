@@ -1,5 +1,6 @@
 ---
 title: Reader
+description: Reader settings for Tachiyomi.
 lang: en-US
 ---
 

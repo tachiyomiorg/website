@@ -1,5 +1,6 @@
 ---
 title: Settings
+description: Overview of Tachiyomi settings.
 lang: en-US
 ---
 

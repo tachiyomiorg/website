@@ -1,5 +1,6 @@
 ---
 title: Backup
+description: Backup settings for Tachiyomi.
 lang: en-US
 ---
 

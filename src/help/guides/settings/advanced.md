@@ -1,5 +1,6 @@
 ---
 title: Advanced
+description: Advanced settings for Tachiyomi.
 lang: en-US
 ---
 

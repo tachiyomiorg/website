@@ -1,5 +1,6 @@
 ---
 title: Forks
+description: Looking for something more specific, or just want to try out a new flavor? These are apps forked from Tachiyomi. 
 lang: en-US
 sidebar: true
 sidebarDepth: 0

@@ -1,5 +1,6 @@
 ---
 title: How can I help?
+description: There are several ways to help, including translations and code contributions.
 lang: en-US
 ---
 

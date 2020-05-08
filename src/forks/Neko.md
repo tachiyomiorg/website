@@ -1,5 +1,6 @@
 ---
 title: Neko
+description: MangaDex specific fork of Tachiyomi and TachiyomiJ2K. This contains features specific to MangaDex that those versions cannot offer.
 lang: en-US
 sidebar: false
 ---

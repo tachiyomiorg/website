@@ -1,5 +1,6 @@
 ---
 title: Downloads
+description: Downloads settings for Tachiyomi.
 lang: en-US
 ---
 
