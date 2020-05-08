@@ -1,5 +1,5 @@
 import './styles/fonts.styl'
-import './styles/animations.styl'
+import './styles/animate.css'
 import 'sweetalert2/dist/sweetalert2.min.css';
 import 'vue-material-design-icons/styles.css';
 
