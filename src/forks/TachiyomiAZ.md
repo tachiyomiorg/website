@@ -50,6 +50,8 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 - Random bugfixes
 
 **Original AZ Features:**
+- Maintained hamburger navigation
 - Grid view corner rounding configuration
+- Manga recommendations
 
 <img :src="$withBase('/assets/media/fork-AZ-symbol.png')">
