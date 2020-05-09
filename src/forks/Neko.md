@@ -1,14 +1,15 @@
 ---
 title: Neko
 metaTitle: Neko
+description: MangaDex specific fork of Tachiyomi and TachiyomiJ2K. This contains features specific to MangaDex that those versions cannot offer.
 lang: en-US
 meta:
   - property: og:image
     content: /assets/media/fork-Neko-icon.png
   - name: theme-color
-    content: rgb(61, 218, 131)
+    content: "#38CA79"
   - name: msapplication-TileColor
-    content: rgb(61, 218, 131)
+    content: "#38CA79"
 sidebar: false
 ---
 
