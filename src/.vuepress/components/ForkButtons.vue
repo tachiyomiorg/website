@@ -107,7 +107,7 @@ export default {
 		width 8.5rem
 		&:focus
 			outline none
-			outline-style solid
+			outline-style none
 		&:hover
 			cursor pointer
 			text-decoration none !important
