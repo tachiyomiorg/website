@@ -1,19 +1,29 @@
 ---
+layout: ForkPage
 title: TachiyomiJ2K
+metaTitle: TachiyomiJ2K
+description: This fork takes a new approach to the design of the base app along with several other enhancements.
 lang: en-US
+meta:
+  - property: og:image
+    content: /forks/TachiyomiJ2K/img/logo.png
+  - name: theme-color
+    content: "#2e84bf"
+  - name: msapplication-TileColor
+    content: "#2e84bf"
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/assets/media/fork-J2K-icon.png')"> TachiyomiJ2K
+# <img class="headerLogo" :src="$withBase('/forks/TachiyomiJ2K/img/logo.png')"> TachiyomiJ2K
 
 <ForkButtons forkName="TachiyomiJ2K" downloadForkLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" githubForkLink="window.open('https://github.com/Jays2Kings/tachiyomiJ2K')"/>
 
 ## Introduction
 **TachiyomiJ2K** is maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
 
-This fork adds certain enhancements that is not yet present in the base app.
+This fork takes a new approach to the design of the base app along with several other enhancements.
 
-<img :src="$withBase('/assets/media/fork-J2K-banner.png')"/>
+<img :src="$withBase('/forks/TachiyomiJ2K/img/banner.png')"/>
 
 ## Features
 ::: aside-guide

@@ -1,17 +1,27 @@
 ---
+layout: ForkPage
 title: TachiyomiAZ
+metaTitle: TachiyomiAZ
+description: This hentai focused fork is based off of TachiyomiEH, it has most features and fixes from Tachiyomi, as well as features from TachiyomiJ2K.
 lang: en-US
+meta:
+  - property: og:image
+    content: /forks/TachiyomiAZ/img/logo.png
+  - name: theme-color
+    content: "#FFCC4D"
+  - name: msapplication-TileColor
+    content: "#FFCC4D"
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/assets/media/fork-AZ-icon.png')"> TachiyomiAZ
+# <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/img/logo.png')"> TachiyomiAZ
 
-<ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
+<ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
 
 ## Introduction
 **TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)** and [Syer10](https://github.com/jobobby04).
 
-This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from Preview, as well as features from J2k. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style.
+This hentai focused fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style.
 
 ## Features
 **Special Sources** (integrated plus added features)
@@ -54,4 +64,4 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most fea
 - Grid view corner rounding configuration
 - Manga recommendations
 
-<img :src="$withBase('/assets/media/fork-AZ-symbol.png')">
+<img :src="$withBase('/forks/TachiyomiAZ/img/gunz.png')">
