@@ -1,5 +1,5 @@
 ---
-layout: TachiyomiEH
+layout: ForkPage
 title: TachiyomiEH
 metaTitle: TachiyomiEH
 description: This fork adds features that enhances the hentai experience with integrations to popular sevices such as E-Hentai, nHentai and more.

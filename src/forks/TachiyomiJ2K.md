@@ -1,5 +1,5 @@
 ---
-layout: TachiyomiJ2K
+layout: ForkPage
 title: TachiyomiJ2K
 metaTitle: TachiyomiJ2K
 description: This fork adds certain enhancements that is not yet present in the base app.

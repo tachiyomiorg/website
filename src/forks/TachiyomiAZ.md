@@ -1,5 +1,5 @@
 ---
-layout: TachiyomiAZ
+layout: ForkPage
 title: TachiyomiAZ
 metaTitle: TachiyomiAZ
 description: This fork is based off of TachiyomiEH, it has most features and fixes from Preview, as well as features from J2k.

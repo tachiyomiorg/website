@@ -1,5 +1,5 @@
 ---
-layout: Neko
+layout: ForkPage
 title: Neko
 metaTitle: Neko
 description: MangaDex specific fork of Tachiyomi and TachiyomiJ2K. This contains features specific to MangaDex that those versions cannot offer.

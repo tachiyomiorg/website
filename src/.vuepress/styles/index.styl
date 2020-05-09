@@ -179,6 +179,32 @@ font-feature-settings()
 	height 3rem
 	margin-bottom .625rem
 
+// Fork pages
+
+.Neko
+	.theme-default-content a
+		color darken($nekoAccentColor, 25%)
+	.page-edit .edit-link a,
+	.page-edit .last-updated .prefix
+		color darken($nekoAccentColor, 40%)
+
+.TachiyomiAZ
+	.theme-default-content a,
+	.page-edit .edit-link a,
+	.page-edit .last-updated .prefix
+		color darken($azAccentColor, 40%)
+
+@media (min-width 764px)
+	.Neko
+		.nav-item > a:not(.external):hover,
+		.nav-item > a:not(.external).router-link-active
+			border-bottom 2px solid $nekoAccentColor
+
+	.TachiyomiAZ
+		.nav-item > a:not(.external):hover,
+		.nav-item > a:not(.external).router-link-active
+			border-bottom 2px solid $azAccentColor
+
 // Center align class
 .centered
 	text-align center

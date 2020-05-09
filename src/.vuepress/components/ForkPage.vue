@@ -1,5 +1,5 @@
 <template>
-	<Layout class="tachiyomiaz">
+	<Layout :class="$frontmatter.title">
 		<main class="page">
 				<slot name="top" />
 
@@ -25,13 +25,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.tachiyomiaz
-	.theme-default-content a
-		color darken(#FFCC4D, 40%)
-	.page-edit .edit-link a,
-	.page-edit .last-updated .prefix
-		color darken(#FFCC4D, 40%)
-
 .theme-default-content:not(.custom)
 	max-width $contentWidth
 	margin 0 auto
@@ -44,10 +37,4 @@ export default {
 .page
 	padding-bottom 2rem
 	display block
-
-@media (min-width 764px)
-	.tachiyomiaz
-		.nav-item > a:not(.external):hover,
-		.nav-item > a:not(.external).router-link-active
-			border-bottom 2px solid #FFCC4D
 </style>
