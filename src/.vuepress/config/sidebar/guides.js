@@ -28,8 +28,7 @@ module.exports = [
 					'/help/guides/settings/downloads',
 					'/help/guides/settings/tracking',
 					'/help/guides/settings/backup',
-					'/help/guides/settings/advanced',
-					'/help/guides/settings/about'
+					'/help/guides/settings/advanced'
 				]
 			}
 		]
