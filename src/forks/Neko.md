@@ -33,7 +33,7 @@ This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [
 
 ## Credits
 - [Inorichi](https://github.com/inorichi/) for making the original **Tachiyomi** 
-- [Jays2King](https://github.com/Jays2Kings/) for the wonderful new UI of **J2K**
+- [Jays2Kings](https://github.com/Jays2Kings/) for the wonderful new UI of **J2K**
 
 ## Disclaimer
 The developer of this application does not have any affiliation with the content providers available.
