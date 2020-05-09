@@ -1,6 +1,14 @@
 ---
 title: Neko
+metaTitle: Neko
 lang: en-US
+meta:
+  - property: og:image
+    content: /assets/media/fork-Neko-icon.png
+  - name: theme-color
+    content: rgb(61, 218, 131)
+  - name: msapplication-TileColor
+    content: rgb(61, 218, 131)
 sidebar: false
 ---
 
