@@ -1,5 +1,6 @@
 ---
 title: How can I help?
+description: Find out how to help translate or build the app and extensions.
 lang: en-US
 ---
 

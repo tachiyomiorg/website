@@ -1,11 +1,13 @@
 ---
 title: Forks
+description: Forks are alternative versions of Tachiyomi with exclusive features. 
 lang: en-US
 sidebar: true
 sidebarDepth: 0
 ---
 
 # Forks
+Forks are alternative versions of **Tachiyomi** with exclusive features.
 
 ## <img class="headerLogo" :src="$withBase('/assets/media/fork-Neko-icon.png')"> [Neko](/forks/Neko)
 ::: aside-guide

@@ -1,5 +1,6 @@
 ---
 title: Tracking
+description: Tracking settings for Tachiyomi.
 lang: en-US
 ---
 

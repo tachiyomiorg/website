@@ -1,5 +1,6 @@
 ---
 title: Categories
+description: Store your manga in custom categories, which help you keep your library neat and organized.
 lang: en-US
 ---
 

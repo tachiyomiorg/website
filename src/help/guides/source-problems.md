@@ -1,5 +1,6 @@
 ---
 title: Source problems
+description: Encountered an issue with a source? Here are resources to help you troubleshoot it.
 lang: en-US
 ---
 
