@@ -25,15 +25,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.theme-default-content:not(.custom)
-	max-width $contentWidth
-	margin 0 auto
-	padding 2rem 2.5rem
-	@media (max-width: $MQNarrow)
-		padding 2rem
-	@media (max-width: $MQMobileNarrow)
-		padding 1.5rem
-
 .page
 	padding-bottom 2rem
 	display block
