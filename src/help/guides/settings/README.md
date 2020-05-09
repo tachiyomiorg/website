@@ -22,6 +22,3 @@ This section lets you backup your library, tracking settings, and reading histor
 
 ## [<MaterialIcon icon-name="code"/> Advanced](advanced)
 The features in this section mostly relate to keeping entries up to date or clearing unnecessary things from the app.
-
-## [<MaterialIcon icon-name="help"/> About](about)
-The features here are mainly aimed to listing useful information such as version, build time and links to relevant websites.

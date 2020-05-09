@@ -48,8 +48,6 @@ export default {
 				download_queue: { text: "Download queue", icon: "get_app" },
 				source_migration: { text: "Source migration", icon: "compare_arrows" },
 				settings: { text: "Settings", icon: "settings", link: "/help/guides/settings/" },
-				about: { text: "About", icon: "info" },
-				help: { text: "Help", icon: "help" },
 				/* Settings */
 				settings_general: { text: "General", icon: "tune", link: "/help/guides/settings/general" },
 				settings_library: { text: "Library", icon: "collections_bookmark" },
@@ -77,7 +75,6 @@ export default {
 				install: { text: "INSTALL", class:"ext-installation" },
 				/* Legacy */
 				old_library: { text: "My library", icon: "class" },
-				old_about: { text: "About", icon: "help", link: "/help/guides/settings/about" },
 				old_catalogues: { text: "Catalogues", icon: "explore" },
 				old_overflow: { text: "Overflow menu", icon: "more_vert" },
 				old_backup: { text: "Backup", icon: "cloud_upload", link: "/help/guides/settings/backup" },
