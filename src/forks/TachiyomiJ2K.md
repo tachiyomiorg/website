@@ -1,6 +1,5 @@
 ---
 title: TachiyomiJ2K
-description: This fork adds certain enhancements that is not yet present in the base app.
 lang: en-US
 sidebar: false
 ---
