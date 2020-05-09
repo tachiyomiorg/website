@@ -1,12 +1,13 @@
 ---
 title: Forks
-description: Looking for something more specific, or just want to try out a new flavor? These are apps forked from Tachiyomi. 
+description: Forks are alternative versions of Tachiyomi with exclusive features. 
 lang: en-US
 sidebar: true
 sidebarDepth: 0
 ---
 
 # Forks
+Forks are alternative versions of **Tachiyomi** with exclusive features.
 
 ## <img class="headerLogo" :src="$withBase('/assets/media/fork-Neko-icon.png')"> [Neko](/forks/Neko)
 ::: aside-guide
