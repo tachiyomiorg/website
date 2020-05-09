@@ -2,7 +2,7 @@
 layout: ForkPage
 title: TachiyomiJ2K
 metaTitle: TachiyomiJ2K
-description: This fork adds certain enhancements that is not yet present in the base app.
+description: This fork takes a new approach to the design of the base app along with several other enhancements.
 lang: en-US
 meta:
   - property: og:image
@@ -21,7 +21,7 @@ sidebar: false
 ## Introduction
 **TachiyomiJ2K** is maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
 
-This fork adds certain enhancements that is not yet present in the base app.
+This fork takes a new approach to the design of the base app along with several other enhancements.
 
 <img :src="$withBase('/forks/TachiyomiJ2K/img/banner.png')"/>
 
