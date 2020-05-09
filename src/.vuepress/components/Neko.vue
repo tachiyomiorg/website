@@ -19,8 +19,6 @@ import PageEdit from '@theme/components/PageEdit.vue'
 import PageNav from '@theme/components/PageNav.vue'
 
 export default {
-	name: 'Neko',
-
 	components: { PageEdit, PageNav, Layout },
 	props: ['sidebarItems']
 }
