@@ -14,12 +14,12 @@ Skilled at code? Know how to improve something or you generally want to support 
 The main application.
 - Current: [inorichi/tachiyomi](https://github.com/inorichi/tachiyomi) ![GitHub issues](https://img.shields.io/github/issues/inorichi/tachiyomi?style=social)
 - Rewrite project: [tachiyomiorg/android-app](https://github.com/tachiyomiorg/android-app) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/android-app?style=social)
-
+***
 ### Extensions
 Used to read from different manga services.
 - Current: [inorichi/tachiyomi-extensions](https://github.com/inorichi/tachiyomi-extensions) ![GitHub issues](https://img.shields.io/github/issues/inorichi/tachiyomi-extensions?style=social)
 - Rewrite project: [tachiyomiorg/extensions](https://github.com/tachiyomiorg/extensions) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/extensions?style=social)
-
+***
 ### Website
 The repository that hosts this very website you're reading on now.
 - [tachiyomiorg/website](https://github.com/tachiyomiorg/website) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/website?style=social)
@@ -27,7 +27,7 @@ The repository that hosts this very website you're reading on now.
 ## Translation
 <a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget"><img src="https://hosted.weblate.org/widgets/tachiyomi/-/svg-badge.svg" alt="Translation status"/></a>
 
-Want to help translate the app to your language? You can do easily help do so using a service we use called **Weblate**.
+Want to help translate the app to your language? You can easily help by utilizing a service we use called **Weblate**.
 
 Visit our translation project [here](https://hosted.weblate.org/projects/tachiyomi/strings/).
 
@@ -41,10 +41,12 @@ Visit our translation project [here](https://hosted.weblate.org/projects/tachiyo
 #### Project status
 ***
 <a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget">
-<img src="https://hosted.weblate.org/widgets/tachiyomi/-/horizontal-auto.svg" alt="Translation status" />
+	<img src="https://hosted.weblate.org/widgets/tachiyomi/-/horizontal-auto.svg" alt="Translation status" />
 </a>
 
-## Monetary
-<a href='https://ko-fi.com/M4M8PGJI' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-If you can't contribute code or translation but you still wish to help, then you can choose to contribute directly to the projects founder, [Inorichi](https://github.com/inorichi/).
+## Donation
+If you can't contribute code or translations but you still wish to help, then you can choose to contribute directly to the projects founder, [Inorichi](https://github.com/inorichi/) by using the button below, or going [directly to Ko-Fi](https://ko-fi.com/inorichi).
+***
+<a href='https://ko-fi.com/inorichi' target='_blank' rel='noopener'>
+	<img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+</a>
