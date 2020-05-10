@@ -1,43 +1,47 @@
 ---
 layout: Help
-title: Help
+title: Help center
 description: An overview of help pages you can access quickly.
 lang: en-US
+hideSearch: true
 help:
   - title: FAQ
     description: Frequently asked questions.
     link: /help/faq/
-    icon: question_answer
+    faq: true
   - title: Guides
     description: Guides to help you get set up.
     link: /help/guides/getting-started/
-    icon: help
+    guides: true
   - title: Forks
-    description: Alternative versions of Tachiyomi with exclusive features.
+    description: Alternative versions.
     link: /forks/
-    icon: widgets
+    forks: true
   - title: Extensions
     description: Available extensions for the app.
     link: /extensions/
-    icon: extension
+    extensions: true
   - title: Discord
-    description: Discord server, primary means of chat and support.
+    description: Primary communication platform.
     linkExt: https://discord.gg/tachiyomi
-    icon: headset_mic
+    discord: true
   - title: Reddit
-    description: Reddit community.
+    description: Community forums.
     linkExt: https://reddit.com/r/Tachiyomi
-    icon: rate_review
+    reddit: true
   - title: GitHub
     description: Repository for the app.
     linkExt: https://github.com/inorichi/tachiyomi
-    icon: code
+    github: true
   - title: Contribution
     description: Help contribute to the app.
     link: /help/contribution/
-    icon: assistant
+    contribution: true
 ---
 
-# Help
+# Help center
 
-Need help? We've got your back.
+::: slot center
+### Need help? We've got your back.
+From common questions to guides, find help for everything Tachiyomi.
+:::
