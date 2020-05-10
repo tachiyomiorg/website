@@ -26,8 +26,9 @@
         'max-width': linksWrapMaxWidth + 'px'
       } : {}"
     >
+      <div v-if="$page.frontmatter.hideSearch"/>
       <AlgoliaSearchBox
-        v-if="isAlgoliaSearch"
+        v-else-if="isAlgoliaSearch"
         :options="algolia"
       />
       <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
