@@ -1,24 +1,52 @@
 ---
-title: How can I help?
+title: Contribution
 description: Find out how to help translate or build the app and extensions.
 lang: en-US
 ---
 
-# How can I help?
-:construction: :construction_worker_man: W.I.P.
+# Contribution
+Find out how to help translate or build the app and extensions.
 
-## GitHub
+## Code
+Skilled at code? Know how to improve something or you generally want to support the creation of the app?
+
+### Application
+The main application.
+- Current: [inorichi/tachiyomi](https://github.com/inorichi/tachiyomi) ![GitHub issues](https://img.shields.io/github/issues/inorichi/tachiyomi?style=social)
+- Rewrite project: [tachiyomiorg/android-app](https://github.com/tachiyomiorg/android-app) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/android-app?style=social)
+***
+### Extensions
+Used to read from different manga services.
+- Current: [inorichi/tachiyomi-extensions](https://github.com/inorichi/tachiyomi-extensions) ![GitHub issues](https://img.shields.io/github/issues/inorichi/tachiyomi-extensions?style=social)
+- Rewrite project: [tachiyomiorg/extensions](https://github.com/tachiyomiorg/extensions) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/extensions?style=social)
+***
+### Website
+The repository that hosts this very website you're reading on now.
+- [tachiyomiorg/website](https://github.com/tachiyomiorg/website) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/website?style=social)
 
 ## Translation
+<a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget"><img src="https://hosted.weblate.org/widgets/tachiyomi/-/svg-badge.svg" alt="Translation status"/></a>
 
-**The project is available at [https://hosted.weblate.org/engage/tachiyomi/](https://hosted.weblate.org/engage/tachiyomi/)**
-(direct [https://hosted.weblate.org/projects/tachiyomi/strings/](https://hosted.weblate.org/projects/tachiyomi/strings/))
+Want to help translate the app to your language? You can easily help by utilizing a service we use called **Weblate**.
 
-The translators guide can be found at [https://docs.weblate.org/en/latest/user/translating.html](https://docs.weblate.org/en/latest/user/translating.html). Notice also:
-* [https://docs.weblate.org/en/latest/user/profile.html#secondary-languages](https://docs.weblate.org/en/latest/user/profile.html#secondary-languages)
-* [https://docs.weblate.org/en/latest/user/profile.html#subscriptions](https://docs.weblate.org/en/latest/user/profile.html#subscriptions)
-* [https://docs.weblate.org/en/latest/user/translating.html#glossary](https://docs.weblate.org/en/latest/user/translating.html#glossary)
+Visit our translation project [here](https://hosted.weblate.org/projects/tachiyomi/strings/).
 
+#### Helpful links
 ***
+* [Translators guide](https://docs.weblate.org/en/latest/user/translating.html)
+* [Secondary-languages](https://docs.weblate.org/en/latest/user/profile.html#secondary-languages)
+* [Subscriptions](https://docs.weblate.org/en/latest/user/profile.html#subscriptions)
+* [Glossary](https://docs.weblate.org/en/latest/user/translating.html#glossary)
 
-[![Translation status](https://hosted.weblate.org/widgets/tachiyomi/-/multi-auto.svg)](https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget)
+#### Project status
+***
+<a href="https://hosted.weblate.org/engage/tachiyomi/?utm_source=widget">
+	<img src="https://hosted.weblate.org/widgets/tachiyomi/-/horizontal-auto.svg" alt="Translation status" />
+</a>
+
+## Donation
+If you can't contribute code or translations but you still wish to help, then you can choose to contribute directly to the projects founder, [Inorichi](https://github.com/inorichi/) by using the button below, or going [directly to Ko-Fi](https://ko-fi.com/inorichi).
+***
+<a href='https://ko-fi.com/inorichi' target='_blank' rel='noopener'>
+	<img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+</a>
