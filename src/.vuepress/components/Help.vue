@@ -7,23 +7,61 @@
 
 				<Content class="theme-custom-content" />
 				
+				<Content slot-key="center" />
+
+				<AlgoliaSearchBox :options="algolia" />
+
 				<div class="row help" v-if="data.help && data.help.length">
 					<div class="column helpItem" v-for="(helpItem, index) in data.help" :key="index">
 						<a v-if="helpItem.link" :href="helpItem.link" tabindex="1">
 							<div class="card">
-								<header>
+								<header v-if="helpItem.faq">
+									<FrequentlyAskedQuestionsIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else-if="helpItem.guides">
+									<ClipboardListIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else-if="helpItem.forks">
+									<SourceForkIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else-if="helpItem.extensions">
+									<PuzzleIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else-if="helpItem.contribution">
+									<LifebuoyIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else>
 									<MaterialIcon v-if="helpItem.icon" :iconName="helpItem.icon" iconOnly />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
+								<div class="helpItemBorder"/>
 								<p>{{ helpItem.description }}</p>
 							</div>
 						</a>
 						<a v-else="helpItem.linkExt" :href="helpItem.linkExt" target="_blank" rel="noreferrer" tabindex="1">
 							<div class="card">
-								<header>
+								<header v-if="helpItem.discord">
+									<DiscordIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else-if="helpItem.reddit">
+									<RedditIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else-if="helpItem.github">
+									<GitHubIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else>
 									<MaterialIcon v-if="helpItem.icon" :iconName="helpItem.icon" iconOnly />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
+								<div class="helpItemBorder"/>
 								<p>{{ helpItem.description }}</p>
 							</div>
 						</a>
@@ -38,61 +76,49 @@
 
 <script>
 import Navbar from '@theme/components/Navbar.vue'
+import AlgoliaSearchBox from '../theme/components/AlgoliaSearchBox.vue'
+
+import FrequentlyAskedQuestionsIcon from 'vue-material-design-icons/FrequentlyAskedQuestions.vue';
+import ClipboardListIcon from 'vue-material-design-icons/ClipboardList.vue';
+import SourceForkIcon from 'vue-material-design-icons/SourceFork.vue';
+import PuzzleIcon from 'vue-material-design-icons/Puzzle.vue';
+import DiscordIcon from 'vue-material-design-icons/Discord.vue';
+import RedditIcon from 'vue-material-design-icons/Reddit.vue';
+import GitHubIcon from 'vue-material-design-icons/GitHub.vue';
+import LifebuoyIcon from 'vue-material-design-icons/Lifebuoy.vue';
 
 export default {
-	components: { Navbar },
+	components: {
+		Navbar,
+		AlgoliaSearchBox,
+		FrequentlyAskedQuestionsIcon,
+		ClipboardListIcon,
+		SourceForkIcon,
+		PuzzleIcon,
+		DiscordIcon,
+		RedditIcon,
+		GitHubIcon,
+		LifebuoyIcon,
+	},
 
 	computed: {
 		data() {
 			return this.$page.frontmatter;
 		},
+
+		algolia () {
+			return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
+		},
+
+		isAlgoliaSearch () {
+			return this.algolia && this.algolia.apiKey && this.algolia.indexName
+		},
 	},
+  
 }
 </script>
 
 <style lang="stylus">
-*
-	box-sizing border-box
-
-.card
-	background-color #f9f6f6
-	color $textColor
-	border-radius 4px
-	box-shadow 0 1px 2px 0 rgba(0, 0, 0, 0.2)
-	height 10rem
-	padding 0.5rem
-	text-align center
-	user-select none
-	width auto
-	header
-		margin-top 1.25rem
-		white-space nowrap
-		h3
-			display inline-block
-			margin 0px
-	p
-		font-weight 400
-	&:hover
-		background-color darken(#f9f6f6, 5%)
-
-.column
-	float left
-	padding 0.5rem
-	width 25%
-	a:focus
-		box-shadow none
-		outline none
-		.card
-			box-shadow 0 0 0 1px #fff, 0 0 0 3px rgba(50,100,150,.4)
-			outline none
-
-.row
-	margin 0 -5px
-	&:after
-		content ""
-		display table
-		clear both
-
 .page
 	padding-left 0
 	padding-bottom 2rem
@@ -103,10 +129,128 @@ export default {
 	margin 0 auto
 	padding 2rem 2.5rem
 
-@media screen and (max-width: 600px)
-	.column
+	.content__center
+		text-align center
+		margin-bottom 2rem
+
+	.algolia-search-wrapper
 		width 100%
-		display block
-		margin-bottom 0rem
-		margin-top 0rem
+		text-align center
+		margin-bottom 5rem
+		.algolia-autocomplete
+			width 50%
+			input
+				background #ffffff url(/assets/img/search.83621669.svg) 0.6rem 0.9rem no-repeat
+				background-size 1rem
+				box-shadow 0px 0px 30px #b1aeae52
+				font-size 1.2rem
+				height 3rem
+				width 100%
+
+	*
+		box-sizing border-box
+
+	.card
+		background-color white
+		color $accentColorSecondary
+		border-radius 4px
+		box-shadow 0px 0px 30px #b1aeae52
+		height 12rem
+		width auto
+		overflow hidden
+		padding 0.5rem
+		text-align center
+		user-select none
+		header
+			margin-top 1.25rem
+			white-space nowrap
+			.material-icons,
+			.material-design-icon
+				font-size 2.5em
+				color $accentColorSecondary
+				&.discord-icon
+					color #7289DA
+				&.reddit-icon
+					color #FF5700
+				&.github-icon
+					color #24292E
+				&.lifebuoy-icon
+					color #bd3333
+			.material-design-icon > .material-design-icon__svg
+				position relative
+			h3
+				margin 10px
+				margin-bottom 0px
+		p
+			margin-top 0px
+			color #566573
+			font-weight 400
+			font-size 0.95rem
+		&:hover
+			position relative
+			top -5px
+
+	.column
+		float left
+		padding 0.5rem
+		width 25%
+		a:focus
+			box-shadow none
+			outline none
+			.card
+				box-shadow 0 0 0 1px #fff, 0 0 0 3px rgba(50,100,150,.4)
+				outline none
+
+	.row
+		margin 0 -5px
+		&:after
+			content ""
+			display table
+			clear both
+
+	.helpItemBorder
+		border-bottom 1px solid #cfd4db
+		width 25%
+		display inline-block
+
+@media screen and (max-width $MQMobile)
+	.theme-custom-content
+		padding 2rem 0.75rem
+		h1
+			margin-bottom 0.5rem
+		.content__center
+			margin-top 0rem
+			padding-top 0rem
+		.algolia-search-wrapper
+			width 100%
+			margin-bottom 1rem
+			.algolia-autocomplete
+				width 100%
+				input
+					width 100%
+					left 0
+		.column
+			width 50%
+			display block
+			margin-bottom 0rem
+			margin-top 0rem
+			padding 0.25rem
+		.card
+			height 9rem
+			header
+				margin-top 1rem
+				.material-icons,
+				.material-design-icon
+					font-size 1.1em
+				h3
+					font-size 1.2rem
+					display inline-block
+					margin 0px
+					margin-bottom 0.5rem
+			p
+				margin-top 0.2rem
+				font-size 0.9rem
+		.helpItemBorder
+			display none
+			width 60%
 </style>
