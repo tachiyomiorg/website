@@ -54,7 +54,7 @@
 							</div>
 						</a>
 						<a
-							v-else="helpItem.linkExt"
+							v-else-if="helpItem.linkExt"
 							:href="helpItem.linkExt"
 							target="_blank"
 							rel="noreferrer"
