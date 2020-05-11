@@ -143,7 +143,7 @@ export default {
 
 <style lang="stylus">
 .page
-	padding-left 0
+	padding-left 0 !important
 	padding-bottom 2rem
 	display block
 
