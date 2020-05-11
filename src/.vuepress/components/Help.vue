@@ -6,58 +6,80 @@
 				<slot name="top" />
 
 				<Content class="theme-custom-content" />
-				
+
 				<Content slot-key="center" />
 
 				<AlgoliaSearchBox :options="algolia" />
 
-				<div class="row help" v-if="data.help && data.help.length">
-					<div class="column helpItem" v-for="(helpItem, index) in data.help" :key="index">
-						<a v-if="helpItem.link" :href="helpItem.link" tabindex="1">
+				<div v-if="data.help && data.help.length" class="row help">
+					<div
+						v-for="(helpItem, index) in data.help"
+						:key="index"
+						class="column helpItem"
+					>
+						<a
+							v-if="helpItem.link"
+							:href="helpItem.link"
+							tabindex="1"
+						>
 							<div class="card">
 								<header v-if="helpItem.faqApp">
-									<CellphoneAndroidIcon/>
+									<CellphoneAndroidIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.faqExt">
-									<PuzzleIcon/>
+									<PuzzleIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.guides">
-									<ClipboardListIcon/>
+									<ClipboardListIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.forks">
-									<SourceForkIcon/>
+									<SourceForkIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.contribution">
-									<LifebuoyIcon/>
+									<LifebuoyIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else>
-									<MaterialIcon v-if="helpItem.icon" :iconName="helpItem.icon" iconOnly />
+									<MaterialIcon
+										v-if="helpItem.icon"
+										:icon-name="helpItem.icon"
+										icon-only
+									/>
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<p>{{ helpItem.description }}</p>
 							</div>
 						</a>
-						<a v-else="helpItem.linkExt" :href="helpItem.linkExt" target="_blank" rel="noreferrer" tabindex="1">
+						<a
+							v-else="helpItem.linkExt"
+							:href="helpItem.linkExt"
+							target="_blank"
+							rel="noreferrer"
+							tabindex="1"
+						>
 							<div class="card">
 								<header v-if="helpItem.discord">
-									<DiscordIcon/>
+									<DiscordIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.reddit">
-									<RedditIcon/>
+									<RedditIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.github">
-									<GitHubIcon/>
+									<GitHubIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else>
-									<MaterialIcon v-if="helpItem.icon" :iconName="helpItem.icon" iconOnly />
+									<MaterialIcon
+										v-if="helpItem.icon"
+										:icon-name="helpItem.icon"
+										icon-only
+									/>
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<p>{{ helpItem.description }}</p>
@@ -73,17 +95,17 @@
 </template>
 
 <script>
-import Navbar from '@theme/components/Navbar.vue'
-import AlgoliaSearchBox from '../theme/components/AlgoliaSearchBox.vue'
+import Navbar from "@theme/components/Navbar.vue";
+import AlgoliaSearchBox from "../theme/components/AlgoliaSearchBox.vue";
 
-import CellphoneAndroidIcon from 'vue-material-design-icons/CellphoneAndroid.vue';
-import ClipboardListIcon from 'vue-material-design-icons/ClipboardList.vue';
-import SourceForkIcon from 'vue-material-design-icons/SourceFork.vue';
-import PuzzleIcon from 'vue-material-design-icons/Puzzle.vue';
-import DiscordIcon from 'vue-material-design-icons/Discord.vue';
-import RedditIcon from 'vue-material-design-icons/Reddit.vue';
-import GitHubIcon from 'vue-material-design-icons/GitHub.vue';
-import LifebuoyIcon from 'vue-material-design-icons/Lifebuoy.vue';
+import CellphoneAndroidIcon from "vue-material-design-icons/CellphoneAndroid.vue";
+import ClipboardListIcon from "vue-material-design-icons/ClipboardList.vue";
+import SourceForkIcon from "vue-material-design-icons/SourceFork.vue";
+import PuzzleIcon from "vue-material-design-icons/Puzzle.vue";
+import DiscordIcon from "vue-material-design-icons/Discord.vue";
+import RedditIcon from "vue-material-design-icons/Reddit.vue";
+import GitHubIcon from "vue-material-design-icons/GitHub.vue";
+import LifebuoyIcon from "vue-material-design-icons/Lifebuoy.vue";
 
 export default {
 	components: {
@@ -96,7 +118,7 @@ export default {
 		DiscordIcon,
 		RedditIcon,
 		GitHubIcon,
-		LifebuoyIcon,
+		LifebuoyIcon
 	},
 
 	computed: {
@@ -104,16 +126,21 @@ export default {
 			return this.$page.frontmatter;
 		},
 
-		algolia () {
-			return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
+		algolia() {
+			return (
+				this.$themeLocaleConfig.algolia ||
+				this.$site.themeConfig.algolia ||
+				{}
+			);
 		},
 
-		isAlgoliaSearch () {
-			return this.algolia && this.algolia.apiKey && this.algolia.indexName
-		},
-	},
-  
-}
+		isAlgoliaSearch() {
+			return (
+				this.algolia && this.algolia.apiKey && this.algolia.indexName
+			);
+		}
+	}
+};
 </script>
 
 <style lang="stylus">
