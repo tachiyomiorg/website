@@ -70,7 +70,7 @@
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.github">
-									<GitHubIcon />
+									<GithubIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.icon">
@@ -102,7 +102,7 @@ import SourceForkIcon from "vue-material-design-icons/SourceFork.vue";
 import PuzzleIcon from "vue-material-design-icons/Puzzle.vue";
 import DiscordIcon from "vue-material-design-icons/Discord.vue";
 import RedditIcon from "vue-material-design-icons/Reddit.vue";
-import GitHubIcon from "vue-material-design-icons/GitHub.vue";
+import GithubIcon from "vue-material-design-icons/Github.vue";
 import LifebuoyIcon from "vue-material-design-icons/Lifebuoy.vue";
 
 export default {
@@ -115,7 +115,7 @@ export default {
 		PuzzleIcon,
 		DiscordIcon,
 		RedditIcon,
-		GitHubIcon,
+		GithubIcon,
 		LifebuoyIcon
 	},
 
