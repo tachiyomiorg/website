@@ -15,8 +15,12 @@
 					<div class="column helpItem" v-for="(helpItem, index) in data.help" :key="index">
 						<a v-if="helpItem.link" :href="helpItem.link" tabindex="1">
 							<div class="card">
-								<header v-if="helpItem.faq">
-									<FrequentlyAskedQuestionsIcon/>
+								<header v-if="helpItem.faqApp">
+									<CellphoneAndroidIcon/>
+									<h3>{{ helpItem.title }}</h3>
+								</header>
+								<header v-else-if="helpItem.faqExt">
+									<PuzzleIcon/>
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.guides">
@@ -27,10 +31,6 @@
 									<SourceForkIcon/>
 									<h3>{{ helpItem.title }}</h3>
 								</header>
-								<header v-else-if="helpItem.extensions">
-									<PuzzleIcon/>
-									<h3>{{ helpItem.title }}</h3>
-								</header>
 								<header v-else-if="helpItem.contribution">
 									<LifebuoyIcon/>
 									<h3>{{ helpItem.title }}</h3>
@@ -39,7 +39,6 @@
 									<MaterialIcon v-if="helpItem.icon" :iconName="helpItem.icon" iconOnly />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
-								<div class="helpItemBorder"/>
 								<p>{{ helpItem.description }}</p>
 							</div>
 						</a>
@@ -61,7 +60,6 @@
 									<MaterialIcon v-if="helpItem.icon" :iconName="helpItem.icon" iconOnly />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
-								<div class="helpItemBorder"/>
 								<p>{{ helpItem.description }}</p>
 							</div>
 						</a>
@@ -78,7 +76,7 @@
 import Navbar from '@theme/components/Navbar.vue'
 import AlgoliaSearchBox from '../theme/components/AlgoliaSearchBox.vue'
 
-import FrequentlyAskedQuestionsIcon from 'vue-material-design-icons/FrequentlyAskedQuestions.vue';
+import CellphoneAndroidIcon from 'vue-material-design-icons/CellphoneAndroid.vue';
 import ClipboardListIcon from 'vue-material-design-icons/ClipboardList.vue';
 import SourceForkIcon from 'vue-material-design-icons/SourceFork.vue';
 import PuzzleIcon from 'vue-material-design-icons/Puzzle.vue';
@@ -91,7 +89,7 @@ export default {
 	components: {
 		Navbar,
 		AlgoliaSearchBox,
-		FrequentlyAskedQuestionsIcon,
+		CellphoneAndroidIcon,
 		ClipboardListIcon,
 		SourceForkIcon,
 		PuzzleIcon,
@@ -128,11 +126,11 @@ export default {
 	max-width 75rem
 	margin 0 auto
 	padding 2rem 2.5rem
-
+	*
+		box-sizing border-box
 	.content__center
 		text-align center
 		margin-bottom 2rem
-
 	.algolia-search-wrapper
 		width 100%
 		text-align center
@@ -140,27 +138,25 @@ export default {
 		.algolia-autocomplete
 			width 50%
 			input
-				background #ffffff url(/assets/img/search.83621669.svg) 0.6rem 0.9rem no-repeat
+				background #ffffff url('/assets/img/search.83621669.svg') 0.6rem 0.9rem no-repeat
 				background-size 1rem
-				box-shadow 0px 0px 30px #b1aeae52
+				box-shadow 0 0 30px rgba(177,174,174,0.322)
+				border 1px solid #cfd4db
 				font-size 1.2rem
 				height 3rem
 				width 100%
-
-	*
-		box-sizing border-box
-
 	.card
 		background-color white
-		color $accentColorSecondary
-		border-radius 4px
-		box-shadow 0px 0px 30px #b1aeae52
+		border 1px solid #cfd4db
+		border-radius 6px
+		box-shadow 0 0 30px #b1aeae52
+		color $accentColor
 		height 12rem
-		width auto
 		overflow hidden
 		padding 0.5rem
 		text-align center
 		user-select none
+		width auto
 		header
 			margin-top 1.25rem
 			white-space nowrap
@@ -168,28 +164,17 @@ export default {
 			.material-design-icon
 				font-size 2.5em
 				color $accentColorSecondary
-				&.discord-icon
-					color #7289DA
-				&.reddit-icon
-					color #FF5700
-				&.github-icon
-					color #24292E
-				&.lifebuoy-icon
-					color #bd3333
 			.material-design-icon > .material-design-icon__svg
 				position relative
 			h3
 				margin 10px
-				margin-bottom 0px
 		p
-			margin-top 0px
 			color #566573
 			font-weight 400
 			font-size 0.95rem
 		&:hover
 			position relative
 			top -5px
-
 	.column
 		float left
 		padding 0.5rem
@@ -198,59 +183,54 @@ export default {
 			box-shadow none
 			outline none
 			.card
-				box-shadow 0 0 0 1px #fff, 0 0 0 3px rgba(50,100,150,.4)
+				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
 				outline none
-
 	.row
 		margin 0 -5px
 		&:after
-			content ""
+			content ''
 			display table
 			clear both
-
-	.helpItemBorder
-		border-bottom 1px solid #cfd4db
-		width 25%
-		display inline-block
 
 @media screen and (max-width $MQMobile)
 	.theme-custom-content
 		padding 2rem 0.75rem
+		padding-bottom 0
 		h1
 			margin-bottom 0.5rem
 		.content__center
-			margin-top 0rem
-			padding-top 0rem
+			margin-top 0
+			padding-top 0
 		.algolia-search-wrapper
 			width 100%
 			margin-bottom 1rem
 			.algolia-autocomplete
 				width 100%
+				padding 0.4rem 0.65rem
 				input
 					width 100%
 					left 0
 		.column
-			width 50%
+			width 100%
 			display block
-			margin-bottom 0rem
-			margin-top 0rem
-			padding 0.25rem
+			margin-bottom 0
+			margin-top 0
+			padding 0.4rem 1rem
 		.card
-			height 9rem
+			height auto
+			width auto
 			header
 				margin-top 1rem
 				.material-icons,
 				.material-design-icon
-					font-size 1.1em
+					font-size 1.6em
 				h3
-					font-size 1.2rem
+					font-size 1.5rem
 					display inline-block
-					margin 0px
-					margin-bottom 0.5rem
+					margin 0
 			p
-				margin-top 0.2rem
-				font-size 0.9rem
-		.helpItemBorder
-			display none
-			width 60%
+				font-size 1rem
+			&:hover
+				position inherit
+				top unset
 </style>
