@@ -28,6 +28,7 @@ module.exports = {
 		repo: 'inorichi/tachiyomi',
 		docsRepo: 'tachiyomiorg/website',
 		docsDir: 'src',
+		smoothScroll: true,
 		algolia: {
 			apiKey: 'fc1c45b5a3835e1882cbbf0751dfe705',
 			indexName: 'tachiyomi'
