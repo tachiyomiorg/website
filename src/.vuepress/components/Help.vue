@@ -43,9 +43,8 @@
 									<LifebuoyIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
-								<header v-else>
+								<header v-else-if="helpItem.icon">
 									<MaterialIcon
-										v-if="helpItem.icon"
 										:icon-name="helpItem.icon"
 										icon-only
 									/>
@@ -74,9 +73,8 @@
 									<GitHubIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
-								<header v-else>
+								<header v-else-if="helpItem.icon">
 									<MaterialIcon
-										v-if="helpItem.icon"
 										:icon-name="helpItem.icon"
 										icon-only
 									/>
