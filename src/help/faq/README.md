@@ -125,7 +125,7 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 
 - Fastest manga updates: **Mangadex** and scanlator sources
 - All around decent: **MangaNelo** and **Mangakakalot** (both in **Mangabox** extension)
-- Largest manga library: **MangaPark** (found in **Mangabox** extension)
+- Largest manga library: **MangaPark**
 - High quality scans and official translation: **MangaSee**
 - Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
