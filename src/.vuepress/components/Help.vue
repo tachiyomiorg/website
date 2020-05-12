@@ -153,6 +153,13 @@ export default {
 	padding 2rem 2.5rem
 	*
 		box-sizing border-box
+	h1
+		text-align center
+		.header-anchor
+			display none
+	h3
+		.header-anchor
+			display none
 	.content__center
 		text-align center
 		margin-bottom 2rem
