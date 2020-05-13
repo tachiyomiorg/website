@@ -224,6 +224,11 @@ export default {
 			display table
 			clear both
 
+@media screen and (max-width $MQNarrow) 
+	.theme-custom-content
+		.column
+			width 50%
+
 @media screen and (max-width $MQMobile)
 	.theme-custom-content
 		padding 2rem 0.75rem
