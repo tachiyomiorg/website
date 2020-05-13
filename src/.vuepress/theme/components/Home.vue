@@ -22,6 +22,7 @@
 				<a
 					v-if="data.buttonDownload"
 					class="action-button action-button__Download"
+					tabindex="0"
 					@click="showDownloads"
 				>
 					<CloudDownloadIcon />
@@ -30,6 +31,7 @@
 				<a
 					v-if="data.buttonGuides"
 					class="action-button action-button__Guides"
+					tabindex="0"
 					:href="data.buttonGuidesLink"
 				>
 					<BookOpenVariantIcon />
@@ -148,6 +150,7 @@ export default {
 					content: "showDownloads__content",
 					confirmButton: "showDownloads__confirmButton",
 					cancelButton: "showDownloads__cancelButton",
+					closeButton: "showDownloads__closeButton",
 					footer: "showDownloads__footer",
 				},
 				showClass: {
@@ -175,6 +178,7 @@ export default {
 							content: "showDownloads__content",
 							confirmButton: "showDownloads__confirmButton",
 							cancelButton: "showDownloads__cancelButton",
+							closeButton: "showDownloads__closeButton",
 							footer: "showDownloads__footer",
 						},
 						showClass: {
@@ -213,6 +217,7 @@ export default {
 							content: "showDownloads__content",
 							confirmButton: "showDownloads__confirmButton",
 							cancelButton: "showDownloads__cancelButton",
+							closeButton: "showDownloads__closeButton",
 							footer: "showDownloads__footer",
 						},
 						showClass: {
@@ -242,6 +247,7 @@ export default {
 									confirmButton:
 										"showDownloads__confirmButton",
 									cancelButton: "showDownloads__cancelButton",
+									closeButton: "showDownloads__closeButton",
 									footer: "showDownloads__footer",
 								},
 								showClass: {
@@ -321,6 +327,9 @@ export default {
 					border-bottom 1px solid darken($accentColorSecondary, 10%)
 					&:hover
 						background-color lighten($accentColorSecondary, 10%)
+				&:focus
+					box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+					outline none
 	.features
 		border-top 1px solid $borderColor
 		padding 1rem 0
@@ -369,6 +378,56 @@ export default {
 			border-top 1px solid $borderColor
 			text-align center
 			color lighten($textColor, 25%)
+
+.showDownloads
+	button
+		user-select none
+	&__popup
+		width 30em !important
+	&__cancelButton
+	&__confirmButton
+		font-family $buttonFontFamily
+	&__confirmButton
+		width 50% !important
+		margin-left 25% !important
+		margin-right 25% !important
+		margin-bottom 8px !important
+	&__cancelButton
+		background none !important
+		color $textColor !important
+		font-size 0.8rem !important
+		padding 2px !important
+		padding-top 4px !important
+		border-top 1px solid darken($borderColor, 10%) !important
+		border-radius 6px !important
+		strong
+			color $accentColor
+			&:hover
+				cursor pointer
+				opacity 0.8
+			&:focus
+				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+				outline none
+		&:hover
+			cursor default
+	&__closeButton
+		border-radius 6px
+		width 1em
+		height 1em
+		margin-top 0.2em
+		margin-right 0.2em
+		&:focus
+			box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+			outline none
+	&__title
+		border-bottom-width 0 !important
+		font-family $buttonFontFamily !important
+		font-weight 500
+	&__content
+		margin-top -10px
+		font-size 1rem
+	&__footer
+		text-align center
 
 @keyframes fade
 	0%
