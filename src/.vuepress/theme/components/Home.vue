@@ -1,33 +1,24 @@
 <template>
-	<main
-		class="home"
-		aria-labelledby="main-title"
-	>
+	<main class="home" aria-labelledby="main-title">
 		<header class="hero">
 			<img
 				v-if="data.heroImage"
 				:src="$withBase(data.heroImage)"
 				:alt="data.heroAlt || 'Logo'"
-			>
+			/>
 
-			<h1
-				v-if="data.heroText !== null"
-				id="main-title"
-			>
-				{{ data.heroText || $title || 'Tachiyomi' }}
+			<h1 v-if="data.heroText !== null" id="main-title">
+				{{ data.heroText || "Tachiyomi" }}
 			</h1>
 
-			<p
-				v-if="data.tagline !== null"
-				class="description"
-			>
-				{{ data.tagline || $description || 'Free and open source manga reader for Android.' }}
+			<p v-if="data.tagline !== null" class="description">
+				{{
+					data.tagline ||
+					"Free and open source manga reader for Android."
+				}}
 			</p>
 
-			<p
-				v-if="data.buttonDownload || data.buttonGuides"
-				class="action"
-			>
+			<p v-if="data.buttonDownload || data.buttonGuides" class="action">
 				<a
 					v-if="data.buttonDownload"
 					class="action-button action-button__Download"
@@ -47,10 +38,7 @@
 			</p>
 		</header>
 
-		<div
-			v-if="data.features && data.features.length"
-			class="features"
-		>
+		<div v-if="data.features && data.features.length" class="features">
 			<div
 				v-for="(feature, index) in data.features"
 				:key="index"
@@ -59,8 +47,18 @@
 				<h2>{{ feature.title }}</h2>
 				<p>{{ feature.details }}</p>
 				<section class="featureAnimation">
-					<img class="featureAnimation__dark" :src="$withBase('/assets/' + feature.image + '-Dark.png')" />
-					<img class="featureAnimation__light" :src="$withBase('/assets/' + feature.image + '-Light.png')" />
+					<img
+						class="featureAnimation__dark"
+						:src="
+							$withBase('/assets/' + feature.image + '-Dark.png')
+						"
+					/>
+					<img
+						class="featureAnimation__light"
+						:src="
+							$withBase('/assets/' + feature.image + '-Light.png')
+						"
+					/>
 				</section>
 			</div>
 		</div>
@@ -68,10 +66,7 @@
 		<Content class="theme-default-content custom" />
 
 		<footer>
-			<div
-				v-if="data.footer"
-				class="footer"
-			>
+			<div v-if="data.footer" class="footer">
 				{{ data.footer }}
 			</div>
 		</footer>
@@ -79,7 +74,6 @@
 </template>
 
 <script>
-import NavLink from '@theme/components/NavLink.vue';
 import axios from "axios";
 
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
@@ -88,18 +82,14 @@ import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
-const LATEST_RELEASE =
-	"https://github.com/inorichi/tachiyomi/releases/latest";
+const LATEST_RELEASE = "https://github.com/inorichi/tachiyomi/releases/latest";
 
-const PREVIEW_URL =
-	"https://tachiyomi.kanade.eu/latest";
-
+const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
 
 export default {
-	name: 'Home',
+	name: "Home",
 
 	components: {
-		NavLink,
 		CloudDownloadIcon,
 		BookOpenVariantIcon,
 	},
@@ -112,34 +102,41 @@ export default {
 	},
 
 	computed: {
-		data () {
-			return this.$page.frontmatter
+		data() {
+			return this.$page.frontmatter;
 		},
 
-		buttonDownload () {
+		buttonDownload() {
 			return {
-				text: this.data.buttonDownload
-			}
+				text: this.data.buttonDownload,
+			};
 		},
 
-		buttonGuidesLink () {
+		buttonGuidesLink() {
 			return {
 				link: this.data.buttonGuidesLink,
-				text: this.data.buttonGuides
-			}
+				text: this.data.buttonGuides,
+			};
 		},
+	},
 
+	async mounted() {
+		const { data } = await axios.get(RELEASE_URL);
+		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+		this.$data.tagName = data.tag_name;
+		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
 	},
 
 	methods: {
 		showDownloads() {
 			this.$swal({
-				title: 'Get Tachiyomi for Android',
-				text: 'Requires Android 5.0 or newer.',
-				confirmButtonText: 'Download',
-				confirmButtonAriaLabel: 'Download Tachiyomi',
-				cancelButtonText: 'Living on the edge? Get the <strong>Preview</strong>',
-				cancelButtonAriaLabel: 'Download Preview',
+				title: "Get Tachiyomi for Android",
+				text: "Requires Android 5.0 or newer.",
+				confirmButtonText: "Download",
+				confirmButtonAriaLabel: "Download Tachiyomi",
+				cancelButtonText:
+					"Living on the edge? Get the <strong>Preview</strong>",
+				cancelButtonAriaLabel: "Download Preview",
 				showCloseButton: true,
 				showCancelButton: true,
 				focusConfirm: true,
@@ -154,18 +151,18 @@ export default {
 					footer: "showDownloads__footer",
 				},
 				showClass: {
-					popup: "animate__animated animate__faster animate__fadeIn"
+					popup: "animate__animated animate__faster animate__fadeIn",
 				},
 				hideClass: {
-					popup: "animate__animated animate__faster animate__zoomOut"
+					popup: "animate__animated animate__faster animate__zoomOut",
 				},
-			}).then(result => {
+			}).then((result) => {
 				if (result.value) {
 					this.$swal({
 						icon: "success",
 						title: "Downloading",
 						text: "Tachiyomi",
-						confirmButtonText: 'Dismiss',
+						confirmButtonText: "Dismiss",
 						showCloseButton: false,
 						showCancelButton: false,
 						timer: 50000,
@@ -181,22 +178,31 @@ export default {
 							footer: "showDownloads__footer",
 						},
 						showClass: {
-							popup: "animate__animated animate__faster animate__pulse"
+							popup:
+								"animate__animated animate__faster animate__pulse",
 						},
 						hideClass: {
-							popup: "animate__animated animate__faster animate__zoomOut"
+							popup:
+								"animate__animated animate__faster animate__zoomOut",
 						},
 					});
 					window.location.assign(
 						this.$data.browserDownloadUrl || LATEST_RELEASE
 					);
-					window.ga("send", "event", "Action", "Download", "Tachiyomi");
+					window.ga(
+						"send",
+						"event",
+						"Action",
+						"Download",
+						"Tachiyomi"
+					);
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
 						icon: "warning",
 						title: "Are you sure?",
-						html: "<strong>Preview</strong> is not recommended if you're not willing to test for – and endure issues.",
-						confirmButtonText: 'I am sure.',
+						html:
+							"<strong>Preview</strong> is not recommended if you're not willing to test for – and endure issues.",
+						confirmButtonText: "I am sure.",
 						showCloseButton: true,
 						showCancelButton: false,
 						customClass: {
@@ -210,18 +216,19 @@ export default {
 							footer: "showDownloads__footer",
 						},
 						showClass: {
-							popup: "animate__animated animate__headShake"
+							popup: "animate__animated animate__headShake",
 						},
 						hideClass: {
-							popup: "animate__animated animate__faster animate__zoomOut"
+							popup:
+								"animate__animated animate__faster animate__zoomOut",
 						},
-					}).then(result => {
+					}).then((result) => {
 						if (result.value) {
 							this.$swal({
 								icon: "success",
 								title: "Downloading",
 								text: "Tachiyomi Preview",
-								confirmButtonText: 'Dismiss',
+								confirmButtonText: "Dismiss",
 								showCloseButton: false,
 								showCancelButton: false,
 								timer: 5000,
@@ -232,36 +239,35 @@ export default {
 									actions: "showDownloads__actions",
 									title: "showDownloads__title",
 									content: "showDownloads__content",
-									confirmButton: "showDownloads__confirmButton",
+									confirmButton:
+										"showDownloads__confirmButton",
 									cancelButton: "showDownloads__cancelButton",
 									footer: "showDownloads__footer",
 								},
 								showClass: {
-									popup: "animate__animated animate__faster animate__pulse"
+									popup:
+										"animate__animated animate__faster animate__pulse",
 								},
 								hideClass: {
-									popup: "animate__animated animate__faster animate__zoomOut"
+									popup:
+										"animate__animated animate__faster animate__zoomOut",
 								},
 							});
-							window.location.assign(
-								PREVIEW_URL
+							window.location.assign(PREVIEW_URL);
+							window.ga(
+								"send",
+								"event",
+								"Action",
+								"Download",
+								"Tachiyomi Preview"
 							);
-							window.ga("send", "event", "Action", "Download", "Tachiyomi Preview");
 						}
 					});
 				}
 			});
-		}
+		},
 	},
-
-	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
-		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		this.$data.tagName = data.tag_name;
-		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
-	},
-
-}
+};
 </script>
 
 <style lang="stylus">
