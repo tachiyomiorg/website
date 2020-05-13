@@ -24,6 +24,7 @@
 					class="action-button action-button__Download"
 					tabindex="0"
 					@click="showDownloads"
+					@keyup.enter="showDownloads"
 				>
 					<CloudDownloadIcon />
 					{{ data.buttonDownload }}
