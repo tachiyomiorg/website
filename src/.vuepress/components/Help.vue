@@ -313,4 +313,6 @@ export default {
 			&:hover
 				position inherit
 				top unset
+				.material-design-icon
+					color $accentColorSecondary
 </style>
