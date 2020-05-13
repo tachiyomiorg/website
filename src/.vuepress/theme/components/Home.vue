@@ -25,19 +25,23 @@
 			</p>
 
 			<p
-				v-if="data.actionText && data.actionLink"
+				v-if="data.buttonDownload || data.buttonGuides"
 				class="action"
 			>
 				<a
-					class="action-button action-button__download"
+					v-if="data.buttonDownload"
+					class="action-button action-button__Download"
 					@click="showDownloads"
 				>
-					{{ data.actionDownload }}
+					{{ data.buttonDownload }}
 				</a>
-				<NavLink
-					class="action-button action-button__get-started"
-					:item="actionLink"
-				/>
+				<a
+					v-if="data.buttonGuides"
+					class="action-button action-button__Guides"
+					:href="data.buttonGuidesLink"
+				>
+					{{ data.buttonGuides }}
+				</a>
 			</p>
 		</header>
 
@@ -52,18 +56,23 @@
 			>
 				<h2>{{ feature.title }}</h2>
 				<p>{{ feature.details }}</p>
-				<img v-if="feature.image" :src="$withBase(feature.image)" />
+				<section class="featureAnimation">
+					<img class="featureAnimation__dark" :src="$withBase('/assets/' + feature.image + '-Dark.png')" />
+					<img class="featureAnimation__light" :src="$withBase('/assets/' + feature.image + '-Light.png')" />
+				</section>
 			</div>
 		</div>
 
 		<Content class="theme-default-content custom" />
 
-		<div
-			v-if="data.footer"
-			class="footer"
-		>
-			{{ data.footer }}
-		</div>
+		<footer>
+			<div
+				v-if="data.footer"
+				class="footer"
+			>
+				{{ data.footer }}
+			</div>
+		</footer>
 	</main>
 </template>
 
@@ -97,18 +106,19 @@ export default {
 			return this.$page.frontmatter
 		},
 
-		actionDownload () {
+		buttonDownload () {
 			return {
-				text: this.data.actionDownload
+				text: this.data.buttonDownload
 			}
 		},
 
-		actionLink () {
+		buttonGuidesLink () {
 			return {
-				link: this.data.actionLink,
-				text: this.data.actionText
+				link: this.data.buttonGuidesLink,
+				text: this.data.buttonGuides
 			}
-		}
+		},
+
 	},
 
 	methods: {
@@ -268,27 +278,28 @@ export default {
 			color lighten($textColor, 40%)
 		.action
 			user-select none
+			max-width 25rem
 			.action-button
 				cursor pointer
 				margin 0.25rem
-				min-width 11rem
+				width 10rem
 				display inline-block
 				font-size 1.2rem
 				font-family $buttonFontFamily
 				color #fff
-				padding 0.8rem 1.6rem
+				padding 0.8rem
 				border-radius 4px
 				transition background-color .1s ease
 				box-sizing border-box
 				border-bottom 1px solid darken($accentColor, 10%)
 				.icon.outbound
 					display none
-				&__download
+				&__Download
 					background-color $accentColor
 					border-bottom 1px solid darken($accentColor, 10%)
 					&:hover
 						background-color lighten($accentColor, 10%)
-				&__get-started
+				&__Guides
 					background-color $accentColorSecondary
 					border-bottom 1px solid darken($accentColorSecondary, 10%)
 					&:hover
@@ -316,14 +327,41 @@ export default {
 		p
 			color lighten($textColor, 25%)
 			min-height 4em
-		img
-			max-height 28em
-			max-width 100%
-	.footer
-		padding 2.5rem
-		border-top 1px solid $borderColor
-		text-align center
-		color lighten($textColor, 25%)
+		.featureAnimation
+			display block
+			position relative
+			&__light
+			&__dark
+				border-radius 6px
+				max-height 32em
+				max-width 100%
+				margin-left auto
+				margin-right auto
+				left 0
+				right 0
+			&__light
+				animation fade 2s ease-in-out 2s infinite alternate
+				box-shadow 0 10px 50px 0px #ddd
+			&__dark
+				position absolute
+				box-shadow 0 10px 50px 0px #ddd
+	footer
+		position relative
+		.footer
+			padding 2.5rem
+			border-top 1px solid $borderColor
+			text-align center
+			color lighten($textColor, 25%)
+
+@keyframes fade
+	0%
+		opacity 1
+	25%
+		opacity 1
+	75%
+		opacity 0
+	100%
+		opacity 0
 
 @media (max-width: $MQMobile)
 	.home
@@ -339,7 +377,7 @@ export default {
 		padding-right 1.5rem
 		.hero
 			img
-				max-height 210px
+				max-height 6rem
 				margin 2rem auto 1.2rem
 			h1
 				font-size 2rem
@@ -352,5 +390,5 @@ export default {
 				padding 0.6rem 1.2rem
 		.feature
 			h2
-				font-size 1.25rem
+				font-size 1.8rem
 </style>
