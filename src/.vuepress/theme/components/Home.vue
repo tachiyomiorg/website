@@ -33,6 +33,7 @@
 					class="action-button action-button__Download"
 					@click="showDownloads"
 				>
+					<CloudDownloadIcon />
 					{{ data.buttonDownload }}
 				</a>
 				<a
@@ -40,6 +41,7 @@
 					class="action-button action-button__Guides"
 					:href="data.buttonGuidesLink"
 				>
+					<BookOpenVariantIcon />
 					{{ data.buttonGuides }}
 				</a>
 			</p>
@@ -77,8 +79,11 @@
 </template>
 
 <script>
-import NavLink from '@theme/components/NavLink.vue'
+import NavLink from '@theme/components/NavLink.vue';
 import axios from "axios";
+
+import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
+import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
 
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
@@ -89,10 +94,15 @@ const LATEST_RELEASE =
 const PREVIEW_URL =
 	"https://tachiyomi.kanade.eu/latest";
 
+
 export default {
 	name: 'Home',
 
-	components: { NavLink },
+	components: {
+		NavLink,
+		CloudDownloadIcon,
+		BookOpenVariantIcon,
+	},
 
 	data() {
 		return {
@@ -256,42 +266,43 @@ export default {
 
 <style lang="stylus">
 .home
-	padding $navbarHeight 2rem 0
-	max-width $homePageWidth
-	margin 0px auto
 	display block
+	margin 0px auto
+	max-width $homePageWidth
+	padding $navbarHeight 2rem 0
 	.hero
 		text-align center
 		img
-			max-width: 100%
-			max-height $heroImageHeight
 			display block
-			margin 3rem auto 1.5rem
+			margin 1rem auto
+			max-height $heroImageHeight
+			max-width: 100%
 		h1
 			font-size 3rem
 		h1, .description, .action
-			margin 1.8rem auto
+			margin 1rem auto
 		.description
-			max-width 35rem
+			color lighten($textColor, 40%)
 			font-size 1.6rem
 			line-height 1.3
-			color lighten($textColor, 40%)
+			margin 1rem auto
+			max-width 35rem
 		.action
 			user-select none
-			max-width 25rem
+			margin 2rem auto
 			.action-button
-				cursor pointer
-				margin 0.25rem
-				width 10rem
-				display inline-block
-				font-size 1.2rem
-				font-family $buttonFontFamily
-				color #fff
-				padding 0.8rem
-				border-radius 4px
-				transition background-color .1s ease
-				box-sizing border-box
 				border-bottom 1px solid darken($accentColor, 10%)
+				border-radius 4px
+				box-sizing border-box
+				color #fff
+				cursor pointer
+				display inline-block
+				font-family $buttonFontFamily
+				font-size 1.125rem
+				margin 0.25rem
+				padding 0.8rem
+				transition background-color .1s ease
+				width 10rem
 				.icon.outbound
 					display none
 				&__Download
@@ -306,8 +317,8 @@ export default {
 						background-color lighten($accentColorSecondary, 10%)
 	.features
 		border-top 1px solid $borderColor
-		padding 1.2rem 0
-		margin-top 2.5rem
+		padding 1rem 0
+		margin-top 1rem
 		display flex
 		flex-wrap wrap
 		align-items flex-start
