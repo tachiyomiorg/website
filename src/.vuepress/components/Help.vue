@@ -63,15 +63,24 @@
 							<div class="card">
 								<header v-if="helpItem.discord">
 									<DiscordIcon />
-									<h3>{{ helpItem.title }}</h3>
+									<span>
+										<h3>{{ helpItem.title }}</h3>
+										<OutboundLink />
+									</span>
 								</header>
 								<header v-else-if="helpItem.reddit">
 									<RedditIcon />
-									<h3>{{ helpItem.title }}</h3>
+									<span>
+										<h3>{{ helpItem.title }}</h3>
+										<OutboundLink />
+									</span>
 								</header>
 								<header v-else-if="helpItem.github">
 									<GithubIcon />
-									<h3>{{ helpItem.title }}</h3>
+									<span>
+										<h3>{{ helpItem.title }}</h3>
+										<OutboundLink />
+									</span>
 								</header>
 								<header v-else-if="helpItem.icon">
 									<MaterialIcon
@@ -194,10 +203,22 @@ export default {
 			white-space nowrap
 			.material-icons,
 			.material-design-icon
+				display contents
 				font-size 2.5em
 				color $accentColorSecondary
 			.material-design-icon > .material-design-icon__svg
 				position relative
+			span
+				display block
+				.icon.outbound
+					display inline-block
+					visibility hidden
+					right 10px
+					top -4px
+				h3
+					display inline-block
+					margin-left 1.8rem
+					margin-bottom 0px
 			h3
 				margin 10px
 		p
@@ -207,6 +228,17 @@ export default {
 		&:hover
 			position relative
 			top -5px
+			.material-design-icon
+				color $accentColor
+				&.discord-icon
+					color #7289DA
+				&.reddit-icon
+					color #FF5700
+				&.github-icon
+					color #333333
+			.icon.outbound
+				visibility visible
+
 	.column
 		float left
 		padding 0.5rem
@@ -217,6 +249,7 @@ export default {
 			.card
 				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
 				outline none
+
 	.row
 		margin 0 -5px
 		&:after
@@ -256,6 +289,21 @@ export default {
 				.material-icons,
 				.material-design-icon
 					font-size 1.6em
+					&.discord-icon
+						color #7289DA
+					&.reddit-icon
+						color #FF5700
+					&.github-icon
+						color #333333
+				span
+					display inline-block
+					.icon.outbound
+						visibility visible
+						right 0
+						top -4px
+					h3
+						margin-left 0px
+						margin-bottom 0px
 				h3
 					font-size 1.5rem
 					display inline-block
