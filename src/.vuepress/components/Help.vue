@@ -294,7 +294,7 @@ export default {
 					width 100%
 					left 0
 		.column
-			padding 0.4rem 0.6rem
+			margin 0.4rem 0.6rem
 		.card
 			height auto
 			width auto
@@ -325,7 +325,7 @@ export default {
 			p
 				font-size 1rem
 			&:hover
-				border-bottom 1px solid #cfd4db
+				border-bottom 2px solid #cfd4db
 				border-bottom-left-radius 6px
 				border-bottom-right-radius 6px
 				position inherit
