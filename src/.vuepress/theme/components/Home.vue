@@ -400,7 +400,7 @@ export default {
 		padding 2px !important
 		padding-top 4px !important
 		border-top 1px solid darken($borderColor, 10%) !important
-		border-radius 6px !important
+		border-radius 0px !important
 		strong
 			color $accentColor
 			&:hover
