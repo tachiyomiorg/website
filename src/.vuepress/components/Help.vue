@@ -294,7 +294,7 @@ export default {
 					width 100%
 					left 0
 		.column
-			padding 0.4rem 0.6rem
+			margin 0.4rem 0.6rem
 		.card
 			height auto
 			width auto
