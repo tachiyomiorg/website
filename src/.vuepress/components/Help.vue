@@ -326,6 +326,8 @@ export default {
 				font-size 1rem
 			&:hover
 				border-bottom 1px solid #cfd4db
+				border-bottom-left-radius 6px
+				border-bottom-right-radius 6px
 				position inherit
 				top unset
 				.material-design-icon
