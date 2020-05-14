@@ -11,6 +11,10 @@ font-feature-settings()
 	-ms-font-feature-settings arguments
 	font-feature-settings arguments
 
+// Background color
+.theme-container
+	background-color #fdfdfd
+
 // Custom block containers
 .custom-block
 	&.tip
@@ -115,56 +119,6 @@ font-feature-settings()
 		background-color $accentColor !important
 	&.version-indicator
 		background-color $badgeVersionColor !important
-
-// Index changes
-.home
-	max-width $homePageWidth
-	.hero img
-		max-height $heroImageHeight
-	.action
-		user-select none
-		a
-			border-radius $buttonBorderRadius
-			cursor pointer
-			font-family $buttonFontFamily
-			font-size 1.125em
-			width 10.5rem
-		.material-icons
-			font-size 1.125em
-			color #ffffff
-			margin-right 2px
-	.feature
-		text-align center
-		p
-			min-height 4em
-		img
-			max-height 28em
-			max-width 100%
-
-// Index download modal
-.download-container
-	button
-		user-select none
-	.download-actions
-		.download-stable-button
-		.download-preview-button
-		.download-confirm-button
-			border-bottom-width 0
-			border-radius $buttonBorderRadius
-			font-family $buttonFontFamily
-			font-size 1.125em
-			height 3rem
-			width 8.5rem
-			&:focus
-				outline none
-				outline-style solid
-		.download-preview-button
-			background-color $accentColorSecondary
-	.download-title
-		border-bottom-width 0
-	.download-footer
-		border-top-width 0
-		padding-top 0
 
 // Navbar Changes
 .navbar
