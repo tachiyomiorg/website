@@ -47,17 +47,19 @@
 				:key="index"
 				class="feature"
 			>
-				<h2>{{ feature.title }}</h2>
-				<p>{{ feature.details }}</p>
-				<section class="featureAnimation">
+				<div class="feature__Details">
+					<h2>{{ feature.title }}</h2>
+					<p>{{ feature.details }}</p>
+				</div>
+				<section class="feature__Animation">
 					<img
-						class="featureAnimation__dark"
+						class="feature__Animation--dark"
 						:src="
 							$withBase('/assets/' + feature.image + '-Dark.png')
 						"
 					/>
 					<img
-						class="featureAnimation__light"
+						class="feature__Animation--light"
 						:src="
 							$withBase('/assets/' + feature.image + '-Light.png')
 						"
@@ -336,40 +338,42 @@ export default {
 		padding 1rem 0
 		margin-top 1rem
 		display flex
+		flex-direction row
 		flex-wrap wrap
 		align-items flex-start
 		align-content stretch
-		justify-content space-between
+		justify-content space-evenly
 	.feature
-		flex-grow 1
+		flex 1
 		flex-basis 30%
 		max-width 30%
 		text-align center
-		h2
-			font-size 1.4rem
-			font-weight 500
-			border-bottom none
-			padding-bottom 0
-			color lighten($textColor, 10%)
-		p
-			color lighten($textColor, 25%)
-			min-height 4em
-		.featureAnimation
+		&__Details
+			min-height 9rem
+			h2
+				font-size 1.4rem
+				font-weight 500
+				border-bottom none
+				padding-bottom 0
+				color lighten($textColor, 10%)
+			p
+				color lighten($textColor, 25%)
+		&__Animation
 			display block
 			position relative
-			&__light
-			&__dark
+			&--light
+			&--dark
 				border-radius 6px
-				max-height 32em
+				max-height 38em
 				max-width 100%
 				margin-left auto
 				margin-right auto
 				left 0
 				right 0
-			&__light
+			&--light
 				animation fade 2s ease-in-out 2s infinite alternate
 				box-shadow 0 10px 50px 0px #ddd
-			&__dark
+			&--dark
 				position absolute
 				box-shadow 0 10px 50px 0px #ddd
 	footer
@@ -439,6 +443,12 @@ export default {
 		opacity 0
 	100%
 		opacity 0
+
+@media (max-width: $MQNarrow)
+	.home
+		.feature
+			&__Details
+				min-height 11rem !important
 
 @media (max-width: $MQMobile)
 	.home
