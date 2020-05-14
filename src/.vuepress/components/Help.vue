@@ -188,7 +188,7 @@ export default {
 				width 100%
 	.card
 		background-color white
-		border 1px solid #cfd4db
+		border-bottom 1px solid transparent
 		border-radius 6px
 		box-shadow 0 0 30px #b1aeae52
 		color $accentColor
@@ -254,6 +254,10 @@ export default {
 				color $githubAccentColor
 
 	.column
+		border 1px solid #cfd4db
+		border-radius 6px
+		&:hover
+			border-bottom none
 		a:focus
 			box-shadow none
 			outline none
