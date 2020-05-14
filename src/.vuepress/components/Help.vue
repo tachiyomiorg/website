@@ -208,7 +208,6 @@ export default {
 			position relative
 			top -5px
 	.column
-		float left
 		a:focus
 			box-shadow none
 			outline none
@@ -216,11 +215,9 @@ export default {
 				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
 				outline none
 	.row
-		width 100%
 		display grid
-		grid-template-columns: repeat(4, minmax(24%, 1fr));
+		grid-template-columns repeat(4, 1fr);
 		grid-gap 1rem
-		margin 0 -5px
 		&:after
 			content ''
 			display table
@@ -245,10 +242,7 @@ export default {
 					width 100%
 					left 0
 		.column
-			display block
-			margin-bottom 0
-			margin-top 0
-			padding 0.4rem 1rem
+			padding 0.4rem 0.6rem
 		.card
 			height auto
 			width auto
@@ -267,5 +261,5 @@ export default {
 				position inherit
 				top unset
 		.row
-			grid-template-columns: repeat(1, minmax(100%, 1fr));
+			grid-template-columns repeat(1, 1fr);
 </style>
