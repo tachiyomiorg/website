@@ -183,7 +183,7 @@ export default {
 		border-radius 6px
 		box-shadow 0 0 30px #b1aeae52
 		color $accentColor
-		height 12rem
+		height 100%
 		overflow hidden
 		padding 0.5rem
 		text-align center
@@ -209,8 +209,6 @@ export default {
 			top -5px
 	.column
 		float left
-		padding 0.5rem
-		width 25%
 		a:focus
 			box-shadow none
 			outline none
@@ -218,16 +216,15 @@ export default {
 				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
 				outline none
 	.row
+		width 100%
+		display grid
+		grid-template-columns: repeat(4, minmax(24%, 1fr));
+		grid-gap 1rem
 		margin 0 -5px
 		&:after
 			content ''
 			display table
 			clear both
-
-@media screen and (max-width $MQNarrow) 
-	.theme-custom-content
-		.column
-			width 50%
 
 @media screen and (max-width $MQMobile)
 	.theme-custom-content
@@ -248,7 +245,6 @@ export default {
 					width 100%
 					left 0
 		.column
-			width 100%
 			display block
 			margin-bottom 0
 			margin-top 0
@@ -270,4 +266,6 @@ export default {
 			&:hover
 				position inherit
 				top unset
+		.row
+			grid-template-columns: repeat(1, minmax(100%, 1fr));
 </style>
