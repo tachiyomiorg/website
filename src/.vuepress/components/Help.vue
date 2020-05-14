@@ -217,6 +217,7 @@ export default {
 	.row
 		display grid
 		grid-template-columns repeat(4, 1fr);
+		grid-auto-rows: 1fr;
 		grid-gap 1rem
 		&:after
 			content ''
