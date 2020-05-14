@@ -1,5 +1,5 @@
 module.exports = [
-	{ text: "Home", link: "/" },
-	{ text: "Help", link: "/help/" },
-	{ text: "Extensions", link: "/extensions/" },
+	{ text: "Home", icon: "home", link: "/" },
+	{ text: "Help", icon: "help-alt", link: "/help/" },
+	{ text: "Extensions", icon: "plug", link: "/extensions/" },
 ];

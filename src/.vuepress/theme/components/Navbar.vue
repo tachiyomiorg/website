@@ -41,7 +41,7 @@
 import AlgoliaSearchBox from './AlgoliaSearchBox.vue'
 import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton.vue'
-import NavLinks from '@theme/components/NavLinks.vue'
+import NavLinks from './NavLinks.vue'
 
 export default {
   name: 'Navbar',
@@ -120,11 +120,12 @@ $navbar-horizontal-padding = 1.5rem
     font-size 0.9rem
     position absolute
     right $navbar-horizontal-padding
-    top $navbar-vertical-padding
+    top 0
     display flex
     .search-box
       flex: 0 0 auto
       vertical-align top
+      margin-top 0.7rem
 
 @media (max-width: $MQMobile)
   .navbar
@@ -133,6 +134,8 @@ $navbar-horizontal-padding = 1.5rem
       display none
     .links
       padding-left 1.5rem
+    .logo
+      margin-right 0rem
     .site-name
       width calc(100vw - 9.4rem)
       overflow hidden

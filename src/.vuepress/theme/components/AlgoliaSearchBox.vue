@@ -75,12 +75,13 @@ export default {
 </script>
 
 <style lang="stylus">
+.navbar .algolia-search-wrapper.search-box input
+  border-radius 2rem
+.page .algolia-search-wrapper.search-box input
+  border-radius 6px
 .algolia-search-wrapper
   & > span
     vertical-align middle
-  &.search-box
-    input
-      border-radius 6px
   .algolia-autocomplete
     line-height normal
     .ds-dropdown-menu
