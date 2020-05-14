@@ -188,11 +188,11 @@ export default {
 				width 100%
 	.card
 		background-color white
-		border 1px solid #cfd4db
+		border-bottom 1px solid transparent
 		border-radius 6px
 		box-shadow 0 0 30px #b1aeae52
 		color $accentColor
-		height 12rem
+		height 100%
 		overflow hidden
 		padding 0.5rem
 		text-align center
@@ -254,9 +254,10 @@ export default {
 				color $githubAccentColor
 
 	.column
-		float left
-		padding 0.5rem
-		width 25%
+		border 1px solid #cfd4db
+		border-radius 6px
+		&:hover
+			border-bottom none
 		a:focus
 			box-shadow none
 			outline none
@@ -265,7 +266,10 @@ export default {
 				outline none
 
 	.row
-		margin 0 -5px
+		display grid
+		grid-template-columns repeat(4, 1fr);
+		grid-auto-rows: 1fr;
+		grid-gap 1rem
 		&:after
 			content ''
 			display table
@@ -290,11 +294,7 @@ export default {
 					width 100%
 					left 0
 		.column
-			width 100%
-			display block
-			margin-bottom 0
-			margin-top 0
-			padding 0.4rem 1rem
+			padding 0.4rem 0.6rem
 		.card
 			height auto
 			width auto
@@ -341,4 +341,7 @@ export default {
 			&__GitHub
 				h3
 					color $githubAccentColor
+		.row
+			grid-template-columns repeat(1, 1fr);
+
 </style>
