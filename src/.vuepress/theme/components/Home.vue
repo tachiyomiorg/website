@@ -457,6 +457,8 @@ export default {
 		.feature
 			max-width 100%
 			padding 0 2.5rem
+			&__Details
+				min-height 8rem !important
 
 @media (max-width: $MQMobileNarrow)
 	.home
