@@ -22,7 +22,7 @@
 							:href="helpItem.link"
 							tabindex="1"
 						>
-							<div class="card">
+							<div class="card" :class="'card__' + helpItem.title">
 								<header v-if="helpItem.faqApp">
 									<CellphoneAndroidIcon />
 									<h3>{{ helpItem.title }}</h3>
@@ -60,7 +60,7 @@
 							rel="noreferrer"
 							tabindex="1"
 						>
-							<div class="card">
+							<div class="card" :class="'card__' + helpItem.title">
 								<header v-if="helpItem.discord">
 									<DiscordIcon />
 									<span>
@@ -213,8 +213,8 @@ export default {
 				.icon.outbound
 					display inline-block
 					visibility hidden
+					vertical-align baseline
 					right 10px
-					top -4px
 				h3
 					display inline-block
 					margin-left 1.8rem
@@ -226,18 +226,32 @@ export default {
 			font-weight 400
 			font-size 0.95rem
 		&:hover
+			border-bottom 2px solid $accentColor
+			border-bottom-left-radius 0px
+			border-bottom-right-radius 0px
 			position relative
-			top -5px
 			.material-design-icon
 				color $accentColor
 				&.discord-icon
-					color #7289DA
+					color $discordAccentColor
 				&.reddit-icon
-					color #FF5700
+					color $redditAccentColor
 				&.github-icon
-					color #333333
+					color $githubAccentColor
 			.icon.outbound
 				visibility visible
+		&__Discord:hover
+			border-bottom 2px solid $discordAccentColor
+			h3
+				color $discordAccentColor
+		&__Reddit:hover
+			border-bottom 2px solid $redditAccentColor
+			h3
+				color $redditAccentColor
+		&__GitHub:hover
+			border-bottom 2px solid $githubAccentColor
+			h3
+				color $githubAccentColor
 
 	.column
 		float left
@@ -290,11 +304,11 @@ export default {
 				.material-design-icon
 					font-size 1.6em
 					&.discord-icon
-						color #7289DA
+						color $discordAccentColor
 					&.reddit-icon
-						color #FF5700
+						color $redditAccentColor
 					&.github-icon
-						color #333333
+						color $githubAccentColor
 				span
 					display inline-block
 					.icon.outbound
@@ -311,8 +325,18 @@ export default {
 			p
 				font-size 1rem
 			&:hover
+				border-bottom 1px solid #cfd4db
 				position inherit
 				top unset
 				.material-design-icon
 					color $accentColorSecondary
+			&__Discord
+				h3
+					color $discordAccentColor
+			&__Reddit
+				h3
+					color $redditAccentColor
+			&__GitHub
+				h3
+					color $githubAccentColor
 </style>
