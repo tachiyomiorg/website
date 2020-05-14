@@ -4,67 +4,105 @@
 			<img
 				v-if="data.heroImage"
 				:src="$withBase(data.heroImage)"
-				:alt="data.heroAlt || 'hero'"
+				:alt="data.heroAlt || 'Logo'"
 			/>
 
 			<h1 v-if="data.heroText !== null" id="main-title">
-				{{ data.heroText || $title || "Tachiyomi" }}
+				{{ data.heroText || "Tachiyomi" }}
 			</h1>
 
-			<p class="description">
+			<p v-if="data.tagline !== null" class="description">
 				{{
 					data.tagline ||
-						$description ||
-						"Free and open source manga reader for Android."
+					"Free and open source manga reader for Android."
 				}}
 			</p>
 
-			<p class="action" v-if="data.actionText && data.actionLink">
-				<a @click="showDownloads" class="action-button download">
-					Download ↓
+			<p v-if="data.buttonDownload || data.buttonGuides" class="action">
+				<a
+					v-if="data.buttonDownload"
+					class="action-button action-button__Download"
+					tabindex="0"
+					@click="showDownloads"
+					@keyup.enter="showDownloads"
+				>
+					<CloudDownloadIcon />
+					{{ data.buttonDownload }}
 				</a>
-				<NavLink class="action-button secondary" :item="actionLink" />
+				<a
+					v-if="data.buttonGuides"
+					class="action-button action-button__Guides"
+					tabindex="0"
+					:href="data.buttonGuidesLink"
+				>
+					<BookOpenVariantIcon />
+					{{ data.buttonGuides }}
+				</a>
 			</p>
 		</header>
 
-		<div class="features" v-if="data.features && data.features.length">
+		<div v-if="data.features && data.features.length" class="features">
 			<div
-				class="feature"
 				v-for="(feature, index) in data.features"
 				:key="index"
+				class="feature"
 			>
-				<h2>{{ feature.title }}</h2>
-				<p>{{ feature.details }}</p>
-				<img v-if="feature.image" :src="$withBase(feature.image)" />
+				<div class="feature__Details">
+					<h2>{{ feature.title }}</h2>
+					<p>{{ feature.details }}</p>
+				</div>
+				<section class="feature__Animation">
+					<img
+						class="feature__Animation--dark"
+						:src="
+							$withBase('/assets/' + feature.image + '-Dark.png')
+						"
+					/>
+					<img
+						class="feature__Animation--light"
+						:src="
+							$withBase('/assets/' + feature.image + '-Light.png')
+						"
+					/>
+				</section>
 			</div>
 		</div>
 
 		<Content class="theme-default-content custom" />
 
-		<footer class="footer" v-if="data.footer">
-			{{ data.footer }}
+		<footer>
+			<div v-if="data.footer" class="footer">
+				{{ data.footer }}
+			</div>
 		</footer>
 	</main>
 </template>
 
 <script>
-import NavLink from "@parent-theme/components/NavLink.vue";
-
 import axios from "axios";
+
+import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
+import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
 
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
-const PREVIEW_URL =
-	"https://tachiyomi.kanade.eu/latest";
+const LATEST_RELEASE = "https://github.com/inorichi/tachiyomi/releases/latest";
+
+const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
 
 export default {
-	components: { NavLink },
+	name: "Home",
+
+	components: {
+		CloudDownloadIcon,
+		BookOpenVariantIcon,
+	},
 
 	data() {
 		return {
 			tagName: "",
-			browserDownloadUrl: ""
+			browserDownloadUrl: "",
 		};
 	},
 
@@ -73,180 +111,344 @@ export default {
 			return this.$page.frontmatter;
 		},
 
-		actionLink() {
+		buttonDownload() {
 			return {
-				link: this.data.actionLink,
-				text: this.data.actionText
+				text: this.data.buttonDownload,
 			};
-		}
+		},
+
+		buttonGuidesLink() {
+			return {
+				link: this.data.buttonGuidesLink,
+				text: this.data.buttonGuides,
+			};
+		},
+	},
+
+	async mounted() {
+		const { data } = await axios.get(RELEASE_URL);
+		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+		this.$data.tagName = data.tag_name;
+		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
 	},
 
 	methods: {
 		showDownloads() {
 			this.$swal({
-				title: "Download",
-				text: "Select which version to use",
-				confirmButtonText: "Stable",
-				confirmButtonAriaLabel: "Stable",
-				cancelButtonText: "Preview",
-				cancelButtonAriaLabel: "Preview",
+				title: "Get Tachiyomi for Android",
+				text: "Requires Android 5.0 or newer.",
+				confirmButtonText: "Download",
+				confirmButtonAriaLabel: "Download Tachiyomi",
+				cancelButtonText:
+					"Living on the edge? Get the <strong>Preview</strong>",
+				cancelButtonAriaLabel: "Download Preview",
 				showCloseButton: true,
 				showCancelButton: true,
-				focusConfirm: false,
+				focusConfirm: true,
 				customClass: {
-					actions: "download-actions",
-					cancelButton: "download-preview-button",
-					closeButton: "download-close-button",
-					confirmButton: "download-stable-button",
-					container: "download-container",
-					content: "download-content",
-					header: "download-header",
-					icon: "download-icon",
-					popup: "download-popup",
-					title: "download-title"
+					container: "showDownloads",
+					popup: "showDownloads__popup",
+					actions: "showDownloads__actions",
+					title: "showDownloads__title",
+					content: "showDownloads__content",
+					confirmButton: "showDownloads__confirmButton",
+					cancelButton: "showDownloads__cancelButton",
+					closeButton: "showDownloads__closeButton",
+					footer: "showDownloads__footer",
 				},
 				showClass: {
-					popup: "animated zoomIn fastest"
+					popup: "animate__animated animate__faster animate__fadeIn",
 				},
 				hideClass: {
-					popup: "animated zoomOut faster"
-				}
-			}).then(result => {
+					popup: "animate__animated animate__faster animate__zoomOut",
+				},
+			}).then((result) => {
 				if (result.value) {
 					this.$swal({
-						title: "Downloading",
-						text: "Stable version is being downloaded.",
 						icon: "success",
-						focusConfirm: false,
-						focusCancel: false,
-						timer: 5000,
+						title: "Downloading",
+						text: "Tachiyomi",
+						confirmButtonText: "Dismiss",
+						showCloseButton: false,
+						showCancelButton: false,
+						timer: 50000,
 						timerProgressBar: true,
 						customClass: {
-							confirmButton: "download-confirm-button",
-							container: "download-container"
+							container: "showDownloads",
+							popup: "showDownloads__popup",
+							actions: "showDownloads__actions",
+							title: "showDownloads__title",
+							content: "showDownloads__content",
+							confirmButton: "showDownloads__confirmButton",
+							cancelButton: "showDownloads__cancelButton",
+							closeButton: "showDownloads__closeButton",
+							footer: "showDownloads__footer",
 						},
 						showClass: {
-							popup: "animated pulse faster"
+							popup:
+								"animate__animated animate__faster animate__pulse",
 						},
 						hideClass: {
-							popup: "animated zoomOut faster"
-						}
+							popup:
+								"animate__animated animate__faster animate__zoomOut",
+						},
 					});
 					window.location.assign(
-						this.$data.browserDownloadUrl || RELEASE_URL
+						this.$data.browserDownloadUrl || LATEST_RELEASE
 					);
-					window.ga("send", "event", "Action", "Download", "Tachiyomi");
+					window.ga(
+						"send",
+						"event",
+						"Action",
+						"Download",
+						"Tachiyomi"
+					);
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
-						title: "Downloading",
-						text: "Preview version is being downloaded.",
-						icon: "success",
-						focusConfirm: false,
-						focusCancel: false,
-						timer: 5000,
-						timerProgressBar: true,
+						icon: "warning",
+						title: "Are you sure?",
+						html:
+							"<strong>Preview</strong> is not recommended if you're not willing to test for – and endure issues.",
+						confirmButtonText: "I am sure.",
+						showCloseButton: true,
+						showCancelButton: false,
 						customClass: {
-							confirmButton: "download-confirm-button",
-							container: "download-container"
+							container: "showDownloads",
+							popup: "showDownloads__popup",
+							actions: "showDownloads__actions",
+							title: "showDownloads__title",
+							content: "showDownloads__content",
+							confirmButton: "showDownloads__confirmButton",
+							cancelButton: "showDownloads__cancelButton",
+							closeButton: "showDownloads__closeButton",
+							footer: "showDownloads__footer",
 						},
 						showClass: {
-							popup: "animated pulse faster"
+							popup: "animate__animated animate__headShake",
 						},
 						hideClass: {
-							popup: "animated zoomOut faster"
+							popup:
+								"animate__animated animate__faster animate__zoomOut",
+						},
+					}).then((result) => {
+						if (result.value) {
+							this.$swal({
+								icon: "success",
+								title: "Downloading",
+								text: "Tachiyomi Preview",
+								confirmButtonText: "Dismiss",
+								showCloseButton: false,
+								showCancelButton: false,
+								timer: 5000,
+								timerProgressBar: true,
+								customClass: {
+									container: "showDownloads",
+									popup: "showDownloads__popup",
+									actions: "showDownloads__actions",
+									title: "showDownloads__title",
+									content: "showDownloads__content",
+									confirmButton:
+										"showDownloads__confirmButton",
+									cancelButton: "showDownloads__cancelButton",
+									closeButton: "showDownloads__closeButton",
+									footer: "showDownloads__footer",
+								},
+								showClass: {
+									popup:
+										"animate__animated animate__faster animate__pulse",
+								},
+								hideClass: {
+									popup:
+										"animate__animated animate__faster animate__zoomOut",
+								},
+							});
+							window.location.assign(PREVIEW_URL);
+							window.ga(
+								"send",
+								"event",
+								"Action",
+								"Download",
+								"Tachiyomi Preview"
+							);
 						}
 					});
-					window.location.assign(
-						PREVIEW_URL
-					);
-					window.ga("send", "event", "Action", "Download", "Tachiyomi Preview");
 				}
 			});
-		}
+		},
 	},
-
-	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
-		// Maybe eventually some release has more than the apk in assets.
-		const apkAsset = data.assets.find(a => a.name.includes(".apk"));
-		// Set the values.
-		this.$data.tagName = data.tag_name;
-		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
-	}
 };
 </script>
 
 <style lang="stylus">
 .home
 	display block
-	margin 0 auto
+	margin 0px auto
+	max-width $homePageWidth
 	padding $navbarHeight 2rem 0
 	.hero
 		text-align center
 		img
 			display block
-			margin 3rem auto 1.5rem
-			max-width 100%
+			margin 1rem auto
+			max-height $heroImageHeight
+			max-width: 100%
 		h1
 			font-size 3rem
-		h1
-		.description
-		.action
-			margin 1.8rem auto
+		h1, .description, .action
+			margin 1rem auto
 		.description
 			color lighten($textColor, 40%)
 			font-size 1.6rem
 			line-height 1.3
+			margin 1rem auto
 			max-width 35rem
-		.action-button
-			background-color $accentColor
-			border-bottom 1px solid darken($accentColor, 10%)
-			box-sizing border-box
-			color #fff
-			display inline-block
-			padding 0.8rem 1.6rem
-			transition background-color 0.1s ease
-			&:hover
-				background-color lighten($accentColor, 10%)
-			&.secondary
-				background-color darken($borderColor, 5%)
-				border-bottom-color darken($borderColor, 15%)
-				color lighten($textColor, 25%)
-				&:hover
-					background-color lighten($borderColor, 5%)
-			svg + span
-				margin-left 0.5rem
-			svg
-				height 1em
-				width 1em
-			& + .action-button
-				margin-left 0.5rem
+		.action
+			user-select none
+			margin 2rem auto
+			.action-button
+				border-bottom 1px solid darken($accentColor, 10%)
+				border-radius 4px
+				box-sizing border-box
+				color #fff
+				cursor pointer
+				display inline-block
+				font-family $buttonFontFamily
+				font-size 1.125rem
+				margin 0.25rem
+				padding 0.8rem
+				transition background-color .1s ease
+				width 10rem
+				.icon.outbound
+					display none
+				&__Download
+					background-color $accentColor
+					border-bottom 1px solid darken($accentColor, 10%)
+					&:hover
+						background-color lighten($accentColor, 10%)
+				&__Guides
+					background-color $accentColorSecondary
+					border-bottom 1px solid darken($accentColorSecondary, 10%)
+					&:hover
+						background-color lighten($accentColorSecondary, 10%)
+				&:focus
+					box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+					outline none
 	.features
-		align-content stretch
-		align-items flex-start
 		border-top 1px solid $borderColor
+		padding 1rem 0
+		margin-top 1rem
 		display flex
+		flex-direction row
 		flex-wrap wrap
-		justify-content space-between
-		margin-top 2.5rem
-		padding 1.2rem 0
+		align-items flex-start
+		align-content stretch
+		justify-content space-evenly
 	.feature
+		flex 1
 		flex-basis 30%
-		flex-grow 1
 		max-width 30%
-		h2
-			border-bottom none
-			color lighten($textColor, 10%)
-			font-size 1.4rem
-			font-weight 500
-			padding-bottom 0
-		p
-			color lighten($textColor, 25%)
-	.footer
-		border-top 1px solid $borderColor
-		color lighten($textColor, 25%)
-		padding 2.5rem
 		text-align center
+		&__Details
+			min-height 9rem
+			h2
+				font-size 1.4rem
+				font-weight 500
+				border-bottom none
+				padding-bottom 0
+				color lighten($textColor, 10%)
+			p
+				color lighten($textColor, 25%)
+		&__Animation
+			display block
+			position relative
+			&--light
+			&--dark
+				border-radius 6px
+				max-height 38em
+				max-width 100%
+				margin-left auto
+				margin-right auto
+				left 0
+				right 0
+			&--light
+				animation fade 2s ease-in-out 2s infinite alternate
+				box-shadow 0 10px 50px 0px #ddd
+			&--dark
+				position absolute
+				box-shadow 0 10px 50px 0px #ddd
+	footer
+		position relative
+		.footer
+			padding 2.5rem
+			border-top 1px solid $borderColor
+			text-align center
+			color lighten($textColor, 25%)
+
+.showDownloads
+	button
+		user-select none
+	&__popup
+		width 30em !important
+	&__cancelButton
+	&__confirmButton
+		font-family $buttonFontFamily
+	&__confirmButton
+		width 50% !important
+		margin-left 25% !important
+		margin-right 25% !important
+		margin-bottom 8px !important
+	&__cancelButton
+		background none !important
+		color $textColor !important
+		font-size 0.8rem !important
+		padding 2px !important
+		padding-top 4px !important
+		border-top 1px solid darken($borderColor, 10%) !important
+		border-radius 0px !important
+		strong
+			color $accentColor
+			&:hover
+				cursor pointer
+				opacity 0.8
+			&:focus
+				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+				outline none
+		&:hover
+			cursor default
+	&__closeButton
+		border-radius 6px
+		width 1em
+		height 1em
+		margin-top 0.2em
+		margin-right 0.2em
+		&:focus
+			box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+			outline none
+	&__title
+		border-bottom-width 0 !important
+		font-family $buttonFontFamily !important
+		font-weight 500
+	&__content
+		margin-top -10px
+		font-size 1rem
+	&__footer
+		text-align center
+
+@keyframes fade
+	0%
+		opacity 1
+	25%
+		opacity 1
+	75%
+		opacity 0
+	100%
+		opacity 0
+
+@media (max-width: $MQNarrow)
+	.home
+		.feature
+			&__Details
+				min-height 11rem !important
 
 @media (max-width: $MQMobile)
 	.home
@@ -255,10 +457,8 @@ export default {
 		.feature
 			max-width 100%
 			padding 0 2.5rem
-		.hero
-			.action-button + .action-button
-				margin-left 0
-				margin-top 0.5rem
+			&__Details
+				min-height 8rem !important
 
 @media (max-width: $MQMobileNarrow)
 	.home
@@ -266,18 +466,18 @@ export default {
 		padding-right 1.5rem
 		.hero
 			img
+				max-height 6rem
 				margin 2rem auto 1.2rem
 			h1
 				font-size 2rem
-			h1
-			.description
-			.action
+			h1, .description, .action
 				margin 1.2rem auto
 			.description
 				font-size 1.2rem
 			.action-button
 				font-size 1rem
 				padding 0.6rem 1.2rem
-			.feature h2
-				font-size 1.25rem
+		.feature
+			h2
+				font-size 1.8rem
 </style>
