@@ -347,6 +347,8 @@ export default {
 	.help-page
 		.navbar
 			padding-left 1rem
+			.logo
+				margin-right 0
 			.can-hide
 				display block
 			.sidebar-button
