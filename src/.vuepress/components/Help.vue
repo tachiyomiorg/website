@@ -1,5 +1,5 @@
 <template>
-	<div class="theme-container">
+	<div class="theme-container help-page">
 		<Navbar />
 		<main class="page">
 			<div class="theme-custom-content content__default">
@@ -103,7 +103,7 @@
 
 <script>
 import Navbar from "@theme/components/Navbar.vue";
-import AlgoliaSearchBox from "../theme/components/AlgoliaSearchBox.vue";
+import AlgoliaSearchBox from "@theme/components/AlgoliaSearchBox.vue";
 
 import CellphoneAndroidIcon from "vue-material-design-icons/CellphoneAndroid.vue";
 import ClipboardListIcon from "vue-material-design-icons/ClipboardList.vue";
@@ -344,4 +344,18 @@ export default {
 		.row
 			grid-template-columns repeat(1, 1fr);
 
+	.help-page
+		.navbar
+			padding-left 1rem
+			.logo
+				margin-right 0
+			.can-hide
+				display block
+			.sidebar-button
+				display none
+			.site-name.can-hide
+				display none
+			.nav-links.can-hide
+				.nav-item, .repo-link
+					padding-left 0.8em
 </style>
