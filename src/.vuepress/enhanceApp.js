@@ -1,6 +1,6 @@
 import "./styles/fonts.styl";
 import "./styles/animate.css";
-import "sweetalert2/dist/sweetalert2.min.css";
+import "./styles/sweetalert2.css";
 import "vue-material-design-icons/styles.css";
 
 import { VueAgile } from "vue-agile";
