@@ -36,40 +36,40 @@ All examples are illustrations and may not reflect what actually happens.
 <Carousel name="carousel-scale-type">
 <CarouselItem>
 <figure class="centered">
-    <h4>Fit screen</h4>
-    <p>Will fit either to width or height depending on image resolution</p>
+	<h4>Fit screen</h4>
+	<p>Will fit either to width or height depending on image resolution</p>
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitscreen.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Stretch</h4>
+	<h4>Stretch</h4>
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/stretch.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Fit width</h4>
+	<h4>Fit width</h4>
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitwidth.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Fit height</h4>
+	<h4>Fit height</h4>
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitheight.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Original size</h4>
-    <p>Will be either zoom in or out depending on image resolution</p>
+	<h4>Original size</h4>
+	<p>Will be either zoom in or out depending on image resolution</p>
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/originalsize.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Smart fit</h4>
-    <p>Fits to the longest side of the image</p>
+	<h4>Smart fit</h4>
+	<p>Fits to the longest side of the image</p>
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/smartfit.png')">
 </figure>
 </CarouselItem>
@@ -90,23 +90,23 @@ All examples are illustrations
 <Carousel name="carousel-zoom-start-position">
 <CarouselItem>
 <figure class="centered">
-    <h4>Left</h4>
-    <p>Will start at the left side of the page.</p>
-    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionleft.png')">
+	<h4>Left</h4>
+	<p>Will start at the left side of the page.</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionleft.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Right</h4>
-    <p>Will start at the right side of the page.</p>
-    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionright.png')">
+	<h4>Right</h4>
+	<p>Will start at the right side of the page.</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionright.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Center</h4>
-    <p>Will start at the center of the page.</p>
-    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
+	<h4>Center</h4>
+	<p>Will start at the center of the page.</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
 </figure>
 </CarouselItem>
 </Carousel>
@@ -126,16 +126,16 @@ This allows you to control what color the background should be in reader. Backgr
 <Carousel name="carousel-background-color">
 <CarouselItem>
 <figure class="centered">
-    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
-    <h4>Black</h4>
-    <p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
+	<h4>Black</h4>
+	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorwhite.png')">
-    <h4>White</h4>
-    <p>Surrounds page with white. Makes pages seemless with the screen.</p>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorwhite.png')">
+	<h4>White</h4>
+	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
 </figure>
 </CarouselItem>
 </Carousel>
@@ -172,14 +172,14 @@ Tries to remove excess white borders
 <Carousel name="carousel-crop-borders">
 <CarouselItem>
 <figure class="centered">
-    <h4>With Crop borders on</h4>
-    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withcropborder.png')">
+	<h4>With Crop borders on</h4>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withcropborder.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>With Crop borders off</h4>
-    <img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withoutcropborder.png')">
+	<h4>With Crop borders off</h4>
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withoutcropborder.png')">
 </figure>
 </CarouselItem>
 </Carousel>

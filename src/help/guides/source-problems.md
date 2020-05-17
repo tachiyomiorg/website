@@ -54,9 +54,9 @@ In this case it is a problem with the site.
 You can open WebView in two of the following ways:
 
 * If you already have a manga in **Library**
-  * Open the manga in **Library**, then click on the <Navigation item="webview"/> on the **INFO** tab. 
+	* Open the manga in **Library**, then click on the <Navigation item="webview"/> on the **INFO** tab. 
 * If you don't have manga in **Library**
-  * Go to <Navigation item="browse"/> and click on **BROWSE** beside the source. Then open a manga and click on <Navigation item="webview"/>.
+	* Go to <Navigation item="browse"/> and click on **BROWSE** beside the source. Then open a manga and click on <Navigation item="webview"/>.
 
 Once in WebView, you will see a webpage and a bar on top with an arrow at the left side, pointing to the left edge of your screen.
 If there is no CAPTCHA on the webpage, initiate one by tapping a manga title, if possible. Once a CAPTCHA is shown, solve it. After that, use the aforementioned back arrow on the bar at the top of your screen to go back to your manga. Please do not use the back button on your phone as it does not work as expected.
