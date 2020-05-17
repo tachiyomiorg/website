@@ -230,6 +230,7 @@ export default {
 							popup:
 								"animate__animated animate__faster animate__zoomOut",
 						},
+						// eslint-disable-next-line no-shadow
 					}).then((result) => {
 						if (result.value) {
 							this.$swal({
