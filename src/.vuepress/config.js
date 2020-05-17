@@ -1,3 +1,7 @@
+const pluginsConfig = require("./config/plugins");
+const navBarConfig = require("./config/navBar");
+const sideBarConfig = require("./config/sideBar");
+
 module.exports = {
 	dest: "./public",
 	temp: "./node_modules/.temp/theme",
@@ -31,22 +35,19 @@ module.exports = {
 		editLinks: true,
 		editLinkText: "Help us improve this page",
 		lastUpdated: "Last Updated",
-		nav: require("./config/nav"),
+		nav: navBarConfig,
 		sidebar: {
-			"/help/guides/": require("./config/sidebar/guides"),
-			"/help/faq/": require("./config/sidebar/faq"),
-			"/help/contribution": require("./config/sidebar/contribution"),
-			"/extensions": require("./config/sidebar/extensions"),
-			"/forks": require("./config/sidebar/forks"),
+			"/help/guides/": sideBarConfig.guides,
+			"/help/faq/": sideBarConfig.faq,
+			"/help/contribution": sideBarConfig.contribution,
+			"/extensions": sideBarConfig.extensions,
+			"/forks": sideBarConfig.forks,
 		},
 	},
-	plugins: require("./config/plugins"),
+	plugins: pluginsConfig,
 	extraWatchFiles: [
-		".vuepress/config/nav.js",
 		".vuepress/config/plugins.js",
-		".vuepress/config/sidebar/guides.js",
-		".vuepress/config/sidebar/faq.js",
-		".vuepress/config/sidebar/contribution.js",
-		".vuepress/config/sidebar/extensions.js",
+		".vuepress/config/navBar.js",
+		".vuepress/config/sideBar.js",
 	],
 };
