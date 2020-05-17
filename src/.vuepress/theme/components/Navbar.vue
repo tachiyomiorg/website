@@ -82,7 +82,9 @@ export default {
 	mounted() {
 		const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
 		const NAVBAR_VERTICAL_PADDING =
+			// eslint-disable-next-line radix
 			parseInt(css(this.$el, "paddingLeft")) +
+			// eslint-disable-next-line radix
 			parseInt(css(this.$el, "paddingRight"));
 		const handleLinksWrapWidth = () => {
 			if (
