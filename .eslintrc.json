@@ -19,7 +19,8 @@
 	},
 	"plugins": [
 		"vue",
-		"prettier"
+		"prettier",
+		"markdown"
 	],
 	"rules": {
 		"prettier/prettier": "error",
