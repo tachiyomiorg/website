@@ -55,13 +55,13 @@
 					<img
 						class="feature__Animation--dark"
 						:src="
-							$withBase("/assets/" + feature.image + "-Dark.png")
+							$withBase('/assets/' + feature.image + '-Dark.png')
 						"
 					/>
 					<img
 						class="feature__Animation--light"
 						:src="
-							$withBase("/assets/" + feature.image + "-Light.png")
+							$withBase('/assets/' + feature.image + '-Light.png')
 						"
 					/>
 				</section>

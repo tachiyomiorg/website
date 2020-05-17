@@ -1,6 +1,6 @@
 <template>
 	<header class="navbar">
-		<SidebarButton @toggle-sidebar="$emit("toggle-sidebar")" />
+		<SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
 		<RouterLink :to="$localePath" class="home-link">
 			<img
@@ -13,7 +13,7 @@
 				v-if="$siteTitle"
 				ref="siteName"
 				class="site-name"
-				:class="{ "can-hide": $site.themeConfig.logo }"
+				:class="{ 'can-hide': $site.themeConfig.logo }"
 				>{{ $siteTitle }}</span
 			>
 		</RouterLink>
