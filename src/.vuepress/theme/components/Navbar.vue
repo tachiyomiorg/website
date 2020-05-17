@@ -1,6 +1,6 @@
 <template>
 	<header class="navbar">
-		<SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
+		<SidebarButton @toggle-sidebar="$emit("toggle-sidebar")" />
 
 		<RouterLink :to="$localePath" class="home-link">
 			<img
@@ -13,7 +13,7 @@
 				v-if="$siteTitle"
 				ref="siteName"
 				class="site-name"
-				:class="{ 'can-hide': $site.themeConfig.logo }"
+				:class="{ "can-hide": $site.themeConfig.logo }"
 				>{{ $siteTitle }}</span
 			>
 		</RouterLink>
@@ -105,7 +105,7 @@ export default {
 };
 
 function css(el, property) {
-	// NOTE: Known bug, will return 'auto' if style value is 'auto'
+	// NOTE: Known bug, will return "auto" if style value is "auto"
 	const win = el.ownerDocument.defaultView;
 	// null means not to return pseudo styles
 	return win.getComputedStyle(el, null)[property];

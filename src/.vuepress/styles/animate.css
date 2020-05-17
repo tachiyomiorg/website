@@ -106,11 +106,11 @@
     animation-iteration-count: 1 !important;
   }
 
-  .animate__animated[class*='Out'] {
     opacity: 0;
   }
 }
 /* Attention seekers  */
+	.animate__animated[class*="Out"] {
 @-webkit-keyframes bounce {
   from,
   20%,

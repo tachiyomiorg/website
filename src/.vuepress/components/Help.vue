@@ -275,9 +275,9 @@ export default {
                 grid-auto-rows 1fr
                 grid-gap 1rem
                 &:after
-                    content ''
                     display table
                     clear both
+					content ""
 
 @media screen and (max-width $MQMobile)
     .help-page

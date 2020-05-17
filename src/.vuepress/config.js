@@ -12,13 +12,13 @@ module.exports = {
 	// prettier-ignore
 	head: [
 		// Embed headers
-		['link', { rel: 'icon', href: '/favicon.ico' }],
-		['link', { rel: 'manifest', href: '/manifest.json' }],
-		['meta', { name: 'theme-color', content: '#2e84bf' }],
-		['meta', { prefix: 'og: http://ogp.me/ns#', property: 'og:image', content: 'https://tachiyomi.org/icons/logo.png' }],
+		["link", { rel: "icon", href: "/favicon.ico" }],
+		["link", { rel: "manifest", href: "/manifest.json" }],
+		["meta", { name: "theme-color", content: "#2e84bf" }],
+		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://tachiyomi.org/icons/logo.png" }],
 		// Custom headers
-		['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin:''}],
-		['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'}],
+		["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin:""}],
+		["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Open+Sans"}],
 	],
 
 	themeConfig: {
