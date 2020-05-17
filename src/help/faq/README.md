@@ -131,7 +131,7 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
 - Western comics: **ReadComicOnline** and **ComicExtra**
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
-- Other popular sources: **Mangahere**, **Manhwa18.net** (in **FMReader** extension), **ReadManhwa**, **MangaOwl**
+- Other popular sources: **MangaLife**, **MangaOwl**, **MangaHere**, **Manhwa18.net** (in **FMReader** extension)
 
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
 
