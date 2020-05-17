@@ -1,9 +1,9 @@
 module.exports = {
-	dest: './public',
-	temp: './node_modules/.temp/theme',
+	dest: "./public",
+	temp: "./node_modules/.temp/theme",
 
-	title: 'Tachiyomi',
-	description: 'Free and open source manga reader for Android',
+	title: "Tachiyomi",
+	description: "Free and open source manga reader for Android",
 
 	// prettier-ignore
 	head: [
@@ -18,35 +18,35 @@ module.exports = {
 	],
 
 	themeConfig: {
-		logo: '/icons/logo.svg',
-		repo: 'inorichi/tachiyomi',
-		docsRepo: 'tachiyomiorg/website',
-		docsDir: 'src',
+		logo: "/icons/logo.svg",
+		repo: "inorichi/tachiyomi",
+		docsRepo: "tachiyomiorg/website",
+		docsDir: "src",
 		smoothScroll: true,
 		algolia: {
-			apiKey: 'fc1c45b5a3835e1882cbbf0751dfe705',
-			indexName: 'tachiyomi'
+			apiKey: "fc1c45b5a3835e1882cbbf0751dfe705",
+			indexName: "tachiyomi",
 		},
-		searchPlaceholder: 'Search...',
+		searchPlaceholder: "Search...",
 		editLinks: true,
-		editLinkText: 'Help us improve this page',
-		lastUpdated: 'Last Updated',
-		nav: require('./config/nav'),
+		editLinkText: "Help us improve this page",
+		lastUpdated: "Last Updated",
+		nav: require("./config/nav"),
 		sidebar: {
-			'/help/guides/': require('./config/sidebar/guides'),
-			'/help/faq/': require('./config/sidebar/faq'),
-			'/help/contribution': require('./config/sidebar/contribution'),
-			'/extensions': require('./config/sidebar/extensions'),
-			'/forks': require('./config/sidebar/forks')
-		}
+			"/help/guides/": require("./config/sidebar/guides"),
+			"/help/faq/": require("./config/sidebar/faq"),
+			"/help/contribution": require("./config/sidebar/contribution"),
+			"/extensions": require("./config/sidebar/extensions"),
+			"/forks": require("./config/sidebar/forks"),
+		},
 	},
-	plugins: require('./config/plugins'),
+	plugins: require("./config/plugins"),
 	extraWatchFiles: [
-		'.vuepress/config/nav.js',
-		'.vuepress/config/plugins.js',
-		'.vuepress/config/sidebar/guides.js',
-		'.vuepress/config/sidebar/faq.js',
-		'.vuepress/config/sidebar/contribution.js',
-		'.vuepress/config/sidebar/extensions.js'
-	]
-}
+		".vuepress/config/nav.js",
+		".vuepress/config/plugins.js",
+		".vuepress/config/sidebar/guides.js",
+		".vuepress/config/sidebar/faq.js",
+		".vuepress/config/sidebar/contribution.js",
+		".vuepress/config/sidebar/extensions.js",
+	],
+};

@@ -1,27 +1,25 @@
 module.exports = [
-	'/',
+	"/",
 	{
-		title: 'Contribution',
+		title: "Contribution",
 		collapsable: false,
 		sidebarDepth: 1,
-		children: [
-			'/help/contribution'
-		]
+		children: ["/help/contribution"],
 	},
 	{
-		title: 'Frequently Asked Questions',
-		path: '/help/faq/',
+		title: "Frequently Asked Questions",
+		path: "/help/faq/",
 	},
 	{
-		title: 'Guides',
-		path: '/help/guides/getting-started',
+		title: "Guides",
+		path: "/help/guides/getting-started",
 	},
 	{
-		title: 'Forks',
-		path: '/forks/'
+		title: "Forks",
+		path: "/forks/",
 	},
 	{
-		title: 'Available extensions',
-		path: '/extensions/'
-	}
+		title: "Available extensions",
+		path: "/extensions/",
+	},
 ];
