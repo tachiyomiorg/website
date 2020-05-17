@@ -54,6 +54,7 @@ export default {
 					/* webpackChunkName: "docsearch" */ "docsearch.js/dist/cdn/docsearch.min.css"
 				),
 			]).then(([docsearch]) => {
+				// eslint-disable-next-line no-param-reassign
 				docsearch = docsearch.default;
 				const { algoliaOptions = {} } = userOptions;
 				docsearch({
