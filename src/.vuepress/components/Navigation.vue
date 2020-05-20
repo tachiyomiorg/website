@@ -43,6 +43,8 @@ export default {
 				filter: { text: "Filter", icon: "filter_list" },
 				edit: { text: "Edit", icon: "edit" },
 				update_library: { text: "Update library", icon: "refresh" },
+				edit: { text: "EDIT", icon:"create" },
+				delete: { text: "DELETE", icon:"delete" },
 				/* More */
 				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
 				download_queue: { text: "Download queue", icon: "get_app" },
@@ -73,6 +75,7 @@ export default {
 				mangadex: { text: "MangaDex" },
 				/* Misc */
 				install: { text: "INSTALL", class:"ext-installation" },
+				reorder: { text: "Reorder", icon:"reorder" },
 				/* Legacy */
 				old_library: { text: "My library", icon: "class" },
 				old_catalogues: { text: "Catalogues", icon: "explore" },

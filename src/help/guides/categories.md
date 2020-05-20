@@ -6,83 +6,79 @@ lang: en-US
 
 # Categories
 
-**Categories** can store your bookmarks in custom made categories, which keeps your library neat and organized. You can name and sort them however you want according to your preference (ie. Genre, Reading Status etc).
+**Categories** can store your bookmarks in custom made categories, which keeps your library neat and organized. You can name and sort them however you want according to your preference (ie. _Genre_, _Reading Status_, etc).
 
-## Create a Category
+## Create a category
 
-To make a category, go to <Navigation item="old_library"/>, then click on the <Navigation item="old_overflow"/> on the top right, then click **Edit categories** and then press the button with a plus sign **(`+`)**.
+To make a category follow the steps below.
 
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-category-create.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-category-create.webm')" type="video/webm"/>
-	</video>
-</figure>
+::: guide
+1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
+1. Tap on **Edit categories**.
+2. Press the bottom-right plus/add button.
+3. Enter a name and press **OK**.
 :::
 
-## Edit a Category
+## Edit a category
 
-You can edit a Category in <Navigation item="old_library"/> → <Navigation item="old_overflow"/> → **Edit categories** then long press the category you want to edit, then press the pencil icon.
+To edit a category follow the steps below.
 
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-category-edit.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-category-edit.webm')" type="video/webm"/>
-	</video>
-</figure>
+::: guide
+1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
+1. Tap on **Edit categories**.
+1. Long press a category.
+1. Tap <Navigation item="edit"/> on the top-right.
 :::
 
-## Change Category order
+## Change category order
 
-You can change the order of Categories, such as bringing a certain Category to the top. This category will appear as the first tab on <Navigation item="old_library"/>.
+You can change the order of Categories, such as bringing a certain Category to the top. This category will appear as the first tab on <Navigation item="library"/>.
 
-To do this, go to <Navigation item="old_library"/> → <Navigation item="old_overflow"/> → **Edit categories** then drag the triple bar icon **(`≡`)** up or down.
+To do this, follow the steps below.
 
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-category-reorder.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-category-reorder.webm')" type="video/webm"/>
-	</video>
-</figure>
+::: guide
+1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
+1. Tap on **Edit categories**.
+1. Drag the category to your prefered position using the <Navigation item="reorder"/> icon.
 :::
 
-## Delete a Category
+## Delete a category
 
-You can delete a Category in <Navigation item="old_library"/> → <Navigation item="old_overflow"/> → **Edit categories** then long press the category you want to delete, and press the trash can icon (<MaterialIcon icon-name="delete"/>).
+To delete a category, follow the steps below.
 
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-category-delete.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-category-delete.webm')" type="video/webm"/>
-	</video>
-</figure>
+::: guide
+1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
+2. Tap on **Edit categories**.
+3. Long press a category.
+4. Tap <Navigation item="delete"/> on the top-right.
 :::
 
-## Add Manga to Category
+## Add manga to category
 
-You can add Manga to a Category by long pressing on the one you want to add. Then press the label icon (<MaterialIcon icon-name="label"/>). Thereafter select which category you want it in. You can also add multiple manga to a category by selecting them when you see the label icon (<MaterialIcon icon-name="label"/>).
-
-::: tip
-You can also add Manga to multiple Categories by selecting the categories you want to have it in
-:::
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-category-add-to.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-category-add-to.webm')" type="video/webm"/>
-	</video>
-</figure>
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-category-add-to.webm)
 :::
 
-## Remove Manga from Category
+To add manga to a category, follow the steps below.
 
-You can remove Manga from a Category by long pressing on the one you want. Then press the label icon (<MaterialIcon icon-name="label"/>). Thereafter deselect which category you want to remove it from. You can also remove multiple manga from a category by selecting them when you see the label icon (<MaterialIcon icon-name="label"/>).
-::: tip
-You can move a Manga to multiple Categories by selecting the categories you want to have it in
+::: guide
+1. Long press the manga you want to add.
+2. Press the <Navigation item="set_categories"/> button.
+3. Select which category or categories you want it in and press **OK**.
+	> You can also add multiple manga to a category by selecting them when you see the <Navigation item="set_categories"/> button.
 :::
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-category-remove-from.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-category-remove-from.webm')" type="video/webm"/>
-	</video>
-</figure>
+
+## Remove manga from category
+
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-category-remove-from.webm)
+:::
+
+To add manga to a category, follow the steps below.
+
+::: guide
+1. Long press the manga that you want to add. 
+1. Press the <Navigation item="set_categories"/> button. 
+1. Deselect the category or categories you want to remove it from and press **OK**.
+	> You can also remove multiple manga from a category by selecting them when you see the <Navigation item="set_categories"/> button.
 :::
