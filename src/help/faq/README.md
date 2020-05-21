@@ -84,7 +84,7 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 #### How do I enable automatic updates?
 From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
-However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> → and click on **Check for updates**.
+However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="info"/> → and click on **Check for updates**.
 
 #### Automatic update is not working
 
