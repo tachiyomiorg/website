@@ -15,10 +15,6 @@ When you've completed the download, open the <VersionTag fileName/> file and pro
 
 ## Installing an extension
 
-::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-extension-install.webm)
-:::
-
 Now that <Navigation item="tachiyomi"/> is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the <Navigation item="tab_extensions"/> tab.
 
 Find the extension that you'd like to use then press the <Navigation item="install"/> button next to your desired extension and then accept the installation prompt.
@@ -30,10 +26,6 @@ Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installatio
 :::
 
 ## Adding manga to your library
-
-::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-library-add-to.webm)
-:::
 
 Now that you've installed the desired extension it will show in the <Navigation item="tab_sources"/> tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
 
