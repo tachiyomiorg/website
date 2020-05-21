@@ -84,6 +84,12 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 #### How do I enable automatic updates?
 From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
+However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> → and click on **Check for updates**.
+
+#### Automatic update is not working
+
+Cetain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and click on **Disable battery optimization**.
+
 ### User Interface
 #### Can I change the app language?
 **Tachiyomi** is translated in 40+ different languages.. By default, the app follows the language used on your device.
@@ -107,7 +113,7 @@ You may encounter this if you're installing an official build over an existing F
 Backup your data, uninstall the app, then restore the data in the fresh install.
 
 #### iOS Version
-There is currently no iOS version and there are no plans for one and since iOS and Android apps don't share code it's hard to port.
+There is no iOS version and no plans for one. Since iOS and Android apps don't share code it's hard to port.
 
 #### I lost everything, what now?
 **Tachiyomi** is still in beta and some design changes or unexpected errors may lead to data loss. While we try for them not to happen, sometimes it is unavoidable. To avoid this in the future, you can use the automatic backup feature.
@@ -121,19 +127,28 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 ### General
 
 #### What are some recommended extensions?
-While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
+Due to Covid-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsbible for any source that is down or slow.
 
+::: warning DISCLAIMER
+Tachiyomi is not affiliated with or responsible for any source that is down or slow.
+:::
+
+<!--- 
+While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
+-->
+<!--- 
 - Fastest manga updates: **Mangadex** and scanlator sources
-- All around decent: **MangaNelo** and **Mangakakalot** (both in **Mangabox** extension)
 - Largest manga library: **MangaPark**
 - High quality scans and official translation: **MangaSee**
 - Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
 - Western comics: **ReadComicOnline** and **ComicExtra**
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
-- Other popular sources: **MangaLife**, **MangaOwl**, **MangaHere**, **Manhwa18.net** (in **FMReader** extension)
-
+- Other popular sources: **MangaLife**, **MangaOwl**, **MangaHere**, **MangaFreak**, **Manhwa18.net** (in **FMReader** extension)
+-->
+<!--- 
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
+-->
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have highest scan quality. 
@@ -249,11 +264,10 @@ This means that the manga has been licensed and can no longer be read on that so
 ##### HTTP error 403
 The source you selected may have Cloudflare protection on and is enforcing CAPTCHAs.
 
-1. Find a manga in your library that is from the source you're trying to access
-2. Tap on the <Navigation item="webview"/> in the **Info** tab
-3. Open in WebView
-4. Complete the CAPTCHA if present and wait for the page to finish loading
-5. Press back rather than exiting the app and if that does not work, use the back arrow
+1. Find a manga in your library that is from the source you're trying to access.
+1. Tap on the <Navigation item="webview"/> in the **INFO** tab.
+1. Complete the CAPTCHA if present and wait for the page to finish loading.
+1. Press back rather than exiting the app and if that does not work, use the back arrow.
 
 ### MangaDex
 
@@ -286,7 +300,7 @@ An example search would be **`id:23427`** which would return results for [Candy 
 :::
 
 #### Duplicate chapters in MangaDex
-This can be solved by opening MangaDex in WebView and block the scanlator group whose chapter you don't want to see.
+This can be solved by opening MangaDex in <Navigation item="webview"/> and block the scanlator group whose chapter you don't want to see.
 
 #### Chapters from Mangaplus are broken
 Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the manga that uses **MANGA Plus** on **MangaDex** onto the **MANGA Plus** source.
@@ -295,18 +309,6 @@ Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the ma
 Read about source migration [here](/help/guides/source-migration/)
 :::
 
-### Mangakakalot
-
-#### Page list is empty
-Mangakakalot has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From Mangakakalot extension to the Mangakakalot extension — manually. You can also migrate to another MangaBox source as they have nearly the same catalog.
-
-#### Image could not be decoded 
-Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
-
-#### Source URL changed
-
-This means that the manga is dead and needs to migrated it to Mangakakalot or a different source. Refer to the guide for Page list empty above.
-
 ### MangaPark
 
 #### Duplicate chapters in MangaPark
@@ -314,8 +316,20 @@ To solve this issue, follow the below steps.
 
 1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. 
 1. Click on **MangaPark** extension and then `Chapter List Source`. 
-1. Choose an option like `Smart list` or `Priorize source`. 
+1. Choose an option like `Smart list` or `Prioritize source`. 
 1. Go back to MangaPark's chapter list and refresh.
+
+### Mangakakalot/Manganelo
+
+#### Page list is empty
+**Mangakakalot**/**Manganelo** has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From **Mangakakalot**/**Manganelo** source to another source.
+
+#### Source URL has changed
+
+This means that the manga is dead and needs to migrated from **Mangakakalot**/**Manganelo** to different source. Refer to the guide for **Page list is empty** above.
+
+#### Image could not be decoded 
+Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
 
 ### Webtoons
 
@@ -344,7 +358,7 @@ It is possible to Auto-Migrate MangaRock favorites to another source by using [T
 ### KissManga
 
 #### KissManga extension is missing
-Kissmanga is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in library to a different source.
+**KissManga** is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in library to a different source and uninstall the extension.
 
 ::: aside
 Read more about source migration [here](/help/guides/source-migration/#source-migration)
