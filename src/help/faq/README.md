@@ -84,7 +84,7 @@ If you don't see a **Tachiyomi** folder on your device, try downloading a chapte
 #### How do I enable automatic updates?
 From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
-However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="info"/> → and click on **Check for updates**.
+However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> → and click on **Check for updates**.
 
 #### Automatic update is not working
 
@@ -129,8 +129,8 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 #### What are some recommended extensions?
 Due to Covid-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsbible for any source that is down or slow.
 
-::: disclaimer
-Tachiyomi is not affiliated with or responsbible for any source that is down or slow.
+::: warning DISCLAIMER
+Tachiyomi is not affiliated with or responsible for any source that is down or slow.
 :::
 
 <!--- 
