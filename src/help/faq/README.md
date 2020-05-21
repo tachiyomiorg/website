@@ -127,18 +127,7 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 ### General
 
 #### What are some recommended extensions?
-While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
-
-- Fastest manga updates: **Mangadex** and scanlator sources
-- Largest manga library: **MangaPark**
-- High quality scans and official translation: **MangaSee**
-- Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
-- Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
-- Western comics: **ReadComicOnline** and **ComicExtra**
-- Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
-- Other popular sources: **MangaLife**, **MangaOwl**, **MangaHere**, **MangaFreak**, **Manhwa18.net** (in **FMReader** extension)
-
-Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
+Due to Covid-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsbible for any source that is down or slow.
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have highest scan quality. 
