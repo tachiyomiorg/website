@@ -88,7 +88,7 @@ However, if you think you are on an outdated version, go to <Navigation item="mo
 
 #### Automatic update is not working
 
-Cetain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="advanced"/> and click on **Disable battery optimization**.
+Cetain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and click on **Disable battery optimization**.
 
 ### User Interface
 #### Can I change the app language?
@@ -255,9 +255,9 @@ This means that the manga has been licensed and can no longer be read on that so
 The source you selected may have Cloudflare protection on and is enforcing CAPTCHAs.
 
 1. Find a manga in your library that is from the source you're trying to access.
-2. Tap on the <Navigation item="webview"/> in the **INFO** tab.
-3. Complete the CAPTCHA if present and wait for the page to finish loading.
-4. Press back rather than exiting the app and if that does not work, use the back arrow.
+1. Tap on the <Navigation item="webview"/> in the **INFO** tab.
+1. Complete the CAPTCHA if present and wait for the page to finish loading.
+1. Press back rather than exiting the app and if that does not work, use the back arrow.
 
 ### MangaDex
 
