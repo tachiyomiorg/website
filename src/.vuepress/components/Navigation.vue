@@ -53,11 +53,10 @@ export default {
 				browse: { text: "Browse", icon: "explore" },
 				more: { text: "More", icon: "more_horiz" },
 				/* Actions */
+				update_library: { text: "Update library", icon: "refresh" },
 				search: { text: "Search", icon: "search" },
 				filter: { text: "Filter", icon: "filter_list" },
-				edit: { text: "Edit", icon: "edit" },
-				update_library: { text: "Update library", icon: "refresh" },
-				edit: { text: "EDIT", icon:"create" },
+				edit: { text: "EDIT", icon:"edit" },
 				delete: { text: "DELETE", icon:"delete" },
 				/* More */
 				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
