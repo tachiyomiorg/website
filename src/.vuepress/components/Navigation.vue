@@ -63,6 +63,7 @@ export default {
 				download_queue: { text: "Download queue", icon: "get_app" },
 				source_migration: { text: "Source migration", icon: "compare_arrows" },
 				settings: { text: "Settings", icon: "settings", link: "/help/guides/settings/" },
+				about: { text: "About", icon: "info" },
 				/* Settings */
 				settings_general: { text: "General", icon: "tune", link: "/help/guides/settings/general" },
 				settings_library: { text: "Library", icon: "collections_bookmark" },
