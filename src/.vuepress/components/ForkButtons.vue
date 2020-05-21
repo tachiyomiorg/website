@@ -1,9 +1,17 @@
 <template>
 	<div class="downloadContainer">
-		<button class="downloadForkButton" :style="downloadForkStyle" @click="downloadFork">
+		<button
+			class="downloadForkButton"
+			:style="downloadForkStyle"
+			@click="downloadFork"
+		>
 			{{ downloadForkLabel }}
 		</button>
-		<button class="githubForkButton" :style="githubForkStyle" :onclick="githubForkLink">
+		<button
+			class="githubForkButton"
+			:style="githubForkStyle"
+			:onclick="githubForkLink"
+		>
 			{{ githubForkLabel }}
 		</button>
 	</div>
@@ -16,44 +24,44 @@ export default {
 	props: {
 		forkName: {
 			type: String,
-			required: true
+			required: true,
 		},
 		downloadForkLabel: {
 			type: String,
-			default: "Download"
+			default: "Download",
 		},
 		downloadForkLink: {
 			type: String,
-			required: true
+			required: true,
 		},
 		downloadForkStyle: {
 			type: String,
-			default: ""
+			default: "",
 		},
 		githubForkLabel: {
 			type: String,
-			default: "GitHub"
+			default: "GitHub",
 		},
 		githubForkLink: {
 			type: String,
-			required: true
+			required: true,
 		},
 		githubForkStyle: {
 			type: String,
-			default: ""
-		}
+			default: "",
+		},
 	},
 	data() {
 		return {
 			tagName: "",
-			browserDownloadUrl: ""
+			browserDownloadUrl: "",
 		};
 	},
 
 	async mounted() {
 		const { data } = await axios.get(this.$props.downloadForkLink);
 		// Maybe eventually some release has more than the apk in assets.
-		const apkAsset = data.assets.find(a => a.name.includes(".apk"));
+		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
@@ -63,7 +71,7 @@ export default {
 		downloadFork() {
 			this.$swal({
 				title: "Downloading",
-				text: this.$props.forkName + " is being downloaded.",
+				text: `${this.$props.forkName} is being downloaded.`,
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -71,21 +79,27 @@ export default {
 				timerProgressBar: true,
 				customClass: {
 					confirmButton: "download-confirm-button",
-					container: "download-container"
+					container: "download-container",
 				},
 				showClass: {
-					popup: "animated pulse faster"
+					popup: "animated pulse faster",
 				},
 				hideClass: {
-					popup: "animated zoomOut faster"
-				}
+					popup: "animated zoomOut faster",
+				},
 			});
 			window.location.assign(
 				this.$data.browserDownloadUrl || this.$props.downloadForkLink
 			);
-			window.ga("send", "event", "Action", "Download", this.$props.forkName);
-		}
-	}
+			window.ga(
+				"send",
+				"event",
+				"Action",
+				"Download",
+				this.$props.forkName
+			);
+		},
+	},
 };
 </script>
 

@@ -1,27 +1,23 @@
 <template>
 	<Layout :class="$frontmatter.title">
 		<main class="page">
-				<slot name="top" />
+			<slot name="top" />
 
-				<Content class="theme-default-content" />
-				<PageEdit />
+			<Content class="theme-default-content" />
+			<PageEdit />
 
-				<PageNav v-bind="{ sidebarItems }" />
-
-				<slot name="bottom" />
+			<slot name="bottom" />
 		</main>
 	</Layout>
 </template>
 
 <script>
-import Layout from '@theme/layouts/Layout.vue'
-import PageEdit from '@theme/components/PageEdit.vue'
-import PageNav from '@theme/components/PageNav.vue'
+import Layout from "@theme/layouts/Layout.vue";
+import PageEdit from "@theme/components/PageEdit.vue";
 
 export default {
-	components: { PageEdit, PageNav, Layout },
-	props: ['sidebarItems']
-}
+	components: { PageEdit, Layout },
+};
 </script>
 
 <style lang="stylus">

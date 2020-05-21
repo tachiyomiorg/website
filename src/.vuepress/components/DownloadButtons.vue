@@ -15,35 +15,34 @@ import axios from "axios";
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
-const PREVIEW_URL =
-	"https://tachiyomi.kanade.eu/latest";
+const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
 
 export default {
 	props: {
 		downloadStableTag: {
 			type: String,
-			required: true
+			required: true,
 		},
 		downloadPreviewTag: {
 			type: String,
-			required: true
+			required: true,
 		},
 		downloadStableLabel: {
 			type: String,
-			default: "Stable"
+			default: "Stable",
 		},
 		downloadPreviewLabel: {
 			type: String,
-			default: "Preview"
+			default: "Preview",
 		},
 		downloadStableUrl: {
 			type: String,
-			default: undefined
+			default: undefined,
 		},
 		downloadPreviewUrl: {
 			type: String,
-			default: undefined
-		}
+			default: undefined,
+		},
 	},
 
 	data() {
@@ -56,7 +55,7 @@ export default {
 	async mounted() {
 		const { data } = await axios.get(RELEASE_URL);
 		// Maybe eventually some release has more than the apk in assets.
-		const apkAsset = data.assets.find(a => a.name.includes(".apk"));
+		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
@@ -66,7 +65,7 @@ export default {
 		downloadStable() {
 			this.$swal({
 				title: "Downloading",
-				text: this.downloadStableLabel + " version is being downloaded.",
+				text: `${this.downloadStableLabel} version is being downloaded.`,
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -74,24 +73,32 @@ export default {
 				timerProgressBar: true,
 				customClass: {
 					confirmButton: "download-confirm-button",
-					container: "download-container"
+					container: "download-container",
 				},
 				showClass: {
-					popup: "animated pulse faster"
+					popup: "animated pulse faster",
 				},
 				hideClass: {
-					popup: "animated zoomOut faster"
-				}
+					popup: "animated zoomOut faster",
+				},
 			});
 			window.location.assign(
-				this.$props.downloadStableUrl || this.$data.browserDownloadUrl || RELEASE_URL
+				this.$props.downloadStableUrl ||
+					this.$data.browserDownloadUrl ||
+					RELEASE_URL
 			);
-			window.ga("send", "event", "Action", "Download", this.downloadStableTag);
+			window.ga(
+				"send",
+				"event",
+				"Action",
+				"Download",
+				this.downloadStableTag
+			);
 		},
 		downloadPreview() {
 			this.$swal({
 				title: "Downloading",
-				text: this.downloadPreviewLabel + " version is being downloaded.",
+				text: `${this.downloadPreviewLabel} version is being downloaded.`,
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
@@ -99,21 +106,27 @@ export default {
 				timerProgressBar: true,
 				customClass: {
 					confirmButton: "download-confirm-button",
-					container: "download-container"
+					container: "download-container",
 				},
 				showClass: {
-					popup: "animated pulse faster"
+					popup: "animated pulse faster",
 				},
 				hideClass: {
-					popup: "animated zoomOut faster"
-				}
+					popup: "animated zoomOut faster",
+				},
 			});
 			window.location.assign(
 				this.$props.downloadPreviewUrl || PREVIEW_URL
 			);
-			window.ga("send", "event", "Action", "Download", this.downloadPreviewTag);
-		}
-	}
+			window.ga(
+				"send",
+				"event",
+				"Action",
+				"Download",
+				this.downloadPreviewTag
+			);
+		},
+	},
 };
 </script>
 

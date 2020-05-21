@@ -1,52 +1,53 @@
-module.exports = {
-	dest: './public',
-	temp: './node_modules/.temp/theme',
+const pluginsConfig = require("./config/plugins");
+const navBarConfig = require("./config/navBar");
+const sideBarConfig = require("./config/sideBar");
 
-	title: 'Tachiyomi',
-	description: 'Free and open source manga reader for Android',
+module.exports = {
+	dest: "./public",
+	temp: "./node_modules/.temp/theme",
+
+	title: "Tachiyomi",
+	description: "Free and open source manga reader for Android",
 
 	// prettier-ignore
 	head: [
 		// Embed headers
-		['link', { rel: 'icon', href: '/favicon.ico' }],
-		['link', { rel: 'manifest', href: '/manifest.json' }],
-		['meta', { name: 'theme-color', content: '#2e84bf' }],
-		['meta', { prefix: 'og: http://ogp.me/ns#', property: 'og:image', content: 'https://tachiyomi.org/icons/logo.png' }],
+		["link", { rel: "icon", href: "/favicon.ico" }],
+		["link", { rel: "manifest", href: "/manifest.json" }],
+		["meta", { name: "theme-color", content: "#2e84bf" }],
+		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://tachiyomi.org/icons/logo.png" }],
 		// Custom headers
-		['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin:''}],
-		['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'}],
+		["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin:""}],
+		["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Open+Sans"}],
 	],
 
 	themeConfig: {
-		logo: '/icons/logo.svg',
-		repo: 'inorichi/tachiyomi',
-		docsRepo: 'tachiyomiorg/website',
-		docsDir: 'src',
+		logo: "/icons/logo.svg",
+		repo: "inorichi/tachiyomi",
+		docsRepo: "tachiyomiorg/website",
+		docsDir: "src",
 		smoothScroll: true,
 		algolia: {
-			apiKey: 'fc1c45b5a3835e1882cbbf0751dfe705',
-			indexName: 'tachiyomi'
+			apiKey: "fc1c45b5a3835e1882cbbf0751dfe705",
+			indexName: "tachiyomi",
 		},
-		searchPlaceholder: 'Search...',
+		searchPlaceholder: "Search...",
 		editLinks: true,
-		editLinkText: 'Help us improve this page',
-		lastUpdated: 'Last Updated',
-		nav: require('./config/nav'),
+		editLinkText: "Help us improve this page",
+		lastUpdated: "Last Updated",
+		nav: navBarConfig,
 		sidebar: {
-			'/help/guides/': require('./config/sidebar/guides'),
-			'/help/faq/': require('./config/sidebar/faq'),
-			'/help/contribution': require('./config/sidebar/contribution'),
-			'/extensions': require('./config/sidebar/extensions'),
-			'/forks': require('./config/sidebar/forks')
-		}
+			"/help/guides/": sideBarConfig.guides,
+			"/help/faq/": sideBarConfig.faq,
+			"/help/contribution": sideBarConfig.contribution,
+			"/extensions": sideBarConfig.extensions,
+			"/forks": sideBarConfig.forks,
+		},
 	},
-	plugins: require('./config/plugins'),
+	plugins: pluginsConfig,
 	extraWatchFiles: [
-		'.vuepress/config/nav.js',
-		'.vuepress/config/plugins.js',
-		'.vuepress/config/sidebar/guides.js',
-		'.vuepress/config/sidebar/faq.js',
-		'.vuepress/config/sidebar/contribution.js',
-		'.vuepress/config/sidebar/extensions.js'
-	]
-}
+		".vuepress/config/plugins.js",
+		".vuepress/config/navBar.js",
+		".vuepress/config/sideBar.js",
+	],
+};

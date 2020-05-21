@@ -10,9 +10,9 @@ export default {
 	props: {
 		name: {
 			type: String,
-			default: "carousel-cell"
-		}
-	}
+			default: "carousel-cell",
+		},
+	},
 };
 </script>
 

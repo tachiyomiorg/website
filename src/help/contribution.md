@@ -47,6 +47,6 @@ Visit our translation project [here](https://hosted.weblate.org/projects/tachiyo
 ## Donation
 If you can't contribute code or translations but you still wish to help, then you can choose to contribute directly to the projects founder, [Inorichi](https://github.com/inorichi/) by using the button below, or going [directly to Ko-Fi](https://ko-fi.com/inorichi).
 ***
-<a href='https://ko-fi.com/inorichi' target='_blank' rel='noopener'>
-	<img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+<a href="https://ko-fi.com/inorichi" target="_blank" rel="noopener">
+	<img height="36" style="border:0px;height:36px;" src="https://cdn.ko-fi.com/cdn/kofi1.png?v=2" border="0" alt="Buy Me a Coffee at ko-fi.com" />
 </a>

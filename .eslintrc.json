@@ -5,18 +5,28 @@
 	},
 	"extends": [
 		"plugin:vue/essential",
-		"vuepress",
-		"prettier"
+		"airbnb-base",
+		"prettier",
+		"vuepress"
 	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
 	"parserOptions": {
 		"ecmaVersion": 2018,
 		"sourceType": "module"
 	},
 	"plugins": [
 		"vue",
-		"prettier"
+		"prettier",
+		"markdown"
 	],
 	"rules": {
-		"prettier/prettier": ["error"]
+		"prettier/prettier": "error",
+		"import/no-unresolved": [
+			2,
+			{ "ignore": ["^@"] }
+		]
 	}
 }

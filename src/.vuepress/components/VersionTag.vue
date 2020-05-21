@@ -1,6 +1,6 @@
 <template>
 	<span v-if="fileName" class="fileNameContainer" title="File name">
-		<MaterialIcon class="fileNameIcon" iconName="get_app" />
+		<MaterialIcon class="fileNameIcon" icon-name="get_app" />
 		<span class="fileName">tachiyomi-{{ this.$data.tagName }}.apk</span>
 		<slot />
 	</span>
@@ -18,8 +18,8 @@ const RELEASE_URL =
 export default {
 	props: {
 		fileName: {
-			type: Boolean
-		}
+			type: Boolean,
+		},
 	},
 
 	data() {

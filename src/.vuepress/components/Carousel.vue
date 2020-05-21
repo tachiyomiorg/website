@@ -16,18 +16,18 @@ export default {
 	props: {
 		name: {
 			type: String,
-			default: "carousel"
+			default: "carousel",
 		},
 		config: {
 			type: Object,
-			default: function() {
+			default() {
 				return {
 					navButtons: true,
-					centerMode: true
+					centerMode: true,
 				};
-			}
-		}
-	}
+			},
+		},
+	},
 };
 </script>
 

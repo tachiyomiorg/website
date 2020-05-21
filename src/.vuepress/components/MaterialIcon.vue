@@ -14,17 +14,17 @@ export default {
 	props: {
 		iconOnly: {
 			type: Boolean,
-			default: false
+			default: false,
 		},
 		name: {
 			type: String,
-			default: ""
+			default: "",
 		},
 		iconName: {
 			type: String,
-			required: true
-		}
-	}
+			required: true,
+		},
+	},
 };
 </script>
 
@@ -37,7 +37,7 @@ export default {
 	display inline
 
 .material-icons
-	font-family 'Material Icons'
+	font-family "Material Icons"
 	font-size 1.35em
 	font-style normal
 	position relative
@@ -50,7 +50,6 @@ export default {
 	white-space nowrap
 	word-wrap normal
 	direction ltr
-	font-feature-settings 'liga'
+	font-feature-settings "liga"
 	-webkit-font-smoothing antialiased
-
 </style>

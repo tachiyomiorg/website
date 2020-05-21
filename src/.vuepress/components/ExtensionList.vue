@@ -54,24 +54,26 @@ const EXTENSION_JSON =
 export default {
 	data() {
 		return {
-			extensions: []
+			extensions: [],
 		};
 	},
 
 	async beforeMount() {
 		const { data } = await axios.get(EXTENSION_JSON);
 		const values = Object.values(groupBy(data, "lang"));
-		this.$data.extensions = sortBy(values, [g => this.langName(g[0].lang)]);
+		this.$data.extensions = sortBy(values, [
+			(g) => this.langName(g[0].lang),
+		]);
 	},
 
 	updated() {
-		if (location.hash) {
-			location.replace(location.hash);
+		if (window.ocation.hash) {
+			window.location.replace(window.location.hash);
 		}
 	},
 
 	methods: {
-		langName: code =>
+		langName: (code) =>
 			code === "all"
 				? "All"
 				: `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`,
@@ -79,9 +81,9 @@ export default {
 			const pkgName = pkg.substring(0, pkg.lastIndexOf("."));
 			return `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/icon/${pkgName}.png`;
 		},
-		apkUrl: apk =>
-			`https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`
-	}
+		apkUrl: (apk) =>
+			`https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`,
+	},
 };
 </script>
 

@@ -1,9 +1,11 @@
-<h1 align="center"><img src="./src/.vuepress/public/assets/media/tachiyomi.png">Tachiyomi Website</h1>
-<p align="center">
-  <a href="https://discord.gg/tachiyomi">
-    <img src="https://img.shields.io/discord/349436576037732353.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
-  </a>
-</p>
+<div>
+	<h1 align="center"><img src="./src/.vuepress/public/assets/media/tachiyomi.png">Tachiyomi Website</h1>
+	<p align="center">
+		<a href="https://discord.gg/tachiyomi">
+			<img src="https://img.shields.io/discord/349436576037732353.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
+		</a>
+	</p>
+</div>
 
 ## Contributing
 
@@ -18,8 +20,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-    Copyright (C) 2018 The Tachiyomi Open Source Project
+	Copyright (C) 2018 The Tachiyomi Open Source Project
 
-    This Source Code Form is subject to the terms of the Mozilla Public
-    License, v. 2.0. If a copy of the MPL was not distributed with this
-    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+	This Source Code Form is subject to the terms of the Mozilla Public
+	License, v. 2.0. If a copy of the MPL was not distributed with this
+	file, You can obtain one at http://mozilla.org/MPL/2.0/.
