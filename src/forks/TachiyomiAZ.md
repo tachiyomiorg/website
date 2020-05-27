@@ -16,49 +16,49 @@ sidebar: false
 <style lang="css">
 @font-face {font-family: "Comic Sans MS"; src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot"); src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff") format("woff"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS") format("svg"); }
 
-.seizureTextAJDAASDASDASDASd {
-  animation: RAINBOOOWWWWWWWWW .5s linear infinite, VengaboysUPANDdownandUPANDdown 2s infinite;
+.seizureText {
+  animation: rainbowTextAnim .5s linear infinite, upAndDownAnim 2s infinite;
 }
-.leanAndDab {
+.textWiggle {
   padding: 2em;
   width: fit-content;
-  animation: GOLEFTGORIGHTGOPICKUPTHESTEPGOLEFTGORIGHTGOLEFT 1s ease-out infinite;
+  animation: wiggleAnim 1s ease-out infinite;
 }
-.bigBoyText {
+.bigText {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 2em;
   display: inline-block;
   -webkit-text-stroke: 1px black;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-.hahaSlideyBoi {
+.textLoop {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: YEEEEEEEEEEEEEEEEET 10s linear infinite;
+  animation: customMarquee 10s linear infinite;
   padding-left: 100%;
 }
-.containTheBuldgeOwO {
+.overflowContainer
 	width:100%;
 	overflow:hidden;
 }
-@keyframes YEEEEEEEEEEEEEEEEET {
+@keyframes customMarquee {
   0% {transform: translate(0, 0);}
   100% {transform: translate(-100%, 0);}
 }
-@keyframes GOLEFTGORIGHTGOPICKUPTHESTEPGOLEFTGORIGHTGOLEFT {
+@keyframes wiggleAnim {
   0%   {transform: rotate(0deg)}
   25%  {transform: rotate(-15deg)}
   50%  {transform: rotate(0deg)}
   75%  {transform: rotate(15deg)}
   100% {transform: rotate(0deg)}
 }
-@keyframes VengaboysUPANDdownandUPANDdown {
+@keyframes upAndDownAnim {
   0% {transform: scaleX(.5) scaleY(.5)}
   50% {transform: scaleX(1) scaleY(1)}
   100% {transform: scaleX(.5) scaleY(.5)}
 }
-@keyframes RAINBOOOWWWWWWWWW {
+@keyframes rainbowTextAnim {
   0%   {color: hsl(0, 100%, 50%)}
   10%  {color: hsl(36, 100%, 50%)}
   20%  {color: hsl(72, 100%, 50%)}
@@ -76,10 +76,10 @@ sidebar: false
 # <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/img/logo.png')"> TachiyomiAZ
 
 <ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
-<div class="containTheBuldgeOwO">
-  <div class="hahaSlideyBoi">
-    <div class="leanAndDab">
-      <span class="seizureTextAJDAASDASDASDASd bigBoyText"><i>The BEST fork</i> --az4521</span>
+<div class="overflowContainer">
+  <div class="textLoop">
+    <div class="textWiggle">
+      <span class="seizureText bigText"><i>The BEST fork</i> --az4521</span>
     </div>
   </div>
 </div>
