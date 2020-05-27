@@ -18,7 +18,7 @@ sidebar: false
 
 <ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
 
-<marquee>The BEST fork</marquee>
+<marquee><i>"The BEST fork" - az4521</i></marquee>
 
 ## Introduction
 **TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)** and [Syer10](https://github.com/jobobby04).
