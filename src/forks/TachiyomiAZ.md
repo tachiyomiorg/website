@@ -38,7 +38,7 @@ sidebar: false
   animation: customMarquee 10s linear infinite;
   padding-left: 100%;
 }
-.overflowContainer
+.overflowContainer {
 	width:100%;
 	overflow:hidden;
 }
