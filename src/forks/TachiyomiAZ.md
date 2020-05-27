@@ -38,6 +38,10 @@ sidebar: false
   animation: YEEEEEEEEEEEEEEEEET 10s linear infinite;
   padding-left: 100%;
 }
+.containTheBuldgeOwO {
+	width:100%;
+	overflow:hidden;
+}
 @keyframes YEEEEEEEEEEEEEEEEET {
   0% {transform: translate(0, 0);}
   100% {transform: translate(-100%, 0);}
@@ -72,10 +76,11 @@ sidebar: false
 # <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/img/logo.png')"> TachiyomiAZ
 
 <ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
-
-<div class="hahaSlideyBoi">
-  <div class="leanAndDab">
-    <span class="seizureTextAJDAASDASDASDASd bigBoyText"><i>The BEST fork</i> --az4521</span>
+<div class="containTheBuldgeOwO">
+  <div class="hahaSlideyBoi">
+    <div class="leanAndDab">
+      <span class="seizureTextAJDAASDASDASDASd bigBoyText"><i>The BEST fork</i> --az4521</span>
+    </div>
   </div>
 </div>
 
