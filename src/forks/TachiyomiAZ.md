@@ -13,12 +13,66 @@ meta:
     content: "#FFCC4D"
 sidebar: false
 ---
+<style lang="css">
+.seizureTextAJDAASDASDASDASd {
+  animation: RAINBOOOWWWWWWWWW .5s linear infinite, VengaboysUPANDdownandUPANDdown 2s infinite;
+}
+.leanAndDab {
+  padding: 2em;
+  width: fit-content;
+  animation: GOLEFTGORIGHTGOPICKUPTHESTEPGOLEFTGORIGHTGOLEFT .7s ease-out infinite;
+}
+.bigBoyText {
+  font-size: 2em;
+  display: inline-block
+}
+.hahaSlideyBoi {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: YEEEEEEEEEEEEEEEEET 5s linear infinite;
+  padding-left: 100%;
+}
+@keyframes YEEEEEEEEEEEEEEEEET {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-100%, 0);}
+}
+@keyframes GOLEFTGORIGHTGOPICKUPTHESTEPGOLEFTGORIGHTGOLEFT {
+  0%   {transform: rotate(0deg)}
+  25%  {transform: rotate(-15deg)}
+  50%  {transform: rotate(0deg)}
+  75%  {transform: rotate(15deg)}
+  100% {transform: rotate(0deg)}
+}
+@keyframes VengaboysUPANDdownandUPANDdown {
+  0% {transform: scaleX(.5) scaleY(.5)}
+  50% {transform: scaleX(1) scaleY(1)}
+  100% {transform: scaleX(.5) scaleY(.5)}
+}
+@keyframes RAINBOOOWWWWWWWWW {
+  0%   {color: hsl(0, 100%, 50%)}
+  10%  {color: hsl(36, 100%, 50%)}
+  20%  {color: hsl(72, 100%, 50%)}
+  30%  {color: hsl(108, 100%, 50%)}
+  40%  {color: hsl(144, 100%, 50%)}
+  50%  {color: hsl(180, 100%, 50%)}
+  60%  {color: hsl(216, 100%, 50%)}
+  70%  {color: hsl(252, 100%, 50%)}
+  80%  {color: hsl(288, 100%, 50%)}
+  90%  {color: hsl(324, 100%, 50%)}
+  100% {color: hsl(360, 100%, 50%)}
+}
+</style>
 
 # <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/img/logo.png')"> TachiyomiAZ
 
 <ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
 
-<marquee><i>"The BEST fork" - az4521</i></marquee>
+<div class="hahaSlideyBoi">
+  <div class="leanAndDab">
+    <span class="seizureTextAJDAASDASDASDASd bigBoyText"><i>The BEST fork</i> --az4521</span>
+  </div>
+</div>
 
 ## Introduction
 **TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)** and [Syer10](https://github.com/jobobby04).
