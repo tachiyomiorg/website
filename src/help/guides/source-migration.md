@@ -17,5 +17,5 @@ Migration is the process of moving manga from one source to another while keepin
 :::
 
 ::: warning
-Make sure you have a **[backup](/help/guides/settings/backup/)**, if anything goes wrong.
+Make sure you have a **[backup](/help/guides/creating-backups/)**, if anything goes wrong.
 :::

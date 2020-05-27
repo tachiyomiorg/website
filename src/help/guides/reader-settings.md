@@ -1,10 +1,10 @@
 ---
-title: Reader
+title: Reader settings
 description: Reader settings for Tachiyomi.
 lang: en-US
 ---
 
-# Reader
+# Reader settings
 This section relates to the reading experience in the app and navigating the reader.
 
 ## Default viewer <Badge text="Left to Right" type="default-indicator" vertical="middle" />

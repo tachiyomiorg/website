@@ -22,9 +22,7 @@ Enable it by going to <Navigation item="library"/> → <Navigation item="filter"
 The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
 
 ::: guide
-Refresh your metadata by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **[Refresh library metadata](/help/guides/settings/advanced/#refresh-library-metadata)**.
-::: aside
-Read more [here](/help/guides/settings/advanced/#refresh-library-metadata)
+Refresh your metadata by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library metadata**.
 :::
 
 #### How do I ignore chapters from certain scanlator groups?
@@ -96,9 +94,7 @@ Cetain devices such as MIUI have very aggressive battery saving, which can kill 
 Only the UI has been localized, language in manga will still be using the language of the source selected.
 
 ::: guide
-You can change language by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_general"/> then pressing **[Language](/help/guides/settings/general/#language)**.
-::: aside
-Read more [here](/help/guides/settings/general/#language)
+You can change language by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_general"/> then pressing **Language**.
 :::
 
 ### Miscellaneous
