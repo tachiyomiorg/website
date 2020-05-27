@@ -38,7 +38,7 @@ You can do this by going to <Navigation item="settings"/> → <Navigation item="
 It is highly recommended you turn on auto backups, this will ensure you can recover if need be.
 
 ::: guide
-You can do this by going to <Navigation item="settings"/> → <Navigation item="old_backup"/> and then setting a [backup frequency](/help/guides/settings/backup/#backup-frequency). In the case of a catastrophic failure, at least you will be able to recover.
+You can do this by going to <Navigation item="settings"/> → <Navigation item="old_backup"/> and then setting a **backup frequency**. In the case of a catastrophic failure, at least you will be able to recover.
 :::
 
 ## Forks information
