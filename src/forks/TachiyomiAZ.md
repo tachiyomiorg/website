@@ -24,7 +24,7 @@ sidebar: false
 }
 .bigBoyText {
   font-size: 2em;
-  display: inline-block
+  display: inline-block;
   -webkit-text-stroke: 1px black;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
