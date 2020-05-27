@@ -14,13 +14,15 @@ meta:
 sidebar: false
 ---
 <style lang="css">
+@font-face {font-family: "Comic Sans MS"; src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot"); src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff") format("woff"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS") format("svg"); }
+
 .seizureTextAJDAASDASDASDASd {
   animation: RAINBOOOWWWWWWWWW .5s linear infinite, VengaboysUPANDdownandUPANDdown 2s infinite;
 }
 .leanAndDab {
   padding: 2em;
   width: fit-content;
-  animation: GOLEFTGORIGHTGOPICKUPTHESTEPGOLEFTGORIGHTGOLEFT .7s ease-out infinite;
+  animation: GOLEFTGORIGHTGOPICKUPTHESTEPGOLEFTGORIGHTGOLEFT 1s ease-out infinite;
 }
 .bigBoyText {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -33,7 +35,7 @@ sidebar: false
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: YEEEEEEEEEEEEEEEEET 5s linear infinite;
+  animation: YEEEEEEEEEEEEEEEEET 10s linear infinite;
   padding-left: 100%;
 }
 @keyframes YEEEEEEEEEEEEEEEEET {
