@@ -23,6 +23,7 @@ sidebar: false
   animation: GOLEFTGORIGHTGOPICKUPTHESTEPGOLEFTGORIGHTGOLEFT .7s ease-out infinite;
 }
 .bigBoyText {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 2em;
   display: inline-block;
   -webkit-text-stroke: 1px black;
