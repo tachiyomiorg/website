@@ -11,6 +11,7 @@ module.exports = {
 				"/help/guides/source-migration",
 				"/help/guides/creating-backups",
 				"/help/guides/reading-local-manga",
+				"/help/guides/reader-settings",
 				"/help/guides/categories",
 			],
 		},
