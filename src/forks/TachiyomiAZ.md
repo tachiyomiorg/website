@@ -13,10 +13,76 @@ meta:
     content: "#FFCC4D"
 sidebar: false
 ---
+<style lang="css">
+@font-face {font-family: "Comic Sans MS"; src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot"); src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff") format("woff"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS") format("svg"); }
+
+.seizureText {
+  animation: rainbowTextAnim .5s linear infinite, upAndDownAnim 2s infinite;
+}
+.textWiggle {
+  padding: 2em;
+  width: fit-content;
+  animation: wiggleAnim 1s ease-out infinite;
+}
+.bigText {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 2em;
+  display: inline-block;
+  -webkit-text-stroke: 1px black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.textLoop {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: customMarquee 10s linear infinite;
+  padding-left: 100%;
+}
+.overflowContainer {
+	width:100%;
+	overflow:hidden;
+}
+@keyframes customMarquee {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-100%, 0);}
+}
+@keyframes wiggleAnim {
+  0%   {transform: rotate(0deg)}
+  25%  {transform: rotate(-15deg)}
+  50%  {transform: rotate(0deg)}
+  75%  {transform: rotate(15deg)}
+  100% {transform: rotate(0deg)}
+}
+@keyframes upAndDownAnim {
+  0% {transform: scaleX(.5) scaleY(.5)}
+  50% {transform: scaleX(1) scaleY(1)}
+  100% {transform: scaleX(.5) scaleY(.5)}
+}
+@keyframes rainbowTextAnim {
+  0%   {color: hsl(0, 100%, 50%)}
+  10%  {color: hsl(36, 100%, 50%)}
+  20%  {color: hsl(72, 100%, 50%)}
+  30%  {color: hsl(108, 100%, 50%)}
+  40%  {color: hsl(144, 100%, 50%)}
+  50%  {color: hsl(180, 100%, 50%)}
+  60%  {color: hsl(216, 100%, 50%)}
+  70%  {color: hsl(252, 100%, 50%)}
+  80%  {color: hsl(288, 100%, 50%)}
+  90%  {color: hsl(324, 100%, 50%)}
+  100% {color: hsl(360, 100%, 50%)}
+}
+</style>
 
 # <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/img/logo.png')"> TachiyomiAZ
 
 <ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
+<div class="overflowContainer">
+  <div class="textLoop">
+    <div class="textWiggle">
+      <span class="seizureText bigText"><i>The BEST fork</i> --az4521</span>
+    </div>
+  </div>
+</div>
 
 ## Introduction
 **TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)** and [Syer10](https://github.com/jobobby04).
