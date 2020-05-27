@@ -24,6 +24,9 @@ sidebar: false
   width: fit-content;
   animation: wiggleAnim 1s ease-out infinite;
 }
+.textWiggle:hover {
+  animation: doABarrelRoll .6s;
+}
 .bigText {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 2em;
@@ -45,6 +48,10 @@ sidebar: false
 @keyframes customMarquee {
   0% {transform: translate(0, 0);}
   100% {transform: translate(-100%, 0);}
+}
+@keyframes doABarrelRoll {
+  from {transform:rotate(0deg)}
+  to {transform:rotate(360deg)}
 }
 @keyframes wiggleAnim {
   0%   {transform: rotate(0deg)}
