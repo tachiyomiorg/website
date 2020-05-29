@@ -6,7 +6,7 @@ description: This fork adds features that enhances the hentai experience with in
 lang: en-US
 meta:
   - property: og:image
-    content: /forks/TachiyomiEH/img/logo.png
+    content: /forks/TachiyomiEH/assets/logo.png
   - name: theme-color
     content: "#2e84bf"
   - name: msapplication-TileColor
@@ -14,7 +14,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/forks/TachiyomiEH/img/logo.png')"> TachiyomiEH <Badge text="Deprecated" type="error" vertical="middle" />
+# <img class="headerLogo" :src="$withBase('/forks/TachiyomiEH/assets/logo.png')"> TachiyomiEH <Badge text="Deprecated" type="error" vertical="middle" />
 
 <ForkButtons forkName="TachiyomiEH" downloadForkLink="https://api.github.com/repos/NerdNumber9/TachiyomiEH/releases/latest" githubForkLink="window.open('https://github.com/NerdNumber9/TachiyomiEH')"/>
 
@@ -25,7 +25,7 @@ This fork adds features that enhances the hentai experience with integrations to
 
 At the moment, it is **deprecated** as the developer does not have time to maintain it. Use [TachiyomiAZ](/forks/TachiyomiAZ) instead.
 
-<img :src="$withBase('/forks/TachiyomiEH/img/banner.png')"/>
+<img :src="$withBase('/forks/TachiyomiEH/assets/banner.png')"/>
 
 ## Features
 ::: aside-guide

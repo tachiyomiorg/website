@@ -56,7 +56,7 @@ To delete a category, follow the steps below.
 ## Add manga to category
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-category-add-to.webm)
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/categories/assets/Category-AddTo.webm)
 :::
 
 To add manga to a category, follow the steps below.
@@ -71,14 +71,14 @@ To add manga to a category, follow the steps below.
 ## Remove manga from category
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-category-remove-from.webm)
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/categories/assets/Category-RemoveFrom.webm)
 :::
 
 To add manga to a category, follow the steps below.
 
 ::: guide
-1. Long press the manga that you want to add. 
-1. Press the <Navigation item="set_categories"/> button. 
+1. Long press the manga that you want to add.
+1. Press the <Navigation item="set_categories"/> button.
 1. Deselect the category or categories you want to remove it from and press **OK**.
 	> You can also remove multiple manga from a category by selecting them when you see the <Navigation item="set_categories"/> button.
 :::

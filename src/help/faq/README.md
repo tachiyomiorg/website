@@ -182,8 +182,8 @@ When installing your first extension and are prompted that your phone isn't allo
 <figure class="centered">
 	<h4>Android 8.0 and higher</h4>
 	<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-unknownsources-android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-unknownsources-android10.webm')" type="video/webm" />
+	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/help/faq/assets/UnknownSources-Android10.webm')" type="video/webm" />
 	</video>
 </figure>
 </CarouselItem>
@@ -191,8 +191,8 @@ When installing your first extension and are prompted that your phone isn't allo
 <figure class="centered">
 	<h4>Android 7.1 and lower</h4>
 	<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-unknownsources-android711.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-unknownsources-android711.webm')" type="video/webm" />
+	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android7.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/help/faq/assets/UnknownSources-Android7.webm')" type="video/webm" />
 	</video>
 </figure>
 </CarouselItem>
@@ -268,18 +268,14 @@ The source you selected may have Cloudflare protection on and is enforcing CAPTC
 ### MangaDex
 
 #### No results when searching
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
+:::
+
 If you're not getting any results when searching MangaDex then you need to log in. To do so enter the **WebView** for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
 
 ::: guide
 To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_browse"/>/<Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
-:::
-
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-mangadex-no-results.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-mangadex-no-results.webm')" type="video/webm"/>
-	</video>
-</figure>
 :::
 
 ::: tip
