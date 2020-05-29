@@ -144,8 +144,7 @@ This allows you to control what color the background should be in reader. Backgr
 Double tap animation speed changes the speed in which the zoom happens when double tapping.
 
 ## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
-This setting allows the chapters marked as read to be skipped during reading. To mark a chapter as read, tap the <Navigation item="old_overflow"/> and press **Mark as Read**.
-This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
+This setting allows the chapters marked as read to be skipped during reading. This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
 
 ## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
 This setting specifies if the notification and navigation bar are to be hidden while in the reader.
