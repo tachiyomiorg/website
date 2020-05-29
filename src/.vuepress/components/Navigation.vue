@@ -84,18 +84,9 @@ export default {
 				button_browse: { text: "BROWSE" },
 				tab_sources: { text: "SOURCES" },
 				tab_extensions: { text: "EXTENSIONS" },
-				/* Sites */
-				tachiyomi: { text: "Tachiyomi" },
-				mangadex: { text: "MangaDex" },
 				/* Misc */
 				install: { text: "INSTALL", class:"ext-installation" },
 				reorder: { text: "Reorder", icon:"reorder" },
-				/* Legacy */
-				old_library: { text: "My library", icon: "class" },
-				old_catalogues: { text: "Catalogues", icon: "explore" },
-				old_overflow: { text: "Overflow menu", icon: "more_vert" },
-				old_backup: { text: "Backup", icon: "cloud_upload" },
-				old_extensions: { text: "Extensions", icon: "extension" },
 			}[this.item];
 		},
 	},
