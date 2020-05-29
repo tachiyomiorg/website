@@ -13,7 +13,6 @@ module.exports = {
 	head: [
 		// Embed headers
 		["link", { rel: "icon", href: "/favicon.ico" }],
-		["link", { rel: "manifest", href: "/manifest.json" }],
 		["meta", { name: "theme-color", content: "#2e84bf" }],
 		["meta", { prefix: "og: http://ogp.me/ns#", property: "og:image", content: "https://tachiyomi.org/icons/logo.png" }],
 		// Custom headers

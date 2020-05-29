@@ -10,21 +10,21 @@ lang: en-US
 
 <DownloadButtons downloadStableTag="Tachiyomi" downloadPreviewTag="Tachiyomi Preview"/>
 
-You can download the latest version of <Navigation item="tachiyomi"/> by clicking either of the above buttons.
+You can download the latest version of **Tachiyomi** by clicking either of the above buttons.
 When you've completed the download, open the <VersionTag fileName/> file and proceed with installing it.
 
 ## Installing an extension
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-extension-install.webm)
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.webm)
 :::
 
-Now that <Navigation item="tachiyomi"/> is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the <Navigation item="tab_extensions"/> tab.
+Now that **Tachiyomi** is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the <Navigation item="tab_extensions"/> tab.
 
 Find the extension that you'd like to use then press the <Navigation item="install"/> button next to your desired extension and then accept the installation prompt.
 
 ::: guide Security prompt
-You *might* be stopped by a security prompt while attempting to install an extension. If that were to happen then you need to allow <Navigation item="tachiyomi"/> the permission to *install unknown apps*.
+You *might* be stopped by a security prompt while attempting to install an extension. If that were to happen then you need to allow **Tachiyomi** the permission to *install unknown apps*.
 ::: aside
 Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installations)
 :::
@@ -32,7 +32,7 @@ Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installatio
 ## Adding manga to your library
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/media/video-guide-library-add-to.webm)
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-AddTo.webm)
 :::
 
 Now that you've installed the desired extension it will show in the <Navigation item="tab_sources"/> tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.

@@ -2,6 +2,10 @@ module.exports = {
 	guides: [
 		"/",
 		{
+			title: "Frequently Asked Questions",
+			path: "/help/faq/",
+		},
+		{
 			title: "Guides",
 			collapsable: false,
 			sidebarDepth: 2,
@@ -14,10 +18,6 @@ module.exports = {
 				"/help/guides/reader-settings",
 				"/help/guides/categories",
 			],
-		},
-		{
-			title: "Frequently Asked Questions",
-			path: "/help/faq/",
 		},
 		{
 			title: "Forks",
@@ -58,12 +58,6 @@ module.exports = {
 	contribution: [
 		"/",
 		{
-			title: "Contribution",
-			collapsable: false,
-			sidebarDepth: 1,
-			children: ["/help/contribution"],
-		},
-		{
 			title: "Frequently Asked Questions",
 			path: "/help/faq/",
 		},
@@ -76,16 +70,18 @@ module.exports = {
 			path: "/forks/",
 		},
 		{
+			title: "Contribution",
+			collapsable: false,
+			sidebarDepth: 1,
+			children: ["/help/contribution"],
+		},
+		{
 			title: "Available extensions",
 			path: "/extensions/",
 		},
 	],
 	extensions: [
 		"/",
-		{
-			title: "Available extensions",
-			path: "/extensions/",
-		},
 		{
 			title: "Frequently Asked Questions",
 			path: "/help/faq/",
@@ -102,13 +98,13 @@ module.exports = {
 			title: "Contribution",
 			path: "/help/contribution",
 		},
+		{
+			title: "Available extensions",
+			path: "/extensions/",
+		},
 	],
 	forks: [
 		"/",
-		{
-			title: "Forks",
-			path: "/forks/",
-		},
 		{
 			title: "Frequently Asked Questions",
 			path: "/help/faq/",
@@ -116,6 +112,10 @@ module.exports = {
 		{
 			title: "Guides",
 			path: "/help/guides/getting-started",
+		},
+		{
+			title: "Forks",
+			path: "/forks/",
 		},
 		{
 			title: "Contribution",

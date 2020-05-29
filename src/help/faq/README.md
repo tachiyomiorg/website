@@ -32,18 +32,6 @@ Every now and then you find a manga that is translated by more than one group, b
 Change library sorting by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
 :::
 
-#### Why do I see `attempt to invoke virtual method 'com.hippo.unifile...`?
-This error can be caused by a variety of reasons, all to do with storage.
-
-
-::: guide
-- Most commonly it is caused by full storage, check to see if your device or SD Card is full
-- **Tachiyomi** doesn't have access to SD card enabled in permissions for the app
-- If you're downloading and this error pops up, that means the app might not be able to access the folder you're trying to download to.
-- This may be because the folder is corrupted or does not exist. Use a file manager to check that the folder(s) actually exist and every folder in the sequence is available and accessible.
-- The drive you're writing to is corrupted. Check using a file manager to see if it is accessible.
-:::
-
 ### Reader
 #### Why are some images not displayed?
 Aside from network issues, it could be because the images are too big or that the decoder doesn't support that image type.
@@ -99,14 +87,10 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 
 ### Miscellaneous
 #### What happened to the F-Droid version?
-F-Droid is no longer supported. Both the Stable and Preview builds are now automatically updated.
 
-An unofficial F-Droid repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net). 
+**F-Droid** is no longer supported. Both the Stable and Preview builds are now automatically updated.
 
-#### Why do I get a `App not installed` error when installing?
-You may encounter this if you're installing an official build over an existing F-Droid build due to differing signatures.
-
-Backup your data, uninstall the app, then restore the data in the fresh install.
+An unofficial **F-Droid** repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
 
 #### iOS Version
 There is no iOS version and no plans for one. Since iOS and Android apps don't share code it's hard to port.
@@ -129,10 +113,9 @@ Due to Covid-19 quarantine, most manga sites are under heavy load. Thus we do no
 Tachiyomi is not affiliated with or responsible for any source that is down or slow.
 :::
 
-<!--- 
+<!---
 While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
--->
-<!--- 
+
 - Fastest manga updates: **Mangadex** and scanlator sources
 - Largest manga library: **MangaPark**
 - High quality scans and official translation: **MangaSee**
@@ -140,14 +123,13 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
 - Western comics: **ReadComicOnline** and **ComicExtra**
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
+
 - Other popular sources: **MangaLife**, **MangaOwl**, **MangaHere**, **MangaFreak**, **Manhwa18.net** (in **FMReader** extension)
--->
-<!--- 
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
 -->
 
 #### What are scanlator sources?
-Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have highest scan quality. 
+Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have highest scan quality.
 
 Some popular scanlator sources are **Jaimini's Box** (in **FoolSlide** extension), **MerakiScans**, **Hatigarm Scans** (in **Genkan** extension) etc.
 
@@ -182,8 +164,8 @@ When installing your first extension and are prompted that your phone isn't allo
 <figure class="centered">
 	<h4>Android 8.0 and higher</h4>
 	<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-unknownsources-android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-unknownsources-android10.webm')" type="video/webm" />
+	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/help/faq/assets/UnknownSources-Android10.webm')" type="video/webm" />
 	</video>
 </figure>
 </CarouselItem>
@@ -191,8 +173,8 @@ When installing your first extension and are prompted that your phone isn't allo
 <figure class="centered">
 	<h4>Android 7.1 and lower</h4>
 	<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-unknownsources-android711.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-unknownsources-android711.webm')" type="video/webm" />
+	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android7.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/help/faq/assets/UnknownSources-Android7.webm')" type="video/webm" />
 	</video>
 </figure>
 </CarouselItem>
@@ -231,7 +213,7 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="bro
 You do this by following the steps below.
 
 1. Go to <Navigation item="browse"/> → **SOURCES**.
-1. Click on <Navigation item="filter"/> on the top right corner. 
+1. Click on <Navigation item="filter"/> on the top right corner.
 1. Scroll down until you find the language of your source and enable it.
 
 #### Why can't I restore my backup?
@@ -246,10 +228,10 @@ It might be because the title is worded differently. Follow any of the steps bel
 - Go to <Navigation item="browse"/> → <Navigation item="button_browse"/> on a source then search for the manga again.
 
 
-#### Some common errors you might encounter
+#### Common errors
 
 ##### Java.lang Exception: Challenge not found
-Often this will be resolved by force-quitting and reopening Tachiyomi.
+Often this will be resolved by force-quitting and reopening **Tachiyomi**.
 
 ##### Loader not implemented
 It means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
@@ -258,28 +240,39 @@ It means that the respective extension for the manga is not installed. To fix, i
 This means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
 
 ##### HTTP error 403
-The source you selected may have Cloudflare protection on and is enforcing CAPTCHAs.
+The source you selected may have **Cloudflare** protection on and is enforcing **CAPTCHAs**.
 
 1. Find a manga in your library that is from the source you're trying to access.
 1. Tap on the <Navigation item="webview"/> in the **INFO** tab.
-1. Complete the CAPTCHA if present and wait for the page to finish loading.
+1. Complete the **CAPTCHA** if present and wait for the page to finish loading.
 1. Press back rather than exiting the app and if that does not work, use the back arrow.
+
+##### App not installed
+You may encounter this if you're installing an official build over an existing **F-Droid** build due to differing signatures.
+Backup your data, uninstall the app, then restore the data in the fresh install.
+
+##### Attempt to invoke virtual method 'com.hippo.unifile...
+This error can be caused by a variety of reasons, all to do with storage.
+
+::: guide
+- Most commonly it is caused by full storage, check to see if your device or SD Card is full
+- **Tachiyomi** doesn't have access to SD card enabled in permissions for the app
+- If you're downloading and this error pops up, that means the app might not be able to access the folder you're trying to download to.
+- This may be because the folder is corrupted or does not exist. Use a file manager to check that the folder(s) actually exist and every folder in the sequence is available and accessible.
+- The drive you're writing to is corrupted. Check using a file manager to see if it is accessible.
+:::
 
 ### MangaDex
 
 #### No results when searching
-If you're not getting any results when searching MangaDex then you need to log in. To do so enter the **WebView** for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
+:::
+
+If you're not getting any results when searching MangaDex then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
 
 ::: guide
 To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_browse"/>/<Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
-:::
-
-::: expander <strong>Click to reveal video guide!</strong>
-<figure class="centered">
-	<video muted loop controls :poster="$withBase('/assets/media/video-guide-mangadex-no-results.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/assets/media/video-guide-mangadex-no-results.webm')" type="video/webm"/>
-	</video>
-</figure>
 :::
 
 ::: tip
@@ -310,9 +303,9 @@ Read about source migration [here](/help/guides/source-migration/)
 #### Duplicate chapters in MangaPark
 To solve this issue, follow the below steps.
 
-1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>. 
-1. Click on **MangaPark** extension and then `Chapter List Source`. 
-1. Choose an option like `Smart list` or `Prioritize source`. 
+1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>.
+1. Click on **MangaPark** extension and then `Chapter List Source`.
+1. Choose an option like `Smart list` or `Prioritize source`.
 1. Go back to MangaPark's chapter list and refresh.
 
 ### Mangakakalot/Manganelo
@@ -324,7 +317,7 @@ To solve this issue, follow the below steps.
 
 This means that the manga is dead and needs to migrated from **Mangakakalot**/**Manganelo** to different source. Refer to the guide for **Page list is empty** above.
 
-#### Image could not be decoded 
+#### Image could not be decoded
 Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
 
 ### Webtoons
@@ -337,15 +330,15 @@ Japscan has some manga that are scrambled using a different algorithm than other
 
 ### MangaRock
 
-##### Migrate to Tachiyomi
+#### Migrate to Tachiyomi
 There is a tool to migrate **MangaRock** favorites to **Tachiyomi**, courtesy of a member of our [Discord server](https://discord.gg/tachiyomi) by the same name as the creator, but a computer is required to finish the migration successfully.
 
 View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 
-##### Restore a backup from the MangaRock source
+#### Restore a backup from the MangaRock source
 There is an unofficial method to restore/backup all manga from the MangaRock source.
 
-1. Install the [DummyRock](/assets/misc/tachiyomi-en.dummyrock-v1.2.1-debug.apk) file.
+1. Install the [DummyRock](https://github.com/tachiyomiorg/website/raw/files/DummyRock.apk) file.
 1. Go to <Navigation item="browse"/> → **EXTENSIONS** and press **Trust** to proceed.
 1. Restore backup.
 

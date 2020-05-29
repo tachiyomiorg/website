@@ -38,39 +38,39 @@ All examples are illustrations and may not reflect what actually happens.
 <figure class="centered">
 	<h4>Fit screen</h4>
 	<p>Will fit either to width or height depending on image resolution</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitscreen.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-FitScreen.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Stretch</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/stretch.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Stretch.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Fit width</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitwidth.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-FitWidth.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Fit height</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/fitheight.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-FitHeight.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Original size</h4>
 	<p>Will be either zoom in or out depending on image resolution</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/originalsize.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-OriginalSize.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Smart fit</h4>
 	<p>Fits to the longest side of the image</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/smartfit.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-SmartFit.png')">
 </figure>
 </CarouselItem>
 </Carousel>
@@ -92,21 +92,21 @@ All examples are illustrations
 <figure class="centered">
 	<h4>Left</h4>
 	<p>Will start at the left side of the page.</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionleft.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-ZoomStartPos-Left.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Right</h4>
 	<p>Will start at the right side of the page.</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositionright.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-ZoomStartPos-Right.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Center</h4>
 	<p>Will start at the center of the page.</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/zoomstartpositioncenter.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-ZoomStartPos-Center.png')">
 </figure>
 </CarouselItem>
 </Carousel>
@@ -126,14 +126,14 @@ This allows you to control what color the background should be in reader. Backgr
 <Carousel name="carousel-background-color">
 <CarouselItem>
 <figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorblack.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Background-Black.png')">
 	<h4>Black</h4>
 	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/backgroundcolorwhite.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Background-White.png')">
 	<h4>White</h4>
 	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
 </figure>
@@ -144,8 +144,7 @@ This allows you to control what color the background should be in reader. Backgr
 Double tap animation speed changes the speed in which the zoom happens when double tapping.
 
 ## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
-This setting allows the chapters marked as read to be skipped during reading. To mark a chapter as read, tap the <Navigation item="old_overflow"/> and press **Mark as Read**.
-This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
+This setting allows the chapters marked as read to be skipped during reading. This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
 
 ## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
 This setting specifies if the notification and navigation bar are to be hidden while in the reader.
@@ -173,13 +172,13 @@ Tries to remove excess white borders
 <CarouselItem>
 <figure class="centered">
 	<h4>With Crop borders on</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withcropborder.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-CropBorder-With.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>With Crop borders off</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/media/withoutcropborder.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-CropBorder-Without.png')">
 </figure>
 </CarouselItem>
 </Carousel>

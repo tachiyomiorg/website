@@ -6,7 +6,7 @@ description: This fork takes a new approach to the design of the base app along 
 lang: en-US
 meta:
   - property: og:image
-    content: /forks/TachiyomiJ2K/img/logo.png
+    content: /forks/TachiyomiJ2K/assets/logo.png
   - name: theme-color
     content: "#2e84bf"
   - name: msapplication-TileColor
@@ -14,7 +14,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/forks/TachiyomiJ2K/img/logo.png')"> TachiyomiJ2K
+# <img class="headerLogo" :src="$withBase('/forks/TachiyomiJ2K/assets/logo.png')"> TachiyomiJ2K
 
 <ForkButtons forkName="TachiyomiJ2K" downloadForkLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" githubForkLink="window.open('https://github.com/Jays2Kings/tachiyomiJ2K')"/>
 
@@ -23,7 +23,7 @@ sidebar: false
 
 This fork takes a new approach to the design of the base app along with several other enhancements.
 
-<img :src="$withBase('/forks/TachiyomiJ2K/img/banner.png')"/>
+<img :src="$withBase('/forks/TachiyomiJ2K/assets/banner.png')"/>
 
 ## Features
 ::: aside-guide

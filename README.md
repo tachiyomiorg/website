@@ -1,5 +1,6 @@
 <div>
-	<h1 align="center"><img src="./src/.vuepress/public/assets/media/tachiyomi.png">Tachiyomi Website</h1>
+	<span align="center"><img src="./src/.vuepress/public/icons/logo.png" height="100px"></span>
+	<h1 align="center">Tachiyomi Website</h1>
 	<p align="center">
 		<a href="https://discord.gg/tachiyomi">
 			<img src="https://img.shields.io/discord/349436576037732353.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">

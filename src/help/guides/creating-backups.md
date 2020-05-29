@@ -17,7 +17,7 @@ Backups can hold the following information:
 
 ## Restoring
 
-Restoring is done from the <Navigation item="old_backup"/> settings. To restore without issues be sure to:
+Restoring is done from the <Navigation item="settings_backup"/> settings. To restore without issues be sure to:
 
 * Install all the <Navigation item="tab_extensions"/> that were installed at the time of the backup.
 * Log into the <Navigation item="settings_tracking"/> services that you use.
@@ -30,7 +30,7 @@ Restoring is done from the <Navigation item="old_backup"/> settings. To restore 
 You can transfer downloaded manga chapters from one version of **Tachiyomi** to another.
 
 ::: guide
-You can do this by going to <Navigation item="settings"/> → <Navigation item="settings_downloads"/> and then set the download directory to that of the download folder of your old **Tachiyomi**, then restore the backup.
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_downloads"/> and then set the download directory to that of the download folder of your old **Tachiyomi**, then restore the backup.
 :::
 
 ## Turning on auto-backups
@@ -38,7 +38,7 @@ You can do this by going to <Navigation item="settings"/> → <Navigation item="
 It is highly recommended you turn on auto backups, this will ensure you can recover if need be.
 
 ::: guide
-You can do this by going to <Navigation item="settings"/> → <Navigation item="old_backup"/> and then setting a **backup frequency**. In the case of a catastrophic failure, at least you will be able to recover.
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then setting a **backup frequency**. In the case of a catastrophic failure, at least you will be able to recover.
 :::
 
 ## Forks information
