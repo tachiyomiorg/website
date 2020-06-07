@@ -8,7 +8,7 @@ lang: en-US
 
 Follow the steps below to create local manga.
 
-1. Create a folder named `local` in Tachiyomi folder, which is located in the phone's **Internal storage** or external SD card. 
+1. Create a folder named `local` in Tachiyomi folder, which is located in the phone's **Internal storage** or external SD card.
 1. Place manga inside `Tachiyomi/local` folder.
 1. You can then access the manga in <Navigation item="browse"/> → **Local source**.
 
@@ -45,6 +45,7 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 								<li class="file">files</li>
 							</ul>
 						</li>
+						<li class="file">cover.jpg</li>
 					</ul>
 				</li>
 				<li>&hellip;</li>
@@ -112,6 +113,7 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 								</li>
 							</ul>
 						</li>
+						<li class="file">cover.jpg</li>
 					</ul>
 				</li>
 				<li>&hellip;</li>
@@ -141,3 +143,11 @@ You can copy the following example and edit the details as needed:
 "_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed"]
 }
 ```
+
+### Using a custom cover image
+
+It is also possible to use a custom image as a cover for each local manga.
+
+To do this, you only need to place the image file, that needs to be named
+`cover.jpg`, in the root of the manga folder. The app will then use your
+custom image in the local source listing.
