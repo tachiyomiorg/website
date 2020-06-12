@@ -15,7 +15,7 @@ sidebarDepth: 2
 This can be done by enabling **Download badges** under <Navigation item="library"/>.
 
 ::: guide
-Enable it by going to the <Navigation item="library"/> → <Navigation item="filter"/> → **DISPLAY** section and then checking the **Download badges** option at the bottom.
+Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **DISPLAY** section and then checking the **Download badges** option at the bottom.
 :::
 
 #### Some covers are white after restoring from backup
@@ -26,7 +26,7 @@ Refresh your metadata by going to <Navigation item="more"/> → <Navigation item
 :::
 
 #### How do I ignore chapters from certain scanlator groups?
-Every now and then you find a manga that is translated by more than one group; because of this, you get multiple releases for each chapter in the manga. The easiest way to fix this is to change sorting to **Total chapters**. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
+Every now and then you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. The easiest way to fix this is to change sorting to **Total chapters**. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
 
 ::: guide
 Change library sorting by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
@@ -107,7 +107,7 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 ### General
 
 #### What are some recommended extensions?
-Due to the Covid-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsible for any source that is down or slow.
+Due to the COVID-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsible for any source that is down or slow.
 
 ::: warning DISCLAIMER
 Tachiyomi is not affiliated with or responsible for any source that is down or slow.
@@ -162,20 +162,20 @@ When installing your first extension and are prompted that your phone isn't allo
 <Carousel name="carousel-unknown-source">
 <CarouselItem>
 <figure class="centered">
-    <h4>Android 8.0 and higher</h4>
-    <p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
-    <video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-        <source :src="$withBase('/help/faq/assets/UnknownSources-Android10.webm')" type="video/webm" />
-    </video>
+	<h4>Android 8.0 and higher</h4>
+	<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
+	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/help/faq/assets/UnknownSources-Android10.webm')" type="video/webm" />
+	</video>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-    <h4>Android 7.1 and lower</h4>
-    <p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
-    <video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android7.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-        <source :src="$withBase('/help/faq/assets/UnknownSources-Android7.webm')" type="video/webm" />
-    </video>
+	<h4>Android 7.1 and lower</h4>
+	<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
+	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android7.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
+		<source :src="$withBase('/help/faq/assets/UnknownSources-Android7.webm')" type="video/webm" />
+	</video>
 </figure>
 </CarouselItem>
 </Carousel>
@@ -191,7 +191,7 @@ Extensions for **Tachiyomi** are technically installed the same as normal apps. 
 To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **EXTENSIONS** then tap **Uninstall** on the extension you want to remove.
 :::
 
-#### Why don't I have extensions or any sources in the catalog?
+#### Why don't I have extensions or any sources in Browse?
 - **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="browse"/> → **EXTENSIONS** menu.
 - If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use. Which number in the menu corresponds to which is below.
 
@@ -213,14 +213,14 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="bro
 You do this by following the steps below.
 
 1. Go to <Navigation item="browse"/> → **SOURCES**.
-2. Click on <Navigation item="filter"/> on the top right corner.
-3. Scroll down until you find the language of your source and enable it.
+1. Click on <Navigation item="filter"/> on the top right corner.
+1. Scroll down until you find the language of your source and enable it.
 
 #### Why can't I restore my backup?
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
 
 
-#### Why can't I find manga when searching catalogs?
+#### Why can't I find manga when searching Browse?
 It might be because the title is worded differently. Follow any of the steps below:
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single source will not satisfy all your needs.
@@ -243,9 +243,9 @@ This means that the manga has been licensed and can no longer be read on that so
 The source you selected may have **Cloudflare** protection on and is enforcing **CAPTCHAs**.
 
 1. Find a manga in your library that is from the source you're trying to access.
-2. Tap on the <Navigation item="webview"/> in the **INFO** tab.
-3. Complete the **CAPTCHA** if present and wait for the page to finish loading.
-4. Press back rather than exiting the app and if that does not work, use the back arrow.
+1. Tap on the <Navigation item="webview"/> in the **INFO** tab.
+1. Complete the **CAPTCHA** if present and wait for the page to finish loading.
+1. Press back rather than exiting the app and if that does not work, use the back arrow.
 
 ##### App not installed
 You may encounter this if you're installing an official build over an existing **F-Droid** build due to differing signatures.
@@ -304,9 +304,9 @@ Read about source migration [here](/help/guides/source-migration/)
 To solve this issue, follow the below steps.
 
 1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>.
-2. Click on **MangaPark** extension and then `Chapter List Source`.
-3. Choose an option like `Smart list` or `Prioritize source`.
-4. Go back to MangaPark's chapter list and refresh it.
+1. Click on **MangaPark** extension and then `Chapter List Source`.
+1. Choose an option like `Smart list` or `Prioritize source`.
+1. Go back to MangaPark's chapter list and refresh it.
 
 ### Mangakakalot/Manganelo
 
@@ -315,7 +315,7 @@ To solve this issue, follow the below steps.
 
 #### Source URL has changed
 
-This means that the manga is dead and needs to migrate from **Mangakakalot**/**Manganelo** to a different source. Refer to the guide for **Page list is empty** above.
+This means that the manga is dead and needs to be migrated from **Mangakakalot**/**Manganelo** to a different source. Refer to the guide for **Page list is empty** above.
 
 #### Image could not be decoded
 Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
