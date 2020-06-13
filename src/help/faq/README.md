@@ -15,7 +15,7 @@ sidebarDepth: 2
 This can be done by enabling **Download badges** under <Navigation item="library"/>.
 
 ::: guide
-Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **DISPLAY** section then checking the **Download badges** option in the bottom.
+Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **DISPLAY** section and then checking the **Download badges** option at the bottom.
 :::
 
 #### Some covers are white after restoring from backup
@@ -26,7 +26,7 @@ Refresh your metadata by going to <Navigation item="more"/> → <Navigation item
 :::
 
 #### How do I ignore chapters from certain scanlator groups?
-Every now and then you find a manga that is translated by more than one group, because of this you get multiple releases for every chapter in the manga. To fix this the easiest way is to change sorting to **Total chapters**. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
+Every now and then you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. The easiest way to fix this is to change sorting to **Total chapters**. You won't see any changes but, when you start reading you'll automatically skip the duplicate releases.
 
 ::: guide
 Change library sorting by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
@@ -78,8 +78,8 @@ Cetain devices such as MIUI have very aggressive battery saving, which can kill 
 
 ### User Interface
 #### Can I change the app language?
-**Tachiyomi** is translated in 40+ different languages.. By default, the app follows the language used on your device.
-Only the UI has been localized, language in manga will still be using the language of the source selected.
+**Tachiyomi** is translated in 40+ different languages. By default, the app follows the language used on your device.
+Only the UI has been localized, the language of the manga will still be using the language of the source selected.
 
 ::: guide
 You can change language by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_general"/> then pressing **Language**.
@@ -107,14 +107,14 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 ### General
 
 #### What are some recommended extensions?
-Due to Covid-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsbible for any source that is down or slow.
+Due to the COVID-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsible for any source that is down or slow.
 
 ::: warning DISCLAIMER
 Tachiyomi is not affiliated with or responsible for any source that is down or slow.
 :::
 
 <!---
-While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites which host content from scanlators. Description of some popular sources are listed below:
+While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites that host content from scanlators. Description of some popular sources are listed below:
 
 - Fastest manga updates: **Mangadex** and scanlator sources
 - Largest manga library: **MangaPark**
@@ -129,7 +129,7 @@ Most of the scanlator sources are part of **Multi-source** extensions, which con
 -->
 
 #### What are scanlator sources?
-Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have highest scan quality.
+Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
 
 Some popular scanlator sources are **Jaimini's Box** (in **FoolSlide** extension), **MerakiScans**, **Hatigarm Scans** (in **Genkan** extension) etc.
 
@@ -185,13 +185,13 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 :::
 
 #### How do I uninstall an extension?
-Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your phones settings or you go can do it in the app.
+Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your phone's settings or you go can do it in the app.
 
 ::: guide
 To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **EXTENSIONS** then tap **Uninstall** on the extension you want to remove.
 :::
 
-#### Why don't I have extensions or any sources in the catalogue?
+#### Why don't I have extensions or any sources in Browse?
 - **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="browse"/> → **EXTENSIONS** menu.
 - If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use. Which number in the menu corresponds to which is below.
 
@@ -220,7 +220,7 @@ You do this by following the steps below.
 To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore.
 
 
-#### Why can't I find manga when searching catalogues?
+#### Why can't I find manga when searching Browse?
 It might be because the title is worded differently. Follow any of the steps below:
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single source will not satisfy all your needs.
@@ -269,7 +269,7 @@ This error can be caused by a variety of reasons, all to do with storage.
 [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
 :::
 
-If you're not getting any results when searching MangaDex then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the log in.
+If you're not getting any results when searching MangaDex then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.
 
 ::: guide
 To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_browse"/>/<Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
@@ -282,7 +282,7 @@ Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-autom
 :::
 
 #### Alternate searching method
-**MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is opening the manga in your browser and looking at the URL.
+**MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is by opening the manga in your browser and looking at the URL.
 
 ::: guide
 An example search would be **`id:23427`** which would return results for [Candy & Cigarettes](https://mangadex.org/title/23427/candy-cigarettes)
@@ -306,7 +306,7 @@ To solve this issue, follow the below steps.
 1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>.
 1. Click on **MangaPark** extension and then `Chapter List Source`.
 1. Choose an option like `Smart list` or `Prioritize source`.
-1. Go back to MangaPark's chapter list and refresh.
+1. Go back to MangaPark's chapter list and refresh it.
 
 ### Mangakakalot/Manganelo
 
@@ -315,7 +315,7 @@ To solve this issue, follow the below steps.
 
 #### Source URL has changed
 
-This means that the manga is dead and needs to migrated from **Mangakakalot**/**Manganelo** to different source. Refer to the guide for **Page list is empty** above.
+This means that the manga is dead and needs to be migrated from **Mangakakalot**/**Manganelo** to a different source. Refer to the guide for **Page list is empty** above.
 
 #### Image could not be decoded
 Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
@@ -339,15 +339,15 @@ View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tac
 There is an unofficial method to restore/backup all manga from the MangaRock source.
 
 1. Install the [DummyRock](https://github.com/tachiyomiorg/website/raw/files/DummyRock.apk) file.
-1. Go to <Navigation item="browse"/> → **EXTENSIONS** and press **Trust** to proceed.
-1. Restore backup.
+2. Go to <Navigation item="browse"/> → **EXTENSIONS** and press **Trust** to proceed.
+3. Restore backup.
 
 It is possible to Auto-Migrate MangaRock favorites to another source by using [TachiyomiJ2K](/forks/TachiyomiJ2K) or [TachiyomiAZ](/forks/TachiyomiAZ) fork.
 
 ### KissManga
 
 #### KissManga extension is missing
-**KissManga** is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in library to a different source and uninstall the extension.
+**KissManga** is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in the library to a different source and uninstall the extension.
 
 ::: aside
 Read more about source migration [here](/help/guides/source-migration/#source-migration)
