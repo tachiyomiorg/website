@@ -87,8 +87,9 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 
 ### Miscellaneous
 
-#### I can't uninstall Tachiyomi
-On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from phone first, then uninstall Tachiyomi.
+#### Why can't I uninstall Tachiyomi?
+
+On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from the phone first, then uninstall Tachiyomi.
 
 #### What happened to the F-Droid version?
 
