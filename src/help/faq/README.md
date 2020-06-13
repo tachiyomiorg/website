@@ -63,7 +63,7 @@ Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
 #### How do I import my manga into Tachiyomi?
 We recommend you to read [this](/help/guides/reading-local-manga) guide on how to do so.
 
-#### Why do I do if I can't find the Tachiyomi folder?
+#### What do I do if I can't find the Tachiyomi folder?
 If you don't see a **Tachiyomi** folder on your device, try downloading a chapter of any manga or creating a backup so that the folder can be created.
 
 ### Application Updates
@@ -230,16 +230,16 @@ It might be because the title is worded differently. Follow any of the steps bel
 
 #### What are some common errors?
 
-##### Java.lang Exception: Challenge not found
+##### `Java.lang Exception: Challenge not found`
 Often this will be resolved by force-quitting and reopening **Tachiyomi**.
 
-##### Loader not implemented
+##### `Loader not implemented`
 It means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
 
-##### Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject
+##### `Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject`
 This means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
 
-##### HTTP error 403
+##### `HTTP error 403`
 The source you selected may have **Cloudflare** protection on and is enforcing **CAPTCHAs**.
 
 1. Find a manga in your library that is from the source you're trying to access.
@@ -247,11 +247,11 @@ The source you selected may have **Cloudflare** protection on and is enforcing *
 1. Complete the **CAPTCHA** if present and wait for the page to finish loading.
 1. Press back rather than exiting the app and if that does not work, use the back arrow.
 
-##### App not installed
+##### `App not installed`
 You may encounter this if you're installing an official build over an existing **F-Droid** build due to differing signatures.
 Backup your data, uninstall the app, then restore the data in the fresh install.
 
-##### Attempt to invoke virtual method 'com.hippo.unifile...
+##### `Attempt to invoke virtual method 'com.hippo.unifile...`
 This error can be caused by a variety of reasons, all to do with storage.
 
 ::: guide
@@ -310,19 +310,19 @@ To solve this issue, follow the below steps.
 
 ### Mangakakalot/Manganelo
 
-#### What does 'Page list is empty' mean?
+#### What does `Page list is empty` mean?
 **Mangakakalot**/**Manganelo** has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From **Mangakakalot**/**Manganelo** source to another source.
 
-#### What does 'Source URL has changed' mean?
+#### What does `Source URL has changed` mean?
 
 This means that the manga is dead and needs to be migrated from **Mangakakalot**/**Manganelo** to a different source. Refer to the guide for **Page list is empty** above.
 
-#### How do I fix 'Image could not be decoded' error?
+#### How do I fix the `Image could not be decoded` error?
 Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
 
 ### Webtoons
 
-#### How do I fix 'Page list is empty'?
+#### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
 
 ### Why are some Japscan chapters no loading?
