@@ -18,7 +18,7 @@ This can be done by enabling **Download badges** under <Navigation item="library
 Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **DISPLAY** section and then checking the **Download badges** option at the bottom.
 :::
 
-#### Some covers are white after restoring from backup
+#### Why are some covers white after restoring from backup?
 The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
 
 ::: guide
@@ -40,7 +40,7 @@ Aside from network issues, it could be because the images are too big or that th
 #### What happened to the simultaneous downloads feature?
 It was removed to prevent IP bans caused by too many requests. We know that speed is being sacrificed but it's better than not being able to access a source at all.
 
-#### Downloads are unstable
+#### Why are Downloads unstable?
 Be aware that it could be a network issue on your device or on the catalog you are trying to download from.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
@@ -63,7 +63,7 @@ Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
 #### How do I import my manga into Tachiyomi?
 We recommend you to read [this](/help/guides/reading-local-manga) guide on how to do so.
 
-#### I can't find the Tachiyomi folder
+#### What do I do if I can't find the Tachiyomi folder?
 If you don't see a **Tachiyomi** folder on your device, try downloading a chapter of any manga or creating a backup so that the folder can be created.
 
 ### Application Updates
@@ -72,7 +72,7 @@ From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app 
 
 However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> → and click on **Check for updates**.
 
-#### Automatic update is not working
+#### Why are automatic updates not working?
 
 Cetain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and click on **Disable battery optimization**.
 
@@ -92,7 +92,7 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 
 An unofficial **F-Droid** repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
 
-#### iOS Version
+#### Will there be an iOS version?
 There is no iOS version and no plans for one. Since iOS and Android apps don't share code it's hard to port.
 
 #### I lost everything, what now?
@@ -228,18 +228,18 @@ It might be because the title is worded differently. Follow any of the steps bel
 - Go to <Navigation item="browse"/> → <Navigation item="button_browse"/> on a source then search for the manga again.
 
 
-#### Common errors
+#### What are some common errors?
 
-##### Java.lang Exception: Challenge not found
+##### `Java.lang Exception: Challenge not found`
 Often this will be resolved by force-quitting and reopening **Tachiyomi**.
 
-##### Loader not implemented
+##### `Loader not implemented`
 It means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
 
-##### Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject
+##### `Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject`
 This means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
 
-##### HTTP error 403
+##### `HTTP error 403`
 The source you selected may have **Cloudflare** protection on and is enforcing **CAPTCHAs**.
 
 1. Find a manga in your library that is from the source you're trying to access.
@@ -247,11 +247,11 @@ The source you selected may have **Cloudflare** protection on and is enforcing *
 1. Complete the **CAPTCHA** if present and wait for the page to finish loading.
 1. Press back rather than exiting the app and if that does not work, use the back arrow.
 
-##### App not installed
+##### `App not installed`
 You may encounter this if you're installing an official build over an existing **F-Droid** build due to differing signatures.
 Backup your data, uninstall the app, then restore the data in the fresh install.
 
-##### Attempt to invoke virtual method 'com.hippo.unifile...
+##### `Attempt to invoke virtual method 'com.hippo.unifile...`
 This error can be caused by a variety of reasons, all to do with storage.
 
 ::: guide
@@ -264,7 +264,7 @@ This error can be caused by a variety of reasons, all to do with storage.
 
 ### MangaDex
 
-#### No results when searching
+#### Why are there no results when searching?
 ::: aside-guide
 [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
 :::
@@ -281,17 +281,17 @@ Make sure you're on app version **0.9.2** or higher.
 Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::
 
-#### Alternate searching method
+#### Is there an alternate searching method?
 **MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is by opening the manga in your browser and looking at the URL.
 
 ::: guide
 An example search would be **`id:23427`** which would return results for [Candy & Cigarettes](https://mangadex.org/title/23427/candy-cigarettes)
 :::
 
-#### Duplicate chapters in MangaDex
+#### How do I deal with duplicate chapters in MangaDex?
 This can be solved by opening MangaDex in <Navigation item="webview"/> and block the scanlator group whose chapter you don't want to see.
 
-#### Chapters from Mangaplus are broken
+#### How do I fix chapters from Mangaplus being broken?
 Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the manga that uses **MANGA Plus** on **MangaDex** onto the **MANGA Plus** source.
 
 ::: aside
@@ -300,7 +300,7 @@ Read about source migration [here](/help/guides/source-migration/)
 
 ### MangaPark
 
-#### Duplicate chapters in MangaPark
+#### How do I deal with duplicate chapters in MangaPark?
 To solve this issue, follow the below steps.
 
 1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>.
@@ -310,32 +310,32 @@ To solve this issue, follow the below steps.
 
 ### Mangakakalot/Manganelo
 
-#### Page list is empty
+#### What does `Page list is empty` mean?
 **Mangakakalot**/**Manganelo** has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From **Mangakakalot**/**Manganelo** source to another source.
 
-#### Source URL has changed
+#### What does `Source URL has changed` mean?
 
 This means that the manga is dead and needs to be migrated from **Mangakakalot**/**Manganelo** to a different source. Refer to the guide for **Page list is empty** above.
 
-#### Image could not be decoded
+#### How do I fix the `Image could not be decoded` error?
 Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
 
 ### Webtoons
 
-#### Page list is empty
+#### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
 
-### Japscan
+### Why are some Japscan chapters no loading?
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
 
 ### MangaRock
 
-#### Migrate to Tachiyomi
+#### How do I migrate to Tachiyomi?
 There is a tool to migrate **MangaRock** favorites to **Tachiyomi**, courtesy of a member of our [Discord server](https://discord.gg/tachiyomi) by the same name as the creator, but a computer is required to finish the migration successfully.
 
 View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
 
-#### Restore a backup from the MangaRock source
+#### How do I restore a backup from the MangaRock source?
 There is an unofficial method to restore/backup all manga from the MangaRock source.
 
 1. Install the [DummyRock](https://github.com/tachiyomiorg/website/raw/files/DummyRock.apk) file.
@@ -346,7 +346,7 @@ It is possible to Auto-Migrate MangaRock favorites to another source by using [T
 
 ### KissManga
 
-#### KissManga extension is missing
+#### Why is the KissManga extension missing?
 **KissManga** is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in the library to a different source and uninstall the extension.
 
 ::: aside
