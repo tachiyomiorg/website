@@ -47,7 +47,7 @@ You can do this by going to <Navigation item="more"/> → <Navigation item="sett
 
 This fork can only restore **MangaDex** entries in a backup. If there are entries from other sources that are a part of that backup then they will not transfer.
 
-#### [TachiyomiAZ](/forks/TachiyomiAZ), and [TachiyomiEH](/forks/TachiyomiEH)
+#### [TachiyomiAZ](/forks/TachiyomiAZ), [TachiyomiSY](/forks/TachiyomiSY), and [TachiyomiEH](/forks/TachiyomiEH)
 
 These two forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai**.
 
