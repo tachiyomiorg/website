@@ -27,7 +27,7 @@
 		"node-sass": "^4.14.1",
 		"prettier": "^2.0.5",
 		"sass-loader": "^8.0.2",
-		"vuepress": "^1.5.1",
+		"vuepress": "^1.5.2",
 		"vuepress-plugin-clean-urls": "^1.1.1",
 		"vuepress-plugin-container": "^2.1.4"
 	},
