@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@vuepress/plugin-back-to-top": "^1.5.2",
 		"@vuepress/plugin-google-analytics": "^1.5.1",
-		"@vuepress/plugin-pwa": "^1.5.1",
+		"@vuepress/plugin-pwa": "^1.5.2",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb": "^18.1.0",
 		"eslint-config-airbnb-base": "^14.2.0",
