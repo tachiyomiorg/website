@@ -49,6 +49,6 @@ This fork can only restore **MangaDex** entries in a backup. If there are entrie
 
 #### [TachiyomiAZ](/forks/TachiyomiAZ), [TachiyomiSY](/forks/TachiyomiSY), and [TachiyomiEH](/forks/TachiyomiEH)
 
-These two forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai**.
+These three forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai**.
 
 Titles in these extensions on these two forks will not be restored when restoring a backup made by these forks to standard Tachiyomi. It is possible to restore titles to these two forks, but it is not possible to back them up out of these forks.
