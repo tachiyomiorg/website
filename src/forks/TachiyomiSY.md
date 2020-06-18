@@ -1,0 +1,47 @@
+---
+layout: ForkPage
+title: TachiyomiSY
+metaTitle: TachiyomiSY
+description: This fork adds quite a few custom unique features, it also has new features from the latest Tachiyomi version as well as from other forks such as TachiyomiJ2K.
+lang: en-US
+meta:
+  - property: og:image
+    content: /forks/TachiyomiSY/assets/logo.png
+  - name: theme-color
+    content: "#BE0F6E"
+  - name: msapplication-TileColor
+    content: "#BE0F6E"
+sidebar: false
+---
+
+# <img class="headerLogo" :src="$withBase('/forks/TachiyomiSY/assets/logo.png')"> TachiyomiSY
+
+<ForkButtons forkName="TachiyomiSY" downloadForkLink="https://api.github.com/repos/jobobby04/TachiyomiSYPreview/releases/latest" downloadForkStyle="background-color:#BE0F6E;color:#FFFFFF;" githubForkLink="window.open('https://github.com/jobobby04/TachiyomiSY')"/>
+
+## About
+This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few custom unique features, it also has new features from the latest **Tachiyomi** version as well as from other forks such as [TachiyomiJ2K](/forks/TachiyomiJ2K).
+
+## Screenshots
+<img :src="$withBase('/forks/TachiyomiSY/assets/banner.png')"/>
+
+## Features
+- Uses the new **Tachiyomi** UI
+- Custom manga page with all your needs
+- Latest tab preview configurable to show up to five sources
+- Ability to enable and disable Hentai features
+- Automatic webtoon detection, allowing the reader to switch to webtoon mode automatically when viewing one
+- Manga recommendations from both [MyAnimeList](https://myanimelist.net/) and [AniList](https://anilist.co/)
+- Lewd filter so you can hide the lewd manga in your library if you want to
+- Tracking filter so you can filter your tracked manga
+- Search tracking status in library
+- Backup saved searches
+- New E-Hentai/ExHentai features such as language settings and watched list settings
+- Comfortable grid view
+- Numerous features from [TachiyomiAZ](/forks/TachiyomiAZ)
+
+## Credits
+- [She11Shocked](https://github.com/she11sh0cked/) for the extra tracking, filter, recommendation features and a ton more.
+- [az4521](https://github.com/az4521) for the base recommendations and **AZ**.
+
+## Disclaimer
+The developer of this application does not have any affiliation with the content providers available.

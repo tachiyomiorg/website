@@ -28,6 +28,13 @@ Maintained by [az4521](https://github.com/az4521) and [Syer10](https://github.co
 
 This hentai focused fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style.
 
+## <img class="headerLogo" :src="$withBase('/forks/TachiyomiSY/assets/logo.png')"> [TachiyomiSY](/forks/TachiyomiSY)
+::: aside-guide
+Maintained by [Syer10](https://github.com/jobobby04)
+:::
+
+This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few custom unique features, it also has new features from the latest **Tachiyomi** version as well as from other forks such as [TachiyomiJ2K](/forks/TachiyomiJ2K).
+
 ## <img class="headerLogo" :src="$withBase('/forks/TachiyomiEH/assets/logo.png')"> [TachiyomiEH](/forks/TachiyomiEH) <Badge text="Deprecated" type="error" vertical="middle" />
 ::: aside-guide
 Maintained by [NerdNumber9](https://github.com/NerdNumber9)
