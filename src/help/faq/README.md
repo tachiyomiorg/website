@@ -333,22 +333,6 @@ You will have to open the manga entry in WebView and verify your age, as Webtoon
 ### Why are some Japscan chapters no loading?
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
 
-### MangaRock
-
-#### How do I migrate to Tachiyomi?
-There is a tool to migrate **MangaRock** favorites to **Tachiyomi**, courtesy of a member of our [Discord server](https://discord.gg/tachiyomi) by the same name as the creator, but a computer is required to finish the migration successfully.
-
-View the program at [waicool20/mr2tachiyomi](https://github.com/waicool20/mr2tachiyomi).
-
-#### How do I restore a backup from the MangaRock source?
-There is an unofficial method to restore/backup all manga from the MangaRock source.
-
-1. Install the [DummyRock](https://github.com/tachiyomiorg/website/raw/files/DummyRock.apk) file.
-2. Go to <Navigation item="browse"/> → **EXTENSIONS** and press **Trust** to proceed.
-3. Restore backup.
-
-It is possible to Auto-Migrate MangaRock favorites to another source by using [TachiyomiJ2K](/forks/TachiyomiJ2K) or [TachiyomiAZ](/forks/TachiyomiAZ) fork.
-
 ### KissManga
 
 #### Why is the KissManga extension missing?
