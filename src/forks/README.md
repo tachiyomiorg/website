@@ -33,7 +33,7 @@ This hentai focused fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, 
 Maintained by [Syer10](https://github.com/jobobby04)
 :::
 
-This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few custom unique features, it also has new features from the latest **Tachiyomi** version as well as from other forks such as [TachiyomiJ2K](/forks/TachiyomiJ2K).
+This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few custom unique features, it also has new UI from the latest **Tachiyomi** version as well features as from other forks such as [TachiyomiJ2K](/forks/TachiyomiJ2K).
 
 ## <img class="headerLogo" :src="$withBase('/forks/TachiyomiEH/assets/logo.png')"> [TachiyomiEH](/forks/TachiyomiEH) <Badge text="Deprecated" type="error" vertical="middle" />
 ::: aside-guide
