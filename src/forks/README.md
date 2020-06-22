@@ -23,10 +23,10 @@ This fork takes a new approach to the design of the base app along with several 
 
 ## <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/assets/logo.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
 ::: aside-guide
-Maintained by [az4521](https://github.com/az4521) and [Syer10](https://github.com/jobobby04)
+Maintained by [az4521](https://github.com/az4521)
 :::
 
-This hentai focused fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style.
+This hentai focused fork is based on **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the old hamburger menu style of navigation, compared to the other forks that have moved to the new bottom navigation style.
 
 ## <img class="headerLogo" :src="$withBase('/forks/TachiyomiSY/assets/logo.png')"> [TachiyomiSY](/forks/TachiyomiSY)
 ::: aside-guide
@@ -41,4 +41,4 @@ Maintained by [NerdNumber9](https://github.com/NerdNumber9)
 :::
 This fork adds features that enhances the hentai experience with integrations to popular sevices such as **E-Hentai**, **nHentai** and more.
 
-At the moment, it is **deprecated** as the developer does not have time to maintain it. Use [TachiyomiAZ](/forks/TachiyomiAZ) instead.
+At the moment, it is **deprecated** as the developer does not have time to maintain it. Use [TachiyomiAZ](/forks/TachiyomiAZ) or [TachiyomiSY](/forks/TachiyomiSY) instead.
