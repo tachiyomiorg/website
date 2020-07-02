@@ -208,7 +208,7 @@ export default {
 						icon: "warning",
 						title: "Are you sure?",
 						html:
-							"<strong>Preview</strong> is not recommended if you're not willing to test for – and endure issues.",
+							"<strong>Preview</strong> is not recommended if you're not willing to test for – and endure – issues.",
 						confirmButtonText: "I am sure.",
 						showCloseButton: true,
 						showCancelButton: false,
