@@ -145,7 +145,7 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
 -->
 
-### What are some recommended NSFW extensions?
+#### What are some recommended NSFW extensions?
 - Serialized Manga: Hentai2Read
 - Fakku Rips: HentaiNexus
 - Best Advanced Search: HBrowse
