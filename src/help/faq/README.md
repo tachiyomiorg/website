@@ -359,7 +359,7 @@ You will have to open the manga entry in WebView and verify your age, as Webtoon
 
 ### Japscan
 
-### Why are some Japscan chapters not loading?
+#### Why are some Japscan chapters not loading?
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
 
 ### KissManga
