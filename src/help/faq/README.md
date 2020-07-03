@@ -346,11 +346,10 @@ To solve this issue, follow the below steps.
 **Mangakakalot**/**Manganelo** have created new entries for manga on their sites again. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga from **Mangakakalot**/**Manganelo** to another source.
 
 #### What does `Source URL has changed` mean?
-
 This means that the manga is dead and needs to be migrated from **Mangakakalot**/**Manganelo** to a different source. Refer to the guide for **Page list is empty** above.
 
 #### How do I fix the `Image could not be decoded` error?
-Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga, as Mangakakalot is now blocking entire regions.
+Open the manga in WebView and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga, as some Mangabox sources, such as Mangakakalot, are now blocking entire regions.
 
 ### Webtoons
 
