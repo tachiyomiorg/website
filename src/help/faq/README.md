@@ -93,12 +93,24 @@ On **Android 10**, a bug was introduced which prevented users from uninstalling 
 
 #### What happened to the F-Droid version?
 
-**F-Droid** is no longer supported. Both the Stable and Preview builds are now automatically updated.
-
-An unofficial **F-Droid** repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
+**F-Droid** is no longer supported. Both the Stable and Preview builds are now automatically updated. An unofficial **F-Droid** repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
 
 #### Will there be an iOS version?
 There is no iOS version and no plans for one. Since iOS and Android apps don't share code it's hard to port.
+
+#### Will Tachiyomi ever be on the Google Play Store?
+Due to Google Play's content policy, almost certainly not.
+
+#### How can I report Tachiyomi copycats on the Google Play Store?
+If you're on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
+#### Can Tachiyomi read Light Novels?
+No. Tachiyomi is an image parser, meaning it can't parse text.
+
+#### Can I revert back from the Material Design 2 update of Tachiyomi?
+While there will never be a toggle between the two UI versions, you can continue to use the old UI version by using [TachiyomiAZ](https://tachiyomi.org/forks/TachiyomiAZ/).
+
+#### Will there ever be a dual-page reader option?
+The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
 #### I lost everything, what now?
 **Tachiyomi** is still in beta and some design changes or unexpected errors may lead to data loss. While we try for them not to happen, sometimes it is unavoidable. To avoid this in the future, you can use the automatic backup feature.
@@ -132,6 +144,14 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 - Other popular sources: **MangaLife**, **MangaOwl**, **MangaHere**, **MangaFreak**, **Manhwa18.net** (in **FMReader** extension)
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
 -->
+
+#### What are some recommended NSFW extensions?
+- Serialized Manga: Hentai2Read
+- Fakku Rips: HentaiNexus
+- Best Advanced Search: HBrowse
+- Webtoon Hentai: Toonily/Manhwa18/Manhwa Club
+- Casual Browsing: E-Hentai, with more niche hentai in ExHentai
+- Western Comics: AllPornComic in Madara
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
@@ -286,6 +306,13 @@ Make sure you're on app version **0.9.2** or higher.
 Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::
 
+#### Why is MangaDex slow?
+If pages are loading slowly or not at all, try:
+— Making sure you have the latest version of the extension.
+— Checking if MangaDex is either down, or is having the same issues.
+— Trying to Clear database under More › Settings › Advanced.
+— Trying to Clear chapter cache under More › Settings › Advanced.
+— Going to More › Extensions › MangaDex › Image Server and then selecting a different server location.
 #### Is there an alternate searching method?
 **MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is by opening the manga in your browser and looking at the URL.
 
@@ -313,30 +340,31 @@ To solve this issue, follow the below steps.
 1. Choose an option like `Smart list` or `Prioritize source`.
 1. Go back to MangaPark's chapter list and refresh it.
 
-### Mangakakalot/Manganelo
+### Mangabox
 
 #### What does `Page list is empty` mean?
-**Mangakakalot**/**Manganelo** has created new entries for manga again on their site. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga From **Mangakakalot**/**Manganelo** source to another source.
+**Mangakakalot**/**Manganelo** have created new entries for manga on their sites again. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/#source-migration) the manga from **Mangakakalot**/**Manganelo** to another source.
 
 #### What does `Source URL has changed` mean?
-
 This means that the manga is dead and needs to be migrated from **Mangakakalot**/**Manganelo** to a different source. Refer to the guide for **Page list is empty** above.
 
 #### How do I fix the `Image could not be decoded` error?
-Open manga in Webview and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga.
+Open the manga in WebView and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga, as some Mangabox sources, such as Mangakakalot, are now blocking entire regions.
 
 ### Webtoons
 
 #### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
 
-### Why are some Japscan chapters no loading?
+### Japscan
+
+#### Why are some Japscan chapters not loading?
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
 
 ### KissManga
 
 #### Why is the KissManga extension missing?
-**KissManga** is extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in the library to a different source and uninstall the extension.
+The **KissManga** extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in your library to a different source and uninstall the extension.
 
 ::: aside
 Read more about source migration [here](/help/guides/source-migration/#source-migration)
