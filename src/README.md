@@ -7,7 +7,7 @@ buttonGuides: Get started
 buttonGuidesLink: /help/guides/getting-started
 features:
   - title: Tracking
-    details: Automatically sync your manga with MyAnimeList, AniList, Kitsu, Shikimori, and Bangumi
+    details: Automatically keep track of your manga with MyAnimeList, AniList, Kitsu, Shikimori, and Bangumi
     image: Library
   - title: Extensions
     details: Online and offline reading from sources like MangaDex, MangaKakalot, and hundreds more
