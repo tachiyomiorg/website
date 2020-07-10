@@ -113,7 +113,7 @@ While there will never be a toggle between the two UI versions, you can continue
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
 #### I lost everything, what now?
-**Tachiyomi** is still in beta and some design changes or unexpected errors may lead to data loss. While we try for them not to happen, sometimes it is unavoidable. To avoid this in the future, you can use the automatic backup feature.
+To avoid data loss in the future, you can use the automatic backup feature.
 
 ::: aside
 Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
@@ -124,26 +124,24 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 ### General
 
 #### What are some recommended extensions?
-Due to the COVID-19 quarantine, most manga sites are under heavy load. Thus we do not recommend any source at the moment. Also, Tachiyomi is not affiliated with or responsible for any source that is down or slow.
 
 ::: warning DISCLAIMER
-Tachiyomi is not affiliated with or responsible for any source that is down or slow.
+Tachiyomi is not affiliated with or responsible for any source that is down, slow, or missing chapters.
 :::
 
-<!---
-While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaDex**, **MangaSee** and **MangaNelo** are among the most popular in general, these are large sites that host content from scanlators. Description of some popular sources are listed below:
+While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaPark**, **MangaHub** and **MangaDex** are among the most popular in general, these are large sites that host content from scanlators. Description of some popular sources are listed below:
 
-- Fastest manga updates: **Mangadex** and scanlator sources
 - Largest manga library: **MangaPark**
-- High quality scans and official translation: **MangaSee**
+- All around good source: **MangaHub**
+- Fastest manga updates: **MangaDex** and [scanlator sources](/help/faq/#what-are-scanlator-sources)
+- High quality scans and official translation: **MangaLife** and **MangaSee** 
 - Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
-- Western comics: **ReadComicOnline** and **ComicExtra**
+- Western comics: **ComicExtra**, **ComicPunch** and **ReadComicOnline.org** (in **FMReader** extension), 
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
+- Other popular sources: **MangaFreak**, **MangaOwl**, **MangaHere**, **ReadManhwa**, **Manhwa18.net** (in **FMReader** extension)
 
-- Other popular sources: **MangaLife**, **MangaOwl**, **MangaHere**, **MangaFreak**, **Manhwa18.net** (in **FMReader** extension)
-Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** which contain sources which host directly from the scanlators' own websites.
--->
+Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** contain sources which host directly from the scanlators' own websites.
 
 #### What are some recommended NSFW extensions?
 - Serialized Manga: Hentai2Read
@@ -218,20 +216,7 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="bro
 
 #### Why don't I have extensions or any sources in Browse?
 - **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="browse"/> → **EXTENSIONS** menu.
-- If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use. Which number in the menu corresponds to which is below.
-
-::: expander <strong>Click to expand!</strong>
-1. Batoto
-2. Mangahere
-3. Mangafox
-4. Kissmanga
-5. Readmanga
-6. Mintmanga
-7. Mangachan
-8. ReadMangaToday
-9. Mangasee
-10. WieManga
-:::
+- If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use.
 
 #### How do see sources of other languages?
 
