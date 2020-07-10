@@ -114,7 +114,7 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 #### What are some recommended extensions?
 
 ::: warning DISCLAIMER
-Tachiyomi is not affiliated with or responsible for any source that is down, slow or missing chapters.
+Tachiyomi is not affiliated with or responsible for any source that is down, slow, or missing chapters.
 :::
 
 While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaPark**, **MangaHub** and **MangaDex** are among the most popular in general, these are large sites that host content from scanlators. Description of some popular sources are listed below:
@@ -125,7 +125,7 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 - High quality scans and official translation: **MangaLife** and **MangaSee** 
 - Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
-- Western comics: **ReadComicOnline** and **ComicExtra**
+- Western comics: **ComicExtra**, **ComicPunch** and **ReadComicOnline.org** (in **FMReader** extension), 
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
 - Other popular sources: **MangaFreak**, **MangaOwl**, **MangaHere**, **ReadManhwa**, **Manhwa18.net** (in **FMReader** extension)
 
