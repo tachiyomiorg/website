@@ -40,7 +40,7 @@ help:
     github: true
 ---
 
-# Help center
+# Help Center
 
 ::: slot center
 ### Need help? We've got your back.
