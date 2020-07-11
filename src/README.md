@@ -3,7 +3,7 @@ home: true
 lang: en-US
 heroImage: /icons/logo.svg
 buttonDownload: Download
-buttonGuides: Get started
+buttonGuides: User Guide
 buttonGuidesLink: /help/guides/getting-started
 features:
   - title: Tracking
