@@ -14,7 +14,7 @@
 			<p v-if="data.tagline !== null" class="description">
 				{{
 					data.tagline ||
-					"Free and open source manga reader for Android."
+					"Free and open source manga reader for Android"
 				}}
 			</p>
 
