@@ -1,6 +1,6 @@
 ---
 layout: Help
-title: Help center
+title: Help Center
 description: From common questions to guides, find help for everything Tachiyomi.
 lang: en-US
 hideSearch: true
@@ -40,7 +40,7 @@ help:
     github: true
 ---
 
-# Help center
+# Help Center
 
 ::: slot center
 ### Need help? We've got your back.
