@@ -28,6 +28,10 @@ module.exports = {
 			path: "/help/contribution",
 		},
 		{
+			title: "Download",
+			path: "/download/",
+		},
+		{
 			title: "Extensions",
 			path: "/extensions/",
 		},
@@ -49,6 +53,10 @@ module.exports = {
 		{
 			title: "Contribution",
 			path: "/help/contribution",
+		},
+		{
+			title: "Download",
+			path: "/download/",
 		},
 		{
 			title: "Extensions",
@@ -76,6 +84,10 @@ module.exports = {
 			children: ["/help/contribution"],
 		},
 		{
+			title: "Download",
+			path: "/download/",
+		},
+		{
 			title: "Extensions",
 			path: "/extensions/",
 		},
@@ -99,6 +111,10 @@ module.exports = {
 			path: "/help/contribution",
 		},
 		{
+			title: "Download",
+			path: "/download/",
+		},
+		{
 			title: "Extensions",
 			path: "/extensions/",
 		},
@@ -120,6 +136,10 @@ module.exports = {
 		{
 			title: "Contribution",
 			path: "/help/contribution",
+		},
+		{
+			title: "Download",
+			path: "/download/",
 		},
 		{
 			title: "Extensions",
