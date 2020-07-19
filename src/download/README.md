@@ -13,3 +13,7 @@ Latest release: **<VersionTag/>**
 :::
 
 <DownloadButtons downloadStableTag="Tachiyomi" downloadPreviewTag="Tachiyomi Preview"/>
+
+::: guide Release notes
+<ReleaseNotes/>
+:::
