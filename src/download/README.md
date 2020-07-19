@@ -1,6 +1,9 @@
 ---
 title: Download
 description: Download links for the latest versions of Tachiyomi.
+meta:
+  - name: keywords
+    content: Download, Official, Android app, Manga
 lang: en-US
 ---
 

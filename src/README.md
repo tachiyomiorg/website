@@ -1,5 +1,8 @@
 ---
 home: true
+meta:
+  - name: keywords
+    content: Download, Official, Android app, Manga
 lang: en-US
 heroImage: /icons/logo.svg
 buttonDownload: Download
