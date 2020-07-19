@@ -23,7 +23,9 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .releaseNotes
 	white-space
+	h3
+		font-size 1.1rem
 </style>
