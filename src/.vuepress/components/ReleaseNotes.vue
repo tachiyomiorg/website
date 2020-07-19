@@ -1,9 +1,10 @@
 <template>
-	<div class="releaseNotes">{{ this.$data.releaseNotes }}</div>
+	<div v-html="releaseNotes" class="releaseNotes"></div>
 </template>
 
 <script>
 import axios from "axios";
+import marked from "marked";
 
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
@@ -17,12 +18,12 @@ export default {
 
 	async mounted() {
 		const { data } = await axios.get(RELEASE_URL);
-		this.$data.releaseNotes = data.body;
+		this.$data.releaseNotes = marked(data.body);
 	},
 };
 </script>
 
 <style lang="stylus" scoped>
 .releaseNotes
-	white-space pre-line
+	white-space
 </style>
