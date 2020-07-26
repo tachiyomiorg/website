@@ -67,7 +67,7 @@ export default {
 	},
 
 	updated() {
-		if (window.ocation.hash) {
+		if (window.location.hash) {
 			window.location.replace(window.location.hash);
 		}
 	},
