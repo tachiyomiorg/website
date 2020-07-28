@@ -49,7 +49,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
+		const { data } = await this.$store.dispatch("preview");
 		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.

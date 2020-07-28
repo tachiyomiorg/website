@@ -79,7 +79,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
 import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../../constants";
@@ -119,7 +118,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
+		const { data } = await this.$store.dispatch("preview")
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		this.$data.tagName = data.tag_name;
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;

@@ -3,9 +3,7 @@
 </template>
 
 <script>
-import axios from "axios";
 import marked from "marked";
-import { GITHUB_LATEST_API } from "../constants";
 
 export default {
 	data() {
@@ -15,7 +13,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
+		const { data } = await this.$store.dispatch("preview");
 		this.$data.releaseNotes = marked(data.body);
 	},
 };
