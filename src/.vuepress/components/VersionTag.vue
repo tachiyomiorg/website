@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import { GITHUB_LATEST_API } from "../constants";
 
 export default {
@@ -25,8 +24,9 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
-		this.$data.tagName = data.tag_name.slice(1);
+		const { data } = await this.$store.dispatch("preview");
+		// Set the values.
+		this.$data.tagName = data.tag_name;
 	},
 };
 </script>

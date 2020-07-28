@@ -32,7 +32,8 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
+		const { data } = await this.$store.dispatch("preview");
+		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		this.$data.tagName = data.tag_name.slice(1);
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
