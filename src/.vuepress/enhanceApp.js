@@ -9,6 +9,8 @@ import VueMoment from "vue-moment";
 
 import store from "./store"
 
+import store from "./store";
+
 
 export default ({
 	Vue, // the version of Vue being used in the VuePress app
@@ -20,5 +22,5 @@ export default ({
 	Vue.component("Agile", VueAgile);
 	Vue.use(VueSweetalert2);
 	Vue.use(VueMoment);
-	Vue.mixin({store: store})
+	Vue.mixin({ store });
 };
