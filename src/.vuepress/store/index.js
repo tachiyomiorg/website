@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-const preview = {
+const stable = {
 	updated: null,
 	data: null,
 };
@@ -16,39 +16,39 @@ let promise;
 Vue.use(Vuex);
 export default new Vuex.Store({
 	state: {
-		preview,
+		stable,
 	},
 	mutations: {
-		preview(state, preview) {
-			state.preview = preview;
+		stable(state, stable) {
+			state.stable = stable;
 		},
 	},
 	actions: {
-		async preview({ commit }) {
-			const { updated } = this.state.preview;
+		async stable({ commit }) {
+			const { updated } = this.state.stable;
 
 			const now = new Date().getTime();
 
 			if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
-				return this.state.preview;
+				return this.state.stable;
 			}
 
 			if (call == null) {
 				call = axios.get(RELEASE_URL);
 				promise = new Promise(async (resolve, reject) => {
 					const { data } = await call;
-					const preview = {
+					const object = {
 						updated: now,
 						data,
 					};
-					commit("preview", preview);
-					resolve(preview);
+					commit("stable", object);
+					resolve(object);
 				});
 			}
 
-			const preview = await promise;
+			const result = await promise;
 			call = null;
-			return preview;
+			return result;
 		},
 	},
 });

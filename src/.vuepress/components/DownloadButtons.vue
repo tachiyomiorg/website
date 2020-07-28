@@ -51,7 +51,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await this.$store.dispatch("preview");
+		const { data } = await this.$store.dispatch("stable");
 		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
