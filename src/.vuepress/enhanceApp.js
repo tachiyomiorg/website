@@ -7,8 +7,6 @@ import { VueAgile } from "vue-agile";
 import VueSweetalert2 from "vue-sweetalert2";
 import VueMoment from "vue-moment";
 
-import store from "./store"
-
 import store from "./store";
 
 

@@ -13,10 +13,15 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BugIcon from "vue-material-design-icons/Bug.vue";
 
 import { GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
+=======
+const RELEASE_URL =
+	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
+>>>>>>> c1480cb0a... Store JSON data in Vuex
 
 
 export default {
@@ -33,6 +38,7 @@ export default {
 	},
 
 	async mounted() {
+<<<<<<< HEAD
 		try {
 			const { data } = await this.$store.dispatch("getStableReleaseData");
 			// Maybe eventually some release has more than the apk in assets.
@@ -43,6 +49,14 @@ export default {
 		} catch (e) {
 			console.error(e);
 		}
+=======
+		const { data } = await this.$store.dispatch("preview");
+		// Maybe eventually some release has more than the apk in assets.
+		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+		// Set the values.
+		this.$data.tagName = data.tag_name;
+		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+>>>>>>> c1480cb0a... Store JSON data in Vuex
 	},
 
 	methods: {
