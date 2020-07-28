@@ -2,7 +2,6 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-
 const preview = {
 	updated: null,
 	data: null,
@@ -35,7 +34,7 @@ export default new Vuex.Store({
 			}
 
 			if (call == null) {
-				call = axios.get(RELEASE_URL)
+				call = axios.get(RELEASE_URL);
 				promise = new Promise(async (resolve, reject) => {
 					const { data } = await call;
 					const preview = {
@@ -43,12 +42,12 @@ export default new Vuex.Store({
 						data,
 					};
 					commit("preview", preview);
-					resolve(preview)
+					resolve(preview);
 				});
 			}
 
-			let preview = await promise;
-			call = null
+			const preview = await promise;
+			call = null;
 			return preview;
 		},
 	},
