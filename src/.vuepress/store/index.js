@@ -34,15 +34,13 @@ export default new Vuex.Store({
 
 			if (call == null) {
 				call = axios.get(RELEASE_URL);
-				// eslint-disable-next-line no-async-promise-executor
-				promise = new Promise(async (resolve, reject) => {
-					const { data } = await call;
+				promise = call.then(({ data }) => {
 					const object = {
 						updated: now,
 						data,
 					};
 					commit("stable", object);
-					resolve(object);
+					return new Promise((resolve) => resolve(object));
 				});
 			}
 
