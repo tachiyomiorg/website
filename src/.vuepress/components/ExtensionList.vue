@@ -48,8 +48,8 @@ import groupBy from "lodash.groupby";
 import sortBy from "lodash.sortby";
 import ISO6391 from "iso-639-1";
 
-const EXTENSION_JSON =
-	"https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/index.json";
+// eslint-disable-next-line prettier/prettier
+import { githubExtensionJson } from "../constants";
 
 export default {
 	data() {
@@ -59,7 +59,7 @@ export default {
 	},
 
 	async beforeMount() {
-		const { data } = await axios.get(EXTENSION_JSON);
+		const { data } = await axios.get(githubExtensionJson);
 		const values = Object.values(groupBy(data, "lang"));
 		this.$data.extensions = sortBy(values, [
 			(g) => this.langName(g[0].lang),

@@ -12,8 +12,8 @@
 <script>
 import axios from "axios";
 
-const RELEASE_URL =
-	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
+// eslint-disable-next-line prettier/prettier
+import { githubLatestApi } from "../constants";
 
 export default {
 	props: {
@@ -29,7 +29,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
+		const { data } = await axios.get(githubLatestApi);
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 	},

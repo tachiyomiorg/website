@@ -84,12 +84,8 @@ import axios from "axios";
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
 
-const RELEASE_URL =
-	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
-
-const LATEST_RELEASE = "https://github.com/inorichi/tachiyomi/releases/latest";
-
-const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
+// eslint-disable-next-line prettier/prettier
+import { githubLatestApi, githubLatestRelease, kanadeLatest } from "../../constants";
 
 export default {
 	name: "Home",
@@ -126,7 +122,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
+		const { data } = await axios.get(githubLatestApi);
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		this.$data.tagName = data.tag_name;
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
@@ -194,7 +190,7 @@ export default {
 						},
 					});
 					window.location.assign(
-						this.$data.browserDownloadUrl || LATEST_RELEASE
+						this.$data.browserDownloadUrl || githubLatestRelease
 					);
 					window.ga(
 						"send",
@@ -263,7 +259,7 @@ export default {
 										"animate__animated animate__faster animate__zoomOut",
 								},
 							});
-							window.location.assign(PREVIEW_URL);
+							window.location.assign(kanadeLatest);
 							window.ga(
 								"send",
 								"event",
