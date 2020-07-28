@@ -10,11 +10,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
-const RELEASE_URL =
-	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
-
 export default {
 	props: {
 		fileName: {
@@ -29,7 +24,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
+		const { data } = await this.$store.dispatch("preview");
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 	},

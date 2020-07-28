@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
@@ -53,7 +51,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
+		const { data } = await this.$store.dispatch("preview");
 		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
