@@ -13,7 +13,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await this.$store.dispatch("preview");
+		const { data } = await this.$store.dispatch("stable");
 		this.$data.releaseNotes = marked(data.body);
 	},
 };

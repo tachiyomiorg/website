@@ -26,7 +26,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await this.$store.dispatch("preview");
+		const { data } = await this.$store.dispatch("stable");
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 	},
