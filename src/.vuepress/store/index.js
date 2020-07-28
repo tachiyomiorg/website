@@ -2,11 +2,6 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-const stable = {
-	updated: null,
-	data: null,
-};
-
 const RELEASE_URL =
 	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
 
@@ -16,10 +11,14 @@ let promise;
 Vue.use(Vuex);
 export default new Vuex.Store({
 	state: {
-		stable,
+		stable: {
+			updated: null,
+			data: null,
+		},
 	},
 	mutations: {
 		stable(state, stable) {
+			// eslint-disable-next-line no-param-reassign
 			state.stable = stable;
 		},
 	},
@@ -35,6 +34,7 @@ export default new Vuex.Store({
 
 			if (call == null) {
 				call = axios.get(RELEASE_URL);
+				// eslint-disable-next-line no-async-promise-executor
 				promise = new Promise(async (resolve, reject) => {
 					const { data } = await call;
 					const object = {
