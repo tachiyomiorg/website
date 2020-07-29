@@ -10,8 +10,7 @@
 </template>
 
 <script>
-const RELEASE_URL =
-	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
+const RELEASE_URL = "https://github.com/inorichi/tachiyomi/releases/latest";
 
 const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
 
@@ -35,11 +34,11 @@ export default {
 		},
 		downloadStableUrl: {
 			type: String,
-			default: undefined,
+			default: null,
 		},
 		downloadPreviewUrl: {
 			type: String,
-			default: undefined,
+			default: null,
 		},
 	},
 
@@ -51,8 +50,11 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await this.$store.dispatch("stable");
+		const { error, data } = await this.$store.dispatch(
+			"getStableReleaseData"
+		);
 		// Maybe eventually some release has more than the apk in assets.
+		if (error) return;
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
 		this.$data.tagName = data.tag_name;

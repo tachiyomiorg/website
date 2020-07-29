@@ -13,7 +13,10 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await this.$store.dispatch("stable");
+		const { error, data } = await this.$store.dispatch(
+			"getStableReleaseData"
+		);
+		if (error) return;
 		this.$data.releaseNotes = marked(data.body);
 	},
 };
