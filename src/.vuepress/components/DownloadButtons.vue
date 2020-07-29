@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import axios from "axios";
 import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
+
 
 export default {
 	props: {
@@ -33,11 +33,11 @@ export default {
 		},
 		downloadStableUrl: {
 			type: String,
-			default: undefined,
+			default: null,
 		},
 		downloadPreviewUrl: {
 			type: String,
-			default: undefined,
+			default: null,
 		},
 	},
 
@@ -49,8 +49,11 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await this.$store.dispatch("stable");
+		const { error, data } = await this.$store.dispatch(
+			"getStableReleaseData"
+		);
 		// Maybe eventually some release has more than the apk in assets.
+		if (error) return;
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
 		this.$data.tagName = data.tag_name;
