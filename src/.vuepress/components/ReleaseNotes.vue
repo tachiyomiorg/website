@@ -5,8 +5,6 @@
 <script>
 import axios from "axios";
 import marked from "marked";
-
-// eslint-disable-next-line prettier/prettier
 import { githubLatestApi } from "../constants";
 
 export default {

@@ -47,8 +47,6 @@ import axios from "axios";
 import groupBy from "lodash.groupby";
 import sortBy from "lodash.sortby";
 import ISO6391 from "iso-639-1";
-
-// eslint-disable-next-line prettier/prettier
 import { githubExtensionJson } from "../constants";
 
 export default {

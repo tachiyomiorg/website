@@ -80,11 +80,8 @@
 
 <script>
 import axios from "axios";
-
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
-
-// eslint-disable-next-line prettier/prettier
 import { githubLatestApi, githubLatestRelease, kanadeLatest } from "../../constants";
 
 export default {
