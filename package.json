@@ -38,10 +38,7 @@
 		"lodash.sortby": "^4.7.0",
 		"marked": "^1.1.1",
 		"material-design-icons": "^3.0.1",
-<<<<<<< HEAD
 		"sweetalert2": "^9.17.1",
-=======
->>>>>>> 44896d7ef... Fix build errors
 		"vue": "^2.6.11",
 		"vue-agile": "^1.1.3",
 		"vue-material-design-icons": "^4.8.0",
