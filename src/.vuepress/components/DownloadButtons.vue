@@ -11,11 +11,7 @@
 
 <script>
 import axios from "axios";
-
-const RELEASE_URL =
-	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
-
-const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
+import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
 
 export default {
 	props: {
@@ -53,7 +49,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
+		const { data } = await axios.get(GITHUB_LATEST_API);
 		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
@@ -85,7 +81,7 @@ export default {
 			window.location.assign(
 				this.$props.downloadStableUrl ||
 					this.$data.browserDownloadUrl ||
-					RELEASE_URL
+					GITHUB_LATEST_RELEASE
 			);
 			window.ga(
 				"send",
@@ -116,7 +112,7 @@ export default {
 				},
 			});
 			window.location.assign(
-				this.$props.downloadPreviewUrl || PREVIEW_URL
+				this.$props.downloadPreviewUrl || KANADE_LATEST
 			);
 			window.ga(
 				"send",

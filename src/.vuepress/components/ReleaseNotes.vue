@@ -5,9 +5,7 @@
 <script>
 import axios from "axios";
 import marked from "marked";
-
-const RELEASE_URL =
-	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
+import { GITHUB_LATEST_API } from "../constants";
 
 export default {
 	data() {
@@ -17,7 +15,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(RELEASE_URL);
+		const { data } = await axios.get(GITHUB_LATEST_API);
 		this.$data.releaseNotes = marked(data.body);
 	},
 };
