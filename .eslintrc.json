@@ -23,7 +23,9 @@
 		"markdown"
 	],
 	"rules": {
-		"prettier/prettier": "error",
+		"prettier/prettier": ["error", {
+		   "endOfLine":"auto"
+		 }],
 		"import/no-unresolved": [
 			2,
 			{ "ignore": ["^@"] }
