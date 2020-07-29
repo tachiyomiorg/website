@@ -5,7 +5,7 @@
 <script>
 import axios from "axios";
 import marked from "marked";
-import { githubLatestApi } from "../constants";
+import { GITHUB_LATEST_API } from "../constants";
 
 export default {
 	data() {
@@ -15,7 +15,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(githubLatestApi);
+		const { data } = await axios.get(GITHUB_LATEST_API);
 		this.$data.releaseNotes = marked(data.body);
 	},
 };

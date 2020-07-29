@@ -11,7 +11,7 @@
 
 <script>
 import axios from "axios";
-import { githubLatestApi } from "../constants";
+import { GITHUB_LATEST_API } from "../constants";
 
 export default {
 	props: {
@@ -27,7 +27,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(githubLatestApi);
+		const { data } = await axios.get(GITHUB_LATEST_API);
 		// Set the values.
 		this.$data.tagName = data.tag_name;
 	},

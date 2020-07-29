@@ -11,7 +11,7 @@
 
 <script>
 import axios from "axios";
-import { githubLatestApi, githubLatestRelease, kanadeLatest } from "../constants";
+import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
 
 export default {
 	props: {
@@ -49,7 +49,7 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(githubLatestApi);
+		const { data } = await axios.get(GITHUB_LATEST_API);
 		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 		// Set the values.
@@ -81,7 +81,7 @@ export default {
 			window.location.assign(
 				this.$props.downloadStableUrl ||
 					this.$data.browserDownloadUrl ||
-					githubLatestRelease
+					GITHUB_LATEST_RELEASE
 			);
 			window.ga(
 				"send",
@@ -112,7 +112,7 @@ export default {
 				},
 			});
 			window.location.assign(
-				this.$props.downloadPreviewUrl || kanadeLatest
+				this.$props.downloadPreviewUrl || KANADE_LATEST
 			);
 			window.ga(
 				"send",

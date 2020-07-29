@@ -1,5 +1,4 @@
-/* eslint-disable prettier/prettier */
-export const githubExtensionJson = "https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/index.json"
-export const githubLatestRelease = "https://github.com/inorichi/tachiyomi/releases/latest";
-export const githubLatestApi = "https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
-export const kanadeLatest = "https://tachiyomi.kanade.eu/latest";
+export const GITHUB_EXTENSION_JSON = "https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/index.json";
+export const GITHUB_LATEST_RELEASE = "https://github.com/inorichi/tachiyomi/releases/latest";
+export const GITHUB_LATEST_API = "https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
+export const KANADE_LATEST = "https://tachiyomi.kanade.eu/latest";
