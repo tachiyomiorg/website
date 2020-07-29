@@ -43,7 +43,7 @@ export default new Vuex.Store({
 							data,
 						};
 						commit("setStableReleaseData", object);
-						return new Promise((resolve) => resolve(object));
+						return Promise.resolve();
 					})
 					.catch((reason) => {
 						console.error("Error connecting to GitHub", reason);
@@ -53,13 +53,14 @@ export default new Vuex.Store({
 							data: null,
 						};
 						commit("setStableReleaseData", object);
-						return new Promise((resolve) => resolve(object));
+						return Promise.resolve();
 					});
 			}
 
-			const result = await promise;
+			await promise;
 			call = null;
-			return result;
+			promise = null
+			return this.state.stable;
 		},
 	},
 });
