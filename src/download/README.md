@@ -15,6 +15,6 @@ Download the latest version of **Tachiyomi** for your Android device.
 Latest release: **<VersionTag/>**
 :::
 
-<DownloadButtons downloadStableTag="Tachiyomi" downloadPreviewTag="Tachiyomi Preview"/>
+<DownloadButtons />
 
 <ChangeLog />
