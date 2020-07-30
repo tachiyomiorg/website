@@ -12,8 +12,8 @@ import { GITHUB_LATEST_API } from "../constants";
 export default {
 	data() {
 		return {
-			releasePublishRelative: "",
-			releasePublishExact: "",
+			releasePublishRelative: "at an unknown time",
+			releasePublishExact: "Can't connect to GitHub.",
 		};
 	},
 
