@@ -38,6 +38,8 @@
 		"lodash.sortby": "^4.7.0",
 		"marked": "^1.1.1",
 		"material-design-icons": "^3.0.1",
+		"moment": "^2.27.0",
+		"sweetalert2": "^9.17.1",
 		"vue-agile": "^1.1.3",
 		"vue-material-design-icons": "^4.8.0",
 		"vue-sweetalert2": "^3.0.6",
