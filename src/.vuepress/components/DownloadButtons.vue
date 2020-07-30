@@ -1,10 +1,10 @@
 <template>
 	<div class="downloadContainer">
-		<button class="downloadStableButton" @click="downloadStable">
+		<button class="downloadStableButton" @click="downloadStable" @keyup.enter="downloadStable">
 			<CloudDownloadIcon />
 			Stable
 		</button>
-		<button class="downloadPreviewButton" @click="downloadPreview">
+		<button class="downloadPreviewButton" @click="downloadPreview" @keyup.enter="downloadPreview">
 			<BugIcon />
 			Preview
 		</button>
