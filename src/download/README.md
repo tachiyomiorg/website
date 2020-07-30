@@ -8,12 +8,7 @@ lang: en-US
 ---
 
 # Download
-
-Download the latest version of **Tachiyomi** for your Android device.
-
-::: aside-guide
-Latest release: **<VersionTag/>**
-:::
+Download the latest stable version of **Tachiyomi** (**<VersionTag downloadTag/>**) which released <ReleaseDate />.
 
 <DownloadButtons />
 
