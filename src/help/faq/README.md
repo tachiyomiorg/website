@@ -112,6 +112,9 @@ While there will never be a toggle between the two UI versions, you can continue
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
+#### I see manga images in my phone gallery, what gives!?
+Tachiyomi by default adds a `.nomedia` file to prevent this from happening but sometimes it doesn't work or something went wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your download folder. 
+
 #### I lost everything, what now?
 To avoid data loss in the future, you can use the automatic backup feature.
 
