@@ -1,21 +1,14 @@
 <template>
 	<main class="home" aria-labelledby="main-title">
 		<header class="hero">
-			<img
-				v-if="data.heroImage"
-				:src="$withBase(data.heroImage)"
-				:alt="data.heroAlt || 'Logo'"
-			/>
+			<img v-if="data.heroImage" :src="$withBase(data.heroImage)" :alt="data.heroAlt || 'Logo'" />
 
 			<h1 v-if="data.heroText !== null" id="main-title">
 				{{ data.heroText || "Tachiyomi" }}
 			</h1>
 
 			<p v-if="data.tagline !== null" class="description">
-				{{
-					data.tagline ||
-					"Free and open source manga reader for Android"
-				}}
+				{{ data.tagline || "Free and open source manga reader for Android" }}
 			</p>
 
 			<p v-if="data.buttonDownload || data.buttonGuides" class="action">
@@ -23,8 +16,7 @@
 					v-if="data.buttonDownload"
 					class="action-button action-button__Download"
 					tabindex="0"
-					@click="showDownloads"
-					@keyup.enter="showDownloads"
+					:href="data.buttonDownloadLink"
 				>
 					<CloudDownloadIcon />
 					{{ data.buttonDownload }}
@@ -42,27 +34,16 @@
 		</header>
 
 		<div v-if="data.features && data.features.length" class="features">
-			<div
-				v-for="(feature, index) in data.features"
-				:key="index"
-				class="feature"
-			>
+			<div v-for="(feature, index) in data.features" :key="index" class="feature">
 				<div class="feature__Details">
 					<h2>{{ feature.title }}</h2>
 					<p>{{ feature.details }}</p>
 				</div>
 				<section class="feature__Animation">
-					<img
-						class="feature__Animation--dark"
-						:src="
-							$withBase('/assets/' + feature.image + '-Dark.png')
-						"
-					/>
+					<img class="feature__Animation--dark" :src="$withBase('/assets/' + feature.image + '-Dark.png')" />
 					<img
 						class="feature__Animation--light"
-						:src="
-							$withBase('/assets/' + feature.image + '-Light.png')
-						"
+						:src="$withBase('/assets/' + feature.image + '-Light.png')"
 					/>
 				</section>
 			</div>
@@ -82,7 +63,7 @@
 import axios from "axios";
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
-import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../../constants";
+import { GITHUB_LATEST_API } from "../../constants";
 
 export default {
 	name: "Home",
@@ -106,6 +87,7 @@ export default {
 
 		buttonDownload() {
 			return {
+				link: this.data.buttonDownloadLink,
 				text: this.data.buttonDownload,
 			};
 		},
@@ -121,154 +103,7 @@ export default {
 	async mounted() {
 		const { data } = await axios.get(GITHUB_LATEST_API);
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		this.$data.tagName = data.tag_name;
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
-	},
-
-	methods: {
-		showDownloads() {
-			this.$swal({
-				title: "Get Tachiyomi for Android",
-				text: "Requires Android 5.0 or newer.",
-				confirmButtonText: "Download",
-				confirmButtonAriaLabel: "Download Tachiyomi",
-				cancelButtonText:
-					"Living on the edge? Get the <strong>Preview</strong>",
-				cancelButtonAriaLabel: "Download Preview",
-				showCloseButton: true,
-				showCancelButton: true,
-				focusConfirm: true,
-				customClass: {
-					container: "showDownloads",
-					popup: "showDownloads__popup",
-					actions: "showDownloads__actions",
-					title: "showDownloads__title",
-					content: "showDownloads__content",
-					confirmButton: "showDownloads__confirmButton",
-					cancelButton: "showDownloads__cancelButton",
-					closeButton: "showDownloads__closeButton",
-					footer: "showDownloads__footer",
-				},
-				showClass: {
-					popup: "animate__animated animate__faster animate__fadeIn",
-				},
-				hideClass: {
-					popup: "animate__animated animate__faster animate__zoomOut",
-				},
-			}).then((result) => {
-				if (result.value) {
-					this.$swal({
-						icon: "success",
-						title: "Downloading",
-						text: "Tachiyomi",
-						confirmButtonText: "Dismiss",
-						showCloseButton: false,
-						showCancelButton: false,
-						timer: 50000,
-						timerProgressBar: true,
-						customClass: {
-							container: "showDownloads",
-							popup: "showDownloads__popup",
-							actions: "showDownloads__actions",
-							title: "showDownloads__title",
-							content: "showDownloads__content",
-							confirmButton: "showDownloads__confirmButton",
-							cancelButton: "showDownloads__cancelButton",
-							closeButton: "showDownloads__closeButton",
-							footer: "showDownloads__footer",
-						},
-						showClass: {
-							popup:
-								"animate__animated animate__faster animate__pulse",
-						},
-						hideClass: {
-							popup:
-								"animate__animated animate__faster animate__zoomOut",
-						},
-					});
-					window.location.assign(
-						this.$data.browserDownloadUrl || GITHUB_LATEST_RELEASE
-					);
-					window.ga(
-						"send",
-						"event",
-						"Action",
-						"Download",
-						"Tachiyomi"
-					);
-				} else if (result.dismiss === "cancel") {
-					this.$swal({
-						icon: "warning",
-						title: "Are you sure?",
-						html:
-							"<strong>Preview</strong> is not recommended if you're not willing to test for – and endure – issues.",
-						confirmButtonText: "I am sure.",
-						showCloseButton: true,
-						showCancelButton: false,
-						customClass: {
-							container: "showDownloads",
-							popup: "showDownloads__popup",
-							actions: "showDownloads__actions",
-							title: "showDownloads__title",
-							content: "showDownloads__content",
-							confirmButton: "showDownloads__confirmButton",
-							cancelButton: "showDownloads__cancelButton",
-							closeButton: "showDownloads__closeButton",
-							footer: "showDownloads__footer",
-						},
-						showClass: {
-							popup: "animate__animated animate__headShake",
-						},
-						hideClass: {
-							popup:
-								"animate__animated animate__faster animate__zoomOut",
-						},
-						// eslint-disable-next-line no-shadow
-					}).then((result) => {
-						if (result.value) {
-							this.$swal({
-								icon: "success",
-								title: "Downloading",
-								text: "Tachiyomi Preview",
-								confirmButtonText: "Dismiss",
-								showCloseButton: false,
-								showCancelButton: false,
-								timer: 5000,
-								timerProgressBar: true,
-								customClass: {
-									container: "showDownloads",
-									popup: "showDownloads__popup",
-									actions: "showDownloads__actions",
-									title: "showDownloads__title",
-									content: "showDownloads__content",
-									confirmButton:
-										"showDownloads__confirmButton",
-									cancelButton: "showDownloads__cancelButton",
-									closeButton: "showDownloads__closeButton",
-									footer: "showDownloads__footer",
-								},
-								showClass: {
-									popup:
-										"animate__animated animate__faster animate__pulse",
-								},
-								hideClass: {
-									popup:
-										"animate__animated animate__faster animate__zoomOut",
-								},
-							});
-							window.location.assign(KANADE_LATEST);
-							window.ga(
-								"send",
-								"event",
-								"Action",
-								"Download",
-								"Tachiyomi Preview"
-							);
-						}
-					});
-				}
-			});
-		},
 	},
 };
 </script>
@@ -377,56 +212,6 @@ export default {
 			border-top 1px solid $borderColor
 			text-align center
 			color lighten($textColor, 25%)
-
-.showDownloads
-	button
-		user-select none
-	&__popup
-		width 30em !important
-	&__cancelButton
-	&__confirmButton
-		font-family $buttonFontFamily
-	&__confirmButton
-		width 50% !important
-		margin-left 25% !important
-		margin-right 25% !important
-		margin-bottom 8px !important
-	&__cancelButton
-		background none !important
-		color $textColor !important
-		font-size 0.8rem !important
-		padding 2px !important
-		padding-top 4px !important
-		border-top 1px solid darken($borderColor, 10%) !important
-		border-radius 0px !important
-		strong
-			color $accentColor
-			&:hover
-				cursor pointer
-				opacity 0.8
-			&:focus
-				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
-				outline none
-		&:hover
-			cursor default
-	&__closeButton
-		border-radius 6px
-		width 1em
-		height 1em
-		margin-top 0.2em
-		margin-right 0.2em
-		&:focus
-			box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
-			outline none
-	&__title
-		border-bottom-width 0 !important
-		font-family $buttonFontFamily !important
-		font-weight 500
-	&__content
-		margin-top -10px
-		font-size 1rem
-	&__footer
-		text-align center
 
 @keyframes fade
 	0%

@@ -133,6 +133,57 @@ font-feature-settings()
 	height 3rem
 	margin-bottom .625rem
 
+// Download modals
+.showDownloads
+	button
+		user-select none
+	&__popup
+		width 30em !important
+	&__cancelButton
+	&__confirmButton
+		font-family $buttonFontFamily
+	&__confirmButton
+		width 50% !important
+		margin-left 25% !important
+		margin-right 25% !important
+		margin-bottom 8px !important
+	&__cancelButton
+		background none !important
+		color $textColor !important
+		font-size 0.8rem !important
+		padding 2px !important
+		padding-top 4px !important
+		border-top 1px solid darken($borderColor, 10%) !important
+		border-radius 0px !important
+		strong
+			color $accentColor
+			&:hover
+				cursor pointer
+				opacity 0.8
+			&:focus
+				box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+				outline none
+		&:hover
+			cursor default
+	&__closeButton
+		border-radius 6px
+		width 1em
+		height 1em
+		margin-top 0.2em
+		margin-right 0.2em
+		&:focus
+			box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+			outline none
+	&__title
+		border-bottom-width 0 !important
+		font-family $buttonFontFamily !important
+		font-weight 500
+	&__content
+		margin-top -10px
+		font-size 1rem
+	&__footer
+		text-align center
+
 // Fork pages
 
 .Neko
