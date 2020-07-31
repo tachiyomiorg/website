@@ -63,14 +63,7 @@
 <script>
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
-<<<<<<< HEAD
 import { GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../../constants";
-=======
-
-const LATEST_RELEASE = "https://github.com/inorichi/tachiyomi/releases/latest";
-
-const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
->>>>>>> averyepicbranchname
 
 export default {
 	name: "Home",
