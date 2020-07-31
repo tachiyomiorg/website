@@ -13,11 +13,12 @@ export default {
 	},
 
 	async mounted() {
-		const { error, data } = await this.$store.dispatch(
-			"getStableReleaseData"
-		);
-		if (error) return;
-		this.$data.releaseNotes = marked(data.body);
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			this.$data.releaseNotes = marked(data.body);
+		} catch (e) {
+			console.error(e);
+		}
 	},
 };
 </script>

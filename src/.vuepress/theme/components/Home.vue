@@ -1,21 +1,14 @@
 <template>
 	<main class="home" aria-labelledby="main-title">
 		<header class="hero">
-			<img
-				v-if="data.heroImage"
-				:src="$withBase(data.heroImage)"
-				:alt="data.heroAlt || 'Logo'"
-			/>
+			<img v-if="data.heroImage" :src="$withBase(data.heroImage)" :alt="data.heroAlt || 'Logo'" />
 
 			<h1 v-if="data.heroText !== null" id="main-title">
 				{{ data.heroText || "Tachiyomi" }}
 			</h1>
 
 			<p v-if="data.tagline !== null" class="description">
-				{{
-					data.tagline ||
-					"Free and open source manga reader for Android"
-				}}
+				{{ data.tagline || "Free and open source manga reader for Android" }}
 			</p>
 
 			<p v-if="data.buttonDownload || data.buttonGuides" class="action">
@@ -42,27 +35,16 @@
 		</header>
 
 		<div v-if="data.features && data.features.length" class="features">
-			<div
-				v-for="(feature, index) in data.features"
-				:key="index"
-				class="feature"
-			>
+			<div v-for="(feature, index) in data.features" :key="index" class="feature">
 				<div class="feature__Details">
 					<h2>{{ feature.title }}</h2>
 					<p>{{ feature.details }}</p>
 				</div>
 				<section class="feature__Animation">
-					<img
-						class="feature__Animation--dark"
-						:src="
-							$withBase('/assets/' + feature.image + '-Dark.png')
-						"
-					/>
+					<img class="feature__Animation--dark" :src="$withBase('/assets/' + feature.image + '-Dark.png')" />
 					<img
 						class="feature__Animation--light"
-						:src="
-							$withBase('/assets/' + feature.image + '-Light.png')
-						"
+						:src="$withBase('/assets/' + feature.image + '-Light.png')"
 					/>
 				</section>
 			</div>
@@ -81,7 +63,7 @@
 <script>
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
-import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../../constants";
+import { GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../../constants";
 
 export default {
 	name: "Home",
@@ -118,13 +100,14 @@ export default {
 	},
 
 	async mounted() {
-		const { error, data } = await this.$store.dispatch(
-			"getStableReleaseData"
-		);
-		if (error) return;
-		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		this.$data.tagName = data.tag_name;
-		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			this.$data.tagName = data.tag_name;
+			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		} catch (e) {
+			console.error(e);
+		}
 	},
 
 	methods: {
@@ -134,8 +117,7 @@ export default {
 				text: "Requires Android 5.0 or newer.",
 				confirmButtonText: "Download",
 				confirmButtonAriaLabel: "Download Tachiyomi",
-				cancelButtonText:
-					"Living on the edge? Get the <strong>Preview</strong>",
+				cancelButtonText: "Living on the edge? Get the <strong>Preview</strong>",
 				cancelButtonAriaLabel: "Download Preview",
 				showCloseButton: true,
 				showCancelButton: true,
@@ -180,24 +162,14 @@ export default {
 							footer: "showDownloads__footer",
 						},
 						showClass: {
-							popup:
-								"animate__animated animate__faster animate__pulse",
+							popup: "animate__animated animate__faster animate__pulse",
 						},
 						hideClass: {
-							popup:
-								"animate__animated animate__faster animate__zoomOut",
+							popup: "animate__animated animate__faster animate__zoomOut",
 						},
 					});
-					window.location.assign(
-						this.$data.browserDownloadUrl || GITHUB_LATEST_RELEASE
-					);
-					window.ga(
-						"send",
-						"event",
-						"Action",
-						"Download",
-						"Tachiyomi"
-					);
+					window.location.assign(this.$data.browserDownloadUrl || GITHUB_LATEST_RELEASE);
+					window.ga("send", "event", "Action", "Download", "Tachiyomi");
 				} else if (result.dismiss === "cancel") {
 					this.$swal({
 						icon: "warning",
@@ -222,8 +194,7 @@ export default {
 							popup: "animate__animated animate__headShake",
 						},
 						hideClass: {
-							popup:
-								"animate__animated animate__faster animate__zoomOut",
+							popup: "animate__animated animate__faster animate__zoomOut",
 						},
 						// eslint-disable-next-line no-shadow
 					}).then((result) => {
@@ -243,29 +214,20 @@ export default {
 									actions: "showDownloads__actions",
 									title: "showDownloads__title",
 									content: "showDownloads__content",
-									confirmButton:
-										"showDownloads__confirmButton",
+									confirmButton: "showDownloads__confirmButton",
 									cancelButton: "showDownloads__cancelButton",
 									closeButton: "showDownloads__closeButton",
 									footer: "showDownloads__footer",
 								},
 								showClass: {
-									popup:
-										"animate__animated animate__faster animate__pulse",
+									popup: "animate__animated animate__faster animate__pulse",
 								},
 								hideClass: {
-									popup:
-										"animate__animated animate__faster animate__zoomOut",
+									popup: "animate__animated animate__faster animate__zoomOut",
 								},
 							});
 							window.location.assign(KANADE_LATEST);
-							window.ga(
-								"send",
-								"event",
-								"Action",
-								"Download",
-								"Tachiyomi Preview"
-							);
+							window.ga("send", "event", "Action", "Download", "Tachiyomi Preview");
 						}
 					});
 				}

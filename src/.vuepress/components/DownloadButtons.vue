@@ -10,8 +10,7 @@
 </template>
 
 <script>
-import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
-
+import { GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
 
 export default {
 	props: {
@@ -49,15 +48,16 @@ export default {
 	},
 
 	async mounted() {
-		const { error, data } = await this.$store.dispatch(
-			"getStableReleaseData"
-		);
-		// Maybe eventually some release has more than the apk in assets.
-		if (error) return;
-		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		// Set the values.
-		this.$data.tagName = data.tag_name;
-		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			// Maybe eventually some release has more than the apk in assets.
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			// Set the values.
+			this.$data.tagName = data.tag_name;
+			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		} catch (e) {
+			console.error(e);
+		}
 	},
 
 	methods: {
@@ -82,17 +82,9 @@ export default {
 				},
 			});
 			window.location.assign(
-				this.$props.downloadStableUrl ||
-					this.$data.browserDownloadUrl ||
-					GITHUB_LATEST_RELEASE
+				this.$props.downloadStableUrl || this.$data.browserDownloadUrl || GITHUB_LATEST_RELEASE
 			);
-			window.ga(
-				"send",
-				"event",
-				"Action",
-				"Download",
-				this.downloadStableTag
-			);
+			window.ga("send", "event", "Action", "Download", this.downloadStableTag);
 		},
 		downloadPreview() {
 			this.$swal({
@@ -114,16 +106,8 @@ export default {
 					popup: "animated zoomOut faster",
 				},
 			});
-			window.location.assign(
-				this.$props.downloadPreviewUrl || KANADE_LATEST
-			);
-			window.ga(
-				"send",
-				"event",
-				"Action",
-				"Download",
-				this.downloadPreviewTag
-			);
+			window.location.assign(this.$props.downloadPreviewUrl || KANADE_LATEST);
+			window.ga("send", "event", "Action", "Download", this.downloadPreviewTag);
 		},
 	},
 };
