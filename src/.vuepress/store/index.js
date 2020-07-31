@@ -6,6 +6,7 @@ import { GITHUB_LATEST_API } from "../constants";
 
 let call = null;
 
+
 Vue.use(Vuex);
 export default new Vuex.Store({
 	state: {

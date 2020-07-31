@@ -63,7 +63,14 @@
 <script>
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
+<<<<<<< HEAD
 import { GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../../constants";
+=======
+
+const LATEST_RELEASE = "https://github.com/inorichi/tachiyomi/releases/latest";
+
+const PREVIEW_URL = "https://tachiyomi.kanade.eu/latest";
+>>>>>>> averyepicbranchname
 
 export default {
 	name: "Home",
@@ -100,6 +107,7 @@ export default {
 	},
 
 	async mounted() {
+<<<<<<< HEAD
 		try {
 			const { data } = await this.$store.dispatch("getStableReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
@@ -108,6 +116,15 @@ export default {
 		} catch (e) {
 			console.error(e);
 		}
+=======
+		const { error, data } = await this.$store.dispatch(
+			"getStableReleaseData"
+		);
+		if (error) return;
+		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+		this.$data.tagName = data.tag_name;
+		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+>>>>>>> averyepicbranchname
 	},
 
 	methods: {
