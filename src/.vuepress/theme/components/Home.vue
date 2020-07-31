@@ -100,12 +100,14 @@ export default {
 	},
 
 	async mounted() {
-		const { error, data } = await this.$store.dispatch(
-			"getStableReleaseData"
-		);
-		if (error) return;
-		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			this.$data.tagName = data.tag_name;
+			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		} catch (e) {
+			console.error(e);
+		}
 	},
 };
 </script>

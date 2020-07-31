@@ -8,8 +8,6 @@
 </template>
 
 <script>
-import { GITHUB_LATEST_API } from "../constants";
-
 export default {
 	props: {
 		fileName: {
@@ -24,12 +22,12 @@ export default {
 	},
 
 	async mounted() {
-		const { error, data } = await this.$store.dispatch(
-			"getStableReleaseData"
-		);
-		if (error) return;
-		// Set the values.
-		this.$data.tagName = data.tag_name;
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			this.$data.tagName = data.tag_name;
+		} catch (e) {
+			console.error(e);
+		}
 	},
 };
 </script>

@@ -16,7 +16,7 @@
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BugIcon from "vue-material-design-icons/Bug.vue";
 
-import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
+import { GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
 
 
 export default {
@@ -33,14 +33,16 @@ export default {
 	},
 
 	async mounted() {
-		const { error, data } = await this.$store.dispatch(
-			"getStableReleaseData"
-		);
-		// Maybe eventually some release has more than the apk in assets.
-		if (error) return;
-		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		this.$data.tagName = data.tag_name.slice(1);
-		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			// Maybe eventually some release has more than the apk in assets.
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			// Set the values.
+			this.$data.tagName = data.tag_name;
+			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		} catch (e) {
+			console.error(e);
+		}
 	},
 
 	methods: {

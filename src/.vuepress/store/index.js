@@ -2,17 +2,14 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-const RELEASE_URL =
-	"https://api.github.com/repos/inorichi/tachiyomi/releases/latest";
+import { GITHUB_LATEST_API } from "../constants";
 
 let call = null;
-let promise;
 
 Vue.use(Vuex);
 export default new Vuex.Store({
 	state: {
 		stable: {
-			error: false,
 			updated: null,
 			data: null,
 		},
@@ -24,43 +21,37 @@ export default new Vuex.Store({
 		},
 	},
 	actions: {
-		async getStableReleaseData({ commit }) {
-			const { updated } = this.state.stable;
+		getStableReleaseData({ commit }) {
+			return new Promise((resolve, reject) => {
+				const { updated } = this.state.stable;
+				const now = new Date().getTime();
 
-			const now = new Date().getTime();
+				if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
+					resolve(this.state.stable);
+				}
 
-			if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
-				return this.state.stable;
-			}
+				if (call == null) {
+					call = axios.get(GITHUB_LATEST_API);
+				}
 
-			if (call == null) {
-				call = axios.get(RELEASE_URL);
-				promise = call
-					.then(({ data }) => {
-						const object = {
-							error: false,
-							updated: now,
-							data,
-						};
-						commit("setStableReleaseData", object);
-						return Promise.resolve();
-					})
-					.catch((reason) => {
-						console.error("Error connecting to GitHub", reason);
-						const object = {
-							error: true,
-							updated: null,
-							data: null,
-						};
-						commit("setStableReleaseData", object);
-						return Promise.resolve();
-					});
-			}
-
-			await promise;
-			call = null;
-			promise = null
-			return this.state.stable;
+				call.then(({ data }) => {
+					const object = {
+						updated: now,
+						data,
+					};
+					commit("setStableReleaseData", object);
+					call = null;
+					resolve(this.state.stable);
+				}).catch((reason) => {
+					const object = {
+						updated: null,
+						data: null,
+					};
+					commit("setStableReleaseData", object);
+					call = null;
+					reject(reason);
+				});
+			});
 		},
 	},
 });
