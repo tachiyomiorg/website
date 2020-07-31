@@ -6,7 +6,6 @@
 
 <script>
 import axios from "axios";
-import moment from "moment";
 import { GITHUB_LATEST_API } from "../constants";
 
 export default {
@@ -19,8 +18,8 @@ export default {
 
 	async mounted() {
 		const { data } = await axios.get(GITHUB_LATEST_API);
-		this.$data.releasePublishRelative = moment(data.published_at).fromNow();
-		this.$data.releasePublishExact = moment(data.published_at).toString();
+		this.$data.releasePublishRelative = this.$moment(data.published_at).fromNow();
+		this.$data.releasePublishExact = this.$moment(data.published_at).toString();
 	},
 };
 </script>
