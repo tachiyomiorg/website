@@ -83,6 +83,10 @@ export default {
 				share: { text: "Share", icon: "share" },
 				webview: { text: "WebView", icon: "public" },
 				/* Browse */
+				button_latest: { text: "LATEST" },
+				button_browse: { text: "BROWSE" },
+				tab_sources: { text: "SOURCES" },
+				tab_extensions: { text: "EXTENSIONS" },
 				sources: { text: "Sources" },
 				latest: { text: "Latest" },
 				extensions: { text: "Extensions" },
