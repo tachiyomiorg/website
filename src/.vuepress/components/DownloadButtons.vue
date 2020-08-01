@@ -1,14 +1,14 @@
 <template>
-	<div class="downloadContainer">
-		<button class="downloadStableButton" @click="downloadStable" @keyup.enter="downloadStable">
-			<CloudDownloadIcon />
-			Stable
-		</button>
-		<button class="downloadPreviewButton" @click="downloadPreview" @keyup.enter="downloadPreview">
-			<BugIcon />
-			Preview
-		</button>
-		<br /><span class="versionNotice">Requires <i>Android 5.0</i> or higher.</span>
+	<div id="DownloadButtons">
+		<div class="downloadContainer">
+			<button id="downloadStable" @click="downloadStable" @keyup.enter="downloadStable">
+				<CloudDownloadIcon /> Stable
+			</button>
+			<button id="downloadPreview" @click="downloadPreview" @keyup.enter="downloadPreview">
+				<BugIcon /> Preview
+			</button>
+		</div>
+		<span class="versionNotice">Requires <strong>Android 5.0</strong> or higher.</span>
 	</div>
 </template>
 
@@ -48,15 +48,11 @@ export default {
 				focusCancel: false,
 				timer: 3000,
 				timerProgressBar: true,
-				customClass: {
-					confirmButton: "download-confirm-button",
-					container: "download-container",
-				},
 				showClass: {
-					popup: "animated pulse faster",
+					popup: "animate__animated animate__faster animate__pulse",
 				},
 				hideClass: {
-					popup: "animated zoomOut faster",
+					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
 			window.location.assign(this.$data.browserDownloadUrl || GITHUB_LATEST_RELEASE);
@@ -71,17 +67,6 @@ export default {
 				confirmButtonText: "I am sure.",
 				showCloseButton: true,
 				showCancelButton: false,
-				customClass: {
-					container: "showDownloads",
-					popup: "showDownloads__popup",
-					actions: "showDownloads__actions",
-					title: "showDownloads__title",
-					content: "showDownloads__content",
-					confirmButton: "showDownloads__confirmButton",
-					cancelButton: "showDownloads__cancelButton",
-					closeButton: "showDownloads__closeButton",
-					footer: "showDownloads__footer",
-				},
 				showClass: {
 					popup: "animate__animated animate__headShake",
 				},
@@ -100,17 +85,6 @@ export default {
 						showCancelButton: false,
 						timer: 3000,
 						timerProgressBar: true,
-						customClass: {
-							container: "showDownloads",
-							popup: "showDownloads__popup",
-							actions: "showDownloads__actions",
-							title: "showDownloads__title",
-							content: "showDownloads__content",
-							confirmButton: "showDownloads__confirmButton",
-							cancelButton: "showDownloads__cancelButton",
-							closeButton: "showDownloads__closeButton",
-							footer: "showDownloads__footer",
-						},
 						showClass: {
 							popup: "animate__animated animate__faster animate__pulse",
 						},
@@ -128,39 +102,42 @@ export default {
 </script>
 
 <style lang="stylus">
-.downloadContainer
-	user-select none
+#DownloadButtons
 	text-align center
-	margin 0.3125rem
-	.downloadStableButton
-	.downloadPreviewButton
-		border 0px
-		border-bottom 1px solid darken($accentColor, 10%)
-		border-radius 4px
-		box-sizing border-box
-		color #fff
-		cursor pointer
+	button
 		display inline-block
-		font-family $buttonFontFamily
-		font-size 1.125rem
-		margin 0.25rem
-		padding 0.8rem
+		margin 0.5em 0
+		padding 1em 1em
+		width 9em
+		background $accentColor
+		border none
+		border-radius 4px
+		color #fff
+		font-family inherit
+		font-size 1em
+		font-weight 400
+		letter-spacing 0.02em
+		line-height 1
 		transition background-color .1s ease
-		width 10rem
-		height 3.5rem
+		text-decoration none
+		text-transform uppercase
+		cursor pointer
+		&:hover
+			background darken($accentColor, 10%)
 		&:focus
 			box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
 			outline none
-	.downloadStableButton
-		background-color $accentColor
-		border-bottom 1px solid darken($accentColor, 10%)
-		&:hover
-			background-color lighten($accentColor, 10%)
-	.downloadPreviewButton
-		background-color $accentColorSecondary
-		border-bottom 1px solid darken($accentColorSecondary, 10%)
-		&:hover
-			background-color lighten($accentColorSecondary, 10%)
-.versionNotice
-	font-size 0.9rem
+	.downloadContainer
+		user-select none
+		#download
+			&Stable
+				background-color $accentColor
+				&:hover
+					background-color lighten($accentColor, 10%)
+			&Preview
+				background-color $accentColorSecondary
+				&:hover
+					background-color lighten($accentColorSecondary, 10%)
+	.versionNotice
+		font-size 0.9rem
 </style>
