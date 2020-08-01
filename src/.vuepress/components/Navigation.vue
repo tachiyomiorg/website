@@ -61,15 +61,17 @@ export default {
 				/* More */
 				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
 				download_queue: { text: "Download queue", icon: "get_app" },
-				source_migration: { text: "Source migration", icon: "compare_arrows" },
+				categories: { text: "Categories", icon: "label" }
 				settings: { text: "Settings", icon: "settings" },
 				about: { text: "About", icon: "info" },
+				help: { text: "Help", icon: "help" },
 				/* Settings */
 				settings_general: { text: "General", icon: "tune" },
 				settings_library: { text: "Library", icon: "collections_bookmark" },
 				settings_reader: { text: "Reader", icon: "chrome_reader_mode" },
 				settings_downloads: { text: "Downloads", icon: "get_app" },
 				settings_tracking: { text: "Tracking", icon: "autorenew" },
+				settings_browse: { text: "Browse", icon: "explore" },
 				settings_backup: { text: "Backup", icon: "backup" },
 				settings_security: { text: "Security", icon: "security" },
 				settings_advanced: { text: "Advanced", icon: "code" },
@@ -80,10 +82,10 @@ export default {
 				share: { text: "Share", icon: "share" },
 				webview: { text: "WebView", icon: "public" },
 				/* Browse */
-				button_latest: { text: "LATEST" },
-				button_browse: { text: "BROWSE" },
-				tab_sources: { text: "SOURCES" },
-				tab_extensions: { text: "EXTENSIONS" },
+				sources: { text: "Sources" },
+				latest: { text: "Latest" },
+				extensions: { text: "Extensions" },
+				migrate: { text: "Migrate" },
 				/* Misc */
 				install: { text: "INSTALL", class:"ext-installation" },
 				reorder: { text: "Reorder", icon:"reorder" },
