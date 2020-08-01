@@ -37,9 +37,11 @@ This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few
 - Backup saved searches
 - New E-Hentai/ExHentai features such as language settings and watched list settings
 - Comfortable grid view
+- Source categories
 - Manga info edit
 - Enhanced views for internal and delegated sources
 - Numerous features from [TachiyomiAZ](/forks/TachiyomiAZ)
+
 
 ## Credits
 - [She11Shocked](https://github.com/she11sh0cked/) for the extra tracking, filter, recommendation features and a ton more.
