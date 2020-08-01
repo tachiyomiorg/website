@@ -65,6 +65,7 @@ export default {
 				settings: { text: "Settings", icon: "settings" },
 				about: { text: "About", icon: "info" },
 				help: { text: "Help", icon: "help" },
+				source_migration: { text: "Source migration", icon: "compare_arrows" },
 				/* Settings */
 				settings_general: { text: "General", icon: "tune" },
 				settings_library: { text: "Library", icon: "collections_bookmark" },
