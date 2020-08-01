@@ -42,7 +42,6 @@ This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few
 - Enhanced views for internal and delegated sources
 - Numerous features from [TachiyomiAZ](/forks/TachiyomiAZ)
 
-
 ## Credits
 - [She11Shocked](https://github.com/she11sh0cked/) for the extra tracking, filter, recommendation features and a ton more.
 - [az4521](https://github.com/az4521) for the base recommendations and **AZ**.
