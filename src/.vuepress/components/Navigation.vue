@@ -61,7 +61,7 @@ export default {
 				/* More */
 				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
 				download_queue: { text: "Download queue", icon: "get_app" },
-				categories: { text: "Categories", icon: "label" }
+				categories: { text: "Categories", icon: "label" },
 				settings: { text: "Settings", icon: "settings" },
 				about: { text: "About", icon: "info" },
 				help: { text: "Help", icon: "help" },
