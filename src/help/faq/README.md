@@ -112,6 +112,9 @@ While there will never be a toggle between the two UI versions, you can continue
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
+#### I see manga images in my phone gallery, what gives!?
+Tachiyomi by default adds a `.nomedia` file to prevent this from happening but sometimes it doesn't work or something went wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your download folder. 
+
 #### I lost everything, what now?
 To avoid data loss in the future, you can use the automatic backup feature.
 
@@ -136,7 +139,7 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 - Fastest manga updates: **MangaDex** and [scanlator sources](/help/faq/#what-are-scanlator-sources)
 - Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
-- Western comics: **ComicExtra**, **ComicPunch** and **ReadComicOnline.org** (in **FMReader** extension), 
+- Western comics: **Comicastle**, **ComicExtra **and **ComicPunch**  
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
 - Other popular sources: **MangaFreak**, **MangaOwl**, **MangaHere**, **ReadManhwa**, **Manhwa18.net** (in **FMReader** extension)
 
@@ -144,10 +147,9 @@ Most of the scanlator sources are part of **Multi-source** extensions, which con
 
 #### What are some recommended NSFW extensions?
 - Serialized Manga: Hentai2Read
-- Fakku Rips: HentaiNexus
-- Best Advanced Search: HBrowse
-- Webtoon Hentai: Toonily/Manhwa18/Manhwa Club
-- Casual Browsing: E-Hentai, with more niche hentai in ExHentai
+- Fakku Rips: HentaiNexus 
+- Webtoon Hentai: Toonily and Manhwa Club (in **Madara** extension), Manhwa18.net (in **FMReader** extension), ReadManhwa
+- Casual Browsing: E-Hentai and NHentai
 - Western Comics: AllPornComic in Madara
 
 #### What are scanlator sources?
