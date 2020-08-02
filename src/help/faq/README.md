@@ -15,7 +15,7 @@ sidebarDepth: 2
 This can be done by enabling **Download badges** under <Navigation item="library"/>.
 
 ::: guide
-Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **DISPLAY** section and then checking the **Download badges** option at the bottom.
+Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Display** section and then checking the **Download badges** option at the bottom.
 :::
 
 #### Why are some covers white after restoring from backup?
@@ -139,18 +139,20 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 - Fastest manga updates: **MangaDex** and [scanlator sources](/help/faq/#what-are-scanlator-sources)
 - Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
 - Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
-- Western comics: **Comicastle**, **ComicExtra **and **ComicPunch**  
+- Western comics: **Comicastle**, **ComicExtra** and **ComicPunch**  
 - Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
 - Other popular sources: **MangaFreak**, **MangaOwl**, **MangaHere**, **ReadManhwa**, **Manhwa18.net** (in **FMReader** extension)
 
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** contain sources which host directly from the scanlators' own websites.
 
 #### What are some recommended NSFW extensions?
-- Serialized Manga: Hentai2Read
-- Fakku Rips: HentaiNexus 
-- Webtoon Hentai: Toonily and Manhwa Club (in **Madara** extension), Manhwa18.net (in **FMReader** extension), ReadManhwa
-- Casual Browsing: E-Hentai and NHentai
-- Western Comics: AllPornComic in Madara
+- Serialized manga: Hentai2Read
+- Fakku rips: HentaiNexus
+- Advanced search and filtering: HBrowse
+- Webtoon hentai: Toonily and Manhwa Club (in **Madara** extension), Manhwa18.net (in **FMReader** extension), ReadManhwa
+- Casual browsing: E-Hentai and NHentai
+- Western comics: AllPornComic (in **Madara** extension)
+- Other popular NSFW sources - Tsumino and Ninehentai
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
@@ -212,18 +214,18 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your phone's settings or you go can do it in the app.
 
 ::: guide
-To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **EXTENSIONS** then tap **Uninstall** on the extension you want to remove.
+To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **Extensions** then tap **Uninstall** on the extension you want to remove.
 :::
 
 #### Why don't I have extensions or any sources in Browse?
-- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="browse"/> → **EXTENSIONS** menu.
+- **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="browse"/> → **Extensions** menu.
 - If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use.
 
 #### How do see sources of other languages?
 
 You do this by following the steps below.
 
-1. Go to <Navigation item="browse"/> → **SOURCES**.
+1. Go to <Navigation item="browse"/> → **Sources**.
 1. Click on <Navigation item="filter"/> on the top right corner.
 1. Scroll down until you find the language of your source and enable it.
 
@@ -235,8 +237,8 @@ To restore backups, **Tachiyomi** requires to have extensions installed for the 
 It might be because the title is worded differently. Follow any of the steps below:
 - Look up the title on a search engine like **Google** or a manga tracking service such as [AniList](https://anilist.co/home).
 - See which site has the series, often a single source will not satisfy all your needs.
-- Download the extension for that source from <Navigation item="browse"/> → **EXTENSIONS** if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
-- Go to <Navigation item="browse"/> → <Navigation item="button_browse"/> on a source then search for the manga again.
+- Download the extension for that source from <Navigation item="browse"/> → **Extensions** if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
+- Go to <Navigation item="browse"/> and tap on a source then search for the manga again.
 
 
 #### What are some common errors?
@@ -254,7 +256,7 @@ This means that the manga has been licensed and can no longer be read on that so
 The source you selected may have **Cloudflare** protection on and is enforcing **CAPTCHAs**.
 
 1. Find a manga in your library that is from the source you're trying to access.
-1. Tap on the <Navigation item="webview"/> in the **INFO** tab.
+1. Tap on the <Navigation item="webview"/>.
 1. Complete the **CAPTCHA** if present and wait for the page to finish loading.
 1. Press back rather than exiting the app and if that does not work, use the back arrow.
 
@@ -283,7 +285,7 @@ This error can be caused by a variety of reasons, all to do with storage.
 If you're not getting any results when searching MangaDex then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.
 
 ::: guide
-To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_browse"/>/<Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
+To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
 :::
 
 ::: tip
@@ -321,7 +323,7 @@ Read about source migration [here](/help/guides/source-migration/)
 #### How do I deal with duplicate chapters in MangaPark?
 To solve this issue, follow the below steps.
 
-1. Go to <Navigation item="browse"/> → <Navigation item="tab_extensions"/>.
+1. Go to <Navigation item="browse"/> → **Extensions**.
 1. Click on **MangaPark** extension and then `Chapter List Source`.
 1. Choose an option like `Smart list` or `Prioritize source`.
 1. Go back to MangaPark's chapter list and refresh it.
