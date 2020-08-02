@@ -19,7 +19,7 @@ When you've completed the download, open the <VersionTag fileName/> file and pro
 [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.webm)
 :::
 
-Now that **Tachiyomi** is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the <Navigation item="tab_extensions"/> tab.
+Now that **Tachiyomi** is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the **Extensions** tab.
 
 Find the extension that you'd like to use then press the <Navigation item="install"/> button next to your desired extension and then accept the installation prompt.
 
@@ -35,12 +35,12 @@ Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installatio
 [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-AddTo.webm)
 :::
 
-Now that you've installed the desired extension it will show in the <Navigation item="tab_sources"/> tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
+Now that you've installed the desired extension it will show in the **Sources** tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
 
-To find and add manga, you can now use either the <Navigation item="button_latest"/> button and explore recently updated manga from that source or you can use the <Navigation item="button_browse"/> button and search for it.
+To find and add manga, you can now use either the **Latest** button and explore recently updated manga from that source or you can tap on the source icon and search for it.
 
 Now that you've presumably found manga that you want to add, click on it and then press the <Navigation item="bookmark"/> button, it should now appear in your <Navigation item="library"/> ready to be read!
 
 ::: guide Global search
-You can search for manga globally across all your sources by using <Navigation item="search"/> located in the top-right of <Navigation item="browse"/> → <Navigation item="tab_sources"/>.
+You can search for manga globally across all your sources by using <Navigation item="search"/> located in the top-right of <Navigation item="browse"/> → **Sources**.
 :::
