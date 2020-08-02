@@ -15,6 +15,10 @@ Backups can hold the following information:
 1. **Tracking settings**
 1. **Reading history**
 
+::: guide
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it.
+:::
+
 ## Restoring
 
 Restoring is done from the <Navigation item="settings_backup"/> settings. To restore without issues be sure to:
