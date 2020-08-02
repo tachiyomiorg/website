@@ -13,10 +13,9 @@ lang: en-US
 To make a category follow the steps below.
 
 ::: guide
-1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
-1. Tap on **Edit categories**.
-2. Press the bottom-right plus/add button.
-3. Enter a name and press **OK**.
+1. Go to <Navigation item="more"/> → <Navigation item="categories"/>.
+1. Press on **+ Add**  button on button right.
+1. Enter a name and press **OK**.
 :::
 
 ## Edit a category
@@ -24,8 +23,7 @@ To make a category follow the steps below.
 To edit a category follow the steps below.
 
 ::: guide
-1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
-1. Tap on **Edit categories**.
+1. Go to <Navigation item="more"/> → <Navigation item="categories"/>.
 1. Long press a category.
 1. Tap <Navigation item="edit"/> on the top-right.
 :::
@@ -37,8 +35,7 @@ You can change the order of Categories, such as bringing a certain Category to t
 To do this, follow the steps below.
 
 ::: guide
-1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
-1. Tap on **Edit categories**.
+1. Go to <Navigation item="more"/> → <Navigation item="categories"/>.
 1. Drag the category to your prefered position using the <Navigation item="reorder"/> icon.
 :::
 
@@ -47,10 +44,9 @@ To do this, follow the steps below.
 To delete a category, follow the steps below.
 
 ::: guide
-1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="library"/>.
-2. Tap on **Edit categories**.
-3. Long press a category.
-4. Tap <Navigation item="delete"/> on the top-right.
+1. Go to <Navigation item="more"/> → <Navigation item="categories"/>.
+1. Long press a category.
+1. Tap <Navigation item="delete"/> on the top-right.
 :::
 
 ## Add manga to category
