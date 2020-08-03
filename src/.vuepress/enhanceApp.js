@@ -5,6 +5,7 @@ import "vue-material-design-icons/styles.css";
 
 import { VueAgile } from "vue-agile";
 import VueSweetalert2 from "vue-sweetalert2";
+import VueMoment from "vue-moment";
 
 export default ({
 	Vue, // the version of Vue being used in the VuePress app
@@ -15,4 +16,5 @@ export default ({
 	// eslint-disable-next-line vue/match-component-file-name
 	Vue.component("Agile", VueAgile);
 	Vue.use(VueSweetalert2);
+	Vue.use(VueMoment);
 };

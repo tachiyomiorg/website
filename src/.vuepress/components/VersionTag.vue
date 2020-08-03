@@ -1,12 +1,10 @@
 <template>
 	<span v-if="fileName" class="fileNameContainer" title="File name">
 		<MaterialIcon class="fileNameIcon" icon-name="get_app" />
-		<span class="fileName">tachiyomi-{{ this.$data.tagName }}.apk</span>
+		<span class="fileName">tachiyomi-v{{ this.$data.tagName }}.apk</span>
 		<slot />
 	</span>
-	<span v-else class="downloadTag">
-		{{ this.$data.tagName }}
-	</span>
+	<span v-else class="downloadTag">{{ this.$data.tagName }}</span>
 </template>
 
 <script>
@@ -22,14 +20,13 @@ export default {
 
 	data() {
 		return {
-			tagName: "",
+			tagName: "0.0.0",
 		};
 	},
 
 	async mounted() {
 		const { data } = await axios.get(GITHUB_LATEST_API);
-		// Set the values.
-		this.$data.tagName = data.tag_name;
+		this.$data.tagName = data.tag_name.slice(1);
 	},
 };
 </script>

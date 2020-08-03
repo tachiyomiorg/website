@@ -1,44 +1,27 @@
 <template>
-	<div class="downloadContainer">
-		<button class="downloadStableButton" @click="downloadStable">
-			{{ downloadStableLabel }}
-		</button>
-		<button class="downloadPreviewButton" @click="downloadPreview">
-			{{ downloadPreviewLabel }}
-		</button>
+	<div id="DownloadButtons">
+		<div class="downloadContainer">
+			<button id="downloadStable" @click="downloadStable" @keyup.enter="downloadStable">
+				<CloudDownloadIcon /> Stable
+			</button>
+			<button id="downloadPreview" @click="downloadPreview" @keyup.enter="downloadPreview">
+				<BugIcon /> Preview
+			</button>
+		</div>
+		<span class="versionNotice">Requires <strong>Android 5.0</strong> or higher.</span>
 	</div>
 </template>
 
 <script>
 import axios from "axios";
+import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
+import BugIcon from "vue-material-design-icons/Bug.vue";
 import { GITHUB_LATEST_API, GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
 
 export default {
-	props: {
-		downloadStableTag: {
-			type: String,
-			required: true,
-		},
-		downloadPreviewTag: {
-			type: String,
-			required: true,
-		},
-		downloadStableLabel: {
-			type: String,
-			default: "Stable",
-		},
-		downloadPreviewLabel: {
-			type: String,
-			default: "Preview",
-		},
-		downloadStableUrl: {
-			type: String,
-			default: undefined,
-		},
-		downloadPreviewUrl: {
-			type: String,
-			default: undefined,
-		},
+	components: {
+		CloudDownloadIcon,
+		BugIcon,
 	},
 
 	data() {
@@ -50,10 +33,8 @@ export default {
 
 	async mounted() {
 		const { data } = await axios.get(GITHUB_LATEST_API);
-		// Maybe eventually some release has more than the apk in assets.
 		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		// Set the values.
-		this.$data.tagName = data.tag_name;
+		this.$data.tagName = data.tag_name.slice(1);
 		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
 	},
 
@@ -61,96 +42,102 @@ export default {
 		downloadStable() {
 			this.$swal({
 				title: "Downloading",
-				text: `${this.downloadStableLabel} version is being downloaded.`,
+				html: `Started downloading <strong>Tachiyomi Stable</strong>`,
 				icon: "success",
 				focusConfirm: false,
 				focusCancel: false,
-				timer: 5000,
+				timer: 3000,
 				timerProgressBar: true,
-				customClass: {
-					confirmButton: "download-confirm-button",
-					container: "download-container",
-				},
 				showClass: {
-					popup: "animated pulse faster",
+					popup: "animate__animated animate__faster animate__pulse",
 				},
 				hideClass: {
-					popup: "animated zoomOut faster",
+					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(
-				this.$props.downloadStableUrl ||
-					this.$data.browserDownloadUrl ||
-					GITHUB_LATEST_RELEASE
-			);
-			window.ga(
-				"send",
-				"event",
-				"Action",
-				"Download",
-				this.downloadStableTag
-			);
+			window.location.assign(this.$data.browserDownloadUrl || GITHUB_LATEST_RELEASE);
+			window.ga("send", "event", "Action", "Download", "Tachiyomi");
 		},
 		downloadPreview() {
 			this.$swal({
-				title: "Downloading",
-				text: `${this.downloadPreviewLabel} version is being downloaded.`,
-				icon: "success",
-				focusConfirm: false,
-				focusCancel: false,
-				timer: 5000,
-				timerProgressBar: true,
-				customClass: {
-					confirmButton: "download-confirm-button",
-					container: "download-container",
-				},
+				icon: "warning",
+				title: "Are you sure?",
+				html:
+					"<strong>Tachiyomi Preview</strong> is not recommended if you're not willing to test for – and endure – issues.",
+				confirmButtonText: "I am sure.",
+				showCloseButton: true,
+				showCancelButton: false,
 				showClass: {
-					popup: "animated pulse faster",
+					popup: "animate__animated animate__headShake",
 				},
 				hideClass: {
-					popup: "animated zoomOut faster",
+					popup: "animate__animated animate__faster animate__zoomOut",
 				},
+				// eslint-disable-next-line no-shadow
+			}).then((result) => {
+				if (result.value) {
+					this.$swal({
+						icon: "success",
+						title: "Downloading",
+						html: `Started downloading <strong>Tachiyomi Preview</strong>`,
+						confirmButtonText: "Dismiss",
+						showCloseButton: false,
+						showCancelButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						showClass: {
+							popup: "animate__animated animate__faster animate__pulse",
+						},
+						hideClass: {
+							popup: "animate__animated animate__faster animate__zoomOut",
+						},
+					});
+					window.location.assign(KANADE_LATEST);
+					window.ga("send", "event", "Action", "Download", "Tachiyomi Preview");
+				}
 			});
-			window.location.assign(
-				this.$props.downloadPreviewUrl || KANADE_LATEST
-			);
-			window.ga(
-				"send",
-				"event",
-				"Action",
-				"Download",
-				this.downloadPreviewTag
-			);
 		},
 	},
 };
 </script>
 
 <style lang="stylus">
-.downloadContainer
-	user-select none
+#DownloadButtons
 	text-align center
-	margin 0.3125rem
-	.downloadStableButton
-	.downloadPreviewButton
-		border-style none
-		padding 0.625 2em
-		margin 0.3125rem
-		border-radius $buttonBorderRadius
-		font-family $buttonFontFamily
-		font-size 1.125em
-		color white
-		height 3rem
-		width 8.5rem
-		&:focus
-			outline none
-			outline-style solid
+	button
+		display inline-block
+		margin 0.5em 0
+		padding 1em 1em
+		width 9em
+		background $accentColor
+		border none
+		border-radius 4px
+		color #fff
+		font-family inherit
+		font-size 1em
+		font-weight 400
+		letter-spacing 0.02em
+		line-height 1
+		transition background-color .1s ease
+		text-decoration none
+		text-transform uppercase
+		cursor pointer
 		&:hover
-			cursor pointer
-			text-decoration none !important
-			background-image linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
-	.downloadStableButton
-		background-color $accentColor
-	.downloadPreviewButton
-		background-color $accentColorSecondary
+			background darken($accentColor, 10%)
+		&:focus
+			box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
+			outline none
+	.downloadContainer
+		user-select none
+		#download
+			&Stable
+				background-color $accentColor
+				&:hover
+					background-color lighten($accentColor, 10%)
+			&Preview
+				background-color $accentColorSecondary
+				&:hover
+					background-color lighten($accentColorSecondary, 10%)
+	.versionNotice
+		font-size 0.9rem
 </style>
