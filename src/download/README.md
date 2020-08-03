@@ -12,4 +12,4 @@ Download the latest stable version of **Tachiyomi** (**<VersionTag downloadTag/>
 
 <DownloadButtons />
 
-<ChangeLog />
+<WhatsNew />

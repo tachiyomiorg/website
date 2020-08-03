@@ -1,7 +1,7 @@
 <template>
-	<div class="guide changeLog">
-		<p class="title">Changelog</p>
-		<div v-html="changeLog"></div>
+	<div class="guide whatsNew">
+		<p class="title">What's new</p>
+		<div v-html="whatsNew"></div>
 		<div class="custom-block aside">
 			<p>
 				View the full release
@@ -19,19 +19,19 @@ import { GITHUB_LATEST_API } from "../constants";
 export default {
 	data() {
 		return {
-			changeLog: "Attempting to load changelog from GitHub.",
+			whatsNew: "Failed to load data from GitHub.",
 		};
 	},
 
 	async mounted() {
 		const { data } = await axios.get(GITHUB_LATEST_API);
-		this.$data.changeLog = marked(data.body);
+		this.$data.whatsNew = marked(data.body);
 	},
 };
 </script>
 
 <style lang="stylus">
-.changeLog
+.whatsNew
 	.title
 		text-align center
 	div
