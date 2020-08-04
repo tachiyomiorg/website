@@ -54,7 +54,7 @@ export default new Vuex.Store({
 				}
 
                 // Waits for network call and mutation to be done
-				call.then((value) => {
+				return call.then((value) => {
 					return resolve(value);
 				}).catch((reason) => {
 					return reject(reason);
