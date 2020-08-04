@@ -32,25 +32,31 @@ export default new Vuex.Store({
                     return resolve(this.state.stable);
 				}
 
+                // Makes sure only one network call and one mutation happens
 				if (call == null) {
-					call = axios.get(GITHUB_LATEST_API);
+					call = axios.get(GITHUB_LATEST_API).then(({ data }) => {
+                        const object = {
+                            updated: now,
+                            data,
+                        };
+                        commit("setStableReleaseData", object);
+                        call = null;
+                        return Promise.resolve(this.state.stable)
+                    }).catch((reason) => {
+                        const object = {
+                            updated: null,
+                            data: null,
+                        };
+                        commit("setStableReleaseData", object);
+                        call = null
+                        return Promise.reject(reason)
+                    });;
 				}
 
-				call.then(({ data }) => {
-					const object = {
-						updated: now,
-						data,
-					};
-					commit("setStableReleaseData", object);
-                    call = null;
-					return resolve(this.state.stable);
+                // Waits for network call and mutation to be done
+				call.then((value) => {
+					return resolve(value);
 				}).catch((reason) => {
-					const object = {
-						updated: null,
-						data: null,
-					};
-					commit("setStableReleaseData", object);
-                    call = null;
 					return reject(reason);
 				});
 			});
