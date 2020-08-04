@@ -26,8 +26,6 @@ export default new Vuex.Store({
 				const { updated } = this.state.stable;
 				const now = new Date().getTime();
 
-                console.log(updated, now, updated != null && now - updated <= 60 * 60 * 24 * 1000)
-
 				if (updated != null && now - updated <= 60 * 60 * 24 * 1000) {
                     return resolve(this.state.stable);
 				}
