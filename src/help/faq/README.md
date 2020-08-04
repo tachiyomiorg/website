@@ -146,18 +146,18 @@ While Tachiyomi does not officially endorse or recommend any manga website, belo
 Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** contain sources which host directly from the scanlators' own websites.
 
 #### What are some recommended NSFW extensions?
-- Serialized manga: Hentai2Read
-- Fakku rips: HentaiNexus
-- Advanced search and filtering: HBrowse
-- Webtoon hentai: Toonily and Manhwa Club (in **Madara** extension), Manhwa18.net (in **FMReader** extension), ReadManhwa
-- Casual browsing: E-Hentai and NHentai
-- Western comics: AllPornComic (in **Madara** extension)
-- Other popular NSFW sources - Tsumino and Ninehentai
+- Serialized manga: **Hentai2Read**
+- Fakku rips: **HentaiNexus**
+- Advanced search and filtering: **HBrowse**
+- Webtoon hentai: **Toonily** and **Manhwa Club** (in **Madara** extension), **Manhwa18.net** (in **FMReader** extension), **ReadManhwa**
+- Casual browsing: **E-Hentai** and **NHentai**
+- Western comics: **AllPornComic** (in **Madara** extension)
+- Other popular NSFW sources: **Tsumino** and **Ninehentai**
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
 
-Some popular scanlator sources are **Jaimini's Box** (in **FoolSlide** extension), **MerakiScans**, **Hatigarm Scans** (in **Genkan** extension) etc.
+Some popular scanlator sources are  **MerakiScans**, **Hatigarm Scans** and **Leviatan Scans**. (in **Genkan** extension)
 
 Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
 
@@ -289,7 +289,7 @@ To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item=
 :::
 
 ::: tip
-Make sure you're on app version **0.9.2** or higher.
+Make sure you're on app version **<VersionTag downloadTag/>**.
 ::: aside
 Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::
