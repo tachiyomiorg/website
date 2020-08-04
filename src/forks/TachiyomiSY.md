@@ -26,7 +26,7 @@ This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few
 
 ## Features
 - Uses the new **Tachiyomi** UI
-- Custom manga page with all your needs
+- Enhanced pages for certain sources
 - Latest tab preview configurable to show up to five sources
 - Ability to enable and disable Hentai features
 - Automatic webtoon detection, allowing the reader to switch to webtoon mode automatically when viewing one
