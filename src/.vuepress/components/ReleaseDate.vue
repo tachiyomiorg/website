@@ -5,9 +5,6 @@
 </template>
 
 <script>
-import axios from "axios";
-import { GITHUB_LATEST_API } from "../constants";
-
 export default {
 	data() {
 		return {
@@ -17,9 +14,13 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
-		this.$data.releasePublishRelative = this.$moment(data.published_at).fromNow();
-		this.$data.releasePublishExact = this.$moment(data.published_at).toString();
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			this.$data.releasePublishRelative = this.$moment(data.published_at).fromNow();
+			this.$data.releasePublishExact = this.$moment(data.published_at).toString();
+		} catch (e) {
+			console.error(e);
+		}
 	},
 };
 </script>

@@ -12,9 +12,7 @@
 </template>
 
 <script>
-import axios from "axios";
 import marked from "marked";
-import { GITHUB_LATEST_API } from "../constants";
 
 export default {
 	data() {
@@ -24,8 +22,12 @@ export default {
 	},
 
 	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
-		this.$data.whatsNew = marked(data.body);
+		try {
+			const { data } = await this.$store.dispatch("getStableReleaseData");
+			this.$data.whatsNew = marked(data.body);
+		} catch (e) {
+			console.error(e);
+		}
 	},
 };
 </script>
