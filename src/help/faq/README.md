@@ -152,7 +152,7 @@ Most of the scanlator sources are part of **Multi-source** extensions, which con
 - Webtoon hentai: **Toonily** and **Manhwa Club** (in **Madara** extension), **Manhwa18.net** (in **FMReader** extension), **ReadManhwa**
 - Casual browsing: **E-Hentai** and **NHentai**
 - Western comics: **AllPornComic** (in **Madara** extension)
-- Other popular NSFW sources - **Tsumino** and **Ninehentai**
+- Other popular NSFW sources: **Tsumino** and **Ninehentai**
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
@@ -289,7 +289,7 @@ To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item=
 :::
 
 ::: tip
-Make sure you're on app version (**<VersionTag downloadTag/>**)
+Make sure you're on app version **<VersionTag downloadTag/>**.
 ::: aside
 Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::

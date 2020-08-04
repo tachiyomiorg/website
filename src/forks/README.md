@@ -57,10 +57,3 @@ Some features include:
 * Latest tab preview configurable up to five sources
 * Ability to enable and disable hentai specific features
 
-## <img class="headerLogo" :src="$withBase('/forks/TachiyomiEH/assets/logo.png')"> [TachiyomiEH](/forks/TachiyomiEH) <Badge text="Deprecated" type="error" vertical="middle" />
-::: aside-guide
-Maintained by [NerdNumber9](https://github.com/NerdNumber9)
-:::
-This fork adds features that enhances the hentai experience with integrations to popular sevices such as **E-Hentai**, **nHentai** and more.
-
-At the moment, it is **deprecated** as the developer does not have time to maintain it. Use [TachiyomiAZ](/forks/TachiyomiAZ) or [TachiyomiSY](/forks/TachiyomiSY) instead.
