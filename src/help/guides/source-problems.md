@@ -66,5 +66,5 @@ If **WebView** doesn't work for you, please update the **Android System WebView*
 :::
 
 <figure class="centered">
-	<img :src="$withBase('/help/guides/source-problems/assets/WebView-Open.jpg')">
+	<img :src="$withBase('/help/guides/source-problems/assets/WebView-Open.png')">
 </figure>
