@@ -289,7 +289,7 @@ To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item=
 :::
 
 ::: tip
-Make sure you're on app version (**<VersionTag downloadTag/>**) or higher.
+Make sure you're on app version (**<VersionTag downloadTag/>**)
 ::: aside
 Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
 :::

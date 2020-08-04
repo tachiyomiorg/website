@@ -28,7 +28,7 @@ Maintained by [Jays2Kings](https://github.com/Jays2Kings)
 This fork takes a new approach to the design of the base app along with several other enhancements.
 Some features include:
 * New Manga details screen and New Recents page
-* Android 10 Edge to Edge support
+* Dynamic Catagories
 * Automatic background based on manga page
 
 ## <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/assets/logo.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
