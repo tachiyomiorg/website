@@ -132,27 +132,7 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 Tachiyomi is not affiliated with or responsible for any source that is down, slow, or missing chapters.
 :::
 
-While Tachiyomi does not officially endorse or recommend any manga website, below listed are some popular sources reported by users. **MangaPark**, **MangaHub** and **MangaDex** are among the most popular in general, these are large sites that host content from scanlators. Description of some popular sources are listed below:
-
-- Largest manga library: **MangaPark**
-- All around good source: **MangaHub**
-- Fastest manga updates: **MangaDex** and [scanlator sources](/help/faq/#what-are-scanlator-sources)
-- Official Shonen Jump latest chapters: **MANGA Plus by SHUEISHA**
-- Webtoons and Manhwa/Manhua: **Webtoons**, **Toonily** (found in **Madara** extension), **Mangazuki.me** (in **Madara** extension), **IsekaiScan.com** (also in **Madara** extension)
-- Western comics: **Comicastle**, **ComicExtra** and **ComicPunch**  
-- Yaoi, Yuri, Shounen Ai and Shoujo Ai: **Mangahasu**, **Dynasty** (for Yuri), **Lily Manga** (for Yuri, in **Madara** extension) **MyReadingManga** (for Yaoi)
-- Other popular sources: **MangaFreak**, **MangaOwl**, **MangaHere**, **ReadManhwa**, **Manhwa18.net** (in **FMReader** extension)
-
-Most of the scanlator sources are part of **Multi-source** extensions, which contain multiple sources. For example, extensions like **Genkan**, **Madara**, **FoolSlide** and **ComiCake** contain sources which host directly from the scanlators' own websites.
-
-#### What are some recommended NSFW extensions?
-- Serialized manga: **Hentai2Read**
-- Fakku rips: **HentaiNexus**
-- Advanced search and filtering: **HBrowse**
-- Webtoon hentai: **Toonily** and **Manhwa Club** (in **Madara** extension), **Manhwa18.net** (in **FMReader** extension), **ReadManhwa**
-- Casual browsing: **E-Hentai** and **NHentai**
-- Western comics: **AllPornComic** (in **Madara** extension)
-- Other popular NSFW sources: **Tsumino** and **Ninehentai**
+Tachiyomi does not endorse or recommend any manga source, and there is no best extension. Rather, we encourage users to spend some time to try out a few sources themselves, and discover what sources work best for them. It's because what works well for somebody else, might not work well for you.
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
