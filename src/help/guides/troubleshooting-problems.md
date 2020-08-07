@@ -74,7 +74,7 @@ How to Open WebView:
 1. Press <Navigation item="webview"/>
 
 <figure class="centered">
-	<img :src="$withBase('/help/guides/source-problems/assets/WebView-Open.jpg')">
+	<img :src="$withBase('/help/guides/troubleshooting-problems/assets/WebView-Open.jpg')">
 </figure>
 
 Once done, press the Back Arrow at the top left to return.
