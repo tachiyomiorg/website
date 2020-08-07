@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting Problems
+title: Troubleshooting problems
 description: Encountered an issue with a source? Here are resources to help you troubleshoot it.
 lang: en-US
 ---
 
-# Troubleshooting Problems
+# Troubleshooting problems
 
 **This page is for when you encounter a problem with a source (built-in or extension).**
 
