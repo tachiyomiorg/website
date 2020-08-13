@@ -6,7 +6,7 @@ lang: en-US
 
 # Troubleshooting problems
 
-**This page is for when you encounter a problem with a source (built-in or extension).**
+**This page is for when you encounter a problem with a source extension.**
 
 ::: danger It can be accompanied by these error messages:
 + HTTP Error 5xx
@@ -32,16 +32,16 @@ lang: en-US
   * Clear Cookies
   * Clear Database
 * If your downloads are getting stuck, try deleting the queue and trying again.
-* Force close tachiyomi and reopen it.
+* Force close Tachiyomi and reopen it.
 
 ::: tip Bonus step
-Try the latest Preview version, your issue may have been fixed. Also check versions of your extensions.
+Try the latest Preview version, your issue may have been fixed.
 :::
 
-If any of these help go to [it only happens to me](#it-only-happens-to-me).
+If any of these help, go to [it only happens to me](#it-only-happens-to-me).
 If it's not just you, go to [everyone is having this problem](#everyone-is-having-this-problem).
 
-If none of these help, try asking in our [discord](https://discord.gg/tachiyomi)
+If none of these help, try asking in our [Discord Server](https://discord.gg/tachiyomi)
 
 ### It only happens to me
 You may be getting a **CAPTCHA**, may have been IP-banned, or some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that can be done about that. Some of them (like **CAPTCHA**) have to be manually solved, some are temporary (IP bans).
@@ -66,21 +66,22 @@ If the site is not reachable or having issues then all you can do is wait for th
 
 **Please note that WebView is not the same as using your browser.**
 
-You must solve the **CAPTCHA** in webview.
+You must solve the **CAPTCHA** in WebView.
 
 How to Open WebView:
-1. Go to <Navigation item="browse"/> on the bottom navbar.
-1. Press the source you'd like to access.
-1. Press <Navigation item="webview"/>
+1. Go to <Navigation item="browse"/> in the bottom navbar.
+2. Press the source you'd like to access.
+3. Press <Navigation item="webview"/>.
 
 <figure class="centered">
 	<img :src="$withBase('/help/guides/troubleshooting-problems/assets/WebView-Open.jpg')">
 </figure>
 
-Once done, press the Back Arrow at the top left to return.
+4. Complete CAPTCHA if one is present.
+5. Once done, press the Back Arrow at the top left to return.
 
 ::: tip
-If **WebView** doesn't work for you, please update the **Android System WebView** app through [Play Store](https://play.google.com/store/apps/details?id=com.google.android.WebView), then go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to *Android System WebView*. If *Android System WebView* doesn't work, set **Google Chrome** as default in **WebView Implementation**.
+If **WebView** doesn't work for you, please update the **Android System WebView** app through [Play Store](https://play.google.com/store/apps/details?id=com.google.android.WebView), then go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to *Android System WebView*. If *Android System WebView* doesn't work, try setting  **Google Chrome** as default in **WebView Implementation**.
 :::
 
 
