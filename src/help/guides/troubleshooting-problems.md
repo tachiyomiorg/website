@@ -44,7 +44,7 @@ If it's not just you, go to [everyone is having this problem](#everyone-is-havin
 If none of these help, try asking in our [Discord Server](https://discord.gg/tachiyomi)
 
 ### It only happens to me
-You may be getting a **CAPTCHA**, may have been IP-banned, or some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that can be done about that. Some of them (like **CAPTCHA**) have to be manually solved, some are temporary (IP bans).
+You may be getting a **CAPTCHA**, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that can be done about that. Some of them (like **CAPTCHA**) have to be manually solved, some are temporary (IP bans).
 
 **Workarounds that can lower chance of it happening again:**
 * Don't use downloads with the source.
@@ -55,14 +55,14 @@ All of the above are very imprecise and fuzzy rules, because each site has their
 :::
 
 ### Everyone is having this problem
-If the site is reachable and fully functional then there may be an issue with the extension or app 
+If the site is reachable and fully functional then there may be an issue with the extension or app.
 1. Have a look at open issues [for the app](https://github.com/inorichi/tachiyomi/issues) and/or [extensions](https://github.com/inorichi/tachiyomi-extensions/issues).
 1. It may have been fixed already, but not released yet, so look at closed issues ([app](https://github.com/inorichi/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) / [extensions](https://github.com/inorichi/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
 1. If you can't find the issue there, open a new one.
 
 If the site is not reachable or having issues then all you can do is wait for the site to become functional again.
 
-## Solving a CAPTCHA <Badge text="0.9.0 +" vertical="middle"/>
+## Solving a CAPTCHA
 
 **Please note that WebView is not the same as using your browser.**
 
