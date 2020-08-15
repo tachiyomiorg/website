@@ -12,20 +12,9 @@
 				<AlgoliaSearchBox :options="algolia" />
 
 				<div v-if="data.help && data.help.length" class="row help">
-					<div
-						v-for="(helpItem, index) in data.help"
-						:key="index"
-						class="column helpItem"
-					>
-						<a
-							v-if="helpItem.link"
-							:href="helpItem.link"
-							tabindex="1"
-						>
-							<div
-								class="card"
-								:class="'card__' + helpItem.title"
-							>
+					<div v-for="(helpItem, index) in data.help" :key="index" class="column helpItem">
+						<a v-if="helpItem.link" :href="helpItem.link" tabindex="1">
+							<div class="card" :class="'card__' + helpItem.title">
 								<header v-if="helpItem.faqApp">
 									<CellphoneAndroidIcon />
 									<h3>{{ helpItem.title }}</h3>
@@ -47,10 +36,7 @@
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.icon">
-									<MaterialIcon
-										:icon-name="helpItem.icon"
-										icon-only
-									/>
+									<MaterialIcon :icon-name="helpItem.icon" icon-only />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<p>{{ helpItem.description }}</p>
@@ -63,10 +49,7 @@
 							rel="noreferrer"
 							tabindex="1"
 						>
-							<div
-								class="card"
-								:class="'card__' + helpItem.title"
-							>
+							<div class="card" :class="'card__' + helpItem.title">
 								<header v-if="helpItem.discord">
 									<DiscordIcon />
 									<span>
@@ -89,10 +72,7 @@
 									</span>
 								</header>
 								<header v-else-if="helpItem.icon">
-									<MaterialIcon
-										:icon-name="helpItem.icon"
-										icon-only
-									/>
+									<MaterialIcon :icon-name="helpItem.icon" icon-only />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<p>{{ helpItem.description }}</p>
@@ -140,17 +120,11 @@ export default {
 		},
 
 		algolia() {
-			return (
-				this.$themeLocaleConfig.algolia ||
-				this.$site.themeConfig.algolia ||
-				{}
-			);
+			return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {};
 		},
 
 		isAlgoliaSearch() {
-			return (
-				this.algolia && this.algolia.apiKey && this.algolia.indexName
-			);
+			return this.algolia && this.algolia.apiKey && this.algolia.indexName;
 		},
 	},
 };

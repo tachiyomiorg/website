@@ -1,17 +1,9 @@
 <template>
 	<div class="downloadContainer">
-		<button
-			class="downloadForkButton"
-			:style="downloadForkStyle"
-			@click="downloadFork"
-		>
+		<button class="downloadForkButton" :style="downloadForkStyle" @click="downloadFork">
 			{{ downloadForkLabel }}
 		</button>
-		<button
-			class="githubForkButton"
-			:style="githubForkStyle"
-			:onclick="githubForkLink"
-		>
+		<button class="githubForkButton" :style="githubForkStyle" :onclick="githubForkLink">
 			{{ githubForkLabel }}
 		</button>
 	</div>
@@ -88,16 +80,8 @@ export default {
 					popup: "animated zoomOut faster",
 				},
 			});
-			window.location.assign(
-				this.$data.browserDownloadUrl || this.$props.downloadForkLink
-			);
-			window.ga(
-				"send",
-				"event",
-				"Action",
-				"Download",
-				this.$props.forkName
-			);
+			window.location.assign(this.$data.browserDownloadUrl || this.$props.downloadForkLink);
+			window.ga("send", "event", "Action", "Download", this.$props.forkName);
 		},
 	},
 };
