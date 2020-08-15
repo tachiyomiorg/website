@@ -1,6 +1,6 @@
 if ("serviceWorker" in navigator) {
 	console.log("Checking for service worker...");
-	navigator.serviceWorker.getRegistrations().then(function (registrations) {
+	navigator.serviceWorker.getRegistrations().then((registrations) => {
 		if (registrations.length < 1) {
 			console.log("Found no service worker!");
 			return;
