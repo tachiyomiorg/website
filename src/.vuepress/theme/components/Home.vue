@@ -16,6 +16,7 @@
 					v-if="data.buttonDownload"
 					class="action-button action-button__Download"
 					tabindex="0"
+					rel="next"
 					:href="data.buttonDownloadLink"
 				>
 					<CloudDownloadIcon />
@@ -25,6 +26,7 @@
 					v-if="data.buttonGuides"
 					class="action-button action-button__Guides"
 					tabindex="0"
+					rel="help"
 					:href="data.buttonGuidesLink"
 				>
 					<BookOpenVariantIcon />
@@ -40,9 +42,14 @@
 					<p>{{ feature.details }}</p>
 				</div>
 				<section class="feature__Animation">
-					<img class="feature__Animation--dark" :src="$withBase('/assets/' + feature.image + '-Dark.png')" />
+					<img
+						class="feature__Animation--dark"
+						alt="Feature image (Dark theme)"
+						:src="$withBase('/assets/' + feature.image + '-Dark.png')"
+					/>
 					<img
 						class="feature__Animation--light"
+						alt="Feature image (Light theme)"
 						:src="$withBase('/assets/' + feature.image + '-Light.png')"
 					/>
 				</section>
@@ -71,13 +78,6 @@ export default {
 		BookOpenVariantIcon,
 	},
 
-	data() {
-		return {
-			tagName: "",
-			browserDownloadUrl: "",
-		};
-	},
-
 	computed: {
 		data() {
 			return this.$page.frontmatter;
@@ -96,16 +96,6 @@ export default {
 				text: this.data.buttonGuides,
 			};
 		},
-	},
-
-	async mounted() {
-		try {
-			const { data } = await this.$store.dispatch("getStableReleaseData");
-			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
-		} catch (e) {
-			console.error(e);
-		}
 	},
 };
 </script>
@@ -128,7 +118,7 @@ export default {
 		h1, .description, .action
 			margin 1rem auto
 		.description
-			color lighten($textColor, 40%)
+			color $textColorLight
 			font-size 1.6rem
 			line-height 1.3
 			margin 1rem auto
@@ -186,9 +176,9 @@ export default {
 				font-weight 500
 				border-bottom none
 				padding-bottom 0
-				color lighten($textColor, 10%)
+				color $textColor
 			p
-				color lighten($textColor, 25%)
+				color $textColorLight
 		&__Animation
 			display block
 			position relative
@@ -213,7 +203,7 @@ export default {
 			padding 2.5rem
 			border-top 1px solid $borderColor
 			text-align center
-			color lighten($textColor, 25%)
+			color $textColorLight
 
 @keyframes fade
 	0%
