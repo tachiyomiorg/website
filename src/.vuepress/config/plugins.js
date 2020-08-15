@@ -60,7 +60,6 @@ module.exports = [
 		"vuepress-plugin-robots",
 		{
 			host: "https://tachiyomi.org",
-			disallowAll: false,
 			allowAll: true,
 			sitemap: "/sitemap.xml",
 		},
