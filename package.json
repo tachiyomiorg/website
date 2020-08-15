@@ -29,7 +29,8 @@
 		"sass-loader": "^9.0.3",
 		"vuepress": "^1.5.3",
 		"vuepress-plugin-clean-urls": "^1.1.1",
-		"vuepress-plugin-container": "^2.1.4"
+		"vuepress-plugin-container": "^2.1.4",
+		"vuepress-plugin-zooming": "^1.1.7"
 	},
 	"dependencies": {
 		"axios": "^0.19.2",
