@@ -65,4 +65,12 @@ module.exports = [
 			hostname: "https://tachiyomi.org",
 		},
 	],
+	[
+		"vuepress-plugin-robots",
+		{
+			host: "https://tachiyomi.org",
+			allowAll: true,
+			sitemap: "/sitemap.xml",
+		},
+	]
 ];

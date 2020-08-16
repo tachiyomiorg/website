@@ -45,6 +45,7 @@
 		"vue-material-design-icons": "^4.8.0",
 		"vue-moment": "^4.1.0",
 		"vue-sweetalert2": "^3.0.6",
+		"vuepress-plugin-robots": "^1.0.1",
 		"vuepress-plugin-sitemap": "^2.3.1",
 		"vuex": "^3.5.1"
 	}
