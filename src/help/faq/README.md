@@ -252,7 +252,7 @@ This error can be caused by a variety of reasons, all to do with storage.
 
 #### Why are there no results when searching?
 ::: aside-guide
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
+[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/md_noresults.mp4)
 :::
 
 If you're not getting any results when searching **MangaDex** then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.
