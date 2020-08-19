@@ -106,7 +106,7 @@ From the Browse Tab:
 1. Select the **Source** that you'd like to migrate *from*.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled **Migrate** at the bottom right.
-1. Choose which data you want to transfer over, and you're done.
+1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon iconName="done_all"/> at the top and you're done.
 	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon iconName="more_vert"/> → **Search manually**.
 :::
