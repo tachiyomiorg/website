@@ -51,7 +51,7 @@ All [Forks](/forks/) but Neko have source migration of multiple manga instead of
 [<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k.mp4)
 
 1. Tap <MaterialIcon iconName="settings"/> → <MaterialIcon iconName="explore"/> Sources → **Source migration**.
-1. Select the **Source** you'd like to migration *from* and select **All**.
+1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon iconName="done_all"/> at the top and you're done.
@@ -75,7 +75,7 @@ J2K also can migrate a single manga instead of multiple.
 
 1. Tap into <Navigation item="library"/>.
 1. Tap <MaterialIcon iconName="more_vert"/> → **Source migration**.
-1. Select the **Source** you'd like to migration *from* and select **All**.
+1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon iconName="done_all"/> at the top and you're done.
@@ -94,7 +94,7 @@ TachiyomiSY has two methods to source migrate.
 From the Library:
 1. Tap into <Navigation item="library"/>.
 1. Tap <MaterialIcon iconName="more_vert"/> → **Source migration**.
-1. Select the **Source** you'd like to migration *from* and select **All**.
+1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled **Migrate** at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon iconName="done_all"/> at the top and you're done.
@@ -104,7 +104,7 @@ From the Browse Tab:
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
 1. Press the **Migrate** tab at the top next to **Extensions**.
 1. Select the **Source** that you'd like to migrate *from*.
-1. Select the **Source** you'd like to migration *from* and select **All**.
+1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled **Migrate** at the bottom right.
 1. Choose which data you want to transfer over, and you're done.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon iconName="done_all"/> at the top and you're done.
