@@ -16,6 +16,7 @@
 					v-if="data.buttonDownload"
 					class="action-button action-button__Download"
 					tabindex="0"
+					rel="next"
 					:href="data.buttonDownloadLink"
 				>
 					<CloudDownloadIcon />
@@ -25,6 +26,7 @@
 					v-if="data.buttonGuides"
 					class="action-button action-button__Guides"
 					tabindex="0"
+					rel="help"
 					:href="data.buttonGuidesLink"
 				>
 					<BookOpenVariantIcon />
@@ -40,9 +42,14 @@
 					<p>{{ feature.details }}</p>
 				</div>
 				<section class="feature__Animation">
-					<img class="feature__Animation--dark" :src="$withBase('/assets/' + feature.image + '-Dark.png')" />
+					<img
+						class="feature__Animation--dark"
+						alt="Feature image (Dark theme)"
+						:src="$withBase('/assets/' + feature.image + '-Dark.png')"
+					/>
 					<img
 						class="feature__Animation--light"
+						alt="Feature image (Light theme)"
 						:src="$withBase('/assets/' + feature.image + '-Light.png')"
 					/>
 				</section>
@@ -60,10 +67,8 @@
 </template>
 
 <script>
-import axios from "axios";
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
-import { GITHUB_LATEST_API } from "../../constants";
 
 export default {
 	name: "Home",
@@ -71,13 +76,6 @@ export default {
 	components: {
 		CloudDownloadIcon,
 		BookOpenVariantIcon,
-	},
-
-	data() {
-		return {
-			tagName: "",
-			browserDownloadUrl: "",
-		};
 	},
 
 	computed: {
@@ -98,12 +96,6 @@ export default {
 				text: this.data.buttonGuides,
 			};
 		},
-	},
-
-	async mounted() {
-		const { data } = await axios.get(GITHUB_LATEST_API);
-		const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-		this.$data.browserDownloadUrl = apkAsset.browser_download_url;
 	},
 };
 </script>
@@ -126,7 +118,7 @@ export default {
 		h1, .description, .action
 			margin 1rem auto
 		.description
-			color lighten($textColor, 40%)
+			color $textColorLight
 			font-size 1.6rem
 			line-height 1.3
 			margin 1rem auto
@@ -184,9 +176,9 @@ export default {
 				font-weight 500
 				border-bottom none
 				padding-bottom 0
-				color lighten($textColor, 10%)
+				color $textColor
 			p
-				color lighten($textColor, 25%)
+				color $textColorLight
 		&__Animation
 			display block
 			position relative
@@ -211,7 +203,7 @@ export default {
 			padding 2.5rem
 			border-top 1px solid $borderColor
 			text-align center
-			color lighten($textColor, 25%)
+			color $textColorLight
 
 @keyframes fade
 	0%

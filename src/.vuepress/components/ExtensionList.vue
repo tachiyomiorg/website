@@ -9,30 +9,18 @@
 				class="anchor"
 			>
 				<div class="extension">
-					<a
-						:href="`#${extension.name.split(': ')[1]}`"
-						aria-hidden="true"
-						class="header-anchor"
-						>#
-					</a>
+					<a :href="`#${extension.name.split(': ')[1]}`" aria-hidden="true" class="header-anchor"># </a>
 					<img :src="iconUrl(extension.apk)" width="42" height="42" />
 					<div class="extension-text">
 						<div class="upper">
-							<span class="bold">{{
-								extension.name.split(": ")[1]
-							}}</span>
+							<span class="bold">{{ extension.name.split(": ")[1] }}</span>
 							<Badge :text="'v' + extension.version" />
 						</div>
 						<div class="down">
 							{{ extension.pkg }}
 						</div>
 					</div>
-					<a
-						:href="apkUrl(extension.apk)"
-						class="button"
-						title="Download APK"
-						download
-					>
+					<a :href="apkUrl(extension.apk)" class="button" title="Download APK" download>
 						<MaterialIcon icon-name="cloud_download" />
 						<span>Download</span>
 					</a>
@@ -59,9 +47,7 @@ export default {
 	async beforeMount() {
 		const { data } = await axios.get(GITHUB_EXTENSION_JSON);
 		const values = Object.values(groupBy(data, "lang"));
-		this.$data.extensions = sortBy(values, [
-			(g) => this.langName(g[0].lang),
-		]);
+		this.$data.extensions = sortBy(values, [(g) => this.langName(g[0].lang)]);
 	},
 
 	updated() {
@@ -71,16 +57,12 @@ export default {
 	},
 
 	methods: {
-		langName: (code) =>
-			code === "all"
-				? "All"
-				: `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`,
+		langName: (code) => (code === "all" ? "All" : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`),
 		iconUrl(pkg) {
 			const pkgName = pkg.substring(0, pkg.lastIndexOf("."));
 			return `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/icon/${pkgName}.png`;
 		},
-		apkUrl: (apk) =>
-			`https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`,
+		apkUrl: (apk) => `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`,
 	},
 };
 </script>

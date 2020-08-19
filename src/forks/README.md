@@ -28,7 +28,7 @@ Maintained by [Jays2Kings](https://github.com/Jays2Kings)
 This fork takes a new approach to the design of the base app along with several other enhancements.
 Some features include:
 * New Manga details screen and New Recents page
-* Dynamic Catagories
+* Dynamic Categories
 * Automatic background based on manga page
 
 ## <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/assets/logo.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
@@ -40,7 +40,7 @@ Maintained by [az4521](https://github.com/az4521)
 This hentai focused fork is based on **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the old hamburger menu style of navigation, compared to the other forks that have moved to the new bottom navigation style.
 
 Some features include:
-* Built in sources of many popular hentai sources with addtional features.
+* Built in sources of many popular hentai sources with additional features.
 * Manga recommendations from My Anime List and AniDB
 * Grid view corner rounding configuration
 
