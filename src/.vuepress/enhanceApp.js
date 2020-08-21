@@ -6,6 +6,7 @@ import "vue-material-design-icons/styles.css";
 import { VueAgile } from "vue-agile";
 import VueSweetalert2 from "vue-sweetalert2";
 import VueMoment from "vue-moment";
+import Element from "element-ui";
 
 import store from "./store";
 
@@ -19,5 +20,6 @@ export default ({
 	Vue.component("Agile", VueAgile);
 	Vue.use(VueSweetalert2);
 	Vue.use(VueMoment);
+	Vue.use(Element);
 	Vue.mixin({ store });
 };
