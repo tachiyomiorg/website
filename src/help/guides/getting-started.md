@@ -35,7 +35,7 @@ Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installatio
 [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-AddTo.webm)
 :::
 
-Now that you've installed the desired extension it will show in the **Sources** tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
+Now that you've installed the desired extension, it will show in the **Sources** tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
 
 To find and add manga, you can use either the **Latest** button and explore recently updated manga from that source or search for it.
 
