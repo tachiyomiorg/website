@@ -37,10 +37,29 @@ Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installatio
 
 Now that you've installed the desired extension it will show in the **Sources** tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
 
-To find and add manga, you can now use either the **Latest** button and explore recently updated manga from that source or you can tap on the source icon and search for it.
+To find and add manga, you can use either the **Latest** button and explore recently updated manga from that source or search for it.
 
+::: guide How to search for manga
+There are two ways to search for manga. You can search from a specific source, or you can do a Global search on the Sources page.
+
+You can search for manga globally across all your sources by using <Navigation item="search"/> located in the top-right of <Navigation item="browse"/> → **Sources**.
+
+If you're having trouble finding a specific manga:
+* Check your spelling and try again.
+* Some sources use either Japanese or English titles. (e.g. Boku no Hero Academia / My Hero Academia)
+* Some sources use different spellings (e.g. Bungo Stray Dogs / Bungou Stray Dogs)
+* Some sources use different wordings (e.g. 3-gatsu no Lion / Sangatsu no Lion)
+* The sources you have installed may not have the manga you are looking for.
+
+If you struggling to find a source for a specific manga:
+1. Look up the title on Google or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
+2. See if a website or scanlator group has the series, then check the [extensions & sources list](/extensions/).
+3. If the website/scanlator group is in the list, proceed to step 4. If it doesn't, skip to step 5.
+4. Download the corresponding extension, go to the source, then search for the manga name there.
+5. If you found the upload location and it is not in an extension, you can see if its [already been requested or request it yourself on GitHub](https://github.com/inorichi/tachiyomi-extensions/issues). If the website/scanlator group doesn't have an online manga reader, you can download the manga manually and set up [local manga](/help/guides/reading-local-manga).
+
+:::
 Now that you've presumably found manga that you want to add, click on it and then press the <Navigation item="bookmark"/> button, it should now appear in your <Navigation item="library"/> ready to be read!
 
-::: guide Global search
-You can search for manga globally across all your sources by using <Navigation item="search"/> located in the top-right of <Navigation item="browse"/> → **Sources**.
-:::
+
+
