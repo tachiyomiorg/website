@@ -191,7 +191,22 @@ font-feature-settings()
 .el-tag
 	margin-top 0.8rem !important
 
-// Fix icons
+// Fix Element-UI styling
 .el-divider__text,
 .el-step__icon
 	background-color $backgroundColor !important
+
+.el-collapse-item__header
+	background-color transparent !important
+	border-bottom 1px solid $borderColor
+	padding-left 10px
+	&.is-active
+		color $elementAccentColor
+	&:not(.is-active):hover
+		color $elementAccentColor
+
+.el-collapse-item__wrap
+	background-color transparent !important
+
+.el-collapse-item__content
+	padding-left 10px
