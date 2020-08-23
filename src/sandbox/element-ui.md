@@ -156,29 +156,6 @@ View more by pressing the headers for the specified item.
 </el-tooltip>
 ```
 
-### Vertical divider
-<template>
-  <div>
-    <span>Rain</span>
-    <el-divider direction="vertical"></el-divider>
-    <span>Home</span>
-    <el-divider direction="vertical"></el-divider>
-    <span>Grass</span>
-  </div>
-</template>
-
-```html
-<template>
-  <div>
-    <span>Rain</span>
-    <el-divider direction="vertical"></el-divider>
-    <span>Home</span>
-    <el-divider direction="vertical"></el-divider>
-    <span>Grass</span>
-  </div>
-</template>
-```
-
 ## [Steps](https://element.eleme.io/#/en-US/component/steps)
 
 ### Step bar with icon
