@@ -1,5 +1,6 @@
 module.exports = [
 	["@vuepress/back-to-top"],
+	["element-ui"],
 	[
 		"vuepress-plugin-zooming",
 		{

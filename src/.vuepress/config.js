@@ -43,6 +43,7 @@ module.exports = {
 			"/help/contribution": sideBarConfig.contribution,
 			"/extensions": sideBarConfig.extensions,
 			"/forks": sideBarConfig.forks,
+			"/sandbox": sideBarConfig.sandbox,
 		},
 	},
 	plugins: pluginsConfig,

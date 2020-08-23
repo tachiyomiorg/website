@@ -146,4 +146,14 @@ module.exports = {
 			path: "/extensions/",
 		},
 	],
+	sandbox: [
+		"/",
+		{
+			title: "Sandbox",
+			path: "/sandbox/",
+			collapsable: false,
+			sidebarDepth: 2,
+			children: ["/sandbox/element-ui"],
+		},
+	],
 };
