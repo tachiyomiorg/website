@@ -159,31 +159,43 @@ View more by pressing the headers for the specified item.
 ## [Steps](https://element.eleme.io/#/en-US/component/steps)
 
 ### Step bar with icon
-<el-steps :active="1">
-  <el-step title="Step 1" icon="el-icon-edit"></el-step>
-  <el-step title="Step 2" icon="el-icon-upload"></el-step>
-  <el-step title="Step 3" icon="el-icon-picture"></el-step>
-</el-steps>
+:::: el-steps :active="1"
+::: el-step title="Step 1" icon="el-icon-edit"
+:::
+::: el-step title="Step 2" icon="el-icon-upload"
+:::
+::: el-step title="Step 3" icon="el-icon-picture"
+:::
+::::
 
-```html
-<el-steps :active="1">
-  <el-step title="Step 1" icon="el-icon-edit"></el-step>
-  <el-step title="Step 2" icon="el-icon-upload"></el-step>
-  <el-step title="Step 3" icon="el-icon-picture"></el-step>
-</el-steps>
+```
+:::: el-steps :active="1"
+::: el-step title="Step 1" icon="el-icon-edit"
+:::
+::: el-step title="Step 2" icon="el-icon-upload"
+:::
+::: el-step title="Step 3" icon="el-icon-picture"
+:::
+::::
 ```
 
 ### Step bar with description
-<el-steps :active="2" finish-status="success">
-  <el-step title="Step 1" description="First you do this"></el-step>
-  <el-step title="Step 2" description="Then you do this"></el-step>
-  <el-step title="Step 3" description="Then you do that"></el-step>
-</el-steps>
+:::: el-steps :active="2" finish-status="success"
+::: el-step title="Step 1" description="First you do this"
+:::
+::: el-step title="Step 2" description="Then you do this"
+:::
+::: el-step title="Step 3" description="Then you do that"
+:::
+::::
 
-```html
-<el-steps :active="2" finish-status="success">
-  <el-step title="Step 1" description="Some description"></el-step>
-  <el-step title="Step 2" description="Some description"></el-step>
-  <el-step title="Step 3" description="Some description"></el-step>
-</el-steps>
+```
+:::: el-steps :active="2" finish-status="success"
+::: el-step title="Step 1" description="First you do this"
+:::
+::: el-step title="Step 2" description="Then you do this"
+:::
+::: el-step title="Step 3" description="Then you do that"
+:::
+::::
 ```
