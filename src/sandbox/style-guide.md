@@ -91,7 +91,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 > ::::::
 
 - **DO** use alerts for, well alerting:
-> <el-alert type="info" title="Disclaimer" description="Tachiyomi is not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
+> <el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
 > <el-alert type="warning" title="Warning!" description="This feature requires you to be on Android 7 or above." show-icon :closable="false"></el-alert>
 > <el-alert type="error" title="Attention!" description="Make sure you have created a backup before following these instructions!" show-icon :closable="false"></el-alert>
 > ::: aside
