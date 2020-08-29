@@ -318,3 +318,13 @@ You will have to open the manga entry in WebView and verify your age, as Webtoon
 
 #### Why are some Japscan chapters not loading?
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
+
+### KissManga and MangaRock
+:::: el-collapse
+::: el-collapse-item title="Where is KissManga?"
+**KissManga** went under permanently in August 2020, we will not add something that doesn't exist back..
+:::
+::: el-collapse-item title="Where is MangaRock"
+**MangaRock** converted from a piracy app and went legit, they are now called **INKR** but is nowhere near what they were before.
+:::
+::::
