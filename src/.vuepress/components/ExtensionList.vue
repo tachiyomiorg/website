@@ -21,7 +21,7 @@
 						</div>
 					</div>
 					<a :href="apkUrl(extension.apk)" class="button" title="Download APK" download>
-						<MaterialIcon icon-name="cloud_download" />
+						<MaterialIcon icon="cloud_download" />
 						<span>Download</span>
 					</a>
 				</div>

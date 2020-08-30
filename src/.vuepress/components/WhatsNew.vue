@@ -1,6 +1,6 @@
 <template>
 	<div class="guide whatsNew">
-		<p class="title">What's new</p>
+		<p class="title"><MaterialIcon icon="new_releases" /> What's new</p>
 		<div v-html="whatsNew"></div>
 		<div class="custom-block aside">
 			<p>

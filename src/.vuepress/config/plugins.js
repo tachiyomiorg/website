@@ -1,6 +1,44 @@
 module.exports = [
+	[
+		"vuepress-plugin-sitemap",
+		{
+			hostname: "https://tachiyomi.org",
+		},
+	],
+	[
+		"vuepress-plugin-robots",
+		{
+			host: "https://tachiyomi.org",
+			allowAll: true,
+			sitemap: "/sitemap.xml",
+		},
+	],
 	["@vuepress/back-to-top"],
-	["element-ui"],
+	[
+		"@vuepress/google-analytics",
+		{
+			ga: "UA-148212082-1",
+		},
+	],
+	[
+		"@vuepress/active-header-links",
+		{
+			sidebarLinkSelector: ".sidebar-link",
+			headerAnchorSelector: ".header-anchor",
+		},
+	],
+	[
+		"@vuepress/pwa",
+		{
+			serviceWorker: false,
+		},
+	],
+	[
+		"vuepress-plugin-clean-urls",
+		{
+			normalSuffix: "/",
+		},
+	],
 	[
 		"vuepress-plugin-zooming",
 		{
@@ -11,25 +49,7 @@ module.exports = [
 			},
 		},
 	],
-	[
-		"clean-urls",
-		{
-			normalSuffix: "/",
-		},
-	],
-	[
-		"@vuepress/pwa",
-		{
-			serviceWorker: true,
-			updatePopup: true,
-		},
-	],
-	[
-		"@vuepress/google-analytics",
-		{
-			ga: "UA-148212082-1",
-		},
-	],
+	["vuepress-plugin-element-ui"],
 	[
 		"vuepress-plugin-container",
 		{
@@ -60,18 +80,4 @@ module.exports = [
 			defaultTitle: "",
 		},
 	],
-	[
-		"vuepress-plugin-sitemap",
-		{
-			hostname: "https://tachiyomi.org",
-		},
-	],
-	[
-		"vuepress-plugin-robots",
-		{
-			host: "https://tachiyomi.org",
-			allowAll: true,
-			sitemap: "/sitemap.xml",
-		},
-	]
 ];
