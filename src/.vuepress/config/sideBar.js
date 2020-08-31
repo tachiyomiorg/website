@@ -153,7 +153,7 @@ module.exports = {
 			path: "/sandbox/",
 			collapsable: false,
 			sidebarDepth: 2,
-			children: ["/sandbox/element-ui"],
+			children: ["/sandbox/style-guide", "/sandbox/element-ui"],
 		},
 	],
 };

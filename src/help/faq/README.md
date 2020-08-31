@@ -113,7 +113,7 @@ While there will never be a toggle between the two UI versions, you can continue
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
 #### I see manga images in my phone gallery, what gives!?
-Tachiyomi by default adds a `.nomedia` file to prevent this from happening but sometimes it doesn't work or something went wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your download folder. 
+Tachiyomi by default adds a `.nomedia` file to prevent this from happening but sometimes it doesn't work or something went wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your download folder.
 
 #### I lost everything, what now?
 To avoid data loss in the future, you can use the automatic backup feature.
@@ -127,12 +127,9 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 ### General
 
 #### What are some recommended extensions?
-
-::: warning DISCLAIMER
-Tachiyomi is not affiliated with or responsible for any source that is down, slow, or missing chapters.
-:::
-
 Tachiyomi does not endorse or recommend any manga source, and there is no best extension. Rather, we encourage users to spend some time to try out a few sources themselves, and discover what sources work best for them. It's because what works well for somebody else, might not work well for you.
+
+<el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
@@ -163,28 +160,24 @@ In some cases your phone might have some issues downloading the extensions, in t
 To install just download the file for the extension you want and then install it, like how you installed **Tachiyomi**.
 
 #### How do I allow third-party installations?
-When installing your first extension and are prompted that your phone isn't allowed to install unknown apps from that source, simply follow the prompt to allow it.
+::::: el-tabs
+:::: el-tab-pane label="Android 8.0 and higher"
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for Android 8.0 and newer video guide](/help/faq/assets/UnknownSources-Android10.webm)
+:::
+When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
-<Carousel name="carousel-unknown-source">
-<CarouselItem>
-<figure class="centered">
-	<h4>Android 8.0 and higher</h4>
-	<p>In newer versions of Android you need to enable "Install unknown apps" by a per-app basis.</p>
-	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android10.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/help/faq/assets/UnknownSources-Android10.webm')" type="video/webm" />
-	</video>
-</figure>
-</CarouselItem>
-<CarouselItem>
-<figure class="centered">
-	<h4>Android 7.1 and lower</h4>
-	<p>In older versions of Android you only need to enable "Unknown sources" globally.</p>
-	<video muted loop controls :poster="$withBase('/help/faq/assets/UnknownSources-Android7.png')" height="500" controlslist="nodownload noremoteplayback" preload="none" loading="lazy" crossorigin="use-credentials">
-		<source :src="$withBase('/help/faq/assets/UnknownSources-Android7.webm')" type="video/webm" />
-	</video>
-</figure>
-</CarouselItem>
-</Carousel>
+In *newer* versions of **Android** you need to enable **Install unknown apps** by a per-app basis.
+::::
+:::: el-tab-pane label="Android 7.1 and lower"
+::: aside-guide
+[<MaterialIcon icon-name="videocam"/> Click for Android 7.1 and older video guide](/help/faq/assets/UnknownSources-Android7.webm)
+:::
+When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
+
+In *older* versions of **Android** you only need to enable **Unknown sources** globally.
+::::
+:::::
 
 ::: aside
 If you need more help regarding this, read [this](https://www.theandroidsoul.com/how-to-allow-apps-installation-from-unknown-sources-on-android-9-pie/)
@@ -262,25 +255,22 @@ This error can be caused by a variety of reasons, all to do with storage.
 [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
 :::
 
-If you're not getting any results when searching MangaDex then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.
+If you're not getting any results when searching **MangaDex** then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.
 
 ::: guide
 To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
 :::
 
-::: tip
-Make sure you're on app version **<VersionTag downloadTag/>**.
-::: aside
-Make sure you stay up to date by reading [this](/help/faq/#how-do-i-enable-automatic-updates)
-:::
-
 #### Why is MangaDex slow?
 If pages are loading slowly or not at all, try:
-— Making sure you have the latest version of the extension.
-— Checking if MangaDex is either down, or is having the same issues.
-— Trying to Clear database under More › Settings › Advanced.
-— Trying to Clear chapter cache under More › Settings › Advanced.
-— Going to More › Extensions › MangaDex › Image Server and then selecting a different server location.
+- Making sure you have the *latest* version of the extension.
+- Checking if **MangaDex** is either down, or is having the same issues.
+- Trying to **Clear database** under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>.
+- Trying to **Clear chapter cache** under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>.
+- Going to <Navigation item="browse"/> → <Navigation item="extensions"/> → **MangaDex** → **Image Server** and then selecting a *different* server location.
+
+<el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
+
 #### Is there an alternate searching method?
 **MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is by opening the manga in your browser and looking at the URL.
 
@@ -289,7 +279,7 @@ An example search would be **`id:23427`** which would return results for [Candy 
 :::
 
 #### How do I deal with duplicate chapters in MangaDex?
-This can be solved by opening MangaDex in <Navigation item="webview"/> and block the scanlator group whose chapter you don't want to see.
+This can be solved by opening **MangaDex** in <Navigation item="webview"/> and block the scanlator group whose chapter you don't want to see.
 
 #### How do I fix chapters from Mangaplus being broken?
 Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the manga that uses **MANGA Plus** on **MangaDex** onto the **MANGA Plus** source.
@@ -303,10 +293,10 @@ Read about source migration [here](/help/guides/source-migration/)
 #### How do I deal with duplicate chapters in MangaPark?
 To solve this issue, follow the below steps.
 
-1. Go to <Navigation item="browse"/> → **Extensions**.
-1. Click on **MangaPark** extension and then `Chapter List Source`.
-1. Choose an option like `Smart list` or `Prioritize source`.
-1. Go back to MangaPark's chapter list and refresh it.
+1. Go to <Navigation item="browse"/> → <Navigation item="extensions"/>.
+1. Click on **MangaPark** extension and then **Chapter List Source**.
+1. Choose an option like **Smart list** or **Prioritize source**.
+1. Go back to **MangaPark**'s chapter list and refresh it.
 
 ### Mangabox
 
@@ -319,7 +309,7 @@ This means that the manga is dead and needs to be migrated from **Mangakakalot**
 #### How do I fix the `Image could not be decoded` error?
 Open the manga in WebView and wait for the image to comes up. If the image isn't loading you will need to look elsewhere to read that particular manga, as some Mangabox sources, such as Mangakakalot, are now blocking entire regions.
 
-### Webtoons
+### Webtoons.com
 
 #### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
@@ -329,11 +319,12 @@ You will have to open the manga entry in WebView and verify your age, as Webtoon
 #### Why are some Japscan chapters not loading?
 Japscan has some manga that are scrambled using a different algorithm than others on their site. If you encounter a manga being scrambled, use a different source to read.
 
-### KissManga
-
-#### Why is the KissManga extension missing?
-The **KissManga** extension has been removed, as they have been blocking 3rd party apps & adblockers. Please migrate KissManga favorites in your library to a different source and uninstall the extension.
-
-::: aside
-Read more about source migration [here](/help/guides/source-migration/#source-migration)
+### KissManga and MangaRock
+:::: el-collapse
+::: el-collapse-item title="Where is KissManga?"
+**KissManga** went under permanently in August 2020, we will not add something that doesn't exist back..
 :::
+::: el-collapse-item title="Where is MangaRock"
+**MangaRock** converted from a piracy app and went legit, they are now called **INKR** but is nowhere near what they were before.
+:::
+::::
