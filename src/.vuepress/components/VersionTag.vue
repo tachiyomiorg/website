@@ -1,6 +1,6 @@
 <template>
 	<span v-if="fileName" class="fileNameContainer" title="File name">
-		<MaterialIcon class="fileNameIcon" icon-name="get_app" />
+		<MaterialIcon class="fileNameIcon" icon="get_app" />
 		<span class="fileName">tachiyomi-v{{ this.$data.tagName }}.apk</span>
 		<slot />
 	</span>

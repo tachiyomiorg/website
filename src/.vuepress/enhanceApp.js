@@ -1,4 +1,3 @@
-import "./styles/fonts.styl";
 import "./styles/animate.css";
 import "./styles/sweetalert2.css";
 import "vue-material-design-icons/styles.css";

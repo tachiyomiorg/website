@@ -1,6 +1,7 @@
 {
 	"name": "tachiyomi-website",
-	"version": "0.0.0",
+	"version": "1.0.0",
+	"description": "Official website for the Tachiyomi app.",
 	"scripts": {
 		"build": "npm run lint && vuepress build src",
 		"lint": "eslint --fix src/.vuepress/**/*.{js,vue} --no-ignore",
@@ -10,45 +11,49 @@
 		"type": "git",
 		"url": "git+https://github.com/tachiyomiorg/website.git"
 	},
+	"keywords": [
+		"vuepress"
+	],
+	"license": "MPL-2.0",
 	"private": true,
+	"bugs": {
+		"url": "https://github.com/tachiyomiorg/website/issues"
+	},
+	"homepage": "https://github.com/tachiyomiorg/website#readme",
 	"devDependencies": {
+		"vuepress": "^1.5.4",
 		"@vuepress/plugin-back-to-top": "^1.5.4",
 		"@vuepress/plugin-google-analytics": "^1.5.4",
+		"@vuepress/plugin-active-header-links": "^1.5.4",
 		"@vuepress/plugin-pwa": "^1.5.4",
-		"eslint": "^7.7.0",
-		"eslint-config-airbnb": "^18.2.0",
-		"eslint-config-airbnb-base": "^14.2.0",
-		"eslint-config-prettier": "^6.11.0",
-		"eslint-config-vuepress": "^2.2.0",
-		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-markdown": "^1.0.2",
-		"eslint-plugin-prettier": "^3.1.4",
-		"eslint-plugin-vue": "^6.2.2",
-		"node-sass": "^4.14.1",
-		"prettier": "^2.1.1",
-		"sass-loader": "^9.0.3",
-		"vuepress": "^1.5.4",
 		"vuepress-plugin-clean-urls": "^1.1.1",
 		"vuepress-plugin-container": "^2.1.4",
+		"vuepress-plugin-zooming": "^1.1.7",
 		"vuepress-plugin-element-ui": "^1.1.0",
-		"vuepress-plugin-zooming": "^1.1.7"
+		"eslint-config-vuepress": "^2.2.0",
+		"eslint-plugin-markdown": "^1.0.2",
+		"eslint-plugin-vue": "^7.0.0-beta.3",
+		"eslint": "^7.7.0",
+		"prettier": "^2.0.5",
+		"sass-loader": "^10.0.1",
+		"node-sass": "^4.14.1"
 	},
 	"dependencies": {
-		"axios": "^0.19.2",
-		"element-ui": "^2.13.2",
+		"vuepress-plugin-sitemap": "^2.3.1",
+		"vuepress-plugin-robots": "^1.0.1",
+		"vue": "^2.6.12",
+		"vuex": "^3.5.1",
+		"vue-agile": "^1.1.3",
+		"vue-moment": "^4.1.0",
+		"vue-sweetalert2": "^3.0.8",
+		"core-js": "^2.6.4",
+		"axios": "^0.20.0",
+		"marked": "^1.1.1",
 		"iso-639-1": "^2.1.4",
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
-		"marked": "^1.1.1",
-		"material-design-icons": "^3.0.1",
-		"sweetalert2": "^9.17.1",
-		"vue": "^2.6.12",
-		"vue-agile": "^1.1.3",
-		"vue-material-design-icons": "^4.9.0",
-		"vue-moment": "^4.1.0",
-		"vue-sweetalert2": "^3.0.8",
-		"vuepress-plugin-robots": "^1.0.1",
-		"vuepress-plugin-sitemap": "^2.3.1",
-		"vuex": "^3.5.1"
+		"element-ui": "^2.13.2",
+		"material-design-icons-iconfont": "^6.0.1",
+		"vue-material-design-icons": "^4.9.0"
 	}
 }

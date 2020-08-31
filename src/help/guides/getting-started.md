@@ -8,15 +8,13 @@ lang: en-US
 
 ## Installation
 
-<DownloadButtons downloadStableTag="Tachiyomi" downloadPreviewTag="Tachiyomi Preview"/>
-
-You can download the latest version of **Tachiyomi** by clicking either of the above buttons.
+You can download the latest version of **Tachiyomi** by going to our [download](../../download/README.md) page.
 When you've completed the download, open the <VersionTag fileName/> file and proceed with installing it.
 
 ## Installing an extension
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.webm)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.webm)
 :::
 
 Now that **Tachiyomi** is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the **Extensions** tab.
@@ -32,7 +30,7 @@ Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installatio
 ## Adding manga to your library
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-AddTo.webm)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-AddTo.webm)
 :::
 
 Now that you've installed the desired extension it will show in the **Sources** tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.

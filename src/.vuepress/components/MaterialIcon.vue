@@ -1,14 +1,14 @@
 <template>
-	<i v-if="iconOnly" :class="name" class="material-icons">{{ iconName }}</i>
+	<i v-if="iconOnly" :class="name" class="material-icons">{{ icon }}</i>
 	<div v-else :class="name" class="material-holder">
-		<i class="material-icons">{{ iconName }}</i>
+		<i class="material-icons">{{ icon }}</i>
 	</div>
 </template>
 
 <script>
 /**
  * For material icon references use https://material.io/resources/icons/
- * Code example: <MaterialIcon iconName="android" />
+ * Code example: <MaterialIcon icon="android" />
  */
 export default {
 	props: {
@@ -20,13 +20,18 @@ export default {
 			type: String,
 			default: "",
 		},
-		iconName: {
+		icon: {
 			type: String,
 			required: true,
 		},
 	},
 };
 </script>
+
+<style lang="scss">
+$material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";
+@import "~material-design-icons-iconfont/src/material-design-icons";
+</style>
 
 <style lang="stylus">
 .material-holder
@@ -37,19 +42,7 @@ export default {
 	display inline
 
 .material-icons
-	font-family "Material Icons"
 	font-size 1.35em
-	font-style normal
 	position relative
 	top 0.2rem
-	font-weight normal
-	line-height 1
-	letter-spacing normal
-	text-transform none
-	display inline-block
-	white-space nowrap
-	word-wrap normal
-	direction ltr
-	font-feature-settings "liga"
-	-webkit-font-smoothing antialiased
 </style>
