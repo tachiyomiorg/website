@@ -24,6 +24,10 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 
 - **DO NOT** forget to at least check for basic grammar issues, this includes not having a capital letter in your first word and forgetting commas/periods.
 
+- **DO PREFERABLY**, in relation to the above, use resources that can aid with grammar and general structure:
+> - [Grammarly](https://app.grammarly.com/) - Grammarly's writing app makes sure everything you type is not only correct, but also clear and easy to read.
+> - [Hemmingway App](http://www.hemingwayapp.com/) - Hemingway App makes your writing bold and clear.
+
 - **DO** preferably try to build the enviroment and test it locally first before submitting your PR, ask for help with this if you need it.
 
 - **DO** use guide containers for quickly showing how to achieve something:
@@ -34,6 +38,14 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 - **DO** include video guides as a text under the header:
 > ::: aside-guide
 > [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
+> :::
+
+- **DO** try to be consistent with video recording by following these guidelines:
+> ::: guide Video recording guidelines
+> When making videos, it's highly preferable that you use [Android Studio's](https://developer.android.com/studio) emulator for a consistent result each time. The emulator settings > for the front-page images is a **Pixel 3 XL** running **Android 10**.
+> - Record your videos as **MP4** or **WEBM**, whichever works the best for you.
+> - Use Androids built-in **Demo Mode**, it can be found in the Developer settings.
+> - Record with a clean workspace and don't be too hasty or too slow with actions.
 > :::
 
 - **DO** use arrow symbols in instructions, instead of using greater-than symbols:
@@ -90,7 +102,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 > :::::
 > ::::::
 
-- **DO** use alerts to give the user a heads up
+- **DO** use alerts to give the user a heads up:
 > <el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
 > <el-alert type="warning" title="Warning!" description="This feature requires you to be on Android 7 or above." show-icon :closable="false"></el-alert>
 > <el-alert type="error" title="Attention!" description="Make sure you have created a backup before following these instructions!" show-icon :closable="false"></el-alert>
