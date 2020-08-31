@@ -31,14 +31,6 @@ export default {
 <style lang="scss">
 $material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";
 @import "~material-design-icons-iconfont/src/material-design-icons";
-
-.my-face {
-	@include material-icon("face");
-}
-
-.my-face:before {
-	content: material-icons-content("face");
-}
 </style>
 
 <style lang="stylus">
