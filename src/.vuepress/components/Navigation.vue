@@ -80,6 +80,7 @@ export default {
 				/* Misc */
 				install: { text: "INSTALL", class:"ext-installation" },
 				reorder: { text: "Reorder", icon:"reorder" },
+				overflow: { text: "More", icon:"more_vert" },
 			}[this.item];
 		},
 	},

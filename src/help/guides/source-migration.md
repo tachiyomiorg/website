@@ -10,25 +10,26 @@ Migration is the process of moving manga from one source to another while keepin
 
 There are two ways to migrate, you can do it by it by manga or by source.
 
-::: guide Stable/Preview Migration 
+:::: guide Stable/Preview Migration 
+::: aside-guide
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_preview.mp4)
-
+:::
 By **Manga**:
 1. Tap into a **Manga** you would like to migrate.
-1. Go to <MaterialIcon icon="more_vert"/> and tap **Migrate**.
+1. Go to <Navigation item="overflow"/> and tap <Navigation item="migrate" />..
 	> **Tachiyomi** will do a global search of all the sources you have installed and enabled.
 1. Select the **Source** that you'd like to migrate *to* by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
 
 By **Source**:
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
-1. Press the **Migrate** tab at the top next to **Extensions**.
+1. Press the <Navigation item="migrate" /> tab at the top next to <Navigation item="extensions" />.
 1. Select the **Source** that you'd like to migrate *from*.
 1. Tap the **Manga** you'd like to migrate *from* the **Source**.
 	> **Tachiyomi** will do a global search of all the sources you have installed and enabled.
 1. Select the **Source** you'd like to migrate *to* by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
-:::
+::::
 
 
 
@@ -47,135 +48,69 @@ Make sure you have a **[backup](/help/guides/creating-backups/)** in case anythi
 
 All [Forks](/forks/) but Neko have source migration of multiple manga instead of one by one that stable/preview have.
 
-::: guide TachiyomiJ2K Migration
+:::: guide TachiyomiJ2K Migration
+::: aside-guide
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k.mp4)
-
+:::
 1. Tap <MaterialIcon icon="settings"/> → <MaterialIcon icon="explore"/> Sources → **Source migration**.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
+	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/> → **Search manually**.
 
 J2K also can migrate a single manga instead of multiple.
-
+::: aside-guide
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k_single.mp4)
-
+:::
 1. Tap into a **Manga** in your Library.
-1. Tap <MaterialIcon icon="more_vert"/> → **Migrate manga**.
+1. Tap <Navigation item="overflow"/> → **Migrate manga**.
 1. Select the **Sources** you'd like to search and migrate *to* and hit the arrow at the bottom right.
 1. Wait until it is found and select <MaterialIcon icon="done"/> in the top right and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**
-:::
+	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/> → **Search manually**
+::::
 
 
 
-::: guide TachiyomiAZ Migration
+:::: guide TachiyomiAZ Migration
+::: aside-guide
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_az.mp4)
-
+:::
 1. Tap into <Navigation item="library"/>.
-1. Tap <MaterialIcon icon="more_vert"/> → **Source migration**.
+1. Tap <Navigation item="overflow"/>  → **Source migration**.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
-:::
+	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/> → **Search manually**.
+::::
+
+
+
+:::: guide TachiyomiSY Migration
 ::: aside-guide
-
-:::
-
-
-::: guide TachiyomiSY Migration
 TachiyomiSY has two methods to source migrate.
-
+:::
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_sy.mp4)
 
 From the Library:
 1. Tap into <Navigation item="library"/>.
-1. Tap <MaterialIcon icon="more_vert"/> → **Source migration**.
+1. Tap <Navigation item="overflow"/> → **Source migration**.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
-1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled **Migrate** at the bottom right.
+1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <Navigation item="migrate" />. at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
+	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/>  → **Search manually**.
 
 From the Browse Tab:
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
-1. Press the **Migrate** tab at the top next to **Extensions**.
+1. Press the <Navigation item="migrate" /> tab at the top next to <Navigation item="extensions" />.
 1. Select the **Source** that you'd like to migrate *from*.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
-1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled **Migrate** at the bottom right.
+1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <Navigation item="migrate" />. at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
-:::
+	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/>  → **Search manually**.
+::::
 
 
-# Fork's Source Migrations 
-
-All [Forks](/forks/) but Neko have source migration of multiple manga instead of one by one that stable/preview have.
-
-::: guide TachiyomiJ2K Migration
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k.mp4)
-
-1. Tap <MaterialIcon icon="settings"/> → <MaterialIcon icon="explore"/> Sources → **Source migration**.
-1. Select the **Source** you'd like to migrate *from* and select **All**.
-1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
-1. Choose which data you want to transfer over.
-1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
-
-J2K also can migrate a single manga instead of multiple.
-
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k_single.mp4)
-
-1. Tap into a **Manga** in your Library.
-1. Tap <MaterialIcon icon="more_vert"/> → **Migrate manga**.
-1. Select the **Sources** you'd like to search and migrate *to* and hit the arrow at the bottom right.
-1. Wait until it is found and select <MaterialIcon icon="done"/> in the top right and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**
-:::
-
-
-
-::: guide TachiyomiAZ Migration
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_az.mp4)
-
-1. Tap into <Navigation item="library"/>.
-1. Tap <MaterialIcon icon="more_vert"/> → **Source migration**.
-1. Select the **Source** you'd like to migrate *from* and select **All**.
-1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
-1. Choose which data you want to transfer over.
-1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
-:::
-::: aside-guide
-
-:::
-
-
-::: guide TachiyomiSY Migration
-TachiyomiSY has two methods to source migrate.
-
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_sy.mp4)
-
-From the Library:
-1. Tap into <Navigation item="library"/>.
-1. Tap <MaterialIcon icon="more_vert"/> → **Source migration**.
-1. Select the **Source** you'd like to migrate *from* and select **All**.
-1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled **Migrate** at the bottom right.
-1. Choose which data you want to transfer over.
-1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
-
-From the Browse Tab:
-1. Tap into <Navigation item="browse"/> on the bottom navbar.
-1. Press the **Migrate** tab at the top next to **Extensions**.
-1. Select the **Source** that you'd like to migrate *from*.
-1. Select the **Source** you'd like to migrate *from* and select **All**.
-1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled **Migrate** at the bottom right.
-1. Choose which data you want to transfer over.
-1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <MaterialIcon icon="more_vert"/> → **Search manually**.
-:::
