@@ -11,7 +11,7 @@ Migration is the process of moving manga from one source to another while keepin
 There are two ways to migrate, you can do it by it by manga or by source.
 
 ::: guide Stable/Preview Migration 
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_preview.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_preview.mp4)
 
 By **Manga**:
 1. Tap into a **Manga** you would like to migrate.
@@ -48,7 +48,7 @@ Make sure you have a **[backup](/help/guides/creating-backups/)** in case anythi
 All [Forks](/forks/) but Neko have source migration of multiple manga instead of one by one that stable/preview have.
 
 ::: guide TachiyomiJ2K Migration
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k.mp4)
 
 1. Tap <MaterialIcon iconName="settings"/> → <MaterialIcon iconName="explore"/> Sources → **Source migration**.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
@@ -59,7 +59,7 @@ All [Forks](/forks/) but Neko have source migration of multiple manga instead of
 
 J2K also can migrate a single manga instead of multiple.
 
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k_single.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k_single.mp4)
 
 1. Tap into a **Manga** in your Library.
 1. Tap <MaterialIcon iconName="more_vert"/> → **Migrate manga**.
@@ -71,7 +71,7 @@ J2K also can migrate a single manga instead of multiple.
 
 
 ::: guide TachiyomiAZ Migration
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_az.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_az.mp4)
 
 1. Tap into <Navigation item="library"/>.
 1. Tap <MaterialIcon iconName="more_vert"/> → **Source migration**.
@@ -89,7 +89,7 @@ J2K also can migrate a single manga instead of multiple.
 ::: guide TachiyomiSY Migration
 TachiyomiSY has two methods to source migrate.
 
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_sy.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_sy.mp4)
 
 From the Library:
 1. Tap into <Navigation item="library"/>.
@@ -117,7 +117,7 @@ From the Browse Tab:
 All [Forks](/forks/) but Neko have source migration of multiple manga instead of one by one that stable/preview have.
 
 ::: guide TachiyomiJ2K Migration
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k.mp4)
 
 1. Tap <MaterialIcon iconName="settings"/> → <MaterialIcon iconName="explore"/> Sources → **Source migration**.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
@@ -128,7 +128,7 @@ All [Forks](/forks/) but Neko have source migration of multiple manga instead of
 
 J2K also can migrate a single manga instead of multiple.
 
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k_single.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_j2k_single.mp4)
 
 1. Tap into a **Manga** in your Library.
 1. Tap <MaterialIcon iconName="more_vert"/> → **Migrate manga**.
@@ -140,7 +140,7 @@ J2K also can migrate a single manga instead of multiple.
 
 
 ::: guide TachiyomiAZ Migration
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_az.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_az.mp4)
 
 1. Tap into <Navigation item="library"/>.
 1. Tap <MaterialIcon iconName="more_vert"/> → **Source migration**.
@@ -158,7 +158,7 @@ J2K also can migrate a single manga instead of multiple.
 ::: guide TachiyomiSY Migration
 TachiyomiSY has two methods to source migrate.
 
-[<MaterialIcon iconName="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_sy.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/migrate_sy.mp4)
 
 From the Library:
 1. Tap into <Navigation item="library"/>.
