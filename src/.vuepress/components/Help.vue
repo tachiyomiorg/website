@@ -36,7 +36,7 @@
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.icon">
-									<MaterialIcon :icon-name="helpItem.icon" icon-only />
+									<MaterialIcon :icon="helpItem.icon" icon-only />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<p>{{ helpItem.description }}</p>
@@ -72,7 +72,7 @@
 									</span>
 								</header>
 								<header v-else-if="helpItem.icon">
-									<MaterialIcon :icon-name="helpItem.icon" icon-only />
+									<MaterialIcon :icon="helpItem.icon" icon-only />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<p>{{ helpItem.description }}</p>

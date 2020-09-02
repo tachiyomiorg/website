@@ -1,5 +1,7 @@
 <div>
-	<span align="center"><img src="./src/.vuepress/public/icons/logo.png" height="100px"></span>
+	<p align="center">
+		<img src="./src/.vuepress/public/icons/logo.png" height="100px">
+	</p>
 	<h1 align="center">Tachiyomi Website</h1>
 	<p align="center">
 		<a href="https://discord.gg/tachiyomi">
@@ -11,6 +13,9 @@
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+You can find a project style guide [here](https://tachiyomi.org/sandbox/style-guide/).</br>
+If you got any questions, [join our Discord server](https://discord.gg/tachiyomi).
 
 ## Repositories
 

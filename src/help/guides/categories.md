@@ -52,7 +52,7 @@ To delete a category, follow the steps below.
 ## Add manga to category
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/categories/assets/Category-AddTo.webm)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/categories/assets/Category-AddTo.webm)
 :::
 
 To add manga to a category, follow the steps below.
@@ -67,7 +67,7 @@ To add manga to a category, follow the steps below.
 ## Remove manga from category
 
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for video guide](/help/guides/categories/assets/Category-RemoveFrom.webm)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/categories/assets/Category-RemoveFrom.webm)
 :::
 
 To remove manga from a category, follow the steps below.

@@ -1,13 +1,13 @@
 <template>
 	<span v-if="nav.link" class="app-navigation" :class="nav.class" title="App navigation">
 		<a class="app-link" :href="nav.link + entry">
-			<MaterialIcon v-if="nav.icon" class="app-icon" :icon-name="nav.icon" />
+			<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
 			<span class="app-label">{{ nav.text }}</span>
 			<slot />
 		</a>
 	</span>
 	<span v-else class="app-navigation" :class="nav.class" title="App navigation">
-		<MaterialIcon v-if="nav.icon" class="app-icon" :icon-name="nav.icon" />
+		<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
 		<span class="app-label">{{ nav.text }}</span>
 		<slot />
 	</span>
