@@ -35,11 +35,11 @@ By **Source**:
 ::: tip
 You can choose which sources are searched in global by enabling pinned sources <Navigation item="more"/> → <Navigation item="settings"/> →  <Navigation item="browse"/>.
 
-Pin sources using the push pin icon next to them.
+Pin sources using <MaterialIcon icon="push_pin" /> next to the source name.
 :::
 
 ::: warning
-Make sure you have a **[backup](/help/guides/creating-backups/)**, if anything goes wrong.
+Make sure you have a **[backup](/help/guides/creating-backups/)** in case anything goes wrong.
 :::
 
 
