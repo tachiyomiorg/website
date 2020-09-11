@@ -14,7 +14,7 @@ Migration is the process of moving manga between sources without losing progress
 
 :::: guide Migrating from Manga
 ::: aside-guide
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview-Manga.mp4)
 :::
 
 1. Tap into a **Manga** you would like to migrate.
@@ -26,7 +26,7 @@ Migration is the process of moving manga between sources without losing progress
 
 :::: guide Migrating from Source
 ::: aside-guide
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview-Source.mp4)
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
@@ -91,7 +91,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating from Library
 ::: aside-guide
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY-Library.mp4)
 :::
 
 1. Tap into <Navigation item="library"/>.
@@ -105,7 +105,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating from Source
 ::: aside-guide
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY-Source.mp4)
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
