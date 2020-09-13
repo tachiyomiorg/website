@@ -15,7 +15,7 @@
 <script>
 import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BugIcon from "vue-material-design-icons/Bug.vue";
-import { GITHUB_LATEST_RELEASE, KANADE_LATEST } from "../constants";
+import { GITHUB_LATEST_RELEASE, GITHUB_PREVIEW_RELEASE } from "../constants";
 
 export default {
 	components: {
@@ -27,6 +27,8 @@ export default {
 		return {
 			tagName: "",
 			browserDownloadUrl: "",
+			previewTagName: "",
+			previewbrowserDownloadUrl: "",
 		};
 	},
 
@@ -36,6 +38,14 @@ export default {
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
 			this.$data.tagName = data.tag_name.slice(1);
 			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
+		} catch (e) {
+			console.error(e);
+		}
+		try {
+			const { data } = await this.$store.dispatch("getPreviewReleaseData");
+			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			this.$data.previewTagName = data.tag_name.slice(1);
+			this.$data.previewbrowserDownloadUrl = apkAsset.browser_download_url;
 		} catch (e) {
 			console.error(e);
 		}
@@ -95,7 +105,7 @@ export default {
 							popup: "animate__animated animate__faster animate__zoomOut",
 						},
 					});
-					window.location.assign(KANADE_LATEST);
+					window.location.assign(this.$data.previewbrowserDownloadUrl || GITHUB_PREVIEW_RELEASE);
 					window.ga("send", "event", "Action", "Download", "Tachiyomi Preview");
 				}
 			});
