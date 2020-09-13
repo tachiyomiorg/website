@@ -11,11 +11,9 @@ const worker = (function() {
 	// Everyone else wait for promise
 	function _getDataFromGithub(name, url) {
 		if (networkMap.has(name)) {
-			console.log("Returning call: " + name)
 			return networkMap.get(name)
 		}
 
-		console.log("Calling server: " + name)
 		const call = axios.get(url)
 		.then((value) => {
 			networkMap.delete(name)
@@ -38,82 +36,63 @@ const worker = (function() {
 
 	const now = new Date().getTime();
 
-	// Makes sure there is only one mutation for preview
+	// Makes sure there is only one mutation
 	// Everyone else wait for promise
-	function _getPreviewData(store, name) {
+	function _getData(store, name, type, url) {
 		if (dataMap.has(name)) {
-			console.log("Returning promise for preview")
 			return dataMap.get(name)
 		}
 
-		console.log("Creating promise for preview")
-		const data = _getDataFromGithub(name, GITHUB_PREVIEW_API).then(({ data }) => {
+		const promise = _getDataFromGithub(name, url).then(({ data }) => {
 			const object = {
 				updated: now,
 				data,
 			};
-			store.commit("setPreviewReleaseData", object);
+			store.commit({
+				type,
+				object
+			});
 			dataMap.delete(name)
-			return Promise.resolve(store.state.preview)
+			return Promise.resolve()
 		}).catch((reason) => {
 			const object = {
 				updated: null,
 				data: null,
 			};
-			store.commit("setPreviewReleaseData", object);
+			store.commit({
+				type,
+				object
+			});
 			dataMap.delete(name)
 			return Promise.reject(reason)
 		})
 
 		dataMap.set(
 			name,
-			data
+			promise
 		)
 
-		return data
-	}
-
-	// Makes sure there is only one mutation for stable
-	// Everyone else wait for promise
-	function _getStableData(store, name) {
-		if (dataMap.has(name)) {
-			console.log("Returning promise for stable")
-			return dataMap.get(name)
-		}
-
-		console.log("Creating promise for stable")
-		const data = _getDataFromGithub(name, GITHUB_LATEST_API).then(({ data }) => {
-			const object = {
-				updated: now,
-				data,
-			};
-			store.commit("setStableReleaseData", object);
-			dataMap.delete(name)
-			return Promise.resolve(store.state.stable)
-		}).catch((reason) => {
-			const object = {
-				updated: null,
-				data: null,
-			};
-			store.commit("setStableReleaseData", object);
-			dataMap.delete(name)
-			return Promise.reject(reason)
-		})
-
-		dataMap.set(
-			name,
-			data
-		)
-
-		return data
+		return promise
 	}
 
 	return {
 		getPreviewData(store, name) {
-			return _getPreviewData(store, name)
+			return new Promise((resolve, reject) => {
+				_getData(store, name, "setPreviewReleaseData", GITHUB_PREVIEW_API).then(() => {
+					resolve(store.state.preview)
+				}).catch((reason) => {
+					reject(reason)
+				})
+			})
 		},
 		getStableData(store, name) {
-			return _getStableData(store, name)
+			return new Promise((resolve, reject) => {
+				_getData(store, name, "setStableReleaseData", GITHUB_LATEST_API).then(() => {
+					resolve(store.state.stable)
+				}).catch((reason) => {
+					reject(reason)
+				})
+			})
 		}
 	}
 })()
@@ -132,17 +111,17 @@ export default new Vuex.Store({
 		},
 	},
 	mutations: {
-		setStableReleaseData(state, object) {
+		setStableReleaseData(state, { object }) {
 			// eslint-disable-next-line no-param-reassign
 			state.stable = object;
 		},
-		setPreviewReleaseData(state, object) {
+		setPreviewReleaseData(state, { object }) {
 			// eslint-disable-next-line no-param-reassign
 			state.preview = object;
 		},
 	},
 	actions: {
-		getStableReleaseData({ commit }) {
+		getStableReleaseData() {
 			const { updated } = this.state.stable;
 			const now = new Date().getTime();
 
@@ -152,7 +131,7 @@ export default new Vuex.Store({
 
 			return worker.getStableData(this, "stable")
 		},
-		getPreviewReleaseData({ commit }) {
+		getPreviewReleaseData() {
 			const { updated } = this.state.preview;
 			const now = new Date().getTime();
 
