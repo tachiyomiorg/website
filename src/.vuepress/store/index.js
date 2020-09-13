@@ -4,35 +4,33 @@ import axios from "axios";
 
 import { GITHUB_LATEST_API, GITHUB_PREVIEW_API } from "../constants";
 
-const worker = (function() {
-	let networkMap = new Map()
+const worker = (function () {
+	const networkMap = new Map();
 
-	// Makes sure there is only one network call to API 
+	// Makes sure there is only one network call to API
 	// Everyone else wait for promise
 	function _getDataFromGithub(name, url) {
 		if (networkMap.has(name)) {
-			return networkMap.get(name)
+			return networkMap.get(name);
 		}
 
-		const call = axios.get(url)
-		.then((value) => {
-			networkMap.delete(name)
-			return Promise.resolve(value);
-		})
-		.catch((reason) => {
-			networkMap.delete(name)
-			return Promise.reject(reason);
-		})
+		const call = axios
+			.get(url)
+			.then((value) => {
+				networkMap.delete(name);
+				return Promise.resolve(value);
+			})
+			.catch((reason) => {
+				networkMap.delete(name);
+				return Promise.reject(reason);
+			});
 
-		networkMap.set(
-			name,
-			call
-		)
+		networkMap.set(name, call);
 
-		return call 
+		return call;
 	}
 
-	let dataMap = new Map()
+	const dataMap = new Map();
 
 	const now = new Date().getTime();
 
@@ -40,62 +38,65 @@ const worker = (function() {
 	// Everyone else wait for promise
 	function _getData(store, name, type, url) {
 		if (dataMap.has(name)) {
-			return dataMap.get(name)
+			return dataMap.get(name);
 		}
 
-		const promise = _getDataFromGithub(name, url).then(({ data }) => {
-			const object = {
-				updated: now,
-				data,
-			};
-			store.commit({
-				type,
-				object
+		const promise = _getDataFromGithub(name, url)
+			.then(({ data }) => {
+				const object = {
+					updated: now,
+					data,
+				};
+				store.commit({
+					type,
+					object,
+				});
+				dataMap.delete(name);
+				return Promise.resolve();
+			})
+			.catch((reason) => {
+				const object = {
+					updated: null,
+					data: null,
+				};
+				store.commit({
+					type,
+					object,
+				});
+				dataMap.delete(name);
+				return Promise.reject(reason);
 			});
-			dataMap.delete(name)
-			return Promise.resolve()
-		}).catch((reason) => {
-			const object = {
-				updated: null,
-				data: null,
-			};
-			store.commit({
-				type,
-				object
-			});
-			dataMap.delete(name)
-			return Promise.reject(reason)
-		})
 
-		dataMap.set(
-			name,
-			promise
-		)
+		dataMap.set(name, promise);
 
-		return promise
+		return promise;
 	}
 
 	return {
 		getPreviewData(store, name) {
 			return new Promise((resolve, reject) => {
-				_getData(store, name, "setPreviewReleaseData", GITHUB_PREVIEW_API).then(() => {
-					resolve(store.state.preview)
-				}).catch((reason) => {
-					reject(reason)
-				})
-			})
+				_getData(store, name, "setPreviewReleaseData", GITHUB_PREVIEW_API)
+					.then(() => {
+						resolve(store.state.preview);
+					})
+					.catch((reason) => {
+						reject(reason);
+					});
+			});
 		},
 		getStableData(store, name) {
 			return new Promise((resolve, reject) => {
-				_getData(store, name, "setStableReleaseData", GITHUB_LATEST_API).then(() => {
-					resolve(store.state.stable)
-				}).catch((reason) => {
-					reject(reason)
-				})
-			})
-		}
-	}
-})()
+				_getData(store, name, "setStableReleaseData", GITHUB_LATEST_API)
+					.then(() => {
+						resolve(store.state.stable);
+					})
+					.catch((reason) => {
+						reject(reason);
+					});
+			});
+		},
+	};
+})();
 
 Vue.use(Vuex);
 
@@ -129,7 +130,7 @@ export default new Vuex.Store({
 				return Promise.resolve(this.state.stable);
 			}
 
-			return worker.getStableData(this, "stable")
+			return worker.getStableData(this, "stable");
 		},
 		getPreviewReleaseData() {
 			const { updated } = this.state.preview;
@@ -139,7 +140,7 @@ export default new Vuex.Store({
 				return Promise.resolve(this.state.preview);
 			}
 
-			return worker.getPreviewData(this, "preview")
+			return worker.getPreviewData(this, "preview");
 		},
 	},
 });

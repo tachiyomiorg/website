@@ -28,7 +28,7 @@ export default {
 			tagName: "",
 			browserDownloadUrl: "",
 			previewTagName: "",
-			previewbrowserDownloadUrl: ""
+			previewbrowserDownloadUrl: "",
 		};
 	},
 
