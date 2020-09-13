@@ -80,6 +80,7 @@ export default {
 				/* Misc */
 				install: { text: "INSTALL", class:"ext-installation" },
 				reorder: { text: "Reorder", icon:"reorder" },
+				overflow: { text: "Overflow", icon:"more_vert" },
 			}[this.item];
 		},
 	},
@@ -88,12 +89,13 @@ export default {
 
 <style lang="stylus">
 .app-navigation
-	white-space nowrap
+	white-space pre
+	font-size 0
 	.app-icon,
 	.app-label
 		color $accentColorSecondary
 		font-weight 500
-		font-size 1em
+		font-size 1rem
 	.app-icon
 		vertical-align top
 	.app-link
@@ -106,11 +108,12 @@ export default {
 	.app-image
 		max-height 1.5em
 		vertical-align sub
-	&.ext-installation
-		border 1px solid $accentColorSecondary
-		padding 0px 0px 2px 4px
-		margin-right 5px
-		border-radius 4px
 	&:hover
 		cursor default
+
+blockquote
+	.app-navigation
+		.app-icon,
+		.app-label
+			color inherit
 </style>

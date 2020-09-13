@@ -44,6 +44,8 @@ body,
 	padding 0.1rem 1.5rem
 	.title
 		font-weight bold
+	.aside-guide
+		margin-top -1rem
 
 // Expander container
 .expander
@@ -212,3 +214,33 @@ body,
 
 .el-collapse-item__content
 	padding-left 10px
+
+// Fix Links in Alerts
+.el-alert
+	.el-link
+		flex-direction inherit
+		align-items inherit
+		justify-content inherit
+		vertical-align inherit
+		position inherit
+		text-decoration inherit
+		font-size inherit
+		outline inherit
+		padding inherit
+		&:hover
+			color inherit !important
+
+.el-alert
+	&--warning
+		.el-link--inner
+			color #845a1b
+			font-size inherit
+
+// Tweak Element-UI Colors
+.el-alert--warning
+	&.is-light
+		.el-alert
+			&__icon
+			&__title
+			&__description
+				color #ce8b27
