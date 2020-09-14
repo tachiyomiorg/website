@@ -40,7 +40,7 @@ export default {
 
 	data() {
 		return {
-			tagName: "0.0.0",
+			tagName: "0.00.0",
 			previewTagName: "r0000",
 		};
 	},

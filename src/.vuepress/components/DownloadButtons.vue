@@ -20,7 +20,7 @@ import { GITHUB_STABLE_RELEASE, GITHUB_PREVIEW_RELEASE } from "../constants";
 export default {
 	data() {
 		return {
-			tagName: "0.0.0",
+			tagName: "0.00.0",
 			browserDownloadUrl: "",
 			previewTagName: "r0000",
 			previewbrowserDownloadUrl: "",
