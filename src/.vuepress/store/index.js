@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-import { GITHUB_LATEST_API, GITHUB_PREVIEW_API } from "../constants";
+import { GITHUB_STABLE_API, GITHUB_PREVIEW_API } from "../constants";
 
 const worker = (function () {
 	const networkMap = new Map();
@@ -73,22 +73,22 @@ const worker = (function () {
 	}
 
 	return {
-		getPreviewData(store, name) {
+		getStableData(store, name) {
 			return new Promise((resolve, reject) => {
-				_getData(store, name, "setPreviewReleaseData", GITHUB_PREVIEW_API)
+				_getData(store, name, "setStableReleaseData", GITHUB_STABLE_API)
 					.then(() => {
-						resolve(store.state.preview);
+						resolve(store.state.stable);
 					})
 					.catch((reason) => {
 						reject(reason);
 					});
 			});
 		},
-		getStableData(store, name) {
+		getPreviewData(store, name) {
 			return new Promise((resolve, reject) => {
-				_getData(store, name, "setStableReleaseData", GITHUB_LATEST_API)
+				_getData(store, name, "setPreviewReleaseData", GITHUB_PREVIEW_API)
 					.then(() => {
-						resolve(store.state.stable);
+						resolve(store.state.preview);
 					})
 					.catch((reason) => {
 						reject(reason);

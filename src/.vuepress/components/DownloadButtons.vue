@@ -1,33 +1,28 @@
 <template>
 	<div id="DownloadButtons">
-		<div class="downloadContainer">
-			<button id="downloadStable" @click="downloadStable" @keyup.enter="downloadStable">
-				<CloudDownloadIcon /> Stable
-			</button>
-			<button id="downloadPreview" @click="downloadPreview" @keyup.enter="downloadPreview">
-				<BugIcon /> Preview
-			</button>
-		</div>
+		<el-button type="success" icon="el-icon-download" @click="downloadStable" @keyup.enter="downloadStable"
+			><span class="spacing">Stable</span><br /><span class="downloadTag">{{
+				this.$data.tagName
+			}}</span></el-button
+		>
+		<el-button type="warning" icon="el-icon-cpu" @click="downloadPreview" @keyup.enter="downloadPreview"
+			><span class="spacing">Preview</span><br /><span class="downloadTag">{{
+				this.$data.previewTagName
+			}}</span></el-button
+		>
 		<span class="versionNotice">Requires <strong>Android 5.0</strong> or higher.</span>
 	</div>
 </template>
 
 <script>
-import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
-import BugIcon from "vue-material-design-icons/Bug.vue";
-import { GITHUB_LATEST_RELEASE, GITHUB_PREVIEW_RELEASE } from "../constants";
+import { GITHUB_STABLE_RELEASE, GITHUB_PREVIEW_RELEASE } from "../constants";
 
 export default {
-	components: {
-		CloudDownloadIcon,
-		BugIcon,
-	},
-
 	data() {
 		return {
-			tagName: "",
+			tagName: "0.00.0",
 			browserDownloadUrl: "",
-			previewTagName: "",
+			previewTagName: "r0000",
 			previewbrowserDownloadUrl: "",
 		};
 	},
@@ -44,7 +39,7 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getPreviewReleaseData");
 			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
-			this.$data.previewTagName = data.tag_name.slice(1);
+			this.$data.previewTagName = data.tag_name;
 			this.$data.previewbrowserDownloadUrl = apkAsset.browser_download_url;
 		} catch (e) {
 			console.error(e);
@@ -68,7 +63,7 @@ export default {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
 			});
-			window.location.assign(this.$data.browserDownloadUrl || GITHUB_LATEST_RELEASE);
+			window.location.assign(this.$data.browserDownloadUrl || GITHUB_STABLE_RELEASE);
 			window.ga("send", "event", "Action", "Download", "Tachiyomi");
 		},
 		downloadPreview() {
@@ -117,40 +112,40 @@ export default {
 <style lang="stylus">
 #DownloadButtons
 	text-align center
-	button
-		display inline-block
-		margin 0.5em 0
-		padding 1em 1em
-		width 9em
-		background $accentColor
-		border none
-		border-radius 4px
-		color #fff
-		font-family inherit
-		font-size 1em
-		font-weight 400
-		letter-spacing 0.02em
-		line-height 1
-		transition background-color .1s ease
-		text-decoration none
-		text-transform uppercase
-		cursor pointer
-		&:hover
-			background darken($accentColor, 10%)
+	.el-button
+		font-size 1.125rem
+		margin 0.1em !important
+		padding 12px 32px
+		width 10em
 		&:focus
 			box-shadow 0 0 30px #b1aeae52, 0 0 0 1px #fff, 0 0 0 3px rgba(50, 100, 150, 0.4)
 			outline none
-	.downloadContainer
-		user-select none
-		#download
-			&Stable
-				background-color $accentColor
-				&:hover
-					background-color lighten($accentColor, 10%)
-			&Preview
-				background-color $accentColorSecondary
-				&:hover
-					background-color lighten($accentColorSecondary, 10%)
+		&--success
+			background-color $accentColor
+			border-color $accentColor
+			&:hover
+				background-color lighten($accentColor, 10%)
+				border-color lighten($accentColor, 10%)
+			.downloadTag
+				color lighten($accentColor, 75%)
+		&--warning
+			background-color $accentColorSecondary
+			border-color $accentColorSecondary
+			&:hover
+				background-color lighten($accentColorSecondary, 10%)
+				border-color  lighten($accentColorSecondary, 10%)
+			.downloadTag
+				color lighten($accentColorSecondary, 75%)
+		.spacing
+			margin-right 16px
+		.downloadTag
+			font-size 0.7em
+			margin-top 2px
 	.versionNotice
+		display block
 		font-size 0.9rem
+	@media (max-width: $MQMobile)
+		.el-button
+			width 8.2em
+			padding 12px 28px
 </style>
