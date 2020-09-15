@@ -1,9 +1,19 @@
 <template>
 	<div v-if="stable" class="buildTime">
-		<span :title="stablePublishExact">{{ stablePublishRelative }}</span>
+		<el-tooltip placement="top" open-delay="250">
+			<div slot="content">
+				<strong>{{ stablePublishExact }}</strong>
+			</div>
+			<span>{{ stablePublishRelative }}</span>
+		</el-tooltip>
 	</div>
 	<div v-else-if="preview" class="buildTime">
-		<span :title="previewPublishExact">{{ previewPublishRelative }}</span>
+		<el-tooltip placement="bottom-end" open-delay="250">
+			<div slot="content">
+				<strong>{{ previewPublishExact }}</strong>
+			</div>
+			<span>{{ previewPublishRelative }}</span>
+		</el-tooltip>
 	</div>
 	<span v-else>You need to specify props.</span>
 </template>
