@@ -1,8 +1,18 @@
 module.exports = [
 	[
-		"vuepress-plugin-sitemap",
+		"@mr-hope/vuepress-plugin-sitemap",
 		{
 			hostname: "https://tachiyomi.org",
+		},
+	],
+	[
+		"@mr-hope/vuepress-plugin-last-update",
+		{
+			transformer: (timestamp, lang) => {
+				const moment = require("moment");
+				moment.locale(lang);
+				return moment(timestamp).fromNow();
+			},
 		},
 	],
 	[

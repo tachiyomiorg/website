@@ -39,7 +39,8 @@
 		"node-sass": "^4.14.1"
 	},
 	"dependencies": {
-		"vuepress-plugin-sitemap": "^2.3.1",
+		"@mr-hope/vuepress-plugin-sitemap": "^0.7.2",
+		"@mr-hope/vuepress-plugin-last-update": "^0.7.2",
 		"vuepress-plugin-robots": "^1.0.1",
 		"vue": "^2.6.12",
 		"vuex": "^3.5.1",
