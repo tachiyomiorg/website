@@ -47,13 +47,13 @@ You can do this by going to <Navigation item="more"/> → <Navigation item="sett
 
 ## Forks information
 
-#### <img src="/forks/Neko/assets/logo.png" width="30" height="30" /> [Neko](/forks/Neko)
+### <img class="forkIconBefore" src="/forks/Neko/assets/logo.png" width="24" height="24" /> [Neko](/forks/Neko)
 
 This fork can only restore **MangaDex** entries in a backup. If there are entries from other sources that are a part of that backup then they will not transfer.
 
-#### <img src="/forks/TachiyomiAZ/assets/logo.png" width="30" height="30" /> [TachiyomiAZ](/forks/TachiyomiAZ), <img src="/forks/TachiyomiSY/assets/logo.png" width="30" height="30" />  [TachiyomiSY](/forks/TachiyomiSY), and <img src="/forks/TachiyomiEH/assets/logo.png" width="30" height="30" />  [TachiyomiEH](/forks/TachiyomiEH)
+### <img class="forkIconBefore" src="/forks/TachiyomiAZ/assets/logo.png" width="24" height="24" /> [TachiyomiAZ](/forks/TachiyomiAZ), <img class="forkIconBefore" src="/forks/TachiyomiSY/assets/logo.png" width="24" height="24" />  [TachiyomiSY](/forks/TachiyomiSY) and <img class="forkIconBefore" src="/forks/TachiyomiEH/assets/logo.png" width="24" height="24" />  [TachiyomiEH](/forks/TachiyomiEH)
 
-These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for TachiyomiAZ and TachiyomiEH while TachiyomiSY only has **E-Hentai**.
+These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for <Navigation item="tachiyomiaz" /> and <Navigation item="tachiyomieh" /> while <Navigation item="tachiyomisy" /> only has **E-Hentai**.
 
 
 Titles from said extensions will not be restored when restoring a backup made by these forks to standard Tachiyomi. It is possible to restore titles to these forks, but it is not possible to back them up out of these forks.

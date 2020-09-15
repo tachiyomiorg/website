@@ -1,14 +1,14 @@
 <template>
-	<span v-if="nav.link" class="app-navigation" :class="nav.class" title="App navigation">
+	<span v-if="nav.link" id="NavigationVue" class="app-navigation" :class="nav.class" title="App navigation">
 		<a class="app-link" :href="nav.link + entry">
 			<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
-			<span class="app-label">{{ nav.text }}</span>
+			<span class="app-label" :class="nav.internalClass">{{ nav.text }}</span>
 			<slot />
 		</a>
 	</span>
-	<span v-else class="app-navigation" :class="nav.class" title="App navigation">
+	<span v-else id="NavigationVue" class="app-navigation" :class="nav.class" title="App navigation">
 		<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
-		<span class="app-label">{{ nav.text }}</span>
+		<span class="app-label" :class="nav.internalClass">{{ nav.text }}</span>
 		<slot />
 	</span>
 </template>
@@ -80,6 +80,12 @@ export default {
 				/* Misc */
 				install: { text: "INSTALL", class:"ext-installation" },
 				reorder: { text: "Reorder", icon:"reorder" },
+				/* Forks */
+				neko: { text: "Neko", internalClass:"nav-tachiyomi_neko"},
+				tachiyomij2k: { text: "TachiyomiJ2K", link:"/forks/Neko"},
+				tachiyomiaz: { text: "TachiyomiAZ", link:"/forks/TachiyomiAZ"},
+				tachiyomisy: { text: "TachiyomiSY", link:"/forks/TachiyomiSY"},
+				tachiyomieh: { text: "TachiyomiEH", link:"/forks/TachiyomiEH"},
 			}[this.item];
 		},
 	},
@@ -87,30 +93,33 @@ export default {
 </script>
 
 <style lang="stylus">
-.app-navigation
-	white-space nowrap
-	.app-icon,
-	.app-label
-		color $accentColorSecondary
-		font-weight 500
-		font-size 1em
-	.app-icon
-		vertical-align top
-	.app-link
+#NavigationVue
+	&.app-navigation
+		white-space pre
+		font-size 0
+		.app-icon,
+		.app-label
+			color $accentColorSecondary
+			font-weight 500
+			font-size 1rem
+		.app-icon
+			vertical-align top
+			padding-right 0.25rem
+		.app-link
+			&:hover
+				cursor pointer
+				text-decoration none !important
+				.app-icon,
+				.app-label
+					color $accentColor
+		.app-image
+			max-height 1.5em
+			vertical-align sub
+		&.ext-installation
+			border 1px solid $accentColorSecondary
+			padding 0px 0px 2px 4px
+			margin-right 5px
+			border-radius 4px
 		&:hover
-			cursor pointer
-			text-decoration none !important
-			.app-icon,
-			.app-label
-				color $accentColor
-	.app-image
-		max-height 1.5em
-		vertical-align sub
-	&.ext-installation
-		border 1px solid $accentColorSecondary
-		padding 0px 0px 2px 4px
-		margin-right 5px
-		border-radius 4px
-	&:hover
-		cursor default
+			cursor default
 </style>
