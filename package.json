@@ -26,16 +26,16 @@
 		"@vuepress/plugin-google-analytics": "^1.5.4",
 		"@vuepress/plugin-active-header-links": "^1.5.4",
 		"@vuepress/plugin-pwa": "^1.5.4",
-		"vuepress-plugin-clean-urls": "^1.1.1",
-		"vuepress-plugin-container": "^2.1.4",
-		"vuepress-plugin-zooming": "^1.1.7",
+		"vuepress-plugin-clean-urls": "^1.1.2",
+		"vuepress-plugin-container": "^2.1.5",
+		"vuepress-plugin-zooming": "^1.1.8",
 		"vuepress-plugin-element-ui": "^1.1.0",
 		"eslint-config-vuepress": "^2.2.0",
 		"eslint-plugin-markdown": "^1.0.2",
 		"eslint-plugin-vue": "^7.0.0-beta.3",
 		"eslint": "^7.9.0",
 		"prettier": "^2.0.5",
-		"sass-loader": "^10.0.1",
+		"sass-loader": "^10.0.2",
 		"node-sass": "^4.14.1"
 	},
 	"dependencies": {
@@ -53,7 +53,7 @@
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
 		"element-ui": "^2.13.2",
-		"material-design-icons-iconfont": "^6.0.1",
+		"material-design-icons-iconfont": "^6.1.0",
 		"vue-material-design-icons": "^4.9.0"
 	}
 }
