@@ -1,6 +1,6 @@
 <template>
 	<div v-if="stable" class="buildTime">
-		<el-tooltip placement="top" open-delay="250" effect="light">
+		<el-tooltip placement="top" open-delay="250">
 			<div slot="content">
 				<strong>{{ stablePublishExact }}</strong>
 			</div>
@@ -8,7 +8,7 @@
 		</el-tooltip>
 	</div>
 	<div v-else-if="preview" class="buildTime">
-		<el-tooltip placement="bottom-end" open-delay="250" effect="light">
+		<el-tooltip placement="bottom-end" open-delay="250">
 			<div slot="content">
 				<strong>{{ previewPublishExact }}</strong>
 			</div>
