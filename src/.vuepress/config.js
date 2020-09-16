@@ -35,7 +35,7 @@ module.exports = {
 		searchPlaceholder: "Search...",
 		editLinks: true,
 		editLinkText: "Help us improve this page",
-		lastUpdated: "Last Updated",
+		lastUpdated: "Last updated",
 		nav: navBarConfig,
 		sidebar: {
 			"/help/guides/": sideBarConfig.guides,

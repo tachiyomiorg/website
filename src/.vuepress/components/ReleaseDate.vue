@@ -1,23 +1,60 @@
 <template>
-	<div class="buildTime">
-		<span :title="releasePublishExact">{{ releasePublishRelative }}</span>
+	<div v-if="stable" class="buildTime">
+		<el-tooltip placement="top" open-delay="250">
+			<div slot="content">
+				<strong>{{ stablePublishExact }}</strong>
+			</div>
+			<span>{{ stablePublishRelative }}</span>
+		</el-tooltip>
 	</div>
+	<div v-else-if="preview" class="buildTime">
+		<el-tooltip placement="bottom-end" open-delay="250">
+			<div slot="content">
+				<strong>{{ previewPublishExact }}</strong>
+			</div>
+			<span>{{ previewPublishRelative }}</span>
+		</el-tooltip>
+	</div>
+	<span v-else>You need to specify props.</span>
 </template>
 
 <script>
+/**
+ * Code example: <ReleaseDate preview />
+ */
 export default {
+	props: {
+		stable: {
+			type: Boolean,
+			default: false,
+		},
+		preview: {
+			type: Boolean,
+			default: false,
+		},
+	},
+
 	data() {
 		return {
-			releasePublishRelative: "at an unknown time",
-			releasePublishExact: "Can't connect to GitHub.",
+			stablePublishRelative: "at an unknown time",
+			stablePublishExact: "Can't connect to GitHub.",
+			previewPublishRelative: "at an unknown time",
+			previewPublishExact: "Can't connect to GitHub.",
 		};
 	},
 
 	async mounted() {
 		try {
 			const { data } = await this.$store.dispatch("getStableReleaseData");
-			this.$data.releasePublishRelative = this.$moment(data.published_at).fromNow();
-			this.$data.releasePublishExact = this.$moment(data.published_at).toString();
+			this.$data.stablePublishRelative = this.$moment(data.published_at).fromNow();
+			this.$data.stablePublishExact = this.$moment(data.published_at).format("dddd, MMMM Do YYYY [at] HH:mm");
+		} catch (e) {
+			console.error(e);
+		}
+		try {
+			const { data } = await this.$store.dispatch("getPreviewReleaseData");
+			this.$data.previewPublishRelative = this.$moment(data.published_at).fromNow();
+			this.$data.previewPublishExact = this.$moment(data.published_at).format("dddd, MMMM Do YYYY [at] HH:mm");
 		} catch (e) {
 			console.error(e);
 		}
