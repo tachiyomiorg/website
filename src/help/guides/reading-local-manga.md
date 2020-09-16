@@ -15,10 +15,7 @@ Follow the steps below to create local manga.
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
 
 Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png`, etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
-
-::: warning IMPORTANT
-Remember to give the app storage permissions on Android 6 and newer.
-:::
+<el-alert type="warning" title="Warning!" show-icon :closable="false">Remember to give the app storage permissions on <strong>Android 6</strong> and newer.</el-alert>
 
 ## Folder Structure
 
@@ -83,11 +80,13 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 Tachiyomi will see four chapters in a single manga.
 The path to the folder with images must contain both the manga title and the chapter name (as seen above).
 
-Another example of the structure from android's file manager.
-
-<img src="/help/guides/reading-local-manga/assets/local_manga.jpg" width="200" height="400" />
-
-Here, the **Manga Name** is **test** so the file structure is `/Tachiyomi/local/test/ch1/images`.
+::: guide-empty
+<figure class="centered">
+	<h4>Example structure using the file manager</h4>
+	<p>Here, the manga name is <strong>test</strong> so the file structure is <code>/Tachiyomi/local/test/ch1/images</code>.</p>
+	<img height="300" :src="$withBase('/help/guides/reading-local-manga/assets/LocalManga.jpg')">
+</figure>
+:::
 
 ## Archive Files
 
