@@ -32,6 +32,22 @@ Every now and then you find a manga that is translated by more than one group. B
 Change library sorting by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
 :::
 
+### Browse
+
+#### Why can't I find X manga?
+Sometimes you can struggle to find a source hosting the manga you're looking for, look here for some tips to help you find it.
+::: guide Tips to find your manga
+1. Look up the title on [Google](https://google.com/) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
+1. See if a website or scanlator has the series, then check the [Extensions](/extensions/) list.
+
+#### If you found the website/scanlator in the list
+Download the corresponding extension, go to the source, then search for the manga there.
+#### If you didn't find the website/scanlator in the list
+If you found a website or scanlator that hosts your manga but doesn't exist as a source or extension, then you can see if its [already been requested](https://github.com/inorichi/tachiyomi-extensions/issues) or you can [request it yourself](https://github.com/inorichi/tachiyomi-extensions/issues/new/choose).
+
+If the website/scanlator group doesn't have an online manga reader, you can download the manga manually and set up [local manga](/help/guides/reading-local-manga).
+:::
+
 ### Reader
 #### Why are some images not displayed?
 Aside from network issues, it could be because the images are too big or that the decoder doesn't support that image type.

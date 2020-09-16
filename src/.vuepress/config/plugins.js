@@ -79,6 +79,14 @@ module.exports = [
 	[
 		"vuepress-plugin-container",
 		{
+			type: "guide-empty",
+			before: "<div class='guide'>",
+			after: "</div>",
+		},
+	],
+	[
+		"vuepress-plugin-container",
+		{
 			type: "aside",
 			defaultTitle: "",
 		},
