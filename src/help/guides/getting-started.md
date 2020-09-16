@@ -35,7 +35,7 @@ Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installatio
 
 Now that you've installed the desired extension, it will show in the **Sources** tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.
 
-To find and add manga, you can use either the **Latest** button and explore recently updated manga from that source or search for it by pressing the source in the list.
+To find and add manga to your library, tap **Latest** for a source's most recently updated manga, or tap on the source itself to browse and search their catalog.
 
 Now that you've presumably found manga that you want to add, click on it and then press the <Navigation item="bookmark"/> button, it should now appear in your <Navigation item="library"/> ready to be read!
 
