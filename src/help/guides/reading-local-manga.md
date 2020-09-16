@@ -8,17 +8,14 @@ lang: en-US
 
 Follow the steps below to create local manga.
 
-1. Create a folder named `local` in Tachiyomi folder, which is located in the phone's **Internal storage** or external SD card.
+1. Create a folder named `local` in Tachiyomi folder, which is located in the phone's **internal storage** or **external SD card**.
 1. Place manga inside `Tachiyomi/local` folder.
 1. You can then access the manga in <Navigation item="browse"/> → **Local source**.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
 
-Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png` etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
-
-::: warning IMPORTANT
-Remember to give the app disk permissions on Android 6 and newer.
-:::
+Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png`, etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
+<el-alert type="warning" title="Warning!" show-icon :closable="false">Remember to give the app storage permissions on <strong>Android 6</strong> and newer.</el-alert>
 
 ## Folder Structure
 
@@ -31,18 +28,18 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 			/sdcard/Tachiyomi/local
 			<ul>
 				<li>
-					My manga
+					Manga Name
 					<ul>
 						<li>
 							ch1
 							<ul>
-								<li class="file">files</li>
+								<li class="file">images</li>
 							</ul>
 						</li>
 						<li>
 							ch2
 							<ul>
-								<li class="file">files</li>
+								<li class="file">images</li>
 							</ul>
 						</li>
 						<li class="file">cover.jpg</li>
@@ -57,18 +54,18 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 			/storage/18F5-2C11/Tachiyomi/local
 			<ul>
 				<li>
-					My manga
+					Manga Name
 					<ul>
 						<li>
 							ch3
 							<ul>
-								<li class="file">files</li>
+								<li class="file">images</li>
 							</ul>
 						</li>
 						<li>
 							ch4
 							<ul>
-								<li class="file">files</li>
+								<li class="file">images</li>
 							</ul>
 						</li>
 					</ul>
@@ -81,8 +78,15 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 :::
 
 Tachiyomi will see four chapters in a single manga.
-
 The path to the folder with images must contain both the manga title and the chapter name (as seen above).
+
+::: guide-empty
+<figure class="centered">
+	<h4>Example structure using the file manager</h4>
+	<p>Here, the manga name is <strong>test</strong> so the file structure is <code>/Tachiyomi/local/test/ch1/images</code>.</p>
+	<img height="300" :src="$withBase('/help/guides/reading-local-manga/assets/LocalManga.jpg')">
+</figure>
+:::
 
 ## Archive Files
 
@@ -94,12 +98,12 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 			/sdcard/Tachiyomi/local
 			<ul>
 				<li>
-					My manga
+					Manga Name
 					<ul>
 						<li>
 							ch1.zip
 							<ul>
-								<li class="file">img files</li>
+								<li class="file">images</li>
 							</ul>
 						</li>
 						<li>
@@ -108,7 +112,7 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 								<li>
 									ch2
 									<ul>
-										<li class="file">img files</li>
+										<li class="file">images</li>
 									</ul>
 								</li>
 							</ul>
@@ -129,7 +133,7 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 
 It is possible to add details to local manga. Like manga from other catalogs, you add information about the manga such as the author, artist, description, and genre tags.
 
-To import details along with your local manga, you have to create a file called `details.json` and place it within the manga folder. This file will contain the extended details about the manga in the `JSON` format. You can see the example below on how to build the file. Once the file is there, the app should load the data when you first open the manga or you can pull down to refresh the details.
+To import details along with your local manga, you have to create a json file. It can be named anything but it must be placed within the **Manga** folder. A standard file name is `details.json`. This file will contain the extended details about the manga in the `JSON` format. You can see the example below on how to build the file. Once the file is there, the app should load the data when you first open the manga or you can pull down to refresh the details.
 
 You can copy the following example and edit the details as needed:
 ``` json

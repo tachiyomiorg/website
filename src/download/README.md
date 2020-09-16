@@ -8,7 +8,7 @@ lang: en-US
 ---
 
 # Download
-Download the latest stable version of **Tachiyomi** (**<VersionTag downloadTag/>**) which released <ReleaseDate />.
+Download the latest stable version of **Tachiyomi** that released <ReleaseDate stable /> or the preview version that released <ReleaseDate preview />.
 
 <DownloadButtons />
 

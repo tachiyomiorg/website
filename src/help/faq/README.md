@@ -32,6 +32,22 @@ Every now and then you find a manga that is translated by more than one group. B
 Change library sorting by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
 :::
 
+### Browse
+
+#### Why can't I find X manga?
+Sometimes you can struggle to find a source hosting the manga you're looking for, look here for some tips to help you find it.
+::: guide Tips to find your manga
+1. Look up the title on [Google](https://google.com/) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
+1. See if a website or scanlator has the series, then check the [Extensions](/extensions/) list.
+
+#### If you found the website/scanlator in the list
+Download the corresponding extension, go to the source, then search for the manga there.
+#### If you didn't find the website/scanlator in the list
+If you found a website or scanlator that hosts your manga but doesn't exist as a source or extension, then you can see if its [already been requested](https://github.com/inorichi/tachiyomi-extensions/issues) or you can [request it yourself](https://github.com/inorichi/tachiyomi-extensions/issues/new/choose).
+
+If the website/scanlator group doesn't have an online manga reader, you can download the manga manually and set up [local manga](/help/guides/reading-local-manga).
+:::
+
 ### Reader
 #### Why are some images not displayed?
 Aside from network issues, it could be because the images are too big or that the decoder doesn't support that image type.
@@ -163,7 +179,7 @@ To install just download the file for the extension you want and then install it
 ::::: el-tabs
 :::: el-tab-pane label="Android 8.0 and higher"
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for Android 8.0 and newer video guide](/help/faq/assets/UnknownSources-Android10.webm)
+[<MaterialIcon icon="videocam"/> Click for Android 8.0 and newer video guide](/help/faq/assets/UnknownSources-Android10.webm)
 :::
 When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
@@ -171,7 +187,7 @@ In *newer* versions of **Android** you need to enable **Install unknown apps** b
 ::::
 :::: el-tab-pane label="Android 7.1 and lower"
 ::: aside-guide
-[<MaterialIcon icon-name="videocam"/> Click for Android 7.1 and older video guide](/help/faq/assets/UnknownSources-Android7.webm)
+[<MaterialIcon icon="videocam"/> Click for Android 7.1 and older video guide](/help/faq/assets/UnknownSources-Android7.webm)
 :::
 When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
@@ -252,7 +268,7 @@ This error can be caused by a variety of reasons, all to do with storage.
 
 #### Why are there no results when searching?
 ::: aside-guide
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.webm)
+[<MaterialIcon icon="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.mp4)
 :::
 
 If you're not getting any results when searching **MangaDex** then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.

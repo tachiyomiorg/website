@@ -24,7 +24,10 @@ export default {
 	async mounted() {
 		try {
 			const { data } = await this.$store.dispatch("getStableReleaseData");
-			this.$data.whatsNew = marked(data.body);
+			this.$data.whatsNew = marked(data.body).replace(
+				/\(@(.*?)\)/g,
+				"(<a href='https://github.com/$1' target='_blank' rel='noopener'>@$1</a>)"
+			);
 		} catch (e) {
 			console.error(e);
 		}
