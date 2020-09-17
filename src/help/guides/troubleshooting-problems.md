@@ -116,7 +116,7 @@ This error can be caused by a variety of reasons, all to do with storage.
 - The drive you're writing to is corrupted. Check using a file manager to see if it is accessible.
 :::
 ::: el-collapse-item title="Cannot Access SD Card"
-This error is typically caused by having a file or folder name that is too long. Android's file manager does not support filenames longer than 260 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
+This error is typically caused by having a file or folder name that is too long. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
 ::::
 
