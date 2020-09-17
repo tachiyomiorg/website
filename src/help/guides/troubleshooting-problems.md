@@ -62,32 +62,6 @@ If the site is reachable and fully functional then there may be an issue with th
 
 If the site is not reachable or having issues then all you can do is wait for the site to become functional again.
 
-## Solving a CAPTCHA
-
-**Please note that WebView is not the same as using your browser.**
-
-You must solve the **CAPTCHA** in **WebView**.
-
-::: guide How to open WebView
-1. Go to <Navigation item="browse"/> in the bottom navbar.
-1. Press the source you'd like to access.
-1. Press the <Navigation item="webview"/> icon.
-	<figure class="centered">
-		<img :src="$withBase('/help/guides/troubleshooting-problems/assets/WebView-Open.jpg')">
-	</figure>
-1. Complete **CAPTCHA** if one is present.
-1. Once done, press the *Back Arrow* at the top left to return.
-:::
-
-### WebView not working?
-If **WebView** doesn't work for you, please update the [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.WebView) app.
-
-When you've updated go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to `Android System WebView`.
-
-::: guide Still not working?
-If `Android System WebView` doesn't work, try setting `Google Chrome` as the default **WebView Implementation** instead.
-:::
-
 ### What are some common errors?
 
 :::: el-collapse
@@ -119,4 +93,32 @@ This error can be caused by a variety of reasons, all to do with storage.
 This error is typically caused by having a file or folder name that is too long. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
 ::::
+
+
+## Solving a CAPTCHA
+
+**Please note that WebView is not the same as using your browser.**
+
+You must solve the **CAPTCHA** in **WebView**.
+
+::: guide How to open WebView
+1. Go to <Navigation item="browse"/> in the bottom navbar.
+1. Press the source you'd like to access.
+1. Press the <Navigation item="webview"/> icon.
+	<figure class="centered">
+		<img :src="$withBase('/help/guides/troubleshooting-problems/assets/WebView-Open.jpg')">
+	</figure>
+1. Complete **CAPTCHA** if one is present.
+1. Once done, press the *Back Arrow* at the top left to return.
+:::
+
+### WebView not working?
+If **WebView** doesn't work for you, please update the [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.WebView) app.
+
+When you've updated go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to `Android System WebView`.
+
+::: guide Still not working?
+If `Android System WebView` doesn't work, try setting `Google Chrome` as the default **WebView Implementation** instead.
+:::
+
 
