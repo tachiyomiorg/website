@@ -90,7 +90,7 @@ However, if you think you are on an outdated version, go to <Navigation item="mo
 
 #### Why are automatic updates not working?
 
-Cetain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and click on **Disable battery optimization**.
+Certain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and click on **Disable battery optimization**.
 
 ### User Interface
 #### Can I change the app language?
@@ -228,41 +228,6 @@ It might be because the title is worded differently. Follow any of the steps bel
 - See which site has the series, often a single source will not satisfy all your needs.
 - Download the extension for that source from <Navigation item="browse"/> → **Extensions** if it exists, read [this](/help/faq/#which-sources-are-in-the-multi-source-extensions) for a list of which extensions contains what sources.
 - Go to <Navigation item="browse"/> and tap on a source then search for the manga again.
-
-
-#### What are some common errors?
-
-##### `Java.lang Exception: Challenge not found`
-Often this will be resolved by force-quitting and reopening **Tachiyomi**.
-
-##### `Loader not implemented`
-It means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
-
-##### `Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject`
-This means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
-
-##### `HTTP error 403`
-The source you selected may have **Cloudflare** protection on and is enforcing **CAPTCHAs**.
-
-1. Find a manga in your library that is from the source you're trying to access.
-1. Tap on the <Navigation item="webview"/>.
-1. Complete the **CAPTCHA** if present and wait for the page to finish loading.
-1. Press back rather than exiting the app and if that does not work, use the back arrow.
-
-##### `App not installed`
-You may encounter this if you're installing an official build over an existing **F-Droid** build due to differing signatures.
-Backup your data, uninstall the app, then restore the data in the fresh install.
-
-##### `Attempt to invoke virtual method 'com.hippo.unifile...`
-This error can be caused by a variety of reasons, all to do with storage.
-
-::: guide
-- Most commonly it is caused by full storage, check to see if your device or SD Card is full
-- **Tachiyomi** doesn't have access to SD card enabled in permissions for the app
-- If you're downloading and this error pops up, that means the app might not be able to access the folder you're trying to download to.
-- This may be because the folder is corrupted or does not exist. Use a file manager to check that the folder(s) actually exist and every folder in the sequence is available and accessible.
-- The drive you're writing to is corrupted. Check using a file manager to see if it is accessible.
-:::
 
 ### MangaDex
 
