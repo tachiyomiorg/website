@@ -34,7 +34,7 @@
 		"eslint-plugin-markdown": "^1.0.2",
 		"eslint-plugin-vue": "^7.0.0-beta.3",
 		"eslint": "^7.9.0",
-		"prettier": "^2.0.5",
+		"prettier": "^2.1.2",
 		"sass-loader": "^10.0.2",
 		"node-sass": "^4.14.1"
 	},
