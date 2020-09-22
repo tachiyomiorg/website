@@ -25,7 +25,7 @@ This fork adds features that enhances the hentai experience with integrations to
 
 At the moment, it is **deprecated** as the developer does not have time to maintain it. Use [TachiyomiAZ](/forks/TachiyomiAZ) instead.
 
-<img :src="$withBase('/forks/TachiyomiEH/assets/banner.png')"/>
+<img class="zoomable" :src="$withBase('/forks/TachiyomiEH/assets/banner.png')"/>
 
 ## Features
 ::: aside-guide

@@ -22,7 +22,7 @@ sidebar: false
 This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few custom unique features, it also has new features from the latest **Tachiyomi** version as well as from other forks such as [TachiyomiJ2K](/forks/TachiyomiJ2K).
 
 ## Screenshots
-<img :src="$withBase('/forks/TachiyomiSY/assets/banner.png')"/>
+<img class="zoomable" :src="$withBase('/forks/TachiyomiSY/assets/banner.png')"/>
 
 ## Features
 - Uses the new **Tachiyomi** UI

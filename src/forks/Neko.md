@@ -22,7 +22,7 @@ sidebar: false
 This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [TachiyomiJ2K](/forks/TachiyomiJ2K). This contains features specific to **MangaDex** that those versions cannot offer. It also features almost every feature that **J2K** has except for extensions (aka other sources), custom covers, and local manga.
 
 ## Screenshots
-<img :src="$withBase('/forks/Neko/assets/banner.png')"/>
+<img class="zoomable" :src="$withBase('/forks/Neko/assets/banner.png')"/>
 
 ## Mangadex specific features:
 - Supports native login to **MangaDex** and supports 2FA
