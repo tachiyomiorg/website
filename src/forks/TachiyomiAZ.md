@@ -137,4 +137,4 @@ This hentai focused fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, 
 - Grid view corner rounding configuration
 - Manga recommendations
 
-<img :src="$withBase('/forks/TachiyomiAZ/assets/gunz.png')">
+<img class="zoomable" :src="$withBase('/forks/TachiyomiAZ/assets/gunz.png')">

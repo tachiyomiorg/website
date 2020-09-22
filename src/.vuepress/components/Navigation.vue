@@ -116,11 +116,6 @@ export default {
 		.app-image
 			max-height 1.5em
 			vertical-align sub
-		&.ext-installation
-			border 1px solid $accentColorSecondary
-			padding 0px 0px 2px 4px
-			margin-right 5px
-			border-radius 4px
 		&:hover
 			cursor default
 

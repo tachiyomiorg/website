@@ -52,6 +52,7 @@ module.exports = [
 	[
 		"vuepress-plugin-zooming",
 		{
+			selector: ".theme-default-content img.zoomable",
 			delay: 1000,
 			options: {
 				bgColor: "black",

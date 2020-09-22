@@ -23,7 +23,7 @@ sidebar: false
 
 This fork takes a new approach to the design of the base app along with several other enhancements.
 
-<img :src="$withBase('/forks/TachiyomiJ2K/assets/banner.png')"/>
+<img class="zoomable" :src="$withBase('/forks/TachiyomiJ2K/assets/banner.png')"/>
 
 ## Features
 ::: aside-guide
