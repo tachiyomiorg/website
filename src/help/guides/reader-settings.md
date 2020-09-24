@@ -38,39 +38,39 @@ All examples are illustrations and may not reflect what actually happens.
 <figure class="centered">
 	<h4>Fit screen</h4>
 	<p>Will fit either to width or height depending on image resolution</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-FitScreen.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-fit-screen.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Stretch</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Stretch.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-stretch.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Fit width</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-FitWidth.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-fit-width.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Fit height</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-FitHeight.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-fit-height.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Original size</h4>
 	<p>Will be either zoom in or out depending on image resolution</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-OriginalSize.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-original-size.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Smart fit</h4>
 	<p>Fits to the longest side of the image</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-SmartFit.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-smart-fit.png')">
 </figure>
 </CarouselItem>
 </Carousel>
@@ -92,21 +92,21 @@ All examples are illustrations
 <figure class="centered">
 	<h4>Left</h4>
 	<p>Will start at the left side of the page.</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-ZoomStartPos-Left.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-zoomstartpos-left.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Right</h4>
 	<p>Will start at the right side of the page.</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-ZoomStartPos-Right.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-zoomstartpos-right.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>Center</h4>
 	<p>Will start at the center of the page.</p>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-ZoomStartPos-Center.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-zoomstartpos-center.png')">
 </figure>
 </CarouselItem>
 </Carousel>
@@ -126,14 +126,14 @@ This allows you to control what color the background should be in reader. Backgr
 <Carousel name="carousel-background-color">
 <CarouselItem>
 <figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Background-Black.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
 	<h4>Black</h4>
 	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Background-White.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-white.png')">
 	<h4>White</h4>
 	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
 </figure>
@@ -172,13 +172,13 @@ Tries to remove excess white borders
 <CarouselItem>
 <figure class="centered">
 	<h4>With Crop borders on</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-CropBorder-With.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-crop-border-on.png')">
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<h4>With Crop borders off</h4>
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-CropBorder-Without.png')">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-crop-border-off.png')">
 </figure>
 </CarouselItem>
 </Carousel>

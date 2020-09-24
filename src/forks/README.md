@@ -9,7 +9,7 @@ sidebarDepth: 0
 # Forks
 Forks are alternative versions of **Tachiyomi** with exclusive features.
 
-## <img class="headerLogo" :src="$withBase('/forks/Neko/assets/logo.png')"> [Neko](/forks/Neko)
+## <img class="headerLogo" :src="$withBase('/assets/forks_logo-neko.png')"> [Neko](/forks/Neko)
 ::: aside-guide
 Maintained by [CarlosEsco](https://github.com/CarlosEsco)
 <br>Requires Android 7.0+
@@ -20,7 +20,7 @@ Some features include:
 * Same UI and features of J2K minus editing manga/cover
 * Built in manga recommendations
 
-## <img class="headerLogo" :src="$withBase('/forks/TachiyomiJ2K/assets/logo.png')"> [TachiyomiJ2K](/forks/TachiyomiJ2K)
+## <img class="headerLogo" :src="$withBase('/assets/forks_logo-j2k.png')"> [TachiyomiJ2K](/forks/TachiyomiJ2K)
 ::: aside-guide
 Maintained by [Jays2Kings](https://github.com/Jays2Kings)
 <br>Requires Android 6.0+
@@ -31,7 +31,7 @@ Some features include:
 * Dynamic Categories
 * Automatic background based on manga page
 
-## <img class="headerLogo" :src="$withBase('/forks/TachiyomiAZ/assets/logo.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
+## <img class="headerLogo" :src="$withBase('/assets/forks_logo-az.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
 ::: aside-guide
 Maintained by [az4521](https://github.com/az4521)
 <br>Requires Android 5.0+
@@ -44,7 +44,7 @@ Some features include:
 * Manga recommendations from My Anime List and AniDB
 * Grid view corner rounding configuration
 
-## <img class="headerLogo" :src="$withBase('/forks/TachiyomiSY/assets/logo.png')"> [TachiyomiSY](/forks/TachiyomiSY)
+## <img class="headerLogo" :src="$withBase('/assets/forks_logo-sy.png')"> [TachiyomiSY](/forks/TachiyomiSY)
 ::: aside-guide
 Maintained by [Syer10](https://github.com/jobobby04)
 <br>Requires Android 5.0+
