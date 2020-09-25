@@ -29,6 +29,7 @@ This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [
 - MDList support
 - Similar Manga recommendations
 - Manually sync of Manga to and from **MangaDex** follows list
+- MDList tracked manga can be auto marked read in app after reading on the website
 - Ability to filter chapters and skip by scanlator group
 
 ## Credits
