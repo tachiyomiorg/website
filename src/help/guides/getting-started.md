@@ -21,7 +21,7 @@ Now that **Tachiyomi** is installed, open the app and navigate to <Navigation it
 
 Find the extension that you'd like to use then press the <Navigation item="install"/> button next to your desired extension and then accept the installation prompt.
 
-::: guide Security prompt
+::: c-warning
 You *might* be stopped by a security prompt while attempting to install an extension. If that were to happen then you need to allow **Tachiyomi** the permission to *install unknown apps*.
 ::: aside
 Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installations)

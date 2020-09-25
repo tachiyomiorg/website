@@ -8,7 +8,9 @@ lang: en-US
 
 Migration is the process of moving manga between sources without losing progress. This is most often used when a source is no longer accessible or another source is more up-to-date.
 
-<el-alert type="warning" title="Warning!" show-icon :closable="false">Always make sure to have a <el-link href="/help/guides/creating-backups/" :underline="false">backup</el-link> in case anything unexpected occurs.</el-alert>
+::: c-tip
+Always make sure to have a [backup](/help/guides/creating-backups/) in case anything unexpected occurs.
+:::
 
 ## Migrating on Stable/Preview
 
@@ -38,7 +40,7 @@ Migration is the process of moving manga between sources without losing progress
 1. Choose which data you want to transfer over, and you're done.
 ::::
 
-::: tip Searching only pinned sources
+::: c-tip Searching only pinned sources
 You can restrict global searching to pinned sources if you wish to declutter your search.</br>To do this, go to <Navigation item="more"/> → <Navigation item="settings"/> →  <Navigation item="browse"/> then toggle the **Only include pinned sources** setting.
 
 Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pin" /> pin icon next to the source name.

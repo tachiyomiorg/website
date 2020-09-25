@@ -64,6 +64,30 @@ module.exports = [
 	[
 		"vuepress-plugin-container",
 		{
+			type: "c-tip",
+			before: "<div class='custom-block c-tip'>",
+			after: "</div>",
+		},
+	],
+	[
+		"vuepress-plugin-container",
+		{
+			type: "c-warning",
+			before: "<div class='custom-block c-warning'>",
+			after: "</div>",
+		},
+	],
+	[
+		"vuepress-plugin-container",
+		{
+			type: "c-danger",
+			before: "<div class='custom-block c-danger'>",
+			after: "</div>",
+		},
+	],
+	[
+		"vuepress-plugin-container",
+		{
 			type: "expander",
 			before: (info) => `<details class="expander"><summary class="expansion">${info}</summary>`,
 			after: "</details>",

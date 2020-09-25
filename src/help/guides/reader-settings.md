@@ -22,7 +22,7 @@ This setting sets the reader's default direction when you open a manga.
 **Webtoon**
 - Webtoon is like vertical but stitches all the images together into one stream.
 
-::: tip
+::: c-tip
 You can have different Viewer for different series. You can do this by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**
 :::
 
@@ -75,7 +75,7 @@ All examples are illustrations and may not reflect what actually happens.
 </CarouselItem>
 </Carousel>
 
-::: tip
+::: c-tip
 You can change scale type when reading a chapter. Tap the middle of the screen, press the gear icon at the top, select a different scale type under **Scale type**. This will change Scale type for all series.
 :::
 
@@ -158,8 +158,8 @@ This settings shows the page number at the bottom of the page in current page/to
 ## 32-bit color <Badge text="False" type="default-indicator" vertical="middle" />
 This setting decodes images in `ARGB888` format to allow the reader to display more colors.
 
-::: warning
-This setting will only show up on smartphones running Android 8.0 Oreo and later versions.
+::: c-warning
+This setting will only show up on smartphones running **Android 8.0** or higher.
 :::
 
 ## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
@@ -196,6 +196,6 @@ This setting allows you to flip pages using the volume keys, with the volume up 
 
 Reverses the Volume keys function of volume up going to the next page and volume down going to the last page.
 
-::: warning
+::: c-warning
 This setting can only be used when Volume keys setting is enabled.
 :::
