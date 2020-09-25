@@ -100,7 +100,7 @@ export default {
 		font-size 0
 		.app-icon,
 		.app-label
-			color $accentColorSecondary
+			color darken($accentColor, 25%)
 			font-weight 500
 			font-size 1rem
 		.app-icon

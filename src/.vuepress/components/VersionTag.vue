@@ -67,7 +67,7 @@ export default {
 	white-space nowrap
 	.fileNameIcon,
 	.fileName
-		color $accentColorSecondary
+		color #23638f
 		font-weight 500
 		font-size 1em
 	.fileNameIcon
