@@ -47,8 +47,8 @@ Check your spelling and try again, there's also the chance that your used source
 * Some sources use different spellings.
   > For example **Bungo Stray Dogs** instead of **Bungou Stray Dogs**.
 * Some sources use different wordings
- > For example **3-gatsu no Lion** instead of **Sangatsu no Lion**.
-::: aside
+  > For example **3-gatsu no Lion** instead of **Sangatsu no Lion**.
+::: note
 Find more potential answers to your questions [here](/help/faq/#why-can-t-i-find-x-manga).
 :::
 ::::

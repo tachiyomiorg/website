@@ -6,7 +6,7 @@ lang: en-US
 
 # Troubleshooting problems
 
-**This page is for when you encounter a problem with a source extension.**
+This page is for when you encounter a problem with a source extension.
 
 ::: c-danger Common error messages
 - HTTP Error 4xx
