@@ -21,7 +21,7 @@
 	},
 	"homepage": "https://github.com/tachiyomiorg/website#readme",
 	"devDependencies": {
-		"vuepress": "^1.5.4",
+		"vuepress": "^1.6.0",
 		"@vuepress/plugin-back-to-top": "^1.5.4",
 		"@vuepress/plugin-google-analytics": "^1.5.4",
 		"@vuepress/plugin-active-header-links": "^1.5.4",
