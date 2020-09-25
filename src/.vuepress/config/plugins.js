@@ -107,23 +107,25 @@ module.exports = [
 	[
 		"vuepress-plugin-container",
 		{
-			type: "guide-empty",
-			before: "<div class='guide'>",
+			type: "videolink",
+			before: "<div class='videolink'>",
 			after: "</div>",
 		},
 	],
 	[
 		"vuepress-plugin-container",
 		{
-			type: "aside",
-			defaultTitle: "",
+			type: "guide-empty",
+			before: "<div class='guide g-empty'>",
+			after: "</div>",
 		},
 	],
 	[
 		"vuepress-plugin-container",
 		{
-			type: "aside-guide",
-			defaultTitle: "",
+			type: "note",
+			before: "<div class='note'><p>",
+			after: "</div></p>",
 		},
 	],
 ];

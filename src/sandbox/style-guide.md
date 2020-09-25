@@ -36,7 +36,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 > :::
 
 - **DO** include video guides as a text under the header:
-> ::: aside-guide
+> ::: videolink
 > [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.mp4)
 > :::
 
@@ -106,18 +106,18 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 > <el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
 > <el-alert type="warning" title="Warning!" description="This feature requires you to be on Android 7 or above." show-icon :closable="false"></el-alert>
 > <el-alert type="error" title="Attention!" description="Make sure you have created a backup before following these instructions!" show-icon :closable="false"></el-alert>
-> ::: aside
+> ::: note
 > More alerts can be found on the [Element-UI](element-ui.md#alert) page.
 > :::
 
 - **DO** include related info as an aside object:
 > **Lorem ipsum** dolor sit amet, _consectetur_ adipiscing **elit**.
-> ::: aside
+> ::: note
 > Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
 > :::
 
 > **Pellentesque** _habitant_ morbi tristique **senectus** et netus.
-> ::: aside
+> ::: note
 > Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
 > :::
 

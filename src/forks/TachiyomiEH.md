@@ -28,7 +28,7 @@ At the moment, it is **deprecated** as the developer does not have time to maint
 <img class="zoomable" :src="$withBase('/forks/TachiyomiEH/assets/banner.png')"/>
 
 ## Features
-::: aside-guide
+::: videolink
 For a full list of features, visit the GitHub page.
 :::
 
