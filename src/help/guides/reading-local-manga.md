@@ -8,8 +8,9 @@ lang: en-US
 
 Follow the steps below to create local manga.
 
-1. Create a folder named `local` in Tachiyomi folder, which is located in the phone's **internal storage** or **external SD card**.
-1. Place manga inside `Tachiyomi/local` folder.
+1. Create a folder named `local` in the `/Tachiyomi/` folder.
+	> This is located in the phone's **internal storage** or **external SD card**.
+1. Place correctly structured manga inside `/Tachiyomi/local/`.
 1. You can then access the manga in <Navigation item="browse"/> → **Local source**.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
@@ -31,24 +32,24 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 			/sdcard/Tachiyomi/local
 			<ul>
 				<li>
-					Manga Name
+					<span class="ft-icon ft-folder">Manga title</span>
 					<ul>
 						<li>
-							ch1
+							<span class="ft-icon ft-folder">ch1</span>
 							<ul>
-								<li class="file">images</li>
+								<span class="ft-icon ft-image">images</span>
 							</ul>
 						</li>
 						<li>
-							ch2
+							<span class="ft-icon ft-folder">ch2</span>
 							<ul>
-								<li class="file">images</li>
+								<span class="ft-icon ft-image">images</span>
 							</ul>
 						</li>
-						<li class="file">cover.jpg</li>
+						<span class="ft-icon ft-image">cover.jpg</span>
 					</ul>
 				</li>
-				<li>&hellip;</li>
+				<li>...</li>
 			</ul>
 		</li>
 	</ul>
@@ -57,23 +58,23 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 			/storage/18F5-2C11/Tachiyomi/local
 			<ul>
 				<li>
-					Manga Name
+					<span class="ft-icon ft-folder">Manga title</span>
 					<ul>
 						<li>
-							ch3
+							<span class="ft-icon ft-folder">ch3</span>
 							<ul>
-								<li class="file">images</li>
+								<span class="ft-icon ft-image">images</span>
 							</ul>
 						</li>
 						<li>
-							ch4
+							<span class="ft-icon ft-folder">ch4</span>
 							<ul>
-								<li class="file">images</li>
+								<span class="ft-icon ft-image">images</span>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li>&hellip;</li>
+				<li>...</li>
 			</ul>
 		</li>
 	</ul>
@@ -92,7 +93,6 @@ The path to the folder with images must contain both the manga title and the cha
 :::
 
 ## Archive Files
-
 Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside is not. Any folders inside the archive file are ignored. You must place the archive inside the `Manga` folder where the name will become the `Chapter` title. All images inside the archive regardless of folder structure will become pages for that chapter.
 
 ::: guide ZIP EXAMPLE
@@ -101,29 +101,29 @@ Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside 
 			/sdcard/Tachiyomi/local
 			<ul>
 				<li>
-					Manga Name
+					<span class="ft-icon ft-folder">Manga title</span>
 					<ul>
 						<li>
-							ch1.zip
+							<span class="ft-icon ft-zip">ch1.zip</span>
 							<ul>
-								<li class="file">images</li>
+								<span class="ft-icon ft-image">images</span>
 							</ul>
 						</li>
 						<li>
-							ch2.zip
+							<span class="ft-icon ft-zip">ch2.zip</span>
 							<ul>
 								<li>
-									ch2
+									<span class="ft-icon ft-folder">ch2</span>
 									<ul>
-										<li class="file">images</li>
+										<span class="ft-icon ft-image">images</span>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li class="file">cover.jpg</li>
+						<span class="ft-icon ft-image">cover.jpg</span>
 					</ul>
 				</li>
-				<li>&hellip;</li>
+				<li>...</li>
 			</ul>
 		</li>
 </ul>
