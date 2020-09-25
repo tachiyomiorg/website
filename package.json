@@ -32,7 +32,7 @@
 		"vuepress-plugin-element-ui": "^1.1.0",
 		"eslint-config-vuepress": "^2.2.0",
 		"eslint-plugin-markdown": "^1.0.2",
-		"eslint-plugin-vue": "^7.0.0-beta.3",
+		"eslint-plugin-vue": "^7.0.0-beta.4",
 		"eslint": "^7.9.0",
 		"prettier": "^2.0.5",
 		"sass-loader": "^10.0.2",
