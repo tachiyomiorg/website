@@ -28,13 +28,19 @@ body,
 // Custom block containers
 .custom-block
 	padding-left 1.25rem
-	padding-right 1.25rem
+	padding-right 1rem
 	border-radius .125rem
 	overflow hidden
 	position relative
 	background-color $backgroundColorSecondary
 	border 1px solid #e4e8ef
 	border-radius 6px
+	margin-bottom .5rem
+	.c-title
+		margin-top 1rem
+		margin-bottom -0.75rem
+		&:empty
+			display none
 	&.c-
 		&tip
 		&warning
@@ -52,26 +58,32 @@ body,
 				height 1.75rem
 				background-size contain
 		&tip
+			background-color alpha($customTip, 2%)
+			border 1px solid alpha($customTip, 20%)
 			&:before
 				background transparent url(/assets/icon_tip.svg) no-repeat 0 0
 			a
 				color $customTip
+			h4
+				color darken($customTip, 60%)
 		&warning
-			border 1px solid alpha($customWarning, 30%)
+			background-color alpha($customWarning, 2%)
+			border 1px solid alpha($customWarning, 20%)
 			&:before
 				background transparent url(/assets/icon_warning.svg) no-repeat 0 0
 			a
 				color $customWarning
 			h4
-				color darken($customWarning, 30%)
+				color darken($customWarning, 40%)
 		&danger
-			border 1px solid alpha($customDanger, 30%)
+			background-color alpha($customDanger, 2%)
+			border 1px solid alpha($customDanger, 20%)
 			&:before
 				background transparent url(/assets/icon_danger.svg) no-repeat 0 0
 			a
 				color $customDanger
 			h4
-				color darken($customDanger, 30%)
+				color darken($customDanger, 40%)
 	&.aside
 		background-color transparent
 		border none

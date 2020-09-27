@@ -8,8 +8,7 @@ lang: en-US
 
 **This page is for when you encounter a problem with a source extension.**
 
-::: c-danger
-#### Common error messages
+::: c-danger Common error messages
 - HTTP Error 4xx
 - HTTP Error 5xx
 - Unexpected URL
