@@ -19,10 +19,27 @@ If you got any questions, [join our Discord server](https://discord.gg/tachiyomi
 
 ## Repositories
 
-* [Android App](https://github.com/inorichi/tachiyomi/)
-* [App Extensions](https://github.com/inorichi/tachiyomi-extensions)
-* [Android App (Rewrite)](https://github.com/tachiyomiorg/android-app)
-* [App Extensions (Rewrite)](https://github.com/tachiyomiorg/extensions)
+<div>
+	<p align="center">
+		<a href="https://github.com/inorichi/tachiyomi/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=inorichi&repo=tachiyomi&theme=dark&hide_border=true" alt="Android App">
+		</a>
+		<a href="https://github.com/inorichi/tachiyomi-extensions/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=inorichi&repo=tachiyomi-extensions&theme=dark&hide_border=true" alt="App Extensions">
+		</a>
+	</p>
+</div>
+
+<div>
+	<p align="center">
+		<a href="https://github.com/tachiyomiorg/android-app/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=android-app&theme=dark&hide_border=true&show_owner=true" alt="Android App (Rewrite)">
+		</a>
+		<a href="https://github.com/tachiyomiorg/extensions/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=extensions&theme=dark&hide_border=true&show_owner=true" alt="App Extensions (Rewrite)">
+		</a>
+	</p>
+</div>
 
 ## License
 
