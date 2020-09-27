@@ -2,6 +2,7 @@
 	<div class="theme-container help-page">
 		<Navbar />
 		<main class="page">
+			<LiveChat />
 			<div class="theme-custom-content content__default">
 				<slot name="top" />
 
