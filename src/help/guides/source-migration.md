@@ -8,7 +8,7 @@ lang: en-US
 
 Migration is the process of moving manga between sources without losing progress. This is most often used when a source is no longer accessible or another source is more up-to-date.
 
-::: c-tip
+::: c-warning
 Always make sure to have a [backup](/help/guides/creating-backups/) in case anything unexpected occurs.
 :::
 
