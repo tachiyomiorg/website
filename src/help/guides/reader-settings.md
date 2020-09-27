@@ -23,7 +23,7 @@ This setting sets the reader's default direction when you open a manga.
 - Webtoon is like vertical but stitches all the images together into one stream.
 
 ::: c-tip
-You can have different Viewer for different series. You can do this by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**
+You can change viewer for different series by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**.
 :::
 
 ## Scale type <Badge text="Fit screen" type="default-indicator" vertical="middle" />
