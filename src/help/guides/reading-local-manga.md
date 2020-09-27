@@ -15,7 +15,10 @@ Follow the steps below to create local manga.
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
 
 Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png`, etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
-<el-alert type="warning" title="Warning!" show-icon :closable="false">Remember to give the app storage permissions on <strong>Android 6</strong> and newer.</el-alert>
+
+::: c-warning
+Remember to give the app storage permissions on **Android 6** and newer.
+:::
 
 ## Folder Structure
 

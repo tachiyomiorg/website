@@ -15,22 +15,87 @@ font-feature-settings()
 html,
 body,
 .theme-container
-	background-color #fdfdfd
+	background-color $backgroundColor
+
+.navbar
+	background-color $backgroundColor
+	.links
+		background-color transparent !important
+
+.sidebar
+	background-color $backgroundColorSecondary
 
 // Custom block containers
 .custom-block
-	&.tip
-	&.warning
-	&.error
-	&.danger
-		border-radius $containerBorderRadius
+	padding-left 1.25rem
+	padding-right 1rem
+	border-radius .125rem
+	overflow hidden
+	position relative
+	background-color $backgroundColorSecondary
+	border 1px solid #e4e8ef
+	border-radius 6px
+	margin-bottom .5rem
+	.c-title
+		margin-top 1rem
+		margin-bottom -0.75rem
+		&:empty
+			display none
+	&.c-
+		&tip
+		&warning
+		&danger
+			padding-left 3.75rem
+			&:before
+				content ""
+				display block
+				position absolute
+				top 0
+				left 0
+				margin-top 1rem
+				margin-left 1rem
+				width 1.75rem
+				height 1.75rem
+				background-size contain
+		&tip
+			background-color alpha($customTip, 2%)
+			border 1px solid alpha($customTip, 20%)
+			&:before
+				background transparent url(/assets/icon_tip.svg) no-repeat 0 0
+			a
+				color $customTip
+			h4
+				color darken($customTip, 60%)
+		&warning
+			background-color alpha($customWarning, 2%)
+			border 1px solid alpha($customWarning, 20%)
+			&:before
+				background transparent url(/assets/icon_warning.svg) no-repeat 0 0
+			a
+				color $customWarning
+			h4
+				color darken($customWarning, 40%)
+		&danger
+			background-color alpha($customDanger, 2%)
+			border 1px solid alpha($customDanger, 20%)
+			&:before
+				background transparent url(/assets/icon_danger.svg) no-repeat 0 0
+			a
+				color $customDanger
+			h4
+				color darken($customDanger, 40%)
 	&.aside
+		background-color transparent
+		border none
 		color transparentify($textColor, 0.4)
 		font-size 0.9rem
 		text-align right
 	&.aside-guide
+		background-color transparent
+		border none
 		font-size 0.9rem
 		text-align left
+		padding-left unset
 		p
 			margin-top: 0
 		a
@@ -38,7 +103,7 @@ body,
 
 // Guide container
 .guide
-	background-color $containerBackgroundColor
+	background-color $containerBackground
 	border-radius $containerBorderRadius
 	margin 1rem 0
 	padding 0.1rem 1.5rem
@@ -49,7 +114,7 @@ body,
 
 // Expander container
 .expander
-	background-color $containerBackgroundColor
+	background-color $containerBackground
 	border-radius $containerBorderRadius
 	margin 1rem 0
 	padding 1rem 1.5rem

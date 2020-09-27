@@ -123,5 +123,5 @@ blockquote
 	.app-navigation
 		.app-icon,
 		.app-label
-			color inherit
+			color inherit !important
 </style>
