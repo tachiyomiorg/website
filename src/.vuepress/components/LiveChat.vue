@@ -19,7 +19,7 @@
 				<p class="chat">Need some assistance?</p>
 			</div>
 		</div>
-		<a href="https://discorg.gg/tachiyomi/">
+		<a href="https://discord.gg/tachiyomi/">
 			<div class="liveChatReplyBox"><i>Reply here</i></div>
 		</a>
 	</div>
