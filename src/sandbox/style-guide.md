@@ -197,7 +197,7 @@ Many of the stuff previously mentioned generally applies when making guides too,
 > </CarouselItem>
 > <CarouselItem>
 > <figure class="centered">
-> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-Background-White.png')">
+> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-white.png')">
 > 	<h4>White</h4>
 > 	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
 > </figure>
