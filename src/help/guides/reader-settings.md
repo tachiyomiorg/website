@@ -174,10 +174,6 @@ All examples are illustrations
 </CarouselItem>
 </Carousel>
 
-
-## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
-This setting applies a smooth transition when tapping to change page.
-
 ## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
 Tries to remove excess white borders
 
