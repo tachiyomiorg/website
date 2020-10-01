@@ -174,56 +174,6 @@ All examples are illustrations
 </CarouselItem>
 </Carousel>
 
-## Rotation <Badge text="Free" type="default-indicator" vertical="middle" />
-This allows you to control how the screen is going to be oriented.
-
-- **Free** lets you rotate the screen between portrait and landscape.
-- **Lock** will lock the orientation to whatever orientation you had before entering the reader.
-- **Force Portrait** forces the reader to be in portrait.
-- **Force Landscape** forces the reader to be in landscape.
-
-## Background color <Badge text="White" type="default-indicator" vertical="middle" />
-This allows you to control what color the background should be in reader. Background color can either be **Black** or
-**White**.
-
-<Carousel name="carousel-background-color">
-<CarouselItem>
-<figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
-	<h4>Black</h4>
-	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
-</figure>
-</CarouselItem>
-<CarouselItem>
-<figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-white.png')">
-	<h4>White</h4>
-	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
-</figure>
-</CarouselItem>
-</Carousel>
-
-## Double tap animation speed <Badge text="Normal" type="default-indicator" vertical="middle" />
-Double tap animation speed changes the speed in which the zoom happens when double tapping.
-
-## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
-This setting allows the chapters marked as read to be skipped during reading. This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
-
-## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
-This setting specifies if the notification and navigation bar are to be hidden while in the reader.
-
-## Keep screen on <Badge text="True" type="default-indicator" vertical="middle" />
-This setting determines if the device should be allowed to go to sleep while reading a manga.
-
-## Show page number <Badge text="True" type="default-indicator" vertical="middle" />
-This settings shows the page number at the bottom of the page in current page/total page format.
-
-## 32-bit color <Badge text="False" type="default-indicator" vertical="middle" />
-This setting decodes images in `ARGB888` format to allow the reader to display more colors.
-
-::: c-warning
-This setting will only show up on smartphones running **Android 8.0** or higher.
-:::
 
 ## Page transitions <Badge text="True" type="default-indicator" vertical="middle" />
 This setting applies a smooth transition when tapping to change page.
