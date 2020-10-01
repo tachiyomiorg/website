@@ -45,12 +45,12 @@
 					<img
 						class="feature__Animation--dark"
 						alt="Feature image (Dark theme)"
-						:src="$withBase('/assets/' + feature.image + '-Dark.png')"
+						:src="$withBase('/assets/home_' + feature.image + '-dark.png')"
 					/>
 					<img
 						class="feature__Animation--light"
 						alt="Feature image (Light theme)"
-						:src="$withBase('/assets/' + feature.image + '-Light.png')"
+						:src="$withBase('/assets/home_' + feature.image + '-light.png')"
 					/>
 				</section>
 			</div>
