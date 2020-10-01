@@ -190,7 +190,7 @@ Many of the stuff previously mentioned generally applies when making guides too,
 > <Carousel name="carousel-background-color">
 > <CarouselItem>
 > <figure class="centered">
-> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-Background-Black.png')">
+> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
 > 	<h4>Black</h4>
 > 	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
 > </figure>
