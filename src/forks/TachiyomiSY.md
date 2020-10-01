@@ -6,7 +6,7 @@ description: This fork adds quite a few custom unique features, it also has new 
 lang: en-US
 meta:
   - property: og:image
-    content: /forks/TachiyomiSY/assets/logo.png
+    content: /assets/forks_logo-sy.png
   - name: theme-color
     content: "#BE0F6E"
   - name: msapplication-TileColor
@@ -14,7 +14,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/forks/TachiyomiSY/assets/logo.png')"> TachiyomiSY
+# <img class="headerLogo" :src="$withBase('/assets/forks_logo-sy.png')"> TachiyomiSY
 
 <ForkButtons forkName="TachiyomiSY" downloadForkLink="https://api.github.com/repos/jobobby04/TachiyomiSY/releases/latest" downloadForkStyle="background-color:#BE0F6E;color:#FFFFFF;" githubForkLink="window.open('https://github.com/jobobby04/TachiyomiSY')"/>
 
@@ -22,7 +22,7 @@ sidebar: false
 This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few custom unique features, it also has new features from the latest **Tachiyomi** version as well as from other forks such as [TachiyomiJ2K](/forks/TachiyomiJ2K).
 
 ## Screenshots
-<img class="zoomable" :src="$withBase('/forks/TachiyomiSY/assets/banner.png')"/>
+<img class="zoomable" :src="$withBase('/assets/forks_banner-sy.png')"/>
 
 ## Features
 - Uses the new **Tachiyomi** UI
