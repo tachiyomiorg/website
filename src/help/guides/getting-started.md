@@ -13,7 +13,7 @@ When you've completed the download, open the <VersionTag fileName/> file and pro
 
 ## Installing an extension
 
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.mp4)
 :::
 
@@ -27,7 +27,7 @@ You *might* need to give **Tachiyomi** the permission to *install unknown apps*,
 
 ## Adding manga to your library
 
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-Add.mp4)
 :::
 

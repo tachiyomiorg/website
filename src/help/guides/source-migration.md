@@ -15,7 +15,7 @@ Always make sure to have a [backup](/help/guides/creating-backups/) in case anyt
 ## Migrating on Stable/Preview
 
 :::: guide Migrating from Manga
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview-Manga.mp4)
 :::
 
@@ -27,7 +27,7 @@ Always make sure to have a [backup](/help/guides/creating-backups/) in case anyt
 ::::
 
 :::: guide Migrating from Source
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview-Source.mp4)
 :::
 
@@ -49,7 +49,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 ## Migrating on TachiyomiJ2K
 
 :::: guide Migrating multiple manga
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-J2K.mp4)
 :::
 
@@ -62,7 +62,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 ::::
 
 :::: guide Migrating a single manga
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-J2K-Single.mp4)
 :::
 
@@ -76,7 +76,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 ## Migrating on TachiyomiAZ
 
 :::: guide Instructions
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-AZ.mp4)
 :::
 
@@ -92,7 +92,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 ## Migrating on TachiyomiSY
 
 :::: guide Migrating from Library
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY-Library.mp4)
 :::
 
@@ -106,7 +106,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 ::::
 
 :::: guide Migrating from Source
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY-Source.mp4)
 :::
 
