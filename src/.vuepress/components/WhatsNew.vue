@@ -2,7 +2,7 @@
 	<div class="guide whatsNew">
 		<p class="title"><MaterialIcon icon="new_releases" /> What's new</p>
 		<div v-html="whatsNew"></div>
-		<div class="custom-block aside">
+		<div class="note">
 			<p>
 				View the full release
 				<a href="https://github.com/inorichi/tachiyomi/releases/latest" target="_blank" rel="noopener">here</a>

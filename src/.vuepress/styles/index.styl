@@ -26,6 +26,17 @@ body,
 	background-color $backgroundColorSecondary
 
 // Custom block containers
+.videolink
+	background-color transparent !important
+	border none !important
+	padding-left 0.25rem !important
+	font-size 0.9rem
+	text-align left
+	p
+		margin-top: 0
+	a,
+	.material-holder
+		color #4a7cf6
 .custom-block
 	padding-left 1.25rem
 	padding-right 1rem
@@ -101,6 +112,11 @@ body,
 		a
 			color $accentColorSecondary
 
+.note
+	color rgba(0,0,0,.4)
+	font-size .9rem
+	text-align right
+
 // Guide container
 .guide
 	background-color $containerBackground
@@ -109,7 +125,7 @@ body,
 	padding 0.1rem 1.5rem
 	.title
 		font-weight bold
-	.aside-guide
+	.videolink
 		margin-top -1rem
 
 // Expander container
@@ -126,7 +142,7 @@ body,
 
 // File tree
 .file-tree
-	font-family $codeFontFamily
+	font-family $fontCode
 	font-size 0.85rem
 	list-style none
 	padding 0
