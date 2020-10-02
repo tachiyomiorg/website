@@ -12,10 +12,20 @@ font-feature-settings()
 	font-feature-settings arguments
 
 // Background color
+html
+	overflow-y scroll
+
+body
+	font-family $fontMain
+	font-size 16px
+
 html,
 body,
 .theme-container
 	background-color $backgroundColor
+
+a
+	color #4a7cf6
 
 .navbar
 	background-color $backgroundColor
@@ -26,6 +36,25 @@ body,
 	background-color $backgroundColorSecondary
 
 // Custom block containers
+.theme-default-content
+	h1
+		font-size 2.25rem
+		font-weight 500
+	h2
+		font-size 1.5rem
+		font-weight 500
+		padding-top 0rem !important
+		padding-bottom .25rem !important
+		margin-top 2rem !important
+		margin-bottom 1rem !important
+	code
+		padding .25rem .5rem
+		margin 0
+		border-radius .25rem
+		font-size .8rem
+		background-color $containerBackground
+		color $accentColorSecondary
+
 .videolink
 	background-color transparent !important
 	border none !important
@@ -37,6 +66,7 @@ body,
 	a,
 	.material-holder
 		color #4a7cf6
+
 .custom-block
 	padding-left 1.25rem
 	padding-right 1rem
@@ -127,18 +157,6 @@ body,
 		font-weight bold
 	.videolink
 		margin-top -1rem
-
-// Expander container
-.expander
-	background-color $containerBackground
-	border-radius $containerBorderRadius
-	margin 1rem 0
-	padding 1rem 1.5rem
-	.expansion
-		user-select none
-		font-weight bold
-		&:focus
-			outline none
 
 // File tree
 .file-tree
@@ -286,12 +304,6 @@ body,
 // Hotfix Mobile Dropdown
 .sidebar .dropdown-wrapper .dropdown-title
 	pointer-events auto
-
-// Fix weird header spacing
-.theme-default-content:not(.custom) >
-	h2,
-	h3
-		margin-bottom .2rem !important
 
 .el-collapse,
 .el-tabs,
