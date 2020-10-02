@@ -2,7 +2,7 @@
 	<p align="center">
 		<img src="./src/.vuepress/public/icons/logo.png" height="100px">
 	</p>
-	<h1 align="center">Tachiyomi Website</h1>
+	<h1 align="center">Tachiyomi Website ok this is legit</h1>
 	<p align="center">
 		<a href="https://discord.gg/tachiyomi">
 			<img src="https://img.shields.io/discord/349436576037732353.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
