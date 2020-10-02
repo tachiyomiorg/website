@@ -20,7 +20,7 @@ Always make sure to have a [backup](/help/guides/creating-backups/) in case anyt
 :::
 
 1. Tap into a **Manga** you would like to migrate.
-2. Go to <Navigation item="overflow"/> and tap <Navigation item="migrate" />.
+1. Go to <Navigation item="overflow"/> and tap <Navigation item="migrate" />.
 	> **Tachiyomi** will do a global search of all the sources you have installed and enabled.
 1. Select the **Source** that you'd like to migrate *to* by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
@@ -32,9 +32,9 @@ Always make sure to have a [backup](/help/guides/creating-backups/) in case anyt
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
-2. Press the <Navigation item="migrate" /> tab at the top next to <Navigation item="extensions" />.
-3. Select the **Source** that you'd like to migrate *from*.
-4. Tap the **Manga** you'd like to migrate *from* the **Source**.
+1. Press the <Navigation item="migrate" /> tab at the top next to <Navigation item="extensions" />.
+1. Select the **Source** that you'd like to migrate *from*.
+1. Tap the **Manga** you'd like to migrate *from* the **Source**.
 	> **Tachiyomi** will do a global search of all the sources you have installed and enabled.
 1. Select the **Source** you'd like to migrate *to* by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
@@ -97,11 +97,11 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 :::
 
 1. Tap into <Navigation item="library"/>.
-2. Tap <Navigation item="overflow"/> → **Source migration**.
-3. Select the **Source** you'd like to migrate *from* and select **All**.
-4. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <Navigation item="migrate" />. at the bottom right.
-5. Choose which data you want to transfer over.
-6. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
+1. Tap <Navigation item="overflow"/> → **Source migration**.
+1. Select the **Source** you'd like to migrate *from* and select **All**.
+1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <Navigation item="migrate" />. at the bottom right.
+1. Choose which data you want to transfer over.
+1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
 	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/>  → **Search manually**.
 ::::
 
@@ -111,11 +111,11 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
-2. Press the <Navigation item="migrate" /> tab at the top next to <Navigation item="extensions" />.
-3. Select the **Source** that you'd like to migrate *from*.
-4. Select the **Source** you'd like to migrate *from* and select **All**.
-5. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <Navigation item="migrate" />. at the bottom right.
-6. Choose which data you want to transfer over.
-7. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
+1. Press the <Navigation item="migrate" /> tab at the top next to <Navigation item="extensions" />.
+1. Select the **Source** that you'd like to migrate *from*.
+1. Select the **Source** you'd like to migrate *from* and select **All**.
+1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <Navigation item="migrate" />. at the bottom right.
+1. Choose which data you want to transfer over.
+1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
 	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/>  → **Search manually**.
 ::::
