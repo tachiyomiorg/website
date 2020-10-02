@@ -10,7 +10,7 @@ sidebarDepth: 0
 Forks are alternative versions of **Tachiyomi** with exclusive features.
 
 ## <img class="headerLogo" :src="$withBase('/assets/forks_logo-neko.png')"> [Neko](/forks/Neko)
-::: aside-guide
+::: videolink
 Maintained by [CarlosEsco](https://github.com/CarlosEsco)
 <br>Requires Android 7.0+
 :::
@@ -21,7 +21,7 @@ Some features include:
 * Built in manga recommendations
 
 ## <img class="headerLogo" :src="$withBase('/assets/forks_logo-j2k.png')"> [TachiyomiJ2K](/forks/TachiyomiJ2K)
-::: aside-guide
+::: videolink
 Maintained by [Jays2Kings](https://github.com/Jays2Kings)
 <br>Requires Android 6.0+
 :::
@@ -32,7 +32,7 @@ Some features include:
 * Automatic background based on manga page
 
 ## <img class="headerLogo" :src="$withBase('/assets/forks_logo-az.png')"> [TachiyomiAZ](/forks/TachiyomiAZ)
-::: aside-guide
+::: videolink
 Maintained by [az4521](https://github.com/az4521)
 <br>Requires Android 5.0+
 :::
@@ -45,7 +45,7 @@ Some features include:
 * Grid view corner rounding configuration
 
 ## <img class="headerLogo" :src="$withBase('/assets/forks_logo-sy.png')"> [TachiyomiSY](/forks/TachiyomiSY)
-::: aside-guide
+::: videolink
 Maintained by [Syer10](https://github.com/jobobby04)
 <br>Requires Android 5.0+
 :::

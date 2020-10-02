@@ -26,7 +26,7 @@ This fork takes a new approach to the design of the base app along with several 
 <img class="zoomable" :src="$withBase('/assets/forks_banner-j2k.png')"/>
 
 ## Features
-::: aside-guide
+::: videolink
 For a full list of features, visit the GitHub page.
 :::
 

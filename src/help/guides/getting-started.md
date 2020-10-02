@@ -13,7 +13,7 @@ When you've completed the download, open the <VersionTag fileName/> file and pro
 
 ## Installing an extension
 
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.mp4)
 :::
 
@@ -27,7 +27,7 @@ You *might* need to give **Tachiyomi** the permission to *install unknown apps*,
 
 ## Adding manga to your library
 
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-Add.mp4)
 :::
 
@@ -48,7 +48,7 @@ Check your spelling and try again, there's also the chance that your used source
   > For example **Bungo Stray Dogs** instead of **Bungou Stray Dogs**.
 * Some sources use different wordings
  > For example **3-gatsu no Lion** instead of **Sangatsu no Lion**.
-::: aside
+::: note
 Find more potential answers to your questions [here](/help/faq/#why-can-t-i-find-x-manga).
 :::
 ::::

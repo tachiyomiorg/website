@@ -61,7 +61,7 @@ Be aware that it could be a network issue on your device or on the catalog you a
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
 At the moment, no. You could try using symlinks but that requires having your phone rooted.
-::: aside
+::: note
 Read more about rooting your phone [here](https://www.xda-developers.com/root/)
 :::
 
@@ -71,7 +71,7 @@ To log in with Kitsu you need to use your email address as your username.
 
 #### Why can't I find manga in MAL's search results?
 You can search a manga from your MAL profile's list by searching in the following format: `my:<manga>`
-::: aside
+::: note
 Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
 :::
 
@@ -134,7 +134,7 @@ Tachiyomi by default adds a `.nomedia` file to prevent this from happening but s
 #### I lost everything, what now?
 To avoid data loss in the future, you can use the automatic backup feature.
 
-::: aside
+::: note
 Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
 :::
 
@@ -159,14 +159,14 @@ Some extensions contain multiple sources, look at the list below to find out whi
 
 ::: guide
 User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different multi-source extensions and their sources.
-::: aside
+::: note
 Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
 :::
 
 #### How do I request a new extension?
 Open an issue [on GitHub](https://github.com/inorichi/tachiyomi-extensions/issues) if one does not already exist.
 
-::: aside
+::: note
 You can find the list of extensions to download [here](/extensions/)
 :::
 
@@ -178,7 +178,7 @@ To install just download the file for the extension you want and then install it
 #### How do I allow third-party installations?
 ::::: el-tabs
 :::: el-tab-pane label="Android 8.0 and higher"
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for Android 8.0 and newer video guide](/help/faq/assets/UnknownSources-Android10.webm)
 :::
 When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
@@ -186,7 +186,7 @@ When installing your first extension and are prompted that your phone *isn't all
 In *newer* versions of **Android** you need to enable **Install unknown apps** by a per-app basis.
 ::::
 :::: el-tab-pane label="Android 7.1 and lower"
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for Android 7.1 and older video guide](/help/faq/assets/UnknownSources-Android7.webm)
 :::
 When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
@@ -195,7 +195,7 @@ In *older* versions of **Android** you only need to enable **Unknown sources** g
 ::::
 :::::
 
-::: aside
+::: note
 If you need more help regarding this, read [this](https://www.theandroidsoul.com/how-to-allow-apps-installation-from-unknown-sources-on-android-9-pie/)
 :::
 
@@ -232,7 +232,7 @@ It might be because the title is worded differently. Follow any of the steps bel
 ### MangaDex
 
 #### Why are there no results when searching?
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.mp4)
 :::
 
@@ -265,7 +265,7 @@ This can be solved by opening **MangaDex** in <Navigation item="webview"/> and b
 #### How do I fix chapters from Mangaplus being broken?
 Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the manga that uses **MANGA Plus** on **MangaDex** onto the **MANGA Plus** source.
 
-::: aside
+::: note
 Read about source migration [here](/help/guides/source-migration/)
 :::
 
