@@ -39,7 +39,7 @@
 		"vuepress-plugin-zooming": "^1.1.8"
 	},
 	"dependencies": {
-		"@mr-hope/vuepress-plugin-last-update": "^0.7.4",
+		"@mr-hope/vuepress-plugin-last-update": "^0.7.5",
 		"@mr-hope/vuepress-plugin-sitemap": "^0.7.4",
 		"axios": "^0.20.0",
 		"core-js": "2.6.4",
