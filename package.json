@@ -28,7 +28,7 @@
 		"eslint": "^7.10.0",
 		"eslint-config-vuepress": "^2.2.0",
 		"eslint-plugin-markdown": "^1.0.2",
-		"eslint-plugin-vue": "^7.0.0-beta.4",
+		"eslint-plugin-vue": "^7.0.1",
 		"node-sass": "^4.14.1",
 		"prettier": "^2.1.2",
 		"sass-loader": "^10.0.2",
@@ -39,8 +39,8 @@
 		"vuepress-plugin-zooming": "^1.1.8"
 	},
 	"dependencies": {
-		"@mr-hope/vuepress-plugin-last-update": "^0.7.4",
-		"@mr-hope/vuepress-plugin-sitemap": "^0.7.4",
+		"@mr-hope/vuepress-plugin-last-update": "^0.7.5",
+		"@mr-hope/vuepress-plugin-sitemap": "^0.7.5",
 		"axios": "^0.20.0",
 		"core-js": "2.6.4",
 		"element-ui": "^2.13.2",
