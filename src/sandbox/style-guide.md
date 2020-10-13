@@ -36,7 +36,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 > :::
 
 - **DO** include video guides as a text under the header:
-> ::: aside-guide
+> ::: videolink
 > [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.mp4)
 > :::
 
@@ -106,18 +106,18 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 > <el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
 > <el-alert type="warning" title="Warning!" description="This feature requires you to be on Android 7 or above." show-icon :closable="false"></el-alert>
 > <el-alert type="error" title="Attention!" description="Make sure you have created a backup before following these instructions!" show-icon :closable="false"></el-alert>
-> ::: aside
+> ::: note
 > More alerts can be found on the [Element-UI](element-ui.md#alert) page.
 > :::
 
 - **DO** include related info as an aside object:
 > **Lorem ipsum** dolor sit amet, _consectetur_ adipiscing **elit**.
-> ::: aside
+> ::: note
 > Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
 > :::
 
 > **Pellentesque** _habitant_ morbi tristique **senectus** et netus.
-> ::: aside
+> ::: note
 > Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
 > :::
 
@@ -190,14 +190,14 @@ Many of the stuff previously mentioned generally applies when making guides too,
 > <Carousel name="carousel-background-color">
 > <CarouselItem>
 > <figure class="centered">
-> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Background-Black.png')">
+> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
 > 	<h4>Black</h4>
 > 	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
 > </figure>
 > </CarouselItem>
 > <CarouselItem>
 > <figure class="centered">
-> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/help/guides/reader-settings/assets/Reader-Background-White.png')">
+> 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-white.png')">
 > 	<h4>White</h4>
 > 	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
 > </figure>

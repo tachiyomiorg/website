@@ -100,7 +100,7 @@ export default {
 		font-size 0
 		.app-icon,
 		.app-label
-			color $accentColorSecondary
+			color darken($accentColor, 25%)
 			font-weight 500
 			font-size 1rem
 		.app-icon
@@ -116,11 +116,6 @@ export default {
 		.app-image
 			max-height 1.5em
 			vertical-align sub
-		&.ext-installation
-			border 1px solid $accentColorSecondary
-			padding 0px 0px 2px 4px
-			margin-right 5px
-			border-radius 4px
 		&:hover
 			cursor default
 
@@ -128,5 +123,5 @@ blockquote
 	.app-navigation
 		.app-icon,
 		.app-label
-			color inherit
+			color inherit !important
 </style>

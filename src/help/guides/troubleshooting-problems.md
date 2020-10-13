@@ -6,17 +6,17 @@ lang: en-US
 
 # Troubleshooting problems
 
-**This page is for when you encounter a problem with a source extension.**
+This page is for when you encounter a problem with a source extension.
 
-::: danger It can be accompanied by these error messages:
-+ HTTP Error 5xx
+::: c-danger Common error messages
 - HTTP Error 4xx
-+ java.security.cert.CertPathValidatorException
+- HTTP Error 5xx
+- Unexpected URL
 - Page List is empty
-+ Unable to resolve host
-- unexpected url
-+ Attempt to invoke virtual method 'java.lang.String org.jsoup.nodes.Node.attr(java.lang.String)' on a null object reference
+- Unable to resolve host
 - Failed to bypass Cloudflare
+- java.security.cert.CertPathValidatorException
+- Attempt to invoke virtual method 'java.lang.String org.jsoup.nodes.Node.attr(java.lang.String)' on a null object reference
 :::
 
 ## Diagnosis
@@ -34,8 +34,8 @@ lang: en-US
 * If your downloads are getting stuck, try deleting the queue and trying again.
 * Force close **Tachiyomi** and reopen it.
 
-::: tip Bonus step
-Try the latest Preview version, your issue may have been fixed.
+::: c-tip
+Your issue may have been fixed in the Preview version already, just wait for a new Stable release.
 :::
 
 If any of these help, go to [it only happens to me](#it-only-happens-to-me).
@@ -50,7 +50,7 @@ You may be getting a **CAPTCHA**, may have been IP-banned, or encountered some o
 * Don't use downloads with the source.
 * Have less manga in library from the source.
 
-::: tip
+::: c-warning
 All of the above are very imprecise and fuzzy rules, because each site has their own, non-public limits and triggers.
 :::
 
@@ -106,7 +106,7 @@ You must solve the **CAPTCHA** in **WebView**.
 1. Press the source you'd like to access.
 1. Press the <Navigation item="webview"/> icon.
 	<figure class="centered">
-		<img :src="$withBase('/help/guides/troubleshooting-problems/assets/WebView-Open.jpg')">
+		<img class="zoomable" :src="$withBase('/assets/guides_webview-open.jpg')">
 	</figure>
 1. Complete **CAPTCHA** if one is present.
 1. Once done, press the *Back Arrow* at the top left to return.
@@ -117,7 +117,7 @@ If **WebView** doesn't work for you, please update the [Android System WebView](
 
 When you've updated go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to `Android System WebView`.
 
-::: guide Still not working?
+::: c-tip
 If `Android System WebView` doesn't work, try setting `Google Chrome` as the default **WebView Implementation** instead.
 :::
 

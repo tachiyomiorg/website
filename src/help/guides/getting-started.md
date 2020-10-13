@@ -13,7 +13,7 @@ When you've completed the download, open the <VersionTag fileName/> file and pro
 
 ## Installing an extension
 
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.mp4)
 :::
 
@@ -21,15 +21,13 @@ Now that **Tachiyomi** is installed, open the app and navigate to <Navigation it
 
 Find the extension that you'd like to use then press the <Navigation item="install"/> button next to your desired extension and then accept the installation prompt.
 
-::: guide Security prompt
-You *might* be stopped by a security prompt while attempting to install an extension. If that were to happen then you need to allow **Tachiyomi** the permission to *install unknown apps*.
-::: aside
-Learn how you can do so [here](/help/faq/#how-do-i-allow-third-party-installations)
+::: c-warning
+You *might* need to give **Tachiyomi** the permission to *install unknown apps*, you can read how to do so [here](/help/faq/#how-do-i-allow-third-party-installations).
 :::
 
 ## Adding manga to your library
 
-::: aside-guide
+::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-Add.mp4)
 :::
 
@@ -49,8 +47,8 @@ Check your spelling and try again, there's also the chance that your used source
 * Some sources use different spellings.
   > For example **Bungo Stray Dogs** instead of **Bungou Stray Dogs**.
 * Some sources use different wordings
- > For example **3-gatsu no Lion** instead of **Sangatsu no Lion**.
-::: aside
+  > For example **3-gatsu no Lion** instead of **Sangatsu no Lion**.
+::: note
 Find more potential answers to your questions [here](/help/faq/#why-can-t-i-find-x-manga).
 :::
 ::::

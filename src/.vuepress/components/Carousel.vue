@@ -35,6 +35,7 @@ export default {
 .agile {
 	background: #f0f4f8;
 	border-radius: 1em;
+	margin-bottom: 1rem;
 }
 
 .agile__nav-button {
