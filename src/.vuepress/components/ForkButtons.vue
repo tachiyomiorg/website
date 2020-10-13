@@ -6,7 +6,9 @@
 		<button class="githubForkButton" :style="githubForkStyle" :onclick="githubForkLink">
 			{{ githubForkLabel }}
 		</button>
-	</div>
+		<br>
+		<span class="versionNotice">Requires <strong>Android {{androidVersion}}</strong> or higher.</span>
+	</div>	
 </template>
 
 <script>
@@ -41,6 +43,10 @@ export default {
 		githubForkStyle: {
 			type: String,
 			default: "",
+		},
+		androidVersion:  {
+			type: String,
+			default: "5.0",
 		},
 	},
 	data() {
