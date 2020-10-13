@@ -6,15 +6,17 @@ lang: en-US
 
 # Categories
 
-**Categories** can store your bookmarks in custom made categories, which keeps your library neat and organized. You can name and sort them however you want according to your preference (ie. _Genre_, _Reading Status_, etc).
+**Categories** help you store your bookmarked manga in custom tabs, which keeps your library neat and organized. You can name and sort them however you want according to your preference (ie. _Genre_, _Reading Status_, etc).
+
+You can even add your bookmarked manga in multiple categories and can easily control the update options through Library settings and automatically download new manga chapters from certain categories (if **Download new chapters** option is enabled in **Downloads** settings).
 
 ## Create a category
 
-To make a category follow the steps below.
+To create a category, follow the steps below.
 
 ::: guide
 1. Go to <Navigation item="more"/> → <Navigation item="categories"/>.
-1. Press on **+ Add**  button on button right.
+1. Press the **+ Add**  button in the bottom right.
 1. Enter a name and press **OK**.
 :::
 
