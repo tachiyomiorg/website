@@ -14,7 +14,7 @@
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-You can find a project style guide [here](https://tachiyomi.org/sandbox/style-guide/).</br>
+You can find a project style guide click here [here](https://tachiyomi.org/sandbox/style-guide/).</br>
 If you got any questions, [join our Discord server](https://discord.gg/tachiyomi).
 
 ## Repositories
