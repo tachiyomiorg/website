@@ -37,7 +37,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 
 - **DO** include video guides as a text under the header:
 > ::: videolink
-> [<MaterialIcon icon-name="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.mp4)
+> [<MaterialIcon icon-name="videocam"/> Click for video guide](/assets/faq_mangadex-no-results.mp4)
 > :::
 
 - **DO** try to be consistent with video recording by following these guidelines:
