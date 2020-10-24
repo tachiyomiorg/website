@@ -14,7 +14,7 @@ When you've completed the download, open the <VersionTag fileName/> file and pro
 ## Installing an extension
 
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Extension-Install.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_extension-install.mp4)
 :::
 
 Now that **Tachiyomi** is installed, open the app and navigate to <Navigation item="browse"/> and then switch to the **Extensions** tab.
@@ -28,7 +28,7 @@ You *might* need to give **Tachiyomi** the permission to *install unknown apps*,
 ## Adding manga to your library
 
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/getting-started/assets/Library-Add.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_library-add.mp4)
 :::
 
 Now that you've installed the desired extension, it will show in the **Sources** tab. This page contains all of your sources, which is obtained through extensions, some extensions contain *multiple* sources.

@@ -16,7 +16,7 @@ Always make sure to have a [backup](/help/guides/creating-backups/) in case anyt
 
 :::: guide Migrating from Manga
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview-Manga.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-preview-manga.mp4)
 :::
 
 1. Tap into a **Manga** you would like to migrate.
@@ -28,7 +28,7 @@ Always make sure to have a [backup](/help/guides/creating-backups/) in case anyt
 
 :::: guide Migrating from Source
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-Preview-Source.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-preview-source.mp4)
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
@@ -50,7 +50,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating multiple manga
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-J2K.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-j2k.mp4)
 :::
 
 1. Tap <MaterialIcon icon="settings"/> **Settings** → <MaterialIcon icon="explore"/> **Sources** → **Source migration**.
@@ -63,7 +63,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating a single manga
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-J2K-Single.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-j2k-single.mp4)
 :::
 
 1. Tap into a **Manga** in your Library.
@@ -77,7 +77,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Instructions
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-AZ.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-az.mp4)
 :::
 
 1. Tap into <Navigation item="library"/>.
@@ -93,7 +93,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating from Library
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY-Library.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-sy-library.mp4)
 :::
 
 1. Tap into <Navigation item="library"/>.
@@ -107,7 +107,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating from Source
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/guides/source-migration/assets/Migrate-SY-Source.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-sy-source.mp4)
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
