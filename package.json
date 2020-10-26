@@ -41,7 +41,7 @@
 	"dependencies": {
 		"@mr-hope/vuepress-plugin-last-update": "^1.0.1",
 		"@mr-hope/vuepress-plugin-sitemap": "^1.0.1",
-		"axios": "^0.20.0",
+		"axios": "^0.21.0",
 		"core-js": "2.6.4",
 		"element-ui": "^2.13.2",
 		"iso-639-1": "^2.1.4",
