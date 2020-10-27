@@ -1,6 +1,10 @@
 <template>
 	<div class="guide whatsNew">
-		<p class="title"><MaterialIcon icon="new_releases" /> What's new</p>
+		<p class="title">
+			<MaterialIcon icon="new_releases" />
+			What's new
+		</p>
+		<!-- eslint-disable-next-line vue/no-v-html -->
 		<div v-html="whatsNew"></div>
 		<div class="note">
 			<p>
