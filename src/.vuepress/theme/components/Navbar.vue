@@ -1,5 +1,6 @@
 <template>
 	<header class="navbar">
+		<!-- eslint-disable-next-line vue/require-explicit-emits -->
 		<SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
 		<RouterLink :to="$localePath" class="home-link">
@@ -9,13 +10,9 @@
 				:src="$withBase($site.themeConfig.logo)"
 				:alt="$siteTitle"
 			/>
-			<span
-				v-if="$siteTitle"
-				ref="siteName"
-				class="site-name"
-				:class="{ 'can-hide': $site.themeConfig.logo }"
-				>{{ $siteTitle }}</span
-			>
+			<span v-if="$siteTitle" ref="siteName" class="site-name" :class="{ 'can-hide': $site.themeConfig.logo }">
+				{{ $siteTitle }}
+			</span>
 		</RouterLink>
 
 		<div
@@ -30,12 +27,7 @@
 		>
 			<div v-if="$page.frontmatter.hideSearch" />
 			<AlgoliaSearchBox v-else-if="isAlgoliaSearch" :options="algolia" />
-			<SearchBox
-				v-else-if="
-					$site.themeConfig.search !== false &&
-					$page.frontmatter.search !== false
-				"
-			/>
+			<SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
 			<NavLinks class="can-hide" />
 		</div>
 	</header>
@@ -65,17 +57,11 @@ export default {
 
 	computed: {
 		algolia() {
-			return (
-				this.$themeLocaleConfig.algolia ||
-				this.$site.themeConfig.algolia ||
-				{}
-			);
+			return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {};
 		},
 
 		isAlgoliaSearch() {
-			return (
-				this.algolia && this.algolia.apiKey && this.algolia.indexName
-			);
+			return this.algolia && this.algolia.apiKey && this.algolia.indexName;
 		},
 	},
 
@@ -87,16 +73,13 @@ export default {
 			// eslint-disable-next-line radix
 			parseInt(css(this.$el, "paddingRight"));
 		const handleLinksWrapWidth = () => {
-			if (
-				document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT
-			) {
+			if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
 				this.linksWrapMaxWidth = null;
 			} else {
 				this.linksWrapMaxWidth =
 					this.$el.offsetWidth -
 					NAVBAR_VERTICAL_PADDING -
-					((this.$refs.siteName && this.$refs.siteName.offsetWidth) ||
-						0);
+					((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
 			}
 		};
 		handleLinksWrapWidth();

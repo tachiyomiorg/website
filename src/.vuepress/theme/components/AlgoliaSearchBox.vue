@@ -1,14 +1,6 @@
 <template>
-	<form
-		id="search-form"
-		class="algolia-search-wrapper search-box"
-		role="search"
-	>
-		<input
-			id="algolia-search-input"
-			class="search-query"
-			:placeholder="placeholder"
-		/>
+	<form id="search-form" class="algolia-search-wrapper search-box" role="search">
+		<input id="algolia-search-input" class="search-query" :placeholder="placeholder" />
 	</form>
 </template>
 
@@ -47,12 +39,8 @@ export default {
 	methods: {
 		initialize(userOptions, lang) {
 			Promise.all([
-				import(
-					/* webpackChunkName: "docsearch" */ "docsearch.js/dist/cdn/docsearch.min.js"
-				),
-				import(
-					/* webpackChunkName: "docsearch" */ "docsearch.js/dist/cdn/docsearch.min.css"
-				),
+				import(/* webpackChunkName: "docsearch" */ "docsearch.js/dist/cdn/docsearch.min.js"),
+				import(/* webpackChunkName: "docsearch" */ "docsearch.js/dist/cdn/docsearch.min.css"),
 			]).then(([docsearch]) => {
 				// eslint-disable-next-line no-param-reassign
 				docsearch = docsearch.default;
@@ -62,17 +50,12 @@ export default {
 					inputSelector: "#algolia-search-input",
 					// #697 Make docsearch work well at i18n mode.
 					algoliaOptions: {
-						facetFilters: [`lang:${lang}`].concat(
-							algoliaOptions.facetFilters || []
-						),
+						facetFilters: [`lang:${lang}`].concat(algoliaOptions.facetFilters || []),
 						...algoliaOptions,
 					},
 					handleSelected: (input, event, suggestion) => {
 						const { pathname, hash } = new URL(suggestion.url);
-						const routepath = pathname.replace(
-							this.$site.base,
-							"/"
-						);
+						const routepath = pathname.replace(this.$site.base, "/");
 						this.$router.push(`${routepath}${hash}`);
 					},
 				});
@@ -80,8 +63,7 @@ export default {
 		},
 
 		update(options, lang) {
-			this.$el.innerHTML =
-				'<input id="algolia-search-input" class="search-query">';
+			this.$el.innerHTML = '<input id="algolia-search-input" class="search-query">';
 			this.initialize(options, lang);
 		},
 	},
