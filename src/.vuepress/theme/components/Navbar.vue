@@ -10,9 +10,9 @@
 				:src="$withBase($site.themeConfig.logo)"
 				:alt="$siteTitle"
 			/>
-			<span v-if="$siteTitle" ref="siteName" class="site-name" :class="{ 'can-hide': $site.themeConfig.logo }">{{
-				$siteTitle
-			}}</span>
+			<span v-if="$siteTitle" ref="siteName" class="site-name" :class="{ 'can-hide': $site.themeConfig.logo }">
+				{{ $siteTitle }}
+			</span>
 		</RouterLink>
 
 		<div

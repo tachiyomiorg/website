@@ -7,9 +7,11 @@
 			{{ githubForkLabel }}
 		</button>
 		<br />
-		<span class="versionNotice"
-			>Requires <strong>Android {{ androidVersion }}</strong> or higher.</span
-		>
+		<span class="versionNotice">
+			Requires
+			<strong>Android {{ androidVersion }}</strong>
+			or higher.
+		</span>
 	</div>
 </template>
 

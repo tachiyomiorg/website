@@ -4,5 +4,6 @@
 	"printWidth": 120,
 	"trailingComma": "es5",
 	"bracketSpacing": true,
+	"htmlWhitespaceSensitivity": "ignore",
 	"endOfLine": "auto"
 }
