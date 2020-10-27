@@ -1,14 +1,14 @@
 <template>
 	<div id="DownloadButtons">
-		<el-button type="success" icon="el-icon-download" @click="downloadStable" @keyup.enter="downloadStable"
+		<ElButton type="success" icon="el-icon-download" @click="downloadStable" @keyup.enter="downloadStable"
 			><span class="spacing">Stable</span><br /><span class="downloadTag">{{
 				this.$data.tagName
-			}}</span></el-button
+			}}</span></ElButton
 		>
-		<el-button type="warning" icon="el-icon-cpu" @click="downloadPreview" @keyup.enter="downloadPreview"
+		<ElButton type="warning" icon="el-icon-cpu" @click="downloadPreview" @keyup.enter="downloadPreview"
 			><span class="spacing">Preview</span><br /><span class="downloadTag">{{
 				this.$data.previewTagName
-			}}</span></el-button
+			}}</span></ElButton
 		>
 		<span class="versionNotice">Requires <strong>Android 5.0</strong> or higher.</span>
 	</div>
