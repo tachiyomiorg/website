@@ -104,7 +104,9 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 ### Miscellaneous
 
 #### What is Tachiyomi Preview?
-It's weekly updated version of the app. It contains features that can be added to Tachiyomi in the future, but there is a higher chance for bugs. Tachiyomi Preview is used by developers and contributors to test the app and find bugs. If you are willing to use Tachiyomi Preview, turn on auto-backup to prevent losing your library due to potential bugs.
+It's a weekly updated version of the app. It contains features that can be added to Tachiyomi in the future, but there is a higher chance for bugs. Tachiyomi Preview is used by developers and contributors to test the app and find bugs.
+
+If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/creating-backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs.
 
 #### Why can't I uninstall Tachiyomi?
 
