@@ -10,6 +10,10 @@ lang: en-US
 # Download
 Download the latest stable version of **Tachiyomi** that released <ReleaseDate stable /> or the preview version that released <ReleaseDate preview />.
 
+::: note
+Read about Tachiyomi Preview [here](../help/faq/#what-is-tachiyomi-preview)
+:::
+
 <DownloadButtons />
 
 <WhatsNew />
