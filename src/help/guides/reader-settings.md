@@ -7,7 +7,7 @@ lang: en-US
 # Reader settings
 This section relates to the reading experience in the app and navigating the reader.
 
-## Default reading mode <Badge text="Left to Right" type="default-indicator" vertical="middle" />
+## Default reading mode <Badge text="Right to left" type="default-indicator" vertical="middle" />
 This setting sets the reader's default direction when you open a manga.
 
 **Left to right**
@@ -21,6 +21,9 @@ This setting sets the reader's default direction when you open a manga.
 
 **Webtoon**
 - Webtoon is like vertical but stitches all the images together into one stream.
+
+**Continuous vertical**
+- Similar to webtoon but with a little space between pages.
 
 ::: c-tip
 You can change viewer for different series by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**.
@@ -50,8 +53,8 @@ This allows you to control how the screen is going to be oriented.
 - **Force Portrait** forces the reader to be in portrait.
 - **Force Landscape** forces the reader to be in landscape.
 
-## Background color <Badge text="White" type="default-indicator" vertical="middle" />
-This allows you to control what color the background should be in reader. Background color can either be **Black** or
+## Background color <Badge text="Black" type="default-indicator" vertical="middle" />
+This allows you to control what color the background should be in reader. Background color can either be **Black**, **Gray** or
 **White**.
 
 <Carousel name="carousel-background-color">
@@ -60,6 +63,13 @@ This allows you to control what color the background should be in reader. Backgr
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
 	<h4>Black</h4>
 	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-gray.png')">
+	<h4>Gray</h4>
+	<p>Surrounds page with gray.</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
@@ -86,8 +96,11 @@ This settings shows the page number at the bottom of the page in current page/to
 ## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
 This setting allows the chapters marked as read to be skipped during reading. This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
 
-## Skip filtered chapters <Badge text="False" type="default-indicator" vertical="middle" />
+## Skip filtered chapters <Badge text="True" type="default-indicator" vertical="middle" />
 This setting allows filtered chapters to be skipped during reading.
+
+## Always show chapter transition <Badge text="True" type="default-indicator" vertical="middle" />
+Chapter transition is the area between chapters that shows the names of current and next chapters. When this option is disabled, the reader will hide this area only if the next chapter is loaded.
 
 ## Scale type <Badge text="Fit screen" type="default-indicator" vertical="middle" />
 Scale type lets you choose how the page fits in your screen.
