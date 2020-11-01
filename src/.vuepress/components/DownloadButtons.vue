@@ -75,13 +75,13 @@ export default {
 				icon: "warning",
 				title: "Are you sure?",
 				html: `
-                    <strong>Tachiyomi Preview</strong> is not recommended if you're not willing to test for – and endure – issues.
-                    <div class="note">
-                        <p>
-                            Read more about Tachiyomi Preview
-                            <a href="../help/faq/#what-is-tachiyomi-preview" rel="help">here</a>
-                        </p>
-                    </div>`,
+					<strong>Tachiyomi Preview</strong> is not recommended if you're not willing to test for – and endure – issues.
+					<div class="note">
+						<p>
+							Read more about Tachiyomi Preview
+							<a href="../help/faq/#what-is-tachiyomi-preview" rel="help">here</a>
+						</p>
+					</div>`,
 				confirmButtonText: "I am sure.",
 				showCloseButton: true,
 				showCancelButton: false,
