@@ -91,6 +91,9 @@ export default {
 				hideClass: {
 					popup: "animate__animated animate__faster animate__zoomOut",
 				},
+				customClass: {
+					content: "swal2-downloadPreview_content",
+				},
 				// eslint-disable-next-line no-shadow
 			}).then((result) => {
 				if (result.value) {
@@ -158,4 +161,9 @@ export default {
 		.el-button
 			width 8.2em
 			padding 12px 28px
+.swal2-
+	&downloadPreview_
+		&content
+			.note
+				text-align center
 </style>
