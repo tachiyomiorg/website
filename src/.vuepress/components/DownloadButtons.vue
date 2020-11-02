@@ -79,7 +79,7 @@ export default {
 					<div class="note">
 						<p>
 							Read more about Tachiyomi Preview
-							<a href="../help/faq/#what-is-tachiyomi-preview" rel="help">here</a>
+							<a href="../help/faq/#what-is-tachiyomi-preview" rel="help">here</a>.
 						</p>
 					</div>`,
 				confirmButtonText: "I am sure.",
