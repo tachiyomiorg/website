@@ -1,7 +1,7 @@
 ---
-title: Extensions
-description: Here is a list of all available extensions to download inside the app.
-lang: en-US
+title: 申请增加新新漫画（刚刚出app之前是网页漫画）
+description: https://www.77mh.cc
+lang: en-ZH
 ---
 
 # Extensions
