@@ -74,8 +74,14 @@ export default {
 			this.$swal({
 				icon: "warning",
 				title: "Are you sure?",
-				html:
-					"<strong>Tachiyomi Preview</strong> is not recommended if you're not willing to test for – and endure – issues.",
+				html: `
+					<strong>Tachiyomi Preview</strong> is not recommended if you're not willing to test for – and endure – issues.
+					<div class="note">
+						<p>
+							Read more about Tachiyomi Preview
+							<a href="../help/faq/#what-is-tachiyomi-preview" rel="help">here</a>.
+						</p>
+					</div>`,
 				confirmButtonText: "I am sure.",
 				showCloseButton: true,
 				showCancelButton: false,
@@ -84,6 +90,9 @@ export default {
 				},
 				hideClass: {
 					popup: "animate__animated animate__faster animate__zoomOut",
+				},
+				customClass: {
+					content: "swal2-downloadPreview_content",
 				},
 				// eslint-disable-next-line no-shadow
 			}).then((result) => {
@@ -152,4 +161,9 @@ export default {
 		.el-button
 			width 8.2em
 			padding 12px 28px
+.swal2-
+	&downloadPreview_
+		&content
+			.note
+				text-align center
 </style>

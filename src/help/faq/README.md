@@ -103,6 +103,11 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 
 ### Miscellaneous
 
+#### What is Tachiyomi Preview?
+It's a weekly updated version of the app. It contains features that can be added to Tachiyomi in the future, but there is a higher chance for bugs. Tachiyomi Preview is used by developers and contributors to test the app and find bugs.
+
+If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/creating-backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs.
+
 #### Why can't I uninstall Tachiyomi?
 
 On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from the phone first, then uninstall Tachiyomi.
