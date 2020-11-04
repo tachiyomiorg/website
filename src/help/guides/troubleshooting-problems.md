@@ -83,7 +83,7 @@ The source you selected may have **Cloudflare** protection on and is enforcing [
 The source banned your IP address (in most cases it's temporary). We suggest to [migrate](./source-migration.md) part of your manga to another source.
 :::
 ::: el-collapse-item title="HTTP error 5xx"
-Most probably the source you are trying to access has problems on their side. Open the source in webview and check if the site is down.
+Most probably the source you are trying to access has problems on their side. Open the source in <Navigation item="webview"/> and check if the site is down.
 :::
 ::: el-collapse-item title="Unable to resolve host / Connection failed"
 That means that something prevents your connection with the site. Possible reasons: your internet connection is bad, the app doesn't have access to internet, your ISP have blocked the site, the site is down. Try using different internet connection (switch to Wi-Fi, mobile data or a VPN). Try to enable <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **DNS over HTTPS**.
