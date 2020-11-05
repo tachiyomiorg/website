@@ -1,14 +1,15 @@
 ---
 title: Troubleshooting problems
-description: Encountered an issue with a source? Here are resources to help you troubleshoot it.
+description: Encountered an issue with a source or the app? Here are resources to help you troubleshoot it.
 lang: en-US
 ---
 
 # Troubleshooting problems
 
-This page is for when you encounter a problem with a source extension.
+This page is for when you encounter a problem with a source or the app.
 
 ::: c-danger Common error messages
+This is just a list of some errors. Go through [Diagnosis](#diagnosis) even if your problem isn't on the list.
 - HTTP Error 4xx
 - HTTP Error 5xx
 - Unexpected URL
@@ -31,6 +32,7 @@ This page is for when you encounter a problem with a source extension.
   * **Clear Cache**
   * **Clear Cookies**
   * **Clear Database**
+  * **DNS over HTTPS**
 * If your downloads are getting stuck, try deleting the queue and trying again.
 * Force close **Tachiyomi** and reopen it.
 
@@ -41,7 +43,7 @@ Your issue may have been fixed in the Preview version already, just wait for a n
 If any of these help, go to [it only happens to me](#it-only-happens-to-me).
 If it's not just you, go to [everyone is having this problem](#everyone-is-having-this-problem).
 
-If none of these help, try asking in our [Discord Server](https://discord.gg/tachiyomi)
+If none of these help, try asking in our [Discord Server](https://discord.gg/tachiyomi). State app version, source, manga and chapter with the problem.
 
 ### It only happens to me
 You may be getting a **CAPTCHA**, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that can be done about that. Some of them (like **CAPTCHA**) have to be manually solved, some are temporary (IP bans).
@@ -76,6 +78,24 @@ This means that the manga has been licensed and can no longer be read on that so
 :::
 ::: el-collapse-item title="HTTP error 403"
 The source you selected may have **Cloudflare** protection on and is enforcing [CAPTCHA](#solving-a-captcha). Please complete the [CAPTCHA](#solving-a-captcha) to fix it.
+:::
+::: el-collapse-item title="HTTP error 429 (Too Many Requests)"
+The source banned your IP address (in most cases it's temporary). We suggest to [migrate](./source-migration.md) part of your manga to another source.
+:::
+::: el-collapse-item title="HTTP error 5xx"
+Most probably the source you are trying to access has problems on their side. Open the source in <Navigation item="webview"/> and check if the site is down.
+:::
+::: el-collapse-item title="Unable to resolve host / Connection failed"
+That means that something prevents your connection with the site. Possible reasons: your internet connection is bad, the app doesn't have access to internet, your ISP have blocked the site, the site is down. Try using different internet connection (switch to Wi-Fi, mobile data or a VPN). Try to enable <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **DNS over HTTPS**.
+:::
+::: el-collapse-item title="java.security.cert.CertPathValidatorException / Chain validation failed"
+That means there is a problem with validating source's sertificate.
+
+- Check if the site's certificate have expired. Use an online service for checking SSL certificates. If the certificate have expired, then wait while the site owner will renew it.
+- Ensure that you have right date and time set on your phone.
+- Try <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **Clear cache** and **Clear cookies**.
+- Try using different internet connection (switch to Wi-Fi, mobile data or a VPN).
+- Try to restart the device.
 :::
 ::: el-collapse-item title="App not installed"
 You may encounter this if you're installing an official build over an existing **F-Droid** build due to differing signatures.
