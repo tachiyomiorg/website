@@ -40,7 +40,7 @@
 		"webpack": "^4.44.2"
 	},
 	"dependencies": {
-		"@mr-hope/vuepress-plugin-last-update": "^1.4.7",
+		"@mr-hope/vuepress-plugin-last-update": "^1.5.1",
 		"@mr-hope/vuepress-plugin-sitemap": "^1.4.7",
 		"axios": "^0.21.0",
 		"core-js": "2.6.4",
