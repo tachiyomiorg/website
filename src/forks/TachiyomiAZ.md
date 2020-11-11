@@ -82,7 +82,7 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/forks_logo-az.png')"> TachiyomiAZ
 
-<ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="window.open('https://github.com/az4521/TachiyomiAZ')"/>
+<ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="https://github.com/az4521/TachiyomiAZ"/>
 <div class="overflowContainer">
   <div class="textLoop">
     <div class="textWiggle">
