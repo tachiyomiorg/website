@@ -10,81 +10,81 @@ sitemap:
 View more by pressing the headers for the specified item.
 
 ## [Button](https://element.eleme.io/#/en-US/component/button)
-<el-row>
-  <el-button plain>Plain</el-button>
-  <el-button type="primary" plain>Primary</el-button>
-  <el-button type="success" plain>Success</el-button>
-  <el-button type="info" plain>Info</el-button>
-  <el-button type="warning" plain>Warning</el-button>
-  <el-button type="danger" plain>Danger</el-button>
-</el-row>
+<ElRow>
+  <ElButton plain>Plain</ElButton>
+  <ElButton type="primary" plain>Primary</ElButton>
+  <ElButton type="success" plain>Success</ElButton>
+  <ElButton type="info" plain>Info</ElButton>
+  <ElButton type="warning" plain>Warning</ElButton>
+  <ElButton type="danger" plain>Danger</ElButton>
+</ElRow>
 
 ```html
-<el-row>
-  <el-button plain>Plain</el-button>
-  <el-button type="primary" plain>Primary</el-button>
-  <el-button type="success" plain>Success</el-button>
-  <el-button type="info" plain>Info</el-button>
-  <el-button type="warning" plain>Warning</el-button>
-  <el-button type="danger" plain>Danger</el-button>
-</el-row>
+<ElRow>
+  <ElButton plain>Plain</ElButton>
+  <ElButton type="primary" plain>Primary</ElButton>
+  <ElButton type="success" plain>Success</ElButton>
+  <ElButton type="info" plain>Info</ElButton>
+  <ElButton type="warning" plain>Warning</ElButton>
+  <ElButton type="danger" plain>Danger</ElButton>
+</ElRow>
 ```
 
 ## [Link](https://element.eleme.io/#/en-US/component/link)
 <div>
-  <el-link href="/sandbox/" target="_blank">default</el-link>
-  <el-link href="/download/" type="primary">primary</el-link>
-  <el-link type="success">success</el-link>
-  <el-link type="warning">warning</el-link>
-  <el-link type="danger">danger</el-link>
-  <el-link type="info">info</el-link>
+  <ElLink href="/sandbox/" target="_blank">default</ElLink>
+  <ElLink href="/download/" type="primary">primary</ElLink>
+  <ElLink type="success">success</ElLink>
+  <ElLink type="warning">warning</ElLink>
+  <ElLink type="danger">danger</ElLink>
+  <ElLink type="info">info</ElLink>
 </div>
 
 ```html
 <div>
-  <el-link href="/sandbox/" target="_blank">default</el-link>
-  <el-link href="/download/" type="primary">primary</el-link>
-  <el-link type="success">success</el-link>
-  <el-link type="warning">warning</el-link>
-  <el-link type="danger">danger</el-link>
-  <el-link type="info">info</el-link>
+  <ElLink href="/sandbox/" target="_blank">default</ElLink>
+  <ElLink href="/download/" type="primary">primary</ElLink>
+  <ElLink type="success">success</ElLink>
+  <ElLink type="warning">warning</ElLink>
+  <ElLink type="danger">danger</ElLink>
+  <ElLink type="info">info</ElLink>
 </div>
 ```
 
 ## [Tag](https://element.eleme.io/#/en-US/component/tag)
-<el-tag>Neutral</el-tag>
-<el-tag type="success">Success</el-tag>
-<el-tag type="info">Info</el-tag>
-<el-tag type="warning">Warning</el-tag>
-<el-tag type="danger">Danger</el-tag>
+<ElTag>Neutral</ElTag>
+<ElTag type="success">Success</ElTag>
+<ElTag type="info">Info</ElTag>
+<ElTag type="warning">Warning</ElTag>
+<ElTag type="danger">Danger</ElTag>
 
 ```html
-<el-tag>Neutral</el-tag>
-<el-tag type="success">Success</el-tag>
-<el-tag type="info">Info</el-tag>
-<el-tag type="warning">Warning</el-tag>
-<el-tag type="danger">Danger</el-tag>
+<ElTag>Neutral</ElTag>
+<ElTag type="success">Success</ElTag>
+<ElTag type="info">Info</ElTag>
+<ElTag type="warning">Warning</ElTag>
+<ElTag type="danger">Danger</ElTag>
 ```
 
 ## [Alert](https://element.eleme.io/#/en-US/component/alert)
-<el-alert type="success" title="Success alert!" :closable="false"></el-alert>
-<el-alert type="info" title="Info alert!" :closable="false"></el-alert>
-<el-alert type="warning" title="Warning alert!" :closable="false"></el-alert>
-<el-alert type="error" title="Error alert!" :closable="false"></el-alert>
-<el-alert type="success" title="Success alert!" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." show-icon :closable="false"></el-alert>
-<el-alert type="info" title="Info alert!" description="Magna fringilla urna porttitor rhoncus dolor purus non." show-icon :closable="false"></el-alert>
-<el-alert type="warning" title="Warning alert!" description="Non consectetur a erat nam at." show-icon :closable="false"></el-alert>
-<el-alert type="error" title="Error alert!" description="Pellentesque habitant morbi tristique senectus et netus." show-icon :closable="false"></el-alert>
+<ElAlert type="success" title="Success alert!" :closable="false"></ElAlert>
+<ElAlert type="info" title="Info alert!" :closable="false"></ElAlert>
+<ElAlert type="warning" title="Warning alert!" :closable="false"></ElAlert>
+<ElAlert type="error" title="Error alert!" :closable="false"></ElAlert>
+<ElAlert type="success" title="Success alert!" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." show-icon :closable="false"></ElAlert>
+<ElAlert type="info" title="Info alert!" description="Magna fringilla urna porttitor rhoncus dolor purus non." show-icon :closable="false"></ElAlert>
+<ElAlert type="warning" title="Warning alert!" description="Non consectetur a erat nam at." show-icon :closable="false"></ElAlert>
+<ElAlert type="error" title="Error alert!" description="Pellentesque habitant morbi tristique senectus et netus." show-icon :closable="false"></ElAlert>
 
 ```html
-<el-alert type="success" title="Success alert!" :closable="false"></el-alert>
-<el-alert type="info" title="Info alert!" :closable="false"></el-alert>
-<el-alert type="warning" title="Warning alert!" :closable="false"></el-alert>
-<el-alert type="error" title="Error alert!" :closable="false"></el-alert>
-<el-alert type="success" title="Success alert!" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." show-icon :closable="false"></el-alert>
-<el-alert type="info" title="Info alert!" description="Magna fringilla urna porttitor rhoncus dolor purus non." show-icon :closable="false"></el-alert>
-<el-alert type="warning" title="Warning alert!" description="Non consectetur a erat nam at." show-icon :closable="false"></el-alert>
-<el-alert type="error" title="Error alert!" description="Pellentesque habitant morbi tristique senectus et netus." show-icon :closable="false"></el-alert>
+<ElAlert type="success" title="Success alert!" :closable="false"></ElAlert>
+<ElAlert type="info" title="Info alert!" :closable="false"></ElAlert>
+<ElAlert type="warning" title="Warning alert!" :closable="false"></ElAlert>
+<ElAlert type="error" title="Error alert!" :closable="false"></ElAlert>
+<ElAlert type="success" title="Success alert!" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." show-icon :closable="false"></ElAlert>
+<ElAlert type="info" title="Info alert!" description="Magna fringilla urna porttitor rhoncus dolor purus non." show-icon :closable="false"></ElAlert>
+<ElAlert type="warning" title="Warning alert!" description="Non consectetur a erat nam at." show-icon :closable="false"></ElAlert>
+<ElAlert type="error" title="Error alert!" description="Pellentesque habitant morbi tristique senectus et netus." show-icon :closable="false"></ElAlert>
 ```
 
 ## [Tabs](https://element.eleme.io/#/en-US/component/tabs)
@@ -131,29 +131,35 @@ View more by pressing the headers for the specified item.
 
 ## [Tooltip](https://element.eleme.io/#/en-US/component/tooltip)
 ### Text
-<el-tooltip placement="top">
-  <div slot="content">First line<br/>Second line</div>
-  <span>Try hovering me!</span>
-</el-tooltip>
+
+#### Single-line
+<ElTooltip content="Tooltip content." placement="top"><span>Try hovering me!</span></ElTooltip>
 
 ```html
-<el-tooltip placement="top">
-  <div slot="content">First line<br/>Second line</div>
-  <span>Try hovering me!</span>
-</el-tooltip>
+<ElTooltip content="Tooltip content." placement="top"><span>Try hovering me!</span></ElTooltip>
+```
+
+#### Multi-line
+<ElTooltip placement="top"><template #content><div>Tooltip<br/>content.</div></template><span>Try hovering me too!</span></ElTooltip>
+
+```html
+<ElTooltip placement="top"><template #content><div>Tooltip<br/>content.</div></template><span>Try hovering me too!</span></ElTooltip>
 ```
 
 ### Button
-<el-tooltip placement="top">
-  <div slot="content">First line<br/>Second line</div>
-  <el-button type="primary" plain>Hover me!</el-button>
-</el-tooltip>
+
+#### Single-line
+<ElTooltip content="Tooltip content." placement="top"><ElButton type="primary" plain>Hover me!</ElButton></ElTooltip>
 
 ```html
-<el-tooltip placement="top">
-  <div slot="content">First line<br/>Second line</div>
-  <el-button type="primary" plain>Hover me!</el-button>
-</el-tooltip>
+<ElTooltip content="Tooltip content." placement="top"><ElButton type="primary" plain>Hover me!</ElButton></ElTooltip>
+```
+
+#### Multi-line
+<ElTooltip placement="top"><template #content><div>Tooltip<br/>content.</div></template><ElButton type="info" plain>Hover me too!</ElButton></ElTooltip>
+
+```html
+<ElTooltip placement="top"><template #content><div>Tooltip<br/>content.</div></template><ElButton type="info" plain>Hover me too!</ElButton></ElTooltip>
 ```
 
 ## [Steps](https://element.eleme.io/#/en-US/component/steps)

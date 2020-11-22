@@ -3,9 +3,15 @@
 		<button class="downloadForkButton" :style="downloadForkStyle" @click="downloadFork">
 			{{ downloadForkLabel }}
 		</button>
-		<button class="githubForkButton" :style="githubForkStyle" :onclick="githubForkLink">
+		<button class="githubForkButton" :style="githubForkStyle" :onclick="'window.open(\''+githubForkLink+'\')'">
 			{{ githubForkLabel }}
 		</button>
+		<br />
+		<span class="versionNotice">
+			Requires
+			<strong>Android {{ androidVersion }}</strong>
+			or higher.
+		</span>
 	</div>
 </template>
 
@@ -41,6 +47,10 @@ export default {
 		githubForkStyle: {
 			type: String,
 			default: "",
+		},
+		androidVersion: {
+			type: String,
+			default: "5.0",
 		},
 	},
 	data() {
@@ -80,7 +90,7 @@ export default {
 					popup: "animated zoomOut faster",
 				},
 			});
-			window.location.assign(this.$data.browserDownloadUrl || this.$props.downloadForkLink);
+			window.location.assign(this.$data.browserDownloadUrl || (this.$props.githubForkLink + "/releases/latest"));
 			window.ga("send", "event", "Action", "Download", this.$props.forkName);
 		},
 	},

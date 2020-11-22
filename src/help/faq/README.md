@@ -103,6 +103,11 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 
 ### Miscellaneous
 
+#### What is Tachiyomi Preview?
+It's a weekly updated version of the app. It contains features that can be added to Tachiyomi in the future, but there is a higher chance for bugs. Tachiyomi Preview is used by developers and contributors to test the app and find bugs.
+
+If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/creating-backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs.
+
 #### Why can't I uninstall Tachiyomi?
 
 On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from the phone first, then uninstall Tachiyomi.
@@ -145,7 +150,7 @@ Learn how to create automatic backups [here](/help/guides/creating-backups/#turn
 #### What are some recommended extensions?
 Tachiyomi does not endorse or recommend any manga source, and there is no best extension. Rather, we encourage users to spend some time to try out a few sources themselves, and discover what sources work best for them. It's because what works well for somebody else, might not work well for you.
 
-<el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
+<ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
 
 #### What are scanlator sources?
 Manga that are not officially licensed are translated by scanlators, who either publish manga on their own website or **MangaDex**. Scanlator sources always provide the fastest manga updates and have the highest scan quality.
@@ -179,7 +184,7 @@ To install just download the file for the extension you want and then install it
 ::::: el-tabs
 :::: el-tab-pane label="Android 8.0 and higher"
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for Android 8.0 and newer video guide](/help/faq/assets/UnknownSources-Android10.webm)
+[<MaterialIcon icon="videocam"/> Click for Android 8.0 and newer video guide](/assets/faq_unknown-sources-a10.webm)
 :::
 When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
@@ -187,7 +192,7 @@ In *newer* versions of **Android** you need to enable **Install unknown apps** b
 ::::
 :::: el-tab-pane label="Android 7.1 and lower"
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for Android 7.1 and older video guide](/help/faq/assets/UnknownSources-Android7.webm)
+[<MaterialIcon icon="videocam"/> Click for Android 7.1 and older video guide](/assets/faq_unknown-sources-a7.webm)
 :::
 When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
@@ -233,7 +238,7 @@ It might be because the title is worded differently. Follow any of the steps bel
 
 #### Why are there no results when searching?
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/help/faq/assets/MangaDex-NoResults.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/faq_mangadex-no-results.mp4)
 :::
 
 If you're not getting any results when searching **MangaDex** then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.
@@ -250,7 +255,7 @@ If pages are loading slowly or not at all, try:
 - Trying to **Clear chapter cache** under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>.
 - Going to <Navigation item="browse"/> → <Navigation item="extensions"/> → **MangaDex** → **Image Server** and then selecting a *different* server location.
 
-<el-alert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></el-alert>
+<ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
 
 #### Is there an alternate searching method?
 **MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is by opening the manga in your browser and looking at the URL.

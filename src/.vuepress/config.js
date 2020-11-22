@@ -47,9 +47,5 @@ module.exports = {
 		},
 	},
 	plugins: pluginsConfig,
-	extraWatchFiles: [
-		".vuepress/config/plugins.js",
-		".vuepress/config/navBar.js",
-		".vuepress/config/sideBar.js",
-	],
+	extraWatchFiles: [".vuepress/config/plugins.js", ".vuepress/config/navBar.js", ".vuepress/config/sideBar.js"],
 };

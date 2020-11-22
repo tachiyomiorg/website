@@ -9,7 +9,7 @@
 				class="anchor"
 			>
 				<div class="extension">
-					<a :href="`#${extension.name.split(': ')[1]}`" aria-hidden="true" class="header-anchor"># </a>
+					<a :href="`#${extension.name.split(': ')[1]}`" aria-hidden="true" class="header-anchor">#</a>
 					<img :src="iconUrl(extension.apk)" width="42" height="42" />
 					<div class="extension-text">
 						<div class="upper">

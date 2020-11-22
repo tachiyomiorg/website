@@ -1,10 +1,10 @@
 <template>
 	<Agile :id="name" :options="config">
 		<slot />
-		<template slot="prevButton">
+		<template #prevButton>
 			<MaterialIcon icon="navigate_next" />
 		</template>
-		<template slot="nextButton">
+		<template #nextButton>
 			<MaterialIcon icon="navigate_next" />
 		</template>
 	</Agile>
