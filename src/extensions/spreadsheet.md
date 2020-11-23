@@ -1,11 +1,12 @@
 ---
 title: Spreadsheet
-description: Here is a list of all available extensions to download inside the app.
+description: Spreadsheet by SnakeDoc83 to help you find sourced bundled in multi-source extensions.
 lang: en-US
 ---
 
 # Spreadsheet
 
-Here is a spreadsheet by Doc
+Spreadsheet by SnakeDoc83 to help you find sourced bundled in multi-source extensions.
 
+### Multi-source, multi-language
 <SourceSheet/>
