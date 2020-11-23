@@ -112,10 +112,6 @@ If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/h
 
 On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from the phone first, then uninstall Tachiyomi.
 
-#### What happened to the F-Droid version?
-
-**F-Droid** is no longer supported. Both the Stable and Preview builds are now automatically updated. An unofficial **F-Droid** repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
-
 #### Will there be an iOS version?
 There is no iOS version and no plans for one. Since iOS and Android apps don't share code it's hard to port.
 
