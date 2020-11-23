@@ -165,7 +165,7 @@ Some extensions contain multiple sources, look at the list below to find out whi
 ::: guide
 User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different multi-source extensions and their sources.
 ::: note
-Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
+Access the spreadsheet [here](https://tachiyomi.org/extensions-spreadsheet)
 :::
 
 #### How do I request a new extension?
