@@ -3,7 +3,7 @@
 		<button class="downloadForkButton" :style="downloadForkStyle" @click="downloadFork">
 			{{ downloadForkLabel }}
 		</button>
-		<button class="githubForkButton" :style="githubForkStyle" :onclick="'window.open(\''+githubForkLink+'\')'">
+		<button class="githubForkButton" :style="githubForkStyle" :onclick="'window.open(\'' + githubForkLink + '\')'">
 			{{ githubForkLabel }}
 		</button>
 		<br />
@@ -90,7 +90,7 @@ export default {
 					popup: "animated zoomOut faster",
 				},
 			});
-			window.location.assign(this.$data.browserDownloadUrl || (this.$props.githubForkLink + "/releases/latest"));
+			window.location.assign(this.$data.browserDownloadUrl || this.$props.githubForkLink + "/releases/latest");
 			window.ga("send", "event", "Action", "Download", this.$props.forkName);
 		},
 	},

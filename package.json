@@ -25,7 +25,7 @@
 		"@vuepress/plugin-back-to-top": "^1.7.1",
 		"@vuepress/plugin-google-analytics": "^1.7.1",
 		"@vuepress/plugin-pwa": "^1.7.1",
-		"eslint": "^7.13.0",
+		"eslint": "^7.14.0",
 		"eslint-config-vuepress": "^3.0.1",
 		"eslint-plugin-markdown": "^1.0.2",
 		"eslint-plugin-vue": "^7.1.0",
@@ -40,8 +40,8 @@
 		"webpack": "^4.44.2"
 	},
 	"dependencies": {
-		"@mr-hope/vuepress-plugin-last-update": "^1.5.5",
-		"@mr-hope/vuepress-plugin-sitemap": "^1.5.5",
+		"@mr-hope/vuepress-plugin-last-update": "^1.6.1",
+		"@mr-hope/vuepress-plugin-sitemap": "^1.6.1",
 		"axios": "^0.21.0",
 		"core-js": "2.6.4",
 		"element-ui": "^2.14.1",
