@@ -6,7 +6,7 @@
 			:sort-options="{ enabled: true }"
 			:search-options="{ enabled: true, placeholder: 'Search for extensions or sources' }"
 		>
-			<template slot="table-row" slot-scope="props">
+			<template #table-row="props">
 				<div v-if="props.column.field == 'Extension Name'" class="container">
 					<img :src="props.row['Extension Icon']" width="42" height="42" />
 					<div class="extension-text">
