@@ -40,13 +40,8 @@
 
 <script>
 import { vueGsheets } from "vue-gsheets";
-import { VueGoodTable } from "vue-good-table";
-import "vue-good-table/dist/vue-good-table.css";
 
 export default {
-	components: {
-		VueGoodTable,
-	},
 	mixins: [vueGsheets],
 	data: () => ({
 		COLUMNS: 9,
