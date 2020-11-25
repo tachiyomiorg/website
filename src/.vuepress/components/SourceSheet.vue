@@ -7,16 +7,29 @@
 			:search-options="{ enabled: true, placeholder: 'Search for extensions or sources' }"
 		>
 			<template slot="table-row" slot-scope="props">
-				<span v-if="props.column.field == 'Extension Name'">
-					<img :src="props.row['Extension Icon']" />
-					{{ props.row["Extension Name"] }}
-				</span>
+				<div v-if="props.column.field == 'Extension Name'" class="container">
+					<img :src="props.row['Extension Icon']" width="42" height="42" />
+					<div class="extension-text">
+						<div class="upper">
+							<span class="bold">{{ props.row["Extension Name"] }}</span>
+						</div>
+						<div class="down">
+							{{ props.row["Extension ID"] }}
+						</div>
+					</div>
+				</div>
 				<span v-else-if="props.column.field == 'Source Name'">
-					<a :href="'https://' + props.row['Source Website']">{{ props.row["Source Name"] }}</a>
+					<a :href="props.row['Source Website'].replace('N/A', 'javascript:void(0);')">
+						{{ props.row["Source Name"] }}
+					</a>
 				</span>
-				<span v-else-if="props.column.field == 'Notes'">
-					{{ props.row.Notes.replace("N/A", "") }}
-				</span>
+				<template v-else-if="props.column.field == 'Notes'">
+					<span v-if="props.row.Notes == 'N/A'"></span>
+					<strong v-else-if="props.row.Notes.startsWith('w-')" style="color: red">
+						{{ props.row.Notes.replace("w-", "") }}
+					</strong>
+					<span v-else>{{ props.row.Notes }}</span>
+				</template>
 				<span v-else>
 					{{ props.formattedRow[props.column.field] }}
 				</span>
@@ -36,7 +49,7 @@ export default {
 	},
 	mixins: [vueGsheets],
 	data: () => ({
-		COLUMNS: 8,
+		COLUMNS: 9,
 		sheetPageNumber: 1,
 		SHEETID: "1e4a9pTdLUmjzFvpfFr5QvGhhe_nRl3FI2kGt8ytFS0I",
 		columns: [
@@ -46,6 +59,11 @@ export default {
 				type: "number",
 				hidden: true,
 				globalSearchDisabled: true,
+			},
+			{
+				label: "Extension ID",
+				field: "Extension ID",
+				hidden: true,
 			},
 			{
 				label: "Extension",
@@ -75,7 +93,6 @@ export default {
 				field: "Languages",
 				width: "4rem",
 				sortable: false,
-				globalSearchDisabled: true,
 			},
 			{
 				label: "Notes",
@@ -83,6 +100,7 @@ export default {
 				width: "6rem",
 				sortable: false,
 				globalSearchDisabled: true,
+				tdClass: "notes",
 			},
 		],
 	}),
@@ -91,16 +109,8 @@ export default {
 
 <style lang="stylus">
 #SourceSheet
-	table
-		td
-			&.extension
-				span
-					font-weight bold
-					display inline-block
-					img
-						height 30px
-						vertical-align middle
 	.vgt-global-search
+		padding-top 2rem
 		background transparent
 		border none
 		.magnifying-glass
@@ -115,23 +125,64 @@ export default {
 				opacity 0.75
 	.vgt-table
 		background-color transparent
+		border-collapse separate
+		border-spacing 0px
 		border none
 		thead
-			border 1px solid $borderColor
 			tr
 				border none
 				th
+					background transparent !important
 					border none
-					color white
-					background #362F4B !important
+					color $textColor
+					&.sortable:hover
+						color $accentColor
 		tbody
-			border 1px solid $borderColor
 			tr
-				border none
+				background-color $backgroundColorSecondary
 				td
 					border none
-				&:nth-child(1n)
-					background-color $backgroundColor
-				&:nth-child(2n)
-					background-color darken($backgroundColor, 4%)
+					border-bottom 1px solid $borderColor !important
+					&:first-child
+						border-left 1px solid $borderColor !important
+					&:last-child
+						border-right 1px solid $borderColor !important
+					&.extension
+						.container
+							align-items center
+							display flex
+							img
+								margin-right 0.5em
+							.extension-text
+								flex 1
+								.upper
+									.bold
+										color $textColor
+								.down
+									color #6c757d
+									font-family monospace
+									font-size 0.8rem
+							&:target
+								.extension
+									background #f1f8ff
+							@media (max-width: 767px)
+								.extension-text .down
+									display none
+					&.notes
+						color $textColor
+					.vgt-text-disabled
+						color $textColor
+				&:first-child
+					td
+						border-top 1px solid $borderColor !important
+						&:first-child
+							border-top-left-radius 0.6rem
+						&:last-child
+							border-top-right-radius 0.6rem
+				&:last-child
+					td
+						&:first-child
+							border-bottom-left-radius 0.6rem
+						&:last-child
+							border-bottom-right-radius 0.6rem
 </style>
