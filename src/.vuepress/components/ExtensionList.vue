@@ -17,7 +17,7 @@
 							<Badge :text="'v' + extension.version" />
 						</div>
 						<div class="down">
-							{{ extension.pkg }}
+							{{ extension.pkg.replace("eu.kanade.tachiyomi.extension.", "") }}
 						</div>
 					</div>
 					<a :href="apkUrl(extension.apk)" class="button" title="Download APK" download>
