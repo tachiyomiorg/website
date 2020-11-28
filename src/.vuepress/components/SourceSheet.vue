@@ -4,7 +4,11 @@
 			:columns="columns"
 			:rows="items"
 			:sort-options="{ enabled: true }"
-			:search-options="{ enabled: true, placeholder: 'Search for extensions or sources' }"
+			:search-options="{
+				enabled: true,
+				skipDiacritics: true,
+				placeholder: 'Search for extensions or sources',
+			}"
 		>
 			<template #table-row="props">
 				<div v-if="props.column.field == 'Extension Name'" class="container">
