@@ -25,7 +25,7 @@
 		"@vuepress/plugin-back-to-top": "^1.7.1",
 		"@vuepress/plugin-google-analytics": "^1.7.1",
 		"@vuepress/plugin-pwa": "^1.7.1",
-		"eslint": "^7.14.0",
+		"eslint": "^7.15.0",
 		"eslint-config-vuepress": "^3.0.2",
 		"eslint-plugin-markdown": "^1.0.2",
 		"eslint-plugin-vue": "^7.2.0",
