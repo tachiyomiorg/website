@@ -112,18 +112,15 @@ If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/h
 
 On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from the phone first, then uninstall Tachiyomi.
 
-#### What happened to the F-Droid version?
-
-**F-Droid** is no longer supported. Both the Stable and Preview builds are now automatically updated. An unofficial **F-Droid** repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
-
 #### Will there be an iOS version?
 There is no iOS version and no plans for one. Since iOS and Android apps don't share code it's hard to port.
 
 #### Will Tachiyomi ever be on the Google Play Store?
-Due to Google Play's content policy, almost certainly not.
+Due to Google Play's content policy, almost certainly not, as they do not allow the APK system to work. The content on some sites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/inorichi/tachiyomi/issues/1745#issuecomment-441208074)
 
 #### How can I report Tachiyomi copycats on the Google Play Store?
 If you're on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
+
 #### Can Tachiyomi read Light Novels?
 No. Tachiyomi is an image parser, meaning it can't parse text.
 
@@ -165,7 +162,7 @@ Some extensions contain multiple sources, look at the list below to find out whi
 ::: guide
 User [SnakeDoc83](https://github.com/snakedoc83) has made a handy spreadsheet showing the different multi-source extensions and their sources.
 ::: note
-Access the spreadsheet [here](https://docs.google.com/spreadsheets/d/1TyJEUg78WWH4zgnf3g6M2lkbWpBWbd40FYiPVQhW8IU/edit#gid=0)
+Access the spreadsheet [here](https://tachiyomi.org/extensions-spreadsheet)
 :::
 
 #### How do I request a new extension?
