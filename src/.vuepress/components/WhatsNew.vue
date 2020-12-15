@@ -9,7 +9,7 @@
 		<div class="note">
 			<p>
 				View the full release
-				<a href="https://github.com/inorichi/tachiyomi/releases/latest" target="_blank" rel="noopener">here</a>
+				<a href="https://github.com/tachiyomiorg/tachiyomi/releases/latest" target="_blank" rel="noopener">here</a>
 			</p>
 		</div>
 	</div>

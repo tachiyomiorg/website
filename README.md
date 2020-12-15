@@ -21,22 +21,22 @@ If you got any questions, [join our Discord server](https://discord.gg/tachiyomi
 
 <div>
 	<p align="center">
-		<a href="https://github.com/inorichi/tachiyomi/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=inorichi&repo=tachiyomi" alt="Android App">
+		<a href="https://github.com/tachiyomiorg/tachiyomi/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi" alt="Android App">
 		</a>
-		<a href="https://github.com/inorichi/tachiyomi-extensions/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=inorichi&repo=tachiyomi-extensions" alt="App Extensions">
+		<a href="https://github.com/tachiyomiorg/tachiyomi-extensions/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions" alt="App Extensions">
 		</a>
 	</p>
 </div>
 
 <div>
 	<p align="center">
-		<a href="https://github.com/tachiyomiorg/android-app/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=android-app" alt="Android App (Rewrite)">
+		<a href="https://github.com/tachiyomiorg/tachiyomi-1.x/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-1.x" alt="Android App (Rewrite)">
 		</a>
-		<a href="https://github.com/tachiyomiorg/extensions/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=extensions" alt="App Extensions (Rewrite)">
+		<a href="https://github.com/tachiyomiorg/tachiyomi-extensions-1.x/">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions-1.x" alt="App Extensions (Rewrite)">
 		</a>
 	</p>
 </div>
