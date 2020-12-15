@@ -58,8 +58,8 @@ All of the above are very imprecise and fuzzy rules, because each site has their
 
 ### Everyone is having this problem
 If the site is reachable and fully functional then there may be an issue with the extension or app.
-1. Have a look at open issues [for the app](https://github.com/inorichi/tachiyomi/issues) and/or [extensions](https://github.com/inorichi/tachiyomi-extensions/issues).
-1. It may have been fixed already, but not released yet, so look at closed issues ([app](https://github.com/inorichi/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) / [extensions](https://github.com/inorichi/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
+1. Have a look at open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues).
+1. It may have been fixed already, but not released yet, so look at closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) / [extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
 1. If you can't find the issue there, open a new one.
 
 If the site is not reachable or having issues then all you can do is wait for the site to become functional again.

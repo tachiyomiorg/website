@@ -12,13 +12,13 @@ Skilled at code? Know how to improve something or you generally want to support 
 
 ### Application
 The main application.
-- Current: [inorichi/tachiyomi](https://github.com/inorichi/tachiyomi) ![GitHub issues](https://img.shields.io/github/issues/inorichi/tachiyomi?style=social)
-- Rewrite project: [tachiyomiorg/android-app](https://github.com/tachiyomiorg/android-app) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/android-app?style=social)
+- Current: [tachiyomiorg/tachiyomi](https://github.com/tachiyomiorg/tachiyomi) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi?style=social)
+- Rewrite project: [tachiyomiorg/tachiyomi-1.x](https://github.com/tachiyomiorg/tachiyomi-1.x) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi-1.x?style=social)
 ***
 ### Extensions
 Used to read from different manga services.
-- Current: [inorichi/tachiyomi-extensions](https://github.com/inorichi/tachiyomi-extensions) ![GitHub issues](https://img.shields.io/github/issues/inorichi/tachiyomi-extensions?style=social)
-- Rewrite project: [tachiyomiorg/extensions](https://github.com/tachiyomiorg/extensions) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/extensions?style=social)
+- Current: [tachiyomiorg/tachiyomi-extensions](https://github.com/tachiyomiorg/tachiyomi-extensions) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi-extensions?style=social)
+- Rewrite project: [tachiyomiorg/tachiyomi-extensions-1.x](https://github.com/tachiyomiorg/tachiyomi-extensions-1.x) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi-extensions-1.x?style=social)
 ***
 ### Website
 The repository that hosts this very website you're reading on now.
