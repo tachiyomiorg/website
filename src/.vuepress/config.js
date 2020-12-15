@@ -24,7 +24,7 @@ module.exports = {
 
 	themeConfig: {
 		logo: "/icons/logo.svg",
-		repo: "inorichi/tachiyomi",
+		repo: "tachiyomiorg/tachiyomi",
 		docsRepo: "tachiyomiorg/website",
 		docsDir: "src",
 		smoothScroll: true,
