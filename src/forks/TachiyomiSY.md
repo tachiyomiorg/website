@@ -16,7 +16,7 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/forks_logo-sy.png')"> TachiyomiSY
 
-<ForkButtons forkName="TachiyomiSY" downloadForkLink="https://api.github.com/repos/jobobby04/TachiyomiSY/releases/latest" downloadForkStyle="background-color:#BE0F6E;color:#FFFFFF;" githubForkLink="window.open('https://github.com/jobobby04/TachiyomiSY')"/>
+<ForkButtons forkName="TachiyomiSY" downloadForkLink="https://api.github.com/repos/jobobby04/TachiyomiSY/releases/latest" downloadForkStyle="background-color:#BE0F6E;color:#FFFFFF;" githubForkLink="https://github.com/jobobby04/TachiyomiSY"/>
 
 ## About
 This fork is based off of [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a few custom unique features, it also has new features from the latest **Tachiyomi** version as well as from other forks such as [TachiyomiJ2K](/forks/TachiyomiJ2K).

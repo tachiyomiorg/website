@@ -9,7 +9,7 @@
 		<div class="note">
 			<p>
 				View the full release
-				<a href="https://github.com/inorichi/tachiyomi/releases/latest" target="_blank" rel="noopener">here</a>
+				<a href="https://github.com/tachiyomiorg/tachiyomi/releases/latest" target="_blank" rel="noopener">here</a>
 			</p>
 		</div>
 	</div>
@@ -29,8 +29,8 @@ export default {
 		try {
 			const { data } = await this.$store.dispatch("getStableReleaseData");
 			this.$data.whatsNew = marked(data.body).replace(
-				/\(@(.*?)\)/g,
-				"(<a href='https://github.com/$1' target='_blank' rel='noopener'>@$1</a>)"
+				/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g,
+				"<a href='https://github.com/$2' target='_blank' rel='noopener'>@$2</a>"
 			);
 		} catch (e) {
 			console.error(e);

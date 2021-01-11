@@ -17,7 +17,7 @@
 							<Badge :text="'v' + extension.version" />
 						</div>
 						<div class="down">
-							{{ extension.pkg }}
+							{{ extension.pkg.replace("eu.kanade.tachiyomi.extension.", "") }}
 						</div>
 					</div>
 					<a :href="apkUrl(extension.apk)" class="button" title="Download APK" download>
@@ -60,9 +60,9 @@ export default {
 		langName: (code) => (code === "all" ? "All" : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`),
 		iconUrl(pkg) {
 			const pkgName = pkg.substring(0, pkg.lastIndexOf("."));
-			return `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/icon/${pkgName}.png`;
+			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${pkgName}.png`;
 		},
-		apkUrl: (apk) => `https://raw.githubusercontent.com/inorichi/tachiyomi-extensions/repo/apk/${apk}`,
+		apkUrl: (apk) => `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${apk}`,
 	},
 };
 </script>

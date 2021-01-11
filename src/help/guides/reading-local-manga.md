@@ -9,8 +9,13 @@ lang: en-US
 Follow the steps below to create local manga.
 
 1. Create a folder named `local` in the `/Tachiyomi/` folder.
-	> This is located in the phone's **internal storage** or **external SD card**.
+    <ul>
+  		<li> The `/Tachiyomi/` folder is located in the root of phone's **internal storage** or **external SD card** and it's **not related** to the `eu.kanade.tachiyomi/` folder or the download location in the settings.</li>
+    </ul> 
 1. Place correctly structured manga inside `/Tachiyomi/local/`.
+	<ul>
+  		<li>Optional: If adding manga in folders, add a file named `.nomedia` to the local folder so images do not show up in the gallery</li>
+	</ul> 
 1. You can then access the manga in <Navigation item="browse"/> → **Local source**.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
