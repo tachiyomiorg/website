@@ -22,10 +22,10 @@ If you got any questions, [join our Discord server](https://discord.gg/tachiyomi
 <div>
 	<p align="center">
 		<a href="https://github.com/tachiyomiorg/tachiyomi/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi" alt="Android App">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi&bg_color=0000&text_color=777" alt="Android App">
 		</a>
 		<a href="https://github.com/tachiyomiorg/tachiyomi-extensions/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions" alt="App Extensions">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions&bg_color=0000&text_color=777" alt="App Extensions">
 		</a>
 	</p>
 </div>
@@ -33,10 +33,10 @@ If you got any questions, [join our Discord server](https://discord.gg/tachiyomi
 <div>
 	<p align="center">
 		<a href="https://github.com/tachiyomiorg/tachiyomi-1.x/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-1.x" alt="Android App (Rewrite)">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-1.x&bg_color=0000&text_color=777" alt="Android App (Rewrite)">
 		</a>
 		<a href="https://github.com/tachiyomiorg/tachiyomi-extensions-1.x/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions-1.x" alt="App Extensions (Rewrite)">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions-1.x&bg_color=0000&text_color=777" alt="App Extensions (Rewrite)">
 		</a>
 	</p>
 </div>
