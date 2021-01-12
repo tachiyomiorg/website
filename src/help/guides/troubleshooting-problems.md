@@ -133,7 +133,7 @@ You must solve the **Cloudflare** issue in **WebView**.
 :::
 
 ### WebView not working?
-If **WebView** doesn't work for you, please update the [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.WebView) app.
+If **WebView** doesn't work for you, please update the [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) app.
 
 When you've updated go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to `Android System WebView`.
 
