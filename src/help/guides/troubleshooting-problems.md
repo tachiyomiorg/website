@@ -30,15 +30,11 @@ Often **Java.lang Exception: Challenge not found** will be resolved by force-qui
 ::: el-collapse-item title="HTTP error 403"
 Possible reasons for **HTTP error 403**:
 
-- The source you selected has **Cloudflare** protection on and is enforcing [CAPTCHA](#solving-a-captcha). Please complete the [CAPTCHA](#solving-a-captcha) to fix it.
+- The source you selected has **Cloudflare** protection on and is enforcing [CAPTCHA](#solving-a-captcha). Open <Navigation item="webview"/> and complete the [CAPTCHA](#solving-a-captcha) to fix it.
 - The source is down, removed the manga or banned your IP. Open <Navigation item="webview"/> to check if this is the case.
-- The extension is broken. Try [Diagnosis](#diagnosis) and asking other users to verify it.
 :::
 ::: el-collapse-item title="HTTP error 404"
-Possible reasons for **HTTP error 404**:
-
-- The source is down or removed the manga. Open <Navigation item="webview"/> to check if this is the case.
-- The extension is broken. Try [Diagnosis](#diagnosis) and asking other users to verify it.
+**HTTP error 404** probably means that the source is down or removed the manga. Open <Navigation item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 429 (Too Many Requests)"
 **HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases it's temporary). We suggest to [migrate](./source-migration.md) part of your manga to another source to reduce number of requests to the source.
