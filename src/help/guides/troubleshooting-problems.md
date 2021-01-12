@@ -19,7 +19,7 @@ If error-specific instructions didn't help or your error isn't on the list, go t
 Often **Java.lang Exception: Challenge not found** will be resolved by force-quitting and reopening **Tachiyomi**.
 :::
 ::: el-collapse-item title="Java.lang Exception: Failed to bypass Cloudflare"
-**Java.lang Exception: Failed to bypass Cloudflare** means that the source you selected has [Cloudflare](#solving-cloudflare) protection on, refer to the [Cloudflare](#solving-cloudflare) guide to fix it.
+**Java.lang Exception: Failed to bypass Cloudflare** means that the source you selected has [Cloudflare](#solving-the-cloudflare-issue) protection on, refer to the [Cloudflare](#solving-the-cloudflare-issue) guide to fix it.
 :::
 ::: el-collapse-item title="Loader not implemented"
 **Loader not implemented** means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
@@ -30,7 +30,7 @@ Often **Java.lang Exception: Challenge not found** will be resolved by force-qui
 ::: el-collapse-item title="HTTP error 403"
 Possible reasons for **HTTP error 403**:
 
-- The source you selected has [Cloudflare](#solving-cloudflare) protection on, refer to the [Cloudflare](#solving-cloudflare) guide to fix it.
+- The source you selected has [Cloudflare](#solving-the-cloudflare-issue) protection on, refer to the [Cloudflare](#solving-the-cloudflare-issue) guide to fix it.
 - The source is down, removed the manga or banned your IP. Open <Navigation item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 404"
@@ -74,7 +74,7 @@ Backup your data, uninstall the app, then restore the data in the fresh install.
 ## Diagnosis
 * Verify your extensions are up to date. (<Navigation item="browse"/> → Extensions, make sure no extensions have an update button)
 * Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then click **Check for updates**)
-* Try opening the manga in <Navigation item="webview"/>. If there is a [Cloudflare](#solving-cloudflare) protection, wait for it to load. If there is a [CAPTCHA](#solving-cloudflare), solve it and see if it helped.
+* Try opening the manga in <Navigation item="webview"/>. If there is a [Cloudflare](#solving-the-cloudflare-issue) protection, wait for it to load. If there is a [CAPTCHA](#solving-the-cloudflare-issue), solve it and see if it helped.
 * Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
 * Ask other users to try the action that gives you the error.
 * Check if the source is either down, or is having issues in a browser.
@@ -97,7 +97,7 @@ If it's not just you, go to [everyone is having this problem](#everyone-is-havin
 If none of these help, try asking in our [Discord Server](https://discord.gg/tachiyomi). State app version, source, manga and chapter with the problem.
 
 ### It only happens to me
-You may be getting a [Cloudflare](#solving-cloudflare) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that can be done about that. Some of them (like [Cloudflare](#solving-cloudflare)) have to be manually solved, some are temporary (IP bans).
+You may be getting a [Cloudflare](#solving-the-cloudflare-issue) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that can be done about that. Some of them (like [Cloudflare](#solving-the-cloudflare-issue)) have to be manually solved, some are temporary (IP bans).
 
 **Workarounds that can lower chance of it happening again:**
 * Don't use downloads with the source.
@@ -115,11 +115,11 @@ If the site is reachable and fully functional then there may be an issue with th
 
 If the site is not reachable or having issues then all you can do is wait for the site to become functional again.
 
-## Solving Cloudflare
+## Solving the Cloudflare issue
 
 **Please note that WebView is not the same as using your browser.**
 
-You must solve the **Cloudflare** in **WebView**.
+You must solve the **Cloudflare** issue in **WebView**.
 
 ::: guide How to open WebView
 1. Go to <Navigation item="browse"/> in the bottom navbar.
