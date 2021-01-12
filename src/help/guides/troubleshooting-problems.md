@@ -18,6 +18,9 @@ If error-specific instructions didn't help or your error isn't on the list, go t
 ::: el-collapse-item title="Java.lang Exception: Challenge not found"
 Often **Java.lang Exception: Challenge not found** will be resolved by force-quitting and reopening **Tachiyomi**.
 :::
+::: el-collapse-item title="Java.lang Exception: Failed to bypass Cloudflare"
+**Java.lang Exception: Failed to bypass Cloudflare** means that the source you selected has **Cloudflare** protection on and is enforcing [CAPTCHA](#solving-a-captcha). Please complete the [CAPTCHA](#solving-a-captcha) to fix it.
+:::
 ::: el-collapse-item title="Loader not implemented"
 **Loader not implemented** means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
 :::
@@ -25,7 +28,7 @@ Often **Java.lang Exception: Challenge not found** will be resolved by force-qui
 **Value Manga is licensed...** means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
 :::
 ::: el-collapse-item title="HTTP error 403"
-HTTP error 403 probably means that the source you selected has **Cloudflare** protection on and is enforcing [CAPTCHA](#solving-a-captcha). Please complete the [CAPTCHA](#solving-a-captcha) to fix it.
+**HTTP error 403** probably means that the source you selected has **Cloudflare** protection on and is enforcing [CAPTCHA](#solving-a-captcha). Please complete the [CAPTCHA](#solving-a-captcha) to fix it.
 :::
 ::: el-collapse-item title="HTTP error 429 (Too Many Requests)"
 **HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases it's temporary). We suggest to [migrate](./source-migration.md) part of your manga to another source to reduce number of requests to the source.
