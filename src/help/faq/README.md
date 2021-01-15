@@ -54,10 +54,9 @@ Aside from network issues, it could be because the images are too big or that th
 
 ### Downloads
 #### How to download several chapters or manga simultaneously?
-
-If you're downloading several manga, you can use different sources. In this case the app will start downloading simultaneously from up to 5 different sources.
-
 The app doesn't allow parallel downloads from one source to prevent IP bans caused by too many requests. We know that speed is being sacrificed but it's better than not being able to access a source at all.
+
+However, if you're downloading several manga from different sources, the app will start downloading simultaneously from up to 5 different sources.
 
 #### Why are Downloads unstable?
 Be aware that it could be a network issue on your device or on the catalog you are trying to download from.
