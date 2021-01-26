@@ -5,9 +5,9 @@ description: From common questions to guides, find help for everything Tachiyomi
 lang: en-US
 hideSearch: true
 help:
-  - title: Application
-    description: Frequently asked questions
-    link: /help/faq/#application
+  - title: FAQ
+    description: About the application and extensions
+    link: /help/faq/
     faqApp: true
   - title: Troubleshooting
     description: Fix common issues
