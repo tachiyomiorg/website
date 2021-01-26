@@ -36,7 +36,7 @@ help:
     reddit: true
   - title: GitHub
     description: Repository for the app
-    linkExt: https://github.com/inorichi/tachiyomi
+    linkExt: https://github.com/tachiyomiorg/tachiyomi
     github: true
 ---
 
