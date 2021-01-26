@@ -9,10 +9,10 @@ help:
     description: Frequently asked questions
     link: /help/faq/#application
     faqApp: true
-  - title: Extensions
-    description: Frequently asked questions
-    link: /help/faq/#extensions
-    faqExt: true
+  - title: Troubleshooting
+    description: Fix common issues
+    link: /help/guides/troubleshooting-problems/
+    fixProblems: true
   - title: Guides
     description: Extensive guides written for you
     link: /help/guides/getting-started/

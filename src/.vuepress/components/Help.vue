@@ -19,8 +19,8 @@
 									<CellphoneAndroidIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
-								<header v-else-if="helpItem.faqExt">
-									<PuzzleIcon />
+								<header v-else-if="helpItem.fixProblems">
+									<ClipboardSearchIcon />
 									<h3>{{ helpItem.title }}</h3>
 								</header>
 								<header v-else-if="helpItem.guides">
@@ -94,11 +94,11 @@ import AlgoliaSearchBox from "@theme/components/AlgoliaSearchBox.vue";
 import CellphoneAndroidIcon from "vue-material-design-icons/CellphoneAndroid.vue";
 import ClipboardListIcon from "vue-material-design-icons/ClipboardList.vue";
 import SourceForkIcon from "vue-material-design-icons/SourceFork.vue";
-import PuzzleIcon from "vue-material-design-icons/Puzzle.vue";
 import DiscordIcon from "vue-material-design-icons/Discord.vue";
 import RedditIcon from "vue-material-design-icons/Reddit.vue";
 import GithubIcon from "vue-material-design-icons/Github.vue";
 import LifebuoyIcon from "vue-material-design-icons/Lifebuoy.vue";
+import ClipboardSearchIcon from 'vue-material-design-icons/ClipboardSearch.vue'; 
 
 export default {
 	components: {
@@ -107,11 +107,11 @@ export default {
 		CellphoneAndroidIcon,
 		ClipboardListIcon,
 		SourceForkIcon,
-		PuzzleIcon,
 		DiscordIcon,
 		RedditIcon,
 		GithubIcon,
 		LifebuoyIcon,
+		ClipboardSearchIcon,
 	},
 
 	computed: {
