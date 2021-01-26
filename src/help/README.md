@@ -6,9 +6,9 @@ lang: en-US
 hideSearch: true
 help:
   - title: FAQ
-    description: About the application and extensions
+    description: About app-related things
     link: /help/faq/
-    faqApp: true
+    faq: true
   - title: Troubleshooting
     description: Fix common issues
     link: /help/guides/troubleshooting-problems/
