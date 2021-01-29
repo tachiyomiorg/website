@@ -13,10 +13,21 @@ lang: en-US
 
 # Setting up Tracking <MaterialIcon icon="sync" />
 
+:::: guide Video Guide
+::: videolink
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_login-to-tracker.mp4)
+:::
+
 1. Goto More → Settings → Tracking to Login
 2. Tap the tracker you would like to login to, it will automatically open the browser and lead you through the login process.
 
 ## Setting up tracking for each entry
+
+
+:::: guide Video Guide
+::: videolink
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_add-to-tracker.mp4)
+:::
 
 1. Tap the manga
 2. Tap the <MaterialIcon icon="sync" />
