@@ -72,8 +72,9 @@ Backup your data, uninstall the app, then restore the data in the fresh install.
 ::::
 
 ## Diagnosis
-* Verify your extensions are up to date. (<Navigation item="browse"/> → Extensions, make sure no extensions have an update button)
-* Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then click **Check for updates**)
+* Verify your extensions are up to date (<Navigation item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
+* Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then click **Check for updates**).
+* Check if [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) has an update (open the [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) link on your device and check if there is an **Update** button).
 * Try opening the manga in <Navigation item="webview"/>. If there is a [Cloudflare](#solving-the-cloudflare-issue) protection, wait for it to load. If there is a [CAPTCHA](#solving-the-cloudflare-issue), solve it and see if it helped.
 * Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
 * Ask other users to try the action that gives you the error.
