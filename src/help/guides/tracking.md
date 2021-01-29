@@ -1,5 +1,5 @@
 ---
-title: Tracking titles
+title: Tracking manga
 description: How to automatically track read chapters on supported trackers 
 lang: en-US
 ---
@@ -21,6 +21,7 @@ lang: en-US
 1. Goto More → Settings → Tracking to Login
 2. Tap the tracker you would like to login to, it will automatically open the browser and lead you through the login process.
 
+::::
 ## Setting up tracking for each entry
 
 
@@ -35,3 +36,5 @@ lang: en-US
     <ul>
         <li>Optional: You can change the search query</li>
     </ul>
+
+::::
