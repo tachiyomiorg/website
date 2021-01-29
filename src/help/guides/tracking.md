@@ -13,7 +13,7 @@ lang: en-US
 
 # Setting up Tracking <MaterialIcon icon="sync" />
 
-:::: guide Video Guide
+:::: guide Guide
 ::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_login-to-tracker.mp4)
 :::
@@ -25,7 +25,7 @@ lang: en-US
 ## Setting up tracking for each entry
 
 
-:::: guide Video Guide
+:::: guide Guide
 ::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_add-to-tracker.mp4)
 :::
