@@ -8,6 +8,18 @@ lang: en-US
 
 Backups are inter-compatible between **Tachiyomi** versions, with a few exceptions listed under [forks information](#forks-information).
 
+Backups can hold the following information:
+1. **Titles**
+1. **Categories**
+1. **Read chapters**
+1. **Tracking settings**
+1. **Reading history**
+1. **Manga information** such as Author, Artist, Date Added to Library , Selected Viewer, etc.
+
+::: guide
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it. 
+:::
+
 Legacy Backups can hold the following information:
 1. **Titles**
 1. **Categories**
@@ -16,10 +28,10 @@ Legacy Backups can hold the following information:
 1. **Reading history**
 
 ::: guide
-You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it. 
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create legacy backup** and select a location to save it. 
 :::
 
-
+Legacy Backups are intended for versions of Tachiyomi older than 0.10.7 or versions of Tachiyomi based on versions older than 0.10.7. 
 
 
 ## Restoring
@@ -27,6 +39,7 @@ You can do this by going to <Navigation item="more"/> → <Navigation item="sett
 Restoring is done from the <Navigation item="settings_backup"/> settings. 
 
 To restore a backup without issues be sure to: 
+
 * Log into the <Navigation item="settings_tracking"/> services that you use.
 
 To restore a legacy backup without issues be sure to:
@@ -62,6 +75,5 @@ This fork can only restore **MangaDex** entries in a backup. If there are entrie
 ### <img class="forkIconBefore" src="/assets/forks_logo-az.png" width="24" height="24" /> [TachiyomiAZ](/forks/TachiyomiAZ), <img class="forkIconBefore" src="/assets/forks_logo-sy.png" width="24" height="24" />  [TachiyomiSY](/forks/TachiyomiSY) and <img class="forkIconBefore" src="/assets/forks_logo-eh.png" width="24" height="24" />  [TachiyomiEH](/forks/TachiyomiEH)
 
 These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for <Navigation item="tachiyomiaz" /> and <Navigation item="tachiyomieh" /> while <Navigation item="tachiyomisy" /> only has **E-Hentai**.
-
 
 Titles from said extensions will not be restored when restoring a backup made by these forks to standard Tachiyomi. It is possible to restore titles to these forks, but it is not possible to back them up out of these forks.
