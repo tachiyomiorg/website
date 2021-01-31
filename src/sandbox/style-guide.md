@@ -113,7 +113,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 - **DO** include related info as an aside object:
 > **Lorem ipsum** dolor sit amet, _consectetur_ adipiscing **elit**.
 > ::: note
-> Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
+> Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 > :::
 
 > **Pellentesque** _habitant_ morbi tristique **senectus** et netus.

@@ -19,10 +19,10 @@ Enable it by going to <Navigation item="library"/> → <Navigation item="filter"
 :::
 
 #### Why are some covers white after restoring from backup?
-The URL to the cover has probably changed. To fix this, refresh the metadata of your library.
+The URL to the cover has probably changed. To fix this, refresh covers in settings.
 
 ::: guide
-Refresh your metadata by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library metadata**.
+Refresh your covers by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library manga covers**.
 :::
 
 #### How do I ignore chapters from certain scanlator groups?
@@ -43,7 +43,7 @@ Sometimes you can struggle to find a source hosting the manga you're looking for
 #### If you found the website/scanlator in the list
 Download the corresponding extension, go to the source, then search for the manga there.
 #### If you didn't find the website/scanlator in the list
-If you found a website or scanlator that hosts your manga but doesn't exist as a source or extension, then you can see if its [already been requested](https://github.com/inorichi/tachiyomi-extensions/issues) or you can [request it yourself](https://github.com/inorichi/tachiyomi-extensions/issues/new/choose).
+If you found a website or scanlator that hosts your manga but doesn't exist as a source or extension, then you can see if its [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) or you can [request it yourself](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
 If the website/scanlator group doesn't have an online manga reader, you can download the manga manually and set up [local manga](/help/guides/reading-local-manga).
 :::
@@ -53,8 +53,10 @@ If the website/scanlator group doesn't have an online manga reader, you can down
 Aside from network issues, it could be because the images are too big or that the decoder doesn't support that image type.
 
 ### Downloads
-#### What happened to the simultaneous downloads feature?
-It was removed to prevent IP bans caused by too many requests. We know that speed is being sacrificed but it's better than not being able to access a source at all.
+#### How to download several chapters or manga simultaneously?
+The app doesn't allow parallel downloads from one source to prevent IP bans caused by too many requests. We know that speed is being sacrificed but it's better than not being able to access a source at all.
+
+However, if you're downloading several manga from different sources, the app will start downloading simultaneously from up to 5 different sources.
 
 #### Why are Downloads unstable?
 Be aware that it could be a network issue on your device or on the catalog you are trying to download from.
@@ -70,9 +72,9 @@ Read more about rooting your phone [here](https://www.xda-developers.com/root/)
 To log in with Kitsu you need to use your email address as your username.
 
 #### Why can't I find manga in MAL's search results?
-You can search a manga from your MAL profile's list by searching in the following format: `my:<manga>`
+You can search a manga from your MAL profile's list by searching in the following format: `my:<manga>`. To search manga that isn't in your list, you can use the following format: `id:<id from manga URL>`.
 ::: note
-Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
+Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
 ### Local Manga
@@ -80,13 +82,31 @@ Related GitHub issue: [#65](https://github.com/inorichi/tachiyomi/issues/65)
 We recommend you to read [this](/help/guides/reading-local-manga) guide on how to do so.
 
 #### What do I do if I can't find the Tachiyomi folder?
-If you don't see a **Tachiyomi** folder on your device, try downloading a chapter of any manga or creating a backup so that the folder can be created.
+If you don't see the **Tachiyomi** folder on your device, try setting download location to default and downloading a chapter of any manga so that the folder can be created.
+
+::: guide
+Set download location to default by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_downloads"/> → **Download location** and selecting first option. Restart the app after changing download location.
+:::
+
+#### How to fix empty cover for a local manga?
+Sometimes some covers for local manga aren't displayed. Follow these steps to fix it:
+
+::: guide
+1. Make sure you've created the right folder structure. To check it, open the manga with the missing cover and check if you can read chapters in the app. If not, follow [this](/help/guides/reading-local-manga) guide first.
+1. Remember, or note down, which chapters you've read and remove manga from the library.
+1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and tap **Clear database**. This only affects manga that aren't in your library.
+1. Go to <Navigation item="browse"/> → **Local source** and find the manga, the cover should be fixed now. Add manga back to the library, mark read chapters and add tracking if needed.
+:::
+
+::: note
+Related GitHub issue: [#932](https://github.com/tachiyomiorg/tachiyomi/issues/932)
+:::
 
 ### Application Updates
 #### How do I enable automatic updates?
 From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
-However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> → and click on **Check for updates**.
+However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> and click on **Check for updates**.
 
 #### Why are automatic updates not working?
 
@@ -112,18 +132,15 @@ If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/h
 
 On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from the phone first, then uninstall Tachiyomi.
 
-#### What happened to the F-Droid version?
-
-**F-Droid** is no longer supported. Both the Stable and Preview builds are now automatically updated. An unofficial **F-Droid** repo is available at [tachi.efreakbnc.net](https://tachi.efreakbnc.net).
-
 #### Will there be an iOS version?
 There is no iOS version and no plans for one. Since iOS and Android apps don't share code it's hard to port.
 
 #### Will Tachiyomi ever be on the Google Play Store?
-Due to Google Play's content policy, almost certainly not.
+Due to Google Play's content policy, almost certainly not, as they do not allow the APK system to work. The content on some sites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074)
 
 #### How can I report Tachiyomi copycats on the Google Play Store?
 If you're on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
+
 #### Can Tachiyomi read Light Novels?
 No. Tachiyomi is an image parser, meaning it can't parse text.
 
@@ -169,7 +186,7 @@ Access the spreadsheet [here](https://tachiyomi.org/extensions-spreadsheet)
 :::
 
 #### How do I request a new extension?
-Open an issue [on GitHub](https://github.com/inorichi/tachiyomi-extensions/issues) if one does not already exist.
+Open an issue [on GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) if one does not already exist.
 
 ::: note
 You can find the list of extensions to download [here](/extensions/)
@@ -215,7 +232,7 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="bro
 - **Tachiyomi** no longer have pre-installed extensions, this means that you will need to install extensions you want to use from the <Navigation item="browse"/> → **Extensions** menu.
 - If you're getting the `Loader not implemented` error after clicking on a manga, you will need to reinstall the extensions you used to use.
 
-#### How do see sources of other languages?
+#### How to see sources of other languages?
 
 You do this by following the steps below.
 

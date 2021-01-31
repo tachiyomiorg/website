@@ -5,14 +5,14 @@ description: From common questions to guides, find help for everything Tachiyomi
 lang: en-US
 hideSearch: true
 help:
-  - title: Application
-    description: Frequently asked questions
-    link: /help/faq/#application
-    faqApp: true
-  - title: Extensions
-    description: Frequently asked questions
-    link: /help/faq/#extensions
-    faqExt: true
+  - title: FAQ
+    description: About app-related things
+    link: /help/faq/
+    faq: true
+  - title: Troubleshooting
+    description: Fix common issues
+    link: /help/guides/troubleshooting-problems/
+    fixProblems: true
   - title: Guides
     description: Extensive guides written for you
     link: /help/guides/getting-started/
@@ -36,7 +36,7 @@ help:
     reddit: true
   - title: GitHub
     description: Repository for the app
-    linkExt: https://github.com/inorichi/tachiyomi
+    linkExt: https://github.com/tachiyomiorg/tachiyomi
     github: true
 ---
 
