@@ -8,7 +8,7 @@ lang: en-US
 
 Backups are inter-compatible between **Tachiyomi** versions, with a few exceptions listed under [forks information](#forks-information).
 
-Backups can hold the following information:
+Legacy Backups can hold the following information:
 1. **Titles**
 1. **Categories**
 1. **Read chapters**
@@ -16,12 +16,20 @@ Backups can hold the following information:
 1. **Reading history**
 
 ::: guide
-You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it.
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it. 
 :::
+
+
+
 
 ## Restoring
 
-Restoring is done from the <Navigation item="settings_backup"/> settings. To restore without issues be sure to:
+Restoring is done from the <Navigation item="settings_backup"/> settings. 
+
+To restore a backup without issues be sure to: 
+* Log into the <Navigation item="settings_tracking"/> services that you use.
+
+To restore a legacy backup without issues be sure to:
 
 * Install all the <Navigation item="tab_extensions"/> that were installed at the time of the backup.
 * Log into the <Navigation item="settings_tracking"/> services that you use.
