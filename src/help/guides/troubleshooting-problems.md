@@ -136,9 +136,9 @@ You must solve the **Cloudflare** issue in **WebView**.
 ## Update WebView
 
 To update **WebView**, you need to find what **WebView implementation** is used on your device. In general, default implementation depends on Android version as follows:
-- Android 10.0 and higher - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
-- Android from 7.0 to 9.0 - [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
-- Android 6.0.1 and lower - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
+* Android 10.0 and higher - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
+* Android from 7.0 to 9.0 - [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+* Android 6.0.1 and lower - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
 
 ::: c-tip
 Users of Android 7.0 and higher can also see and change **WebView implementaion** in [Developer Options](https://developer.android.com/studio/debug/dev-options).
