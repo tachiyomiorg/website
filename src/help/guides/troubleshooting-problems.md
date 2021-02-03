@@ -145,5 +145,5 @@ Users of Android 7.0 and higher can also see and change **WebView implementation
 :::
 
 ::: c-warning
-Non-standard implementations like Firefox can lead to incorrect work or crash of Tachiyomi. We recommend to set **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+Non-standard implementations like Firefox can lead to Tachiyomi not working correctly or in the worst-case crash. We recommend to set **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
 :::
