@@ -32,7 +32,7 @@
 		"eslint-plugin-vue": "^7.4.1",
 		"node-sass": "^5.0.0",
 		"prettier": "^2.2.1",
-		"sass-loader": "^10.1.0",
+		"sass-loader": "^10.1.1",
 		"vuepress": "^1.8.0",
 		"vuepress-plugin-clean-urls": "^1.1.2",
 		"vuepress-plugin-container": "^2.1.5",
