@@ -38,7 +38,7 @@
 		"vuepress-plugin-container": "^2.1.5",
 		"vuepress-plugin-element-ui": "^1.1.0",
 		"vuepress-plugin-zooming": "^1.1.8",
-		"webpack": "^4.44.2"
+		"webpack": "^4.46.0"
 	},
 	"dependencies": {
 		"@mr-hope/vuepress-plugin-last-update": "^1.8.1",
