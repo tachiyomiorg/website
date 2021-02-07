@@ -14,7 +14,7 @@ Backups can hold the following information:
 1. **Read chapters**
 1. **Tracking settings**
 1. **Reading history**
-1. **Manga information** such as Author, Artist, Date Added to Library , Selected Viewer, etc.
+1. **Manga information** such as Author, Artist, Date Added to Library, Selected Viewer, etc.
 
 ::: guide
 You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it. 
