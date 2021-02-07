@@ -14,18 +14,39 @@ Backups can hold the following information:
 1. **Read chapters**
 1. **Tracking settings**
 1. **Reading history**
+1. **Manga information** such as Author, Artist, Date Added to Library, Selected Viewer, etc.
 
 ::: guide
-You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it.
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create backup** and select a location to save it. 
 :::
+
+Legacy Backups can hold the following information:
+1. **Titles**
+1. **Categories**
+1. **Read chapters**
+1. **Tracking settings**
+1. **Reading history**
+
+::: guide
+You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create legacy backup** and select a location to save it. 
+:::
+
+Legacy Backups are intended for versions of Tachiyomi, or forks based on versions, older than 0.10.7.
+
 
 ## Restoring
 
-Restoring is done from the <Navigation item="settings_backup"/> settings. To restore without issues be sure to:
+Restoring is done from the <Navigation item="settings_backup"/> settings. 
+
+To restore a backup without issues be sure to: 
+
+* Log into the <Navigation item="settings_tracking"/> services that you previously used.
+
+To restore a legacy backup without issues be sure to:
 
 * Install all the <Navigation item="tab_extensions"/> that were installed at the time of the backup.
-* Log into the <Navigation item="settings_tracking"/> services that you use.
-* Log into **MangaDex** using **WebView** [as explained here](/help/faq/#no-results-when-searching).
+* Log into the <Navigation item="settings_tracking"/> services that you previously used.
+* If you use MangaDex, login to it using **WebView** [as explained here](/help/faq/#no-results-when-searching).
 * You're able to access all the sources through the **WebView**.
 * Be on a consistent internet connection.
 
@@ -55,5 +76,8 @@ This fork can only restore **MangaDex** entries in a backup. If there are entrie
 
 These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for <Navigation item="tachiyomiaz" /> and <Navigation item="tachiyomieh" /> while <Navigation item="tachiyomisy" /> only has **E-Hentai**.
 
-
 Titles from said extensions will not be restored when restoring a backup made by these forks to standard Tachiyomi. It is possible to restore titles to these forks, but it is not possible to back them up out of these forks.
+
+### <img class="forkIconBefore" src="/assets/forks_logo-neko.png" width="24" height="24" /> [Neko](/forks/Neko) and <img class="forkIconBefore" src="/assets/forks_logo-j2k.png" width="24" height="24" /> [J2k](/forks/j2k)
+
+These forks can only restore legacy backups, as they have not made the changes needed to support the new backup yet.
