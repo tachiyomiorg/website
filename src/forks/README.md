@@ -41,7 +41,7 @@ This hentai focused fork is based on **[TachiyomiEH](/forks/TachiyomiEH)**, it h
 
 Some features include:
 * Built in sources of many popular hentai sources with additional features.
-* Manga recommendations from My Anime List and AniDB
+* Manga recommendations from MyAnimeList and AniList
 * Grid view corner rounding configuration
 
 ## <img class="headerLogo" :src="$withBase('/assets/forks_logo-sy.png')"> [TachiyomiSY](/forks/TachiyomiSY)
@@ -56,4 +56,3 @@ Some features include:
 * Enhanced pages for certain sources
 * Latest tab preview configurable up to five sources
 * Ability to enable and disable hentai specific features
-
