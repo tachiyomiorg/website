@@ -97,8 +97,8 @@ import DiscordIcon from "vue-material-design-icons/Discord.vue";
 import RedditIcon from "vue-material-design-icons/Reddit.vue";
 import GithubIcon from "vue-material-design-icons/Github.vue";
 import LifebuoyIcon from "vue-material-design-icons/Lifebuoy.vue";
-import ClipboardSearchIcon from 'vue-material-design-icons/ClipboardSearch.vue';
-import FaqIcon from 'vue-material-design-icons/FrequentlyAskedQuestions.vue'; 
+import ClipboardSearchIcon from "vue-material-design-icons/ClipboardSearch.vue";
+import FaqIcon from "vue-material-design-icons/FrequentlyAskedQuestions.vue";
 
 export default {
 	components: {
