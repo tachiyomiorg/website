@@ -72,8 +72,9 @@ Backup your data, uninstall the app, then restore the data in the fresh install.
 ::::
 
 ## Diagnosis
-* Verify your extensions are up to date. (<Navigation item="browse"/> → Extensions, make sure no extensions have an update button)
-* Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then click **Check for updates**)
+* Verify your extensions are up to date (<Navigation item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
+* Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then click **Check for updates**).
+* Verify that [WebView](#update-webview) is updated.
 * Try opening the manga in <Navigation item="webview"/>. If there is a [Cloudflare](#solving-the-cloudflare-issue) protection, wait for it to load. If there is a [CAPTCHA](#solving-the-cloudflare-issue), solve it and see if it helped.
 * Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
 * Ask other users to try the action that gives you the error.
@@ -132,13 +133,17 @@ You must solve the **Cloudflare** issue in **WebView**.
 1. Once done, press the *Back Arrow* at the top left to return.
 :::
 
-### WebView not working?
-If **WebView** doesn't work for you, please update the [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) app.
+## Update WebView
 
-When you've updated go to [Developer Options](https://developer.android.com/studio/debug/dev-options) in your phone's settings and set **WebView Implementation** to `Android System WebView`.
+To update **WebView**, you need to find what **WebView implementation** is used on your device. In general, default implementation depends on the Android version as follows:
+* Android 10.0 and higher - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
+* Android from 7.0 to 9.0 - [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+* Android 6.0.1 and lower - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
 
 ::: c-tip
-If `Android System WebView` doesn't work, try setting `Google Chrome` as the default **WebView Implementation** instead.
+Users of Android 7.0 and higher can also see and change **WebView implementation** in [Developer Options](https://developer.android.com/studio/debug/dev-options).
 :::
 
-
+::: c-warning
+Non-standard implementations like Firefox can lead to Tachiyomi not working correctly or in the worst-case crash. We recommend to set **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+:::
