@@ -104,6 +104,8 @@ Chapter transition is the area between chapters that shows the names of current 
 
 ## Navigation layout
 
+This changes how tapping behaves
+
 <Carousel name="carousel-background-color">
 <CarouselItem>
 <figure class="centered">
