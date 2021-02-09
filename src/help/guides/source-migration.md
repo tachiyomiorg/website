@@ -13,7 +13,9 @@ Always make sure to have a [backup](/help/guides/creating-backups/) in case anyt
 :::
 
 ::: c-warning
-Downloads do not transfer with migration, if you migrate while having downloads, they may become **orphaned** and you must use a file manager to remove them.
+Downloaded chapters do not transfer with migrations.
+
+Migrations with downloaded chapters may leave the download behind. You will need to remove these manually with a file manager.
 :::
 
 ## Migrating on Stable/Preview
