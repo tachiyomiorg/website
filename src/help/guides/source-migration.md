@@ -12,6 +12,10 @@ Migration is the process of moving manga between sources without losing progress
 Always make sure to have a [backup](/help/guides/creating-backups/) in case anything unexpected occurs.
 :::
 
+::: c-warning
+Downloads do not transfer with migration, if you migrate while having downloads, they may become **orphaned** and you must use a file manager to remove them.
+:::
+
 ## Migrating on Stable/Preview
 
 :::: guide Migrating from Manga
