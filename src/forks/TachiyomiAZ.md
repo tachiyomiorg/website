@@ -2,7 +2,7 @@
 layout: ForkPage
 title: TachiyomiAZ
 metaTitle: TachiyomiAZ
-description: This hentai focused fork is based off of TachiyomiEH, it has most features and fixes from Tachiyomi, as well as features from TachiyomiJ2K.
+description: This fork is based off of TachiyomiEH. It ports features and fixes from other Tachiyomi forks back to the old Tachiyomi hamburger UI.
 lang: en-US
 meta:
   - property: og:image
@@ -92,9 +92,9 @@ sidebar: false
 </div>
 
 ## Introduction
-**TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)** and [Syer10](https://github.com/jobobby04).
+**TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)**.
 
-This hentai focused fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style.
+This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**. It has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style. Anime support is coming "soon™"
 
 ## Features
 **Special Sources** (integrated plus added features)
