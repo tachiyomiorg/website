@@ -102,6 +102,60 @@ This setting allows filtered chapters to be skipped during reading.
 ## Always show chapter transition <Badge text="True" type="default-indicator" vertical="middle" />
 Chapter transition is the area between chapters that shows the names of current and next chapters. When this option is disabled, the reader will hide this area only if the next chapter is loaded.
 
+## Navigation layout
+
+This changes how tapping behaves
+
+<Carousel name="carousel-background-color">
+<CarouselItem>
+<figure class="centered">
+	<img width="260" :src="$withBase('/assets/guides_nav-right-and-left-light.png')">
+	<h4>Right and Left</h4>
+	<p>This is the default for Pager</p>
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+	<img width="260" :src="$withBase('/assets/guides_nav-l-light.png')">
+	<h4>L shaped</h4>
+	<p>This is the default for Webtoon and Vertical</p>
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+	<img  width="260" :src="$withBase('/assets/guides_nav-kindlish-light.png')">
+	<h4>Kindlish</h4>
+</figure>
+</CarouselItem>
+<CarouselItem>
+<figure class="centered">
+	<img  width="260" :src="$withBase('/assets/guides_nav-edge-light.png')">
+	<h4>Edge</h4>
+</figure>
+</CarouselItem>
+</Carousel>
+
+## Invert Tapping <Badge text="None" type="default-indicator" vertical="middle" />
+
+Inverts the tapping position depending on which setting you choose.
+
+**None**
+- Tapping left goes to the next page, and tapping right goes to the previous page
+- Tapping bottom goes to the next page, and tapping top goes to the previous page
+
+**Horizontal**
+- Tapping left goes to the previous page, and tapping right goes to the next page
+
+**Vertical**
+- Tapping bottom goes to the previous page, and tapping top goes to the next page
+
+**Both**
+- Applies the two previous mentioned settings
+
+::: c-warning
+This setting can only be used when Tapping is enabled.
+:::
+
 ## Scale type <Badge text="Fit screen" type="default-indicator" vertical="middle" />
 Scale type lets you choose how the page fits in your screen.
 
@@ -210,26 +264,6 @@ Adds a percentage side padding to the sides of the page
 
 ## Tapping <Badge text="True" type="default-indicator" vertical="middle" />
 This setting enables switching pages by tapping the sides of the screen.
-
-## Invert Tapping <Badge text="None" type="default-indicator" vertical="middle" />
-Inverts the tapping position depending on which setting you choose.
-
-**None**
-- Tapping left goes to the next page, and tapping right goes to the previous page
-- Tapping bottom goes to the next page, and tapping top goes to the previous page
-
-**Horizontal**
-- Tapping left goes to the previous page, and tapping right goes to the next page
-
-**Vertical**
-- Tapping bottom goes to the previous page, and tapping top goes to the next page
-
-**Both**
-- Applies the two previous mentioned settings
-
-::: c-warning
-This setting can only be used when Tapping is enabled.
-:::
 
 ## Long tap dialog <Badge text="True" type="default-indicator" vertical="middle" />
 If enabled, you can long tap on the screen to get the options to set the current page as cover, share it, or save it.
