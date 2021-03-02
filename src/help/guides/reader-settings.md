@@ -111,14 +111,14 @@ This changes how tapping behaves
 <figure class="centered">
 	<img width="260" :src="$withBase('/assets/guides_nav-right-and-left-light.png')">
 	<h4>Right and Left</h4>
-	<p>Is default for Pager</p>
+	<p>This is the default for Pager</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<img width="260" :src="$withBase('/assets/guides_nav-l-light.png')">
 	<h4>L shaped</h4>
-	<p>Is default for Webtoon and Vertical</p>
+	<p>This is the default for Webtoon and Vertical</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
