@@ -166,8 +166,8 @@ To avoid data loss in the future, you can use the automatic backup feature.
 Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
 :::
 
-#### Why can't I restore my backup?
-To restore backups, **Tachiyomi** requires to have extensions installed for the respective manga you want to restore. The app should warn you if you attempt to restore a backup without having the necessary extensions installed.
+#### Why am I having problems restoring from my backup?
+See the [guide](/help/guides/creating-backups/#restoring) on restoring from a backup.
 
 ## Extensions
 
