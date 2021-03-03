@@ -39,7 +39,7 @@ Sometimes you can struggle to find a source that has the manga you're looking fo
 ::: guide Tips to find your manga
 1. Look up the manga on [Google](https://google.com/) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
 1. See if the manga has any alternate spellings or other title variations. Try searching again in your sources with the alternate titles you found.
-1. If you still can't find the manga in any of your sources, then try to search for an extension for the site you've found in step 1 in the [extensions](/extensions/) list.
+1. If you still can't find the manga in any of your sources, then try to search for an extension for the website you've found in step 1 in the [extensions](/extensions/) list.
 
 #### If you find the manga on a specific scanlator/aggregator site and they do have an extension
 Download the corresponding extension, click on it under <Navigation item="browse"/> → **Sources**, and then search for the manga there.
