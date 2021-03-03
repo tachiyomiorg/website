@@ -193,6 +193,9 @@ Open an issue on [GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/i
 You can find the list of extensions to download [here](/extensions/)
 :::
 
+#### I'm having problems installing an extension, what can I do?
+In some cases, your phone might have some issues downloading and automatically installing an extension. In those cases, you can manually download and install the extension yourself. Go to the [extension list](extensions/), find the extension you want, and click **Download**. Once the .apk file has been downloaded, use your file manager to find it and open it. A prompt to install it as an app should pop up. Once it is done installing, it will be automatically added to Tachiyomi as a source.
+
 #### How do I allow third-party installations?
 ::::: el-tabs
 :::: el-tab-pane label="Android 8.0 and higher"
