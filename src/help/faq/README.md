@@ -204,7 +204,7 @@ In some cases, your phone might have some issues downloading and automatically i
 :::
 When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
-In *newer* versions of **Android** you need to enable **Install unknown apps** on a per-app basis.
+In *newer* versions of **Android**, you need to enable **Install unknown apps** on a per-app basis.
 ::::
 :::: el-tab-pane label="Android 7.1 and lower"
 ::: videolink
