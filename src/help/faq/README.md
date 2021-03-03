@@ -296,6 +296,11 @@ To solve this issue, follow the below steps.
 1. Choose an option like **Smart list** or **Prioritize source**.
 1. Go back to **MangaPark**'s chapter list and refresh it.
 
+### JapScan
+
+#### Why are some JapScan chapters not loading?
+The **JapScan** extension uses a very complicated method of accesing pages. If you encounter a manga that does not load or is scrambled, use a different source to read.
+
 ### Webtoons.com
 
 #### How do I fix the `Page list is empty` error?
