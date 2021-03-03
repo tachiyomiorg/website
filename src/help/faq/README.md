@@ -275,6 +275,17 @@ Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the ma
 Read about source migration [here](/help/guides/source-migration/)
 :::
 
+### **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo** (Formerly Mangaobx)
+
+#### What does `Page list is empty` mean?
+**Mangakakalot** and **Manganelo** have created new entries for manga on their sites again. Some old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from **Mangakakalot** or **Manganelo** to another source.
+
+#### What does `Source URL has changed` mean?
+This means that the manga is dead and needs to be migrated from **Mangakakalot** or **Manganelo** to a different source. Refer to the [migration guide](/help/guides/source-migration/)
+
+#### How do I fix the `Image could not be decoded` error?
+Open the manga in <Navigation item="webview"/>, open a chapter, and wait for the images to load. If they don't load, you will need to look elsewhere to read that particular manga, as some former **Mangabox** sources, such as **Mangakakalot**, are now blocking entire regions.
+
 ### MangaPark
 
 #### How do I deal with duplicate chapters in MangaPark?
