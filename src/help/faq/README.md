@@ -172,7 +172,7 @@ Tachiyomi does not endorse or recommend any manga source, and there is no best e
 <ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
 
 #### What are scanlator sources?
-Manga that are not officially licensed are translated by scanlators, who either publish on their own website or on **MangaDex**. This is in contrast to official sources like **MANGA Plus By SHUEISHA** or **Toomics**, which host officially licensed and translated manga.
+Manga that are not officially licensed are translated by scanlators, who either publish on their own website or on **MangaDex**. This is in contrast to official sources like **MANGA Plus By SHUEISHA** or **VIZ Shonen Jump**, which host officially licensed and translated manga.
 
 Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
 
