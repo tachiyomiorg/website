@@ -275,7 +275,10 @@ Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the ma
 Read about source migration [here](/help/guides/source-migration/)
 :::
 
-### **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo** (Formerly Mangaobx)
+### Former Mangabox extensions
+
+#### What happend to Mangabox?
+As part of a general move to split up multi-source extensions, the Mangabox extension was removed, and all of its sources were made into their own extensions, namley **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo**.
 
 #### What do `Page list is empty` and `Source URL has changed` mean?
 The former **Mangabox** extensions have created new entries for many of the manga on their websites. The old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from the source to itself in order to get the new entry, or better yet to a different source entirely to avoid similar errors in the future.
@@ -298,7 +301,7 @@ To solve this issue, follow the below steps.
 #### Why are some JapScan chapters not loading?
 The **JapScan** extension uses a very complicated method of accessing pages. If you encounter a manga that does not load or is scrambled, use a different source to read.
 
-### Webtoons.com
+### Webtoons
 
 #### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their website.
