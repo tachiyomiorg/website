@@ -41,9 +41,9 @@ Change library sorting by going to <Navigation item="library"/> → <Navigation 
 #### Why can't I find a certain manga?
 Sometimes you can struggle to find a source that has the manga you're looking for. Here are some tips to help you find it:
 ::: guide Tips to find your manga
-1. Look up the title on [Google](https://google.com/) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/) to see if it has any alternate spellings or other title variations.
-1. Try searching again with the alternate titles you found.
-2. If you still can' find the manga in any of your sources, use the names you found in Step 1 to check if a specific scanlator site or more niche aggregator site has the series, then look for them in the [Extensions](/extensions/) list.
+1. Look up the manga on [Google](https://google.com/) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
+1. See if the manga has any alternate spellings or other title variations. Try searching again in your sources with the alternate titles you found.
+1. If you still can't find the manga in any of your sources, then try to search for an extension for the site you've found in step 1 in the [extensions](/extensions/) list.
 
 #### If you find the manga on a specific scanlator/aggregator site and they do have an extension
 Download the corresponding extension, click on it under <Navigation item="browse"/> → **Sources**, and then search for the manga there.
