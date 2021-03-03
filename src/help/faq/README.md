@@ -96,6 +96,7 @@ Set download location to default by going to <Navigation item="more"/> → <Navi
 #### How do I fix empty/blank covers on my local manga?
 Sometimes some covers for local manga aren't displayed. Follow these steps to fix it:
 
+::: guide
 1. Make sure you've created the right folder structure. To check it, open the manga with the missing cover and check if you can read chapters in the app. If not, follow [this](/help/guides/reading-local-manga) guide first.
 1. Take a screenshot of which chapters you've read and then remove manga from the library.
 1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and tap **Clear database**. This only affects manga that aren't in your library.
