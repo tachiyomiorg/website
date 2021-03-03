@@ -48,7 +48,7 @@ Sometimes you can struggle to find a source that has the manga you're looking fo
 #### If you find the manga on a specific scanlator/aggregator site and they do have an extension
 Download the corresponding extension, click on it under <Navigation item="browse"/> → **Sources**, and then search for the manga there.
 #### If you find the manga on a specific scanlator/aggregator site and they don't have an extension
-Check if adding them as an extension has [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues). If they haven't been, you can [request it yourself](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
+Check if adding the site as an extension has [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues). If it hasn't been, you can [request it yourself](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
 If the website/scanlator doesn't have an online manga reader, you can download the manga from their site and set up the series as a [local manga](/help/guides/reading-local-manga).
 :::
