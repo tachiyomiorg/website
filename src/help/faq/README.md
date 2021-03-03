@@ -301,7 +301,7 @@ The **JapScan** extension uses a very complicated method of accessing pages. If 
 ### Webtoons.com
 
 #### How do I fix the `Page list is empty` error?
-You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
+You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their website.
 
 ### KissManga and MangaRock
 
