@@ -299,7 +299,7 @@ To solve this issue, follow the below steps.
 ### JapScan
 
 #### Why are some JapScan chapters not loading?
-The **JapScan** extension uses a very complicated method of accesing pages. If you encounter a manga that does not load or is scrambled, use a different source to read.
+The **JapScan** extension uses a very complicated method of accessing pages. If you encounter a manga that does not load or is scrambled, use a different source to read.
 
 ### Webtoons.com
 
