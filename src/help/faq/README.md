@@ -306,9 +306,7 @@ The **JapScan** extension uses a very complicated method of accessing pages. If 
 #### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their site.
 
-### KissManga
-:::: el-collapse
-::: el-collapse-item title="Where is KissManga?"
-**KissManga** closed permanently in August 2020.
-:::
-::::
+### KissManga and MangaRock
+
+#### Where are Kissmanga and MangaRock?
+**KissManga** went under permanently in August 2020. **MangaRock** converted from a piracy app and went legit. They are now called **INKR** but have nowhere near their old library.
