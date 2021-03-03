@@ -69,6 +69,12 @@ Read more about rooting your phone [here](https://www.xda-developers.com/root/)
 #### How do I log in with Kitsu?
 To log in with Kitsu you need to use your email address as your username.
 
+#### Why can't I find manga in MAL's search results?
+If you can't find a manga by name, you can look it up on MAL and then search useing the following format: `id:<id from manga URL>`. You can also search for a manga on your MAL profile's list by searching in the following format: `my:<manga name>`. 
+::: note
+Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
+:::
+
 ### Local Manga
 #### How do I import my manga into Tachiyomi?
 We recommend you to read [this](/help/guides/reading-local-manga) guide on how to do so.
