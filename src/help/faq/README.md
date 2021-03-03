@@ -41,9 +41,9 @@ Sometimes you can struggle to find a source that has the manga you're looking fo
 1. See if the manga has any alternate spellings or other title variations. Try searching again in your sources with the alternate titles you found.
 1. If you still can't find the manga in any of your sources, then try to search for an extension for the website you've found in step 1 in the [extensions](/extensions/) list.
 
-#### If you find the manga on a specific scanlator/aggregator site and they do have an extension
+#### If you find the manga on a specific scanlator/aggregator and they do have an extension
 Download the corresponding extension, click on it under <Navigation item="browse"/> → **Sources**, and then search for the manga there.
-#### If you find the manga on a specific scanlator/aggregator site and they don't have an extension
+#### If you find the manga on a specific scanlator/aggregator and they don't have an extension
 Check if adding the site as an extension has [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues). If it hasn't been, you can [request it yourself](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
 If the scanlator/aggregator doesn't have an online manga reader, you can download the manga from their site and set up the series as a [local manga](/help/guides/reading-local-manga).
