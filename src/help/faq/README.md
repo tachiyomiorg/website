@@ -60,9 +60,9 @@ However, if you're downloading several manga from different sources, the app wil
 Be aware that it could be a network issue on your device or on the site you are trying to download from.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
-At the moment, no. You could try using symlinks but that requires having your phone rooted.
+At the moment, no. You could try using symlinks but that requires having your device rooted.
 ::: note
-Read more about rooting your phone [here](https://www.xda-developers.com/root/)
+Read more about rooting your device [here](https://www.xda-developers.com/root/)
 :::
 
 ### Tracking
@@ -126,7 +126,7 @@ If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/h
 
 #### Why can't I uninstall Tachiyomi?
 
-On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the phone had a MicroSD card. To fix the issue, please remove the MicroSD card from the phone first, then uninstall Tachiyomi.
+On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the device had a MicroSD card. To fix the issue, please remove the MicroSD card from the device first, then uninstall Tachiyomi.
 
 #### Will there be an iOS version?
 There is no iOS version and there are no plans for one. Since iOS and Android apps don't share code, it's hard to port.
@@ -146,7 +146,7 @@ While there will never be a toggle between the two UI versions, you can continue
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
-#### Why can I see manga pages in my phone's photo gallery?
+#### Why can I see manga pages in my device's photo gallery?
 Tachiyomi adds a `.nomedia` file to the downloads folder by default to prevent this from happening, but sometimes it doesn't work or something went wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you are having the same problem with your local manga, place the `.nomedia` file in the local folder.
 
 #### I lost everything, what now?
@@ -191,7 +191,7 @@ You can find the list of extensions to download [here](/extensions/)
 :::
 
 #### I'm having problems installing an extension, what can I do?
-In some cases, your phone might have some issues downloading and automatically installing an extension. In those cases, you can manually download and install the extension yourself. Go to the [extension list](extensions/), find the extension you want, and click **Download**. Once the .apk file has been downloaded, use your file manager to find it and open it. A prompt to install it as an app should pop up. Once it is done installing, it will be automatically added to Tachiyomi as a source.
+In some cases, your device might have some issues downloading and automatically installing an extension. In those cases, you can manually download and install the extension yourself. Go to the [extension list](extensions/), find the extension you want, and click **Download**. Once the .apk file has been downloaded, use your file manager to find it and open it. A prompt to install it as an app should pop up. Once it is done installing, it will be automatically added to Tachiyomi as a source.
 
 #### How do I allow third-party installations?
 ::::: el-tabs
@@ -199,7 +199,7 @@ In some cases, your phone might have some issues downloading and automatically i
 ::: videolink
 [<MaterialIcon icon="videocam"/> Click for Android 8.0 and newer video guide](/assets/faq_unknown-sources-a10.webm)
 :::
-When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
+When installing your first extension and are prompted that your device *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
 In *newer* versions of **Android**, you need to enable **Install unknown apps** on a per-app basis.
 ::::
@@ -207,7 +207,7 @@ In *newer* versions of **Android**, you need to enable **Install unknown apps** 
 ::: videolink
 [<MaterialIcon icon="videocam"/> Click for Android 7.1 and older video guide](/assets/faq_unknown-sources-a7.webm)
 :::
-When installing your first extension and are prompted that your phone *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
+When installing your first extension and are prompted that your device *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
 
 In *older* versions of **Android**, you only need to enable **Unknown sources** globally.
 ::::
@@ -218,7 +218,7 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 :::
 
 #### How do I uninstall an extension?
-Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your phone's settings or do it in the app.
+Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your device's settings or do it in the app.
 
 ::: guide
 To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **Extensions** then tap **Uninstall** on the extension you want to remove.
