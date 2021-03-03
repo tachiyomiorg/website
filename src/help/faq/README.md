@@ -149,7 +149,7 @@ While there will never be a toggle between the two UI versions, you can continue
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
-#### Why can I see manga pages in my phone's photo library?
+#### Why can I see manga pages in my phone's photo gallery?
 Tachiyomi adds a `.nomedia` file to the downloads folder by default to prevent this from happening, but sometimes it doesn't work or something went wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you are having the same problem with your local manga, place the `.nomedia` file in the local folder.
 
 #### I lost everything, what now?
