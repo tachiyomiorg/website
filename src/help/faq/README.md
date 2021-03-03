@@ -32,10 +32,6 @@ The URL to the cover has probably changed. To fix this, refresh covers in settin
 Refresh your covers by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library manga covers**.
 :::
 
-::: guide
-Change library sorting by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Sort** section then in this case selecting **Total chapters**.
-:::
-
 ### Browse
 
 #### Why can't I find a certain manga?
