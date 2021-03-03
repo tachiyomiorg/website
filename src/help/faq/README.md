@@ -54,10 +54,12 @@ If the scanlator/aggregator doesn't have an online manga reader, you can downloa
 :::
 
 ### Reader
+
 #### Why are some images not displayed?
 Aside from network issues, it could be because the images are too big or that the decoder doesn't support that image type.
 
 ### Downloads
+
 #### How do I download several chapters or manga simultaneously?
 The app doesn't allow parallel downloads from one source to prevent IP bans caused by too many requests. We know that speed is being sacrificed but it's better than not being able to access a source at all.
 
@@ -73,6 +75,7 @@ Read more about rooting your device [here](https://www.xda-developers.com/root/)
 :::
 
 ### Tracking
+
 #### How do I log in with Kitsu?
 To log in with Kitsu you need to use your email address as your username.
 
@@ -83,6 +86,7 @@ Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
 ### Local Manga
+
 #### How do I import my manga into Tachiyomi?
 We recommend you to read [this](/help/guides/reading-local-manga) guide on how to do so.
 
@@ -107,6 +111,7 @@ Related GitHub issue: [#932](https://github.com/tachiyomiorg/tachiyomi/issues/93
 :::
 
 ### Application Updates
+
 #### How do I enable automatic updates?
 From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
@@ -117,6 +122,7 @@ However, if you think you are on an outdated version, go to <Navigation item="mo
 Certain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from your battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and click on **Disable battery optimization**.
 
 ### User Interface
+
 #### Can I change the app language?
 **Tachiyomi** is translated into 40+ different languages. By default, the app follows the language used on your device.
 
