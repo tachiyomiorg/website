@@ -18,6 +18,13 @@ This can be done by enabling **Download badges** under <Navigation item="library
 Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Display** section and then checking the **Download badges** option at the bottom.
 :::
 
+#### How do I ignore duplicate chapters?
+Every now and then you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
+
+* On the manga page, click on <Navigation item="filter"/> → **Sort** and choose **By chapter number**. This will cause the reader to skip duplicates as you read.
+* Bookmark or mark as read the unwanted chapters, then click on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectivly. This will hide any bookmarked chapters and skip them as you read along, as long as you have **Skip filtered chapters** is enabled under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_reader"/> → **Reading**.
+* Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
+
 #### Why are some covers white after restoring from backup?
 The URL to the cover has probably changed. To fix this, refresh covers in settings.
 
@@ -172,13 +179,6 @@ Tachiyomi does not endorse or recommend any manga source, and there is no best e
 Manga that are not officially licensed are translated by scanlators, who either publish on their own website or on **MangaDex**. This is in contrast to official sources like **MANGA Plus By SHUEISHA** or **VIZ Shonen Jump**, which host officially licensed and translated manga.
 
 Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
-
-#### How do I ignore duplicate chapters?
-Every now and then you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
-
-1. On the manga page, click on <Navigation item="filter"/> → **Sort** and choose **By chapter number**. This will cause the reader to skip duplicates as you read.
-1. Bookmark the unwanted chapters, then click on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked**. This will hide any bookmarked chapters and skip them as you read along.
-1. Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [guide](/help/guides/source-migration/).
 
 #### Which sources are in the multi-source extensions?
 Some extensions contain multiple sources. Consult the [extension list](/extensions/) to find out which extension to install for the specific source that you want.
