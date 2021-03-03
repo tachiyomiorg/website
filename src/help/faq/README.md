@@ -64,7 +64,7 @@ The app doesn't allow parallel downloads from one source to prevent IP bans caus
 However, if you're downloading several manga from different sources, the app will start downloading simultaneously from up to 5 different sources.
 
 #### Why do my downloads sometimes stop midway through?
-Be aware that it could be a network issue on your device or on the site you are trying to download from.
+Be aware that it could be a network issue on your device or on the website you are trying to download from.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
 At the moment, no. You could try using symlinks but that requires having your device rooted.
