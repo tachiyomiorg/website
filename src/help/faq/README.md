@@ -259,7 +259,7 @@ If pages are loading slowly or not at all, try:
 <ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
 
 #### How do I ignore chapters from certain scanlator groups?
-You can go to the manga's page in **WebView** and block groups you do not want to see. Leave **WebView** and refresh the manga, and the group's chapters should be gone.
+You can go to the manga's page in <Navigation item="webview"/> and block groups you do not want to see. Close <Navigation item="webview"/> and refresh the manga in the app. The group's chapters should now be gone .
 
 #### Is there an alternate searching method?
 **MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is by opening the manga in your browser and looking at the URL.
