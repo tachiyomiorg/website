@@ -281,7 +281,7 @@ Read about source migration [here](/help/guides/source-migration/)
 As part of a general move to split up multi-source extensions, the Mangabox extension was removed, and all of its sources were made into their own extensions, namley **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo**.
 
 #### What do `Page list is empty` and `Source URL has changed` mean?
-The former **Mangabox** extensions have created new entries for many of the manga on their websites. The old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from the source to itself in order to get the new entry, or better yet to a different source entirely to avoid similar errors in the future.
+The former **Mangabox** extensions have created new entries for many of the manga on their websites. The old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from the source to itself to get the new entry, or better yet, to a different source entirely to avoid similar errors in the future.
 
 #### How do I fix the `Image could not be decoded` error?
 Open the manga in <Navigation item="webview"/>, open a chapter, and wait for the images to load. If they don't load, you will need to look elsewhere to read that particular manga, as some of the former **Mangabox** sources, such as **Mangakakalot**, are now blocking entire regions.
