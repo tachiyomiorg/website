@@ -278,7 +278,7 @@ Read about source migration [here](/help/guides/source-migration/)
 ### Former Mangabox extensions
 
 #### What happend to Mangabox?
-As part of a general move to split up multi-source extensions, the Mangabox extension was removed, and all of its sources were made into their own extensions, namley **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo**.
+As part of a general move to split up multi-source extensions, the Mangabox extension was removed, and all of its sources were made into their own extensions, namely **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo**.
 
 #### What do `Page list is empty` and `Source URL has changed` mean?
 The former **Mangabox** extensions have created new entries for many of the manga on their websites. The old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from the source to itself to get the new entry, or better yet, to a different source entirely to avoid similar errors in the future.
