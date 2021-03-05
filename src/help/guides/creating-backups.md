@@ -78,6 +78,6 @@ These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, 
 
 Titles from said extensions will not be restored when restoring a backup made by these forks to standard Tachiyomi. It is possible to restore titles to these forks, but it is not possible to back them up out of these forks.
 
-### <img class="forkIconBefore" src="/assets/forks_logo-neko.png" width="24" height="24" /> [Neko](/forks/Neko) and <img class="forkIconBefore" src="/assets/forks_logo-j2k.png" width="24" height="24" /> [J2k](/forks/j2k)
+### <img class="forkIconBefore" src="/assets/forks_logo-j2k.png" width="24" height="24" /> [J2K](/forks/TachiyomiJ2K)
 
-These forks can only restore legacy backups, as they have not made the changes needed to support the new backup yet.
+This fork can only restore legacy backups, as it has not made the changes needed to support the new backup yet.
