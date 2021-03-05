@@ -12,6 +12,12 @@ Migration is the process of moving manga between sources without losing progress
 Always make sure to have a [backup](/help/guides/creating-backups/) in case anything unexpected occurs.
 :::
 
+::: c-warning
+Downloaded chapter(s) do not transfer with migrations.
+
+Migrations with downloaded chapter(s) may leave the download behind. You will need to remove these manually with a file manager.
+:::
+
 ## Migrating on Stable/Preview
 
 :::: guide Migrating from Manga
