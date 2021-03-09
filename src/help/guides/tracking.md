@@ -1,9 +1,13 @@
 ---
 title: Tracking manga
-description: How to automatically track read chapters on supported trackers 
+description: How to automatically track read chapters on supported trackers
 lang: en-US
 ---
 # Tracking Info
+
+**Tracking** helps you automatically send read manga chapters to supported trackers, so you can keep track of what and when you read it online. 
+
+You can also get statistics and 
 
 - Tracking done **manually** for every manga.
 - The last page of the chapter must be reached to have it mark the chapter as read and track it.
