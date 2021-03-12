@@ -2,7 +2,7 @@
 	<div class="extension-list">
 		<div v-for="extensionGroup in extensions" :key="extensionGroup[0].lang">
 			<h3>
-				{{ langName(extensionGroup[0].lang) }}
+				{{ langName(extensionGroup[0].lang).replace("English (English)", "English") }}
 				<span class="extensions-total">
 					Total:
 					<span class="extensions-total-sum">
@@ -62,8 +62,8 @@ export default {
 		const { data } = await axios.get(GITHUB_EXTENSION_JSON);
 		const values = Object.values(groupBy(data, "lang"));
 		values.sort((a, b) => {
-			const langA = this.langName(a[0].lang).split(" ")[0];
-			const langB = this.langName(b[0].lang).split(" ")[0];
+			const langA = this.simpleLangName(a[0].lang);
+			const langB = this.simpleLangName(b[0].lang);
 			if (langA === "All" && langB === "English") {
 				return -1;
 			}
@@ -94,6 +94,7 @@ export default {
 	},
 
 	methods: {
+		simpleLangName: (code) => (code === "all" ? "All" : ISO6391.getName(code)),
 		langName: (code) => (code === "all" ? "All" : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`),
 		iconUrl(pkg) {
 			const pkgName = pkg.substring(0, pkg.lastIndexOf("."));
