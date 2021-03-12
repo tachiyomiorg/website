@@ -1,10 +1,12 @@
 ---
-title: Troubleshooting problems
+title: Troubleshooting
 description: Encountered an issue with a source or the app? Here are resources to help you troubleshoot it.
 lang: en-US
+permalink: /help/guides/troubleshooting
+redirectFrom: /help/guides/troubleshooting-problems
 ---
 
-# Troubleshooting problems
+# Troubleshooting
 
 This page is for when you encounter a problem with a source or the app.
 

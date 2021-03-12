@@ -49,6 +49,7 @@ module.exports = [
 			normalSuffix: "/",
 		},
 	],
+	["redirect-frontmatter"],
 	[
 		"vuepress-plugin-zooming",
 		{
