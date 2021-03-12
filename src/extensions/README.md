@@ -1,6 +1,6 @@
 ---
 title: Extensions
-description: Here is a list of all available extensions to download inside the app.
+description: List of available extensions to use with Tachiyomi, you can download them from here or from the app.
 lang: en-US
 ---
 
@@ -8,7 +8,7 @@ lang: en-US
 
 :::: el-tabs
 ::: el-tab-pane label="Available extensions"
-Here is a list of all available extensions to download inside the app.
+List of available extensions to use with Tachiyomi, you can download them from here or from the app.
 <ExtensionList/>
 :::
 ::: el-tab-pane label="Spreadsheet"
