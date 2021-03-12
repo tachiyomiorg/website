@@ -2,7 +2,7 @@
 	<div class="extension-list">
 		<div v-for="extensionGroup in extensions" :key="extensionGroup[0].lang">
 			<h3>
-				{{ langName(extensionGroup[0].lang).replace("English (English)", "English") }}
+				{{ extensionGroup[0].lang === "en" ? simpleLangName(extensionGroup[0].lang) : langName(extensionGroup[0].lang) }}
 				<span class="extensions-total">
 					Total:
 					<span class="extensions-total-sum">
