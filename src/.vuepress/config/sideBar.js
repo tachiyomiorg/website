@@ -1,6 +1,5 @@
 module.exports = {
-	guides: [
-		"/",
+	default: [
 		{
 			title: "Frequently Asked Questions",
 			path: "/help/faq/",
@@ -11,140 +10,20 @@ module.exports = {
 			sidebarDepth: 2,
 			children: [
 				"/help/guides/getting-started",
-				"/help/guides/troubleshooting-problems",
+				"/help/guides/troubleshooting",
 				"/help/guides/source-migration",
-				"/help/guides/creating-backups",
-				"/help/guides/reading-local-manga",
-				"/help/guides/reader-settings",
-				"/help/guides/categories",
+				"/help/guides/backups",
 				"/help/guides/tracking",
+				"/help/guides/categories",
+				"/help/guides/local-manga",
+				"/help/guides/reader-settings",
 			],
 		},
 		{
-			title: "Forks",
-			path: "/forks/",
-		},
-		{
-			title: "Contribution",
-			path: "/help/contribution",
-		},
-		{
-			title: "Download",
-			path: "/download/",
-		},
-		{
-			title: "Extensions",
-			path: "/extensions/",
-		},
-	],
-	faq: [
-		"/",
-		{
-			title: "Frequently Asked Questions",
-			path: "/help/faq/",
-		},
-		{
-			title: "Guides",
-			path: "/help/guides/getting-started",
-		},
-		{
-			title: "Forks",
-			path: "/forks/",
-		},
-		{
-			title: "Contribution",
-			path: "/help/contribution",
-		},
-		{
-			title: "Download",
-			path: "/download/",
-		},
-		{
-			title: "Extensions",
-			path: "/extensions/",
-		},
-	],
-	contribution: [
-		"/",
-		{
-			title: "Frequently Asked Questions",
-			path: "/help/faq/",
-		},
-		{
-			title: "Guides",
-			path: "/help/guides/getting-started",
-		},
-		{
-			title: "Forks",
-			path: "/forks/",
-		},
-		{
-			title: "Contribution",
+			title: "Tachiyomi",
 			collapsable: false,
-			sidebarDepth: 1,
-			children: ["/help/contribution"],
-		},
-		{
-			title: "Download",
-			path: "/download/",
-		},
-		{
-			title: "Extensions",
-			path: "/extensions/",
-		},
-	],
-	extensions: [
-		"/",
-		{
-			title: "Frequently Asked Questions",
-			path: "/help/faq/",
-		},
-		{
-			title: "Guides",
-			path: "/help/guides/getting-started",
-		},
-		{
-			title: "Forks",
-			path: "/forks/",
-		},
-		{
-			title: "Contribution",
-			path: "/help/contribution",
-		},
-		{
-			title: "Download",
-			path: "/download/",
-		},
-		{
-			title: "Extensions",
-			path: "/extensions/",
-		},
-	],
-	forks: [
-		"/",
-		{
-			title: "Frequently Asked Questions",
-			path: "/help/faq/",
-		},
-		{
-			title: "Guides",
-			path: "/help/guides/getting-started",
-		},
-		{
-			title: "Forks",
-			path: "/forks/",
-		},
-		{
-			title: "Contribution",
-			path: "/help/contribution",
-		},
-		{
-			title: "Download",
-			path: "/download/",
-		},
-		{
-			title: "Extensions",
-			path: "/extensions/",
+			sidebarDepth: 2,
+			children: ["/help/contribution", "/download/", "/extensions/", "/forks/"],
 		},
 	],
 	sandbox: [

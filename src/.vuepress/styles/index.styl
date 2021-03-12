@@ -361,3 +361,37 @@ a
 			&__title
 			&__description
 				color #ce8b27
+
+.sidebar
+    .sidebar-heading
+		font-weight 500 !important
+	.sidebar-links > li
+		> .sidebar-link
+			font-weight 500 !important
+		> .sidebar-group .sidebar-group-items .sidebar-link
+			font-weight 400 !important
+			&.active
+				font-weight 500 !important
+				border-left none !important
+				&::before
+					content " "
+					position: absolute
+					width 7px
+					height 7px
+					margin-left -12px
+					margin-top 6px
+					background-color $accentColor
+					border-radius 50%
+
+	.sidebar-sub-headers > .sidebar-sub-header
+		> .sidebar-link
+			font-weight 500 !important
+		& > .sidebar-sub-headers > .sidebar-sub-header
+			> .sidebar-link
+				font-weight 400 !important
+			> .sidebar-sub-headers > .sidebar-sub-header .sidebar-link
+				font-weight 500 !important
+
+	.menu-link.active:before {
+
+}

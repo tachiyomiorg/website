@@ -37,6 +37,7 @@
 		"vuepress-plugin-clean-urls": "^1.1.2",
 		"vuepress-plugin-container": "^2.1.5",
 		"vuepress-plugin-element-ui": "^1.1.0",
+		"vuepress-plugin-redirect-frontmatter": "^1.0.0",
 		"vuepress-plugin-zooming": "^1.1.8",
 		"webpack": "^4.44.2"
 	},

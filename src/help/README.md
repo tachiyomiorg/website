@@ -11,7 +11,7 @@ help:
     faq: true
   - title: Troubleshooting
     description: Fix common issues
-    link: /help/guides/troubleshooting-problems/
+    link: /help/guides/troubleshooting/
     fixProblems: true
   - title: Guides
     description: Extensive guides written for you
