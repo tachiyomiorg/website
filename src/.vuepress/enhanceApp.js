@@ -25,4 +25,17 @@ export default ({
 	Vue.use(VueMoment);
 	Vue.use(Element);
 	Vue.mixin({ store });
+	// Reroute to new pages
+	router.beforeEach((to, from, next) => {
+		const redirectList = {
+			"/help/guides/troubleshooting-problems/": "/help/guides/troubleshooting/",
+			"/help/guides/reading-local-manga/": "/help/guides/local-manga/",
+			"/help/guides/creating-backups/": "/help/guides/backups/",
+		};
+		const redirect = redirectList[to.path];
+
+		if (redirect) {
+			next({ path: redirect });
+		} else next();
+	});
 };
