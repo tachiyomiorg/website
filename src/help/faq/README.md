@@ -84,7 +84,7 @@ Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 ### Local Manga
 
 #### How do I import my manga into Tachiyomi?
-We recommend you to read [this](/help/guides/reading-local-manga) guide on how to do so.
+We recommend you to read [this](/help/guides/local-manga) guide on how to do so.
 
 #### What do I do if I can't find the Tachiyomi folder?
 If you don't see the **Tachiyomi** folder on your device, try setting the download location to default and downloading a chapter of any manga so that the folder can be created.
@@ -97,7 +97,7 @@ Set download location to default by going to <Navigation item="more"/> → <Navi
 Sometimes some covers for local manga aren't displayed. Follow these steps to fix it:
 
 ::: guide
-1. Make sure you've created the right folder structure. To check it, open the manga with the missing cover and check if you can read chapters in the app. If not, follow [this](/help/guides/reading-local-manga) guide first.
+1. Make sure you've created the right folder structure. To check it, open the manga with the missing cover and check if you can read chapters in the app. If not, follow [this](/help/guides/local-manga) guide first.
 1. Take a screenshot of which chapters you've read and then remove manga from the library.
 1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and tap **Clear database**. This only affects manga that aren't in your library.
 1. Go to <Navigation item="browse"/> → **Local source** and find the manga. The cover should be fixed now. Add the manga back to your library, mark your read chapters, and re-add tracking if needed.
@@ -132,7 +132,7 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 #### What is Tachiyomi Preview?
 It's a weekly-updated, beta version of the app. It contains features that may be added to Tachiyomi in the future but also is more prone to bugs and crashes. Tachiyomi Preview is used by developers and contributors to test the app and find bugs.
 
-If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/creating-backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
+If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
 
 #### Why can't I uninstall Tachiyomi?
 
@@ -163,11 +163,11 @@ Tachiyomi adds a `.nomedia` file to the downloads folder by default to prevent t
 To avoid data loss in the future, you can use the automatic backup feature.
 
 ::: note
-Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
+Learn how to create automatic backups [here](/help/guides/backups/#turning-on-auto-backups/)
 :::
 
 #### Why am I having problems restoring from my backup?
-See the [guide](/help/guides/creating-backups/#restoring) on restoring from a backup.
+See the [guide](/help/guides/backups/#restoring) on restoring from a backup.
 
 ## Extensions
 
