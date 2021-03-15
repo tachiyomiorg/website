@@ -39,7 +39,7 @@
 		"vuepress-plugin-element-ui": "^1.1.0",
 		"vuepress-plugin-redirect-frontmatter": "^1.0.0",
 		"vuepress-plugin-zooming": "^1.1.8",
-		"webpack": "^4.44.2"
+		"webpack": "^5.25.1"
 	},
 	"dependencies": {
 		"@mr-hope/vuepress-plugin-last-update": "^1.11.0",
