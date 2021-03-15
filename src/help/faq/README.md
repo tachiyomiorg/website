@@ -132,7 +132,7 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 #### What is Tachiyomi Preview?
 It's a weekly-updated, beta version of the app. It contains features that may be added to Tachiyomi in the future but also is more prone to bugs and crashes. Tachiyomi Preview is used by developers and contributors to test the app and find bugs.
 
-If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/creating-backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
+If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
 
 #### Why can't I uninstall Tachiyomi?
 
@@ -163,11 +163,11 @@ Tachiyomi adds a `.nomedia` file to the downloads folder by default to prevent t
 To avoid data loss in the future, you can use the automatic backup feature.
 
 ::: note
-Learn how to create automatic backups [here](/help/guides/creating-backups/#turning-on-auto-backups/)
+Learn how to create automatic backups [here](/help/guides/backups/#turning-on-auto-backups/)
 :::
 
 #### Why am I having problems restoring from my backup?
-See the [guide](/help/guides/creating-backups/#restoring) on restoring from a backup.
+See the [guide](/help/guides/backups/#restoring) on restoring from a backup.
 
 ## Extensions
 
