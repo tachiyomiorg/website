@@ -46,7 +46,7 @@ Download the corresponding extension, click on it under <Navigation item="browse
 #### If you find the manga on a specific scanlator/aggregator and they don't have an extension
 Check if adding the site as an extension has [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues). If it hasn't been, you can [request it yourself](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
-If the scanlator or aggregator doesn't have an online manga reader, you can download the manga from their website and set up the series as a [local manga](/help/guides/reading-local-manga).
+If the scanlator or aggregator doesn't have an online manga reader, you can download the manga from their website and set up the series as a [local manga](/help/guides/local-manga/).
 :::
 
 ### Reader
