@@ -19,5 +19,4 @@ features:
   - title: Customization
     details: A configurable reader with multiple reading modes, custom color filters, and other settings
     image: manga
-footer: Apache Licensed | Copyright © 2015-present Javier Tomás
 ---
