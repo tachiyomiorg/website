@@ -59,8 +59,15 @@
 		<Content class="theme-default-content custom" />
 
 		<footer>
-			<div v-if="data.footer" class="footer">
-				{{ data.footer }}
+			<div class="footer">
+				<div class="copyright">
+					<a href="https://www.apache.org/licenses/LICENSE-2.0">Open-source Apache Licensed</a>
+					| Copyright &copy; 2015{{ " - " + new Date().getFullYear() }} Javier Tomás
+				</div>
+				<div class="netlify">
+					<a target="_blank" href="https://www.netlify.com/">This site is powered by Netlify</a>
+					<img src="../../public/assets/netlify.svg" />
+				</div>
 			</div>
 		</footer>
 	</main>
@@ -203,7 +210,27 @@ export default {
 			padding 2.5rem
 			border-top 1px solid $borderColor
 			text-align center
-			color $textColorLight
+			.copyright
+				font-size 0.9rem
+				a
+					color $textColor
+					font-weight normal
+					&:hover
+						text-decoration underline
+			.netlify
+				margin-top 1rem
+				font-size 0.8rem
+				a
+					color $accentColorSecondary
+					&:hover
+						color #24827a
+				img
+					-ms-transform rotate(360deg)
+					-webkit-transform rotate(360deg)
+					transform rotate(360deg)
+					margin-bottom -2px
+					width 1em
+					height 1em
 
 @keyframes fade
 	0%
