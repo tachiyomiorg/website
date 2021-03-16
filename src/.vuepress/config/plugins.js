@@ -6,7 +6,7 @@ module.exports = [
 		},
 	],
 	[
-		"@mr-hope/vuepress-plugin-last-update",
+		"@vuepress/last-updated",
 		{
 			transformer: (timestamp, lang) => {
 				const moment = require("moment");
