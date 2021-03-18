@@ -2,8 +2,6 @@
 title: Backups
 description: Backups can save you a lot of headache in case something happens to your installation or device.
 lang: en-US
-permalink: /help/guides/backups
-redirectFrom: /help/guides/creating-backups
 ---
 
 # Backups

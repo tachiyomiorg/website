@@ -30,6 +30,7 @@ module.exports = [
 			ga: "UA-148212082-1",
 		},
 	],
+	["vuepress-plugin-dehydrate"],
 	[
 		"@vuepress/active-header-links",
 		{
@@ -49,7 +50,6 @@ module.exports = [
 			normalSuffix: "/",
 		},
 	],
-	["redirect-frontmatter"],
 	[
 		"vuepress-plugin-zooming",
 		{

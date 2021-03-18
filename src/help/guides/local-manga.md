@@ -2,8 +2,6 @@
 title: Local manga
 description: All the information you would need to read your own local manga.
 lang: en-US
-permalink: /help/guides/local-manga
-redirectFrom: /help/guides/reading-local-manga
 ---
 
 # Local manga
