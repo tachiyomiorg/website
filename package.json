@@ -56,7 +56,7 @@
 		"vue-gsheets": "^4.0.3",
 		"vue-material-design-icons": "^4.11.0",
 		"vue-moment": "^4.1.0",
-		"vue-sweetalert2": "^4.2.0",
+		"vue-sweetalert2": "^4.2.1",
 		"vuepress-plugin-dehydrate": "^1.1.5",
 		"vuepress-plugin-robots": "^1.0.1",
 		"vuex": "^3.6.2"
