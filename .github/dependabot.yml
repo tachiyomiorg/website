@@ -1,0 +1,85 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: core-js
+    versions:
+    - "> 2.6.4"
+  - dependency-name: webpack
+    versions:
+    - "> 4.46.0"
+  - dependency-name: "@mr-hope/vuepress-plugin-sitemap"
+    versions:
+    - 1.11.2
+    - 1.12.0
+    - 1.14.0
+    - 1.14.3
+    - 1.14.4
+    - 1.14.5
+    - 1.15.1
+    - 1.9.3
+    - 1.9.4
+    - 1.9.5
+    - 1.9.6
+  - dependency-name: eslint-plugin-vue
+    versions:
+    - 7.5.0
+    - 7.6.0
+    - 7.7.0
+  - dependency-name: vue-good-table
+    versions:
+    - 2.21.3
+    - 2.21.4
+    - 2.21.6
+    - 2.21.7
+  - dependency-name: eslint
+    versions:
+    - 7.18.0
+    - 7.19.0
+    - 7.20.0
+    - 7.21.0
+  - dependency-name: "@vuepress/plugin-active-header-links"
+    versions:
+    - 1.8.1
+    - 1.8.2
+  - dependency-name: vuepress
+    versions:
+    - 1.8.1
+    - 1.8.2
+  - dependency-name: "@vuepress/plugin-pwa"
+    versions:
+    - 1.8.1
+    - 1.8.2
+  - dependency-name: "@vuepress/plugin-google-analytics"
+    versions:
+    - 1.8.1
+    - 1.8.2
+  - dependency-name: "@vuepress/plugin-back-to-top"
+    versions:
+    - 1.8.1
+    - 1.8.2
+  - dependency-name: eslint-plugin-markdown
+    versions:
+    - 2.0.0
+  - dependency-name: iso-639-1
+    versions:
+    - 2.1.8
+  - dependency-name: "@mr-hope/vuepress-plugin-last-update"
+    versions:
+    - 1.9.3
+    - 1.9.4
+    - 1.9.5
+    - 1.9.6
+  - dependency-name: element-ui
+    versions:
+    - 2.15.0
+  - dependency-name: webpack
+    versions:
+    - 4.46.0
+  - dependency-name: vuex
+    versions:
+    - 3.6.2
