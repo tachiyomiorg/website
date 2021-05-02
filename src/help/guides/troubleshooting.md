@@ -69,6 +69,20 @@ Backup your data, uninstall the app, then restore the data in the fresh install.
 ::: el-collapse-item title="Cannot Access SD Card"
 **Cannot Access SD Card** error is typically caused by having a file or folder name that is too long. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
+::: el-collapse-item title="Storage issues with Android 11"
+After the introduction of [Scoped Storage](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/) in **Android 11**, your library could load slowly and/or the app is unable to delete chapters automatically.
+
+One way to fix this is by executing an [ADB](https://www.xda-developers.com/quickly-install-adb/) command on a computer to opt-out the app from the new storage changes.
+
+**ADB command**
+`adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow`
+
+If you're using Preview, or a Fork, replace eu.kanade.tachiyomi with the other app's ID.
+  * **TachiyomiAZ → eu.kanade.tachiyomi.az**
+  * **TachiyomiJ2K → eu.kanade.tachiyomi.j2k**
+  * **TachiyomiSY → eu.kanade.tachiyomi.sy**
+  * **Neko → eu.kanade.tachiyomi.neko**
+:::
 ::::
 
 ## Diagnosis
