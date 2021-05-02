@@ -78,10 +78,11 @@ One way to fix this is by executing an [ADB](https://www.xda-developers.com/quic
 `adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow`
 
 If you're using Preview, or a Fork, replace eu.kanade.tachiyomi with the other app's ID.
+  * **Tachiyomi Preview → eu.kanade.tachiyomi.debug**
   * **TachiyomiAZ → eu.kanade.tachiyomi.az**
   * **TachiyomiJ2K → eu.kanade.tachiyomi.j2k**
   * **TachiyomiSY → eu.kanade.tachiyomi.sy**
-  * **Neko → eu.kanade.tachiyomi.neko**
+  * **Neko → tachiyomi.mangadex**
 :::
 ::::
 
