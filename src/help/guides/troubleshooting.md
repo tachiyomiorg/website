@@ -75,14 +75,15 @@ After the introduction of [Scoped Storage](https://www.xda-developers.com/androi
 One way to fix this is by executing an [ADB](https://www.xda-developers.com/quickly-install-adb/) command on a computer to opt-out the app from the new storage changes.
 
 **ADB command**
+
 `adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow`
 
-If you're using Preview, or a Fork, replace eu.kanade.tachiyomi with the other app's ID.
-  * **Tachiyomi Preview → eu.kanade.tachiyomi.debug**
-  * **TachiyomiAZ → eu.kanade.tachiyomi.az**
-  * **TachiyomiJ2K → eu.kanade.tachiyomi.j2k**
-  * **TachiyomiSY → eu.kanade.tachiyomi.sy**
-  * **Neko → tachiyomi.mangadex**
+If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other app's ID.
+  * **Tachiyomi Preview** → `eu.kanade.tachiyomi.debug`
+  * **TachiyomiAZ** → `eu.kanade.tachiyomi.az`
+  * **TachiyomiJ2K** → `eu.kanade.tachiyomi.j2k`
+  * **TachiyomiSY** → `eu.kanade.tachiyomi.sy`
+  * **Neko** → `tachiyomi.mangadex`
 :::
 ::::
 
