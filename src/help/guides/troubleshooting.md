@@ -74,38 +74,39 @@ After the introduction of [Scoped Storage](https://www.xda-developers.com/androi
 
 One way to fix this is by executing an [ADB](https://www.xda-developers.com/quickly-install-adb/) command on a computer to opt-out the app from the new storage changes.
 
+
 **How to run ADB**
 
 ADB is a small tool bundled in the Android SDK as part of the “Platform Tools”.
 
-  1. [Download the SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html) for Windows, Mac, or Linux
-  2. Extract the ZIP file somewhere easily accessible (like `C:\platform-tools`)
+1. [Download the SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html) for Windows, Mac, or Linux
+2. Extract the ZIP file somewhere easily accessible (like `C:\platform-tools`)
 
 You will need to enable "USB Debugging/Android Debugging" on your phone next:
 
-  1. Open **Settings**
-  2. Either search for "Build number" via the search bar or follow the directions:
-    * **Android 9** and higher: **Settings > About Phone > Build Number**
-    * **Android 8.x**: **Settings > System > About Phone > Build Number**
-    * **Android 7.1** and lower: **Settings > About Phone > Build Number**
+1. Open **Settings**
+2. Either search for "Build number" via the search bar or follow the directions:
+  * **Android 9** and higher: **Settings > About Phone > Build Number**
+  * **Android 8.x**: **Settings > System > About Phone > Build Number**
+  * **Android 7.1** and lower: **Settings > About Phone > Build Number**
 
-  3. Quickly tap **Build number** 7 times
-  4. You will see a message appear that says "You are now a developer"
-  5. Now go back and you’ll see **Developer options** listed
-  6. Go back to **Settings**
-  7. Open **System > Developer options** or just **Developer options**
-  8. Scroll until you find **USB debugging/Android Debugging**
-  9. Toggle the switch to enable it
+3. Quickly tap **Build number** 7 times
+4. You will see a message appear that says "You are now a developer"
+5. Now go back and you’ll see **Developer options** listed
+6. Go back to **Settings**
+7. Open **System > Developer options** or just **Developer options**
+8. Scroll until you find **USB debugging/Android Debugging**
+9. Toggle the switch to enable it
 
 With platform-tools downloaded and USB debugging enabled, you can now follow the next steps:
 
-  1. Connect your Android device to the computer with an USB cable
-  2. Make sure to allow "USB debugging/Android Debugging" when a pop-up appears
-  3. Open the **platform-tools** folder on your computer
-  4. Shift+Right click and select **Open command prompt here** or **Open PowerShell window here**
-  5. Type `adb devices` and hit Enter
-  6. You should see an entry with your device(s)
-  7. Now you can enter the following ADB command!
+1. Connect your Android device to the computer with an USB cable
+2. Make sure to allow "USB debugging/Android Debugging" when a pop-up appears
+3. Open the **platform-tools** folder on your computer
+4. Shift+Right click and select **Open command prompt here** or **Open PowerShell window here**
+5. Type `adb devices` and hit Enter
+6. You should see an entry with your device(s)
+7. Now you can enter the following ADB command!
 
 
 **ADB command**
