@@ -81,7 +81,7 @@ ADB is a small tool bundled in the Android SDK as part of the “Platform Tools�
   1. [Download the SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html) for Windows, Mac, or Linux
   2. Extract the ZIP file somewhere easily accessible (like `C:\platform-tools`)
 
-You will then need to enable "USB Debugging" on your phone next:
+You will need to enable "USB Debugging" on your phone next:
 
   1. Open **Settings**
   2. Scroll down to **System** *(skip to step 3 on pre-Android Oreo devices)*
@@ -107,7 +107,7 @@ We’ve got ADB downloaded on your computer and your Android device is ready to 
   6. Type `adb devices` and hit Enter
   7. You should see a list of attached devices
   8. Now you can enter the following ADB command!
-  
+
 
 **ADB command**
 
