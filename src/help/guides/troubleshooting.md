@@ -84,24 +84,21 @@ ADB is a small tool bundled in the Android SDK as part of the “Platform Tools�
 
 You will need to enable "USB Debugging/Android Debugging" on your phone next:
 
-1. Open **Settings**
-2. Either search for "Build number" via the search bar or follow the directions:
-  * **Android 9** and higher: **Settings > About Phone > Build Number**
-  * **Android 8.x**: **Settings > System > About Phone > Build Number**
-  * **Android 7.1** and lower: **Settings > About Phone > Build Number**
+* If you use a custom ROM and/or aren't able to enable Developer options try googling how to enable Developer options on your specific device
 
-3. Quickly tap **Build number** 7 times
-4. You will see a message appear that says "You are now a developer"
-5. Now go back and you’ll see **Developer options** listed
-6. Go back to **Settings**
-7. Open **System > Developer options** or just **Developer options**
-8. Scroll until you find **USB debugging/Android Debugging**
-9. Toggle the switch to enable it
+1. Open **Settings**
+2. (Only on Android 8.X) Scroll down/Select to **System**
+3. Select **About phone**
+4. Quickly tap **Build number** 7 times
+5. You will see a message appear that says "**You are now a developer**"
+6. Now go back and you’ll see **Developer options** listed
+7. Scroll until you find **USB debugging/Android debugging**
+8. Toggle the switch to enable it
 
 With platform-tools downloaded and USB debugging enabled, you can now follow the next steps:
 
 1. Connect your Android device to the computer with an USB cable
-2. Make sure to allow "USB debugging/Android Debugging" when a pop-up appears
+2. Make sure to allow "USB debugging/Android debugging" when a pop-up appears
 3. Open the **platform-tools** folder on your computer
 4. Shift+Right click and select **Open command prompt here** or **Open PowerShell window here**
 5. Type `adb devices` and hit Enter
