@@ -69,6 +69,58 @@ Backup your data, uninstall the app, then restore the data in the fresh install.
 ::: el-collapse-item title="Cannot Access SD Card"
 **Cannot Access SD Card** error is typically caused by having a file or folder name that is too long. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
+::: el-collapse-item title="Storage issues with Android 11"
+After the introduction of [Scoped Storage](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/) in **Android 11**, your library could load slowly and/or the app is unable to delete chapters automatically.
+
+One way to fix this is by executing an [ADB](https://www.xda-developers.com/quickly-install-adb/) command on a computer to opt-out the app from the new storage changes.
+
+
+**How to run ADB**
+
+ADB is a small tool bundled in the Android SDK as part of the “Platform Tools”.
+
+1. [Download the SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html) for Windows, Mac, or Linux
+2. Extract the ZIP file somewhere easily accessible (like `C:\platform-tools`)
+
+You will need to enable "USB Debugging/Android Debugging" on your phone next:
+
+* If you use a custom ROM and/or aren't able to enable Developer options try googling how to enable Developer options on your specific device
+
+1. Open **Settings**
+2. (Only on Android 8.X) Scroll down/Select to **System**
+3. Select **About phone**
+4. Quickly tap **Build number** 7 times
+5. You will see a message appear that says "**You are now a developer**"
+6. Now go back and you’ll see **Developer options** listed
+7. Scroll until you find **USB debugging/Android debugging**
+8. Toggle the switch to enable it
+
+With platform-tools downloaded and USB debugging enabled, you can now follow the next steps:
+
+1. Connect your Android device to the computer with an USB cable
+2. Make sure to allow "USB debugging/Android debugging" when a pop-up appears
+3. Open the **platform-tools** folder on your computer
+4. Shift+Right click and select **Open command prompt here** or **Open PowerShell window here**
+5. Type `.\adb devices` and hit Enter
+6. You should see an entry with your device(s)
+7. Now you can enter the following ADB command!
+
+
+**ADB command**
+
+`.\adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow`
+
+
+If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other app's ID.
+  * **Tachiyomi Preview** → `eu.kanade.tachiyomi.debug`
+  * **TachiyomiAZ** → `eu.kanade.tachiyomi.az`
+  * **TachiyomiJ2K** → `eu.kanade.tachiyomi.j2k`
+  * **TachiyomiSY** → `eu.kanade.tachiyomi.sy`
+  * **Neko** → `tachiyomi.mangadex`
+
+***Please note that the command will not show an output if successful.***
+
+:::
 ::::
 
 ## Diagnosis
