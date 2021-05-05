@@ -117,6 +117,9 @@ If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other
   * **TachiyomiJ2K** → `eu.kanade.tachiyomi.j2k`
   * **TachiyomiSY** → `eu.kanade.tachiyomi.sy`
   * **Neko** → `tachiyomi.mangadex`
+
+***Please note that the command will not show an output if successful.***
+
 :::
 ::::
 
