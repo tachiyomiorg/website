@@ -101,14 +101,14 @@ With platform-tools downloaded and USB debugging enabled, you can now follow the
 2. Make sure to allow "USB debugging/Android debugging" when a pop-up appears
 3. Open the **platform-tools** folder on your computer
 4. Shift+Right click and select **Open command prompt here** or **Open PowerShell window here**
-5. Type `adb devices` and hit Enter
+5. Type `.\adb devices` and hit Enter
 6. You should see an entry with your device(s)
 7. Now you can enter the following ADB command!
 
 
 **ADB command**
 
-`adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow`
+`.\adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow`
 
 
 If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other app's ID.
