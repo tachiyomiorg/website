@@ -26,6 +26,12 @@ Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png
 Remember to give the app storage permissions on **Android 6** and newer.
 :::
 
+::: c-tip
+While Tachiyomi can support **RAR** chapter formats please note, that the newer **RAR5** format isn't supported yet.
+
+If you already have **RAR5** files you need to extract and re-compress them into one of the supported formats. 
+:::
+
 ## Folder Structure
 
 Tachiyomi requires a specific folder structure for local manga to be correctly processed. Local manga will be read from the `Tachiyomi/local` folder. Each manga must have a `Manga` folder and a `Chapter` folder. Images will then go into the chapter folder. See below for more information on archive files. You can refer to the following example:
