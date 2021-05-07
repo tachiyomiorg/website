@@ -3,7 +3,7 @@
 		<span class="filters-list">
 			<ElInput v-model="filters.search" placeholder="Search extensions by name..." clearable />
 
-			<ElSelect v-model="filters.lang" placeholder="Languages" multiple clearable>
+			<ElSelect v-model="filters.lang" placeholder="Show specific languages..." multiple clearable>
 				<ElOption
 					v-for="[group] in extensions"
 					:key="group.lang"
