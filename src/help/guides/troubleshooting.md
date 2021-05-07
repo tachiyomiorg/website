@@ -206,7 +206,7 @@ To dump crash logs following an app crash, go to (<Navigation item="more"/> → 
 
 ::: guide
 	<figure class="centered">
-		<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.jpg')">
+		<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.png')">
 	</figure>
 :::
 
