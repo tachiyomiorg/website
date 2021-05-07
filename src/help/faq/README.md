@@ -25,8 +25,8 @@ Every now and then you find a manga that is translated by more than one group. B
 * Bookmark or mark as read the unwanted chapters, then click on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_reader"/> → **Reading**.
 * Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
 
-#### Why are some covers white after restoring from backup?
-The URL to the cover has probably changed. To fix this, refresh covers in settings.
+#### Why are some cover thumbnails corrupted, white, or showing a broken page?
+The thumbnail download likely did not complete correctly. To fix this, refresh covers in settings.
 
 ::: guide
 Refresh your covers by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library manga covers**.
