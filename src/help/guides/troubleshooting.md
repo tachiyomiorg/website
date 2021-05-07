@@ -204,10 +204,10 @@ Non-standard implementations like Firefox can lead to Tachiyomi not working corr
 
 To dump crash logs following an app crash, go to (<Navigation item="more"/> → <Navigation item="settings_advanced"/> → **Dump Crash Logs**)
 
-::: guide
-	<figure class="centered">
-		<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.png')">
-	</figure>
+::: guide-empty
+<figure class="centered">
+	<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.png')">
+</figure>
 :::
 
 To get device logs if the app is not behaving as expected, record the device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp).
