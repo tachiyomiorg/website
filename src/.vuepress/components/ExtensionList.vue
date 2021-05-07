@@ -18,14 +18,13 @@
 		<template v-if="filteredExtensions.length">
 			<div v-for="extensionGroup in filteredExtensions" :key="extensionGroup[0].lang">
 				<h3>
-					<span v-if="filters.lang.length">
+					<span>
 						{{
 							extensionGroup[0].lang === "en"
 								? simpleLangName(extensionGroup[0].lang)
 								: langName(extensionGroup[0].lang)
 						}}
 					</span>
-					<span v-else>Every language</span>
 
 					<span class="extensions-total">
 						Total:
