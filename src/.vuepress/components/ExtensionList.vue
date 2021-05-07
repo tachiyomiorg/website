@@ -22,10 +22,8 @@
 			</div>
 		</span>
 
-		<template v-if="loading">
-			<div v-loading="loading" style="min-height: 200px"></div>
-		</template>
-		<div v-for="extensionGroup in filteredExtensions" v-else :key="extensionGroup[0].lang">
+		<div v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
+		<div v-for="extensionGroup in filteredExtensions" :key="extensionGroup[0].lang">
 			<h3>
 				<span>
 					{{
@@ -92,7 +90,7 @@ export default {
 				lang: [],
 				nsfw: "Don't care",
 			},
-			loading: false,
+			loading: true,
 		};
 	},
 
@@ -125,8 +123,6 @@ export default {
 	},
 
 	async beforeMount() {
-		this.loading = true;
-
 		const { data } = await axios.get(GITHUB_EXTENSION_JSON);
 		const values = Object.values(groupBy(data, "lang"));
 		values.sort((a, b) => {
@@ -154,7 +150,9 @@ export default {
 		});
 		this.$data.extensions = values;
 
-		this.loading = false;
+		this.$nextTick(() => {
+			this.loading = false;
+		});
 	},
 
 	updated() {
