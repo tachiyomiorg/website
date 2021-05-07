@@ -304,6 +304,11 @@ To solve this issue, follow the below steps.
 #### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their website.
 
+### Toonily 
+
+#### Why can't I access Toonily?
+The Toonily source may have issues loading due to the the Cloudflare bypass in WebView timing out.
+
 ### KissManga and MangaRock
 
 #### Where are Kissmanga and MangaRock?
