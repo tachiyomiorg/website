@@ -199,3 +199,15 @@ Users of Android 7.0 and higher can also see and change **WebView implementation
 ::: c-warning
 Non-standard implementations like Firefox can lead to Tachiyomi not working correctly or in the worst-case crash. We recommend to set **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
 :::
+
+## Getting Logcats and Crash Logs
+
+To dump crash logs following an app crash, go to (<Navigation item="more"/> → <Navigation item="settings_advanced"/> → **Dump Crash Logs**)
+
+::: guide-empty
+<figure class="centered">
+	<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.png')">
+</figure>
+:::
+
+To get device logs if the app is not behaving as expected, record the device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp).
