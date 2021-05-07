@@ -202,7 +202,7 @@ Non-standard implementations like Firefox can lead to Tachiyomi not working corr
 
 ## Getting Logcats and Crash Logs
 
-To dump crash logs following an app crash, go to (<Navigation item="more"/> → <Navigation item="advanced"/> → **Dump Crash Logs**)
+To dump crash logs following an app crash, go to (<Navigation item="more"/> → <Navigation item="settings_advanced"/> → **Dump Crash Logs**)
 
 ::: guide
 	<figure class="centered">
