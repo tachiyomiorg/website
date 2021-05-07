@@ -1,51 +1,73 @@
 <template>
 	<div class="extension-list">
-		<div v-for="extensionGroup in extensions" :key="extensionGroup[0].lang">
-			<h3>
-				{{
-					extensionGroup[0].lang === "en"
-						? simpleLangName(extensionGroup[0].lang)
-						: langName(extensionGroup[0].lang)
-				}}
-				<span class="extensions-total">
-					Total:
-					<span class="extensions-total-sum">
-						{{ extensions.reduce((sum, item) => sum + item.length, 0) }}
+		<span class="filters-list">
+			<ElSelect v-model="filters.lang" placeholder="Languages" multiple clearable>
+				<ElOption v-for="[group] in extensions" :key="group.lang" :value="group.lang"></ElOption>
+			</ElSelect>
+
+			<div>
+				Display extensions with NSFW content?
+				<ElRadioGroup v-model="filters.nsfw">
+					<ElRadioButton :label="true"></ElRadioButton>
+					<ElRadioButton label="all"></ElRadioButton>
+					<ElRadioButton :label="false"></ElRadioButton>
+				</ElRadioGroup>
+			</div>
+		</span>
+
+		<template v-if="filteredExtensions.length">
+			<div v-for="extensionGroup in filteredExtensions" :key="extensionGroup[0].lang">
+				<h3>
+					<span v-if="filters.lang.length">
+						{{
+							extensionGroup[0].lang === "en"
+								? simpleLangName(extensionGroup[0].lang)
+								: langName(extensionGroup[0].lang)
+						}}
 					</span>
-				</span>
-			</h3>
-			<div
-				v-for="extension in extensionGroup"
-				:id="extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')"
-				:key="extension.apk"
-				class="anchor"
-			>
-				<div class="extension">
-					<a
-						:href="`#${extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')}`"
-						class="header-anchor"
-						aria-hidden="true"
-						@click.stop
-					>
-						#
-					</a>
-					<img class="extension-icon" :src="iconUrl(extension.apk)" width="42" height="42" />
-					<div class="extension-text">
-						<div class="upper">
-							<span class="font-semibold">{{ extension.name.split(": ")[1] }}</span>
-							<Badge :text="'v' + extension.version" />
+					<span v-else>Every language</span>
+
+					<span class="extensions-total">
+						Total:
+						<span class="extensions-total-sum">
+							{{ filteredExtensions.reduce((sum, item) => sum + item.length, 0) }}
+						</span>
+					</span>
+				</h3>
+				<div
+					v-for="extension in extensionGroup"
+					:id="extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')"
+					:key="extension.apk"
+					class="anchor"
+				>
+					<div class="extension">
+						<a
+							:href="`#${extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')}`"
+							class="header-anchor"
+							aria-hidden="true"
+							@click.stop
+						>
+							#
+						</a>
+						<img class="extension-icon" :src="iconUrl(extension.apk)" width="42" height="42" />
+						<div class="extension-text">
+							<div class="upper">
+								<span class="font-semibold">{{ extension.name.split(": ")[1] }}</span>
+								<Badge :text="'v' + extension.version" />
+							</div>
+							<div class="down">
+								{{ extension.pkg.replace("eu.kanade.tachiyomi.extension.", "") }}
+							</div>
 						</div>
-						<div class="down">
-							{{ extension.pkg.replace("eu.kanade.tachiyomi.extension.", "") }}
-						</div>
+						<a :href="apkUrl(extension.apk)" class="extension-download" title="Download APK" download>
+							<MaterialIcon icon="cloud_download" />
+							<span>Download</span>
+						</a>
 					</div>
-					<a :href="apkUrl(extension.apk)" class="extension-download" title="Download APK" download>
-						<MaterialIcon icon="cloud_download" />
-						<span>Download</span>
-					</a>
 				</div>
 			</div>
-		</div>
+		</template>
+		<h1 v-else>Extensions with current filters do not exist</h1>
 	</div>
 </template>
 
@@ -59,7 +81,31 @@ export default {
 	data() {
 		return {
 			extensions: [],
+			filters: {
+				lang: [],
+				nsfw: "all",
+			},
 		};
+	},
+
+	computed: {
+		filteredExtensions() {
+			const { extensions, filters } = this;
+
+			const filtered = [];
+
+			for (const group of extensions) {
+				let filteredGroup = filters.lang.length ? (filters.lang.includes(group[0].lang) ? group : []) : group;
+
+				filteredGroup = filteredGroup.filter((ext) =>
+					filters.nsfw === "all" ? true : ext.nsfw === (filters.nsfw ? 1 : 0)
+				);
+
+				if (filteredGroup.length) filtered.push(filteredGroup);
+			}
+
+			return filtered;
+		},
 	},
 
 	async beforeMount() {
@@ -118,6 +164,10 @@ export default {
 		&:not(:first-of-type)
 			.extensions-total
 				display none
+	.filters-list
+		display flex
+		flex-direction column
+		row-gap 1rem
 
 .extensions-total
 	float right
