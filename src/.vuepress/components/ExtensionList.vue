@@ -1,7 +1,7 @@
 <template>
 	<div class="extension-list">
 		<span class="filters-list">
-			<ElInput v-model="filters.search" placeholder="Search extensions by name..." />
+			<ElInput v-model="filters.search" placeholder="Search extensions by name..." clearable />
 
 			<ElSelect v-model="filters.lang" placeholder="Languages" multiple clearable>
 				<ElOption
