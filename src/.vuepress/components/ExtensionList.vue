@@ -105,16 +105,19 @@ export default {
 			for (const group of extensions) {
 				let filteredGroup = filters.lang.length ? (filters.lang.includes(group[0].lang) ? group : []) : group;
 
-				if (filters.search)
+				if (filters.search) {
 					filteredGroup = filteredGroup.filter((ext) =>
 						ext.name.toLowerCase().includes(filters.search.toLowerCase())
 					);
+				}
 
 				filteredGroup = filteredGroup.filter((ext) =>
 					filters.nsfw === "Don't care" ? true : ext.nsfw === (filters.nsfw === "Yes" ? 1 : 0)
 				);
 
-				if (filteredGroup.length) filtered.push(filteredGroup);
+				if (filteredGroup.length) {
+					filtered.push(filteredGroup);
+				}
 			}
 
 			return filtered;
