@@ -15,8 +15,8 @@
 			<div>
 				Sort by
 				<ElRadioGroup v-model="filters.sort">
-					<ElRadioButton label="ASC"></ElRadioButton>
-					<ElRadioButton label="DESC"></ElRadioButton>
+					<ElRadioButton label="Ascending"></ElRadioButton>
+					<ElRadioButton label="Descending"></ElRadioButton>
 				</ElRadioGroup>
 			</div>
 
@@ -97,7 +97,7 @@ export default {
 				search: "",
 				lang: [],
 				nsfw: "Don't care",
-				sort: "ASC",
+				sort: "Ascending",
 			},
 			loading: true,
 		};
@@ -122,7 +122,7 @@ export default {
 					filters.nsfw === "Don't care" ? true : ext.nsfw === (filters.nsfw === "Yes" ? 1 : 0)
 				);
 
-				if (filters.sort && filters.sort === "DESC") {
+				if (filters.sort && filters.sort === "Descending") {
 					filteredGroup = filteredGroup.sort((a, b) => {
 						return a.name < b.name ? 1 : a.name > b.name ? -1 : 0;
 					});
