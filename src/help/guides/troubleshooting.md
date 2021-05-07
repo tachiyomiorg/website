@@ -202,7 +202,7 @@ Non-standard implementations like Firefox can lead to Tachiyomi not working corr
 
 ## Getting Logcats and Crash Logs
 
-To dump crash logs following an app crash, go to (<Navigation item="more"/> → <Navigation item="advanced"/> → Dump Crash Logs)
+To dump crash logs following an app crash, go to (<Navigation item="more"/> → <Navigation item="advanced"/> → **Dump Crash Logs**)
 
 ::: guide
 	<figure class="centered">
@@ -210,4 +210,4 @@ To dump crash logs following an app crash, go to (<Navigation item="more"/> → 
 	</figure>
 :::
 
-To get device logs if the app is not behaving as expected, record the device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp)
+To get device logs if the app is not behaving as expected, record the device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp).
