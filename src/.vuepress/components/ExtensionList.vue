@@ -4,7 +4,12 @@
 			<ElInput v-model="filters.search" placeholder="Search extensions by name..."></ElInput>
 
 			<ElSelect v-model="filters.lang" placeholder="Languages" multiple clearable>
-				<ElOption v-for="[group] in extensions" :key="group.lang" :value="group.lang"></ElOption>
+				<ElOption
+					v-for="[group] in extensions"
+					:key="group.lang"
+					:label="group.lang === 'en' ? simpleLangName(group.lang) : langName(group.lang)"
+					:value="group.lang"
+				></ElOption>
 			</ElSelect>
 
 			<div>
