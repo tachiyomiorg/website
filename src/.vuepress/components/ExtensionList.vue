@@ -10,9 +10,9 @@
 			<div>
 				Display extensions with NSFW content?
 				<ElRadioGroup v-model="filters.nsfw">
-					<ElRadioButton :label="true"></ElRadioButton>
-					<ElRadioButton label="all"></ElRadioButton>
-					<ElRadioButton :label="false"></ElRadioButton>
+					<ElRadioButton label="Yes"></ElRadioButton>
+					<ElRadioButton label="No"></ElRadioButton>
+					<ElRadioButton label="Don't care"></ElRadioButton>
 				</ElRadioGroup>
 			</div>
 		</span>
@@ -85,7 +85,7 @@ export default {
 			filters: {
 				search: "",
 				lang: [],
-				nsfw: "all",
+				nsfw: "Don't care",
 			},
 		};
 	},
@@ -105,7 +105,7 @@ export default {
 					);
 
 				filteredGroup = filteredGroup.filter((ext) =>
-					filters.nsfw === "all" ? true : ext.nsfw === (filters.nsfw ? 1 : 0)
+					filters.nsfw === "Don't care" ? true : ext.nsfw === (filters.nsfw === "Yes" ? 1 : 0)
 				);
 
 				if (filteredGroup.length) filtered.push(filteredGroup);
