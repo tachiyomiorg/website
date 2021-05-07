@@ -13,6 +13,14 @@
 			</ElSelect>
 
 			<div>
+				Sort by
+				<ElRadioGroup v-model="filters.sort">
+					<ElRadioButton label="ASC"></ElRadioButton>
+					<ElRadioButton label="DESC"></ElRadioButton>
+				</ElRadioGroup>
+			</div>
+
+			<div>
 				Display extensions with NSFW content?
 				<ElRadioGroup v-model="filters.nsfw">
 					<ElRadioButton label="Yes"></ElRadioButton>
@@ -89,6 +97,7 @@ export default {
 				search: "",
 				lang: [],
 				nsfw: "Don't care",
+				sort: "ASC",
 			},
 			loading: true,
 		};
@@ -112,6 +121,12 @@ export default {
 				filteredGroup = filteredGroup.filter((ext) =>
 					filters.nsfw === "Don't care" ? true : ext.nsfw === (filters.nsfw === "Yes" ? 1 : 0)
 				);
+
+				if (filters.sort && filters.sort === "DESC") {
+					filteredGroup = filteredGroup.sort((a, b) => {
+						return a.name < b.name ? 1 : a.name > b.name ? -1 : 0;
+					});
+				}
 
 				if (filteredGroup.length) {
 					filtered.push(filteredGroup);
