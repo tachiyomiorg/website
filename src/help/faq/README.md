@@ -309,10 +309,19 @@ You will have to open the manga entry in WebView and verify your age, as Webtoon
 #### Why can't I access Toonily?
 The Toonily source may have issues loading due to the the Cloudflare bypass in WebView timing out.
 
-### KissManga and MangaRock
+### Removed Extensions
 
-#### Where are Kissmanga and MangaRock?
-**KissManga** went under permanently in August 2020. **MangaRock** converted from a piracy app and went legit. They are now called **INKR** but have nowhere near their old library.
+#### Why can't I download an extension that used to exist?
+Extensions tend to be removed for a variety of reasons: 
+
+- They become too much of a cat and mouse game to maintain due to the website owners changing the site frequently to deter scrapers.
+- The site scrambles images in more than one way, making it impossible to make every image unscrambleable.
+- A scanlator team requests removal of their site from Tachiyomi.
+- The site is paywalled.
+- Require reverse engineering another app.
+- The site has been shut down.
+
+A list of extensions that have been removed is available [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), it does not include sites that have gone offline.
 
 ## Android 11
 
