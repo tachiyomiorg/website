@@ -1,6 +1,8 @@
 <template>
 	<div class="extension-list">
 		<span class="filters-list">
+			<ElInput v-model="filters.search" placeholder="Search extensions by name..."></ElInput>
+
 			<ElSelect v-model="filters.lang" placeholder="Languages" multiple clearable>
 				<ElOption v-for="[group] in extensions" :key="group.lang" :value="group.lang"></ElOption>
 			</ElSelect>
@@ -81,6 +83,7 @@ export default {
 		return {
 			extensions: [],
 			filters: {
+				search: "",
 				lang: [],
 				nsfw: "all",
 			},
@@ -95,6 +98,11 @@ export default {
 
 			for (const group of extensions) {
 				let filteredGroup = filters.lang.length ? (filters.lang.includes(group[0].lang) ? group : []) : group;
+
+				if (filters.search)
+					filteredGroup = filteredGroup.filter((ext) =>
+						ext.name.toLowerCase().includes(filters.search.toLowerCase())
+					);
 
 				filteredGroup = filteredGroup.filter((ext) =>
 					filters.nsfw === "all" ? true : ext.nsfw === (filters.nsfw ? 1 : 0)
