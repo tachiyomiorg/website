@@ -32,6 +32,9 @@ The URL to the cover has probably changed. To fix this, refresh covers in settin
 Refresh your covers by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library manga covers**.
 :::
 
+#### Why have some manga chapters been marked as unread when I haven't touched them?
+The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s) as new chapters.
+
 ### Browse
 
 #### Why can't I find a certain manga?
