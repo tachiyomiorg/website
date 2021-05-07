@@ -263,7 +263,6 @@ Downloads from before will not be removed or lost by the app.
 ##### Why can't I restore from a JSON backup?
 JSON backups are now unusable due to the ID change, you'll have to manually readd your manga.
 
-
 ### Former Mangabox extensions
 
 #### What happend to Mangabox?
