@@ -6,6 +6,10 @@ lang: en-US
 
 # Local manga
 
+::: c-warning
+Remember to give the app storage permissions on **Android 6** and newer.
+:::
+
 Follow the steps below to create local manga.
 
 1. Create a folder named `local` in the `/Tachiyomi/` folder.
@@ -23,10 +27,6 @@ If you add more chapters then you'll have to manually refresh the chapter list (
 Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png`, etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
 
 ::: c-warning
-Remember to give the app storage permissions on **Android 6** and newer.
-:::
-
-::: c-tip
 While Tachiyomi can support **RAR** chapter formats please note, that the newer **RAR5** format isn't supported yet.
 
 If you already have **RAR5** files you need to extract and re-compress them into one of the supported formats. 
