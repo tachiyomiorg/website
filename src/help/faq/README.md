@@ -324,8 +324,4 @@ adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
 This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface. 
 
-If you are using a Tachiyomi Preview or a fork, replace 
-```
-eu.kanade.tachiyomi
-``` 
-with the corresponding fork's package name.
+If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
