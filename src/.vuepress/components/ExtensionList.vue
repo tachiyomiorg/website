@@ -1,7 +1,7 @@
 <template>
 	<div class="extension-list">
 		<span class="filters-list">
-			<ElInput v-model="filters.search" placeholder="Search extensions by name..."></ElInput>
+			<ElInput v-model="filters.search" placeholder="Search extensions by name..." />
 
 			<ElSelect v-model="filters.lang" placeholder="Languages" multiple clearable>
 				<ElOption
@@ -9,7 +9,7 @@
 					:key="group.lang"
 					:label="group.lang === 'en' ? simpleLangName(group.lang) : langName(group.lang)"
 					:value="group.lang"
-				></ElOption>
+				/>
 			</ElSelect>
 
 			<div>
