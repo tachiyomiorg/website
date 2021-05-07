@@ -22,58 +22,58 @@
 			</div>
 		</span>
 
-		<template v-if="filteredExtensions.length">
-			<div v-for="extensionGroup in filteredExtensions" :key="extensionGroup[0].lang">
-				<h3>
-					<span>
-						{{
-							extensionGroup[0].lang === "en"
-								? simpleLangName(extensionGroup[0].lang)
-								: langName(extensionGroup[0].lang)
-						}}
-					</span>
+		<template v-if="loading">
+			<div v-loading="loading" style="min-height: 200px"></div>
+		</template>
+		<div v-for="extensionGroup in filteredExtensions" v-else :key="extensionGroup[0].lang">
+			<h3>
+				<span>
+					{{
+						extensionGroup[0].lang === "en"
+							? simpleLangName(extensionGroup[0].lang)
+							: langName(extensionGroup[0].lang)
+					}}
+				</span>
 
-					<span class="extensions-total">
-						Total:
-						<span class="extensions-total-sum">
-							{{ filteredExtensions.reduce((sum, item) => sum + item.length, 0) }}
-						</span>
+				<span class="extensions-total">
+					Total:
+					<span class="extensions-total-sum">
+						{{ filteredExtensions.reduce((sum, item) => sum + item.length, 0) }}
 					</span>
-				</h3>
-				<div
-					v-for="extension in extensionGroup"
-					:id="extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')"
-					:key="extension.apk"
-					class="anchor"
-				>
-					<div class="extension">
-						<a
-							:href="`#${extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')}`"
-							class="header-anchor"
-							aria-hidden="true"
-							@click.stop
-						>
-							#
-						</a>
-						<img class="extension-icon" :src="iconUrl(extension.apk)" width="42" height="42" />
-						<div class="extension-text">
-							<div class="upper">
-								<span class="font-semibold">{{ extension.name.split(": ")[1] }}</span>
-								<Badge :text="'v' + extension.version" />
-							</div>
-							<div class="down">
-								{{ extension.pkg.replace("eu.kanade.tachiyomi.extension.", "") }}
-							</div>
+				</span>
+			</h3>
+			<div
+				v-for="extension in extensionGroup"
+				:id="extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')"
+				:key="extension.apk"
+				class="anchor"
+			>
+				<div class="extension">
+					<a
+						:href="`#${extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')}`"
+						class="header-anchor"
+						aria-hidden="true"
+						@click.stop
+					>
+						#
+					</a>
+					<img class="extension-icon" :src="iconUrl(extension.apk)" width="42" height="42" />
+					<div class="extension-text">
+						<div class="upper">
+							<span class="font-semibold">{{ extension.name.split(": ")[1] }}</span>
+							<Badge :text="'v' + extension.version" />
 						</div>
-						<a :href="apkUrl(extension.apk)" class="extension-download" title="Download APK" download>
-							<MaterialIcon icon="cloud_download" />
-							<span>Download</span>
-						</a>
+						<div class="down">
+							{{ extension.pkg.replace("eu.kanade.tachiyomi.extension.", "") }}
+						</div>
 					</div>
+					<a :href="apkUrl(extension.apk)" class="extension-download" title="Download APK" download>
+						<MaterialIcon icon="cloud_download" />
+						<span>Download</span>
+					</a>
 				</div>
 			</div>
-		</template>
-		<h1 v-else>Extensions with current filters do not exist</h1>
+		</div>
 	</div>
 </template>
 
@@ -92,6 +92,7 @@ export default {
 				lang: [],
 				nsfw: "Don't care",
 			},
+			loading: false,
 		};
 	},
 
@@ -121,6 +122,8 @@ export default {
 	},
 
 	async beforeMount() {
+		this.loading = true;
+
 		const { data } = await axios.get(GITHUB_EXTENSION_JSON);
 		const values = Object.values(groupBy(data, "lang"));
 		values.sort((a, b) => {
@@ -147,6 +150,8 @@ export default {
 			return 0;
 		});
 		this.$data.extensions = values;
+
+		this.loading = false;
 	},
 
 	updated() {
