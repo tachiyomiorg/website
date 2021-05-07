@@ -240,13 +240,29 @@ You do this by following the steps below:
 
 ### MangaDex
 
-1. You do not need to login to MangaDex to read manga anymore.
-2. Covers do not work right now due to it not being in the API yet.
-3. Reading and downloading works fine.
-4. There are no new uploads as the frontend is not up yet, so scanlators cannot upload anything new.
-5. You need to migrate all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system.
-6. Downloads from before will not be removed or lost by the app.
-7. JSON backups are now unusable due to the ID change, you'll have to manually readd your manga.
+#### Version 5 API Rewrite
+
+##### Do I need to login to search?
+You do not need to login to MangaDex to read manga anymore.
+
+##### Why are all the covers placeholders?
+Covers do not work right now due to it not being in the API yet.
+
+##### Can I read and download manga from MangaDex right now?
+Reading and downloading works fine.
+
+##### Why aren't there any new manga updates?
+There are no new uploads as the frontend is not up yet, so scanlators cannot upload anything new.
+
+##### Why are all my manga saying "Manga ID format has changed, migrate from MangaDex to MangaDex to continue reading"?
+You need to [migrate](./source-migration.md) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from normal IDs to UUIDs.
+
+##### Will I lose my downloads?
+Downloads from before will not be removed or lost by the app.
+
+##### Why can't I restore from a JSON backup?
+JSON backups are now unusable due to the ID change, you'll have to manually readd your manga.
+
 
 ### Former Mangabox extensions
 
