@@ -19,9 +19,9 @@ Enable it by going to <Navigation item="library"/> → <Navigation item="filter"
 :::
 
 #### How do I ignore duplicate chapters?
-Every now and then you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
+Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
-* On the manga page, tap on <Navigation item="filter"/> → **Sort** and choose **By chapter number**. This will cause the reader to skip duplicates as you read.
+* On the manga page, tap on <Navigation item="filter"/> → **Sort** and choose **By chapter number**. Doing this will cause the reader to skip duplicates as you read.
 * Bookmark or mark as read the unwanted chapters, then tap on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_reader"/> → **Reading**.
 * Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
 
@@ -38,7 +38,7 @@ The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s)
 ### Browse
 
 #### Why can I not find a certain manga?
-Sometimes you can struggle to find a source that has the manga you are looking for. Here are some tips to help you find it:
+Sometimes you can struggle to find a source that has the manga you are looking to read. Here are some tips to help you find it:
 ::: guide Tips to find your manga
 1. Look up the manga on [Google](https://google.com/) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
 1. See if the manga has any alternate spellings or other title variations. Try searching again in your sources with the alternate titles you found.
@@ -60,15 +60,15 @@ Aside from network issues, it could be because the images are too big or that th
 ### Downloads
 
 #### How do I download several chapters or manga simultaneously?
-The app does not allow parallel downloads from one source to prevent IP bans caused by too many requests. We know that speed is being sacrificed but it is better than not being able to access a source at all.
+The app does not allow parallel downloads from one source to prevent IP bans caused by too many requests. We know that speed is being sacrificed, but it is better than an overall inaccessible source.
 
-However, if you are downloading several manga from different sources, the app will start downloading simultaneously from up to 5 different sources.
+However, if you download several manga from different sources, the app will start downloading simultaneously from up to 5 different sources.
 
 #### Why do my downloads sometimes stop midway through?
-Be aware that it could be a network issue on your device or on the website you are trying to download from.
+It is likely an issue to do with your connection to your network or the source. Tachiyomi will notify you of what error it has encountered trying to download.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
-At the moment, no. You could try using symlinks but that requires having your device rooted.
+At the moment, no. You could try using symlinks, but that requires having your device rooted.
 ::: note
 Read more about rooting your device [here](https://www.xda-developers.com/root/)
 :::
@@ -76,7 +76,7 @@ Read more about rooting your device [here](https://www.xda-developers.com/root/)
 ### Tracking
 
 #### How do I log in with Kitsu?
-To log in with Kitsu you need to use your email address as your username.
+To log in with Kitsu, you need to use your email address as your username.
 
 #### Why am I unable to find a manga in MAL's search results?
 If you cannot find a manga by name, you can look it up on MAL and then search for it in Tachiyomi using the following format: `id:<id from manga URL>`. You can also search for a manga on your MAL profile list by searching in the following format: `my:<manga name>`. 
@@ -90,7 +90,7 @@ Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 We recommend you to read [this](/help/guides/local-manga) guide on how to do so.
 
 #### What do I do if I cannot find the Tachiyomi folder?
-If you do not see the **Tachiyomi** folder on your device, try setting the download location to default and downloading a chapter of any manga so that the folder can be created.
+If you do not see the **Tachiyomi** folder on your device, try setting the download location to default and downloading a chapter of any manga so that Tachiyomi creates a folder. If needed, you may manually create a Tachiyomi folder as well.
 
 ::: guide
 Set download location to default by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_downloads"/> → **Download location** and selecting first option. Restart the app after changing download location.
@@ -101,7 +101,7 @@ Sometimes some covers for local manga aren't displayed. Follow these steps to fi
 
 ::: guide
 1. Make sure you've created the right folder structure. To check it, open the manga with the missing cover and check if you can read chapters in the app. If not, follow [this](/help/guides/local-manga) guide first.
-1. Take a screenshot of which chapters you've read and then remove manga from the library.
+1. Take a screenshot of which chapters you've read, and then remove manga from the library.
 1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and tap **Clear database**. This only affects manga that aren't in your library.
 1. Go to <Navigation item="browse"/> → **Local source** and find the manga. The cover should be fixed now. Add the manga back to your library, mark your read chapters, and re-add tracking if needed.
 :::
@@ -133,19 +133,19 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 ### Miscellaneous
 
 #### What is Tachiyomi Preview?
-It is a weekly-updated, beta version of the app. It contains features that may be added to Tachiyomi in the future but also is more prone to bugs and crashes. Tachiyomi Preview is used by developers and contributors to test the app and find bugs.
+It is a weekly updated, beta version of the app. It contains features that may be added to Tachiyomi in the future and is more prone to bugs and crashes. Developers and contributors use Tachiyomi Preview to test the app and find bugs, though you can try it as well.
 
 If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
 
 #### Why am I unable to uninstall Tachiyomi?
 
-On **Android 10**, a bug was introduced which prevented users from uninstalling the app if the device had a MicroSD card. To fix the issue, please remove the MicroSD card from the device first, then uninstall Tachiyomi.
+On **Android 10**, a bug was introduced that prevented users from uninstalling the app if the device had a MicroSD card. To fix the issue, please remove the MicroSD card from the device first, then uninstall Tachiyomi.
 
 #### Will there be an iOS version?
-There is no iOS version and there are no plans for one. Since iOS and Android apps do not share code, it is hard to port.
+There is no iOS version, and there are no plans for one. Since iOS and Android apps do not share code, it is hard to port.
 
 #### Will Tachiyomi ever be on the Google Play Store?
-Due to Google Play's content policy, almost certainly not, as they do not allow the APK system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
+Google Play's content policy does not allow the APK system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
 
 #### How can I report Tachiyomi copycats on the Google Play Store?
 If you are on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
@@ -153,14 +153,14 @@ If you are on desktop, fill out [this](https://support.google.com/googleplay/and
 #### Can Tachiyomi read Light Novels?
 No. Tachiyomi is an image parser, meaning it cannot parse text.
 
-#### Can I revert back from the Material Design 2 update of Tachiyomi?
+#### Can I revert from the Material Design 2 update of Tachiyomi?
 While there will never be a toggle between the two UI versions, you can continue to use the old UI version by using [TachiyomiAZ](https://tachiyomi.org/forks/TachiyomiAZ/).
 
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
 #### Why can I see manga pages in my device's photo gallery?
-Tachiyomi adds a `.nomedia` file to the downloads folder by default to prevent this from happening, but sometimes it does not work or something went wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you are having the same problem with your local manga, place the `.nomedia` file in the local folder.
+Tachiyomi adds a `.nomedia` file to the Downloads folder by default to prevent this from happening, but sometimes it does not work, or something goes wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you have the same problem with your local manga, place the `.nomedia` file in the local folder.
 
 #### I lost everything, what now?
 To avoid data loss in the future, you can use the automatic backup feature.
@@ -177,12 +177,12 @@ See the [guide](/help/guides/backups/#restoring) on restoring from a backup.
 ### General
 
 #### What are some recommended extensions?
-Tachiyomi does not endorse or recommend any manga source, and there is no best extension. Rather, we encourage users to spend some time trying out a few sources themselves, and discover what sources work best for them. What works well for somebody else might not work well for you.
+Tachiyomi does not endorse or recommend any manga source, and there is no best extension. Instead, we encourage users to spend some time trying out a few sources themselves and discover what sources work best for them. What works well for somebody else might not work well for you.
 
 <ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
 
 #### What are scanlator sources?
-Manga that are not officially licensed are translated by scanlators, who either publish on their own website or on **MangaDex**. This is in contrast to official sources like **MANGA Plus By SHUEISHA** or **VIZ Shonen Jump**, which host officially licensed and translated manga.
+Manga that are not officially licensed are translated by scanlators, who either publish on their websites or **MangaDex**. This practice contrasts with official sources like **MANGA Plus By SHUEISHA** or **VIZ Shonen Jump**, which host officially licensed and translated manga.
 
 Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
 
@@ -193,7 +193,7 @@ Open an issue on [GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/i
 You can find the list of extensions to download [here](/extensions/)
 :::
 
-#### I am having problems installing an extension, what can I do?
+#### I am having problems installing an extension; what can I do?
 In some cases, your device might have some issues downloading and automatically installing an extension. In those cases, you can manually download and install the extension yourself. Go to the [extension list](extensions/), find the extension you want, and tap **Download**. Once the .apk file has been downloaded, use your file manager to find it and open it. A prompt to install it as an app should pop up. Once it is done installing, it will be automatically added to Tachiyomi as a source.
 
 #### How do I allow third-party installations?
@@ -202,7 +202,7 @@ In some cases, your device might have some issues downloading and automatically 
 ::: videolink
 [<MaterialIcon icon="videocam"/> Click for Android 8.0 and newer video guide](/assets/faq_unknown-sources-a10.webm)
 :::
-When installing your first extension and are prompted that your device *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
+When installing your first extension and you are prompted that your device *isn't allowed* to install unknown apps from that source, follow the prompt to allow it.
 
 In *newer* versions of **Android**, you need to enable **Install unknown apps** on a per-app basis.
 ::::
@@ -210,7 +210,7 @@ In *newer* versions of **Android**, you need to enable **Install unknown apps** 
 ::: videolink
 [<MaterialIcon icon="videocam"/> Click for Android 7.1 and older video guide](/assets/faq_unknown-sources-a7.webm)
 :::
-When installing your first extension and are prompted that your device *isn't allowed* to install unknown apps from that source, simply follow the prompt to allow it.
+When installing your first extension and you are prompted that your device *isn't allowed* to install unknown apps from that source, follow the prompt to allow it.
 
 In *older* versions of **Android**, you only need to enable **Unknown sources** globally.
 ::::
@@ -221,7 +221,7 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 :::
 
 #### How do I uninstall an extension?
-Extensions for **Tachiyomi** are technically installed the same as normal apps. Either you uninstall them through the app section on your device's settings or do it in the app.
+Extensions for **Tachiyomi** are technically installed the same as standard apps. Either you uninstall them through the app section on your device's settings or do it in **Tachiyomi**.
 
 ::: guide
 To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **Extensions** then tap **Uninstall** on the extension you want to remove.
@@ -239,8 +239,8 @@ You do this by following the steps below:
 
 #### Version 5 API Rewrite
 
-##### Do I need to login to search?
-You do not need to login to MangaDex to read manga anymore.
+##### Do I need to log in to search?
+You do not need to log in to MangaDex to read manga anymore.
 
 ##### Why are all the covers placeholders?
 Covers do not work right now due to it not being in the API yet.
@@ -249,16 +249,16 @@ Covers do not work right now due to it not being in the API yet.
 Reading and downloading works fine.
 
 ##### Why aren't there any new manga updates?
-There are no new uploads as the frontend is not up yet, so scanlators cannot upload anything new.
+There are no new uploads as the frontend is not up yet, so the scanlators cannot upload anything new.
 
 ##### Why are all my manga saying "Manga ID format has changed, migrate from MangaDex to MangaDex to continue reading"?
-You need to [migrate](./source-migration.md) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from normal IDs to UUIDs.
+You need to [migrate](./source-migration.md) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from IDs to UUIDs.
 
-##### Will I lose my downloads?
+##### Will I lose my downloads if I migrate?
 Downloads from before will not be removed or lost by the app.
 
 ##### Why can I not restore from a JSON backup?
-JSON backups are now unusable due to the ID change, you will have to manually readd your manga.
+JSON backups are now unusable due to the ID change. You will have to manually re-add your manga.
 
 ### **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo**
 
@@ -268,7 +268,7 @@ The former **Mangabox** extensions have created new entries for many of the mang
 #### How do I fix the `Image could not be decoded` error?
 Open the manga in <Navigation item="webview"/>, open a chapter, and wait for the images to load. If they do not load, you will need to look elsewhere to read that particular manga, as some of the former **Mangabox** sources, such as **Mangakakalot**, are now blocking entire regions.
 
-### MangaPark
+### MangaParkS
 
 #### How do I deal with duplicate chapters in MangaPark?
 To solve this issue, follow the below steps.
@@ -281,7 +281,7 @@ To solve this issue, follow the below steps.
 ### Toonily 
 
 #### Why am I unable to access Toonily?
-The Toonily source may have issues loading due to the the Cloudflare bypass in WebView timing out.
+The Toonily source may have issues loading due to the Cloudflare bypass in WebView timing out.
 
 ### Removed Extensions
 
@@ -290,7 +290,7 @@ Extensions tend to be removed for a variety of reasons:
 
 - They become too much of a cat and mouse game to maintain due to the website owners changing the site frequently to deter scrapers.
 - The site scrambles images in more than one way, making it impossible to make every image unscrambleable.
-- A scanlator team requests removal of their site from Tachiyomi.
+- A scanlator team requests the removal of their site from Tachiyomi.
 - The site is paywalled.
 - Require reverse engineering another app.
 - The site has been shut down.
@@ -309,7 +309,7 @@ The introduction of Scoped Storage means that many storage-related functions tha
 
 You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
 ```
-adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
+adb shell cmd appops set eu.kanade.tachiyomi Android:legacy_storage allow
 ```
 This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface. 
 
