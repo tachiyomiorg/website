@@ -5,6 +5,7 @@ Before submitting your contribution, please make sure to take a moment and read 
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Development Setup](#development-setup)
 - [Project Structure](#project-structure)
+- [Images and Videos guidelines](#images-and-videos-guidelines)
 
 ## Development Setup
 
@@ -81,6 +82,27 @@ $ npm run lint
   - `README.md`: markdown file for the front-page.
 
 - `package.json`: contains information about which plugins are installed in the project.
+
+## Images and Videos guidelines
+
+### Common
+- Use the Android Emulator
+
+- Use the white theme
+
+- Preferably use local source or a self-hosted extension
+  - If you are going to show a manga
+
+- Resize to have a width of 648px
+
+### Images
+- Use `.png` format
+
+### Videos
+- Use `.webm` format
+  - Encode it with our [HandBrake profile](../.github/tachiyomi-handbrake-profile.json)
+
+- Remove audio track
 
 ## Credits
 
