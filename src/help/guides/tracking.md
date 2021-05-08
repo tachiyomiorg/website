@@ -11,11 +11,11 @@ lang: en-US
 
 Tracking is currently supported on [MyAnimeList](https://myanimelist.net), [Anilist](https://anilist.co), [Kitsu](https://kitsu.io), [Shikimori](https://shikimori.one), and [Bangumi](https://bangumi.tv/)
 
-- Tracking done **manually** for every manga.
+- Tracking must be done **manually** for every manga.
 - You must read the last page of a chapter to mark the chapter as read and track it.
 - You can manually set the chapter by tapping on the number and then entering the number in or dragging the ticker up or down.
-- After being offline, the tracker will not sync the last read chapter, even after going back online
-- Tracking is one-way. Meaning updating status in Tachiyomi will update the tracker, but updating status in the tracker will not update Tachiyomi
+- After being offline, the tracker will not sync the last read chapter, even after going back online.
+- Tracking is one-way. Meaning updating status in Tachiyomi will update the tracker, but updating status in the tracker will not update Tachiyomi.
 
 ## How do I login into trackers? <MaterialIcon icon="sync" />
 
