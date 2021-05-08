@@ -309,10 +309,19 @@ You will have to open the manga entry in WebView and verify your age, as Webtoon
 #### Why can't I access Toonily?
 The Toonily source may have issues loading due to the the Cloudflare bypass in WebView timing out.
 
-### KissManga and MangaRock
+### Removed Extensions
 
-#### Where are Kissmanga and MangaRock?
-**KissManga** went under permanently in August 2020. **MangaRock** converted from a piracy app and went legit. They are now called **INKR** but have nowhere near their old library.
+#### Why can't I download an extension that used to exist?
+Extensions tend to be removed for a variety of reasons: 
+
+- They become too much of a cat and mouse game to maintain due to the website owners changing the site frequently to deter scrapers.
+- The site scrambles images in more than one way, making it impossible to make every image unscrambleable.
+- A scanlator team requests removal of their site from Tachiyomi.
+- The site is paywalled.
+- Require reverse engineering another app.
+- The site has been shut down.
+
+A list of extensions that have been removed is available [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), it does not include sites that have gone offline.
 
 ## Android 11
 
@@ -323,8 +332,8 @@ In Android 11, Google began forcing users to use [Scoped Storage](https://develo
 The introduction of Scoped Storage means that many storage-related functions that Tachiyomi uses may be much slower due to the inherent slowness of Scoped Storage, as outlined [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/). These include deleting chapters, library load times, accessing the folders outside the data folders to download to or read from, and more.
 
 ### Is there any way to improve performance?
-You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
 
+You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
 ```
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
