@@ -24,9 +24,6 @@ Often **Java.lang Exception: Challenge not found** will be resolved by force-qui
 ::: el-collapse-item title="Loader not implemented"
 **Loader not implemented** means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
 :::
-::: el-collapse-item title="Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject"
-**Value Manga is licensed...** means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
-:::
 ::: el-collapse-item title="HTTP error 403"
 Possible reasons for **HTTP error 403**:
 
