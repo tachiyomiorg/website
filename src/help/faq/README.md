@@ -260,7 +260,7 @@ Downloads from before will not be removed or lost by the app.
 ##### Why can I not restore from a JSON backup?
 JSON backups are now unusable due to the ID change. You will have to manually re-add your manga.
 
-### **Mangakakalot**, **Manganelo**, **Mangabat** and **Mangairo**
+### Mangakakalot, Manganelo, Mangabat and Mangairo
 
 #### What do `Page list is empty` and `Source URL has changed` mean?
 The former **Mangabox** extensions have created new entries for many of the manga on their websites. The old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from the source to itself to get the new entry, or better yet, to a different source entirely to avoid similar errors in the future.
