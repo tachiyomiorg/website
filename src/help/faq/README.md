@@ -268,7 +268,7 @@ The former **Mangabox** extensions have created new entries for many of the mang
 #### How do I fix the `Image could not be decoded` error?
 Open the manga in <Navigation item="webview"/>, open a chapter, and wait for the images to load. If they do not load, you will need to look elsewhere to read that particular manga, as some of the former **Mangabox** sources, such as **Mangakakalot**, are now blocking entire regions.
 
-### MangaParkS
+### MangaPark
 
 #### How do I deal with duplicate chapters in MangaPark?
 To solve this issue, follow the below steps.
@@ -295,7 +295,7 @@ Extensions tend to be removed for a variety of reasons:
 - Require reverse engineering another app.
 - The site has been shut down.
 
-A list of extensions that have been removed is available [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), it does not include sites that have gone offline.
+A list of extensions that have been removed is available [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), but it does not include sites that have gone offline.
 
 ## Android 11
 
