@@ -304,6 +304,11 @@ To solve this issue, follow the below steps.
 #### How do I fix the `Page list is empty` error?
 You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their website.
 
+### Toonily 
+
+#### Why can't I access Toonily?
+The Toonily source may have issues loading due to the the Cloudflare bypass in WebView timing out.
+
 ### KissManga and MangaRock
 
 #### Where are Kissmanga and MangaRock?
@@ -319,6 +324,7 @@ The introduction of Scoped Storage means that many storage-related functions tha
 
 ### Is there any way to improve performance?
 You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
+
 ```
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
