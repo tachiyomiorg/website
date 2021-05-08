@@ -240,43 +240,28 @@ You do this by following the steps below:
 
 ### MangaDex
 
-#### Why are there no results when searching?
-::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/faq_mangadex-no-results.mp4)
-:::
+#### Version 5 API Rewrite
 
-If you're not getting any results when searching **MangaDex** then you need to log in. To do so enter the <Navigation item="webview"/> for **MangaDex** then press the **Manga** drop-down and choose either **Sign up** or **Log in** to proceed with the login.
+##### Do I need to login to search?
+You do not need to login to MangaDex to read manga anymore.
 
-::: guide
-To enter the **WebView** go to <Navigation item="browse"/> → <Navigation item="button_latest"/> next to **MangaDex**, then press on <Navigation item="webview"/> in the top right corner.
-:::
+##### Why are all the covers placeholders?
+Covers do not work right now due to it not being in the API yet.
 
-#### Why is MangaDex slow?
-If pages are loading slowly or not at all, try:
-- Making sure you have the *latest* version of the extension.
-- Checking if **MangaDex** is either down, or is having the same issues.
-- Trying to **Clear database** under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>.
-- Trying to **Clear chapter cache** under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>.
-- Going to <Navigation item="browse"/> → <Navigation item="extensions"/> → **MangaDex** → **Image Server** and then selecting a *different* server location.
+##### Can I read and download manga from MangaDex right now?
+Reading and downloading works fine.
 
-<ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
+##### Why aren't there any new manga updates?
+There are no new uploads as the frontend is not up yet, so scanlators cannot upload anything new.
 
-#### How do I ignore chapters from certain scanlator groups?
-You can go to the manga's page in <Navigation item="webview"/> and block groups you do not want to see. Close <Navigation item="webview"/> and refresh the manga in the app. The group's chapters should be gone now.
+##### Why are all my manga saying "Manga ID format has changed, migrate from MangaDex to MangaDex to continue reading"?
+You need to [migrate](./source-migration.md) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from normal IDs to UUIDs.
 
-#### Is there an alternate searching method?
-**MangaDex** allows you to search using the ID number to find manga. The easiest way to get the ID is by opening the manga in your browser and looking at the URL.
+##### Will I lose my downloads?
+Downloads from before will not be removed or lost by the app.
 
-::: guide
-An example search would be **`id:23427`** which would return results for [Candy & Cigarettes](https://mangadex.org/title/23427/candy-cigarettes)
-:::
-
-#### How do I fix chapters from Mangaplus being broken?
-Install the **MANGA Plus by SHUEISHA** extension instead and then migrate the manga that uses **MANGA Plus** on **MangaDex** onto the **MANGA Plus** source.
-
-::: note
-Read about source migration [here](/help/guides/source-migration/)
-:::
+##### Why can't I restore from a JSON backup?
+JSON backups are now unusable due to the ID change, you'll have to manually readd your manga.
 
 ### Former Mangabox extensions
 
@@ -302,7 +287,7 @@ To solve this issue, follow the below steps.
 ### Webtoons
 
 #### How do I fix the `Page list is empty` error?
-You will have to open the manga entry in WebView and verify your age, as Webtoons has recently added age verifications on their website.
+You will have to open the manga entry in WebView and verify your age, as Webtoons has added age verifications on their website.
 
 ### Toonily 
 
