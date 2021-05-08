@@ -133,7 +133,7 @@ You can change language by going to <Navigation item="more"/> → <Navigation it
 ### Miscellaneous
 
 #### What is Tachiyomi Preview?
-It is a weekly updated, beta version of the app. It contains features that may be added to Tachiyomi in the future and is more prone to bugs and crashes. Developers and contributors use Tachiyomi Preview to test the app and find bugs, though you can try it as well.
+It is a weekly updated, beta version of the app. It contains features that may be added to Tachiyomi in the future and is more prone to bugs and crashes. It is intended for users who would like the bleeding edge of Tachiyomi as soon as it comes out.
 
 If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
 
