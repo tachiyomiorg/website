@@ -311,14 +311,14 @@ Extensions have been split due to the sheer number of extensions in a single ext
 #### What extensions have been split?
 All of them have been split.
 
-#### Why do my multisource extension show up as obselete? 
+#### Why does my multisource extension show up as obsolete? 
 The multisource extension is obsolete because it has been split. The multisource extension has been removed from the repository. It is not actually obsolete.
 
 ##### How do I move to a split extension?
-Install the extension that your manga is from and then uninstall the multisource extension. If the manga shows the source as a bunch of numbers, force close the app. For known issues with split extensions, go to this [GitHub issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/5672).
+Install the extension that your manga is from, and then uninstall the multisource extension. If the manga shows the source as a bunch of numbers, force close the app. For known issues with split extensions, go to this [GitHub issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/5672).
 
 #### Do I need to migrate? 
-No, unless specifically stated, the internal ID of sources has not changed so migration is not necessary.
+No, unless expressly stated, the internal ID of sources has not changed, so migration is unnecessary.
 
 #### What if I uninstall the multisource extension before I install the singular extensions?
 See what extension IDs correspond to what extensions [here](https://pastebin.com/raw/QX2scdRT).
