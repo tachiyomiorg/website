@@ -317,7 +317,8 @@ In Android 11, Google began forcing users to use [Scoped Storage](https://develo
 The introduction of Scoped Storage means that many storage-related functions that Tachiyomi uses may be much slower due to the inherent slowness of Scoped Storage, as outlined [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/). These include deleting chapters, library load times, accessing the folders outside the data folders to download to or read from, and more.
 
 ### Is there any way to improve performance?
-You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](https://tachiyomi.org/help/guides/troubleshooting/#what-are-some-common-errors).
+
+You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
 ```
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
