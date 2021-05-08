@@ -1,16 +1,50 @@
 <template>
 	<div class="extension-list">
-		<div v-for="extensionGroup in extensions" :key="extensionGroup[0].lang">
+		<span class="filters-list">
+			<ElInput v-model="filters.search" placeholder="Search extensions by name..." clearable />
+
+			<ElSelect v-model="filters.lang" placeholder="Show specific languages..." multiple clearable>
+				<ElOption
+					v-for="[group] in extensions"
+					:key="group.lang"
+					:label="group.lang === 'en' ? simpleLangName(group.lang) : langName(group.lang)"
+					:value="group.lang"
+				/>
+			</ElSelect>
+
+			<div>
+				Sort by
+				<ElRadioGroup v-model="filters.sort">
+					<ElRadioButton label="Ascending"></ElRadioButton>
+					<ElRadioButton label="Descending"></ElRadioButton>
+				</ElRadioGroup>
+			</div>
+
+			<div>
+				Display extensions with NSFW content?
+				<ElRadioGroup v-model="filters.nsfw">
+					<ElRadioButton label="Yes"></ElRadioButton>
+					<ElRadioButton label="No"></ElRadioButton>
+					<ElRadioButton label="Don't care"></ElRadioButton>
+				</ElRadioGroup>
+			</div>
+		</span>
+
+		<div v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
+		<div v-for="extensionGroup in filteredExtensions" :key="extensionGroup[0].lang">
 			<h3>
-				{{
-					extensionGroup[0].lang === "en"
-						? simpleLangName(extensionGroup[0].lang)
-						: langName(extensionGroup[0].lang)
-				}}
+				<span>
+					{{
+						extensionGroup[0].lang === "en"
+							? simpleLangName(extensionGroup[0].lang)
+							: langName(extensionGroup[0].lang)
+					}}
+				</span>
+
 				<span class="extensions-total">
 					Total:
 					<span class="extensions-total-sum">
-						{{ extensions.reduce((sum, item) => sum + item.length, 0) }}
+						{{ filteredExtensions.reduce((sum, item) => sum + item.length, 0) }}
 					</span>
 				</span>
 			</h3>
@@ -59,7 +93,48 @@ export default {
 	data() {
 		return {
 			extensions: [],
+			filters: {
+				search: "",
+				lang: [],
+				nsfw: "Don't care",
+				sort: "Ascending",
+			},
+			loading: true,
 		};
+	},
+
+	computed: {
+		filteredExtensions() {
+			const { extensions, filters } = this;
+
+			const filtered = [];
+
+			for (const group of extensions) {
+				let filteredGroup = filters.lang.length ? (filters.lang.includes(group[0].lang) ? group : []) : group;
+
+				if (filters.search) {
+					filteredGroup = filteredGroup.filter((ext) =>
+						ext.name.toLowerCase().includes(filters.search.toLowerCase())
+					);
+				}
+
+				filteredGroup = filteredGroup.filter((ext) =>
+					filters.nsfw === "Don't care" ? true : ext.nsfw === (filters.nsfw === "Yes" ? 1 : 0)
+				);
+
+				if (filters.sort && filters.sort === "Descending") {
+					filteredGroup = filteredGroup.sort((a, b) => {
+						return a.name < b.name ? 1 : a.name > b.name ? -1 : 0;
+					});
+				}
+
+				if (filteredGroup.length) {
+					filtered.push(filteredGroup);
+				}
+			}
+
+			return filtered;
+		},
 	},
 
 	async beforeMount() {
@@ -89,6 +164,10 @@ export default {
 			return 0;
 		});
 		this.$data.extensions = values;
+
+		this.$nextTick(() => {
+			this.loading = false;
+		});
 	},
 
 	updated() {
@@ -118,6 +197,10 @@ export default {
 		&:not(:first-of-type)
 			.extensions-total
 				display none
+	.filters-list
+		display flex
+		flex-direction column
+		row-gap 1rem
 
 .extensions-total
 	float right
