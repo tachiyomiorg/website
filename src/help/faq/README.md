@@ -297,6 +297,24 @@ Extensions tend to be removed for a variety of reasons:
 
 A list of extensions that have been removed is available [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), but it does not include sites that have gone offline.
 
+### Split Extensions
+Extensions have been split due to the sheer number of extensions in a single extension, with Madara reaching over 200 extensions at one point, making it unreasonable for both devs and users to filter through extensions. For a deeper explanation of the issue, [this](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/4287) GitHub issue explains in more detail.
+
+#### What extensions have been split?
+All of them have been split.
+
+#### Why does my multisource extension show up as obsolete? 
+The multisource extension is obsolete because it has been split. The multisource extension has been removed from the repository. It is not actually obsolete.
+
+##### How do I move to a split extension?
+Install the extension that your manga is from, and then uninstall the multisource extension. If the manga shows the source as a bunch of numbers, force close the app. For known issues with split extensions, go to this [GitHub issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/5672).
+
+#### Do I need to migrate? 
+No, unless expressly stated, the internal ID of sources has not changed, so migration is unnecessary.
+
+#### What if I uninstall the multisource extension before I install the singular extensions?
+See what extension IDs correspond to what extensions [here](https://pastebin.com/raw/QX2scdRT).
+
 ## Android 11
 
 ### What changed in Android 11?
