@@ -100,7 +100,7 @@ $ npm run lint
 
 ### Videos
 - Use `.webm` format
-  - Encode it with our [HandBreak profile](../.github/tachiyomi-handbrake-profile.json)
+  - Encode it with our [HandBrake profile](../.github/tachiyomi-handbrake-profile.json)
 
 - Remove audio track
 
