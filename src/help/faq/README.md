@@ -145,7 +145,7 @@ On **Android 10**, a bug was introduced that prevented users from uninstalling t
 There is no iOS version, and there are no plans for one. Since iOS and Android apps do not share code, it is hard to port.
 
 #### Will Tachiyomi ever be on the Google Play Store?
-Google Play's content policy does not allow the APK system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
+Google Play's content policy does not allow the APK based extension system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
 
 #### How can I report Tachiyomi copycats on the Google Play Store?
 If you are on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
