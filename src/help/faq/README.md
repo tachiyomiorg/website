@@ -21,8 +21,8 @@ Enable it by going to <Navigation item="library"/> → <Navigation item="filter"
 #### How do I ignore duplicate chapters?
 Every now and then you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
-* On the manga page, click on <Navigation item="filter"/> → **Sort** and choose **By chapter number**. This will cause the reader to skip duplicates as you read.
-* Bookmark or mark as read the unwanted chapters, then click on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_reader"/> → **Reading**.
+* On the manga page, tap on <Navigation item="filter"/> → **Sort** and choose **By chapter number**. This will cause the reader to skip duplicates as you read.
+* Bookmark or mark as read the unwanted chapters, then tap on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_reader"/> → **Reading**.
 * Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
 
 #### Why are some cover thumbnails corrupted, white, or showing a broken page?
@@ -45,7 +45,7 @@ Sometimes you can struggle to find a source that has the manga you're looking fo
 1. If you still can't find the manga in any of your sources, then try to search for an extension for the website you've found in step 1 in the [extensions](/extensions/) list.
 
 #### If you find the manga on a specific scanlator/aggregator and they do have an extension
-Download the corresponding extension, click on it under <Navigation item="browse"/> → **Sources**, and then search for the manga there.
+Download the corresponding extension, tap on it under <Navigation item="browse"/> → **Sources**, and then search for the manga there.
 #### If you find the manga on a specific scanlator/aggregator and they don't have an extension
 Check if adding the site as an extension has [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues). If it hasn't been, you can [request it yourself](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
@@ -113,13 +113,13 @@ Related GitHub issue: [#932](https://github.com/tachiyomiorg/tachiyomi/issues/93
 ### Application Updates
 
 #### How do I enable automatic updates?
-From version **0.9.0** and onwards, Tachiyomi has automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
+From version **0.9.0** and onwards, Tachiyomi has had automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
-However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> and click on **Check for updates**.
+However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> and tap on **Check for updates**.
 
 #### Why are automatic updates not working?
 
-Certain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from your battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and click on **Disable battery optimization**. If that does not work, you can also visit [DontKillMyApp](https://dontkillmyapp.com/) to see what battery saving options your device has and how to disable or circumvent them.
+Certain devices such as MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from your battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and tap on **Disable battery optimization**. If that does not work, you can also visit [DontKillMyApp](https://dontkillmyapp.com/) to see what battery saving options your device has and how to disable or circumvent them.
 
 ### User Interface
 
@@ -197,7 +197,7 @@ You can find the list of extensions to download [here](/extensions/)
 :::
 
 #### I'm having problems installing an extension, what can I do?
-In some cases, your device might have some issues downloading and automatically installing an extension. In those cases, you can manually download and install the extension yourself. Go to the [extension list](extensions/), find the extension you want, and click **Download**. Once the .apk file has been downloaded, use your file manager to find it and open it. A prompt to install it as an app should pop up. Once it is done installing, it will be automatically added to Tachiyomi as a source.
+In some cases, your device might have some issues downloading and automatically installing an extension. In those cases, you can manually download and install the extension yourself. Go to the [extension list](extensions/), find the extension you want, and tap **Download**. Once the .apk file has been downloaded, use your file manager to find it and open it. A prompt to install it as an app should pop up. Once it is done installing, it will be automatically added to Tachiyomi as a source.
 
 #### How do I allow third-party installations?
 ::::: el-tabs
@@ -235,7 +235,7 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="bro
 You do this by following the steps below:
 
 1. Go to <Navigation item="browse"/> → **Sources**.
-1. Click on <Navigation item="filter"/> on the top right corner.
+1. Tap on <Navigation item="filter"/> on the top right corner.
 1. Scroll down until you find the language of your source and enable it.
 
 ### MangaDex
