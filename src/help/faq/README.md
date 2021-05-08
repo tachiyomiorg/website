@@ -25,8 +25,8 @@ Every now and then you find a manga that is translated by more than one group. B
 * Bookmark or mark as read the unwanted chapters, then click on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_reader"/> → **Reading**.
 * Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
 
-#### Why are some covers white after restoring from backup?
-The URL to the cover has probably changed. To fix this, refresh covers in settings.
+#### Why are some cover thumbnails corrupted, white, or showing a broken page?
+The thumbnail download likely did not complete correctly. To fix this, refresh covers in settings.
 
 ::: guide
 Refresh your covers by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library manga covers**.
@@ -323,14 +323,11 @@ In Android 11, Google began forcing users to use [Scoped Storage](https://develo
 The introduction of Scoped Storage means that many storage-related functions that Tachiyomi uses may be much slower due to the inherent slowness of Scoped Storage, as outlined [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/). These include deleting chapters, library load times, accessing the folders outside the data folders to download to or read from, and more.
 
 ### Is there any way to improve performance?
-You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](https://tachiyomi.org/help/guides/troubleshooting/#what-are-some-common-errors).
+You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
+
 ```
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
 This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface. 
 
-If you are using a Tachiyomi Preview or a fork, replace 
-```
-eu.kanade.tachiyomi
-``` 
-with the corresponding fork's package name.
+If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.

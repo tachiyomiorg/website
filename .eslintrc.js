@@ -4,10 +4,7 @@ module.exports = {
 		es6: true,
 	},
 
-	extends: [
-		"vuepress",
-		"prettier"
-	],
+	extends: ["vuepress", "prettier"],
 
 	globals: {
 		Atomics: "readonly",
@@ -30,16 +27,11 @@ module.exports = {
 		"import/no-unresolved": [
 			2,
 			{
-				ignore: [
-					"^@",
-				],
+				ignore: ["^@"],
 			},
 		],
+		curly: ["error", "all"],
 	},
 
-	plugins: [
-		"vue",
-		"prettier",
-		"markdown",
-	],
-}
+	plugins: ["vue", "prettier", "markdown"],
+};
