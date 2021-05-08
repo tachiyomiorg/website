@@ -59,7 +59,8 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 [<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-j2k.mp4)
 :::
 
-1. Tap <MaterialIcon icon="settings"/> **Settings** → <MaterialIcon icon="explore"/> **Sources** → **Source migration**.
+1. Tap into <Navigation item="browse"/> on the bottom navbar.
+1. Press the <Navigation item="migration" /> tab at the bottom next to <Navigation item="extensions" />.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
