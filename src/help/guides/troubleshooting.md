@@ -37,7 +37,7 @@ Possible reasons for **HTTP error 403**:
 **HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases, it's temporary). We suggest [migrating](./source-migration.md) part of your manga to another source to reduce the number of requests to the source.
 :::
 ::: el-collapse-item title="HTTP error 5xx"
-**HTTP error 5xx** like **500, 502** and others are server errors, and the source you are trying to access has problems on their side. Open the source in <Navigation item=" webview"/> and check if the site is down.
+**HTTP error 5xx** like **500, 502** and others are server errors, and the source you are trying to access has problems on their side. Open the source in <Navigation item="webview"/> and check if the site is down.
 :::
 :::
 ::: el-collapse-item title="Unable to resolve host / Connection failed"
