@@ -39,7 +39,6 @@ Possible reasons for **HTTP error 403**:
 ::: el-collapse-item title="HTTP error 5xx"
 **HTTP error 5xx** like **500, 502** and others are server errors, and the source you are trying to access has problems on their side. Open the source in <Navigation item="webview"/> and check if the site is down.
 :::
-:::
 ::: el-collapse-item title="Unable to resolve host / Connection failed"
 Errors like **Unable to resolve host** or **Connection failed** mean that something prevents your connection to the site. 
 
