@@ -186,9 +186,6 @@ Manga that are not officially licensed are translated by scanlators, who either 
 
 Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
 
-#### Which sources are in the multi-source extensions?
-Some extensions contain multiple sources. Consult the [extension list](/extensions/) to find out which extension to install for the specific source that you want.
-
 #### How do I request a new extension?
 Open an issue on [GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) if one does not already exist.
 
@@ -280,11 +277,6 @@ To solve this issue, follow the below steps.
 1. Click on **MangaPark** extension and then **Chapter List Source**.
 1. Choose an option like **Smart list** or **Prioritize source**.
 1. Go back to **MangaPark**'s chapter list and refresh it.
-
-### Webtoons
-
-#### How do I fix the `Page list is empty` error?
-You will have to open the manga entry in WebView and verify your age, as Webtoons has added age verifications on their website.
 
 ### Toonily 
 
