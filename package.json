@@ -41,7 +41,7 @@
 		"webpack": "^4.44.2"
 	},
 	"dependencies": {
-		"@mr-hope/vuepress-plugin-sitemap": "^1.15.2",
+		"@mr-hope/vuepress-plugin-sitemap": "^1.16.0",
 		"axios": "^0.21.1",
 		"core-js": "2.6.4",
 		"element-ui": "^2.15.1",
