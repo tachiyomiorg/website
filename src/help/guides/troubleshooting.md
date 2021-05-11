@@ -107,7 +107,7 @@ With platform-tools downloaded and USB debugging enabled, you can now follow the
 4. Shift+Right click and select **Open command prompt here** or **Open PowerShell window here**
 5. Type `.\adb devices` and hit Enter
 6. You should see an entry with your device(s)
-7. Now, you can enter the following ADB command!
+7. Now, enter the following ADB command:
 
 
 **ADB command**
