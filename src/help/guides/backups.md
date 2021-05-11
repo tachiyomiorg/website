@@ -31,7 +31,7 @@ Legacy Backups can hold the following information:
 You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create legacy backup** and select a location to save it.
 :::
 
-Legacy Backups are intended for versions of Tachiyomi or forks based on versions older than 0.10.7.
+Legacy Backups are intended for versions of **Tachiyomi** or forks based on versions older than `0.10.7`.
 
 
 ## How do I restore a backup?
