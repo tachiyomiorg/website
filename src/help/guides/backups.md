@@ -31,10 +31,10 @@ Legacy Backups can hold the following information:
 You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_backup"/> and then selecting **Create legacy backup** and select a location to save it.
 :::
 
-Legacy Backups are intended for versions of Tachiyomi, or forks based on versions, older than 0.10.7.
+Legacy Backups are intended for versions of **Tachiyomi** or forks based on versions older than `0.10.7`.
 
 
-## Restoring
+## How do I restore a backup?
 
 Restoring is done from the <Navigation item="settings_backup"/> settings.
 
@@ -46,11 +46,10 @@ To restore a legacy backup without issues be sure to:
 
 * Install all the <Navigation item="tab_extensions"/> that were installed at the time of the backup.
 * Log into the <Navigation item="settings_tracking"/> services that you previously used.
-* If you use MangaDex, login to it using **WebView** [as explained here](/help/faq/#no-results-when-searching).
 * You're able to access all the sources through the **WebView**.
 * Be on a consistent internet connection.
 
-## Transferring downloads
+## How can I make my new install of Tachiyomi detect my old downloads?
 
 You can transfer downloaded manga chapters from one version of **Tachiyomi** to another.
 
@@ -58,7 +57,7 @@ You can transfer downloaded manga chapters from one version of **Tachiyomi** to 
 You can do this by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_downloads"/> and then set the download directory to that of the download folder of your old **Tachiyomi**, then restore the backup.
 :::
 
-## Turning on auto-backups
+## How do I make Tachiyomi automatically backup?
 
 It is highly recommended you turn on auto backups, this will ensure you can recover if need be.
 

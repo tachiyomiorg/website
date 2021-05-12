@@ -22,46 +22,50 @@ Often **Java.lang Exception: Challenge not found** will be resolved by force-qui
 **Java.lang Exception: Failed to bypass Cloudflare** means that the source you selected has [Cloudflare](#solving-the-cloudflare-issue) protection on, refer to the [Cloudflare](#solving-the-cloudflare-issue) guide to fix it.
 :::
 ::: el-collapse-item title="Loader not implemented"
-**Loader not implemented** means that the respective extension for the manga is not installed. To fix, install the extension for the manga. If it still doesn't work, uninstall then reinstall the extension again.
-:::
-::: el-collapse-item title="Value Manga is licensed at data of type java.lang.String cannot be converted to JSONObject"
-**Value Manga is licensed...** means that the manga has been licensed and can no longer be read on that source. Try a different source to read the manga.
+**Loader not implemented** means that the respective extension for the manga is not installed. To fix this, install the extension for the manga. If it still doesn't work, uninstall, then reinstall the extension again.
 :::
 ::: el-collapse-item title="HTTP error 403"
 Possible reasons for **HTTP error 403**:
 
 - The source you selected has [Cloudflare](#solving-the-cloudflare-issue) protection on, refer to the [Cloudflare](#solving-the-cloudflare-issue) guide to fix it.
-- The source is down, removed the manga or banned your IP. Open <Navigation item="webview"/> to check if this is the case.
+- The source is down, removed the manga, or banned your IP. Open <Navigation item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 404"
 **HTTP error 404** probably means that the source is down or removed the manga. Open <Navigation item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 429 (Too Many Requests)"
-**HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases it's temporary). We suggest to [migrate](./source-migration.md) part of your manga to another source to reduce number of requests to the source.
+**HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases, it's temporary). We suggest [migrating](./source-migration.md) part of your manga to another source to reduce the number of requests to the source.
 :::
 ::: el-collapse-item title="HTTP error 5xx"
-**HTTP error 5xx** like **500, 502** and others are server errors and the source you are trying to access has problems on their side. Open the source in <Navigation item="webview"/> and check if the site is down.
+**HTTP error 5xx** like **500, 502** and others are server errors, and the source you are trying to access has problems on their side. Open the source in <Navigation item="webview"/> and check if the site is down.
 :::
 ::: el-collapse-item title="Unable to resolve host / Connection failed"
-Errors like **Unable to resolve host** or **Connection failed** mean that something prevents your connection with the site. Possible reasons: your internet connection is bad, the app doesn't have access to the internet, your ISP have blocked the site, the site is down. Try using different internet connection (switch to Wi-Fi, mobile data or a VPN). Try to enable <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **DNS over HTTPS**.
+Errors like **Unable to resolve host** or **Connection failed** mean that something prevents your connection to the site. 
+
+Possible reasons include:
+- Your internet connection is not good enough to connect.
+- The app does not have access to the internet.
+- Your ISP has blocked the site.
+- The site is down.
+Try using different internet connection (switch to Wi-Fi, mobile data or a VPN). Try to enable <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **DNS over HTTPS**.
 :::
 ::: el-collapse-item title="java.security.cert.CertPathValidatorException / Chain validation failed"
 **java.security.cert.CertPathValidatorException** or **Chain validation failed** means there is a problem with validating source's sertificate.
 
-- Check if the site's certificate have expired. Use an online service for checking SSL certificates. If the certificate have expired, then wait while the site owner will renew it.
+- Check if the site's certificate has expired. Use an online service for checking SSL certificates. If the certificate has expired, wait while the site owner to renew it.
 - Ensure that you have the right date and time set on your phone.
 - Try <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **Clear cache** and **Clear cookies**.
-- Try using different internet connection (switch to Wi-Fi, mobile data or a VPN).
-- Try to restart the device.
+- Try using a different internet connection (switch to Wi-Fi, mobile data or a VPN).
+- Try restarting the device.
 :::
 ::: el-collapse-item title="App not installed"
 You may encounter **App not installed** if you're installing an official build over an existing **F-Droid** build due to differing signatures.
 Backup your data, uninstall the app, then restore the data in the fresh install.
 :::
 ::: el-collapse-item title="Attempt to invoke virtual method 'com.hippo.unifile..."
-**Attempt to invoke virtual method 'com.hippo.unifile...** error can be caused by a variety of reasons, all to do with storage.
+The **Attempt to invoke virtual method' com.hippo.unifile...** error can be caused by various reasons, but they all have to do with storage.
 
-- Most commonly it is caused by full storage, check to see if your device or SD Card is full.
+- Most commonly, it is caused by full storage. Check to see if your device or SD Card is full.
 - Check if **Tachiyomi** has access to the SD card. You can enable it in the android settings for app permissions.
 - If you're downloading and this error pops up, that means the app might not be able to access the folder you're trying to download to. This may be because the folder is corrupted or does not exist. Use a file manager to check that the folder(s) exist and every folder in the sequence is available and accessible.
 - The drive you're writing to is corrupted. Check using a file manager to see if it is accessible.
@@ -70,40 +74,40 @@ Backup your data, uninstall the app, then restore the data in the fresh install.
 **Cannot Access SD Card** error is typically caused by having a file or folder name that is too long. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
 ::: el-collapse-item title="Storage issues with Android 11"
-After the introduction of [Scoped Storage](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/) in **Android 11**, your library could load slowly and/or the app is unable to delete chapters automatically.
+Following the introduction of [Scoped Storage](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/) in **Android 11**, your library could load slowly, or the app is unable to delete chapters automatically.
 
-One way to fix this is by executing an [ADB](https://www.xda-developers.com/quickly-install-adb/) command on a computer to opt-out the app from the new storage changes.
+One way to fix this is by executing an [ADB](https://www.xda-developers.com/quickly-install-adb/) command on a computer to opt-out the app for the new storage changes.
 
 
 **How to run ADB**
 
-ADB is a small tool bundled in the Android SDK as part of the “Platform Tools”.
+ADB is a small tool bundled in the Android SDK as part of the "Platform Tools."
 
 1. [Download the SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools.html) for Windows, Mac, or Linux
 2. Extract the ZIP file somewhere easily accessible (like `C:\platform-tools`)
 
 You will need to enable "USB Debugging/Android Debugging" on your phone next:
 
-* If you use a custom ROM and/or aren't able to enable Developer options try googling how to enable Developer options on your specific device
+* If you use a custom ROM or aren't able to enable Developer options, try googling how to enable Developer options on your specific device
 
 1. Open **Settings**
 2. (Only on Android 8.X) Scroll down/Select to **System**
 3. Select **About phone**
 4. Quickly tap **Build number** 7 times
-5. You will see a message appear that says "**You are now a developer**"
-6. Now go back and you’ll see **Developer options** listed
+5. You will see a message appear that says, "**You are now a developer**."
+6. Now go back, and you'll see **Developer options** listed
 7. Scroll until you find **USB debugging/Android debugging**
 8. Toggle the switch to enable it
 
-With platform-tools downloaded and USB debugging enabled, you can now follow the next steps:
+With platform-tools downloaded and USB debugging enabled, you can now follow the following steps:
 
-1. Connect your Android device to the computer with an USB cable
+1. Connect your Android device to the computer with a USB cable
 2. Make sure to allow "USB debugging/Android debugging" when a pop-up appears
 3. Open the **platform-tools** folder on your computer
 4. Shift+Right click and select **Open command prompt here** or **Open PowerShell window here**
 5. Type `.\adb devices` and hit Enter
 6. You should see an entry with your device(s)
-7. Now you can enter the following ADB command!
+7. Now, enter the following ADB command:
 
 
 **ADB command**
@@ -118,7 +122,7 @@ If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other
   * **TachiyomiSY** → `eu.kanade.tachiyomi.sy`
   * **Neko** → `tachiyomi.mangadex`
 
-***Please note that the command will not show an output if successful.***
+***Please note that the command will not show any output if it is successful.***
 
 :::
 ::::
@@ -141,32 +145,32 @@ If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other
 * Force close **Tachiyomi** and reopen it.
 
 ::: c-tip
-Your issue may have been fixed in the Preview version already, just wait for a new Stable release.
+The Preview version may have already fixed your issue. Just wait for a new Stable release.
 :::
 
-If any of these help, go to [it only happens to me](#it-only-happens-to-me).
+If any of these solutions help, go to [it only happens to me](#it-only-happens-to-me).
 If it's not just you, go to [everyone is having this problem](#everyone-is-having-this-problem).
 
-If none of these help, try asking in our [Discord Server](https://discord.gg/tachiyomi). State app version, source, manga and chapter with the problem.
+If none of these solutions help, try asking in our [Discord Server](https://discord.gg/tachiyomi). State your app version and the source, manga, and chapter with the problem.
 
 ### It only happens to me
-You may be getting a [Cloudflare](#solving-the-cloudflare-issue) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that can be done about that. Some of them (like [Cloudflare](#solving-the-cloudflare-issue)) have to be manually solved, some are temporary (IP bans).
+You may be getting a [Cloudflare](#solving-the-cloudflare-issue) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that **Tachiyomi** can do to solve it. Some of them (like [Cloudflare](#solving-the-cloudflare-issue)) have to be manually solved, and some are temporary (IP bans).
 
-**Workarounds that can lower chance of it happening again:**
+**Workarounds that can the lower chance of an issue happening again:**
 * Don't use downloads with the source.
-* Have less manga in library from the source.
+* Have less manga in your library from the source.
 
 ::: c-warning
-All of the above are very imprecise and fuzzy rules, because each site has their own, non-public limits and triggers.
+The above are very imprecise and fuzzy rules because each site has its non-public limits and triggers.
 :::
 
 ### Everyone is having this problem
-If the site is reachable and fully functional then there may be an issue with the extension or app.
+If the site is reachable and fully functional, there may be an issue with the extension or app.
 1. Have a look at open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues).
-1. It may have been fixed already, but not released yet, so look at closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) / [extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
+1. It may have been fixed already but not released yet, so look at closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) / [extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
 1. If you can't find the issue there, open a new one.
 
-If the site is not reachable or having issues then all you can do is wait for the site to become functional again.
+If the site is not reachable or has issues, all you can do is wait for the site to become functional again.
 
 ## Solving the Cloudflare issue
 
@@ -193,16 +197,16 @@ To update **WebView**, you need to find what **WebView implementation** is used 
 * Android 6.0.1 and lower - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
 
 ::: c-tip
-Users of Android 7.0 and higher can also see and change **WebView implementation** in [Developer Options](https://developer.android.com/studio/debug/dev-options).
+Users on Android 7.0 and up can also see and change **WebView implementation** in [Developer Options](https://developer.android.com/studio/debug/dev-options).
 :::
 
 ::: c-warning
-Non-standard implementations like Firefox can lead to Tachiyomi not working correctly or in the worst-case crash. We recommend to set **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+Non-standard implementations like Firefox can lead to **Tachiyomi** not working correctly or, in the worst-case crash. We recommend to set **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
 :::
 
 ## Unable to install the app or extensions
 
-Try installing [Split APK Installer](https://play.google.com/store/apps/details?id=com.aefyr.sai) from the Google Play Store, then use it to try and install the affected APK. Split APK Installer will either tell you why the APK cannot be installed, or it will install the APK for you.
+Try installing [Split APK Installer](https://play.google.com/store/apps/details?id=com.aefyr.sai) from the Google Play Store, then use it to try and install the affected APK. Split APK Installer will tell you why the APK is uninstallable, or it will install the APK for you.
 
 ## Getting Logcats and Crash Logs
 
