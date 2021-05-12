@@ -123,9 +123,7 @@ export default {
 				);
 
 				if (filters.sort && filters.sort === "Descending") {
-					filteredGroup = filteredGroup.sort((a, b) => {
-						return a.name < b.name ? 1 : a.name > b.name ? -1 : 0;
-					});
+					filteredGroup = filteredGroup.reverse();
 				}
 
 				if (filteredGroup.length) {
