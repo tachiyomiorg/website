@@ -11,6 +11,11 @@ font-feature-settings()
 	-ms-font-feature-settings arguments
 	font-feature-settings arguments
 
+// Dark mode
+@media (prefers-color-scheme: dark)
+	body
+		filter: invert(100%) hue-rotate(180deg);
+
 // Background color
 html
 	overflow-y scroll
