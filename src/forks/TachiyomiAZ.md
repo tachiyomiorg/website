@@ -136,3 +136,4 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**. It has most fea
 - Manga recommendations
 
 <img class="zoomable" :src="$withBase('/assets/forks_gunz-az.png')">
+**download and enjoy**
