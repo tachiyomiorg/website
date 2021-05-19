@@ -6,9 +6,7 @@ lang: en-US
 
 # Local manga
 
-::: c-warning
-Remember to give the app storage permissions on **Android 6** and newer.
-:::
+
 
 Follow the steps below to create local manga.
 
@@ -29,7 +27,11 @@ Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png
 ::: c-warning
 While Tachiyomi does support chapters compressed as **RAR** or **CBR**, note that **RAR** or **CBR** files using the **RAR5** format are not supported yet.
 
-If **CBR** or **RAR** files are not working, you may need to extract and re-compress them into one of the supported formats. 
+If **CBR** or **RAR** files do not work, you may need to extract and re-compress them into one of the supported formats.
+:::
+
+::: c-warning
+Remember to give the app storage permissions on **Android 6** and newer.
 :::
 
 ## Folder Structure
