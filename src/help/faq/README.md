@@ -37,7 +37,19 @@ The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s)
 
 ### Browse
 
-#### Why can I not find a certain manga?
+#### Why can I not see sources that I have installed?
+
+##### If it is a extension that is not the same language as your phone's primary language
+
+Enable the language of the source by going to Browse <Navigation item="browse"/> → Sources tab → Filter <Navigation item="filter"/> → Turn on the language of the source you would like to use 
+
+##### If it is a NSFW extension
+
+Settings <Navigation item="settings"/> → Browse <Navigation item="browse"/> → Tick show in sources list.
+
+
+
+#### How do I find a manga I am looking for?
 Sometimes you can struggle to find a source that has the manga you are looking to read. Here are some tips to help you find it:
 ::: guide Tips to find your manga
 1. Look up the manga on [Google](https://google.com/) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
