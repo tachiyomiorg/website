@@ -201,6 +201,8 @@ It provides the advantage of not being vulnerable to Man-in-the-middle attacks (
 
 You can enable this feature by going to <Navigation item=”more"/> → <Navigation item=”settings"/> → <Navigation item=”settings_advanced"/>.
 
+#### What should I do if I can’t screenshot within Tachiyomi?
+You have Secure Screen on, disable it if you want to screenshot by going to <Navigation item=”more"/> → <Navigation item=”settings"/> → <Navigation item=”settings_security"/> → Secure Screen.
 
 ## Extensions
 
