@@ -9,6 +9,27 @@ sidebarDepth: 2
 
 ## Application
 
+### General
+
+#### Will there be an iOS version?
+There is no iOS version, and there are no plans for one. Since iOS and Android apps do not share code, it is hard to port.
+
+#### Will Tachiyomi ever be on the Google Play Store?
+Google Play's content policy does not allow the APK based extension system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
+
+#### How can I report Tachiyomi copycats on the Google Play Store?
+If you are on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
+
+#### Can Tachiyomi read Light Novels?
+No. Tachiyomi is an image parser, meaning it cannot parse text.
+
+#### I lost everything, what now?
+To avoid data loss in the future, you can use the automatic backup feature.
+
+::: note
+Learn how to create automatic backups [here](/help/guides/backups/#turning-on-auto-backups/)
+:::
+
 ### Library
 
 #### How can I see how many chapters I've downloaded?
@@ -40,14 +61,10 @@ The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s)
 #### Why can I not see sources that I have installed?
 
 ##### If it is a extension that is not the same language as your phone's primary language
-
 Enable the language of the source by going to Browse <Navigation item="browse"/> → Sources tab → Filter <Navigation item="filter"/> → Turn on the language of the source you would like to use 
 
 ##### If it is a NSFW extension
-
 Settings <Navigation item="settings"/> → Browse <Navigation item="browse"/> → Tick show in sources list.
-
-
 
 #### How do I find a manga I am looking for?
 Sometimes you can struggle to find a source that has the manga you are looking to read. Here are some tips to help you find it:
@@ -69,21 +86,40 @@ If the scanlator or aggregator does not have an online manga reader, you can dow
 #### Why are some images not displayed?
 Aside from network issues, it could be because the images are too big or that the decoder does not support that image type.
 
+#### Will there ever be a dual-page reader option?
+The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
+
+#### How can I make Tachiyomi turn pages with the volume rocker? Can I reverse the tapping direction? Can I change the tapping zones? 
+
+Refer to the guides section of the site [here](/help/guides/reader-settings/#navigation-layout).
+
 ### Downloads
 
 #### How do I download several chapters or manga simultaneously?
 The app does not allow parallel downloads from one source to prevent IP bans caused by too many requests. We know that speed is being sacrificed, but it is better than an overall inaccessible source.
 
-However, if you download several manga from different sources, the app will start downloading simultaneously from up to 5 different sources.
+However, if you download several manga from different sources, the app will start downloading simultaneously from up to five different sources, provided the chapters are in the top five of the queue.
 
 #### Why do my downloads sometimes stop midway through?
 It is likely an issue to do with your connection to your network or the source. Tachiyomi will notify you of what error it has encountered trying to download.
+
+#### How do I cancel or change the download queue?
+Go to <Navigation item=”more"/> → Download Queue and cancel each or cancel all by tapping on the <Navigation item=”overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the left side of a item in the queue.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
 At the moment, no. You could try using symlinks, but that requires having your device rooted.
 ::: note
 Read more about rooting your device [here](https://www.xda-developers.com/root/)
 :::
+
+#### Why can I see manga pages from my downloads in my device's photo gallery?
+Tachiyomi adds a `.nomedia` file to the Downloads folder by default to prevent this from happening, but sometimes it does not work, or something goes wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you have the same problem with your local manga, place the `.nomedia` file in the local folder.
+
+#### What should I do downloads that have been orphaned?
+You will need to remove these manually with a file manager or by going to <Navigation item=”more"/> → <Navigation item=”settings"/> → <Navigation item=”settings_advanced"/> → **Clean up Downloaded Chapters**.
+
+Moving them to [local](/guides/local-manga) is also an option.
+
 
 ### Tracking
 
@@ -157,33 +193,8 @@ Forks are alternative versions of Tachiyomi with exclusive features. Read more a
 
 On **Android 10**, a bug was introduced that prevented users from uninstalling the app if the device had a MicroSD card. To fix the issue, please remove the MicroSD card from the device first, then uninstall Tachiyomi.
 
-#### Will there be an iOS version?
-There is no iOS version, and there are no plans for one. Since iOS and Android apps do not share code, it is hard to port.
-
-#### Will Tachiyomi ever be on the Google Play Store?
-Google Play's content policy does not allow the APK based extension system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
-
-#### How can I report Tachiyomi copycats on the Google Play Store?
-If you are on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
-
-#### Can Tachiyomi read Light Novels?
-No. Tachiyomi is an image parser, meaning it cannot parse text.
-
 #### Can I revert from the Material Design 2 update of Tachiyomi?
 While there will never be a toggle between the two UI versions, you can continue to use the old UI version by using [TachiyomiAZ](/forks/TachiyomiAZ/).
-
-#### Will there ever be a dual-page reader option?
-The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
-
-#### Why can I see manga pages in my device's photo gallery?
-Tachiyomi adds a `.nomedia` file to the Downloads folder by default to prevent this from happening, but sometimes it does not work, or something goes wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you have the same problem with your local manga, place the `.nomedia` file in the local folder.
-
-#### I lost everything, what now?
-To avoid data loss in the future, you can use the automatic backup feature.
-
-::: note
-Learn how to create automatic backups [here](/help/guides/backups/#turning-on-auto-backups/)
-:::
 
 #### Why am I having problems restoring from my backup?
 See the [guide](/help/guides/backups/#restoring) on restoring from a backup.
