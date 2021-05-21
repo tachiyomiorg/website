@@ -90,7 +90,6 @@ Aside from network issues, it could be because the images are too big or that th
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
 #### How can I make Tachiyomi turn pages with the volume rocker? Can I reverse the tapping direction? Can I change the tapping zones? 
-
 Refer to the guides section of the site [here](/help/guides/reader-settings/#navigation-layout).
 
 ### Downloads
