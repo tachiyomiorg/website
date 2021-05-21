@@ -119,11 +119,6 @@ You will need to remove these manually with a file manager or by going to <Navig
 
 Moving them to [local](/guides/local-manga) is also an option.
 
-
-### Tracking
-
-
-
 ### Local Manga
 
 #### How do I import my manga into Tachiyomi?
