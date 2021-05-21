@@ -196,6 +196,12 @@ Enable Incognito Mode by going to <Navigation item=”more"/> → Incognito Mode
 
 Enable the option by going to <Navigation item=”more"/> → Download only.
 
+#### What is DNS over HTTPS?
+
+DNS over HTTPS is an experimental way of providing, as the name implies, DNS resolution via HTTPS.
+It provides the advantage of not being vulnerable to Man-in-the-middle attacks (due to TLS encryption in HTTPS), preventing DNS spoofing. If you would like to learn more, go [here](https://www.cloudflare.com/learning/dns/dns-over-tls/)
+
+You can enable this feature by going to <Navigation item=”more"/> → <Navigation item=”settings"/> → <Navigation item=”settings_advanced"/>.
 
 
 ## Extensions
