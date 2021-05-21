@@ -149,6 +149,10 @@ It is a weekly updated, beta version of the app. It contains features that may b
 
 If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
 
+#### What is a fork?
+
+Forks are alternative versions of Tachiyomi with exclusive features. Read more about them [here](/forks/),
+
 #### Why am I unable to uninstall Tachiyomi?
 
 On **Android 10**, a bug was introduced that prevented users from uninstalling the app if the device had a MicroSD card. To fix the issue, please remove the MicroSD card from the device first, then uninstall Tachiyomi.
@@ -166,7 +170,7 @@ If you are on desktop, fill out [this](https://support.google.com/googleplay/and
 No. Tachiyomi is an image parser, meaning it cannot parse text.
 
 #### Can I revert from the Material Design 2 update of Tachiyomi?
-While there will never be a toggle between the two UI versions, you can continue to use the old UI version by using [TachiyomiAZ](https://tachiyomi.org/forks/TachiyomiAZ/).
+While there will never be a toggle between the two UI versions, you can continue to use the old UI version by using [TachiyomiAZ](/forks/TachiyomiAZ/).
 
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
@@ -183,6 +187,16 @@ Learn how to create automatic backups [here](/help/guides/backups/#turning-on-au
 
 #### Why am I having problems restoring from my backup?
 See the [guide](/help/guides/backups/#restoring) on restoring from a backup.
+
+#### How do I pause reading history or go incognito?
+
+Enable Incognito Mode by going to <Navigation item=”more"/> → Incognito Mode.
+
+#### Can I make Tachiyomi only read my downloaded chapters?
+
+Enable the option by going to <Navigation item=”more"/> → Download only.
+
+
 
 ## Extensions
 
