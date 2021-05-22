@@ -191,15 +191,12 @@ You must solve the **Cloudflare** issue in **WebView**.
 
 ## Bypassing Cloudflare looping 
 
-Some sources may have sophisticated **Cloudflare** protection, that results in infinite loading in **WebView** when trying to bypass **Cloudflare** using the solution above. If you are facing this issue, try the following steps:
+Some sources may have more advanced **Cloudflare** protection, that results in infinite loading in **WebView** when trying to bypass **Cloudflare** using the solution above. If you are facing this issue, try the following steps:
 
 ::: guide 
 1. Go to <Navigation item="browse"/> in the bottom navbar.
 1. Press the source you would like to access.
-1. Press the <Navigation item="webview"/> icon.
-	<figure class="centered">
-		<img class="zoomable" :src="$withBase('/assets/guides_webview-open.jpg')">
-	</figure> 
+1. Press the <Navigation item="webview"/> icon. Refer to the previous picture.
 1. Press the <Navigation item="overflow"> icon and then press Open in Browser.
 1. Once done, press the X at the top left and return to the source. 
 1. Press the <Navigation item="webview"/> icon again.
