@@ -114,11 +114,6 @@ Read more about rooting your device [here](https://www.xda-developers.com/root/)
 #### Why can I see manga pages from my downloads in my device's photo gallery?
 Tachiyomi adds a `.nomedia` file to the Downloads folder by default to prevent this from happening, but sometimes it does not work, or something goes wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you have the same problem with your local manga, place the `.nomedia` file in the local folder.
 
-#### What should I do downloads that have been orphaned?
-You will need to remove these manually with a file manager or by going to <Navigation item=”more"/> → <Navigation item=”settings"/> → <Navigation item=”settings_advanced"/> → **Clean up Downloaded Chapters**.
-
-Moving them to [local](/guides/local-manga) is also an option.
-
 ### Local Manga
 
 #### How do I import my manga into Tachiyomi?
