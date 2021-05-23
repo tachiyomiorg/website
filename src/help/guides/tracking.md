@@ -18,7 +18,7 @@ Tracking is currently supported on [MyAnimeList](https://myanimelist.net), [Anil
 - Tracking is one-way. Meaning updating status in Tachiyomi will update the tracker, but updating status in the tracker will not update Tachiyomi.
 
 Unattended tracking is also supported for [Komga](https://komga.org), and works a bit differently from other trackers:
-- You don't need to login to the tracker, it uses the credentials from your Komga extension.
+- You don't need to login into the tracker, it uses the credentials from your Komga extension.
 - Tracking is done automatically, you don't have to search and bind every manga.
 - Tracking only works for the Komga sources.
 - Tracking is two-way, and local chapters will be marked as read.
