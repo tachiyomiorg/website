@@ -129,7 +129,7 @@ If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other
 
 ## Diagnosis
 * Verify your extensions are up to date (<Navigation item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
-* Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then click **Check for updates**).
+* Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then tap **Check for updates**).
 * Verify that [WebView](#update-webview) is updated.
 * Try opening the manga in <Navigation item="webview"/>. If there is a [Cloudflare](#solving-the-cloudflare-issue) protection, wait for it to load. If there is a [CAPTCHA](#solving-the-cloudflare-issue), solve it and see if it helped.
 * Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
@@ -180,13 +180,27 @@ You must solve the **Cloudflare** issue in **WebView**.
 
 ::: guide How to open WebView
 1. Go to <Navigation item="browse"/> in the bottom navbar.
-1. Press the source you'd like to access.
+1. Press the source you would like to access.
 1. Press the <Navigation item="webview"/> icon.
 	<figure class="centered">
 		<img class="zoomable" :src="$withBase('/assets/guides_webview-open.jpg')">
 	</figure>
-1. Complete **CAPTCHA** if one is present.
-1. Once done, press the *Back Arrow* at the top left to return.
+1. Complete the **CAPTCHA** if one is present.
+1. Once done, press the X at the top left to return.
+:::
+
+## Bypassing Cloudflare looping 
+
+Some sources may have more advanced **Cloudflare** protection, that results in infinite loading in **WebView** when trying to bypass **Cloudflare** using the solution above. If you are facing this issue, try the following steps:
+
+::: guide 
+1. Go to <Navigation item="browse"/> in the bottom navbar.
+1. Press the source you would like to access.
+1. Press the <Navigation item="webview"/> icon. Refer to the previous picture.
+1. Press the <Navigation item="overflow"> icon and then press Open in Browser.
+1. Once done, press the X at the top left and return to the source. 
+1. Press the <Navigation item="webview"/> icon again.
+1. Complete the **CAPTCHA** if one is present.
 :::
 
 ## Update WebView
