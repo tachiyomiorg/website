@@ -23,7 +23,7 @@ Unattended tracking is also supported for [Komga](https://komga.org), and works 
 - Tracking only works for the Komga sources.
 - Tracking is two-way, and local chapters will be marked as read.
 - You must read the last page of a chapter to mark the chapter as read and track it.
-- If you mark a chapter as read manually, tracker will not be updated right away. You can update the tracker status on server side by opening the tracker sheet.
+- If you mark a chapter as read manually, the tracker will not be updated right away. You can update the tracker status on the server-side by opening the tracker sheet.
 - You can configure Tachiyomi to automatically track manga when adding to the library. Goto More → Settings → Tracking → Track silently when adding manga to the library
 
 ## How do I login into trackers? <MaterialIcon icon="sync" />
