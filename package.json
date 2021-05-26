@@ -28,7 +28,7 @@
 		"babel-eslint": "^10.1.0",
 		"eslint": "^7.25.0",
 		"eslint-config-vuepress": "^3.2.1",
-		"eslint-plugin-markdown": "^2.1.0",
+		"eslint-plugin-markdown": "^2.2.0",
 		"eslint-plugin-vue": "^7.9.0",
 		"node-sass": "^5.0.0",
 		"prettier": "^2.2.1",
