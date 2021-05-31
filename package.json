@@ -44,7 +44,7 @@
 		"@mr-hope/vuepress-plugin-sitemap": "^1.15.2",
 		"axios": "^0.21.1",
 		"core-js": "2.6.4",
-		"element-ui": "^2.15.1",
+		"element-ui": "^2.15.2",
 		"iso-639-1": "^2.1.9",
 		"lodash.groupby": "^4.6.0",
 		"lodash.sortby": "^4.7.0",
