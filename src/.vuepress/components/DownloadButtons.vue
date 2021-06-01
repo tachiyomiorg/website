@@ -12,7 +12,7 @@
 		</ElButton>
 		<span class="versionNotice">
 			Requires
-			<strong>Android 5.0</strong>
+			<strong>Android 6.0</strong>
 			or higher.
 		</span>
 	</div>
