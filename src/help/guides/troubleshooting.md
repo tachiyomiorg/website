@@ -197,7 +197,7 @@ Some sources may have more advanced **Cloudflare** protection, that results in i
 1. Go to <Navigation item="browse"/> in the bottom navbar.
 1. Press the source you would like to access.
 1. Press the <Navigation item="webview"/> icon. Refer to the previous picture.
-1. Press the <Navigation item="overflow"> icon and then press Open in Browser.
+1. Press the <Navigation item="overflow" /> icon and then press Open in Browser.
 1. Once done, press the X at the top left and return to the source. 
 1. Press the <Navigation item="webview"/> icon again.
 1. Complete the **CAPTCHA** if one is present.
