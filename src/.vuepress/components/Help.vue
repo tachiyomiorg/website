@@ -188,8 +188,9 @@ export default {
 						color $accentColorSecondary
 					.material-design-icon > .material-design-icon__svg
 						position relative
-					span
+					> span
 						display block
+					span
 						.icon.outbound
 							display inline-block
 							visibility hidden
