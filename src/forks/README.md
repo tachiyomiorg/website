@@ -47,7 +47,7 @@ Some features include:
 ## <img class="headerLogo" :src="$withBase('/assets/forks_logo-sy.png')"> [TachiyomiSY](/forks/TachiyomiSY)
 ::: videolink
 Maintained by [Syer10](https://github.com/jobobby04)
-<br>Requires Android 5.0+
+<br>Requires Android 6.0+
 :::
 
 This fork is based on [TachiyomiAZ](/forks/TachiyomiAZ) and adds quite a lot of unique features. It has the same new UI as the latest Tachiyomi version. And at the same time, it also shares quite a lot of features from both **Tachiyomi** and [TachiyomiJ2K](/forks/TachiyomiJ2K).
