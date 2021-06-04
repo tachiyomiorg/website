@@ -14,7 +14,7 @@ features:
     details: Automatically keep track of your manga with MyAnimeList, AniList, Kitsu, Shikimori, and Bangumi
     image: library
   - title: Extensions
-    details: Online and offline reading from sources like MangaDex, MangaKakalot, and hundreds more
+    details: Online and offline reading from hundred of different sources
     image: browse
   - title: Customization
     details: A configurable reader with multiple reading modes, custom color filters, and other settings
