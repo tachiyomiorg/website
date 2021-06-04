@@ -242,9 +242,6 @@ You do this by following the steps below:
 ##### Do I need to log in to search?
 You do not need to log in to MangaDex to read manga anymore.
 
-##### Why are all the covers placeholders?
-Covers do not work right now due to it not being in the API yet.
-
 ##### Can I read and download manga from MangaDex right now?
 Reading and downloading works fine.
 
