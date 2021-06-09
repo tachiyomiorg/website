@@ -90,7 +90,7 @@ Aside from network issues, it could be because the images are too big or that th
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
 #### How can I make Tachiyomi turn pages with the volume rocker? Can I reverse the tapping direction? Can I change the tapping zones? 
-Refer to the guides section of the site [here](/help/guides/reader-settings/#navigation-layout).
+Refer to the guides section of the site [here](/help/guides/reader-settings/#navigation-layout). Refer to [here](/help/guides/reader-settings/#volume-keys) if you want to use your volume rocker to navigate pages.
 
 ### Downloads
 
@@ -103,7 +103,7 @@ However, if you download several manga from different sources, the app will star
 It is likely an issue to do with your connection to your network or the source. Tachiyomi will notify you of what error it has encountered trying to download.
 
 #### How do I cancel or change the download queue?
-Go to <Navigation item=”more"/> → Download Queue and cancel each or cancel all by tapping on the <Navigation item=”overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the left side of a item in the queue.
+Go to <Navigation item=”more"/> → Download Queue and cancel each or cancel all by tapping on the <Navigation item=”overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the side of a item in the queue.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
 At the moment, no. You could try using symlinks, but that requires having your device rooted.

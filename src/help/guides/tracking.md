@@ -55,4 +55,4 @@ Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
 ### How do I see which manga I have or have not tracked in my library?
-Go to the <Navigation item=”library"/> → Tap <Navigation item=”filter"/> on the top right → Go to the Filter tab and toggle Tracked.
+Go to the <Navigation item=”library"/> → Tap <Navigation item=”filter"/> on the top right → Go to the Filter tab and toggle Tracked. If you are logged into more than one tracker, toggle the tracker you want to include or exclude. 
