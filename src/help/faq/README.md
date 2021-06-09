@@ -61,7 +61,7 @@ The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s)
 #### Why can I not see sources that I have installed?
 
 ##### If it is an extension that is not the same language as your phone's primary language
-Enable the language of the source by going to Browse <Navigation item="browse"/> → Sources tab → Filter <Navigation item="translate"/> → Turn on the language of the source you would like to use 
+Enable the language of the source by going to Browse <Navigation item="browse"/> → Sources tab → Filter <Navigation item="language"/> → Turn on the language of the source you would like to use 
 
 ##### If it is an NSFW extension
 Settings <Navigation item="settings"/> → Browse <Navigation item="browse"/> → Tick show in sources list.
