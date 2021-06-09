@@ -24,7 +24,7 @@ Tracking is currently supported on [MyAnimeList](https://myanimelist.net), [Anil
 [<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_login-to-tracker.mp4)
 :::
 
-1. Goto More → Settings → Tracking to Login
+1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_tracking"/> to Login
 2. Tap the tracker you would like to login to. It will automatically open the browser and lead you through the login process.
 
 ::::
@@ -55,4 +55,4 @@ Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
 ### How do I see which manga I have or have not tracked in my library?
-Go to the <Navigation item=”library"/> → Tap <Navigation item=”filter"/> on the top right → Go to the Filter tab and toggle Tracked. If you are logged into more than one tracker, toggle the tracker you want to include or exclude. 
+Go to <Navigation item=”library"/> → Tap <Navigation item=”filter"/> on the top right → Go to the Filter tab and toggle Tracked. If you are logged into more than one tracker, toggle the tracker you want to include or exclude. 
