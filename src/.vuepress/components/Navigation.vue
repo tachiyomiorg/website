@@ -44,6 +44,7 @@ export default {
 				filter: { text: "Filter", icon: "filter_list" },
 				edit: { text: "EDIT", icon:"edit" },
 				delete: { text: "DELETE", icon:"delete" },
+				language: { text: "Filter", icon:"translate" },
 				/* More */
 				downloaded_only: { text: "Downloaded only", icon: "cloud_off" },
 				download_queue: { text: "Download queue", icon: "get_app" },
