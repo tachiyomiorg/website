@@ -33,7 +33,7 @@ Unattended tracking is also supported for [Komga](https://komga.org), and works 
 [<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_login-to-tracker.mp4)
 :::
 
-1. Goto More → Settings → Tracking to Login
+1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_tracking"/> to Login
 2. Tap the tracker you would like to login to. It will automatically open the browser and lead you through the login process.
 
 ::::
@@ -53,3 +53,15 @@ Unattended tracking is also supported for [Komga](https://komga.org), and works 
     </ul>
 
 ::::
+
+### How do I log in with Kitsu?
+To log in with Kitsu, you need to use your email address as your username.
+
+### Why am I unable to find a manga in MAL's search results?
+If you cannot find a manga by name, you can look it up on MAL and then search for it in Tachiyomi using the following format: `id:<id from manga URL>`. You can also search for a manga on your MAL profile list by searching in the following format: `my:<manga name>`. 
+::: note
+Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
+:::
+
+### How do I see which manga I have or have not tracked in my library?
+Go to <Navigation item="library"/> → Tap <Navigation item="filter"/> on the top right → Go to the Filter tab and toggle Tracked. If you are logged into more than one tracker, toggle the tracker you want to include or exclude. 

@@ -224,7 +224,7 @@ Try installing [Split APK Installer](https://play.google.com/store/apps/details?
 
 ## Getting Logcats and Crash Logs
 
-To dump crash logs following an app crash, go to (<Navigation item="more"/> → <Navigation item="settings_advanced"/> → **Dump Crash Logs**)
+To dump crash logs following an app crash, go to <Navigation item="more"/> → <Navigation item="settings_advanced"/> → **Dump Crash Logs**
 
 ::: guide-empty
 <figure class="centered">
