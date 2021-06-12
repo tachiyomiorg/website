@@ -351,7 +351,7 @@ The introduction of Scoped Storage means that many storage-related functions tha
 
 You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
 ```
-adb shell cmd appops set eu.kanade.tachiyomi Android:legacy_storage allow
+adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
 This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface. 
 
