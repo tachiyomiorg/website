@@ -103,7 +103,7 @@ However, if you download several manga from different sources, the app will star
 It is likely an issue to do with your connection to your network or the source. Tachiyomi will notify you of what error it has encountered trying to download.
 
 #### How do I cancel or change the download queue?
-Go to <Navigation item=”more"/> → Download Queue and cancel each or cancel all by tapping on the <Navigation item=”overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the side of a item in the queue.
+Go to <Navigation item="more"/> → Download Queue and cancel each or cancel all by tapping on the <Navigation item="overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the side of a item in the queue.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
 At the moment, no. You could try using symlinks, but that requires having your device rooted.
@@ -183,21 +183,21 @@ See the [guide](/help/guides/backups/#restoring) on restoring from a backup.
 
 #### How do I pause reading history or go incognito?
 
-Enable Incognito Mode by going to <Navigation item=”more"/> → Incognito Mode.
+Enable Incognito Mode by going to <Navigation item="more"/> → Incognito Mode.
 
 #### Can I make Tachiyomi only read my downloaded chapters?
 
-Enable the option by going to <Navigation item=”more"/> → Download only.
+Enable the option by going to <Navigation item="more"/> → Download only.
 
 #### What is DNS over HTTPS?
 
 DNS over HTTPS is an experimental way of providing, as the name implies, DNS resolution via HTTPS.
 It provides the advantage of not being vulnerable to Man-in-the-middle attacks (due to TLS encryption in HTTPS), preventing DNS spoofing. If you would like to learn more, go [here](https://www.cloudflare.com/learning/dns/dns-over-tls/)
 
-You can enable this feature by going to <Navigation item=”more"/> → <Navigation item=”settings"/> → <Navigation item=”settings_advanced"/>.
+You can enable this feature by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>.
 
 #### What should I do if I can’t screenshot within Tachiyomi?
-You have Secure Screen on, disable it if you want to screenshot by going to <Navigation item=”more"/> → <Navigation item=”settings"/> → <Navigation item=”settings_security"/> → Secure Screen.
+You have Secure Screen on, disable it if you want to screenshot by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_security"/> → Secure Screen.
 
 ## Extensions
 
