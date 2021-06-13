@@ -2,7 +2,6 @@
 	<div class="extension-list">
 		<div v-for="group in extensions" :key="group[0].lang">
 			<ExtensionGroup :list="group" :total-count="totalCount" />
-			<!-- ExtensionGroup -->
 		</div>
 	</div>
 </template>
@@ -28,8 +27,4 @@ export default {
 		&:not(:first-of-type)
 			.extensions-total
 				display none
-	.filters-list
-		display flex
-		flex-direction column
-		row-gap 1rem
 </style>

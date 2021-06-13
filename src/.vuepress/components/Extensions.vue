@@ -62,7 +62,20 @@ export default {
 	async beforeMount() {
 		const { data } = await axios.get(GITHUB_EXTENSION_JSON);
 		const values = Object.values(groupBy(data, "lang"));
-		values.sort((a, b) => {
+		values.sort(this.sortLanguages);
+		this.$data.extensions = values;
+
+		this.$nextTick(() => {
+			this.loading = false;
+		});
+	},
+	updated() {
+		if (window.location.hash) {
+			window.location.replace(window.location.hash);
+		}
+	},
+	methods: {
+		sortLanguages(a, b) {
 			const langA = simpleLangName(a[0].lang);
 			const langB = simpleLangName(b[0].lang);
 			if (langA === "All" && langB === "English") {
@@ -84,98 +97,7 @@ export default {
 				return 1;
 			}
 			return 0;
-		});
-		this.$data.extensions = values;
-
-		this.$nextTick(() => {
-			this.loading = false;
-		});
-	},
-	updated() {
-		if (window.location.hash) {
-			window.location.replace(window.location.hash);
-		}
+		},
 	},
 };
 </script>
-<style lang="stylus">
-.extension-list
-	h3
-		padding-bottom 0.75em
-		border-bottom 1px solid $borderColor
-	> div
-		&:not(:first-of-type)
-			.extensions-total
-				display none
-
-.extensions-total
-	float right
-	&-sum
-		color $accentColor
-
-.anchor
-	margin-top -3.9em
-	padding-bottom 0.2em
-	padding-top 4.5em
-	.extension
-		align-items center
-		display flex
-		padding 0.4em 1.5em
-		.header-anchor
-			padding-left 0.2em
-			padding-right 0.2em
-			font-size 1.4em
-			opacity 0
-		&:hover .header-anchor
-			opacity 1
-		.extension-icon
-			margin-right 0.5em
-		.extension-text
-			flex 1
-			.upper
-				.badge
-					margin-left 8px
-			.down
-				color #6c757d
-				font-family monospace
-				font-size 0.9rem
-		.extension-download
-			margin-right 0.5em
-			padding-left 1rem
-			padding-right 1rem
-			padding-top .5rem
-			padding-bottom .5rem
-			font-weight 700
-			border-radius 4px
-			color white
-			background-color $accentColor
-			border 1px solid $accentColor
-			.material-icons
-				color white
-				max-width 18px
-			&:hover
-				background-color white
-				color $accentColor
-				text-decoration none
-				.material-icons
-					color $accentColor
-		@media (max-width 767px)
-			padding 0.4em 0em
-			.extension-text .down,
-			.extension-download span
-				display none
-	@media (max-width 767px)
-		.extension
-			border 1px solid $borderColor
-			border-radius 8px
-
-			.extension-download
-				background-color $accentColor
-	&:target
-		.extension
-			background-color $containerBackground
-			border-radius 8px
-			transition 500ms background-color
-	&:first-child
-		border-top 1px solid $borderColor
-</style>

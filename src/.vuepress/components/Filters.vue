@@ -30,7 +30,7 @@
 	</span>
 </template>
 <script>
-import ISO6391 from "iso-639-1";
+import { simpleLangName, langName } from "../scripts/languages";
 
 export default {
 	props: ["extensions"],
@@ -54,8 +54,8 @@ export default {
 		},
 	},
 	methods: {
-		simpleLangName: (code) => (code === "all" ? "All" : ISO6391.getName(code)),
-		langName: (code) => (code === "all" ? "All" : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`),
+		simpleLangName, 
+		langName 
 	},
 };
 </script>

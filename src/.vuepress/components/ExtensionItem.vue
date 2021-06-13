@@ -1,24 +1,17 @@
 <template>
 	<div v-if="item" class="extension">
-		<a
-			:href="`#${item.pkg.replace('eu.kanade.tachiyomi.extension.', '')}`"
-			class="header-anchor"
-			aria-hidden="true"
-			@click.stop
-		>
-			#
-		</a>
-		<img class="extension-icon" :src="iconUrl(item.apk)" loading="lazy" width="42" height="42" />
+		<a :href="`#${pkgId}`" class="header-anchor" aria-hidden="true" @click.stop>#</a>
+		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42" />
 		<div class="extension-text">
 			<div class="upper">
-				<span class="font-semibold">{{ item.name.split(": ")[1] }}</span>
-				<Badge :text="'v' + item.version" />
+				{{ pkgName }}
+				<Badge :text="pkgVersion" />
 			</div>
-			<div class="down">
-				{{ item.pkg.replace("eu.kanade.tachiyomi.extension.", "") }}
+			<div class="lower">
+				{{ pkgId }}
 			</div>
 		</div>
-		<a :href="apkUrl(item.apk)" class="extension-download" title="Download APK" download>
+		<a :href="apkUrl" class="extension-download" title="Download APK" download>
 			<MaterialIcon icon="cloud_download" />
 			<span>Download</span>
 		</a>
@@ -27,12 +20,23 @@
 <script>
 export default {
 	props: ["item"],
-	methods: {
-		iconUrl(pkg) {
-			const pkgName = pkg.substring(0, pkg.lastIndexOf("."));
+	computed: {
+		pkgId: function() {
+			return this.item.pkg.replace("eu.kanade.tachiyomi.extension.", "");
+		},
+		pkgName: function() {
+			return this.item.name.split(": ")[1]
+		},
+		pkgVersion: function() {
+			return 'v' + this.item.version;
+		},
+		iconUrl: function() {
+			const pkgName = this.item.apk.substring(0, this.item.apk.lastIndexOf("."));
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${pkgName}.png`;
 		},
-		apkUrl: (apk) => `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${apk}`,
+		apkUrl: function() {
+			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`
+		},
 	},
 };
 </script>
@@ -53,9 +57,11 @@ export default {
 		.extension-text
 			flex 1
 			.upper
+				font-weight: 600
 				.badge
+					font-weight: 400
 					margin-left 8px
-			.down
+			.lower
 				color #6c757d
 				font-family monospace
 				font-size 0.9rem
@@ -81,7 +87,7 @@ export default {
 					color $accentColor
 		@media (max-width 767px)
 			padding 0.4em 0em
-			.extension-text .down,
+			.extension-text .lower,
 			.extension-download span
 				display none
 	@media (max-width 767px)

@@ -1,9 +1,7 @@
 <template>
 	<div class="extension-group">
 		<h3>
-			<span>
-				{{ list[0].lang === "en" ? simpleLangName(list[0].lang) : langName(list[0].lang) }}
-			</span>
+			{{ groupName }}
 
 			<span class="extensions-total">
 				Total:
@@ -29,6 +27,12 @@ import ExtensionItem from "./ExtensionItem.vue";
 export default {
 	components: { ExtensionItem },
 	props: ["list", "totalCount"],
+	computed: {
+		groupName: function() {
+			const firstItem = this.list[0]
+			return firstItem.lang === "en" ? simpleLangName(firstItem.lang) : langName(firstItem.lang)
+		}
+	},
 	methods: {
 		simpleLangName,
 		langName,
