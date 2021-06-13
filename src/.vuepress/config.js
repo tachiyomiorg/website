@@ -19,7 +19,8 @@ module.exports = {
 		// Custom headers
 		["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin:""}],
 		["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Open+Sans"}],
-		["script", {src: "/scripts/remove_service_worker.js"}]
+		["script", {src: "/scripts/remove_service_worker.js"}],
+		["script", {src: "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CIntersectionObserverEntry"}]
 	],
 
 	themeConfig: {
