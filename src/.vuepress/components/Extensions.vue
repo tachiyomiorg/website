@@ -1,8 +1,8 @@
 <template>
 	<div v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
 	<div v-else>
-		<filters v-bind:extensions="extensions" @filters="filters = $event" />
-		<extension-list v-bind:extensions="filteredExtensions" />
+		<Filters :extensions="extensions" @filters="filters = $event" />
+		<ExtensionList :extensions="filteredExtensions" />
 	</div>
 </template>
 <script>

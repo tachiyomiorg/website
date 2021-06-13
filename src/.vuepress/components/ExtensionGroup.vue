@@ -18,7 +18,7 @@
 			:key="extension.apk"
 			class="anchor"
 		>
-			<extension-item v-bind:item="extension" v-bind:observer="observer" />
+			<ExtensionItem :item="extension" />
 		</div>
 	</div>
 </template>
@@ -29,43 +29,9 @@ import ExtensionItem from "./ExtensionItem.vue";
 export default {
 	components: { ExtensionItem },
 	props: ["list", "totalCount"],
-	data() {
-		return {
-			observer: null,
-		};
-	},
-	created() {
-		this.observer = new IntersectionObserver(this.onElementObserved, {
-			root: this.$el,
-			threshold: 1.0,
-		});
-	},
-	beforeDestroy() {
-		this.observer.disconnect();
-	},
 	methods: {
 		simpleLangName,
 		langName,
-		preloadImage(target) {
-			let img = target.getElementsByTagName("img")[0]
-			if (img.hasAttribute('src')) {
-				return
-			}
-			let src = img.getAttribute('data-src');
-			img.setAttribute('src', src);
-		},
-		onElementObserved(entries) {
-			entries.forEach(({ target, isIntersecting }) => {
-				if (!isIntersecting) {
-					target.style.visibility = "hidden"
-					return;
-				}
-
-				this.observer.unobserve(target);
-				this.preloadImage(target)
-				target.style.visibility = "visible"
-			});
-		},
 	},
 };
 </script>

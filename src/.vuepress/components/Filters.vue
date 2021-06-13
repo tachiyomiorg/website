@@ -34,6 +34,7 @@ import ISO6391 from "iso-639-1";
 
 export default {
 	props: ["extensions"],
+	emits: ["filters"],
 	data() {
 		return {
 			filters: {

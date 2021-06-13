@@ -8,7 +8,7 @@
 		>
 			#
 		</a>
-		<img class="extension-icon" :data-src="iconUrl(item.apk)" width="42" height="42" />
+		<img class="extension-icon" :src="iconUrl(item.apk)" loading="lazy" width="42" height="42" />
 		<div class="extension-text">
 			<div class="upper">
 				<span class="font-semibold">{{ item.name.split(": ")[1] }}</span>
@@ -26,25 +26,13 @@
 </template>
 <script>
 export default {
-	props: ["item", "observer"],
-	created() {
-		window.addEventListener("scroll", this.handleScroll);
-	},
-	mounted() {
-		this.observer.observe(this.$el);
-	},
-	destroyed() {
-		window.removeEventListener("scroll", this.handleScroll);
-	},
+	props: ["item"],
 	methods: {
 		iconUrl(pkg) {
 			const pkgName = pkg.substring(0, pkg.lastIndexOf("."));
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${pkgName}.png`;
 		},
 		apkUrl: (apk) => `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${apk}`,
-		handleScroll(event) {
-			this.observer.observe(this.$el);
-		},
 	},
 };
 </script>

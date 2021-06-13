@@ -1,7 +1,7 @@
 <template>
 	<div class="extension-list">
 		<div v-for="group in extensions" :key="group[0].lang">
-			<extension-group v-bind:list="group" v-bind:totalCount="totalCount" />
+			<ExtensionGroup :list="group" :total-count="totalCount" />
 			<!-- ExtensionGroup -->
 		</div>
 	</div>
