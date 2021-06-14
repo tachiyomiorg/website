@@ -60,7 +60,7 @@ export default {
 				settings_downloads: { text: "Downloads", icon: "get_app" },
 				settings_tracking: { text: "Tracking", icon: "autorenew" },
 				settings_browse: { text: "Browse", icon: "explore" },
-				settings_backup: { text: "Backup", icon: "backup" },
+				settings_backup: { text: "Backup and Restore", icon: "settings_backup_restore" },
 				settings_security: { text: "Security", icon: "security" },
 				settings_advanced: { text: "Advanced", icon: "code" },
 				/* Library info */
