@@ -23,6 +23,12 @@ If you add more chapters then you'll have to manually refresh the chapter list (
 Supported chapter formats are folder with pictures inside (such as `.jpg`, `.png`, etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`. But expect better performance with directories and `ZIP`/`CBZ`.
 
 ::: c-warning
+While Tachiyomi does support chapters compressed as **RAR** or **CBR**, note that **RAR** or **CBR** files using the **RAR5** format are not supported yet.
+
+If **CBR** or **RAR** files do not work, you may need to extract and re-compress them into one of the supported formats.
+:::
+
+::: c-warning
 Remember to give the app storage permissions on **Android 6** and newer.
 :::
 
