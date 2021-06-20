@@ -85,7 +85,7 @@ If the scanlator or aggregator does not have an online manga reader, you can dow
 ### Reader
 
 #### Why are some images not displayed?
-Aside from network issues, sometimes Tachiyomi does not register the image as existing, exit and reenter the reader to fix this.
+Aside from network issues, sometimes Tachiyomi does not register the image as existing, exit and re-enter the reader to fix this.
 
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
