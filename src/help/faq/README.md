@@ -34,11 +34,7 @@ If you are on desktop, fill out [this](https://support.google.com/googleplay/and
 ### Library
 
 #### How can I see how many chapters I have downloaded or unread?
-Enable **Download badges** or **Unread badges** under <Navigation item="library"/>.
-
-::: guide
-Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Display** tab and then checking **Download badges** or **Unread badges** at the bottom.
-:::
+Enable badges by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Display** tab and then checking **Download badges** or **Unread badges** at the bottom.
 
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
