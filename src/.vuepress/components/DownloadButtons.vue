@@ -42,7 +42,7 @@ export default {
 		}
 		try {
 			const { data } = await this.$store.dispatch("getPreviewReleaseData");
-			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			const apkAsset = data.assets.find((a) => /^tachiyomi-r\d{4,}.apk/.test(a.name));
 			this.$data.previewTagName = data.tag_name;
 			this.$data.previewbrowserDownloadUrl = apkAsset.browser_download_url;
 		} catch (e) {
