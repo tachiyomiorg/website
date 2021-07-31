@@ -1,14 +1,14 @@
 <template>
-	<span v-if="stable" class="downloadTag">{{ this.$data.tagName }}</span>
+	<span v-if="stable" class="downloadTag">{{ $data.tagName }}</span>
 	<span v-else-if="fileName" class="fileNameContainer" title="File name">
 		<MaterialIcon class="fileNameIcon" icon="get_app" />
-		<span class="fileName">tachiyomi-v{{ this.$data.tagName }}.apk</span>
+		<span class="fileName">tachiyomi-v{{ $data.tagName }}.apk</span>
 		<slot />
 	</span>
-	<span v-else-if="preview" class="downloadTag">{{ this.$data.previewTagName }}</span>
+	<span v-else-if="preview" class="downloadTag">{{ $data.previewTagName }}</span>
 	<span v-else-if="previewFileName" class="fileNameContainer" title="File name">
 		<MaterialIcon class="fileNameIcon" icon="get_app" />
-		<span class="fileName">tachiyomi-{{ this.$data.previewTagName }}.apk</span>
+		<span class="fileName">tachiyomi-{{ $data.previewTagName }}.apk</span>
 		<slot />
 	</span>
 	<span v-else>You need to specify props.</span>

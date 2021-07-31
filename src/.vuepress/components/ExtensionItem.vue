@@ -21,21 +21,21 @@
 export default {
 	props: ["item"],
 	computed: {
-		pkgId: function() {
+		pkgId: function () {
 			return this.item.pkg.replace("eu.kanade.tachiyomi.extension.", "");
 		},
-		pkgName: function() {
-			return this.item.name.split(": ")[1]
+		pkgName: function () {
+			return this.item.name.split(": ")[1];
 		},
-		pkgVersion: function() {
-			return 'v' + this.item.version;
+		pkgVersion: function () {
+			return "v" + this.item.version;
 		},
-		iconUrl: function() {
+		iconUrl: function () {
 			const pkgName = this.item.apk.substring(0, this.item.apk.lastIndexOf("."));
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${pkgName}.png`;
 		},
-		apkUrl: function() {
-			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`
+		apkUrl: function () {
+			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`;
 		},
 	},
 };

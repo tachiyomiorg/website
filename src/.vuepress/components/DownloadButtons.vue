@@ -3,12 +3,12 @@
 		<ElButton type="success" icon="el-icon-download" @click="downloadStable" @keyup.enter="downloadStable">
 			<span class="spacing">Stable</span>
 			<br />
-			<span class="downloadTag">{{ this.$data.tagName }}</span>
+			<span class="downloadTag">{{ $data.tagName }}</span>
 		</ElButton>
 		<ElButton type="warning" icon="el-icon-cpu" @click="downloadPreview" @keyup.enter="downloadPreview">
 			<span class="spacing">Preview</span>
 			<br />
-			<span class="downloadTag">{{ this.$data.previewTagName }}</span>
+			<span class="downloadTag">{{ $data.previewTagName }}</span>
 		</ElButton>
 		<span class="versionNotice">
 			Requires
