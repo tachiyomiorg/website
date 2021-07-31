@@ -54,8 +54,8 @@ export default {
 		},
 	},
 	methods: {
-		simpleLangName, 
-		langName 
+		simpleLangName,
+		langName,
 	},
 };
 </script>

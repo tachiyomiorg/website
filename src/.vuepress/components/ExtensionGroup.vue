@@ -28,10 +28,10 @@ export default {
 	components: { ExtensionItem },
 	props: ["list", "totalCount"],
 	computed: {
-		groupName: function() {
-			const firstItem = this.list[0]
-			return firstItem.lang === "en" ? simpleLangName(firstItem.lang) : langName(firstItem.lang)
-		}
+		groupName: function () {
+			const firstItem = this.list[0];
+			return firstItem.lang === "en" ? simpleLangName(firstItem.lang) : langName(firstItem.lang);
+		},
 	},
 	methods: {
 		simpleLangName,
