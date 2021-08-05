@@ -1,9 +1,16 @@
-import ISO6391 from "iso-639-1";
-
 export function simpleLangName(code) {
-	return code === "all" ? "All" : ISO6391.getName(code);
+	if (code === "all") {
+		return "All";
+	}
+	const namesInEnglish = new Intl.DisplayNames(["en"], { type: "language" });
+	return namesInEnglish.of(code);
 }
 
 export function langName(code) {
-	return code === "all" ? "All" : `${ISO6391.getName(code)} (${ISO6391.getNativeName(code)})`;
+	if (code === "all") {
+		return "All";
+	}
+	const namesInEnglish = new Intl.DisplayNames(["en"], { type: "language" });
+	const namesInNative = new Intl.DisplayNames([code], { type: "language" });
+	return `${namesInEnglish.of(code)} - ${namesInNative.of(code)}`;
 }
