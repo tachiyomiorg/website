@@ -16,7 +16,7 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/forks_logo-eh.png')"> TachiyomiEH <Badge text="Deprecated" type="error" vertical="middle" />
 
-<ForkButtons forkName="TachiyomiEH" downloadForkLink="https://api.github.com/repos/NerdNumber9/TachiyomiEH/releases/latest" githubForkLink="https://github.com/NerdNumber9/TachiyomiEH"/>
+Tachiyomi EH is no longer maintained and therefore no longer available for download. You can still view the source code [here](https://github.com/NerdNumber9/TachiyomiEH)
 
 ## Introduction
 **TachiyomiEH** is maintained by **[NerdNumber9](https://github.com/NerdNumber9)**.
