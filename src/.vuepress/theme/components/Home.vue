@@ -41,18 +41,6 @@
 					<h2>{{ feature.title }}</h2>
 					<p>{{ feature.details }}</p>
 				</div>
-				<section class="feature__Animation">
-					<img
-						class="feature__Animation--dark"
-						alt="Feature image (Dark theme)"
-						:src="$withBase('/assets/home_' + feature.image + '-dark.png')"
-					/>
-					<img
-						class="feature__Animation--light"
-						alt="Feature image (Light theme)"
-						:src="$withBase('/assets/home_' + feature.image + '-light.png')"
-					/>
-				</section>
 			</div>
 		</div>
 
@@ -186,24 +174,6 @@ export default {
 				color $textColor
 			p
 				color $textColorLight
-		&__Animation
-			display block
-			position relative
-			&--light
-			&--dark
-				border-radius 6px
-				max-height 38em
-				max-width 100%
-				margin-left auto
-				margin-right auto
-				left 0
-				right 0
-			&--light
-				animation fade 2s ease-in-out 2s infinite alternate
-				box-shadow 0 10px 50px 0px #ddd
-			&--dark
-				position absolute
-				box-shadow 0 10px 50px 0px #ddd
 	footer
 		position relative
 		.footer
@@ -231,16 +201,6 @@ export default {
 					margin-bottom -2px
 					width 1em
 					height 1em
-
-@keyframes fade
-	0%
-		opacity 1
-	25%
-		opacity 1
-	75%
-		opacity 0
-	100%
-		opacity 0
 
 @media (max-width: $MQNarrow)
 	.home
