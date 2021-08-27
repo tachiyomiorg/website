@@ -22,7 +22,7 @@ Migrations with downloaded chapter(s) may leave the download behind. You will ne
 
 :::: guide Migrating from Manga
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-preview-manga.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-preview-manga.webm)
 :::
 
 1. Tap into a **Manga** you would like to migrate.
@@ -34,7 +34,7 @@ Migrations with downloaded chapter(s) may leave the download behind. You will ne
 
 :::: guide Migrating from Source
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-preview-source.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-preview-source.webm)
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
@@ -56,10 +56,11 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating multiple manga
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-j2k.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-j2k.webm)
 :::
 
-1. Tap <MaterialIcon icon="settings"/> **Settings** → <MaterialIcon icon="explore"/> **Sources** → **Source migration**.
+1. Tap into <Navigation item="browse"/> on the bottom navbar.
+1. Press the **Migration** tab at the bottom next to **Extensions**. 
 1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
@@ -69,7 +70,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating a single manga
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-j2k-single.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-j2k-single.webm)
 :::
 
 1. Tap into a **Manga** in your Library.
@@ -83,7 +84,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Instructions
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-az.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-az.webm)
 :::
 
 1. Tap into <Navigation item="library"/>.
@@ -97,21 +98,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 ## Migrating on TachiyomiSY
 
-:::: guide Migrating from Library
-::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-sy-library.mp4)
-:::
-
-1. Tap into <Navigation item="library"/>.
-1. Tap <Navigation item="overflow"/> → **Source migration**.
-1. Select the **Source** you'd like to migrate *from* and select **All**.
-1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <Navigation item="migrate" />. at the bottom right.
-1. Choose which data you want to transfer over.
-1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <Navigation item="overflow"/>  → **Search manually**.
-::::
-
-:::: guide Migrating from Source
+:::: guide Migrating multiple manga
 ::: videolink
 [<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-sy-source.mp4)
 :::
