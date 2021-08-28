@@ -100,7 +100,7 @@ Pin sources in <Navigation item="browse"/> using the <MaterialIcon icon="push_pi
 
 :::: guide Migrating multiple manga
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-sy-source.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_migrate-sy.webm)
 :::
 
 1. Tap into <Navigation item="browse"/> on the bottom navbar.
