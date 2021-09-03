@@ -30,7 +30,7 @@ Unattended tracking is also supported for [Komga](https://komga.org), and works 
 
 :::: guide Guide
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_login-to-tracker.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_login-to-tracker.webm)
 :::
 
 1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_tracking"/> to Login
@@ -42,7 +42,7 @@ Unattended tracking is also supported for [Komga](https://komga.org), and works 
 
 :::: guide Guide
 ::: videolink
-[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_add-to-tracker.mp4)
+[<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_add-to-tracker.webm)
 :::
 
 1. Tap the manga
