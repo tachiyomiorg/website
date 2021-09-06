@@ -19,6 +19,7 @@ export default {
 		return {
 			extensions: [],
 			filters: {
+				searchID: "",
 				search: "",
 				lang: [],
 				nsfw: "Don't care",
@@ -42,6 +43,11 @@ export default {
 						ext.name.toLowerCase().includes(filters.search.toLowerCase())
 					);
 				}
+				if (filters.searchID) {
+					filteredGroup = filteredGroup.filter((ext) =>
+						ext.sources.some((idnum) => idnum.id.includes(filters.searchID))
+					);
+				}
 
 				filteredGroup = filteredGroup.filter((ext) =>
 					filters.nsfw === "Don't care" ? true : ext.nsfw === (filters.nsfw === "Yes" ? 1 : 0)
@@ -50,7 +56,6 @@ export default {
 				if (filters.sort && filters.sort === "Descending") {
 					filteredGroup = filteredGroup.reverse();
 				}
-
 				if (filteredGroup.length) {
 					filtered.push(filteredGroup);
 				}

@@ -9,6 +9,8 @@
 			</div>
 			<div class="lower">
 				{{ pkgId }}
+				<br />
+				<a :href="baseUrl">{{ baseUrl }}</a>
 			</div>
 		</div>
 		<a :href="apkUrl" class="extension-download" title="Download APK" download>
@@ -36,6 +38,9 @@ export default {
 		},
 		apkUrl: function () {
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`;
+		},
+		baseUrl: function () {
+			return this.item.sources[0].baseUrl;
 		},
 	},
 };

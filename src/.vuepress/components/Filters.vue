@@ -1,6 +1,7 @@
 <template>
 	<span class="filters-list">
 		<ElInput v-model="filters.search" placeholder="Search extensions by name..." clearable />
+		<ElInput v-model="filters.searchID" placeholder="Search extensions by ID..." clearable />
 
 		<ElSelect v-model="filters.lang" placeholder="Show specific languages..." multiple clearable>
 			<ElOption
