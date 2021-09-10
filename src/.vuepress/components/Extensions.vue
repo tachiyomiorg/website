@@ -39,8 +39,10 @@ export default {
 				let filteredGroup = filters.lang.length ? (filters.lang.includes(group[0].lang) ? group : []) : group;
 
 				if (filters.search) {
-					filteredGroup = filteredGroup.filter((ext) =>
-						ext.name.toLowerCase().includes(filters.search.toLowerCase())
+					filteredGroup = filteredGroup.filter(
+						(ext) =>
+							ext.name.toLowerCase().includes(filters.search.toLowerCase()) ||
+							ext.sources.some((source) => source.id.includes(filters.search))
 					);
 				}
 				if (filters.searchID) {
