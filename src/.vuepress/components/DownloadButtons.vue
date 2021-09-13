@@ -34,7 +34,7 @@ export default {
 	async mounted() {
 		try {
 			const { data } = await this.$store.dispatch("getStableReleaseData");
-			const apkAsset = data.assets.find((a) => a.name.includes(".apk"));
+			const apkAsset = data.assets.find((a) => /^tachiyomi-v\d+\.\d+\.\d+.apk/.test(a.name));
 			this.$data.tagName = data.tag_name.slice(1);
 			this.$data.browserDownloadUrl = apkAsset.browser_download_url;
 		} catch (e) {
