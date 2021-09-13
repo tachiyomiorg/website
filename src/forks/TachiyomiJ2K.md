@@ -31,9 +31,6 @@ For a full list of features, visit the GitHub page.
 - **New Manga details screen**
 - **New Recents page**
   - Providing quick access to newly added manga, new chapters, and to continue where you left on in a series
-- **Android 10 Edge to Edge support**
-  - No more small ugly bar for the gesture navigation.
-  - Older versions get a translucent nav bar instead.
 - **Automatic background based on manga page**
   - For those that like having a white background to match the content, this will automatically set the background to match for moments such as a flashback section of a manga.
 - **Reader seekbar overrides switch app gesture in Android 10, so no more accidents for that**

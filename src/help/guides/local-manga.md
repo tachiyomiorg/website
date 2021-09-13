@@ -30,7 +30,7 @@ If **CBR** or **RAR** files do not work, you may need to extract and re-compress
 :::
 
 ::: c-warning
-Remember to give the app storage permissions on **Android 6** and newer.
+Remember to give the app storage permissions.
 :::
 
 ## Folder Structure
