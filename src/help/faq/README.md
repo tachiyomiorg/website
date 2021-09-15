@@ -147,11 +147,8 @@ Certain Android skins like MIUI have very aggressive battery saving, which can k
 ### User Interface
 
 #### Can I change the app language?
-**Tachiyomi** is translated into 40+ different languages. By default, the app follows the language used on your device.
+No. It was removed due to it causing small bugs everywhere in **Tachiyomi**. Android does not provide a standard way of selecting a language that's not your device-language. You can improve the quality of the translations in your language [here](https://hosted.weblate.org/projects/tachiyomi/) or change your system language.
 
-::: guide
-You can change language by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_general"/> then pressing **Language**.
-:::
 
 ### Miscellaneous
 
