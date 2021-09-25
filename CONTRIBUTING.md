@@ -79,6 +79,8 @@ $ npm run lint
 
   - **`sandbox`**: contains the markdown files for the `/sandbox/...` pages.
 
+  - **`tools`**: contains the markdown files for the `/tools/...` pages, including the backups converter and reader.
+
   - `README.md`: markdown file for the front-page.
 
 - `package.json`: contains information about which plugins are installed in the project.

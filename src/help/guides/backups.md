@@ -51,6 +51,12 @@ It is highly recommended you turn on auto backups, this will ensure you can reco
 You can do this by going to <Navigation item="more"/> → <Navigation item="settings_backup"/> and then setting a **backup frequency**. In the case of a catastrophic failure, at least you will be able to recover.
 :::
 
+## Can I see the content of my backup without restoring it?
+The [backup reader](/tools/backups/#tachiyomi-and-paperback-backup-reader) can be used to display the content of a backup file.
+
+## How can convert I my Paperback or Tachiyomi backup?
+[Paperback](https://paperback.moe/) and Tachiyomi backups can be converted with the [backup converter](/tools/backups/#tachiyomi-and-paperback-backup-converter).
+
 ## Forks information
 
 ### <img class="forkIconBefore" src="/assets/forks_logo-neko.png" width="24" height="24" /> [Neko](/forks/Neko)
