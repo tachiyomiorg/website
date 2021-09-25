@@ -1,6 +1,6 @@
 <template>
 	<span>
-		<br /> <!-- Let a space after the previous component -->
+		<br /> <!-- Let a space before the component -->
 		<span v-if="canUploadBackup">
 			<!-- Upload a backup -->
 			<Backup-Uploader :loading="!canUploadBackup" :upload-request-callback="processFile" />

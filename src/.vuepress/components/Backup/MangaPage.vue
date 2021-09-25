@@ -21,9 +21,7 @@
 						<div slot="content">
 							By default 18+ titles are not shown in the library.
 							<br />
-							Adjust
-							<a href="/help/faq/#adjust-content-settings">content settings</a>
-							to change this behaviour.
+							Adjust Paperback content settings to change this behaviour.
 						</div>
 						<i class="el-icon-info"></i>
 					</el-tooltip>

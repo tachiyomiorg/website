@@ -35,7 +35,7 @@
 		</el-dialog>
 
 		<!-- Page content -->
-		<br /> <!-- Let a space after the previous component -->
+		<br /> <!-- Let a space before the component -->
 
 		<Backup-Uploader :loading="loading" :uploadRequestCallback="sendFile"/>
 
