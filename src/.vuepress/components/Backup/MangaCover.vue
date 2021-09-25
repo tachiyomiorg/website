@@ -1,13 +1,8 @@
 <template>
-    <el-image
-	:src="src"
-	fit="cover"
-	alt="cover"
-	class="manga-cover"
-    lazy>
-        <div slot="error" class="failed">
-            <i class="el-icon-picture-outline"></i>
-        </div>
+	<el-image :src="src" fit="cover" alt="cover" class="manga-cover" lazy>
+		<div slot="error" class="failed">
+			<i class="el-icon-picture-outline"></i>
+		</div>
 	</el-image>
 </template>
 
@@ -15,12 +10,12 @@
 export default {
 	props: {
 		// The url of the cover
-        src: {
-            type: String,
-            required: true
-        }
-    }
-}
+		src: {
+			type: String,
+			required: true,
+		},
+	},
+};
 </script>
 
 <style lang="stylus">
@@ -40,5 +35,5 @@ export default {
 
 .yuu-theme-dark
 	.failed
-		background #2a2a2a  
+		background #2a2a2a
 </style>

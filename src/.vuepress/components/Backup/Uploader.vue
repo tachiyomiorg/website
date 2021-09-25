@@ -1,48 +1,53 @@
 <template>
-    <span>
-        <el-upload
-			ref="upload"
-			class="upload-backup"
-			drag
-			action="#"
-			:http-request="uploadRequest"
-			v-loading="loading"
-		>
+	<span>
+		<ElUpload ref="upload" v-loading="loading" class="upload-backup" drag action="#" :http-request="uploadRequest">
 			<i class="el-icon-upload"></i>
-			<div class="el-upload__text">Drop backup here or <em>click to upload</em></div>
-			<div class="el-upload__tip" slot="tip">Upload a Tachiyomi <code>.proto.gz</code> or<br/> a Paperback <code>.json</code> backup</div>
-		</el-upload>
-    </span>
+			<div class="el-upload__text">
+				Drop backup here or
+				<em>click to upload</em>
+			</div>
+			<div slot="tip" class="el-upload__tip">
+				Upload a Tachiyomi
+				<code>.proto.gz</code>
+				or
+				<br />
+				a Paperback
+				<code>.json</code>
+				backup
+			</div>
+		</ElUpload>
+	</span>
 </template>
 
 <script>
 export default {
-	data() {
-		return {
-        }
-    },
-    props: {
-        loading: {
-			required: false,
+	props: {
+		loading: {
+			type: Boolean,
+			default: false,
 		},
 		// Function that will be called when the user upload a backup
-        uploadRequestCallback: {
-            required: true
-        }
-    },
+		uploadRequestCallback: {
+			type: Function,
+			required: true,
+		},
+	},
+	data() {
+		return {};
+	},
 
-    methods: {
+	methods: {
 		uploadRequest(data) {
-            console.log(data)
+			console.log(data);
 
-            // Call the parent uploadRequestCallback function
-            this.$props.uploadRequestCallback(data)
+			// Call the parent uploadRequestCallback function
+			this.$props.uploadRequestCallback(data);
 
-            // Remove the file from the upload list
-			this.$refs.upload.clearFiles()
-        }
-    }
-}
+			// Remove the file from the upload list
+			this.$refs.upload.clearFiles();
+		},
+	},
+};
 </script>
 
 <style scoped lang="stylus">

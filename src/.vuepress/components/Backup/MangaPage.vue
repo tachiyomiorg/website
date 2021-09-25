@@ -1,55 +1,70 @@
 <template>
 	<span>
-        <div class="mangaPage">
-            <Backup-MangaCover :src="manga.cover"/>
+		<div class="mangaPage">
+			<Backup-MangaCover :src="manga.cover" />
 
 			<div class="block info">
 				<p class="title">
 					<b>{{ manga.titles[0] }}</b><span v-for="title in manga.titles.slice(1)" :key="title">, {{ title }}</span>
-                </p>
-				<p class="author" v-if="manga.author"><span class="light">Author:</span> {{ manga.author }}</p>
-				<p class="artist" v-if="manga.artist"><span class="light">Artist:</span> {{ manga.artist }}</p>
-				<div class="hentai" v-if="manga.hentai">
+				</p>
+				<p v-if="manga.author" class="author">
+					<span class="light">Author:</span>
+					{{ manga.author }}
+				</p>
+				<p v-if="manga.artist" class="artist">
+					<span class="light">Artist:</span>
+					{{ manga.artist }}
+				</p>
+				<div v-if="manga.hentai" class="hentai">
 					<el-tag size="mini" type="danger">18+ title</el-tag>
 					<el-tooltip placement="right">
-						<div slot="content">By default 18+ titles are not shown in the library.<br/>Adjust <a href="/help/faq/#adjust-content-settings">content settings</a> to change this behaviour.</div>
+						<div slot="content">
+							By default 18+ titles are not shown in the library.
+							<br />
+							Adjust
+							<a href="/help/faq/#adjust-content-settings">content settings</a>
+							to change this behaviour.
+						</div>
 						<i class="el-icon-info"></i>
 					</el-tooltip>
 				</div>
 			</div>
-                    
-			<div class="block desc" v-if="manga.description">
+
+			<div v-if="manga.description" class="block desc">
 				<p class="light">Description:</p>
 				{{ manga.description }}
 			</div>
 
-			<div class="block libraryTabs" v-if="manga.tabsIds.length">
+			<div v-if="manga.tabsIds.length" class="block libraryTabs">
 				<p class="light">Library tabs:</p>
 				<el-tag v-for="tabId in manga.tabsIds" :key="tabId" class="tab" size="medium" type="info" effect="plain"> {{ tabs[tabId] }} </el-tag>
 			</div>
-			<div class="block sources" v-if="manga.sourcesIds.length">
+			<div v-if="manga.sourcesIds.length" class="block sources">
 				<p class="light">Available in sources: </p>
 				<el-tag v-for="sourceId in manga.sourcesIds" :key="sourceId" class="tab" size="medium" type="info" effect="plain"> {{ sources[sourceId] ? sources[sourceId] : 'id: ' + sourceId }} </el-tag>
 			</div>
-        </div>
+		</div>
 	</span>
 </template>
 
-<script> 
+<script>
 
 export default {
-    props: {
+	props: {
 		// A LightRepresentation.Title object
 		manga: {
 			required: true,
+			type: Object,
 		},
 		// The content of backup.tabs, an object {tabId: tabName} elements
 		tabs: {
 			required: true,
+			type: Object,
 		},
 		// The content of backup.sources, an object {sourceId: sourceName} elements
 		sources: {
 			required: true,
+			type: Object,
 		}
 	},
 }

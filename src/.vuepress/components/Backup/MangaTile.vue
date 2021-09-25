@@ -5,12 +5,13 @@
 	</span>
 </template>
 
-<script> 
+<script>
 export default {
-    props: {
+	props: {
 		manga: {
 			// A LightRepresentation.Title object
 			required: true,
+			type: Object,
 		},
 	},
 }
