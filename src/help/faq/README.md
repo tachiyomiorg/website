@@ -320,7 +320,7 @@ If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` wi
 ## Shizuku
 
 ### What is Shizuku?
-Shizuku is an alternative way to install extensions for Tachiyomi. It accesses system APIs using ADB or Root, enabling Tachiyomi to resolve issues installing with Chinese phones. Read more about it [here](https://shizuku.rikka.app/introduction/)
+Shizuku allows for an alternate way to install extensions in Tachiyomi. It accesses system APIs to directly install packages without user input. Shizuku requires setup with ADB or root privileges. Read more about it [here](https://shizuku.rikka.app/introduction/)
 
 ### Do I need Shizuku?
 Only use Shizuku if you have issues installing extensions or are on a device running MIUI or another Chinese ROM. In the future, Shizuku may be able to install extension updates automatically.
