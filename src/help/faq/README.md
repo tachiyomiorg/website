@@ -316,3 +316,14 @@ adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface. 
 
 If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
+
+## Shizuku
+
+### What is Shizuku?
+Shizuku is an alternative way to install extensions for Tachiyomi. It accesses system APIs using ADB or Root, enabling Tachiyomi to resolve issues installing with Chinese phones. Read more about it [here](https://shizuku.rikka.app/introduction/)
+
+### Do I need Shizuku?
+Only use Shizuku if you have issues installing extensions or are on a device running MIUI or another Chinese ROM. In the future, Shizuku may be able to install extension updates automatically.
+
+### How do I set Shizuku up?
+To learn how to set Shizuku up, go [here](https://shizuku.rikka.app/guide/setup/). Once you have set it up,  enable it in Tachiyomi by going to **More** → **Settings** → **Advanced** → **Installer**.
