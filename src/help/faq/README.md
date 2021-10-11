@@ -323,12 +323,12 @@ If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` wi
 Tachiyomi uses Shizuku to provide an alternate way to install extensions. It accesses system APIs to install directly packages without user input. Shizuku requires setup with ADB or root privileges. Read more about it [here](https://shizuku.rikka.app/introduction/)
 
 ### Do I need Shizuku?
-Only use Shizuku if you have issues installing extensions or do not want to be prompted every time to confirm an extension install. In the future, Shizuku may be able to install extension updates automatically.
+No, only use Shizuku if you want to avoid being prompted during extension installations.
 
 ### How do I set Shizuku up?
-To learn how to set Shizuku up, go [here](https://shizuku.rikka.app/guide/setup/). Once you have set it up,  enable it in Tachiyomi by going to **More** → **Settings** → **Advanced** → **Installer**.
+To learn how to set Shizuku up, go [here](https://shizuku.rikka.app/guide/setup/). Once you have set it up, enable it in Tachiyomi by going to **More** → **Settings** → **Advanced** → **Installer**.
 
 ### What is the difference between the installers?
-Legacy: Fallback installer if the standard PackageInstaller is not able to install extensions. If MIUI is detected, it automatically switches to this.
-PackageInstaller: The default installer that comes with the device.
-Shizuku: A separate app that helps Tachiyomi install extensions.
+* **Legacy**: fallback method installer if the standard PackageInstaller has issues. This is the default for MIUI.
+* **PackageInstaller**: The default installer.
+* **Shizuku**: See above.
