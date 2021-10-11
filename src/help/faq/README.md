@@ -330,5 +330,5 @@ To learn how to set Shizuku up, go [here](https://shizuku.rikka.app/guide/setup/
 
 ### What is the difference between the installers?
 * **Legacy**: fallback method installer if the standard PackageInstaller has issues. This is the default for MIUI.
-* **PackageInstaller**: The default installer.
+* **PackageInstaller**: The default installer. This has more features depending on the Android version, such as skipping user prompts on Android 12 when updating extensions.
 * **Shizuku**: See above.
