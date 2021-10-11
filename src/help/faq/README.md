@@ -327,3 +327,8 @@ Only use Shizuku if you have issues installing extensions or do not want to be p
 
 ### How do I set Shizuku up?
 To learn how to set Shizuku up, go [here](https://shizuku.rikka.app/guide/setup/). Once you have set it up,  enable it in Tachiyomi by going to **More** → **Settings** → **Advanced** → **Installer**.
+
+### What is the difference between the installers?
+Legacy: Fallback installer if the standard PackageInstaller is not able to install extensions. If MIUI is detected, it automatically switches to this.
+PackageInstaller: The default installer that comes with the device.
+Shizuku: A separate app that helps Tachiyomi install extensions.
