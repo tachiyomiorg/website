@@ -246,20 +246,8 @@ To uninstall an extension from within **Tachiyomi**, go to <Navigation item="bro
 
 #### Version 5 API Rewrite
 
-##### Do I need to log in to search?
-You do not need to log in to MangaDex to read manga anymore.
-
-##### Can I read and download manga from MangaDex right now?
-Reading and downloading works fine.
-
-##### Why are there no new manga updates?
-There are no new uploads as the frontend is not up yet, so the scanlators cannot upload anything new.
-
 ##### Why are all my manga saying "Manga ID format has changed, migrate from MangaDex to MangaDex to continue reading"?
 You need to [migrate](./source-migration.md) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from IDs to UUIDs.
-
-##### Will I lose my downloads if I migrate?
-Downloads from before will not be removed or lost by the app.
 
 ##### Why can I not restore from a JSON backup?
 JSON backups are now unusable due to the ID change. You will have to manually re-add your manga.
@@ -278,11 +266,6 @@ To solve this issue, follow the below steps.
 1. Click on **MangaPark** extension and then **Chapter List Source**.
 1. Choose an option like **Smart list** or **Prioritize source**.
 1. Go back to **MangaPark**'s chapter list and refresh it.
-
-### Toonily 
-
-#### Why am I unable to access Toonily?
-The Toonily source may have issues loading due to the Cloudflare bypass in WebView timing out.
 
 ### Removed Extensions
 
@@ -333,3 +316,19 @@ adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface. 
 
 If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
+
+## Shizuku
+
+### What is Shizuku?
+Tachiyomi can use Shizuku as an alternate way to install and update extensions. It accesses system APIs to install directly packages without user input. Shizuku requires setup with ADB or root privileges. Read more about it [here](https://shizuku.rikka.app/introduction/).
+
+### Do I need Shizuku?
+No, only use Shizuku if you want to avoid being prompted during extension installations.
+
+### How do I set Shizuku up?
+To learn how to set Shizuku up, go [here](https://shizuku.rikka.app/guide/setup/). Once you have set it up, enable it in Tachiyomi by going to **More** → **Settings** → **Advanced** → **Installer**.
+
+### What is the difference between the installers?
+* **Legacy**: fallback method installer if the standard PackageInstaller has issues. This is the default for MIUI.
+* **PackageInstaller**: The default installer. This has more features depending on the Android version, such as skipping user prompts on Android 12 when updating extensions.
+* **Shizuku**: See above.
