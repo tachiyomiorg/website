@@ -1,8 +1,10 @@
 <template>
 	<el-image :src="src" fit="cover" alt="cover" class="manga-cover" lazy>
-		<div slot="error" class="failed">
-			<i class="el-icon-picture-outline"></i>
-		</div>
+		<template #error>
+			<div class="failed">
+				<i class="el-icon-picture-outline"></i>
+			</div>
+		</template>
 	</el-image>
 </template>
 

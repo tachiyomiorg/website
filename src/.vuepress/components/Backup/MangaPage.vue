@@ -18,11 +18,13 @@
 				<div v-if="manga.hentai" class="hentai">
 					<el-tag size="mini" type="danger">18+ title</el-tag>
 					<el-tooltip placement="right">
-						<div slot="content">
-							By default 18+ titles are not shown in the library.
-							<br />
-							Adjust Paperback content settings to change this behaviour.
-						</div>
+						<template #content>
+							<div>
+								By default 18+ titles are not shown in the library.
+								<br />
+								Adjust Paperback content settings to change this behaviour.
+							</div>
+						</template>
 						<i class="el-icon-info"></i>
 					</el-tooltip>
 				</div>

@@ -6,15 +6,17 @@
 				Drop backup here or
 				<em>click to upload</em>
 			</div>
-			<div slot="tip" class="el-upload__tip">
-				Upload a Tachiyomi
-				<code>.proto.gz</code>
-				or
-				<br />
-				a Paperback
-				<code>.json</code>
-				backup
-			</div>
+			<template #tip>
+				<div class="el-upload__tip">
+					Upload a Tachiyomi
+					<code>.proto.gz</code>
+					or
+					<br />
+					a Paperback
+					<code>.json</code>
+					backup
+				</div>
+			</template>
 		</ElUpload>
 	</span>
 </template>
@@ -38,7 +40,6 @@ export default {
 
 	methods: {
 		uploadRequest(data) {
-			console.log(data);
 
 			// Call the parent uploadRequestCallback function
 			this.$props.uploadRequestCallback(data);
