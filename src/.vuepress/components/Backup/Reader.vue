@@ -192,6 +192,11 @@ export default {
 			this.$data.backup = {};
 			this.$data.dialog.visible = false;
 			this.$data.canUploadBackup = true;
+			this.$data.filters = {
+				search: "",
+				tabs: "",
+				sources: "",
+			};
 		},
 	},
 };
