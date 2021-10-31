@@ -29,10 +29,6 @@ export default {
 			default: false,
 		},
 		// Function that will be called when the user upload a backup
-		uploadRequestCallback: {
-			type: Function,
-			required: true,
-		},
 	},
 	data() {
 		return {};
@@ -42,7 +38,9 @@ export default {
 		uploadRequest(data) {
 
 			// Call the parent uploadRequestCallback function
-			this.$props.uploadRequestCallback(data);
+			//this.$props.uploadRequestCallback(data);
+			console.log("Uploading")
+			console.log(data)
 
 			// Remove the file from the upload list
 			this.$refs.upload.clearFiles();

@@ -37,7 +37,7 @@
 		<!-- Page content -->
 		<br /> <!-- Let a space before the component -->
 
-		<Backup-Uploader :loading="loading" :uploadRequestCallback="sendFile"/>
+		<Backup-Uploader :loading="loading" />
 
 		<div class="guide">
 			<p class="title">Supported Sources</p>
