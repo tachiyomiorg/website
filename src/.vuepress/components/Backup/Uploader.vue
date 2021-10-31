@@ -1,22 +1,8 @@
 <template>
 	<span>
+		<p>Upload indications</p>
 		<ElUpload ref="upload" v-loading="loading" class="upload-backup" drag action="#" :http-request="uploadRequest">
 			<i class="el-icon-upload"></i>
-			<div class="el-upload__text">
-				Drop backup here or
-				<em>click to upload</em>
-			</div>
-			<template #tip>
-				<div class="el-upload__tip">
-					Upload a Tachiyomi
-					<code>.proto.gz</code>
-					or
-					<br />
-					a Paperback
-					<code>.json</code>
-					backup
-				</div>
-			</template>
 		</ElUpload>
 	</span>
 </template>
