@@ -25,7 +25,7 @@ No. Tachiyomi is an image parser, not a text parser.
 No. Any project that calls itself Tachiyomi that supports anime is **not affiliated with the main project**.
 
 #### Can Tachiyomi sync between devices?
-No.
+No. But you can use Tachiyomi backup and restore features to save and load manga database and move manga content to another device.
 
 
 #### How can I report Tachiyomi copycats on the Google Play Store?
