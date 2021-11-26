@@ -42,7 +42,7 @@
 	},
 	"dependencies": {
 		"@mr-hope/vuepress-plugin-sitemap": "^1.21.0",
-		"axios": "^0.23.0",
+		"axios": "^0.24.0",
 		"core-js": "2.6.4",
 		"element-ui": "^2.15.6",
 		"lodash.groupby": "^4.6.0",
