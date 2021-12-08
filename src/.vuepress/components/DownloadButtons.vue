@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { GITHUB_STABLE_RELEASE, GITHUB_PREVIEW_RELEASE } from "../constants";
+import { GITHUB_PREVIEW_RELEASE, GITHUB_STABLE_RELEASE } from "../constants";
 
 export default {
 	data() {

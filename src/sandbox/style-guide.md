@@ -32,7 +32,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 
 - **DO** use guide containers for quickly showing how to achieve something:
 > ::: guide Instructions
-> Enable it by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Display** section and then checking the **Download badges** option at the bottom.
+> Enable it by going to <NavigationText item="library"/> → <NavigationText item="filter"/> → **Display** section and then checking the **Download badges** option at the bottom.
 > :::
 
 - **DO** include video guides as a text under the header:
@@ -54,8 +54,8 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 - **DO** bold important words in your text:
 > ...checking the **Download badges** option...
 
-- **DO** use **[Navigation](https://github.com/tachiyomiorg/website/blob/master/src/.vuepress/components/Navigation.vue#L35-L82)** items when applicable:
-> <Navigation item="library"/>
+- **DO** use **[NavigationText](https://github.com/tachiyomiorg/website/blob/master/src/.vuepress/components/NavigationText.vue#L35-L82)** items when applicable:
+> <NavigationText item="library"/>
 
 - **DO** use unordered lists when writing a list of stuff that's not an instruction:
 > - This thing.
@@ -131,7 +131,7 @@ Many of the stuff previously mentioned generally applies when making guides too,
 
 - **DO** use guide containers when writing instructions:
 > ::: guide
-> 1. Go to <Navigation item="more"/> and tap <Navigation item="source_migration"/>.
+> 1. Go to <NavigationText item="more"/> and tap <NavigationText item="source_migration"/>.
 > 1. Select the **Source** you're migrating from.
 > 1. Find and select the title that you want to migrate.
 > 	> **Tachiyomi** will do a global search of all the sources you have installed and enabled. If you don't find the manga you want, try searching for other titles it might go under.
@@ -187,7 +187,7 @@ Many of the stuff previously mentioned generally applies when making guides too,
 >:::
 
 - **DO** use carousels for multiple images:
-> <Carousel name="carousel-background-color">
+> <CarouselWrapper name="carousel-background-color">
 > <CarouselItem>
 > <figure class="centered">
 > 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
@@ -202,4 +202,4 @@ Many of the stuff previously mentioned generally applies when making guides too,
 > 	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
 > </figure>
 > </CarouselItem>
-> </Carousel>
+> </CarouselWrapper>

@@ -1,5 +1,5 @@
 ---
-layout: Help
+layout: HelpPage
 title: Help Center
 description: From common questions to guides, find help for everything Tachiyomi.
 lang: en-US

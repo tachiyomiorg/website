@@ -17,7 +17,7 @@ Follow the steps below to create local manga.
 	<ul>
   		<li>Optional: If adding manga in folders, add a file named `.nomedia` to the local folder so images do not show up in the gallery</li>
 	</ul>
-1. You can then access the manga in <Navigation item="browse"/> → **Local source**.
+1. You can then access the manga in <NavigationText item="browse"/> → **Local source**.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
 

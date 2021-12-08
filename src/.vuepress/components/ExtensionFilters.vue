@@ -30,7 +30,7 @@
 	</span>
 </template>
 <script>
-import { simpleLangName, langName } from "../scripts/languages";
+import { langName, simpleLangName } from "../scripts/languages";
 
 export default {
 	props: ["extensions"],

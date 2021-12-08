@@ -57,29 +57,29 @@ This allows you to control how the screen is going to be oriented.
 This allows you to control what color the background should be in reader. Background color can either be **Black**, **Gray** or
 **White**.
 
-<Carousel name="carousel-background-color">
+<CarouselWrapper name="carousel-background-color">
 <CarouselItem>
 <figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
-	<h4>Black</h4>
-	<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
+<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-black.png')">
+<h4>Black</h4>
+<p>Surrounds page with black. With an AMOLED screen you can save battery by using this.</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-gray.png')">
-	<h4>Gray</h4>
-	<p>Surrounds page with gray.</p>
+<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-gray.png')">
+<h4>Gray</h4>
+<p>Surrounds page with gray.</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
-	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-white.png')">
-	<h4>White</h4>
-	<p>Surrounds page with white. Makes pages seemless with the screen.</p>
+<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-background-white.png')">
+<h4>White</h4>
+<p>Surrounds page with white. Makes pages seemless with the screen.</p>
 </figure>
 </CarouselItem>
-</Carousel>
+</CarouselWrapper>
 
 ## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
 This setting specifies if the notification and navigation bar are to be hidden while in the reader.
@@ -106,7 +106,7 @@ Chapter transition is the area between chapters that shows the names of current 
 
 This changes how tapping behaves
 
-<Carousel name="carousel-background-color">
+<CarouselWrapper name="carousel-background-color">
 <CarouselItem>
 <figure class="centered">
 	<img width="260" :src="$withBase('/assets/guides_nav-right-and-left-light.png')">
@@ -133,7 +133,7 @@ This changes how tapping behaves
 	<h4>Edge</h4>
 </figure>
 </CarouselItem>
-</Carousel>
+</CarouselWrapper>
 
 ## Invert Tapping <Badge text="None" type="default-indicator" vertical="middle" />
 
@@ -163,7 +163,7 @@ Scale type lets you choose how the page fits in your screen.
 
 All examples are illustrations and may not reflect what actually happens.
 
-<Carousel name="carousel-scale-type">
+<CarouselWrapper name="carousel-scale-type">
 <CarouselItem>
 <figure class="centered">
 	<h4>Fit screen</h4>
@@ -203,7 +203,7 @@ All examples are illustrations and may not reflect what actually happens.
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-smart-fit.png')">
 </figure>
 </CarouselItem>
-</Carousel>
+</CarouselWrapper>
 
 ::: c-tip
 You can change scale type when reading a chapter. Tap the middle of the screen, press the gear icon at the top, select a different scale type under **Scale type**. This will change Scale type for all series.
@@ -217,7 +217,7 @@ Tachiyomi will start on that zoomed in page.
 
 All examples are illustrations
 
-<Carousel name="carousel-zoom-start-position">
+<CarouselWrapper name="carousel-zoom-start-position">
 <CarouselItem>
 <figure class="centered">
 	<h4>Left</h4>
@@ -239,12 +239,12 @@ All examples are illustrations
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-zoomstartpos-center.png')">
 </figure>
 </CarouselItem>
-</Carousel>
+</CarouselWrapper>
 
 ## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
 Tries to remove excess white borders
 
-<Carousel name="carousel-crop-borders">
+<CarouselWrapper name="carousel-crop-borders">
 <CarouselItem>
 <figure class="centered">
 	<h4>With Crop borders on</h4>
@@ -257,7 +257,7 @@ Tries to remove excess white borders
 	<img height="400" intrinsicsize="208x500" width="260" :src="$withBase('/assets/guides_reader-crop-border-off.png')">
 </figure>
 </CarouselItem>
-</Carousel>
+</CarouselWrapper>
 
 ## Side padding <Badge text="Webtoon" type="tip" vertical="middle" /> <Badge text="None" type="default-indicator" vertical="middle" />
 Adds a percentage side padding to the sides of the page

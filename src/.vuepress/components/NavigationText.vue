@@ -15,7 +15,7 @@
 
 <script>
 /**
- * Code example: <Navigation item="library"/>
+ * Code example: <NavigationText item="library"/>
  */
 export default {
 	props: {

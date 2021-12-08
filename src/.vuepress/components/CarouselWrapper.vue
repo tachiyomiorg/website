@@ -12,7 +12,7 @@
 
 <script>
 export default {
-	name: "Carousel",
+	name: "CarouselWrapper",
 	props: {
 		name: {
 			type: String,

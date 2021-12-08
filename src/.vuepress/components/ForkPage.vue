@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import Layout from "@theme/layouts/Layout.vue";
 import PageEdit from "@theme/components/PageEdit.vue";
+import Layout from "@theme/layouts/Layout.vue";
 
 export default {
 	components: { PageEdit, Layout },

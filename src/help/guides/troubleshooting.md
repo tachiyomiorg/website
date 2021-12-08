@@ -28,16 +28,16 @@ Often **Java.lang Exception: Challenge not found** will be resolved by force-qui
 Possible reasons for **HTTP error 403**:
 
 - The source you selected has [Cloudflare](#solving-the-cloudflare-issue) protection on, refer to the [Cloudflare](#solving-the-cloudflare-issue) guide to fix it.
-- The source is down, removed the manga, or banned your IP. Open <Navigation item="webview"/> to check if this is the case.
+- The source is down, removed the manga, or banned your IP. Open <NavigationText item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 404"
-**HTTP error 404** probably means that the source is down or removed the manga. Open <Navigation item="webview"/> to check if this is the case.
+**HTTP error 404** probably means that the source is down or removed the manga. Open <NavigationText item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 429 (Too Many Requests)"
 **HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases, it's temporary). We suggest [migrating](./source-migration.md) part of your manga to another source to reduce the number of requests to the source.
 :::
 ::: el-collapse-item title="HTTP error 5xx"
-**HTTP error 5xx** like **500, 502** and others are server errors, and the source you are trying to access has problems on their side. Open the source in <Navigation item="webview"/> and check if the site is down.
+**HTTP error 5xx** like **500, 502** and others are server errors, and the source you are trying to access has problems on their side. Open the source in <NavigationText item="webview"/> and check if the site is down.
 :::
 ::: el-collapse-item title="Unable to resolve host / Connection failed"
 Errors like **Unable to resolve host** or **Connection failed** mean that something prevents your connection to the site. 
@@ -47,14 +47,14 @@ Possible reasons include:
 - The app does not have access to the internet.
 - Your ISP has blocked the site.
 - The site is down.
-Try using different internet connection (switch to Wi-Fi, mobile data or a VPN). Try to enable <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **DNS over HTTPS**.
+Try using different internet connection (switch to Wi-Fi, mobile data or a VPN). Try to enable <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **DNS over HTTPS**.
 :::
 ::: el-collapse-item title="java.security.cert.CertPathValidatorException / Chain validation failed"
 **java.security.cert.CertPathValidatorException** or **Chain validation failed** means there is a problem with validating source's sertificate.
 
 - Check if the site's certificate has expired. Use an online service for checking SSL certificates. If the certificate has expired, wait while the site owner to renew it.
 - Ensure that you have the right date and time set on your phone.
-- Try <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> → **Clear cache** and **Clear cookies**.
+- Try <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **Clear cache** and **Clear cookies**.
 - Try using a different internet connection (switch to Wi-Fi, mobile data or a VPN).
 - Try restarting the device.
 :::
@@ -128,15 +128,15 @@ If you're using Preview, or a Fork, replace `eu.kanade.tachiyomi` with the other
 ::::
 
 ## Diagnosis
-* Verify your extensions are up to date (<Navigation item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
-* Check if **Tachiyomi** has an update (<Navigation item="more"/> → <Navigation item="about"/> then tap **Check for updates**).
+* Verify your extensions are up to date (<NavigationText item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
+* Check if **Tachiyomi** has an update (<NavigationText item="more"/> → <NavigationText item="about"/> then tap **Check for updates**).
 * Verify that [WebView](#update-webview) is updated.
-* Try opening the manga in <Navigation item="webview"/>. If there is a [Cloudflare](#solving-the-cloudflare-issue) protection, wait for it to load. If there is a [CAPTCHA](#solving-the-cloudflare-issue), solve it and see if it helped.
+* Try opening the manga in <NavigationText item="webview"/>. If there is a [Cloudflare](#solving-the-cloudflare-issue) protection, wait for it to load. If there is a [CAPTCHA](#solving-the-cloudflare-issue), solve it and see if it helped.
 * Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
 * Ask other users to try the action that gives you the error.
 * Check if the source is either down, or is having issues in a browser.
 * Press the retry button in the middle of your manga page if one exists.
-* Try the following at <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>
+* Try the following at <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>
   * **Clear Cache**
   * **Clear Cookies**
   * **Clear Database**
@@ -179,9 +179,9 @@ If the site is not reachable or has issues, all you can do is wait for the site 
 You must solve the **Cloudflare** issue in **WebView**.
 
 ::: guide How to open WebView
-1. Go to <Navigation item="browse"/> in the bottom navbar.
+1. Go to <NavigationText item="browse"/> in the bottom navbar.
 1. Press the source you would like to access.
-1. Press the <Navigation item="webview"/> icon.
+1. Press the <NavigationText item="webview"/> icon.
 	<figure class="centered">
 		<img class="zoomable" :src="$withBase('/assets/guides_webview-open.jpg')">
 	</figure>
@@ -194,12 +194,12 @@ You must solve the **Cloudflare** issue in **WebView**.
 Some sources may have more advanced **Cloudflare** protection, that results in infinite loading in **WebView** when trying to bypass **Cloudflare** using the solution above. If you are facing this issue, try the following steps:
 
 ::: guide 
-1. Go to <Navigation item="browse"/> in the bottom navbar.
+1. Go to <NavigationText item="browse"/> in the bottom navbar.
 1. Press the source you would like to access.
-1. Press the <Navigation item="webview"/> icon. Refer to the previous picture.
-1. Press the <Navigation item="overflow" /> icon and then press Open in Browser.
+1. Press the <NavigationText item="webview"/> icon. Refer to the previous picture.
+1. Press the <NavigationText item="overflow" /> icon and then press Open in Browser.
 1. Once done, press the X at the top left and return to the source. 
-1. Press the <Navigation item="webview"/> icon again.
+1. Press the <NavigationText item="webview"/> icon again.
 1. Complete the **CAPTCHA** if one is present.
 :::
 
@@ -224,7 +224,7 @@ Try installing [Split APK Installer](https://play.google.com/store/apps/details?
 
 ## Getting Logcats and Crash Logs
 
-To dump crash logs following an app crash, go to <Navigation item="more"/> → <Navigation item="settings_advanced"/> → **Dump Crash Logs**
+To dump crash logs following an app crash, go to <NavigationText item="more"/> → <NavigationText item="settings_advanced"/> → **Dump Crash Logs**
 
 ::: guide-empty
 <figure class="centered">

@@ -1,8 +1,7 @@
+import axios from "axios";
 import Vue from "vue";
 import Vuex from "vuex";
-import axios from "axios";
-
-import { GITHUB_STABLE_API, GITHUB_PREVIEW_API } from "../constants";
+import { GITHUB_PREVIEW_API, GITHUB_STABLE_API } from "../constants";
 
 const worker = (function () {
 	const networkMap = new Map();

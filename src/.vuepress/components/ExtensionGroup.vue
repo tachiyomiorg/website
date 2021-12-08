@@ -21,7 +21,7 @@
 	</div>
 </template>
 <script>
-import { simpleLangName, langName } from "../scripts/languages";
+import { langName, simpleLangName } from "../scripts/languages";
 import ExtensionItem from "./ExtensionItem.vue";
 
 export default {

@@ -1,20 +1,20 @@
 <template>
 	<div v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
 	<div v-else>
-		<Filters :extensions="extensions" @filters="filters = $event" />
+		<ExtensionFilters :extensions="extensions" @filters="filters = $event" />
 		<ExtensionList :extensions="filteredExtensions" />
 	</div>
 </template>
 <script>
 import axios from "axios";
 import groupBy from "lodash.groupby";
-import { simpleLangName } from "../scripts/languages";
 import { GITHUB_EXTENSION_JSON } from "../constants";
+import { simpleLangName } from "../scripts/languages";
+import ExtensionFilters from "./ExtensionFilters.vue";
 import ExtensionList from "./ExtensionList.vue";
-import Filters from "./Filters.vue";
 
 export default {
-	components: { ExtensionList, Filters },
+	components: { ExtensionList, ExtensionFilters },
 	data() {
 		return {
 			extensions: [],
@@ -38,7 +38,8 @@ export default {
 				let filteredGroup = filters.lang.length ? (filters.lang.includes(group[0].lang) ? group : []) : group;
 
 				if (filters.search) {
-					filteredGroup = filteredGroup.filter((ext) =>
+					filteredGroup = filteredGroup.filter(
+						(ext) =>
 							ext.name.toLowerCase().includes(filters.search.toLowerCase()) ||
 							ext.sources.some((source) => source.id.includes(filters.search))
 					);

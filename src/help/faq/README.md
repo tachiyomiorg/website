@@ -34,20 +34,20 @@ If you are on desktop, fill out [this](https://support.google.com/googleplay/and
 ### Library
 
 #### How can I see how many chapters I have downloaded or unread?
-Enable badges by going to <Navigation item="library"/> → <Navigation item="filter"/> → **Display** tab and then checking **Download badges** or **Unread badges** at the bottom.
+Enable badges by going to <NavigationText item="library"/> → <NavigationText item="filter"/> → **Display** tab and then checking **Download badges** or **Unread badges** at the bottom.
 
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
-* On the manga page, tap on <Navigation item="filter"/> → **Sort** and choose **By chapter number**. Doing this will cause the reader to skip duplicates as you read.
-* Bookmark or mark as read the unwanted chapters, then tap on <Navigation item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_reader"/> → **Reading**.
+* On the manga page, tap on <NavigationText item="filter"/> → **Sort** and choose **By chapter number**. Doing this will cause the reader to skip duplicates as you read.
+* Bookmark or mark as read the unwanted chapters, then tap on <NavigationText item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_reader"/> → **Reading**.
 * Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
 
 #### Why are some cover thumbnails corrupted, white, showing a broken page, or wrong?
 The thumbnail download likely did not complete correctly. To fix this, refresh covers in settings.
 
 ::: guide
-Refresh your covers by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> then pressing **Refresh library manga covers**.
+Refresh your covers by going to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> then pressing **Refresh library manga covers**.
 :::
 
 #### Why have some manga chapters been marked as unread when I have not touched them?
@@ -58,10 +58,10 @@ The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s)
 #### Why can I not see sources that I have installed?
 
 ##### If it is an extension that is not the same language as your phone's primary language
-Enable the language of the source by going to <Navigation item="browse"/> → Sources tab → <Navigation item="language"/> → Turn on the language of the source you would like to use.
+Enable the language of the source by going to <NavigationText item="browse"/> → Sources tab → <NavigationText item="language"/> → Turn on the language of the source you would like to use.
 
 ##### If it is an NSFW extension
-<Navigation item="settings"/> → <Navigation item="browse"/> → Check show in sources list.
+<NavigationText item="settings"/> → <NavigationText item="browse"/> → Check show in sources list.
 
 #### How do I find a manga I am looking for?
 Sometimes you can struggle to find a source that has the manga you are looking to read. Here are some tips to help you find it:
@@ -71,7 +71,7 @@ Sometimes you can struggle to find a source that has the manga you are looking t
 1. If you still cannot find the manga in any of your sources, then try to search for an extension for the website you found in step 1 in the [extensions](/extensions/) list.
 
 #### If you find the manga on a specific scanlator or aggregator and they do have an extension
-Download the corresponding extension, tap on it under <Navigation item="browse"/> → **Sources**, and then search for the manga there.
+Download the corresponding extension, tap on it under <NavigationText item="browse"/> → **Sources**, and then search for the manga there.
 #### If you find the manga on a specific scanlator or aggregator and they do not have an extension
 Check if adding the site as an extension has [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) and that it is not on the list of extensions that will not be added back [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475). If it has not been requested and it is not on the list, you can [request it here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
@@ -100,7 +100,7 @@ However, if you download several manga from different sources, the app will star
 It is likely an issue to do with your connection to your network or the source. Tachiyomi will notify you of what error it has encountered trying to download.
 
 #### How do I cancel or change the download queue?
-Go to <Navigation item="more"/> → Download Queue and cancel items in the queue or cancel all items by tapping on the <Navigation item="overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the side of a item in the queue.
+Go to <NavigationText item="more"/> → Download Queue and cancel items in the queue or cancel all items by tapping on the <NavigationText item="overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the side of a item in the queue.
 
 #### Can you make it possible to store manga on both internal storage and external SD-card?
 At the moment, no. You could try using symlinks, but that requires having your device rooted.
@@ -125,8 +125,8 @@ Sometimes some covers for local manga are not displayed. Follow these steps to f
 ::: guide
 1. Make sure you have created the right folder structure. To check that you have, open the manga with the missing cover and check if you can read chapters in the app. If not, follow [this](/help/guides/local-manga) guide first.
 1. Take a screenshot of which chapters you have read, and then remove manga from the library.
-1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and tap **Clear database**. This will only affect manga that are not in your library.
-1. Go back to the <Navigation item="browse"/> → **Local source** and find the manga. The cover should be fixed now. Add the manga back to your library, mark your read chapters, and re-add tracking if needed.
+1. Go to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> and tap **Clear database**. This will only affect manga that are not in your library.
+1. Go back to the <NavigationText item="browse"/> → **Local source** and find the manga. The cover should be fixed now. Add the manga back to your library, mark your read chapters, and re-add tracking if needed.
 :::
 
 ::: note
@@ -138,11 +138,11 @@ Related GitHub issue: [#932](https://github.com/tachiyomiorg/tachiyomi/issues/93
 #### How do I enable automatic updates?
 From version **0.9.0** and onwards, Tachiyomi has had automatic updates for the app enabled by default. The **Preview** version also has automatic updates enabled by default.
 
-However, if you think you are on an outdated version, go to <Navigation item="more"/> → <Navigation item="about"/> and tap on **Check for updates**.
+However, if you think you are on an outdated version, go to <NavigationText item="more"/> → <NavigationText item="about"/> and tap on **Check for updates**.
 
 #### Why are automatic updates not working?
 
-Certain Android skins like MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from your battery saver, go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/> and tap on **Disable battery optimization**. If that does not work, you can also visit [DontKillMyApp](https://dontkillmyapp.com/) to see what battery saving options your device has and how to disable or circumvent them.
+Certain Android skins like MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from your battery saver, go to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> and tap on **Disable battery optimization**. If that does not work, you can also visit [DontKillMyApp](https://dontkillmyapp.com/) to see what battery saving options your device has and how to disable or circumvent them.
 
 ### User Interface
 
@@ -170,21 +170,21 @@ While there will never be a toggle between the two UI versions, you can continue
 
 #### How do I pause reading history or go incognito?
 
-Enable Incognito Mode by going to <Navigation item="more"/> → Incognito Mode.
+Enable Incognito Mode by going to <NavigationText item="more"/> → Incognito Mode.
 
 #### Can I make Tachiyomi only read my downloaded chapters? Why am I not able to disable downloaded only?
 
-Enable Download only by going to <Navigation item="more"/> → Download only.
+Enable Download only by going to <NavigationText item="more"/> → Download only.
 
 #### What is DNS over HTTPS?
 
 DNS over HTTPS is an experimental way of providing, as the name implies, DNS resolution via HTTPS.
 It provides the advantage of not being vulnerable to Man-in-the-middle attacks (due to TLS encryption in HTTPS), preventing DNS spoofing. If you would like to learn more, go [here](https://www.cloudflare.com/learning/dns/dns-over-tls/). It allows some blocks to be circumvented without using a VPN.
 
-You can enable this feature by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_advanced"/>.
+You can enable this feature by going to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>.
 
 #### What should I do if I cannot screenshot within Tachiyomi?
-You have Secure Screen on, disable it if you want to screenshot by going to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_security"/> → Secure Screen.
+You have Secure Screen on, disable it if you want to screenshot by going to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_security"/> → Secure Screen.
 
 #### How do I backup my library automatically? How do I move data from one phone to another?
 Learn how to use the backup and restore feature [here](/help/guides/backups/), and learn how to enable automatic backups [here](/help/guides/backups/#turning-on-auto-backups/)
@@ -239,7 +239,7 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 Extensions for **Tachiyomi** are technically installed the same as standard apps. Either you uninstall them through the app section on your device's settings or do it in **Tachiyomi**.
 
 ::: guide
-To uninstall an extension from within **Tachiyomi**, go to <Navigation item="browse"/> → **Extensions** then tap **Uninstall** on the extension you want to remove.
+To uninstall an extension from within **Tachiyomi**, go to <NavigationText item="browse"/> → **Extensions** then tap **Uninstall** on the extension you want to remove.
 :::
 
 ### MangaDex
@@ -262,7 +262,7 @@ The former **Mangabox** extensions have created new entries for many of the mang
 #### How do I deal with duplicate chapters in MangaPark?
 To solve this issue, follow the below steps.
 
-1. Go to <Navigation item="browse"/> → <Navigation item="extensions"/>.
+1. Go to <NavigationText item="browse"/> → <NavigationText item="extensions"/>.
 1. Click on **MangaPark** extension and then **Chapter List Source**.
 1. Choose an option like **Smart list** or **Prioritize source**.
 1. Go back to **MangaPark**'s chapter list and refresh it.

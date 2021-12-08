@@ -33,7 +33,7 @@ Unattended tracking is also supported for [Komga](https://komga.org), and works 
 [<MaterialIcon icon="videocam"/> Click for video guide](/assets/guides_login-to-tracker.webm)
 :::
 
-1. Go to <Navigation item="more"/> → <Navigation item="settings"/> → <Navigation item="settings_tracking"/> to Login
+1. Go to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_tracking"/> to Login
 2. Tap the tracker you would like to login to. It will automatically open the browser and lead you through the login process.
 
 ::::
@@ -64,4 +64,4 @@ Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
 ### How do I see which manga I have or have not tracked in my library?
-Go to <Navigation item="library"/> → Tap <Navigation item="filter"/> on the top right → Go to the Filter tab and toggle Tracked. If you are logged into more than one tracker, toggle the tracker you want to include or exclude. 
+Go to <NavigationText item="library"/> → Tap <NavigationText item="filter"/> on the top right → Go to the Filter tab and toggle Tracked. If you are logged into more than one tracker, toggle the tracker you want to include or exclude. 
