@@ -74,8 +74,8 @@
 </template>
 
 <script>
-import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
+import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
 
 export default {
 	name: "Home",

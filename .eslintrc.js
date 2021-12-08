@@ -5,11 +5,7 @@ module.exports = {
 	},
 
 	extends: ["vuepress", "prettier"],
-
-	globals: {
-		Atomics: "readonly",
-		SharedArrayBuffer: "readonly",
-	},
+	plugins: ["vue", "prettier", "markdown"],
 
 	parserOptions: {
 		ecmaVersion: 2018,
@@ -31,7 +27,6 @@ module.exports = {
 			},
 		],
 		curly: ["error", "all"],
+		"vue/multi-word-component-names": "off"
 	},
-
-	plugins: ["vue", "prettier", "markdown"],
 };

@@ -1,5 +1,5 @@
-const pluginsConfig = require("./config/plugins");
 const navBarConfig = require("./config/navBar");
+const pluginsConfig = require("./config/plugins");
 const sideBarConfig = require("./config/sideBar");
 
 module.exports = {

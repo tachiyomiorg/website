@@ -1,11 +1,10 @@
 import "./styles/animate.css";
 import "./styles/sweetalert2.css";
 import "vue-material-design-icons/styles.css";
-import { VueAgile } from "vue-agile";
-import VueSweetalert2 from "vue-sweetalert2";
-import VueMoment from "vue-moment";
 import Element from "element-ui";
-
+import { VueAgile } from "vue-agile";
+import VueMoment from "vue-moment";
+import VueSweetalert2 from "vue-sweetalert2";
 import store from "./store";
 
 const redirectList = [
@@ -30,7 +29,7 @@ export default ({
 	siteData, // site metadata
 }) => {
 	// eslint-disable-next-line vue/match-component-file-name
-	Vue.component("Agile", VueAgile);
+	Vue.component("VueAgile", VueAgile);
 	Vue.use(VueSweetalert2);
 	Vue.use(VueMoment);
 	Vue.use(Element);

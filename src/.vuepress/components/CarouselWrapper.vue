@@ -1,5 +1,5 @@
 <template>
-	<Agile :id="name" :options="config">
+	<VueAgile :id="name" :options="config">
 		<slot />
 		<template #prevButton>
 			<MaterialIcon icon="navigate_next" />
@@ -7,7 +7,7 @@
 		<template #nextButton>
 			<MaterialIcon icon="navigate_next" />
 		</template>
-	</Agile>
+	</VueAgile>
 </template>
 
 <script>

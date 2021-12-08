@@ -1,6 +1,6 @@
 <template>
 	<div class="theme-container help-page">
-		<Navbar />
+		<NavBar />
 		<main class="page">
 			<div class="theme-custom-content content__default">
 				<slot name="top" />
@@ -89,7 +89,7 @@
 
 <script>
 import AlgoliaSearchBox from "@theme/components/AlgoliaSearchBox.vue";
-import Navbar from "@theme/components/Navbar.vue";
+import NavBar from "@theme/components/NavBar.vue";
 import ClipboardListIcon from "vue-material-design-icons/ClipboardList.vue";
 import ClipboardSearchIcon from "vue-material-design-icons/ClipboardSearch.vue";
 import DiscordIcon from "vue-material-design-icons/Discord.vue";
@@ -101,7 +101,7 @@ import SourceForkIcon from "vue-material-design-icons/SourceFork.vue";
 
 export default {
 	components: {
-		Navbar,
+		NavBar,
 		AlgoliaSearchBox,
 		ClipboardListIcon,
 		SourceForkIcon,

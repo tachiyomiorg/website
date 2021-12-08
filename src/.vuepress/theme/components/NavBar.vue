@@ -35,12 +35,12 @@
 
 <script>
 import SearchBox from "@SearchBox";
-import SidebarButton from "@theme/components/SidebarButton.vue";
 import NavLinks from "@theme/components/NavLinks.vue";
+import SidebarButton from "@theme/components/SidebarButton.vue";
 import AlgoliaSearchBox from "./AlgoliaSearchBox.vue";
 
 export default {
-	name: "Navbar",
+	name: "NavBar",
 
 	components: {
 		SidebarButton,
