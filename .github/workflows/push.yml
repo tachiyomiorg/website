@@ -17,10 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
-
-      - name: Setup NPM 7
-        run: npm install -g npm@7
+          node-version: 16
 
       - name: Check cache
         uses: actions/cache@v2
