@@ -62,7 +62,8 @@
 			<div class="footer">
 				<div class="copyright">
 					<a href="https://www.apache.org/licenses/LICENSE-2.0">Open-source Apache Licensed</a>
-					| Copyright &copy; 2015{{ " - " + new Date().getFullYear() }} Javier Tomás
+					| Copyright &copy; 2015{{ " - " + new Date().getFullYear() }} Javier Tomás |
+					<a href="/privacy">Privacy policy</a>
 				</div>
 				<div class="netlify">
 					<a target="_blank" href="https://www.netlify.com/">This site is powered by Netlify</a>
