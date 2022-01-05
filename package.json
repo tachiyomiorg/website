@@ -42,7 +42,7 @@
 		"webpack": "^4.44.2"
 	},
 	"dependencies": {
-		"@mr-hope/vuepress-plugin-sitemap": "^1.21.0",
+		"@mr-hope/vuepress-plugin-sitemap": "^1.23.0",
 		"axios": "^0.24.0",
 		"core-js": "2.6.4",
 		"docsearch.js": "^2.6.3",
