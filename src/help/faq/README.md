@@ -254,11 +254,11 @@ JSON backups are now unusable due to the ID change. You will have to manually re
 
 #### How can I block particular Scanlator Groups?
 
-Mangadex extensions now allows you to block Scanlator Groups. Chapters uploaded by a Blocked Scanlator Group will not show up in Latest or in Manga chapters list. For now, you can only block Groups by entering their UUIDs manually. 
+The **MangaDex** extension allows blocking **Scanlator Groups**. Chapters uploaded by a **Blocked Scanlator Group** will not show up in **Latest** or in **Manga feed** (chapters list). For now, you can only block Groups by entering their UUIDs manually.
 
-Follow the following steps to easily block a group from the Tachiyomi Mangadex extension:
+Follow the following steps to easily block a group from the Tachiyomi MangaDex extension:
 
-A. Finding the UUIDs:
+A. Finding the **UUIDs**:
    - Go to [https://mangadex.org](https://mangadex.org) and <NavigationText item="search"/> for the Scanlation Group that you wish to block and view their Group Details
    - Using the URL of this page, get the 16-digit alphanumeric string which will be the UUID for that scanlation group
    - For Example: 
@@ -271,7 +271,7 @@ A. Finding the UUIDs:
            + Comikey         | `8d8ecf83-8d42-4f8c-add8-60963f9f28d9`
            + MangaPlus       | `4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb`
 
-B. Enter the Details to the Tachiyomi Mangadex extension `v1.2.150+`:
+B. Blocking a group using their UUID in Tachiyomi MangaDex extension `v1.2.150+`:
   1. Go to <NavigationText item="browse"/> → <NavigationText item="extensions"/>.
   1. Click on **MangaDex** extension and then <NavigationText item="settings"/> under your Language of choice.
   1. Tap on the option **Block Groups by UUID** and enter the UUIDs.
