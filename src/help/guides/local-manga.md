@@ -163,6 +163,8 @@ You can copy the following example and edit the details as needed:
 }
 ```
 
+If you don't want to manually create the `details.json` file, you can alternatively use [this tool](https://tachi-local.netlify.app/?utm_source=tachi-website&utm_medium=referral&utm_campaign=tachi-website).
+
 ### Using a custom cover image
 
 It is also possible to use a custom image as a cover for each local manga.
