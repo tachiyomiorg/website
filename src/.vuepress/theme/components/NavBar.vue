@@ -136,7 +136,6 @@ $navbar-horizontal-padding = 1.5rem
 		.links
 			padding-left 1.5rem
 		.site-name
-			width calc(100vw - 9.4rem)
 			overflow hidden
 			white-space nowrap
 			text-overflow ellipsis
