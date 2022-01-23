@@ -180,6 +180,7 @@ Non-standard implementations like Firefox can lead to **Tachiyomi** not working 
 
 Try installing [Split APK Installer](https://play.google.com/store/apps/details?id=com.aefyr.sai) from the Google Play Store, then use it to try and install the affected APK. Split APK Installer will tell you why the APK is uninstallable, or it will install the APK for you. Some common errors are listed below.
 
+:::: el-collapse-item
 ::: el-collapse-item title="Differing Signatures"
 If Split APK Installer outputs "Differing signatures" when attempting to install the APK, you are likely installing a official build over an existing **F-Droid** build. The **F-Droid** build has a different signature than the official build, so you must backup your data, uninstall the app, then restore the data in a fresh install.
 :::
@@ -189,6 +190,7 @@ If Split APK Installer outputs "DISPLAY_NAME column is null", the APK you have d
 ::: el-collapse-item title="INSTALL_FAILED_NO_MATCHING_ABIS"
 If Split APK Installer outputs "INSTALL_FAILED_NO_MATCHING_ABIS", the APK you have downloaded is the wrong one for your CPU architecture. Download the correct one or download the universal APK if you are not aware which CPU architecture your device uses.
 :::
+::::
 
 ## Getting Logcats and Crash Logs
 
