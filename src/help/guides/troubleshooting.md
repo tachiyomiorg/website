@@ -77,7 +77,7 @@ See [this](faq/#split-extensions) section of the FAQ to learn how Scoped Storage
 If any sources are slow, it is likely due to the site being slow, your internet being slow, or a ratelimit applied to the source to reduce load or IP bans.
 :::
 ::: el-collapse-item title="Reading is laggy"
-This is usually due to the images in the chapters being too long or large for the reader to handle. If you turn have **32-bit color** on, try turning it off under <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="reader"/>. This helps sometimes to free up some RAM being used. To eliminate this issue, find a different source that cuts the chapter into more pieces or downscales the images.
+This is usually due to the images in the chapters being too long or large for the reader to handle. If you turn have **32-bit color** on, try turning it off under <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_reader"/>. This helps sometimes to free up some RAM being used. To eliminate this issue, find a different source that cuts the chapter into more pieces or downscales the images.
 :::
 ::::
 
