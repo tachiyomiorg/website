@@ -21,7 +21,7 @@ Possible reasons for **HTTP error 403**:
 - The source is down, removed the manga, or banned your IP. Open <NavigationText item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 404"
-**HTTP error 404** probably means that the source is down or removed the manga. Open <NavigationText item="webview"/> to check if this is the case. [Migrate](help/guides/source-migration/#migrating-on-stable-preview) to a different source for this manga if you'd like.
+**HTTP error 404** probably means that the source is down or removed the manga. Open <NavigationText item="webview"/> to check if this is the case. [Migrate](/source-migration/#migrating-on-stable-preview) to a different source for this manga if you'd like.
 :::
 ::: el-collapse-item title="HTTP error 429 (Too Many Requests)"
 **HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases, it's temporary) because you could be downloading or reading too fast. We suggest [reporting](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose) the issue so that a rate limit can be added to prevent IP bans in the future.
@@ -180,7 +180,7 @@ Users on Android 7.0 and up can also see and change **WebView implementation** i
 :::
 
 ::: c-warning
-Non-standard implementations like Firefox can lead to **Tachiyomi** not working correctly or, in the worst-case, crash. We recommend to set your **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+Non-standard implementations like Firefox can lead to **Tachiyomi** not working correctly or, in the worst-case, crash. We recommend to setting your **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
 :::
 
 ## Unable to install the app or extensions
@@ -209,4 +209,4 @@ To dump crash logs following an app crash, go to <NavigationText item="more"/> â
 </figure>
 :::
 
-To get device logs if the app is not behaving as expected, record the device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp).
+To get device logs if the app is not behaving as expected, record device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp).
