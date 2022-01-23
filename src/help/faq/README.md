@@ -98,6 +98,12 @@ However, if you download several manga from different sources, the app will star
 #### Why do my downloads sometimes stop midway through?
 It is likely an issue to do with your connection to your network or the source. Tachiyomi will notify you of what error it has encountered trying to download.
 
+#### Why aren't my downloads being detected?
+This can happen for a variety of reasons:
+- The download location may be inaccessible. If you are using a SD card, make sure it's detected.
+- The source name may have changed. Change the name of the source's folder to the new name. 
+- The source you downloaded the manga from may have changed the title. Change the title of the folder to the new title.
+
 #### How do I cancel or change the download queue?
 Go to <NavigationText item="more"/> → Download Queue and cancel items in the queue or cancel all items by tapping on the <NavigationText item="overflow"/> next to a manga chapter or on the top right. If you would like the change the order of the queue, tap and hold the = on the side of a item in the queue.
 
