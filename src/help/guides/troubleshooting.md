@@ -12,7 +12,7 @@ This page is for when you encounter a problem with a source or the app.
 
 :::: el-collapse
 ::: el-collapse-item title="Java.lang Exception: Failed to bypass Cloudflare"
-**Java.lang.Exception: Failed to bypass Cloudflare** means that the source you selected has [Cloudflare](#solving-cloudflare-issues) protection on, refer to the [Cloudflare](#solving-cloudflare-issues) guide to fix it.
+**Java.lang.Exception: Failed to bypass Cloudflare** means that the source you selected has [Cloudflare](#solving-cloudflare-issues) protection on, refer to the [Cloudflare](#solving-cloudflare-issues) guide to fix it. If the solutions provided do not fix the issue, the source has likely raised the Cloudflare protection level high enough that Tachiyomi is not able to access the site.
 :::
 ::: el-collapse-item title="HTTP error 403"
 Possible reasons for **HTTP error 403**:
@@ -67,6 +67,7 @@ The **Attempt to invoke virtual method' com.hippo.unifile...** error can be caus
 :::
 ::: el-collapse-item title="Cannot Access SD Card"
 The **Cannot Access SD Card** error can sometimes be fixed by changing the location of your downloads to somewhere else and back to the SD card, then restarting the app.
+
 Having a file or folder name that is too long can also cause this issue. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
 ::: el-collapse-item title="Storage issues with Android 11"
@@ -88,6 +89,8 @@ If error-specific instructions didn't help or your error isn't on the list, go t
 ## Diagnosis
 * Verify your extensions are up to date (<NavigationText item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
 * Check if **Tachiyomi** has an update (<NavigationText item="more"/> → <NavigationText item="about"/> then tap **Check for updates**).
+* Manually refresh the manga you are having issues with by dragging down.
+* Check other manga from the source.
 * Verify that [WebView](#update-webview) is updated.
 * Try opening the manga in <NavigationText item="webview"/>. If there is a [Cloudflare](#solving-cloudflare-issues) protection, wait for it to load. If there is a [CAPTCHA](#solving-cloudflare-issues), solve it and see if it helped.
 * Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
@@ -119,7 +122,7 @@ You may be getting a [Cloudflare](#solving-the-cloudflare-issue) protection, may
 * Have less manga in your library from the source.
 
 ::: c-warning
-The above are very imprecise and fuzzy rules because each site has its non-public limits and triggers.
+The above are imprecise and fuzzy rules because each site has its non-public limits and triggers.
 :::
 
 ### Everyone is having this problem
@@ -173,16 +176,16 @@ Users on Android 7.0 and up can also see and change **WebView implementation** i
 :::
 
 ::: c-warning
-Non-standard implementations like Firefox can lead to **Tachiyomi** not working correctly or, in the worst-case crash. We recommend to set **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+Non-standard implementations like Firefox can lead to **Tachiyomi** not working correctly or, in the worst-case, crash. We recommend to set your **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
 :::
 
 ## Unable to install the app or extensions
 
 Try installing [Split APK Installer](https://play.google.com/store/apps/details?id=com.aefyr.sai) from the Google Play Store, then use it to try and install the affected APK. Split APK Installer will tell you why the APK is uninstallable, or it will install the APK for you. Some common errors are listed below.
 
-:::: el-collapse-item
-::: el-collapse-item title="Differing Signatures"
-If Split APK Installer outputs "Differing signatures" when attempting to install the APK, you are likely installing a official build over an existing **F-Droid** build. The **F-Droid** build has a different signature than the official build, so you must backup your data, uninstall the app, then restore the data in a fresh install.
+:::: el-collapse
+::: el-collapse-item title="INSTALL_FAILED_UPDATE_INCOMPATIBLE: Package eu.kanade.tachiyomi signatures do not match the previously installed version; ignoring!"
+If Split APK Installer outputs the above error when attempting to install the APK, you are likely installing a official build over an existing **F-Droid** build. The **F-Droid** build has a different signature than the official build, so you must backup your data, uninstall the app, then restore the data in a fresh install.
 :::
 ::: el-collapse-item title="DISPLAY_NAME column is null"
 If Split APK Installer outputs "DISPLAY_NAME column is null", the APK you have downloaded is corrupted. Some users experience this error multiple times after redownloading the APK, so keep redownloading the APK until it installs correctly.
@@ -202,4 +205,4 @@ To dump crash logs following an app crash, go to <NavigationText item="more"/> �
 </figure>
 :::
 
-To get device logs if the app is not behaving as expected, record the device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp) after enable **Verbose Logging**
+To get device logs if the app is not behaving as expected, record the device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp).
