@@ -17,7 +17,6 @@ No. There is no iOS version, and there are no plans for one. Since iOS and Andro
 #### Will Tachiyomi ever be on the Google Play Store?
 Google Play's content policy does not allow the APK based extension system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
 
-
 #### Can Tachiyomi read Light Novels?
 No. Tachiyomi is an image parser, not a text parser.
 
@@ -332,7 +331,7 @@ No, unless expressly stated, the internal ID of sources has not changed, so migr
 #### What if I uninstall the multisource extension before I install the singular extensions?
 See what extension IDs correspond to what extensions [here](https://pastebin.com/raw/QX2scdRT).
 
-## Android 11
+## Android 11+
 
 ### What changed in Android 11?
 In Android 11, Google began forcing users to use [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage), which was introduced in Android 5.0 Lollipop, but Google only began forcing developers to use it on Android 11. Some OEMs seem to better implement Scoped Storage than others, with some users not running into any issues while users using other phone brands have multitudes of problems.
