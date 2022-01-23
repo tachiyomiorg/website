@@ -21,7 +21,7 @@ Possible reasons for **HTTP error 403**:
 - The source is down, removed the manga, or banned your IP. Open <NavigationText item="webview"/> to check if this is the case.
 :::
 ::: el-collapse-item title="HTTP error 404"
-**HTTP error 404** probably means that the source is down or removed the manga. Open <NavigationText item="webview"/> to check if this is the case.
+**HTTP error 404** probably means that the source is down or removed the manga. Open <NavigationText item="webview"/> to check if this is the case. [Migrate](help/guides/source-migration/#migrating-on-stable-preview) to a different source for this manga if you'd like.
 :::
 ::: el-collapse-item title="HTTP error 429 (Too Many Requests)"
 **HTTP error 429** or **Too Many Requests** means that the source banned your IP address (in most cases, it's temporary) because you could be downloading or reading too fast. We suggest [reporting](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose) the issue so that a rate limit can be added to prevent IP bans in the future.
@@ -43,7 +43,11 @@ Possible reasons include:
 - The app does not have access to the internet.
 - Your ISP has blocked the site.
 - The site is down.
-Try enabling <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **DNS over HTTPS** first. Try using a different internet connection (switch to Wi-Fi, mobile data or a VPN) if **DNS over HTTPS** does not work.
+
+Try the following solutions to fix this issue:
+- Enable <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **DNS over HTTPS**. 
+- Use a different internet connection (switch to Wi-Fi, a different Wi-Fi network, mobile data or a VPN).
+- Reboot your router.
 :::
 ::: el-collapse-item title="java.security.cert.CertPathValidatorException / Chain validation failed"
 **java.security.cert.CertPathValidatorException** or **Chain validation failed** means there is a problem with validating source's sertificate.
@@ -51,7 +55,7 @@ Try enabling <NavigationText item="more"/> → <NavigationText item="settings"/>
 - Check if the site's certificate has expired. Use an online service for checking SSL certificates. If the certificate has expired, wait while the site owner to renew it.
 - Ensure that you have the right date and time set on your phone.
 - Try <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **Clear cache** and **Clear cookies**.
-- Try using a different internet connection (switch to Wi-Fi, mobile data or a VPN).
+- Try using a different internet connection (switch to Wi-Fi, a different Wi-Fi network, mobile data or a VPN).
 - Try restarting the device.
 :::
 ::: el-collapse-item title="App not installed"
@@ -70,8 +74,8 @@ The **Cannot Access SD Card** error can sometimes be fixed by changing the locat
 
 Having a file or folder name that is too long can also cause this issue. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
-::: el-collapse-item title="Storage issues with Android 11"
-See [this](/help/faq/#android-11) section of the FAQ to learn how Scoped Storage affects Tachiyomi in Android 11 and how to fix it.
+::: el-collapse-item title="Storage issues with Android 11+"
+See [this](/help/faq/#android-11) section of the FAQ to learn how Scoped Storage affects Tachiyomi in Android 11+ and how to fix it.
 :::
 ::: el-collapse-item title="Slow loading"
 <ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
@@ -167,9 +171,9 @@ Some sources may have more advanced **Cloudflare** protection, that results in i
 ## Update WebView
 
 To update **WebView**, you need to find what **WebView implementation** is used on your device. In general, default implementation depends on the Android version as follows:
-* Android 10.0 and higher - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
+* Android 10.0 and up - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
 * Android from 7.0 to 9.0 - [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
-* Android 6.0.1 and lower - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
+* Android 6.0.1 and below - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
 
 ::: c-tip
 Users on Android 7.0 and up can also see and change **WebView implementation** in [Developer Options](https://developer.android.com/studio/debug/dev-options).
