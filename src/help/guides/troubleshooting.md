@@ -70,7 +70,7 @@ The **Cannot Access SD Card** error can sometimes be fixed by changing the locat
 Having a file or folder name that is too long can also cause this issue. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 :::
 ::: el-collapse-item title="Storage issues with Android 11"
-See [this](faq/#split-extensions) section of the FAQ to learn how Scoped Storage affects Tachiyomi in Android 11 and how to fix it.
+See [this](/help/faq/#android-11) section of the FAQ to learn how Scoped Storage affects Tachiyomi in Android 11 and how to fix it.
 :::
 ::: el-collapse-item title="Slow loading"
 <ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
