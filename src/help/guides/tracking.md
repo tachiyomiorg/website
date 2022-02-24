@@ -14,7 +14,9 @@ Tracking is currently supported on [MyAnimeList](https://myanimelist.net), [Anil
 - Tracking must be done **manually** for every manga.
 - You must read the last page of a chapter to mark the chapter as read and track it.
 - You can manually set the chapter by tapping on the number and then entering the number in or dragging the ticker up or down.
-- After being offline, the tracker will not sync the last read chapter, even after going back online.
+- After being offline, Tachiyomi will send progress made offline to the tracker.
+- Tachiyomi will attempt to automatically set the start date when starting a manga. 
+- Tachiyomi will also set the finished date and reading status to completed if the read chapter is equal to the tracker's total chapters.
 - Tracking is one-way. Meaning updating status in Tachiyomi will update the tracker, but updating status in the tracker will not update Tachiyomi.
 
 Unattended tracking is also supported for [Komga](https://komga.org), and works a bit differently from other trackers:
