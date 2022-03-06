@@ -35,6 +35,17 @@ If you are on desktop, fill out [this](https://support.google.com/googleplay/and
 #### How can I see how many chapters I have downloaded or unread?
 Enable badges by going to <NavigationText item="library"/> → <NavigationText item="filter"/> → **Display** tab and then checking **Download badges** or **Unread badges** at the bottom.
 
+#### Why does global update skip some entries?
+By default, the app does not check for updates if an entry:
+
+- Has any unread chapters
+- Has no read chapters
+- Has "completed" status
+
+This helps avoid unnecessary heavy traffic to sources to help ensure that they stay available. If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
+
+If necessary, the behavior can be changed in the app settings.
+
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
@@ -85,7 +96,7 @@ Aside from network issues, sometimes Tachiyomi does not register the image as ex
 #### Will there ever be a dual-page reader option?
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
-#### How can I make Tachiyomi turn pages with the volume rocker? Can I reverse the tapping direction? Can I change the tapping zones? 
+#### How can I make Tachiyomi turn pages with the volume rocker? Can I reverse the tapping direction? Can I change the tapping zones?
 Refer to the guides section of the site [here](/help/guides/reader-settings/#navigation-layout). Refer to [here](/help/guides/reader-settings/#volume-keys) if you want to use your volume rocker to navigate pages.
 
 ### Downloads
@@ -101,7 +112,7 @@ It is likely an issue to do with your connection to your network or the source. 
 #### Why aren't my downloads being detected?
 This can happen for a variety of reasons:
 - The download location may be inaccessible. If you are using a SD card, make sure it's detected.
-- The source name may have changed. Change the name of the source's folder to the new name. 
+- The source name may have changed. Change the name of the source's folder to the new name.
 - The source you downloaded the manga from may have changed the title. Change the title of the folder to the new title.
 
 #### How do I cancel or change the download queue?
@@ -170,7 +181,7 @@ Forks are alternative versions of Tachiyomi with different features. Read more a
 
 On **Android 10**, a bug was introduced that prevented users from uninstalling the app if the device had a MicroSD card. To fix the issue, please remove the MicroSD card from the device first, then uninstall Tachiyomi.
 
-#### Can I revert from the Material Design 2 update of Tachiyomi? 
+#### Can I revert from the Material Design 2 update of Tachiyomi?
 While there will never be a toggle between the two UI versions, you can continue to use the old UI version by using [TachiyomiAZ](/forks/TachiyomiAZ/).
 
 #### How do I pause reading history or go incognito?
@@ -266,8 +277,8 @@ Follow the following steps to easily block a group from the Tachiyomi MangaDex e
 A. Finding the **UUIDs**:
    - Go to [https://mangadex.org](https://mangadex.org) and <NavigationText item="search"/> for the Scanlation Group that you wish to block and view their Group Details
    - Using the URL of this page, get the 16-digit alphanumeric string which will be the UUID for that scanlation group
-   - For Example: 
-       * The Group *Tristan's test scans* has the URL 
+   - For Example:
+       * The Group *Tristan's test scans* has the URL
 	       - [https://mangadex.org/group/6410209a-0f39-4f51-a139-bc559ad61a4f/tristan-s-test-scans](https://mangadex.org/group/6410209a-0f39-4f51-a139-bc559ad61a4f/tristan-s-test-scans)
            - Therefore, their UUID will be `6410209a-0f39-4f51-a139-bc559ad61a4f`
        * Other Examples include:
@@ -280,11 +291,11 @@ B. Blocking a group using their UUID in Tachiyomi MangaDex extension `v1.2.150+`
   1. Go to <NavigationText item="browse"/> → <NavigationText item="extensions"/>.
   1. Click on **MangaDex** extension and then <NavigationText item="settings"/> under your Language of choice.
   1. Tap on the option **Block Groups by UUID** and enter the UUIDs.
-       - By Default, the following groups are blocked: 
+       - By Default, the following groups are blocked:
 	   ```
 	   Azuki Manga, Bilibili Comics, Comikey & MangaPlus
 	   ```
-	   - Which are entered as: 
+	   - Which are entered as:
 	   ```
 	   5fed0576-8b94-4f9a-b6a7-08eecd69800d, 06a9fecb-b608-4f19-b93c-7caab06b7f44,
 	   8d8ecf83-8d42-4f8c-add8-60963f9f28d9, 4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb
@@ -308,7 +319,7 @@ To solve this issue, follow the below steps.
 ### Removed Extensions
 
 #### Why am I unable to download an extension that used to exist?
-Extensions tend to be removed for a variety of reasons: 
+Extensions tend to be removed for a variety of reasons:
 
 - They become too much of a cat and mouse game to maintain due to the website owners changing the site frequently to deter scrapers.
 - The site scrambles images in more than one way, making it impossible to make every image unscrambleable.
@@ -325,13 +336,13 @@ Extensions have been split due to the sheer number of extensions in a single ext
 #### What extensions have been split?
 All of them have been split.
 
-#### Why does my multisource extension show up as obsolete? 
+#### Why does my multisource extension show up as obsolete?
 The multisource extension is obsolete because it has been split. The multisource extension has been removed from the repository. It is not actually obsolete.
 
 ##### How do I move to a split extension?
 Install the extension that your manga is from, and then uninstall the multisource extension. If the manga shows the source as a bunch of numbers, force close the app. For known issues with split extensions, go to this [GitHub issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/5672).
 
-#### Do I need to migrate? 
+#### Do I need to migrate?
 No, unless expressly stated, the internal ID of sources has not changed, so migration is unnecessary.
 
 #### What if I uninstall the multisource extension before I install the singular extensions?
@@ -351,7 +362,7 @@ You can try the command below if you know how to use ADB, a guide on installing 
 ```
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
-This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface. 
+This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface.
 
 If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
 
