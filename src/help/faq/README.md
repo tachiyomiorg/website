@@ -39,7 +39,7 @@ Enable badges by going to <NavigationText item="library"/> → <NavigationText i
 By default, the app does not check for updates if an entry:
 
 - Has unread chapters
-- Haven't been started
+- Hasn't been started
 - Has "Completed" status
 
 This helps avoid unnecessary heavy traffic to sources to help ensure that they stay available. If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
