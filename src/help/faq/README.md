@@ -38,18 +38,17 @@ Enable badges by going to <NavigationText item="library"/> → <NavigationText i
 #### Why does global update skip some entries?
 By default, the app does not check for updates if an entry:
 
-- Has any unread chapters
-- Has no read chapters
-- Has "completed" status
+- Has unread chapters
+- Hasn't been started
+- Has "Completed" status
 
 This helps avoid unnecessary heavy traffic to sources to help ensure that they stay available. If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
 
-If necessary, the behavior can be changed in the app settings.
+We recommend to **keep the defaults as they are** and read your unread chapters.
 
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
-* On the manga page, tap on <NavigationText item="filter"/> → **Sort** and choose **By chapter number**. Doing this will cause the reader to skip duplicates as you read.
 * Bookmark or mark as read the unwanted chapters, then tap on <NavigationText item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_reader"/> → **Reading**.
 * Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
 
