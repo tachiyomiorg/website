@@ -55,6 +55,8 @@ This helps avoid unnecessary heavy traffic to sources to help ensure that they s
 
 We recommend to **keep the defaults as they are** and read your unread chapters.
 
+If you don't want to see the skipped items notification, you can disable it at <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_general"/> → **Manage notifications** (Android 8+).
+
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
