@@ -11,7 +11,7 @@ buttonGuides: User Guide
 buttonGuidesLink: /help/guides/getting-started
 features:
   - title: Extensions
-    details: Online and offline reading from hundred of different sources
+    details: Online and offline reading from over a thousand sources
     image: library
   - title: Tracking
     details: Automatically keep track of your manga with MyAnimeList, AniList, Kitsu, Shikimori, and Bangumi
