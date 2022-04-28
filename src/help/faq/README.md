@@ -275,7 +275,7 @@ To uninstall an extension from within **Tachiyomi**, go to <NavigationText item=
 #### Version 5 API Rewrite
 
 ##### Why are all my manga saying "Manga ID format has changed, migrate from MangaDex to MangaDex to continue reading"?
-You need to [migrate](./source-migration.md) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from IDs to UUIDs.
+You need to [migrate](/help/guides/source-migration/) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from IDs to UUIDs.
 
 ##### Why can I not restore from a JSON backup?
 JSON backups are now unusable due to the ID change. You will have to manually re-add your manga.
