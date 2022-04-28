@@ -59,6 +59,13 @@ If you don't want to see the skipped items notification, you can disable it at <
 #### Why does the app warn about large bulk updates and downloads?
 Excessive server queries and unnecessary site interaction may cause sources to employ anti-Tachiyomi tactics. Also refer to the above question. Long running update checks and downloading may also negatively impact your battery life.
 
+::: guide Tips to reduce server load
+As mentioned above, it is **recommended to keep the defaults as they are**, but if you are still seeing this warning message, try the following suggestions:
+* Use categories (Reading, Plan to read and Completed, or anything else that segments your library).
+* Update only the Reading category by going to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_library"/> → **Global update** then tap **Categories**.
+* If the warning message still occurs, split your reading category down further by seperating entries in your library that are infrequently updated (such as monthly series or series that are on haitus) into a new category, then set global update to only update your more frequently updated reading category
+:::
+
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
