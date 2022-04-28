@@ -17,6 +17,8 @@ No. There is no iOS version, and there are no plans for one. Since iOS and Andro
 #### Will Tachiyomi ever be on the Google Play Store?
 Google Play's content policy does not allow the APK based extension system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
 
+To report Tachiyomi copycats on the Google Play Store, you can fill out [this form](https://support.google.com/googleplay/android-developer/contact/takedown) following [these steps](https://pastebin.com/08eeuJxH).
+
 #### How do I migrate from the F-Droid version?
 Tachiyomi on F-Droid is not officially supported, so updates are not guaranteed. If you want to migrate to the official builds:
 
@@ -27,17 +29,14 @@ Tachiyomi on F-Droid is not officially supported, so updates are not guaranteed.
 
 We have no intention to host our own F-Droid repo since Tachiyomi already manages updates by itself, making the usage of F-Droid redundant. For more detailed info, see [this GitHub comment](https://github.com/tachiyomiorg/tachiyomi/issues/6736#issuecomment-1059608058).
 
-#### Can Tachiyomi read Light Novels?
+#### Can Tachiyomi read light novels?
 No. Tachiyomi is an image parser, not a text parser.
 
-#### Can Tachiyomi stream Anime?
+#### Can Tachiyomi stream anime?
 No. Any project that calls itself Tachiyomi that supports anime is **not affiliated with the main project**.
 
 #### Can Tachiyomi sync between devices?
 No. But you can use Tachiyomi backup and restore features to save and load manga database and move manga content to another device.
-
-#### How can I report Tachiyomi copycats on the Google Play Store?
-If you are on desktop, fill out [this](https://support.google.com/googleplay/android-developer/contact/takedown) form following [these](https://pastebin.com/08eeuJxH) steps.
 
 ### Library
 
@@ -53,9 +52,12 @@ By default, the app does not check for updates if an entry:
 
 This helps avoid unnecessary heavy traffic to sources to help ensure that they stay available. If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
 
-We recommend to **keep the defaults as they are** and read your unread chapters.
+We recommend to **keep the defaults as they are** and read your unread chapters first.
 
 If you don't want to see the skipped items notification, you can disable it at <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_general"/> → **Manage notifications** (Android 8+).
+
+#### Why does the app warn about large bulk updates and downloads?
+Excessive server queries and unnecessary site interaction may cause sources to employ anti-Tachiyomi tactics. Also refer to the above question. Long running update checks and downloading may also negatively impact your battery life.
 
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
