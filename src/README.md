@@ -14,7 +14,7 @@ features:
     details: Online and offline reading from over a thousand sources
     image: library
   - title: Tracking
-    details: Automatically keep track of your manga with MyAnimeList, AniList, Kitsu, Shikimori, and Bangumi
+    details: Automatically keep track of your manga with MyAnimeList, AniList, MangaUpdates, Shikimori, Bangumi, and Kitsu
     image: tracking
   - title: Customization
     details: A configurable reader with multiple reading modes, custom color filters, and other settings
