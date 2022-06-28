@@ -1,18 +1,3 @@
-<template>
-	<span v-if="nav.link" id="NavigationVue" class="app-navigation" :class="nav.class" title="App navigation">
-		<a class="app-link" :href="nav.link + entry">
-			<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
-			<span class="app-label" :class="nav.internalClass">{{ nav.text }}</span>
-			<slot />
-		</a>
-	</span>
-	<span v-else id="NavigationVue" class="app-navigation" :class="nav.class" title="App navigation">
-		<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
-		<span class="app-label" :class="nav.internalClass">{{ nav.text }}</span>
-		<slot />
-	</span>
-</template>
-
 <script>
 /**
  * Code example: <NavigationText item="library"/>
@@ -93,6 +78,21 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<span v-if="nav.link" id="NavigationVue" class="app-navigation" :class="nav.class" title="App navigation">
+		<a class="app-link" :href="nav.link + entry">
+			<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
+			<span class="app-label" :class="nav.internalClass">{{ nav.text }}</span>
+			<slot />
+		</a>
+	</span>
+	<span v-else id="NavigationVue" class="app-navigation" :class="nav.class" title="App navigation">
+		<MaterialIcon v-if="nav.icon" class="app-icon" :icon="nav.icon" />
+		<span class="app-label" :class="nav.internalClass">{{ nav.text }}</span>
+		<slot />
+	</span>
+</template>
 
 <style lang="stylus">
 #NavigationVue

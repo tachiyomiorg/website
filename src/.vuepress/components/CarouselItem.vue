@@ -1,9 +1,3 @@
-<template>
-	<div :id="name" class="slide">
-		<slot />
-	</div>
-</template>
-
 <script>
 export default {
 	name: "CarouselItem",
@@ -15,6 +9,12 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<div :id="name" class="slide">
+		<slot />
+	</div>
+</template>
 
 <style>
 .slide {

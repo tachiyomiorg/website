@@ -1,3 +1,33 @@
+<script>
+import { langName, simpleLangName } from "../scripts/languages";
+
+export default {
+	props: ["extensions"],
+	emits: ["filters"],
+	data() {
+		return {
+			filters: {
+				search: "",
+				lang: [],
+				nsfw: "Don't care",
+				sort: "Ascending",
+			},
+		};
+	},
+	watch: {
+		filters: {
+			handler(value) {
+				this.$emit("filters", this.filters);
+			},
+			deep: true,
+		},
+	},
+	methods: {
+		simpleLangName,
+		langName,
+	},
+};
+</script>
 <template>
 	<span class="filters-list">
 		<ElInput v-model="filters.search" placeholder="Search extensions by name or ID..." clearable />
@@ -29,36 +59,6 @@
 		</div>
 	</span>
 </template>
-<script>
-import { langName, simpleLangName } from "../scripts/languages";
-
-export default {
-	props: ["extensions"],
-	emits: ["filters"],
-	data() {
-		return {
-			filters: {
-				search: "",
-				lang: [],
-				nsfw: "Don't care",
-				sort: "Ascending",
-			},
-		};
-	},
-	watch: {
-		filters: {
-			handler(value) {
-				this.$emit("filters", this.filters);
-			},
-			deep: true,
-		},
-	},
-	methods: {
-		simpleLangName,
-		langName,
-	},
-};
-</script>
 <style lang="stylus">
 .filters-list
 	display flex

@@ -1,3 +1,45 @@
+<script>
+import AlgoliaSearchBox from "@theme/components/AlgoliaSearchBox.vue";
+import NavBar from "@theme/components/NavBar.vue";
+import ClipboardListIcon from "vue-material-design-icons/ClipboardList.vue";
+import ClipboardSearchIcon from "vue-material-design-icons/ClipboardSearch.vue";
+import DiscordIcon from "vue-material-design-icons/Discord.vue";
+import FaqIcon from "vue-material-design-icons/FrequentlyAskedQuestions.vue";
+import GithubIcon from "vue-material-design-icons/Github.vue";
+import LifebuoyIcon from "vue-material-design-icons/Lifebuoy.vue";
+import RedditIcon from "vue-material-design-icons/Reddit.vue";
+import SourceForkIcon from "vue-material-design-icons/SourceFork.vue";
+
+export default {
+	components: {
+		NavBar,
+		AlgoliaSearchBox,
+		ClipboardListIcon,
+		SourceForkIcon,
+		DiscordIcon,
+		RedditIcon,
+		GithubIcon,
+		LifebuoyIcon,
+		ClipboardSearchIcon,
+		FaqIcon,
+	},
+
+	computed: {
+		data() {
+			return this.$page.frontmatter;
+		},
+
+		algolia() {
+			return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {};
+		},
+
+		isAlgoliaSearch() {
+			return this.algolia && this.algolia.apiKey && this.algolia.indexName;
+		},
+	},
+};
+</script>
+
 <template>
 	<div class="theme-container help-page">
 		<NavBar />
@@ -86,48 +128,6 @@
 		</main>
 	</div>
 </template>
-
-<script>
-import AlgoliaSearchBox from "@theme/components/AlgoliaSearchBox.vue";
-import NavBar from "@theme/components/NavBar.vue";
-import ClipboardListIcon from "vue-material-design-icons/ClipboardList.vue";
-import ClipboardSearchIcon from "vue-material-design-icons/ClipboardSearch.vue";
-import DiscordIcon from "vue-material-design-icons/Discord.vue";
-import FaqIcon from "vue-material-design-icons/FrequentlyAskedQuestions.vue";
-import GithubIcon from "vue-material-design-icons/Github.vue";
-import LifebuoyIcon from "vue-material-design-icons/Lifebuoy.vue";
-import RedditIcon from "vue-material-design-icons/Reddit.vue";
-import SourceForkIcon from "vue-material-design-icons/SourceFork.vue";
-
-export default {
-	components: {
-		NavBar,
-		AlgoliaSearchBox,
-		ClipboardListIcon,
-		SourceForkIcon,
-		DiscordIcon,
-		RedditIcon,
-		GithubIcon,
-		LifebuoyIcon,
-		ClipboardSearchIcon,
-		FaqIcon,
-	},
-
-	computed: {
-		data() {
-			return this.$page.frontmatter;
-		},
-
-		algolia() {
-			return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {};
-		},
-
-		isAlgoliaSearch() {
-			return this.algolia && this.algolia.apiKey && this.algolia.indexName;
-		},
-	},
-};
-</script>
 
 <style lang="stylus">
 .help-page

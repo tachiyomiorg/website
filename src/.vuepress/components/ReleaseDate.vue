@@ -1,17 +1,3 @@
-<template>
-	<div v-if="stable" class="buildTime">
-		<ElTooltip :content="stablePublishExact" placement="top" :open-delay="250">
-			<span>{{ stablePublishRelative }}</span>
-		</ElTooltip>
-	</div>
-	<div v-else-if="preview" class="buildTime">
-		<ElTooltip :content="previewPublishExact" placement="bottom-end" :open-delay="250">
-			<span>{{ previewPublishRelative }}</span>
-		</ElTooltip>
-	</div>
-	<span v-else>You need to specify props.</span>
-</template>
-
 <script>
 /**
  * Code example: <ReleaseDate preview />
@@ -55,6 +41,20 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<div v-if="stable" class="buildTime">
+		<ElTooltip :content="stablePublishExact" placement="top" :open-delay="250">
+			<span>{{ stablePublishRelative }}</span>
+		</ElTooltip>
+	</div>
+	<div v-else-if="preview" class="buildTime">
+		<ElTooltip :content="previewPublishExact" placement="bottom-end" :open-delay="250">
+			<span>{{ previewPublishRelative }}</span>
+		</ElTooltip>
+	</div>
+	<span v-else>You need to specify props.</span>
+</template>
 
 <style lang="stylus" scoped>
 .buildTime

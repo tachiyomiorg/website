@@ -1,9 +1,3 @@
-<template>
-	<form id="search-form" class="algolia-search-wrapper search-box" role="search">
-		<input id="algolia-search-input" class="search-query" :placeholder="placeholder" />
-	</form>
-</template>
-
 <script>
 export default {
 	name: "AlgoliaSearchBox",
@@ -69,6 +63,12 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<form id="search-form" class="algolia-search-wrapper search-box" role="search">
+		<input id="algolia-search-input" class="search-query" :placeholder="placeholder" />
+	</form>
+</template>
 
 <style lang="stylus">
 .algolia-search-wrapper

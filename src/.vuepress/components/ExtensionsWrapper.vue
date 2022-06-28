@@ -1,10 +1,3 @@
-<template>
-	<div v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
-	<div v-else>
-		<ExtensionFilters :extensions="extensions" @filters="filters = $event" />
-		<ExtensionList :extensions="filteredExtensions" />
-	</div>
-</template>
 <script>
 import axios from "axios";
 import groupBy from "lodash.groupby";
@@ -101,3 +94,10 @@ export default {
 	},
 };
 </script>
+<template>
+	<div v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
+	<div v-else>
+		<ExtensionFilters :extensions="extensions" @filters="filters = $event" />
+		<ExtensionList :extensions="filteredExtensions" />
+	</div>
+</template>

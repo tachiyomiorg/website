@@ -1,20 +1,3 @@
-<template>
-	<div class="downloadContainer">
-		<button class="downloadForkButton" :style="downloadForkStyle" @click="downloadFork">
-			{{ downloadForkLabel }}
-		</button>
-		<button class="githubForkButton" :style="githubForkStyle" :onclick="'window.open(\'' + githubForkLink + '\')'">
-			{{ githubForkLabel }}
-		</button>
-		<br />
-		<span class="versionNotice">
-			Requires
-			<strong>Android {{ androidVersion }}</strong>
-			or higher.
-		</span>
-	</div>
-</template>
-
 <script>
 import axios from "axios";
 
@@ -96,6 +79,23 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<div class="downloadContainer">
+		<button class="downloadForkButton" :style="downloadForkStyle" @click="downloadFork">
+			{{ downloadForkLabel }}
+		</button>
+		<button class="githubForkButton" :style="githubForkStyle" :onclick="'window.open(\'' + githubForkLink + '\')'">
+			{{ githubForkLabel }}
+		</button>
+		<br />
+		<span class="versionNotice">
+			Requires
+			<strong>Android {{ androidVersion }}</strong>
+			or higher.
+		</span>
+	</div>
+</template>
 
 <style lang="stylus">
 .downloadContainer

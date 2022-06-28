@@ -1,3 +1,22 @@
+<script>
+import { langName, simpleLangName } from "../scripts/languages";
+import ExtensionItem from "./ExtensionItem.vue";
+
+export default {
+	components: { ExtensionItem },
+	props: ["list", "totalCount"],
+	computed: {
+		groupName: function () {
+			const firstItem = this.list[0];
+			return firstItem.lang === "en" ? simpleLangName(firstItem.lang) : langName(firstItem.lang);
+		},
+	},
+	methods: {
+		simpleLangName,
+		langName,
+	},
+};
+</script>
 <template>
 	<div class="extension-group">
 		<h3>
@@ -20,25 +39,6 @@
 		</div>
 	</div>
 </template>
-<script>
-import { langName, simpleLangName } from "../scripts/languages";
-import ExtensionItem from "./ExtensionItem.vue";
-
-export default {
-	components: { ExtensionItem },
-	props: ["list", "totalCount"],
-	computed: {
-		groupName: function () {
-			const firstItem = this.list[0];
-			return firstItem.lang === "en" ? simpleLangName(firstItem.lang) : langName(firstItem.lang);
-		},
-	},
-	methods: {
-		simpleLangName,
-		langName,
-	},
-};
-</script>
 <style lang="stylus">
 .extensions-total
 	float right

@@ -1,22 +1,3 @@
-<template>
-	<div class="guide whatsNew">
-		<p class="title">
-			<MaterialIcon icon="new_releases" />
-			What's new
-		</p>
-		<!-- eslint-disable-next-line vue/no-v-html -->
-		<div v-html="whatsNew"></div>
-		<div class="note">
-			<p>
-				View the full release
-				<a href="https://github.com/tachiyomiorg/tachiyomi/releases/latest" target="_blank" rel="noopener">
-					here
-				</a>
-			</p>
-		</div>
-	</div>
-</template>
-
 <script>
 import { marked } from "marked";
 
@@ -40,6 +21,25 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<div class="guide whatsNew">
+		<p class="title">
+			<MaterialIcon icon="new_releases" />
+			What's new
+		</p>
+		<!-- eslint-disable-next-line vue/no-v-html -->
+		<div v-html="whatsNew"></div>
+		<div class="note">
+			<p>
+				View the full release
+				<a href="https://github.com/tachiyomiorg/tachiyomi/releases/latest" target="_blank" rel="noopener">
+					here
+				</a>
+			</p>
+		</div>
+	</div>
+</template>
 
 <style lang="stylus">
 .whatsNew

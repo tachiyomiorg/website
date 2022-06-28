@@ -1,3 +1,12 @@
+<script>
+import PageEdit from "@theme/components/PageEdit.vue";
+import Layout from "@theme/layouts/Layout.vue";
+
+export default {
+	components: { PageEdit, Layout },
+};
+</script>
+
 <template>
 	<Layout :class="$frontmatter.title">
 		<main class="page">
@@ -10,15 +19,6 @@
 		</main>
 	</Layout>
 </template>
-
-<script>
-import PageEdit from "@theme/components/PageEdit.vue";
-import Layout from "@theme/layouts/Layout.vue";
-
-export default {
-	components: { PageEdit, Layout },
-};
-</script>
 
 <style lang="stylus">
 .page

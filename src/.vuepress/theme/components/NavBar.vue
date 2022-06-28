@@ -1,38 +1,3 @@
-<template>
-	<header class="navbar">
-		<!-- eslint-disable-next-line vue/require-explicit-emits -->
-		<SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
-
-		<RouterLink :to="$localePath" class="home-link">
-			<img
-				v-if="$site.themeConfig.logo"
-				class="logo"
-				:src="$withBase($site.themeConfig.logo)"
-				:alt="$siteTitle"
-			/>
-			<span v-if="$siteTitle" ref="siteName" class="site-name" :class="{ 'can-hide': $site.themeConfig.logo }">
-				{{ $siteTitle }}
-			</span>
-		</RouterLink>
-
-		<div
-			class="links"
-			:style="
-				linksWrapMaxWidth
-					? {
-							'max-width': linksWrapMaxWidth + 'px',
-					  }
-					: {}
-			"
-		>
-			<div v-if="$page.frontmatter.hideSearch" />
-			<AlgoliaSearchBox v-else-if="isAlgoliaSearch" :options="algolia" />
-			<SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
-			<NavLinks class="can-hide" />
-		</div>
-	</header>
-</template>
-
 <script>
 import SearchBox from "@SearchBox";
 import NavLinks from "@theme/components/NavLinks.vue";
@@ -94,6 +59,41 @@ function css(el, property) {
 	return win.getComputedStyle(el, null)[property];
 }
 </script>
+
+<template>
+	<header class="navbar">
+		<!-- eslint-disable-next-line vue/require-explicit-emits -->
+		<SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
+
+		<RouterLink :to="$localePath" class="home-link">
+			<img
+				v-if="$site.themeConfig.logo"
+				class="logo"
+				:src="$withBase($site.themeConfig.logo)"
+				:alt="$siteTitle"
+			/>
+			<span v-if="$siteTitle" ref="siteName" class="site-name" :class="{ 'can-hide': $site.themeConfig.logo }">
+				{{ $siteTitle }}
+			</span>
+		</RouterLink>
+
+		<div
+			class="links"
+			:style="
+				linksWrapMaxWidth
+					? {
+							'max-width': linksWrapMaxWidth + 'px',
+					  }
+					: {}
+			"
+		>
+			<div v-if="$page.frontmatter.hideSearch" />
+			<AlgoliaSearchBox v-else-if="isAlgoliaSearch" :options="algolia" />
+			<SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
+			<NavLinks class="can-hide" />
+		</div>
+	</header>
+</template>
 
 <style lang="stylus">
 $navbar-vertical-padding = 0.7rem

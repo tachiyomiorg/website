@@ -1,10 +1,3 @@
-<template>
-	<i v-if="iconOnly" :class="name" class="material-icons">{{ icon }}</i>
-	<div v-else :class="name" class="material-holder">
-		<i class="material-icons">{{ icon }}</i>
-	</div>
-</template>
-
 <script>
 /**
  * For material icon references use https://material.io/resources/icons/
@@ -27,6 +20,13 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<i v-if="iconOnly" :class="name" class="material-icons">{{ icon }}</i>
+	<div v-else :class="name" class="material-holder">
+		<i class="material-icons">{{ icon }}</i>
+	</div>
+</template>
 
 <style lang="scss">
 $material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";

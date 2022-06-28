@@ -1,22 +1,3 @@
-<template>
-	<div v-if="item" class="extension">
-		<a :href="`#${pkgId}`" class="header-anchor" aria-hidden="true" @click.stop>#</a>
-		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42" />
-		<div class="extension-text">
-			<div class="upper">
-				{{ pkgName }}
-				<Badge :text="pkgVersion" />
-			</div>
-			<div class="lower">
-				{{ pkgId }}
-			</div>
-		</div>
-		<a :href="apkUrl" class="extension-download" title="Download APK" download>
-			<MaterialIcon icon="cloud_download" />
-			<span>Download</span>
-		</a>
-	</div>
-</template>
 <script>
 export default {
 	props: ["item"],
@@ -40,6 +21,25 @@ export default {
 	},
 };
 </script>
+<template>
+	<div v-if="item" class="extension">
+		<a :href="`#${pkgId}`" class="header-anchor" aria-hidden="true" @click.stop>#</a>
+		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42" />
+		<div class="extension-text">
+			<div class="upper">
+				{{ pkgName }}
+				<Badge :text="pkgVersion" />
+			</div>
+			<div class="lower">
+				{{ pkgId }}
+			</div>
+		</div>
+		<a :href="apkUrl" class="extension-download" title="Download APK" download>
+			<MaterialIcon icon="cloud_download" />
+			<span>Download</span>
+		</a>
+	</div>
+</template>
 <style lang="stylus">
 .extension
 		align-items center

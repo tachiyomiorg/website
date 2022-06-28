@@ -1,10 +1,3 @@
-<template>
-	<div class="extension-list">
-		<div v-for="group in extensions" :key="group[0].lang">
-			<ExtensionGroup :list="group" :total-count="totalCount" />
-		</div>
-	</div>
-</template>
 <script>
 import ExtensionGroup from "./ExtensionGroup.vue";
 
@@ -18,6 +11,13 @@ export default {
 	},
 };
 </script>
+<template>
+	<div class="extension-list">
+		<div v-for="group in extensions" :key="group[0].lang">
+			<ExtensionGroup :list="group" :total-count="totalCount" />
+		</div>
+	</div>
+</template>
 <style lang="stylus">
 .extension-list
 	h3

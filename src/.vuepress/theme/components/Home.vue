@@ -1,3 +1,37 @@
+<script>
+import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
+import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
+
+export default {
+	name: "Home",
+
+	components: {
+		CloudDownloadIcon,
+		BookOpenVariantIcon,
+	},
+
+	computed: {
+		data() {
+			return this.$page.frontmatter;
+		},
+
+		buttonDownload() {
+			return {
+				link: this.data.buttonDownloadLink,
+				text: this.data.buttonDownload,
+			};
+		},
+
+		buttonGuidesLink() {
+			return {
+				link: this.data.buttonGuidesLink,
+				text: this.data.buttonGuides,
+			};
+		},
+	},
+};
+</script>
+
 <template>
 	<main class="home" aria-labelledby="main-title">
 		<header class="hero">
@@ -73,40 +107,6 @@
 		</footer>
 	</main>
 </template>
-
-<script>
-import BookOpenVariantIcon from "vue-material-design-icons/BookOpenVariant.vue";
-import CloudDownloadIcon from "vue-material-design-icons/CloudDownload.vue";
-
-export default {
-	name: "Home",
-
-	components: {
-		CloudDownloadIcon,
-		BookOpenVariantIcon,
-	},
-
-	computed: {
-		data() {
-			return this.$page.frontmatter;
-		},
-
-		buttonDownload() {
-			return {
-				link: this.data.buttonDownloadLink,
-				text: this.data.buttonDownload,
-			};
-		},
-
-		buttonGuidesLink() {
-			return {
-				link: this.data.buttonGuidesLink,
-				text: this.data.buttonGuides,
-			};
-		},
-	},
-};
-</script>
 
 <style lang="stylus">
 .home
