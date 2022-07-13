@@ -54,7 +54,7 @@
 		"moment": "2.29.3",
 		"vue": "2.6.14",
 		"vue-agile": "2.0.0",
-		"vue-material-design-icons": "5.0.0",
+		"vue-material-design-icons": "5.1.2",
 		"vue-moment": "4.1.0",
 		"vue-sweetalert2": "5.0.5",
 		"vuepress-plugin-dehydrate": "1.1.5",
