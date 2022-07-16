@@ -4,11 +4,13 @@ import NavBar from "@theme/components/NavBar.vue";
 import ClipboardListIcon from "vue-material-design-icons/ClipboardList.vue";
 import ClipboardSearchIcon from "vue-material-design-icons/ClipboardSearch.vue";
 import DiscordIcon from "vue-material-design-icons/Discord.vue";
+import FacebookIcon from "vue-material-design-icons/Facebook.vue";
 import FaqIcon from "vue-material-design-icons/FrequentlyAskedQuestions.vue";
 import GithubIcon from "vue-material-design-icons/Github.vue";
 import LifebuoyIcon from "vue-material-design-icons/Lifebuoy.vue";
 import RedditIcon from "vue-material-design-icons/Reddit.vue";
 import SourceForkIcon from "vue-material-design-icons/SourceFork.vue";
+import TwitterIcon from "vue-material-design-icons/Twitter.vue";
 
 export default {
 	components: {
@@ -17,6 +19,8 @@ export default {
 		ClipboardListIcon,
 		SourceForkIcon,
 		DiscordIcon,
+		TwitterIcon,
+		FacebookIcon,
 		RedditIcon,
 		GithubIcon,
 		LifebuoyIcon,
@@ -94,6 +98,20 @@ export default {
 							<div class="card" :class="'card__' + helpItem.title">
 								<header v-if="helpItem.discord">
 									<DiscordIcon />
+									<span>
+										<h3>{{ helpItem.title }}</h3>
+										<OutboundLink />
+									</span>
+								</header>
+								<header v-if="helpItem.twitter">
+									<TwitterIcon />
+									<span>
+										<h3>{{ helpItem.title }}</h3>
+										<OutboundLink />
+									</span>
+								</header>
+								<header v-if="helpItem.facebook">
+									<FacebookIcon />
 									<span>
 										<h3>{{ helpItem.title }}</h3>
 										<OutboundLink />
@@ -214,6 +232,10 @@ export default {
 						color $accentColor
 						&.discord-icon
 							color $discordAccentColor
+						&.twitter-icon
+							color $twitterAccentColor
+						&.facebook-icon
+							color $facebookAccentColor
 						&.reddit-icon
 							color $redditAccentColor
 						&.github-icon
@@ -222,6 +244,14 @@ export default {
 						visibility visible
 				&__Discord:hover
 					border-bottom 2px solid $discordAccentColor
+					h3
+						color $discordAccentColor
+				&__Twitter:hover
+					border-bottom 2px solid $twitterAccentColor
+					h3
+						color $discordAccentColor
+				&__Facebook:hover
+					border-bottom 2px solid $facebookAccentColor
 					h3
 						color $discordAccentColor
 				&__Reddit:hover
@@ -245,7 +275,7 @@ export default {
 						outline none
 			.row
 				display grid
-				grid-template-columns repeat(4, 1fr)
+				grid-template-columns repeat(5, 1fr)
 				grid-auto-rows 1fr
 				grid-gap 1rem
 				&:after

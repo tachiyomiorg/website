@@ -14,7 +14,7 @@ help:
     link: /help/guides/troubleshooting/
     fixProblems: true
   - title: Guides
-    description: Extensive guides written for you
+    description: How to use the app
     link: /help/guides/getting-started/
     guides: true
     extensions: true
@@ -30,13 +30,21 @@ help:
     description: Primary communication platform
     linkExt: https://discord.gg/tachiyomi
     discord: true
+  - title: Twitter
+    description: Official Twitter account
+    linkExt: https://twitter.com/tachiyomiorg
+    twitter: true
+  - title: Facebook
+    description: Official Facebook account
+    linkExt: https://facebook.com/tachiyomiorg
+    facebook: true
   - title: Reddit
-    description: Community forums
+    description: Official subreddit
     linkExt: https://reddit.com/r/Tachiyomi
     reddit: true
   - title: GitHub
-    description: Repository for the app
-    linkExt: https://github.com/tachiyomiorg/tachiyomi
+    description: Code organization
+    linkExt: https://github.com/tachiyomiorg
     github: true
 ---
 
