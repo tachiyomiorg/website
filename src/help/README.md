@@ -26,26 +26,6 @@ help:
     description: Help contribute to the app
     link: /help/contribution/
     contribution: true
-  - title: Discord
-    description: Primary communication platform
-    linkExt: https://discord.gg/tachiyomi
-    discord: true
-  - title: Twitter
-    description: Official Twitter account
-    linkExt: https://twitter.com/tachiyomiorg
-    twitter: true
-  - title: Facebook
-    description: Official Facebook account
-    linkExt: https://facebook.com/tachiyomiorg
-    facebook: true
-  - title: Reddit
-    description: Official subreddit
-    linkExt: https://reddit.com/r/Tachiyomi
-    reddit: true
-  - title: GitHub
-    description: Code organization
-    linkExt: https://github.com/tachiyomiorg
-    github: true
 ---
 
 # Help Center

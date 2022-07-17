@@ -59,6 +59,7 @@ export default {
 		</div>
 	</span>
 </template>
+
 <style lang="stylus">
 .filters-list
 	display flex
