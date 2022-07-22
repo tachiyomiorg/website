@@ -388,7 +388,7 @@ If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` wi
 ## Shizuku
 
 ### What is Shizuku?
-Tachiyomi can use Shizuku as an alternate way to install and update extensions. It accesses system APIs to install directly packages without user input. Shizuku requires setup with ADB or root privileges. Read more about it [here](https://shizuku.rikka.app/introduction/).
+Tachiyomi can use Shizuku as an alternate way to install and update extensions. It accesses system APIs to install packages directly without user input. Shizuku requires setup with ADB or root privileges. Read more about it [here](https://shizuku.rikka.app/introduction/).
 
 ### Do I need Shizuku?
 No, only use Shizuku if you want to avoid being prompted during extension installations.
