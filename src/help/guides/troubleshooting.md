@@ -45,7 +45,7 @@ Possible reasons include:
 - The site is down.
 
 Try the following solutions to fix this issue:
-- Enable <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **DNS over HTTPS**. 
+- Enable <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **DNS over HTTPS**.
 - Use a different internet connection (switch to Wi-Fi, a different Wi-Fi network, mobile data or a VPN).
 - Reboot your router.
 :::
@@ -154,18 +154,29 @@ You must solve the **Cloudflare** issue in **WebView**.
 1. Once done, press the X at the top left to return.
 :::
 
-### Bypassing Cloudflare looping 
+### Bypassing Cloudflare looping
 
 Some sources may have more advanced **Cloudflare** protection, that results in infinite loading in **WebView** when trying to bypass **Cloudflare** using the solution above. If you are facing this issue, try the following steps:
 
-::: guide 
+::: guide
 1. Go to <NavigationText item="browse"/> in the bottom navbar.
 1. Press the source you would like to access.
 1. Press the <NavigationText item="webview"/> icon. Refer to the previous picture.
 1. Press the <NavigationText item="overflow" /> icon and then press Open in Browser.
-1. Once done, press the X at the top left and return to the source. 
+1. Once done, press the X at the top left and return to the source.
 1. Press the <NavigationText item="webview"/> icon again.
 1. Complete the **CAPTCHA** if one is present.
+:::
+
+### Changing your user agent
+
+A user agent string helps websites identify information about the requester. While some sources have user agent strings set, most rely on the default value set in the app.
+
+::: guide
+1. Go to <NavigationText item="more"/> in the bottom navbar.
+1. Go to <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>.
+1. Change the **Default user agent string** setting to a different one. [This website](https://www.whatismybrowser.com/guides/the-latest-user-agent/) is a decent reference.
+1. Restart the app and try accessing the source again.
 :::
 
 ## Update WebView
@@ -201,7 +212,7 @@ If Split APK Installer outputs "INSTALL_FAILED_NO_MATCHING_ABIS", the APK you ha
 
 ## Getting Logcats and Crash Logs
 
-To dump crash logs following an app crash, go to <NavigationText item="more"/> → <NavigationText item="settings_advanced"/> → **Dump Crash Logs**
+To dump crash logs following an app crash, go to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **Dump crash logs**
 
 ::: guide-empty
 <figure class="centered">
