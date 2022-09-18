@@ -46,7 +46,7 @@
 		"@mr-hope/vuepress-plugin-sitemap": "1.30.0",
 		"core-js": "2.6.12",
 		"docsearch.js": "2.6.3",
-		"element-ui": "2.15.9",
+		"element-ui": "2.15.10",
 		"lodash.groupby": "4.6.0",
 		"lodash.sortby": "4.7.0",
 		"marked": "4.1.0",
