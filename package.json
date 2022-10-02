@@ -2,24 +2,21 @@
 	"name": "tachiyomi-website",
 	"version": "1.0.0",
 	"description": "Official website for the Tachiyomi app.",
+	"license": "MPL-2.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tachiyomiorg/website.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tachiyomiorg/website/issues"
+	},
+	"homepage": "https://github.com/tachiyomiorg/website#readme",
 	"scripts": {
 		"build": "npm run lint && vuepress build src",
 		"lint": "eslint --fix 'src/.vuepress/**/*.{js,vue}' --no-ignore",
 		"serve": "vuepress dev src"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/tachiyomiorg/website.git"
-	},
-	"keywords": [
-		"vuepress"
-	],
-	"license": "MPL-2.0",
-	"private": true,
-	"bugs": {
-		"url": "https://github.com/tachiyomiorg/website/issues"
-	},
-	"homepage": "https://github.com/tachiyomiorg/website#readme",
 	"devDependencies": {
 		"@vuepress/plugin-active-header-links": "1.9.7",
 		"@vuepress/plugin-back-to-top": "1.9.7",
@@ -30,7 +27,7 @@
 		"eslint-config-vuepress": "3.10.0",
 		"eslint-plugin-markdown": "3.0.0",
 		"eslint-plugin-promise": "6.0.1",
-		"eslint-plugin-vue": "9.4.0",
+		"eslint-plugin-vue": "9.5.1",
 		"node-sass": "7.0.3",
 		"prettier": "2.7.1",
 		"sass-loader": "10.3.1",
@@ -42,14 +39,14 @@
 		"webpack": "4.46.0"
 	},
 	"dependencies": {
-		"axios": "0.26.1",
 		"@mr-hope/vuepress-plugin-sitemap": "1.30.0",
+		"axios": "0.26.1",
 		"core-js": "2.6.12",
 		"docsearch.js": "2.6.3",
-		"element-ui": "2.15.9",
+		"element-ui": "2.15.10",
 		"lodash.groupby": "4.6.0",
 		"lodash.sortby": "4.7.0",
-		"marked": "4.1.0",
+		"marked": "4.1.1",
 		"material-design-icons-iconfont": "6.7.0",
 		"moment": "2.29.4",
 		"vue": "2.6.14",
