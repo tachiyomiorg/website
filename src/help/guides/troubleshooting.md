@@ -139,9 +139,9 @@ If the site is not reachable or has issues, all you can do is wait for the site 
 
 ## Solving Cloudflare issues
 
-**Note that WebView is not the same as using your browser.**
+### Loading the website in WebView
 
-You must solve the **Cloudflare** issue in **WebView**.
+Try to load the website in **WebView**. **Note that WebView is not the same as using your browser.**
 
 ::: guide How to open WebView
 1. Go to <NavigationText item="browse"/> in the bottom navbar.
@@ -150,22 +150,19 @@ You must solve the **Cloudflare** issue in **WebView**.
 	<figure class="centered">
 		<img class="zoomable" :src="$withBase('/assets/guides_webview-open.jpg')">
 	</figure>
-1. Complete the **CAPTCHA** if one is present.
+1. Complete a **CAPTCHA** if one is shown.
 1. Once done, press the X at the top left to return.
 :::
 
-### Bypassing Cloudflare looping
+You may need to try this multiple times. You can also try pressing the <NavigationText item="overflow" /> icon, opening the website in your regular browser, then checking for a CAPTCHA there.
 
-Some sources may have more advanced **Cloudflare** protection, that results in infinite loading in **WebView** when trying to bypass **Cloudflare** using the solution above. If you are facing this issue, try the following steps:
+Some sources may have more advanced **Cloudflare** protection. If you are facing issues, try the following options.
+
+### Clearing WebView data
 
 ::: guide
-1. Go to <NavigationText item="browse"/> in the bottom navbar.
-1. Press the source you would like to access.
-1. Press the <NavigationText item="webview"/> icon. Refer to the previous picture.
-1. Press the <NavigationText item="overflow" /> icon and then press Open in Browser.
-1. Once done, press the X at the top left and return to the source.
-1. Press the <NavigationText item="webview"/> icon again.
-1. Complete the **CAPTCHA** if one is present.
+1. In the <NavigationText item="webview"/> screen, try "Clear cookies" then "Refresh" from the <NavigationText item="overflow"/> menu.
+1.  Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>, then select "Clear WebView data".
 :::
 
 ### Changing your user agent
@@ -173,8 +170,7 @@ Some sources may have more advanced **Cloudflare** protection, that results in i
 A user agent string helps websites identify information about the requester. While some sources have user agent strings set, most rely on the default value set in the app.
 
 ::: guide
-1. Go to <NavigationText item="more"/> in the bottom navbar.
-1. Go to <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>.
+1. Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>.
 1. Change the **Default user agent string** setting to a different one. [This website](https://www.whatismybrowser.com/guides/the-latest-user-agent/) is a decent reference.
 1. Restart the app and try accessing the source again.
 :::
