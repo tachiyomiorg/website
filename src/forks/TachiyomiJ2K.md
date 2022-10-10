@@ -8,15 +8,15 @@ meta:
   - property: og:image
     content: /assets/forks_logo-j2k.png
   - name: theme-color
-    content: "#2e84bf"
+    content: "#0952AF"
   - name: msapplication-TileColor
-    content: "#2e84bf"
+    content: "#0952AF"
 sidebar: false
 ---
 
 # <img class="headerLogo" :src="$withBase('/assets/forks_logo-j2k.png')"> TachiyomiJ2K
 
-<ForkButtons forkName="TachiyomiJ2K" downloadForkLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" githubForkLink="https://github.com/Jays2Kings/tachiyomiJ2K" androidVersion="6.0"/>
+<ForkButtons forkName="TachiyomiJ2K" downloadForkLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" downloadForkStyle="background-color:#0952AF;color:#FFFFFF;" githubForkLink="https://github.com/Jays2Kings/tachiyomiJ2K" androidVersion="6.0"/>
 
 ## Introduction
 **TachiyomiJ2K** is maintained by **[Jays2Kings](https://github.com/Jays2Kings)**.
