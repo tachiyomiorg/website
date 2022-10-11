@@ -8,15 +8,15 @@ meta:
   - property: og:image
     content: /assets/forks_logo-neko.png
   - name: theme-color
-    content: "#38CA79"
+    content: "#FD6684"
   - name: msapplication-TileColor
-    content: "#38CA79"
+    content: "#FD6684"
 sidebar: false
 ---
 
 # <img class="headerLogo" :src="$withBase('/assets/forks_logo-neko.png')"> Neko
 
-<ForkButtons forkName="Neko" downloadForkLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" downloadForkStyle="background-color:#3DDA83;color:#000000;" githubForkLink="https://github.com/CarlosEsco/Neko" androidVersion="7.0"/>
+<ForkButtons forkName="Neko" downloadForkLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" downloadForkStyle="background-color:#FD6684;color:#000000;" githubForkLink="https://github.com/CarlosEsco/Neko" androidVersion="7.0"/>
 
 ## About
 This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [TachiyomiJ2K](/forks/TachiyomiJ2K). This contains features specific to **MangaDex** that those versions cannot offer. It also features almost every feature that **J2K** has except for extensions (aka other sources), custom covers, and local manga.
