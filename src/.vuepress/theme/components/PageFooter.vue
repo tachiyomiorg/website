@@ -82,7 +82,7 @@ export default {
 			white-space no-wrap
 		.icon.outbound
 			visibility hidden
-		&:hover
+		> :hover
 			.material-design-icon
 				color $accentColor
 				&.discord-icon
