@@ -20,18 +20,18 @@ export default {
 		},
 		faq: function () {
 			switch (this.pkgId) {
-				case 'all.mangadex':
-					return '/help/faq/#mangadex';
-				case 'en.mangakakalot':
-				case 'en.manganeloscom':
-				case 'en.mangabat':
-				case 'en.mangairo':
-					return '/help/faq/#mangakakalot-manganelo-mangabat-and-mangairo';
-				case 'all.mangapark':
-				case 'en.mangapark':
-					return '/help/faq/#mangapark';
+				case "all.mangadex":
+					return "/help/faq/#mangadex";
+				case "en.mangakakalot":
+				case "en.manganeloscom":
+				case "en.mangabat":
+				case "en.mangairo":
+					return "/help/faq/#mangakakalot-manganelo-mangabat-and-mangairo";
+				case "all.mangapark":
+				case "en.mangapark":
+					return "/help/faq/#mangapark";
 			}
-		}
+		},
 	},
 };
 </script>
