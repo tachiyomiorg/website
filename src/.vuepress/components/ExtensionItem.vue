@@ -18,6 +18,20 @@ export default {
 		apkUrl: function () {
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`;
 		},
+		faq: function () {
+			switch (this.pkgId) {
+				case 'all.mangadex':
+					return '/help/faq/#mangadex';
+				case 'en.mangakakalot':
+				case 'en.manganeloscom':
+				case 'en.mangabat':
+				case 'en.mangairo':
+					return '/help/faq/#mangakakalot-manganelo-mangabat-and-mangairo';
+				case 'all.mangapark':
+				case 'en.mangapark':
+					return '/help/faq/#mangapark';
+			}
+		}
 	},
 };
 </script>
@@ -34,7 +48,8 @@ export default {
 				{{ pkgId }}
 			</div>
 		</div>
-		<a :href="apkUrl" class="extension-download" title="Download APK" download>
+		<a v-if="faq" :href="faq" class="extension-button">FAQ</a>
+		<a :href="apkUrl" class="extension-button" title="Download APK" download>
 			<MaterialIcon icon="cloud_download" />
 			<span>Download</span>
 		</a>
@@ -65,7 +80,7 @@ export default {
 				color #6c757d
 				font-family monospace
 				font-size 0.9rem
-		.extension-download
+		.extension-button
 			margin-right 0.5em
 			padding-left 1rem
 			padding-right 1rem
@@ -88,14 +103,14 @@ export default {
 		@media (max-width 767px)
 			padding 0.4em 0em
 			.extension-text .lower,
-			.extension-download span
+			.extension-button span
 				display none
 	@media (max-width 767px)
 		.extension
 			border 1px solid $borderColor
 			border-radius 8px
 
-			.extension-download
+			.extension-button
 				background-color $accentColor
 	&:target
 		.extension
