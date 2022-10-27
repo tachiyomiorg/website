@@ -31,6 +31,7 @@ export default {
 				case "en.mangapark":
 					return "/help/faq/#mangapark";
 			}
+			return undefined;
 		},
 	},
 };
