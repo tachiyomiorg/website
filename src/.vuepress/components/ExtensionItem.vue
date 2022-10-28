@@ -19,19 +19,8 @@ export default {
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`;
 		},
 		faq: function () {
-			switch (this.pkgId) {
-				case "all.mangadex":
-					return "/help/faq/#mangadex";
-				case "en.mangakakalot":
-				case "en.manganeloscom":
-				case "en.mangabat":
-				case "en.mangairo":
-					return "/help/faq/#mangakakalot-manganelo-mangabat-and-mangairo";
-				case "all.mangapark":
-				case "en.mangapark":
-					return "/help/faq/#mangapark";
-			}
-			return undefined;
+			if (!this.item.hasReadme) return undefined;
+			return `https://github.com/tachiyomiorg/tachiyomi-extensions/blob/master/src/${this.pkgId.replace('.', '/')}`;
 		},
 	},
 };
