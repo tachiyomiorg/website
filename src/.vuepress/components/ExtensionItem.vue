@@ -19,8 +19,14 @@ export default {
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`;
 		},
 		faq: function () {
-			if (!this.item.hasReadme) return undefined;
-			return `https://github.com/tachiyomiorg/tachiyomi-extensions/blob/master/src/${this.pkgId.replace('.', '/')}`;
+			if (!this.item.hasReadme) {
+				return undefined;
+			}
+			const repoUrl = "https://github.com/tachiyomiorg/tachiyomi-extensions/blob/master";
+			if (this.item.pkgFactory) {
+				return `${repoUrl}/multisrc/src/main/java/eu/kanade/tachiyomi/multisrc/${this.item.pkgFactory}`;
+			}
+			return `${repoUrl}/src/${this.pkgId.replace(".", "/")}`;
 		},
 	},
 };
