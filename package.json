@@ -43,7 +43,7 @@
 		"axios": "0.26.1",
 		"core-js": "2.6.12",
 		"docsearch.js": "2.6.3",
-		"element-ui": "2.15.10",
+		"element-ui": "2.15.12",
 		"lodash.groupby": "4.6.0",
 		"lodash.sortby": "4.7.0",
 		"marked": "4.2.2",
