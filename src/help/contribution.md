@@ -12,13 +12,11 @@ Skilled at code? Know how to improve something or you generally want to support 
 
 ### Application
 The main application.
-- Current: [tachiyomiorg/tachiyomi](https://github.com/tachiyomiorg/tachiyomi) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi?style=social)
-- Rewrite project: [tachiyomiorg/tachiyomi-1.x](https://github.com/tachiyomiorg/tachiyomi-1.x) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi-1.x?style=social)
+- [tachiyomiorg/tachiyomi](https://github.com/tachiyomiorg/tachiyomi) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi?style=social)
 ***
 ### Extensions
 Used to read from different manga services.
-- Current: [tachiyomiorg/tachiyomi-extensions](https://github.com/tachiyomiorg/tachiyomi-extensions) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi-extensions?style=social)
-- Rewrite project: [tachiyomiorg/tachiyomi-extensions-1.x](https://github.com/tachiyomiorg/tachiyomi-extensions-1.x) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi-extensions-1.x?style=social)
+- [tachiyomiorg/tachiyomi-extensions](https://github.com/tachiyomiorg/tachiyomi-extensions) ![GitHub issues](https://img.shields.io/github/issues/tachiyomiorg/tachiyomi-extensions?style=social)
 ***
 ### Website
 The repository that hosts this very website you're reading on now.
