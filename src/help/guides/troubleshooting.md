@@ -139,6 +139,8 @@ If the site is not reachable or has issues, all you can do is wait for the site 
 
 ## Solving Cloudflare issues
 
+Cloudflare is an anti-bot mechanism. Some sources intentionally have a higher Cloudflare protection level to block apps like Tachiyomi. You can try the following suggestions to help resolve Cloudflare challenges. If they don't work, migrate to other sources or wait until they lower their protection.
+
 ### Loading the website in WebView
 
 Try to load the website in **WebView**. **Note that WebView is not the same as using your browser.**
