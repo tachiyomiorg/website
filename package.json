@@ -56,6 +56,6 @@
 		"vue-sweetalert2": "5.0.5",
 		"vuepress-plugin-dehydrate": "1.1.5",
 		"vuepress-plugin-robots": "1.0.1",
-		"vuex": "3.6.2"
+		"vuex": "4.1.0"
 	}
 }
