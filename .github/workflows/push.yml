@@ -3,7 +3,7 @@ name: Build and deploy website
 on:
   push:
     branches:
-      - master
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
