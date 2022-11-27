@@ -34,14 +34,13 @@ For a full list of features, visit the GitHub page.
 - **Automatic background based on manga page**
   - For those that like having a white background to match the content, this will automatically set the background to match for moments such as a flashback section of a manga.
 - **Reader seekbar overrides switch app gesture in Android 10, so no more accidents for that**
-- **[New material snackbar](https://raw.githubusercontent.com/Jays2Kings/tachiyomi/master/.github/readme-images/material%20snackbar.png)**
+- **New material snackbar**
   - Removing manga now auto deletes chapters and has an undo button in case you change your mind.
 - **Library specific enhancements**
   - Library Categories are stacked vertically
   - Per-category/Drag & drop sorting
   - Multi-source migration
-- **[Share sheets upgrade for Android 10](https://raw.githubusercontent.com/Jays2Kings/tachiyomi/master/.github/readme-images/share%20menu.png)**
-- **Batch Auto-Source Migration**
-  - *Taken from [TachiyomiEH](/forks/TachiyomiEH).*
+- **Share sheets upgrade for Android 10+**
+- **Batch Auto-Source Migration** from [TachiyomiEH](/forks/TachiyomiEH)
 - **Expanding manga thumbnails**
 - **A lot more Material Design 2 additions**
