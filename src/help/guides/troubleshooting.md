@@ -148,10 +148,7 @@ Try to load the website in **WebView**. **Note that WebView is not the same as u
 ::: guide How to open WebView
 1. Go to <NavigationText item="browse"/> in the bottom navbar.
 1. Press the source you would like to access.
-1. Press the <NavigationText item="webview"/> icon.
-	<figure class="centered">
-		<img class="zoomable" :src="$withBase('/assets/guides_webview-open.jpg')">
-	</figure>
+1. Press the <NavigationText item="webview"/> icon in the top toolbar.
 1. Complete a **CAPTCHA** if one is shown.
 1. Once done, press the X at the top left to return.
 :::
