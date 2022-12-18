@@ -41,7 +41,7 @@
 	"dependencies": {
 		"@mr-hope/vuepress-plugin-sitemap": "1.30.0",
 		"axios": "0.26.1",
-		"core-js": "2.6.12",
+		"core-js": "3.26.1",
 		"docsearch.js": "2.6.3",
 		"element-ui": "2.15.12",
 		"lodash.groupby": "4.6.0",
