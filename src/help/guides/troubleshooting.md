@@ -39,12 +39,14 @@ Possible reasons for **HTTP error 403**:
 Errors like **Unable to resolve host**, **Connection failed**, **Failed to connect to**, **timeout**, **connection reset** mean that something is preventing you from connecting to the source.
 
 Possible reasons include:
+
 - Your internet connection is not good enough to connect.
 - The app does not have access to the internet.
 - Your ISP has blocked the site.
 - The site is down.
 
 Try the following solutions to fix this issue:
+
 - Enable <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **DNS over HTTPS**.
 - Use a different internet connection (switch to Wi-Fi, a different Wi-Fi network, mobile data or a VPN).
 - Reboot your router.
@@ -91,23 +93,25 @@ If error-specific instructions didn't help or your error isn't on the list, go t
 :::
 
 ## Diagnosis
-* Verify your extensions are up to date (<NavigationText item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
-* Check if **Tachiyomi** has an update (<NavigationText item="more"/> → <NavigationText item="about"/> then tap **Check for updates**).
-* Manually refresh the manga you are having issues with by dragging down.
-* Check other manga from the source.
-* Verify that [WebView](#update-webview) is updated.
-* Try opening the manga in <NavigationText item="webview"/>. If there is a [Cloudflare](#solving-cloudflare-issues) protection, wait for it to load. If there is a [CAPTCHA](#solving-cloudflare-issues), solve it and see if it helped.
-* Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
-* Ask other users to try the action that gives you the error.
-* Check if the source is either down, or is having issues in a browser.
-* Press the retry button in the middle of your manga page if one exists.
-* Try the following at <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>
-  * **Clear Cache**
-  * **Clear Cookies**
-  * **Clear Database**
-  * **DNS over HTTPS**
-* If your downloads are getting stuck, try deleting the queue and trying again.
-* Force close **Tachiyomi** and reopen it.
+
+- Verify your extensions are up to date (<NavigationText item="browse"/> → **Extensions**, make sure no extensions have an **Update** button).
+
+- Check if **Tachiyomi** has an update (<NavigationText item="more"/> → <NavigationText item="about"/> then tap **Check for updates**).
+- Manually refresh the manga you are having issues with by dragging down.
+- Check other manga from the source.
+- Verify that [WebView](#update-webview) is updated.
+- Try opening the manga in <NavigationText item="webview"/>. If there is a [Cloudflare](#solving-cloudflare-issues) protection, wait for it to load. If there is a [CAPTCHA](#solving-cloudflare-issues), solve it and see if it helped.
+- Change your internet connection (*switch to Wi-Fi, mobile data or a VPN, use a "What's my IP" site to confirm your IP has changed*), then try again.
+- Ask other users to try the action that gives you the error.
+- Check if the source is either down, or is having issues in a browser.
+- Press the retry button in the middle of your manga page if one exists.
+- Try the following at <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>
+  - **Clear Cache**
+  - **Clear Cookies**
+  - **Clear Database**
+  - **DNS over HTTPS**
+- If your downloads are getting stuck, try deleting the queue and trying again.
+- Force close **Tachiyomi** and reopen it.
 
 ::: c-tip
 An extension update may fix your issue. Wait or check for an extension update if you have not already. There are no ETAs for updates.
@@ -119,18 +123,23 @@ If it is not just you, go to [everyone is having this problem](#everyone-is-havi
 If none of these solutions help, try asking in our [Discord Server](https://discord.gg/tachiyomi). Check **#status-updates** first to see if your issue is known. State your app version and the source, manga, and chapter with the problem if it is not listed.
 
 ### It only happens to me
-You may be getting a [Cloudflare](#solving-the-cloudflare-issue) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that **Tachiyomi** can do to solve it. Some of them (like [Cloudflare](#solving-cloudflare-issues)) have to be manually solved, and some are temporary (IP bans).
+
+You may be getting a [Cloudflare](#solving-cloudflare-issues) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like **Tachiyomi**. If that is the case, there is probably nothing that **Tachiyomi** can do to solve it. Some of them (like [Cloudflare](#solving-cloudflare-issues)) have to be manually solved, and some are temporary (IP bans).
 
 **Workarounds that can the lower chance of an issue happening again:**
-* Don't use downloads with the source.
-* Have less manga in your library from the source.
+
+- Don't use downloads with the source.
+
+- Have less manga in your library from the source.
 
 ::: c-warning
 The above are imprecise and fuzzy rules because each site has its non-public limits and triggers.
 :::
 
 ### Everyone is having this problem
+
 If the site is reachable and fully functional, there may be an issue with the extension or app.
+
 1. Have a look at open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues).
 1. It may have been fixed already but not released yet, so look at closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed) / [extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
 1. If you can't find the issue there, open a new one.
@@ -146,6 +155,7 @@ Cloudflare is an anti-bot mechanism. Some sources intentionally have a higher Cl
 Try to load the website in **WebView**. **Note that WebView is not the same as using your browser.**
 
 ::: guide How to open WebView
+
 1. Go to <NavigationText item="browse"/> in the bottom navbar.
 1. Press the source you would like to access.
 1. Press the <NavigationText item="webview"/> icon in the top toolbar.
@@ -160,8 +170,9 @@ Some sources may have more advanced **Cloudflare** protection. If you are facing
 ### Clearing WebView data
 
 ::: guide
+
 1. In the <NavigationText item="webview"/> screen, try "Clear cookies" then "Refresh" from the <NavigationText item="overflow"/> menu.
-1.  Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>, then select "Clear WebView data".
+1. Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>, then select "Clear WebView data".
 :::
 
 ### Changing your user agent
@@ -169,6 +180,7 @@ Some sources may have more advanced **Cloudflare** protection. If you are facing
 A user agent string helps websites identify information about the requester. While some sources have user agent strings set, most rely on the default value set in the app.
 
 ::: guide
+
 1. Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>.
 1. Change the **Default user agent string** setting to a different one. [This website](https://www.whatismybrowser.com/guides/the-latest-user-agent/) is a decent reference.
 1. Restart the app and try accessing the source again.
@@ -177,9 +189,11 @@ A user agent string helps websites identify information about the requester. Whi
 ## Update WebView
 
 To update **WebView**, you need to find what **WebView implementation** is used on your device. In general, default implementation depends on the Android version as follows:
-* Android 10.0 and up - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
-* Android from 7.0 to 9.0 - [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
-* Android 6.0.1 and below - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
+
+- Android 10.0 and up - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
+
+- Android from 7.0 to 9.0 - [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+- Android 6.0.1 and below - [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview).
 
 ::: c-tip
 Users on Android 7.0 and up can also see and change **WebView implementation** in [Developer Options](https://developer.android.com/studio/debug/dev-options).
@@ -211,7 +225,7 @@ To dump crash logs following an app crash, go to <NavigationText item="more"/> �
 
 ::: guide-empty
 <figure class="centered">
-	<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.png')">
+ <img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.png')">
 </figure>
 :::
 

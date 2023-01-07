@@ -7,9 +7,11 @@ sitemap:
 ---
 
 # Element-UI
+
 View more by pressing the headers for the specified item.
 
 ## [Button](https://element.eleme.io/#/en-US/component/button)
+
 <ElRow>
   <ElButton plain>Plain</ElButton>
   <ElButton type="primary" plain>Primary</ElButton>
@@ -31,6 +33,7 @@ View more by pressing the headers for the specified item.
 ```
 
 ## [Link](https://element.eleme.io/#/en-US/component/link)
+
 <div>
   <ElLink href="/sandbox/" target="_blank">default</ElLink>
   <ElLink href="/download/" type="primary">primary</ElLink>
@@ -52,6 +55,7 @@ View more by pressing the headers for the specified item.
 ```
 
 ## [Tag](https://element.eleme.io/#/en-US/component/tag)
+
 <ElTag>Neutral</ElTag>
 <ElTag type="success">Success</ElTag>
 <ElTag type="info">Info</ElTag>
@@ -67,6 +71,7 @@ View more by pressing the headers for the specified item.
 ```
 
 ## [Alert](https://element.eleme.io/#/en-US/component/alert)
+
 <ElAlert type="success" title="Success alert!" :closable="false"></ElAlert>
 <ElAlert type="info" title="Info alert!" :closable="false"></ElAlert>
 <ElAlert type="warning" title="Warning alert!" :closable="false"></ElAlert>
@@ -88,6 +93,7 @@ View more by pressing the headers for the specified item.
 ```
 
 ## [Tabs](https://element.eleme.io/#/en-US/component/tabs)
+
 :::: el-tabs
 ::: el-tab-pane label="Lorem ipsum"
 **Lorem ipsum** dolor sit amet, _consectetur_ adipiscing **elit**.
@@ -97,7 +103,7 @@ View more by pressing the headers for the specified item.
 :::
 ::::
 
-```
+```vuepress
 :::: el-tabs
 ::: el-tab-pane label="Lorem ipsum"
 **Lorem ipsum** dolor sit amet, _consectetur_ adipiscing **elit**.
@@ -109,6 +115,7 @@ View more by pressing the headers for the specified item.
 ```
 
 ## [Collapse](https://element.eleme.io/#/en-US/component/collapse)
+
 :::: el-collapse
 ::: el-collapse-item title="Lorem ipsum"
 **Lorem ipsum** dolor sit amet, _consectetur_ adipiscing **elit**.
@@ -118,7 +125,7 @@ View more by pressing the headers for the specified item.
 :::
 ::::
 
-```
+```vuepress
 :::: el-collapse
 ::: el-collapse-item title="Lorem ipsum"
 **Lorem ipsum** dolor sit amet, _consectetur_ adipiscing **elit**.
@@ -130,9 +137,11 @@ View more by pressing the headers for the specified item.
 ```
 
 ## [Tooltip](https://element.eleme.io/#/en-US/component/tooltip)
+
 ### Text
 
 #### Single-line
+
 <ElTooltip content="Tooltip content." placement="top"><span>Try hovering me!</span></ElTooltip>
 
 ```html
@@ -140,6 +149,7 @@ View more by pressing the headers for the specified item.
 ```
 
 #### Multi-line
+
 <ElTooltip placement="top"><template #content><div>Tooltip<br/>content.</div></template><span>Try hovering me too!</span></ElTooltip>
 
 ```html
@@ -149,6 +159,7 @@ View more by pressing the headers for the specified item.
 ### Button
 
 #### Single-line
+
 <ElTooltip content="Tooltip content." placement="top"><ElButton type="primary" plain>Hover me!</ElButton></ElTooltip>
 
 ```html
@@ -156,6 +167,7 @@ View more by pressing the headers for the specified item.
 ```
 
 #### Multi-line
+
 <ElTooltip placement="top"><template #content><div>Tooltip<br/>content.</div></template><ElButton type="info" plain>Hover me too!</ElButton></ElTooltip>
 
 ```html
@@ -165,6 +177,7 @@ View more by pressing the headers for the specified item.
 ## [Steps](https://element.eleme.io/#/en-US/component/steps)
 
 ### Step bar with icon
+
 :::: el-steps :active="1"
 ::: el-step title="Step 1" icon="el-icon-edit"
 :::
@@ -174,7 +187,7 @@ View more by pressing the headers for the specified item.
 :::
 ::::
 
-```
+```vuepress
 :::: el-steps :active="1"
 ::: el-step title="Step 1" icon="el-icon-edit"
 :::
@@ -186,6 +199,7 @@ View more by pressing the headers for the specified item.
 ```
 
 ### Step bar with description
+
 :::: el-steps :active="2" finish-status="success"
 ::: el-step title="Step 1" description="First you do this"
 :::
@@ -195,7 +209,7 @@ View more by pressing the headers for the specified item.
 :::
 ::::
 
-```
+```vuepress
 :::: el-steps :active="2" finish-status="success"
 ::: el-step title="Step 1" description="First you do this"
 :::

@@ -10,13 +10,14 @@ Follow the steps below to create local manga.
 
 1. Create a folder named `local` in the `/Tachiyomi/` folder.
     <ul>
-  		<li> The `/Tachiyomi/` folder is located in the root of phone's **internal storage** or **external SD card** and it's **not related** to the `eu.kanade.tachiyomi/` folder or the download location in the settings.</li>
-		<li> If you don't have a `/Tachiyomi/` folder located in the folders mentioned above, you can simply create it.</li>
+    <li> The `/Tachiyomi/` folder is located in the root of phone's **internal storage** or **external SD card** and it's **not related** to the `eu.kanade.tachiyomi/` folder or the download location in the settings.</li>
+
+  <li> If you don't have a `/Tachiyomi/` folder located in the folders mentioned above, you can simply create it.</li>
     </ul>
 1. Place correctly structured manga inside `/Tachiyomi/local/`.
-	<ul>
-  		<li>Optional: If adding manga in folders, add a file named `.nomedia` to the local folder so images do not show up in the gallery</li>
-	</ul>
+ <ul>
+    <li>Optional: If adding manga in folders, add a file named `.nomedia` to the local folder so images do not show up in the gallery</li>
+ </ul>
 1. You can then access the manga in <NavigationText item="browse"/> → **Local source**.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
@@ -39,57 +40,57 @@ Tachiyomi requires a specific folder structure for local manga to be correctly p
 
 ::: guide Example (Folder)
 <div class="side-by-side">
-	<ul class="file-tree">
-		<li>
-			/sdcard/Tachiyomi/local
-			<ul>
-				<li>
-					<span class="ft-icon ft-folder">Manga title</span>
-					<ul>
-						<li>
-							<span class="ft-icon ft-folder">ch1</span>
-							<ul>
-								<span class="ft-icon ft-image">images</span>
-							</ul>
-						</li>
-						<li>
-							<span class="ft-icon ft-folder">ch2</span>
-							<ul>
-								<span class="ft-icon ft-image">images</span>
-							</ul>
-						</li>
-						<span class="ft-icon ft-image">cover.jpg</span>
-					</ul>
-				</li>
-				<li>...</li>
-			</ul>
-		</li>
-	</ul>
-	<ul class="file-tree">
-		<li>
-			/storage/18F5-2C11/Tachiyomi/local
-			<ul>
-				<li>
-					<span class="ft-icon ft-folder">Manga title</span>
-					<ul>
-						<li>
-							<span class="ft-icon ft-folder">ch3</span>
-							<ul>
-								<span class="ft-icon ft-image">images</span>
-							</ul>
-						</li>
-						<li>
-							<span class="ft-icon ft-folder">ch4</span>
-							<ul>
-								<span class="ft-icon ft-image">images</span>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>...</li>
-			</ul>
-		</li>
-	</ul>
+ <ul class="file-tree">
+  <li>
+   /sdcard/Tachiyomi/local
+   <ul>
+    <li>
+     <span class="ft-icon ft-folder">Manga title</span>
+     <ul>
+      <li>
+       <span class="ft-icon ft-folder">ch1</span>
+       <ul>
+        <span class="ft-icon ft-image">images</span>
+       </ul>
+      </li>
+      <li>
+       <span class="ft-icon ft-folder">ch2</span>
+       <ul>
+        <span class="ft-icon ft-image">images</span>
+       </ul>
+      </li>
+      <span class="ft-icon ft-image">cover.jpg</span>
+     </ul>
+    </li>
+    <li>...</li>
+   </ul>
+  </li>
+ </ul>
+ <ul class="file-tree">
+  <li>
+   /storage/18F5-2C11/Tachiyomi/local
+   <ul>
+    <li>
+     <span class="ft-icon ft-folder">Manga title</span>
+     <ul>
+      <li>
+       <span class="ft-icon ft-folder">ch3</span>
+       <ul>
+        <span class="ft-icon ft-image">images</span>
+       </ul>
+      </li>
+      <li>
+       <span class="ft-icon ft-folder">ch4</span>
+       <ul>
+        <span class="ft-icon ft-image">images</span>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>...</li>
+   </ul>
+  </li>
+ </ul>
 </div>
 :::
 
@@ -98,49 +99,49 @@ The path to the folder with images must contain both the manga title and the cha
 
 ::: guide-empty
 <figure class="centered">
-	<h4>Example structure using the file manager</h4>
-	<p>Here, the manga name is <strong>test</strong> so the file structure is <code>/Tachiyomi/local/test/ch1/images</code>.</p>
-	<img class="zoomable" height="300" :src="$withBase('/assets/guides_local-manga.jpg')">
+ <h4>Example structure using the file manager</h4>
+ <p>Here, the manga name is <strong>test</strong> so the file structure is <code>/Tachiyomi/local/test/ch1/images</code>.</p>
+ <img class="zoomable" height="300" :src="$withBase('/assets/guides_local-manga.jpg')">
 </figure>
 :::
 
 ## Archive Files
+
 Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside is not. Any folders inside the archive file are ignored. You must place the archive inside the `Manga` folder where the name will become the `Chapter` title. All images inside the archive regardless of folder structure will become pages for that chapter.
 
 ::: guide Example (ZIP)
 <ul class="file-tree">
-		<li>
-			/sdcard/Tachiyomi/local
-			<ul>
-				<li>
-					<span class="ft-icon ft-folder">Manga title</span>
-					<ul>
-						<li>
-							<span class="ft-icon ft-zip">ch1.zip</span>
-							<ul>
-								<span class="ft-icon ft-image">images</span>
-							</ul>
-						</li>
-						<li>
-							<span class="ft-icon ft-zip">ch2.zip</span>
-							<ul>
-								<li>
-									<span class="ft-icon ft-folder">ch2</span>
-									<ul>
-										<span class="ft-icon ft-image">images</span>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<span class="ft-icon ft-image">cover.jpg</span>
-					</ul>
-				</li>
-				<li>...</li>
-			</ul>
-		</li>
+  <li>
+   /sdcard/Tachiyomi/local
+   <ul>
+    <li>
+     <span class="ft-icon ft-folder">Manga title</span>
+     <ul>
+      <li>
+       <span class="ft-icon ft-zip">ch1.zip</span>
+       <ul>
+        <span class="ft-icon ft-image">images</span>
+       </ul>
+      </li>
+      <li>
+       <span class="ft-icon ft-zip">ch2.zip</span>
+       <ul>
+        <li>
+         <span class="ft-icon ft-folder">ch2</span>
+         <ul>
+          <span class="ft-icon ft-image">images</span>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <span class="ft-icon ft-image">cover.jpg</span>
+     </ul>
+    </li>
+    <li>...</li>
+   </ul>
+  </li>
 </ul>
 :::
-
 
 ## Advanced
 
@@ -151,15 +152,16 @@ It is possible to add details to local manga. Like manga from other catalogs, yo
 To import details along with your local manga, you have to create a json file. It can be named anything but it must be placed within the **Manga** folder. A standard file name is `details.json`. This file will contain the extended details about the manga in the `JSON` format. You can see the example below on how to build the file. Once the file is there, the app should load the data when you first open the manga or you can pull down to refresh the details.
 
 You can copy the following example and edit the details as needed:
+
 ``` json
 {
-	"title": "Example Title",
-	"author": "Example Author",
-	"artist": "Example Artist",
-	"description": "Example Description",
-	"genre": ["genre 1", "genre 2", "etc"],
-	"status": "0",
-	"_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed", "4 = Publishing finished", "5 = Cancelled", "6 = On hiatus"]
+ "title": "Example Title",
+ "author": "Example Author",
+ "artist": "Example Artist",
+ "description": "Example Description",
+ "genre": ["genre 1", "genre 2", "etc"],
+ "status": "0",
+ "_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed", "4 = Publishing finished", "5 = Cancelled", "6 = On hiatus"]
 }
 ```
 

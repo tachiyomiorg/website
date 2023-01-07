@@ -9,6 +9,7 @@ lang: en-US
 Backups are inter-compatible between **Tachiyomi** versions, with a few exceptions listed under [forks information](#forks-information).
 
 Backups can hold the following information:
+
 1. **Titles**
 1. **Categories**
 1. **Read chapters**

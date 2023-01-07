@@ -42,6 +42,7 @@ You can also search for manga globally across all your sources by using <Navigat
 :::
 :::: guide Trouble finding a specific manga
 Check your spelling and try again, there's also the chance that your used source may not host the manga you're looking for.
+
 * Some sources use **Japanese romanized** titles instead of **English** ones.
   > For example **Boku no Hero Academia** instead of **My Hero Academia**.
 * Some sources use different spellings.

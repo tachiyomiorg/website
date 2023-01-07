@@ -15,6 +15,7 @@ You can even add your bookmarked manga in multiple categories and can easily con
 To create a category, follow the steps below.
 
 ::: guide
+
 1. Go to <NavigationText item="more"/> → <NavigationText item="categories"/>.
 1. Press the **+ Add**  button in the bottom right.
 1. Enter a name and press **OK**.
@@ -25,6 +26,7 @@ To create a category, follow the steps below.
 To edit a category follow the steps below.
 
 ::: guide
+
 1. Go to <NavigationText item="more"/> → <NavigationText item="categories"/>.
 1. Long press a category.
 1. Tap <NavigationText item="edit"/> on the top-right.
@@ -37,6 +39,7 @@ You can change the order of Categories, such as bringing a certain Category to t
 To do this, follow the steps below.
 
 ::: guide
+
 1. Go to <NavigationText item="more"/> → <NavigationText item="categories"/>.
 1. Drag the category to your prefered position using the <NavigationText item="reorder"/> icon.
 :::
@@ -46,6 +49,7 @@ To do this, follow the steps below.
 To delete a category, follow the steps below.
 
 ::: guide
+
 1. Go to <NavigationText item="more"/> → <NavigationText item="categories"/>.
 1. Long press a category.
 1. Tap <NavigationText item="delete"/> on the top-right.
@@ -60,10 +64,12 @@ To delete a category, follow the steps below.
 To add manga to a category, follow the steps below.
 
 ::: guide
+
 1. Long press the manga you want to add.
 2. Press the <NavigationText item="set_categories"/> button.
 3. Select which category or categories you want it in and press **OK**.
-	> You can also add multiple manga to a category by selecting them when you see the <NavigationText item="set_categories"/> button.
+
+ > You can also add multiple manga to a category by selecting them when you see the <NavigationText item="set_categories"/> button.
 :::
 
 ## Remove manga from category
@@ -75,8 +81,10 @@ To add manga to a category, follow the steps below.
 To remove manga from a category, follow the steps below.
 
 ::: guide
+
 1. Long press the manga that you want to remove.
 1. Press the <NavigationText item="set_categories"/> button.
 1. Deselect the category or categories you want to remove it from and press **OK**.
-	> You can also remove multiple manga from a category by selecting them when you see the <NavigationText item="set_categories"/> button.
+
+ > You can also remove multiple manga from a category by selecting them when you see the <NavigationText item="set_categories"/> button.
 :::

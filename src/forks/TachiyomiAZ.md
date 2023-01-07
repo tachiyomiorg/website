@@ -14,7 +14,18 @@ meta:
 sidebar: false
 ---
 <style lang="css">
-@font-face {font-family: "Comic Sans MS"; src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot"); src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff") format("woff"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS") format("svg"); }
+@font-face {
+font-family: "Comic Sans MS";
+src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
+src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix"
+format("embedded-opentype"),
+url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")
+format("woff2"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")
+format("woff"), url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")
+format("truetype"),
+url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")
+format("svg");
+}
 
 .seizureText {
   animation: rainbowTextAnim .5s linear infinite, upAndDownAnim 2s infinite;
@@ -42,8 +53,8 @@ sidebar: false
   padding-left: 100%;
 }
 .overflowContainer {
-	width:100%;
-	overflow:hidden;
+ width:100%;
+ overflow:hidden;
 }
 @keyframes customMarquee {
   0% {transform: translate(0, 0);}
@@ -82,7 +93,10 @@ sidebar: false
 
 # <img class="headerLogo" :src="$withBase('/assets/forks_logo-az.png')"> TachiyomiAZ
 
-<ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="https://github.com/az4521/TachiyomiAZ"/>
+<ForkButtons forkName="TachiyomiAZ"
+downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest"
+downloadForkStyle="background-color:#FFCC4D;color:#000000;"
+githubForkLink="https://github.com/az4521/TachiyomiAZ"/>
 <div class="overflowContainer">
   <div class="textLoop">
     <div class="textWiggle">
@@ -92,12 +106,19 @@ sidebar: false
 </div>
 
 ## Introduction
+
 **TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)**.
 
-This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**. It has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style. Anime support is coming "soon™"
+This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**. It has most
+features and fixes from **Tachiyomi**, as well as features from
+**[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu
+style of navigation, compared to the other forks that are moving to the new bottom
+navigation style. Anime support is coming "soon™"
 
 ## Features
+
 **Special Sources** (integrated plus added features)
+
 - E-Hentai/ExHentai
 - nHentai
 - Hitomi.la
@@ -106,31 +127,40 @@ This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**. It has most fea
 - Perv Eden
 
 **Delegated Sources** (Sources with added features if installed)
+
 - Puruin
 - Tsumino
 - HentaiCafe (Foolside)
 
 **From EH:**
+
 - Save Searches for use later
 - AutoScroll
 - Boost Page (force redownload page)
 - Page download thread customization
 - Predownload the whole chapter while reading (Optional)
-- Retry immediately instead of wating for the rest of the preloaded pages to finish downloading
-- Customize image cache size (how much space Tachiyomi has available to store future pages)
+- Retry immediately instead of wating for the rest of the preloaded pages to
+finish downloading
+- Customize image cache size (how much space Tachiyomi has available to store
+future pages)
 - Sync your favorites with your EHentai/ExHentai account
-- Batch import E-Hentai/ExHentai URLs (import single URLs by pasting them into the source search box)
+- Batch import E-Hentai/ExHentai URLs (import single URLs by pasting them into
+the source search box)
 - Automatic CAPTCHA solving
 
 **From EH and fixed/changed:**
-- Auto Migration (Originally from EH, it was then improved in J2k, and we have reintegrated the J2k version)
-- Merged Sources (Merge 2 or more versions of a manga to get chapters from all of them)
+
+- Auto Migration (Originally from EH, it was then improved in J2k, and we have
+reintegrated the J2k version)
+- Merged Sources (Merge 2 or more versions of a manga to get chapters from all
+of them)
 - App and notification lock with fingerprint and PIN unlock
 - Fixed Tsumino and Hitomi
 - Language filtering search options for nHentai
 - Random bugfixes
 
 **Original AZ Features:**
+
 - Maintained hamburger navigation
 - Grid view corner rounding configuration
 - Manga recommendations

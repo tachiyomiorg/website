@@ -14,7 +14,8 @@
 	"homepage": "https://github.com/tachiyomiorg/website#readme",
 	"scripts": {
 		"build": "npm run lint && vuepress build src",
-		"lint": "eslint --fix 'src/.vuepress/**/*.{js,vue}' --no-ignore",
+		"lint-js": "eslint --fix 'src/.vuepress/**/*.{js,vue}' --no-ignore",
+		"lint-md": "eslint --fix 'src/**/*.md' --no-ignore",
 		"serve": "vuepress dev src"
 	},
 	"devDependencies": {
@@ -26,6 +27,7 @@
 		"eslint": "7.32.0",
 		"eslint-config-vuepress": "3.10.0",
 		"eslint-plugin-markdown": "3.0.0",
+		"eslint-plugin-markdownlint": "^0.4.0",
 		"eslint-plugin-promise": "6.1.1",
 		"eslint-plugin-vue": "9.8.0",
 		"node-sass": "8.0.0",

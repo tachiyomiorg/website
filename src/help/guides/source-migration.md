@@ -27,7 +27,9 @@ Migrations with downloaded chapter(s) may leave the download behind. You will ne
 
 1. Tap into a **Manga** you would like to migrate.
 1. Go to <NavigationText item="overflow"/> and tap <NavigationText item="migrate" />.
-	> **Tachiyomi** will do a global search of all the sources you have installed and enabled.
+
+ > **Tachiyomi** will do a global search of all the sources you have installed and enabled.
+
 1. Select the **Source** that you'd like to migrate *to* by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
 ::::
@@ -41,7 +43,9 @@ Migrations with downloaded chapter(s) may leave the download behind. You will ne
 1. Press the <NavigationText item="migrate" /> tab at the top next to <NavigationText item="extensions" />.
 1. Select the **Source** that you'd like to migrate *from*.
 1. Tap the **Manga** you'd like to migrate *from* the **Source**.
-	> **Tachiyomi** will do a global search of all the sources you have installed and enabled.
+
+ > **Tachiyomi** will do a global search of all the sources you have installed and enabled.
+
 1. Select the **Source** you'd like to migrate *to* by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
 ::::
@@ -60,12 +64,13 @@ Pin sources in <NavigationText item="browse"/> using the <MaterialIcon icon="pus
 :::
 
 1. Tap into <NavigationText item="browse"/> on the bottom navbar.
-1. Press the **Migration** tab at the bottom next to **Extensions**. 
+1. Press the **Migration** tab at the bottom next to **Extensions**.
 1. Select the **Source** you'd like to migrate *from* and select **All**.
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/> → **Search manually**.
+
+ > If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/> → **Search manually**.
 ::::
 
 :::: guide Migrating a single manga
@@ -77,7 +82,8 @@ Pin sources in <NavigationText item="browse"/> using the <MaterialIcon icon="pus
 1. Tap <NavigationText item="overflow"/> → **Migrate manga**.
 1. Select the **Sources** you'd like to search and migrate *to* and hit the arrow at the bottom right.
 1. Wait until it is found and select <MaterialIcon icon="done"/> in the top right and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/> → **Search manually**
+
+ > If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/> → **Search manually**
 ::::
 
 ## Migrating on TachiyomiAZ
@@ -93,7 +99,8 @@ Pin sources in <NavigationText item="browse"/> using the <MaterialIcon icon="pus
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/> → **Search manually**.
+
+ > If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/> → **Search manually**.
 ::::
 
 ## Migrating on TachiyomiSY
@@ -110,5 +117,6 @@ Pin sources in <NavigationText item="browse"/> using the <MaterialIcon icon="pus
 1. Select the **Sources** that you'd like to migrate *to* and search by and tap the arrow labeled <NavigationText item="migrate" />. at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Manga** is found and hit the <MaterialIcon icon="done_all"/> at the top and you're done.
-	> If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/>  → **Search manually**.
+
+ > If a manga is not found, or is wrong you can manually search it by pressing <NavigationText item="overflow"/>  → **Search manually**.
 ::::
