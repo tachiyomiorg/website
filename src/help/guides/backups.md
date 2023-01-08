@@ -57,8 +57,8 @@ You can do this by going to <NavigationText item="more"/> → <NavigationText it
 
 This fork can only restore **MangaDex** entries in a backup. If there are entries from other sources that are a part of that backup then they will not transfer.
 
-### <img class="forkIconBefore" src="/assets/forks_logo-az.png" width="24" height="24" /> [TachiyomiAZ](/forks/TachiyomiAZ), <img class="forkIconBefore" src="/assets/forks_logo-sy.png" width="24" height="24" />  [TachiyomiSY](/forks/TachiyomiSY) and <img class="forkIconBefore" src="/assets/forks_logo-eh.png" width="24" height="24" />  [TachiyomiEH](/forks/TachiyomiEH)
+### <img class="forkIconBefore" src="/assets/forks_logo-az.png" width="24" height="24" /> [TachiyomiAZ](/forks/TachiyomiAZ) and <img class="forkIconBefore" src="/assets/forks_logo-sy.png" width="24" height="24" />  [TachiyomiSY](/forks/TachiyomiSY)
 
-These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for <NavigationText item="tachiyomiaz" /> and <NavigationText item="tachiyomieh" /> while <NavigationText item="tachiyomisy" /> only has **E-Hentai**.
+These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for <NavigationText item="tachiyomiaz" /> while <NavigationText item="tachiyomisy" /> only has **E-Hentai**.
 
 Titles from said extensions will not be restored when restoring a backup made by these forks to standard Tachiyomi. It is possible to restore titles to these forks, but it is not possible to back them up out of these forks.

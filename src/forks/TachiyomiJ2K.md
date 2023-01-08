@@ -41,6 +41,6 @@ For a full list of features, visit the GitHub page.
   - Per-category/Drag & drop sorting
   - Multi-source migration
 - **Share sheets upgrade for Android 10+**
-- **Batch Auto-Source Migration** from [TachiyomiEH](/forks/TachiyomiEH)
+- **Batch Auto-Source Migration** from [TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)
 - **Expanding manga thumbnails**
 - **A lot more Material Design 2 additions**

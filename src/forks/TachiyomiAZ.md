@@ -94,7 +94,7 @@ sidebar: false
 ## Introduction
 **TachiyomiAZ** is maintained by **[az4521](https://github.com/az4521)**.
 
-This fork is based off of **[TachiyomiEH](/forks/TachiyomiEH)**. It has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style. Anime support is coming "soon™"
+This fork is based off of **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)**. It has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the hamburger menu style of navigation, compared to the other forks that are moving to the new bottom navigation style. Anime support is coming "soon™"
 
 ## Features
 **Special Sources** (integrated plus added features)

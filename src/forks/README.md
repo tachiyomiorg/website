@@ -37,7 +37,7 @@ Maintained by [az4521](https://github.com/az4521)
 <br>Requires Android 5.0+
 :::
 
-This fork is based on **[TachiyomiEH](/forks/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the old hamburger menu style of navigation, compared to the other forks that have moved to the new bottom navigation style.
+This fork is based on **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](/forks/TachiyomiJ2K)**. It has decided to keep the old hamburger menu style of navigation, compared to the other forks that have moved to the new bottom navigation style.
 
 Some features include:
 * Built in sources of many popular hentai sources with additional features.

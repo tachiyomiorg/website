@@ -64,15 +64,14 @@ export default {
 				extensions: { text: "Extensions" },
 				migrate: { text: "Migrate" },
 				/* Misc */
-				install: { text: "INSTALL", class:"ext-installation" },
-				reorder: { text: "Reorder", icon:"reorder" },
-				overflow: { text: "Overflow", icon:"more_vert" },
+				install: { text: "INSTALL", class: "ext-installation" },
+				reorder: { text: "Reorder", icon: "reorder" },
+				overflow: { text: "Overflow", icon: "more_vert" },
 				/* Forks */
-				neko: { text: "Neko", internalClass:"nav-tachiyomi_neko"},
-				tachiyomij2k: { text: "TachiyomiJ2K", link:"/forks/Neko"},
-				tachiyomiaz: { text: "TachiyomiAZ", link:"/forks/TachiyomiAZ"},
-				tachiyomisy: { text: "TachiyomiSY", link:"/forks/TachiyomiSY"},
-				tachiyomieh: { text: "TachiyomiEH", link:"/forks/TachiyomiEH"},
+				neko: { text: "Neko", internalClass: "nav-tachiyomi_neko" },
+				tachiyomij2k: { text: "TachiyomiJ2K", link: "/forks/Neko" },
+				tachiyomiaz: { text: "TachiyomiAZ", link: "/forks/TachiyomiAZ" },
+				tachiyomisy: { text: "TachiyomiSY", link: "/forks/TachiyomiSY" },
 			}[this.item];
 		},
 	},
