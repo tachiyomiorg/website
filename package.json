@@ -18,10 +18,10 @@
 		"serve": "vuepress dev src"
 	},
 	"devDependencies": {
-		"@vuepress/plugin-active-header-links": "1.9.7",
-		"@vuepress/plugin-back-to-top": "1.9.7",
-		"@vuepress/plugin-google-analytics": "1.9.7",
-		"@vuepress/plugin-pwa": "1.9.7",
+		"@vuepress/plugin-active-header-links": "1.9.8",
+		"@vuepress/plugin-back-to-top": "1.9.8",
+		"@vuepress/plugin-google-analytics": "1.9.8",
+		"@vuepress/plugin-pwa": "1.9.8",
 		"babel-eslint": "10.1.0",
 		"eslint": "7.32.0",
 		"eslint-config-vuepress": "3.10.0",
@@ -31,7 +31,7 @@
 		"node-sass": "8.0.0",
 		"prettier": "2.8.2",
 		"sass-loader": "10.4.1",
-		"vuepress": "1.9.7",
+		"vuepress": "1.9.8",
 		"vuepress-plugin-clean-urls": "1.1.2",
 		"vuepress-plugin-container": "2.1.5",
 		"vuepress-plugin-element-ui": "1.1.0",
