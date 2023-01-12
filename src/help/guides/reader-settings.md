@@ -32,17 +32,17 @@ You can change viewer for different series by going to the series, opening a cha
 ## Double tap animation speed <Badge text="Normal" type="default-indicator" vertical="middle" />
 Double tap animation speed changes the speed in which the zoom happens when double tapping.
 
-## Show reading mode <Badge text="True" type="default-indicator" vertical="middle" />
+## Show reading mode <Badge text="On" type="default-indicator" vertical="middle" />
 Briefly show current mode when reader is opened
 
-## 32-bit color <Badge text="False" type="default-indicator" vertical="middle" />
+## 32-bit color <Badge text="Off" type="default-indicator" vertical="middle" />
 This setting decodes images in `ARGB888` format to allow the reader to display more colors.
 
 ::: c-warning
 This setting will only show up on smartphones running **Android 8.0** or higher.
 :::
 
-## Animate page transitions <Badge text="True" type="default-indicator" vertical="middle" />
+## Animate page transitions <Badge text="On" type="default-indicator" vertical="middle" />
 This setting applies a smooth transition when tapping to change page.
 
 ## Rotation <Badge text="Free" type="default-indicator" vertical="middle" />
@@ -81,25 +81,25 @@ This allows you to control what color the background should be in reader. Backgr
 </CarouselItem>
 </CarouselWrapper>
 
-## Fullscreen <Badge text="True" type="default-indicator" vertical="middle" />
+## Fullscreen <Badge text="On" type="default-indicator" vertical="middle" />
 This setting specifies if the notification and navigation bar are to be hidden while in the reader.
 
-## Show content in cutout area <Badge text="True" type="default-indicator" vertical="middle" />
+## Show content in cutout area <Badge text="On" type="default-indicator" vertical="middle" />
 Lets reader use all screen space even that around punch hole camera and camera notch 
 
-## Keep screen on <Badge text="True" type="default-indicator" vertical="middle" />
+## Keep screen on <Badge text="On" type="default-indicator" vertical="middle" />
 This setting determines if the device should be allowed to go to sleep while reading a manga.
 
-## Show page number <Badge text="True" type="default-indicator" vertical="middle" />
+## Show page number <Badge text="On" type="default-indicator" vertical="middle" />
 This settings shows the page number at the bottom of the page in current page/total page format.
 
-## Skip chapters marked read <Badge text="False" type="default-indicator" vertical="middle" />
+## Skip chapters marked read <Badge text="Off" type="default-indicator" vertical="middle" />
 This setting allows the chapters marked as read to be skipped during reading. This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
 
-## Skip filtered chapters <Badge text="True" type="default-indicator" vertical="middle" />
+## Skip filtered chapters <Badge text="On" type="default-indicator" vertical="middle" />
 This setting allows filtered chapters to be skipped during reading.
 
-## Always show chapter transition <Badge text="True" type="default-indicator" vertical="middle" />
+## Always show chapter transition <Badge text="On" type="default-indicator" vertical="middle" />
 Chapter transition is the area between chapters that shows the names of current and next chapters. When this option is disabled, the reader will hide this area only if the next chapter is loaded.
 
 ## Navigation layout
@@ -241,7 +241,7 @@ All examples are illustrations
 </CarouselItem>
 </CarouselWrapper>
 
-## Crop borders <Badge text="False" type="default-indicator" vertical="middle" />
+## Crop borders <Badge text="Off" type="default-indicator" vertical="middle" />
 Tries to remove excess white borders
 
 <CarouselWrapper name="carousel-crop-borders">
@@ -262,16 +262,16 @@ Tries to remove excess white borders
 ## Side padding <Badge text="Webtoon" type="tip" vertical="middle" /> <Badge text="None" type="default-indicator" vertical="middle" />
 Adds a percentage side padding to the sides of the page
 
-## Tapping <Badge text="True" type="default-indicator" vertical="middle" />
+## Tapping <Badge text="On" type="default-indicator" vertical="middle" />
 This setting enables switching pages by tapping the sides of the screen.
 
-## Long tap dialog <Badge text="True" type="default-indicator" vertical="middle" />
+## Long tap dialog <Badge text="On" type="default-indicator" vertical="middle" />
 If enabled, you can long tap on the screen to get the options to set the current page as cover, share it, or save it.
 
-## Volume keys <Badge text="False" type="default-indicator" vertical="middle" />
+## Volume keys <Badge text="Off" type="default-indicator" vertical="middle" />
 This setting allows you to flip pages using the volume keys, with the volume up button going to the previous page, and volume down going to next page.
 
-## Invert volume keys <Badge text="False" type="default-indicator" vertical="middle" />
+## Invert volume keys <Badge text="Off" type="default-indicator" vertical="middle" />
 
 Reverses the Volume keys function of volume up going to the next page and volume down going to the last page.
 
