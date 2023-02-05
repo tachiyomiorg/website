@@ -38,6 +38,7 @@ No. Any project that calls itself Tachiyomi that supports anime is **not affilia
 #### Can Tachiyomi sync between devices?
 No. But you can use Tachiyomi backup and restore features to save and load manga database and move manga content to another device.
 
+
 ### Library
 
 #### How can I see how many chapters I have downloaded or unread?
@@ -82,6 +83,7 @@ Refresh your covers by going to <NavigationText item="more"/> → <NavigationTex
 #### Why have some manga chapters been marked as unread when I have not touched them?
 The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s) as new chapters.
 
+
 ### Browse
 
 #### Why can I not see sources that I have installed?
@@ -107,6 +109,7 @@ Check if adding the site as an extension has [already been requested](https://gi
 If the scanlator or aggregator does not have an online manga reader, you can download the manga from their website and set up the series as a [local manga](/help/guides/local-manga/).
 :::
 
+
 ### Reader
 
 #### Why are some images not displayed?
@@ -117,6 +120,7 @@ The logic required to make a dual-page reader automatically work along with scan
 
 #### How can I make Tachiyomi turn pages with the volume rocker? Can I reverse the tapping direction? Can I change the tapping zones?
 Refer to the guides section of the site [here](/help/guides/reader-settings/#navigation-layout). Refer to [here](/help/guides/reader-settings/#volume-keys) if you want to use your volume rocker to navigate pages.
+
 
 ### Downloads
 
@@ -145,6 +149,7 @@ Read more about rooting your device [here](https://www.xda-developers.com/root/)
 
 #### Why can I see manga pages from my downloads in my device's photo gallery?
 Tachiyomi adds a `.nomedia` file to the Downloads folder by default to prevent this from happening, but sometimes it does not work, or something goes wrong. To fix this, all you need to do is create the file yourself. Name it `.nomedia` and place it in your downloads folder. If you have the same problem with your local manga, place the `.nomedia` file in the local folder.
+
 
 ### Local Manga
 
@@ -178,6 +183,7 @@ However, if you think you are on an outdated version, go to <NavigationText item
 #### Why are automatic updates not working?
 
 Certain Android skins like MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from your battery saver, go to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> and tap on **Disable battery optimization**. If that does not work, you can also visit [DontKillMyApp](https://dontkillmyapp.com/) to see what battery saving options your device has and how to disable or circumvent them.
+
 
 ### User Interface
 
@@ -224,6 +230,7 @@ You have Secure Screen on, disable it if you want to screenshot by going to <Nav
 #### How do I backup my library automatically? How do I move data from one phone to another?
 Learn how to use the backup and restore feature [here](/help/guides/backups/), and learn how to enable automatic backups [here](/help/guides/backups/#turning-on-auto-backups/)
 
+
 ## Extensions
 
 ### General
@@ -244,7 +251,6 @@ Open an issue on [GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/i
 ::: note
 You can find the list of extensions to download [here](/extensions/)
 :::
-
 
 #### How do I allow third-party installations?
 ::::: el-tabs
@@ -277,15 +283,8 @@ Extensions for **Tachiyomi** are technically installed the same as standard apps
 To uninstall an extension from within **Tachiyomi**, go to <NavigationText item="browse"/> → **Extensions** then tap **Uninstall** on the extension you want to remove.
 :::
 
+
 ### MangaDex
-
-#### Version 5 API Rewrite
-
-##### Why are all my manga saying "Manga ID format has changed, migrate from MangaDex to MangaDex to continue reading"?
-You need to [migrate](/help/guides/source-migration/) all your MangaDex manga from MangaDex to MangaDex as MangaDex has changed their manga ID system from IDs to UUIDs.
-
-##### Why can I not restore from a JSON backup?
-JSON backups are now unusable due to the ID change. You will have to manually re-add your manga.
 
 #### How can I block particular Scanlator Groups?
 
@@ -335,6 +334,7 @@ To solve this issue, follow the below steps.
 1. Choose an option like **Smart list** or **Prioritize source**.
 1. Go back to **MangaPark**'s chapter list and refresh it.
 
+
 ### Removed Extensions
 
 #### Why am I unable to download an extension that used to exist?
@@ -348,6 +348,7 @@ Extensions tend to be removed for a variety of reasons:
 - The site has been shut down.
 
 A list of extensions that have been removed is available [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), but it does not include sites that have gone offline.
+
 
 ### Split Extensions
 Extensions have been split due to the sheer number of extensions in a single extension, with Madara reaching over 200 extensions at one point, making it unreasonable for both devs and users to filter through extensions. For a deeper explanation of the issue, [this](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/4287) GitHub issue explains in more detail.
@@ -367,6 +368,7 @@ No, unless expressly stated, the internal ID of sources has not changed, so migr
 #### What if I uninstall the multisource extension before I install the singular extensions?
 See what extension IDs correspond to what extensions [here](https://pastebin.com/raw/QX2scdRT).
 
+
 ## Android 11+
 
 ### What changed in Android 11?
@@ -376,7 +378,6 @@ In Android 11, Google began forcing users to use [Scoped Storage](https://develo
 The introduction of Scoped Storage means that many storage-related functions that Tachiyomi uses may be much slower due to the inherent slowness of Scoped Storage, as outlined [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/). These include deleting chapters, library load times, accessing the folders outside the data folders to download to or read from, and more.
 
 ### Is there any way to improve performance?
-
 You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
 ```
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
@@ -384,6 +385,7 @@ adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface.
 
 If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
+
 
 ## Shizuku
 
