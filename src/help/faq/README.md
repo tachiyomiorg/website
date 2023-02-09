@@ -186,7 +186,7 @@ Certain Android skins like MIUI have very aggressive battery saving, which can k
 #### Why is the app laggy after updating?
 The UI toolkit used in Tachiyomi requires the app the be automatically optimized by the Android system over time. You should see improvements after a few days of usage.
 
-If you know how to use ADB, you can also run the following command to trigger the optimization manually. 
+If you know how to use ADB, you can also run the following command to trigger the optimization manually.
 If you are using Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding package name.
 
 ```
@@ -387,13 +387,11 @@ In Android 11, Google began forcing users to use [Scoped Storage](https://develo
 The introduction of Scoped Storage means that many storage-related functions that Tachiyomi uses may be much slower due to the inherent slowness of Scoped Storage, as outlined [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/). These include deleting chapters, library load times, accessing the folders outside the data folders to download to or read from, and more.
 
 ### Is there any way to improve performance?
-You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
+If you know how to use ADB, you can try the following command to enable the old general storage interface for the app. If you are using Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding package name.
+
 ```
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
-This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface.
-
-If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
 
 
 ## Shizuku
