@@ -184,8 +184,9 @@ However, if you think you are on an outdated version, go to <NavigationText item
 Certain Android skins like MIUI have very aggressive battery saving, which can kill the app in the background. To whitelist Tachiyomi from your battery saver, go to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> and tap on **Disable battery optimization**. If that does not work, you can also visit [DontKillMyApp](https://dontkillmyapp.com/) to see what battery saving options your device has and how to disable or circumvent them.
 
 #### Why is the app laggy after updating?
-The UI toolkit used in Tachiyomi requires the app the be automatically optimized by the Android system over time. You should see improvements after a few days of usage
-You can also try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
+The UI toolkit used in Tachiyomi requires the app the be automatically optimized by the Android system over time. You should see improvements after a few days of usage.
+
+You also might want to try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
 ```
 adb shell cmd pm force-dex-opt eu.kanade.tachiyomi
 ```
