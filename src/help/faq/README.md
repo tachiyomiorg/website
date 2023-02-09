@@ -186,13 +186,12 @@ Certain Android skins like MIUI have very aggressive battery saving, which can k
 #### Why is the app laggy after updating?
 The UI toolkit used in Tachiyomi requires the app the be automatically optimized by the Android system over time. You should see improvements after a few days of usage.
 
-You also might want to try the command below if you know how to use ADB, a guide on installing it is also outlined on the site [here](/help/guides/troubleshooting/#what-are-some-common-errors).
-```
-adb shell cmd pm force-dex-opt eu.kanade.tachiyomi
-```
-This command runs a dex2oat optimization manually which should make (any) app run smoother.
-
+If you know how to use ADB, you can also run the following command to trigger the optimization manually. 
 If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
+
+```
+adb shell cmd package compile -f -m speed-profile eu.kanade.tachiyomi
+```
 
 
 ### User Interface
