@@ -124,7 +124,7 @@ Some **DO**s and **DO NOT**s for [FAQ](../help/faq/README.md).
 - **DO** use code tags for error codes and file names:
 > Storage related error: `Attempt to invoke virtual method 'com.hippo.unifile...`
 
-> File name for the phone to ignore images from Tachiyomi: `.nomedia`
+> File name to ignore images from Tachiyomi: `.nomedia`
 
 ## Guide Style
 Many of the stuff previously mentioned generally applies when making guides too, some stuff unique to guide would probably be these:

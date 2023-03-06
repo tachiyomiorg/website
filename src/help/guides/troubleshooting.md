@@ -53,7 +53,7 @@ Try the following solutions to fix this issue:
 **java.security.cert.CertPathValidatorException** or **Chain validation failed** means there is a problem with validating source's sertificate.
 
 - Check if the site's certificate has expired. Use an online service for checking SSL certificates. If the certificate has expired, wait while the site owner to renew it.
-- Ensure that you have the right date and time set on your phone.
+- Ensure that you have the right date and time set on your device.
 - Try <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/> → **Clear cache** and **Clear cookies**.
 - Try using a different internet connection (switch to Wi-Fi, a different Wi-Fi network, mobile data or a VPN).
 - Try restarting the device.
@@ -64,7 +64,7 @@ Refer to [this](#unable-to-install-the-app-or-extensions) section.
 ::: el-collapse-item title="Attempt to invoke virtual method 'com.hippo.unifile..."
 The **Attempt to invoke virtual method' com.hippo.unifile...** error can be caused by various reasons, but they all have to do with storage.
 
-- Most commonly, it is caused by full storage. Check to see if your device or SD Card is full.
+- Most commonly, it is caused by full storage. Check to see if your device or SD card is full.
 - Check if **Tachiyomi** has access to the SD card. You can enable it in Android settings for app permissions.
 - If you're downloading and this error pops up, that means the app might not be able to access the folder you're trying to download to. This may be because the folder is corrupted or does not exist. Use a file manager to check that the folder(s) exist and every folder in the sequence is available and accessible.
 - The drive you're writing to is corrupted. Check using a file manager to see if it is accessible.
@@ -72,7 +72,7 @@ The **Attempt to invoke virtual method' com.hippo.unifile...** error can be caus
 ::: el-collapse-item title="Cannot Access SD Card"
 The **Cannot Access SD Card** error can sometimes be fixed by changing the location of your downloads to somewhere else and back to the SD card, then restarting the app.
 
-Having a file or folder name that is too long can also cause this issue. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
+Having a file or folder name that is too long can also cause this issue. Android's file manager does not support filenames longer than 255 characters. If you know the file or folder name that is the culprit, you can connect your SD card to your computer and shorten it. Otherwise, delete the Tachiyomi downloads folder off of the SD card.
 :::
 ::: el-collapse-item title="Storage issues with Android 11+"
 See [this](/help/faq/#android-11) section of the FAQ to learn how Scoped Storage affects Tachiyomi in Android 11+ and how to fix it.

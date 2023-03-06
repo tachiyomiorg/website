@@ -41,19 +41,23 @@ No. But you can use Tachiyomi backup and restore features to save and load manga
 
 ### Library
 
-#### How can I see how many chapters I have downloaded or unread?
-Enable badges by going to <NavigationText item="library"/> → <NavigationText item="filter"/> → **Display** tab and then checking **Download badges** or **Unread badges** at the bottom.
+#### How can I see how many chapters I have downloaded?
+Enable badges by going to <NavigationText item="library"/> → <NavigationText item="filter"/> → **Display** tab and then checking **Download badges**.
 
 #### Why does global update skip some entries?
 By default, the app does not check for updates if an entry:
 
-- Has unread chapters
-- Hasn't been started
-- Has "Completed" status
+* Has unread chapters
+* Hasn't been started
+* Has "Completed" status
 
-This helps avoid unnecessary heavy traffic to sources to help ensure that they stay available. If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
+This avoids unnecessary heavy traffic to sources. If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
 
-We recommend to **keep the defaults as they are** and read your unread chapters first.
+We recommend to **keep the defaults as they are** to help ensure that they continue to work. To get updates:
+
+* Mark unread chapters as read
+* Ensure that at least 1 chapter is marked read
+* If an entry is incorrectly marked as "Completed", report it [on GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) so that the source can be fixed
 
 If you don't want to see the skipped items notification, you can disable it at <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_general"/> → **Manage notifications** (Android 8+).
 
@@ -70,6 +74,7 @@ As mentioned above, it is **recommended to keep the defaults as they are**, but 
 #### How do I ignore duplicate chapters?
 Sometimes, you find a manga that is translated by more than one group. Because of this, you get multiple releases for each chapter in the manga. There are several ways to skip the duplicate chapters:
 
+* Enable **Skip duplicate chapters** under <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_reader"/> → **Reading**.
 * Bookmark or mark as read the unwanted chapters, then tap on <NavigationText item="filter"/> → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively. This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_reader"/> → **Reading**.
 * Migrate to another source that does not have duplicates. For more information on how to migrate a manga, see the [migration guide](/help/guides/source-migration/).
 
@@ -88,7 +93,7 @@ The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s)
 
 #### Why can I not see sources that I have installed?
 
-##### If it is an extension that is not the same language as your phone's primary language
+##### If it is an extension that is not the same language as your device's primary language
 Enable the language of the source by going to <NavigationText item="browse"/> → Sources tab → <NavigationText item="language"/> → Turn on the language of the source you would like to use.
 
 ##### If it is an NSFW extension
@@ -208,26 +213,18 @@ It is a weekly updated, beta version of the app. It contains features that may b
 If you are willing to use Tachiyomi Preview, be sure to [turn on auto-backup](/help/guides/backups/#turning-on-auto-backups) to prevent losing your library due to potential bugs or crashes.
 
 #### What is a fork?
-
 Forks are alternative versions of Tachiyomi with different features. Read more about them [here](/forks/).
 
 #### Why am I unable to uninstall Tachiyomi?
-
-On **Android 10**, a bug was introduced that prevented users from uninstalling the app if the device had a MicroSD card. To fix the issue, please remove the MicroSD card from the device first, then uninstall Tachiyomi.
-
-#### Can I revert from the Material Design 2 update of Tachiyomi?
-While there will never be a toggle between the two UI versions, you can continue to use the old UI version by using [TachiyomiAZ](/forks/TachiyomiAZ/).
+On **Android 10**, a bug was introduced that prevented users from uninstalling the app if the device has a SD card inserted. To fix the issue, please remove the SD card from the device first, then uninstall Tachiyomi.
 
 #### How do I pause reading history or go incognito?
-
 Enable Incognito Mode by going to <NavigationText item="more"/> → Incognito Mode.
 
 #### Can I make Tachiyomi only read my downloaded chapters? Why am I not able to disable downloaded only?
-
 Enable Download only by going to <NavigationText item="more"/> → Download only.
 
 #### What is DNS over HTTPS?
-
 DNS over HTTPS is an experimental way of providing, as the name implies, DNS resolution via HTTPS.
 It provides the advantage of not being vulnerable to Man-in-the-middle attacks (due to TLS encryption in HTTPS), preventing DNS spoofing. If you would like to learn more, go [here](https://www.cloudflare.com/learning/dns/dns-over-tls/). It allows some blocks to be circumvented without using a VPN.
 
@@ -236,7 +233,7 @@ You can enable this feature by going to <NavigationText item="more"/> → <Navig
 #### What should I do if I cannot screenshot within Tachiyomi?
 You have Secure Screen on, disable it if you want to screenshot by going to <NavigationText item="more"/> → <NavigationText item="settings"/> → <NavigationText item="settings_security"/> → Secure Screen.
 
-#### How do I backup my library automatically? How do I move data from one phone to another?
+#### How do I backup my library automatically? How do I move data from one device to another?
 Learn how to use the backup and restore feature [here](/help/guides/backups/), and learn how to enable automatic backups [here](/help/guides/backups/#turning-on-auto-backups/)
 
 
@@ -381,7 +378,7 @@ See what extension IDs correspond to what extensions [here](https://pastebin.com
 ## Android 11+
 
 ### What changed in Android 11?
-In Android 11, Google began forcing users to use [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage), which was introduced in Android 5.0 Lollipop, but Google only began forcing developers to use it on Android 11. Some OEMs seem to better implement Scoped Storage than others, with some users not running into any issues while users using other phone brands have multitudes of problems.
+In Android 11, Google began forcing users to use [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage), which was introduced in Android 5.0 Lollipop, but Google only began forcing developers to use it on Android 11. Some OEMs seem to better implement Scoped Storage than others, with some users not running into any issues while users using other device brands have multitudes of problems.
 
 ### What does it mean for Tachiyomi?
 The introduction of Scoped Storage means that many storage-related functions that Tachiyomi uses may be much slower due to the inherent slowness of Scoped Storage, as outlined [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/). These include deleting chapters, library load times, accessing the folders outside the data folders to download to or read from, and more.

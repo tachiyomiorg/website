@@ -39,7 +39,7 @@ Briefly show current mode when reader is opened
 This setting decodes images in `ARGB888` format to allow the reader to display more colors.
 
 ::: c-warning
-This setting will only show up on smartphones running **Android 8.0** or higher.
+This setting will only show up on devices running **Android 8.0** or higher.
 :::
 
 ## Animate page transitions <Badge text="On" type="default-indicator" vertical="middle" />
@@ -85,7 +85,7 @@ This allows you to control what color the background should be in reader. Backgr
 This setting specifies if the notification and navigation bar are to be hidden while in the reader.
 
 ## Show content in cutout area <Badge text="On" type="default-indicator" vertical="middle" />
-Lets reader use all screen space even that around punch hole camera and camera notch 
+Lets reader use all screen space even that around punch hole camera and camera notch
 
 ## Keep screen on <Badge text="On" type="default-indicator" vertical="middle" />
 This setting determines if the device should be allowed to go to sleep while reading a manga.
