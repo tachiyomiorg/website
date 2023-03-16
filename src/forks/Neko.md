@@ -2,7 +2,7 @@
 layout: ForkPage
 title: Neko
 metaTitle: Neko
-description: MangaDex specific fork of Tachiyomi and TachiyomiJ2K. This contains features specific to MangaDex that those versions cannot offer.
+description: MangaDex specific fork of Tachiyomi and TachiyomiJ2K. With a focus on MangaDex specific features.
 lang: en-US
 meta:
   - property: og:image
@@ -19,15 +19,7 @@ sidebar: false
 <ForkButtons forkName="Neko" downloadForkLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" downloadForkStyle="background-color:#FD6684;color:#000000;" githubForkLink="https://github.com/CarlosEsco/Neko" androidVersion="7.0"/>
 
 ## About
-This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [TachiyomiJ2K](/forks/TachiyomiJ2K). This contains features specific to **MangaDex** that those versions cannot offer. It also features almost every feature that **J2K** has except for extensions (aka other sources), custom covers, and local manga.
-
-## Mangadex specific features:
-- Supports native login to **MangaDex** and supports 2FA
-- MDList support
-- Similar Manga recommendations
-- Manually sync of Manga to and from **MangaDex** follows list
-- MDList tracked manga can be auto marked read in app after reading on the website
-- Ability to filter chapters and skip by scanlator group
+This is a [MangaDex](https://mangadex.org/) specific fork of **Tachiyomi** and [TachiyomiJ2K](/forks/TachiyomiJ2K). With a focus on **MangaDex** specific features.
 
 ## Credits
 - [Inorichi](https://github.com/inorichi/) for making the original **Tachiyomi**
