@@ -7,33 +7,36 @@ lang: en-US
 # Reader settings
 This section relates to the reading experience in the app and navigating the reader.
 
-## Default reading mode <Badge text="Right to left" type="default-indicator" vertical="middle" />
+## Default reading mode <Badge text="Paged (right to left)" type="default-indicator" vertical="middle" />
 This setting sets the reader's default direction when you open a manga.
 
-**Left to right**
+**Paged (left to right)**
 - Swipe left for next page. Swipe right for previous page.
 
-**Right to left**
+**Paged (right to left)**
 - Swipe right for next page. Swipe left for previous page. Default way of reading Manga.
 
-**Vertical**
+**Paged (vertical)**
 - Swipe up for next page. Swipe down for previous.
 
-**Webtoon**
-- Webtoon is like vertical but stitches all the images together into one stream.
+**Long Strip**
+- Long Strip is like vertical but stitches all the images together into one stream.
 
-**Continuous vertical**
-- Similar to webtoon but with a little space between pages.
+**Long strip with gaps**
+- Similar to long strip but with a little space between pages.
 
 ::: c-tip
-You can change viewer for different series by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**.
+You can change reading mode for different series by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different **Reading mode** in **For this series** section.
 :::
 
 ## Double tap animation speed <Badge text="Normal" type="default-indicator" vertical="middle" />
 Double tap animation speed changes the speed in which the zoom happens when double tapping.
 
 ## Show reading mode <Badge text="On" type="default-indicator" vertical="middle" />
-Briefly show current mode when reader is opened
+Briefly show current mode when reader is opened.
+
+## Show tap zones overlay <Badge text="Off" type="default-indicator" vertical="middle" />
+Briefly show overlay with current tap zones when reader is opened.
 
 ## 32-bit color <Badge text="Off" type="default-indicator" vertical="middle" />
 This setting decodes images in `ARGB888` format to allow the reader to display more colors.
@@ -49,13 +52,15 @@ This setting applies a smooth transition when tapping to change page.
 This allows you to control how the screen is going to be oriented.
 
 - **Free** lets you rotate the screen between portrait and landscape.
-- **Lock** will lock the orientation to whatever orientation you had before entering the reader.
-- **Force Portrait** forces the reader to be in portrait.
-- **Force Landscape** forces the reader to be in landscape.
+- **Portrait** lets you rotate the screen only between straight portrait and reverse portrait. On some devices it may behave the same as **Locked portrait**.
+- **Landscape** lets you rotate the screen only between two possible landscape rotations (left or right).
+- **Locked portrait** forces the reader to be in straight portrait rotation.
+- **Locked landscape** forces the reader to be only in one landscape rotation.
+- **Reverse portrait** forces the reader to be upside down.
 
 ## Background color <Badge text="Black" type="default-indicator" vertical="middle" />
-This allows you to control what color the background should be in reader. Background color can either be **Black**, **Gray** or
-**White**.
+This allows you to control what color the background should be in reader. Background color can either be **Black**, **Gray**,
+**White** or **Automatic**. **Automatic** background is determined based on the current page.
 
 <CarouselWrapper name="carousel-background-color">
 <CarouselItem>
@@ -85,13 +90,13 @@ This allows you to control what color the background should be in reader. Backgr
 This setting specifies if the notification and navigation bar are to be hidden while in the reader.
 
 ## Show content in cutout area <Badge text="On" type="default-indicator" vertical="middle" />
-Lets reader use all screen space even that around punch hole camera and camera notch
+Lets reader use all screen space even that around punch hole camera and camera notch.
 
 ## Keep screen on <Badge text="On" type="default-indicator" vertical="middle" />
 This setting determines if the device should be allowed to go to sleep while reading a manga.
 
 ## Show page number <Badge text="On" type="default-indicator" vertical="middle" />
-This settings shows the page number at the bottom of the page in current page/total page format.
+This setting shows the page number at the bottom of the page in **current page/total page** format.
 
 ## Skip chapters marked read <Badge text="Off" type="default-indicator" vertical="middle" />
 This setting allows the chapters marked as read to be skipped during reading. This setting can be useful if a series has multiple scanlation groups and you want to hide one's chapters during reading.
@@ -99,10 +104,13 @@ This setting allows the chapters marked as read to be skipped during reading. Th
 ## Skip filtered chapters <Badge text="On" type="default-indicator" vertical="middle" />
 This setting allows filtered chapters to be skipped during reading.
 
+## Skip duplicate chapters <Badge text="Off" type="default-indicator" vertical="middle" />
+This setting allows duplicate chapters to be skipped during reading. Duplicate chapters are chapters with the same number, for example when two scanlation groups translate the same chapter.
+
 ## Always show chapter transition <Badge text="On" type="default-indicator" vertical="middle" />
 Chapter transition is the area between chapters that shows the names of current and next chapters. When this option is disabled, the reader will hide this area only if the next chapter is loaded.
 
-## Navigation layout
+## Tap zones <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Long strip" type="tip" vertical="middle" />
 
 This changes how tapping behaves
 
@@ -111,20 +119,20 @@ This changes how tapping behaves
 <figure class="centered">
 	<img width="260" :src="$withBase('/assets/guides_nav-right-and-left-light.png')">
 	<h4>Right and Left</h4>
-	<p>This is the default for Pager</p>
+	<p>This is the default for Paged</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<img width="260" :src="$withBase('/assets/guides_nav-l-light.png')">
 	<h4>L shaped</h4>
-	<p>This is the default for Webtoon and Vertical</p>
+	<p>This is the default for Long Strip</p>
 </figure>
 </CarouselItem>
 <CarouselItem>
 <figure class="centered">
 	<img  width="260" :src="$withBase('/assets/guides_nav-kindlish-light.png')">
-	<h4>Kindlish</h4>
+	<h4>Kindl-ish</h4>
 </figure>
 </CarouselItem>
 <CarouselItem>
@@ -135,7 +143,7 @@ This changes how tapping behaves
 </CarouselItem>
 </CarouselWrapper>
 
-## Invert Tapping <Badge text="None" type="default-indicator" vertical="middle" />
+## Invert tap zones <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Long strip" type="tip" vertical="middle" /> <Badge text="None" type="default-indicator" vertical="middle" />
 
 Inverts the tapping position depending on which setting you choose.
 
@@ -153,10 +161,13 @@ Inverts the tapping position depending on which setting you choose.
 - Applies the two previous mentioned settings
 
 ::: c-warning
-This setting can only be used when Tapping is enabled.
+This setting can only be used when **Tap zones** are not disabled.
 :::
 
-## Scale type <Badge text="Fit screen" type="default-indicator" vertical="middle" />
+## Pan wide images when tapping <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="On" type="default-indicator" vertical="middle" />
+When this option is enabled and the reader is zoomed in on a wide image, tapping or using volume buttons will scroll the current page instead of going to the next/previous page.
+
+## Scale type <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Fit screen" type="default-indicator" vertical="middle" />
 Scale type lets you choose how the page fits in your screen.
 
 ### Examples
@@ -205,13 +216,11 @@ All examples are illustrations and may not reflect what actually happens.
 </CarouselItem>
 </CarouselWrapper>
 
-::: c-tip
-You can change scale type when reading a chapter. Tap the middle of the screen, press the gear icon at the top, select a different scale type under **Scale type**. This will change Scale type for all series.
-:::
+## Zoom landscape image <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="On" type="default-indicator" vertical="middle" />
+Automatically zoom in wide images (e.g. double paged spreads in manga).
 
-## Zoom start position <Badge text="Automatic" type="default-indicator" vertical="middle" />
-Depending on your scale type the page can be wider than the screen, and with zoom start position you can choose where
-Tachiyomi will start on that zoomed in page.
+## Zoom start position <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Automatic" type="default-indicator" vertical="middle" />
+Depending on your scale type the page can be wider than the screen, and with zoom start position you can choose where Tachiyomi will start on that zoomed in page.
 
 ### Examples
 
@@ -241,8 +250,8 @@ All examples are illustrations
 </CarouselItem>
 </CarouselWrapper>
 
-## Crop borders <Badge text="Off" type="default-indicator" vertical="middle" />
-Tries to remove excess white borders
+## Crop borders <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Long strip" type="tip" vertical="middle" /> <Badge text="Off" type="default-indicator" vertical="middle" />
+Tries to remove excess borders
 
 <CarouselWrapper name="carousel-crop-borders">
 <CarouselItem>
@@ -259,14 +268,34 @@ Tries to remove excess white borders
 </CarouselItem>
 </CarouselWrapper>
 
-## Side padding <Badge text="Webtoon" type="tip" vertical="middle" /> <Badge text="None" type="default-indicator" vertical="middle" />
+## Split wide pages <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Long strip" type="tip" vertical="middle" /> <Badge text="Off" type="default-indicator" vertical="middle" />
+Turns wide images (e.g. double paged spreads in manga) into two separate pages.
+
+## Invert split page placement <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Long strip" type="tip" vertical="middle" /> <Badge text="Off" type="default-indicator" vertical="middle" />
+Enable this option if the placement of the split wide pages don't match reading direction.
+
+::: c-warning
+This setting can only be used when **Split wide pages** setting is enabled.
+:::
+
+## Rotate wide pages to fit <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Off" type="default-indicator" vertical="middle" />
+This setting can make wide images to take more of the screen area by rotating them.
+
+## Flip orientation of rotated wide pages <Badge text="Paged" type="tip" vertical="middle" /> <Badge text="Off" type="default-indicator" vertical="middle" />
+Rotates images in the opposite direction when `Rotate wide pages to fit` setting is enabled.
+
+::: c-warning
+This setting can only be used when **Rotate wide pages to fit** setting is enabled.
+:::
+
+## Side padding <Badge text="Long strip" type="tip" vertical="middle" /> <Badge text="None" type="default-indicator" vertical="middle" />
 Adds a percentage side padding to the sides of the page
 
-## Tapping <Badge text="On" type="default-indicator" vertical="middle" />
-This setting enables switching pages by tapping the sides of the screen.
+## Sensitivity for hiding menu on scroll <Badge text="Long strip" type="tip" vertical="middle" /> <Badge text="Low" type="default-indicator" vertical="middle" />
+Highest sensitivity means that the reader menu will be hidden after a small scroll, while the lowest sensitivity means that you will need to make a big scroll before the menu will be closed automatically.
 
-## Long tap dialog <Badge text="On" type="default-indicator" vertical="middle" />
-If enabled, you can long tap on the screen to get the options to set the current page as cover, share it, or save it.
+## Split tall images (BETA) <Badge text="Long strip" type="tip" vertical="middle" /> <Badge text="On" type="default-indicator" vertical="middle" />
+Temporary splits tall images into multiple images while reading. Improves reader performance with tall images. Currently it's a beta feature. If you have issues with the reader, try disabling this setting.
 
 ## Volume keys <Badge text="Off" type="default-indicator" vertical="middle" />
 This setting allows you to flip pages using the volume keys, with the volume up button going to the previous page, and volume down going to next page.
@@ -276,5 +305,11 @@ This setting allows you to flip pages using the volume keys, with the volume up 
 Reverses the Volume keys function of volume up going to the next page and volume down going to the last page.
 
 ::: c-warning
-This setting can only be used when Volume keys setting is enabled.
+This setting can only be used when **Volume keys** setting is enabled.
 :::
+
+## Show on long tap <Badge text="On" type="default-indicator" vertical="middle" />
+If enabled, you can long tap on the screen to get the options to set the current page as cover, share it, or save it.
+
+## Save pages into separate folders <Badge text="Off" type="default-indicator" vertical="middle" />
+Creates separate folder for each title.
