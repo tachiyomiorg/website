@@ -40,7 +40,6 @@
 	"devDependencies": {
 		"@vuepress/plugin-active-header-links": "1.9.9",
 		"@vuepress/plugin-back-to-top": "1.9.9",
-		"@vuepress/plugin-google-analytics": "1.9.9",
 		"@vuepress/plugin-pwa": "1.9.9",
 		"babel-eslint": "10.1.0",
 		"eslint": "7.32.0",
@@ -55,6 +54,7 @@
 		"vuepress-plugin-clean-urls": "1.1.2",
 		"vuepress-plugin-container": "2.1.5",
 		"vuepress-plugin-element-ui": "1.1.0",
+		"vuepress-plugin-google-analytics-4": "0.1.1",
 		"vuepress-plugin-zooming": "1.1.8",
 		"webpack": "4.46.0"
 	}

@@ -53,7 +53,7 @@ By default, the app does not check for updates if an entry:
 
 This avoids unnecessary heavy traffic to sources. If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
 
-We recommend to **keep the defaults as they are** to help ensure that they continue to work. To get updates:
+We recommend to **keep the defaults as they are** to help ensure that sources continue to work. To get updates:
 
 * Mark unread chapters as read
 * Ensure that at least 1 chapter is marked read

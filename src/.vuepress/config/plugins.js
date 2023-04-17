@@ -25,9 +25,9 @@ module.exports = [
 	],
 	["@vuepress/back-to-top"],
 	[
-		"@vuepress/google-analytics",
+		"google-analytics-4",
 		{
-			ga: "UA-148212082-1",
+			gtag: "G-2CBXXM1Y86",
 		},
 	],
 	["vuepress-plugin-dehydrate"],
