@@ -9,7 +9,7 @@ lang: en-US
 
 **Tracking** helps you automatically send read manga chapters to supported trackers, so you can keep track of what and when you read it online.
 
-Tracking is currently supported on [MyAnimeList](https://myanimelist.net), [Anilist](https://anilist.co), [MangaUpdates](https://mangaupdates.com), [Shikimori](https://shikimori.one), [Bangumi](https://bangumi.tv/), and [Kitsu](https://kitsu.io)
+Tracking is currently supported on [MyAnimeList](https://myanimelist.net), [Anilist](https://anilist.co), [MangaUpdates](https://mangaupdates.com), [Shikimori](https://shikimori.me), [Bangumi](https://bangumi.tv/), and [Kitsu](https://kitsu.io)
 
 - Tracking must be done **manually** for every manga.
 - You must read the last page of a chapter to mark the chapter as read and track it.
