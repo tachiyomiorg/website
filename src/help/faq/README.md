@@ -29,14 +29,11 @@ Tachiyomi on F-Droid is not officially supported, so updates are not guaranteed.
 
 We have no intention to host our own F-Droid repo since Tachiyomi already manages updates by itself, making the usage of F-Droid redundant. For more detailed info, see [this GitHub comment](https://github.com/tachiyomiorg/tachiyomi/issues/6736#issuecomment-1059608058).
 
-#### Can Tachiyomi read light novels?
-No. Tachiyomi is an image parser, not a text parser.
-
-#### Can Tachiyomi stream anime?
-No. Any project that calls itself Tachiyomi that supports anime is **not affiliated with the main project**.
+#### Can Tachiyomi read light novels or stream anime?
+No, Tachiyomi is only focused on delivering a great manga experience.
 
 #### Can Tachiyomi sync between devices?
-No. But you can use Tachiyomi backup and restore features to save and load manga database and move manga content to another device.
+No, but you can use the backup and restore feature to save and load data between devices.
 
 
 ### Library
@@ -197,12 +194,6 @@ If you are using Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with
 ```
 adb shell cmd package compile -f -m speed-profile eu.kanade.tachiyomi
 ```
-
-
-### User Interface
-
-#### Can I change the app language?
-No. It was removed due to it causing small bugs everywhere in **Tachiyomi**. Android does not provide a standard way of selecting a language that's not your device-language. You can improve the quality of the translations in your language [here](https://hosted.weblate.org/projects/tachiyomi/) or change your system language.
 
 
 ### Miscellaneous

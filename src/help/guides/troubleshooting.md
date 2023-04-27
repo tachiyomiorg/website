@@ -11,8 +11,8 @@ This page is for when you encounter a problem with a source or the app.
 ### What are some common issues?
 
 :::: el-collapse
-::: el-collapse-item title="Java.lang Exception: Failed to bypass Cloudflare"
-**Java.lang.Exception: Failed to bypass Cloudflare** means that the source you selected has [Cloudflare](#solving-cloudflare-issues) protection on, refer to the [Cloudflare](#solving-cloudflare-issues) guide to fix it. If the solutions provided do not fix the issue, the source has likely raised the Cloudflare protection level high enough that Tachiyomi is not able to access the site.
+::: el-collapse-item title="Failed to bypass Cloudflare"
+**Failed to bypass Cloudflare** means that the source you selected has [Cloudflare](#solving-cloudflare-issues) protection on, refer to the [Cloudflare](#solving-cloudflare-issues) guide to fix it. If the solutions provided do not fix the issue, the source has likely raised the Cloudflare protection level high enough that Tachiyomi is not able to access the site.
 :::
 ::: el-collapse-item title="HTTP error 403"
 Possible reasons for **HTTP error 403**:
