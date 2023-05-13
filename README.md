@@ -18,7 +18,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - [Contributing guide](./CONTRIBUTING.md)
 - [Project style guide](https://tachiyomi.org/sandbox/style-guide/)
 
-If you got any questions, [join our Discord server](https://discord.gg/tachiyomi).
+If you have any questions, then [join our Discord server](https://discord.gg/tachiyomi).
 
 ## Repositories
 
