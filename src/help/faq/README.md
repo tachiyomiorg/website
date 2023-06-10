@@ -281,12 +281,12 @@ To uninstall an extension from within **Tachiyomi**, go to <NavigationText item=
 :::
 
 #### Why can't I install or update extensions from the app properly?
-MIUI users (i.e. Xiaomi devices or related brands like POCO) often have issues with this.
+MIUI users (i.e. Xiaomi devices or related brands like POCO) often have issues with this. You can try:
 
-1. Double check that your installer mode (in the app's Advanced settings) is set to "Legacy" if it isn't already.
-1. Switch **MIUI Optimizations** under **Developer Settings** to **OFF** when installing extensions or updates to extensions. Alternatively, manually download updates from [here](https://tachiyomi.org/extensions/).
+- Set your installer mode (in the app's Advanced settings) to "Legacy" if it isn't already.
+- Switch **MIUI Optimizations** under **Developer Settings** to **OFF** when installing or updating extensions.
 
-If the list of extensions doesn't load at all, try downloading them from [here](https://tachiyomi.org/extensions/). If that doesn't load either, try using a VPN as that likely means your network is blocking it.
+If it still doesn't work or the list of extensions doesn't load at all, manually download extensions from [here](/extensions/). If that doesn't load either, try using a VPN as that likely means your network is blocking it.
 
 
 ### MangaDex
