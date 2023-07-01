@@ -139,7 +139,7 @@ If the site is not reachable or has issues, all you can do is wait for the site 
 
 ## Solving Cloudflare issues
 
-Cloudflare is an anti-bot mechanism. Some sources intentionally have a higher Cloudflare protection level to block apps like Tachiyomi. You can try the following suggestions to help resolve Cloudflare challenges. If they don't work, migrate to other sources or wait until they lower their protection.
+Cloudflare is an anti-bot mechanism. Some sources intentionally have a higher Cloudflare protection level to block apps like Tachiyomi. You can try the following suggestions to help resolve Cloudflare challenges. **If none of these help, wait until they lower their protection or migrate to other sources.**
 
 ### Loading the website in WebView
 
@@ -157,16 +157,17 @@ You may need to try this multiple times. You can also try pressing the <Navigati
 
 Some sources may have more advanced **Cloudflare** protection. If you are facing issues, try the following options.
 
-### Clearing WebView data
+### Clearing cookies and WebView data
 
 ::: guide
-1. In the <NavigationText item="webview"/> screen, try "Clear cookies" then "Refresh" from the <NavigationText item="overflow"/> menu.
-1.  Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>, then select "Clear WebView data".
+1. Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>.
+1. Press "Clear cookies".
+1. Press "Clear WebView data".
 :::
 
 ### Changing your user agent
 
-A user agent string helps websites identify information about the requester. While some sources have user agent strings set, most rely on the default value set in the app.
+A user agent string helps websites identify information about the requester. This information may impact Cloudflare's bot detection. While some sources have user agent strings set, most rely on the default value set in the app.
 
 ::: guide
 1. Go to <NavigationText item="more"/> in the bottom navbar, then <NavigationText item="settings"/> → <NavigationText item="settings_advanced"/>.
@@ -186,7 +187,7 @@ Users on Android 7.0 and up can also see and change **WebView implementation** i
 :::
 
 ::: c-warning
-Non-standard implementations like Firefox can lead to **Tachiyomi** not working correctly or, in the worst-case, crash. We recommend to setting your **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
+Non-standard implementations like Firefox can lead to **Tachiyomi** not working correctly or, in the worst-case, crash. It is recommended to set your **WebView implementation** to [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
 :::
 
 ## Unable to install the app or extensions
