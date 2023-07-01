@@ -51,9 +51,9 @@
 		"eslint-config-vuepress": "3.10.0",
 		"eslint-plugin-markdown": "3.0.0",
 		"eslint-plugin-promise": "6.1.1",
-		"eslint-plugin-vue": "9.14.1",
+		"eslint-plugin-vue": "9.15.1",
 		"prettier": "2.8.8",
-		"sass": "1.62.1",
+		"sass": "1.63.6",
 		"sass-loader": "10.4.1",
 		"webpack": "4.46.0"
 	}
