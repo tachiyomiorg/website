@@ -46,7 +46,7 @@
 		"vuex": "3.6.2"
 	},
 	"devDependencies": {
-		"babel-eslint": "10.1.0",
+		"@babel/eslint-parser": "7.11.0",
 		"eslint": "7.32.0",
 		"eslint-config-vuepress": "3.10.0",
 		"eslint-plugin-markdown": "3.0.0",
