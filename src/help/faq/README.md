@@ -289,57 +289,6 @@ MIUI users (i.e. Xiaomi devices or related brands like POCO) often have issues w
 If it still doesn't work or the list of extensions doesn't load at all, manually download extensions from [here](/extensions/). If that doesn't load either, try using a VPN as that likely means your network is blocking it.
 
 
-### MangaDex
-
-#### How can I block particular Scanlator Groups?
-
-The **MangaDex** extension allows blocking **Scanlator Groups**. Chapters uploaded by a **Blocked Scanlator Group** will not show up in **Latest** or in **Manga feed** (chapters list). For now, you can only block Groups by entering their UUIDs manually.
-
-Follow the following steps to easily block a group from the Tachiyomi MangaDex extension:
-
-A. Finding the **UUIDs**:
-   - Go to [https://mangadex.org](https://mangadex.org) and <NavigationText item="search"/> for the Scanlation Group that you wish to block and view their Group Details
-   - Using the URL of this page, get the 16-digit alphanumeric string which will be the UUID for that scanlation group
-   - For Example:
-       * The Group *Tristan's test scans* has the URL
-	       - [https://mangadex.org/group/6410209a-0f39-4f51-a139-bc559ad61a4f/tristan-s-test-scans](https://mangadex.org/group/6410209a-0f39-4f51-a139-bc559ad61a4f/tristan-s-test-scans)
-           - Therefore, their UUID will be `6410209a-0f39-4f51-a139-bc559ad61a4f`
-       * Other Examples include:
-	       + Azuki Manga     | `5fed0576-8b94-4f9a-b6a7-08eecd69800d`
-           + Bilibili Comics | `06a9fecb-b608-4f19-b93c-7caab06b7f44`
-           + Comikey         | `8d8ecf83-8d42-4f8c-add8-60963f9f28d9`
-           + MangaPlus       | `4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb`
-
-B. Blocking a group using their UUID in Tachiyomi MangaDex extension `v1.2.150+`:
-  1. Go to <NavigationText item="browse"/> → <NavigationText item="extensions"/>.
-  1. Click on **MangaDex** extension and then <NavigationText item="settings"/> under your Language of choice.
-  1. Tap on the option **Block Groups by UUID** and enter the UUIDs.
-       - By Default, the following groups are blocked:
-	   ```
-	   Azuki Manga, Bilibili Comics, Comikey & MangaPlus
-	   ```
-	   - Which are entered as:
-	   ```
-	   5fed0576-8b94-4f9a-b6a7-08eecd69800d, 06a9fecb-b608-4f19-b93c-7caab06b7f44,
-	   8d8ecf83-8d42-4f8c-add8-60963f9f28d9, 4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb
-	   ```
-
-### Mangakakalot, Manganelo, Mangabat and Mangairo
-
-#### What do `Page list is empty` and `Source URL has changed` mean?
-The former **Mangabox** extensions have created new entries for many of the manga on their websites. The old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from the source to itself to get the new entry, or better yet, to a different source entirely to avoid similar errors in the future.
-
-### MangaPark
-
-#### How do I deal with duplicate chapters in MangaPark?
-To solve this issue, follow the below steps.
-
-1. Go to <NavigationText item="browse"/> → <NavigationText item="extensions"/>.
-1. Click on **MangaPark** extension and then **Chapter List Source**.
-1. Choose an option like **Smart list** or **Prioritize source**.
-1. Go back to **MangaPark**'s chapter list and refresh it.
-
-
 ### Removed Extensions
 
 #### Why am I unable to download an extension that used to exist?
