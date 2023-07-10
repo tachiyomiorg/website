@@ -230,148 +230,18 @@ Learn how to use the backup and restore feature [here](/help/guides/backups/), a
 
 ## Extensions
 
+### FAQ and Guides
+
+Extensions in Tachiyomi may have their own frequently asked questions (FAQ) and guides specific to each extension. These resources provide valuable information and instructions on how to use the extension effectively. If you have questions or need assistance with a particular extension, it is recommended to check the FAQ or guides provided by the extension developer.
+
+Please note that the FAQ and guides for extensions are maintained separately from the general Tachiyomi FAQ and guides. The extension-specific resources can provide insights into the unique features and functionalities of each extension, helping you make the most out of your manga reading experience.
+
+When using an extension, don't forget to explore the FAQ and guides associated with it to enhance your understanding and usage of the extension's capabilities.
+
 ### General
 
 #### What are some recommended extensions? What source is the best? What is the replacement for source X? Where to read manga Y?
 Tachiyomi does not endorse or recommend any manga source, and there is no best extension. Instead, we encourage users to spend some time trying out a few sources themselves and discover what sources work best for them. What works well for somebody else might not work well for you.
-
-<ElAlert type="info" title="Disclaimer" description="Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality." show-icon :closable="false"></ElAlert>
-
-#### What are scanlator sources?
-Manga that are not officially licensed are translated by scanlators, who either publish on their websites or **MangaDex**. This practice contrasts with official sources like **MANGA Plus By SHUEISHA** or **VIZ Shonen Jump**, which host officially licensed and translated manga.
-
-Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
-
-#### How do I request a new extension?
-Open an issue on [GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) if one does not already exist. Make sure it is not on the removed extensions list [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475) first.
-
-::: note
-You can find the list of extensions to download [here](/extensions/)
-:::
-
-#### How do I allow third-party installations?
-::::: el-tabs
-:::: el-tab-pane label="Android 8.0 and higher"
-::: videolink
-[<MaterialIcon icon="videocam"/> Click for Android 8.0 and newer video guide](/assets/faq_unknown-sources-a10.webm)
-:::
-When installing your first extension and you are prompted that your device *is not allowed* to install unknown apps from that source, follow the prompt to allow it.
-
-In *newer* versions of **Android**, you need to enable **Install unknown apps** on a per-app basis.
-::::
-:::: el-tab-pane label="Android 7.1 and lower"
-::: videolink
-[<MaterialIcon icon="videocam"/> Click for Android 7.1 and older video guide](/assets/faq_unknown-sources-a7.webm)
-:::
-When installing your first extension and you are prompted that your device *is not allowed* to install unknown apps from that source, follow the prompt to allow it.
-
-In *older* versions of **Android**, you only need to enable **Unknown sources** globally.
-::::
-:::::
-
-::: note
-If you need more help regarding this, read [this](https://www.theandroidsoul.com/how-to-allow-apps-installation-from-unknown-sources-on-android-9-pie/)
-:::
-
-#### How do I uninstall an extension?
-Extensions for **Tachiyomi** are technically installed the same as standard apps. Either you uninstall them through the app section on your device's settings or do it in **Tachiyomi**.
-
-::: guide
-To uninstall an extension from within **Tachiyomi**, go to <NavigationText item="browse"/> → **Extensions** then tap **Uninstall** on the extension you want to remove.
-:::
-
-#### Why can't I install or update extensions from the app properly?
-MIUI users (i.e. Xiaomi devices or related brands like POCO) often have issues with this. You can try:
-
-- Set your installer mode (in the app's Advanced settings) to "Legacy" if it isn't already.
-- Switch **MIUI Optimizations** under **Developer Settings** to **OFF** when installing or updating extensions.
-
-If it still doesn't work or the list of extensions doesn't load at all, manually download extensions from [here](/extensions/). If that doesn't load either, try using a VPN as that likely means your network is blocking it.
-
-
-### MangaDex
-
-#### How can I block particular Scanlator Groups?
-
-The **MangaDex** extension allows blocking **Scanlator Groups**. Chapters uploaded by a **Blocked Scanlator Group** will not show up in **Latest** or in **Manga feed** (chapters list). For now, you can only block Groups by entering their UUIDs manually.
-
-Follow the following steps to easily block a group from the Tachiyomi MangaDex extension:
-
-A. Finding the **UUIDs**:
-   - Go to [https://mangadex.org](https://mangadex.org) and <NavigationText item="search"/> for the Scanlation Group that you wish to block and view their Group Details
-   - Using the URL of this page, get the 16-digit alphanumeric string which will be the UUID for that scanlation group
-   - For Example:
-       * The Group *Tristan's test scans* has the URL
-	       - [https://mangadex.org/group/6410209a-0f39-4f51-a139-bc559ad61a4f/tristan-s-test-scans](https://mangadex.org/group/6410209a-0f39-4f51-a139-bc559ad61a4f/tristan-s-test-scans)
-           - Therefore, their UUID will be `6410209a-0f39-4f51-a139-bc559ad61a4f`
-       * Other Examples include:
-	       + Azuki Manga     | `5fed0576-8b94-4f9a-b6a7-08eecd69800d`
-           + Bilibili Comics | `06a9fecb-b608-4f19-b93c-7caab06b7f44`
-           + Comikey         | `8d8ecf83-8d42-4f8c-add8-60963f9f28d9`
-           + MangaPlus       | `4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb`
-
-B. Blocking a group using their UUID in Tachiyomi MangaDex extension `v1.2.150+`:
-  1. Go to <NavigationText item="browse"/> → <NavigationText item="extensions"/>.
-  1. Click on **MangaDex** extension and then <NavigationText item="settings"/> under your Language of choice.
-  1. Tap on the option **Block Groups by UUID** and enter the UUIDs.
-       - By Default, the following groups are blocked:
-	   ```
-	   Azuki Manga, Bilibili Comics, Comikey & MangaPlus
-	   ```
-	   - Which are entered as:
-	   ```
-	   5fed0576-8b94-4f9a-b6a7-08eecd69800d, 06a9fecb-b608-4f19-b93c-7caab06b7f44,
-	   8d8ecf83-8d42-4f8c-add8-60963f9f28d9, 4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb
-	   ```
-
-### Mangakakalot, Manganelo, Mangabat and Mangairo
-
-#### What do `Page list is empty` and `Source URL has changed` mean?
-The former **Mangabox** extensions have created new entries for many of the manga on their websites. The old entries are obsolete and will not work. To resolve this, [migrate](/help/guides/source-migration/) the manga from the source to itself to get the new entry, or better yet, to a different source entirely to avoid similar errors in the future.
-
-### MangaPark
-
-#### How do I deal with duplicate chapters in MangaPark?
-To solve this issue, follow the below steps.
-
-1. Go to <NavigationText item="browse"/> → <NavigationText item="extensions"/>.
-1. Click on **MangaPark** extension and then **Chapter List Source**.
-1. Choose an option like **Smart list** or **Prioritize source**.
-1. Go back to **MangaPark**'s chapter list and refresh it.
-
-
-### Removed Extensions
-
-#### Why am I unable to download an extension that used to exist?
-Extensions tend to be removed for a variety of reasons:
-
-- They become too much of a cat and mouse game to maintain due to the website owners changing the site frequently to deter scrapers.
-- The site scrambles images in more than one way, making it impossible to make every image unscrambleable.
-- A scanlator team requests the removal of their site from Tachiyomi.
-- The site is paywalled.
-- Require reverse engineering another app.
-- The site has been shut down.
-
-A list of extensions that have been removed is available [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), but it does not include sites that have gone offline.
-
-
-### Split Extensions
-Extensions have been split due to the sheer number of extensions in a single extension, with Madara reaching over 200 extensions at one point, making it unreasonable for both devs and users to filter through extensions. For a deeper explanation of the issue, [this](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/4287) GitHub issue explains in more detail.
-
-#### What extensions have been split?
-All of them have been split.
-
-#### Why does my multisource extension show up as obsolete?
-The multisource extension is obsolete because it has been split. The multisource extension has been removed from the repository. It is not actually obsolete.
-
-##### How do I move to a split extension?
-Install the extension that your manga is from, and then uninstall the multisource extension. If the manga shows the source as a bunch of numbers, force close the app. For known issues with split extensions, go to this [GitHub issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/5672).
-
-#### Do I need to migrate?
-No, unless expressly stated, the internal ID of sources has not changed, so migration is unnecessary.
-
-#### What if I uninstall the multisource extension before I install the singular extensions?
-See what extension IDs correspond to what extensions [here](https://pastebin.com/raw/QX2scdRT).
 
 
 ## Android 11+
