@@ -14,7 +14,7 @@
 	"homepage": "https://github.com/tachiyomiorg/website#readme",
 	"scripts": {
 		"build": "npm run lint && vuepress build src",
-		"lint": "eslint --fix 'src/.vuepress/**/*.{js,vue}' --no-ignore",
+		"lint": "eslint --ext 'src/.vuepress/**/**/*.{js,vue}' --fix --no-ignore",
 		"serve": "vuepress dev src"
 	},
 	"dependencies": {
@@ -46,15 +46,12 @@
 		"vuex": "3.6.2"
 	},
 	"devDependencies": {
-		"babel-eslint": "10.1.0",
-		"eslint": "7.32.0",
-		"eslint-config-vuepress": "3.10.0",
-		"eslint-plugin-markdown": "3.0.0",
-		"eslint-plugin-promise": "6.1.1",
-		"eslint-plugin-vue": "9.15.1",
-		"prettier": "2.8.8",
-		"sass": "1.63.6",
-		"sass-loader": "10.4.1",
-		"webpack": "4.46.0"
+		"@babel/eslint-parser": "^7.22.9",
+		"@vue/eslint-config-prettier": "^7.1.0",
+		"eslint": "^8.44.0",
+		"eslint-config-vuepress": "^4.3.0",
+		"eslint-plugin-markdown": "^3.0.0",
+		"eslint-plugin-prettier": "^5.0.0",
+		"prettier": "^3.0.0"
 	}
 }

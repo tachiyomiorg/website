@@ -4,12 +4,12 @@ module.exports = {
 		es6: true,
 	},
 
-	extends: ["vuepress", "prettier"],
-	plugins: ["vue", "prettier", "markdown"],
+	extends: ["prettier", "vuepress"],
+	plugins: ["prettier", "markdown"],
 
 	parserOptions: {
 		ecmaVersion: 2018,
-		parser: "babel-eslint",
+		parser: "@babel/eslint-parser",
 		sourceType: "module",
 	},
 
@@ -27,6 +27,6 @@ module.exports = {
 			},
 		],
 		curly: ["error", "all"],
-		"vue/multi-word-component-names": "off"
+		"vue/multi-word-component-names": "off",
 	},
 };
