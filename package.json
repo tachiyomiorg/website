@@ -51,7 +51,6 @@
 		"eslint": "^8.44.0",
 		"eslint-config-vuepress": "^4.3.0",
 		"eslint-plugin-markdown": "^3.0.0",
-		"eslint-plugin-prettier": "^5.0.0",
 		"prettier": "^3.0.0"
 	}
 }
