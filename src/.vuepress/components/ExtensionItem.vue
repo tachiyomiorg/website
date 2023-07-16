@@ -12,8 +12,7 @@ export default {
 			return "v" + this.item.version;
 		},
 		iconUrl: function () {
-			const pkgName = this.item.apk.substring(0, this.item.apk.lastIndexOf("."));
-			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${pkgName}.png`;
+			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${this.item.pkg}.png`;
 		},
 		apkUrl: function () {
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`;
