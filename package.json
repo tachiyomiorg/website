@@ -1,0 +1,23 @@
+{
+	"name": "tachiyomi-website",
+	"version": "3.0.0",
+	"description": "Official website for the Tachiyomi app.",
+	"license": "MPL-2.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tachiyomiorg/website.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tachiyomiorg/website/issues"
+	},
+  "devDependencies": {
+    "vitepress": "^1.0.0-beta.5",
+    "vue": "^3.3.4"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev src",
+    "docs:build": "vitepress build src",
+    "docs:preview": "vitepress preview src"
+  }
+}
