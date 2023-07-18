@@ -11,13 +11,16 @@
 	"bugs": {
 		"url": "https://github.com/tachiyomiorg/website/issues"
 	},
-  "devDependencies": {
-    "vitepress": "^1.0.0-beta.5",
-    "vue": "^3.3.4"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev src",
-    "docs:build": "vitepress build src",
-    "docs:preview": "vitepress preview src"
-  }
+	"scripts": {
+		"docs:dev": "vitepress dev src",
+		"docs:build": "vitepress build src",
+		"docs:preview": "vitepress preview src",
+		"format": "prettier --check --write .",
+		"format:fail": "prettier --check ."
+	},
+	"devDependencies": {
+		"prettier": "^3.0.0",
+		"vitepress": "^1.0.0-beta.5",
+		"vue": "^3.3.4"
+	}
 }
