@@ -25,7 +25,8 @@ Some features include:
 ## [TachiyomiAZ](tachiyomiaz)
 
 
-This fork is based on **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](tachiyomij2k)**. It has decided to keep the old hamburger menu style of navigation, compared to the other forks that have moved to the new bottom navigation style.
+This fork is based on **[TachiyomiEH](https://github.com/NerdNumber9/TachiyomiEH)**, it has most features and fixes from **Tachiyomi**, as well as features from **[TachiyomiJ2K](tachiyomij2k)**.
+It has decided to keep the old hamburger menu style of navigation, compared to the other forks that have moved to the new bottom navigation style.
 
 Some features include:
 * Built in sources of many popular hentai sources with additional features.
@@ -35,7 +36,9 @@ Some features include:
 ## [TachiyomiSY](tachiyomisy)
 
 
-This fork is based on [TachiyomiAZ](tachiyomiaz) and adds quite a lot of unique features. It has the same new UI as the latest Tachiyomi version. And at the same time, it also shares quite a lot of features from both **Tachiyomi** and [TachiyomiJ2K](tachiyomij2k).
+This fork is based on [TachiyomiAZ](tachiyomiaz) and adds quite a lot of unique features.
+It has the same new UI as the latest Tachiyomi version.
+And at the same time, it also shares quite a lot of features from both **Tachiyomi** and [TachiyomiJ2K](tachiyomij2k).
 
 Some features include:
 * Enhanced pages for certain sources

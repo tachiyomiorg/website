@@ -26,4 +26,3 @@ features:
     details: A configurable reader with multiple reading modes, custom color filters, and other settings.
     icon: <img src="https://tachiyomi.org/icons/logo.svg">
 ---
-

@@ -1,22 +1,17 @@
+---
+title: TachiyomiSY
+description: WIP
+---
+
 # TachiyomiSY
 
 This fork is based on TachiyomiAZ and adds quite a few unique features, it also has new features from the latest Tachiyomi version as well as from other forks such as TachiyomiJ2K.
 
 ### Download
 
-
-
-
 Requires **Android 6.0** or higher.
 
-
-
-
-
 Requires **Android 6.0** or higher.
-
-
-
 
 ### Features <a href="#features" id="features"></a>
 

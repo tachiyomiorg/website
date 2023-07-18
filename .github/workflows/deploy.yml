@@ -7,7 +7,7 @@ on:
             - v3-vitepress
 
 env:
-  VITE_BUILD: ${{ env.VITE_BUILD }}
+    VITE_BUILD: ${{ env.VITE_BUILD }}
 
 jobs:
     deploy:

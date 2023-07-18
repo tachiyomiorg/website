@@ -1,16 +1,19 @@
+---
+title: TachiyomiJ2K
+description: WIP
+---
+
 # TachiyomiJ2K
 
 **TachiyomiJ2K** is maintained by [**Jays2Kings**](https://github.com/Jays2Kings).
 
 This fork takes a new approach to the design of the base app along with several other enhancements.
 
-### Download
-
+## Download
 
 Requires **Android 6.0** or higher.
 
-
-### Features <a href="#features" id="features"></a>
+## Features <a href="#features" id="features"></a>
 
 For a full list of features, visit the GitHub page.
 
@@ -40,6 +43,6 @@ For a full list of features, visit the GitHub page.
 * **Expanding manga thumbnails**
 * **A lot more Material Design 2 additions**
 
-### Disclaimer <a href="#disclaimer" id="disclaimer"></a>
+## Disclaimer <a href="#disclaimer" id="disclaimer"></a>
 
 The developer of this application does not have any affiliation with the content providers available.

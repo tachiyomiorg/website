@@ -118,23 +118,9 @@ function sidebarGuide() {
 				{ text: "Reader settings", link: "/docs/guides/reader-settings" },
 			],
 		},
-		// {
-		//   text: "Migrations",
-		//   collapsed: false,
-		//   items: [
-		//     {
-		//       text: "Migration from VuePress",
-		//       link: "/guide/migration-from-vuepress"
-		//     },
-		//     {
-		//       text: "Migration from VitePress 0.x",
-		//       link: "/guide/migration-from-vitepress-0"
-		//     }
-		//   ]
-		// },
 		{
 			text: "Contribution",
-			link: "/docs/tachiyomi/contribution",
+			link: "/docs/contribution",
 		},
 		{
 			text: "Download",
