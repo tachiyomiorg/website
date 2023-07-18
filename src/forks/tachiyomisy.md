@@ -7,13 +7,13 @@ description: WIP
 
 This fork is based on TachiyomiAZ and adds quite a few unique features, it also has new features from the latest Tachiyomi version as well as from other forks such as TachiyomiJ2K.
 
-### Download
+## Download
 
 Requires **Android 6.0** or higher.
 
 Requires **Android 6.0** or higher.
 
-### Features <a href="#features" id="features"></a>
+## Features
 
 * Uses the new **Tachiyomi** UI
 * Enhanced pages for certain sources
@@ -32,11 +32,11 @@ Requires **Android 6.0** or higher.
 * Enhanced views for internal and delegated sources
 * Numerous features from TachiyomiAZ
 
-### Credits <a href="#credits" id="credits"></a>
+## Credits
 
 * [She11Shocked](https://github.com/she11sh0cked/) for the extra tracking, filter, recommendation features, and a ton more.
 * [az4521](https://github.com/az4521) for the base recommendations and **AZ**.
 
-### Disclaimer <a href="#disclaimer" id="disclaimer"></a>
+## Disclaimer
 
 The developer of this application does not have any affiliation with the content providers available.

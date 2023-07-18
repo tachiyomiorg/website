@@ -18,7 +18,7 @@ What works well for somebody else might not work well for you.
 
 Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality.
 
-<hr>
+---
 
 ### What are scanlator sources?
 
@@ -34,7 +34,7 @@ Make sure it is not on the removed extensions list [here](https://github.com/tac
 
 You can find the list of extensions to download [here](https://tachiyomi.org/extensions/)
 
-<hr>
+---
 
 ### How do I allow third-party installations?
 
@@ -48,7 +48,7 @@ In _older_ versions of **Android**, you only need to enable **Unknown sources** 
 
 If you need more help regarding this, read [this](https://www.theandroidsoul.com/how-to-allow-apps-installation-from-unknown-sources-on-android-9-pie/)
 
-<hr>
+---
 
 ### How do I uninstall an extension?
 
@@ -77,13 +77,13 @@ A list of extensions that have been removed is available [here](https://github.c
 Extensions have been split due to the sheer number of extensions in a single extension, with Madara reaching over 200 extensions at one point, making it unreasonable for both devs and users to filter through extensions.
 For a deeper explanation of the issue, [this](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/4287) GitHub issue explains in more detail.
 
-<hr>
+---
 
 ### What extensions have been split?
 
 All of them have been split.
 
-<hr>
+---
 
 ### Why does my multisource extension show up as obsolete?
 
@@ -91,7 +91,7 @@ The multisource extension is obsolete because it has been split.
 The multisource extension has been removed from the repository.
 It is not actually obsolete.
 
-<hr>
+---
 
 ### How do I move to a split extension?
 
@@ -99,13 +99,13 @@ Install the extension that your manga is from, and then uninstall the multisourc
 If the manga shows the source as a bunch of numbers, force close the app.
 For known issues with split extensions, go to this [GitHub issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/5672).
 
-<hr>
+---
 
 ### Do I need to migrate?
 
 No, unless expressly stated, the internal ID of sources has not changed, so migration is unnecessary.
 
-<hr>
+---
 
 ### What if I uninstall the multisource extension before I install the singular extensions?
 

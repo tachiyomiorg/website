@@ -17,7 +17,7 @@
 		"docs:preview": "vitepress preview src",
 		"format": "prettier --check --write .",
 		"format:fail": "prettier --check .",
-		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line"
+		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025"
 	},
 	"devDependencies": {
 		"markdownlint": "^0.29.0",

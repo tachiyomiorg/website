@@ -13,7 +13,7 @@ This fork takes a new approach to the design of the base app along with several 
 
 Requires **Android 6.0** or higher.
 
-## Features <a href="#features" id="features"></a>
+## Features
 
 For a full list of features, visit the GitHub page.
 
@@ -43,6 +43,6 @@ For a full list of features, visit the GitHub page.
 * **Expanding manga thumbnails**
 * **A lot more Material Design 2 additions**
 
-## Disclaimer <a href="#disclaimer" id="disclaimer"></a>
+## Disclaimer
 
 The developer of this application does not have any affiliation with the content providers available.

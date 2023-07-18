@@ -75,7 +75,4 @@ It is also recommended you lint your files before the PR.
 
 Thank you to all the people who have already contributed!
 
-<a href="https://github.com/tachiyomiorg/website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tachiyomiorg/website" />
-</a>
-
+[![List of Contributors](https://contrib.rocks/image?repo=tachiyomiorg/website 'List of Contributors')](https://github.com/tachiyomiorg/website/graphs/contributors)

@@ -13,7 +13,7 @@ Aside from network issues, sometimes Tachiyomi does not register the image as ex
 
 The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
 
-<hr>
+---
 
 ### How can I make Tachiyomi turn pages with the volume rocker?
 ### Can I reverse the tapping direction?

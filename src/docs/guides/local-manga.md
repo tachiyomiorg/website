@@ -9,10 +9,10 @@ If you like to download and organize your media, then you want to know how to ma
 
 ## Creating local manga
 
-1.  Create a folder named `local` in the `/Tachiyomi/` folder.
+1. Create a folder named `local` in the `/Tachiyomi/` folder.
 
     > The `/Tachiyomi/` folder is located in the root of phone's **internal storage** or **external SD card** and it's **not related** to the `eu.kanade.tachiyomi/` folder or the download location in the settings.
-1.  Place correctly structured manga inside `/Tachiyomi/local/`.
+1. Place correctly structured manga inside `/Tachiyomi/local/`.
 
     > If adding manga in folders it is recommended to add a file named `.nomedia` to the local folder so images do not show up in the gallery.
 1. You should now be able to access the manga in _explore_Browse → **Local source**.
@@ -24,7 +24,7 @@ But expect better performance with directories and `ZIP`/`CBZ`.
 
 Remember to give the app storage permissions on **Android 6** and newer.
 
-### Folder Structure <a href="#folder-structure" id="folder-structure"></a>
+### Folder Structure
 
 Tachiyomi requires a specific folder structure for local manga to be correctly processed.
 Local manga will be read from the `Tachiyomi/local` folder.
@@ -35,7 +35,7 @@ You can refer to the following example:
 
 #### Example (Folder)
 
-```
+```txt
 /sdcard/Tachiyomi/local
 └───[the series title]
     |   cover.jpg
@@ -53,7 +53,7 @@ You can refer to the following example:
         |   image_n
 ```
 
-```
+```txt
 /storage/18F5-2C11/Tachiyomi/local
 └───[the series title]
     |   cover.jpg
@@ -74,7 +74,7 @@ You can refer to the following example:
 Tachiyomi will see four chapters in a single manga.
 The path to the folder with images must contain both the manga title and the chapter name (as seen above).
 
-### Archive Files <a href="#archive-files" id="archive-files"></a>
+### Archive Files
 
 Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside is not.
 Any folders inside the archive file are ignored.
@@ -83,7 +83,7 @@ All images inside the archive regardless of folder structure will become pages f
 
 Example (ZIP)
 
-```
+```txt
 /sdcard/Tachiyomi/local
 └───[the series title]
     |   cover.jpg
@@ -101,9 +101,9 @@ Example (ZIP)
         |   image_n.jpg
 ```
 
-## Advanced <a href="#advanced" id="advanced"></a>
+## Advanced
 
-### Editing local manga details <a href="#editing-local-manga-details" id="editing-local-manga-details"></a>
+### Editing local manga details
 
 It is possible to add details to local manga.
 Like manga from other catalogs, you add information about the manga such as the author, artist, description, and genre tags.
@@ -132,7 +132,7 @@ You can copy the following example and edit the details as needed:
 If you don't want to manually create the `details.json` file, you can alternatively use [this tool.](https://tachi-local.netlify.app/?utm\_source=tachi-website\&utm\_medium=referral\&utm\_campaign=tachi-website)
 :::
 
-### Using a custom cover image <a href="#using-a-custom-cover-image" id="using-a-custom-cover-image"></a>
+### Using a custom cover image
 
 It is also possible to use a custom image as a cover for each local manga.
 

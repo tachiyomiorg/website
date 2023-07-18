@@ -13,7 +13,7 @@ It also features almost every feature that **J2K** has except for extensions (ak
 
 Requires **Android 7.0** or higher.
 
-## Mangadex specific features: <a href="#mangadex-specific-features" id="mangadex-specific-features"></a>
+## Mangadex specific features
 
 * Supports native login to **MangaDex** and supports 2FA
 * MDList support
@@ -22,11 +22,11 @@ Requires **Android 7.0** or higher.
 * MDList tracked manga can be auto-marked read in-app after reading on the website
 * Ability to filter chapters and skip by scanlator group
 
-## Credits <a href="#credits" id="credits"></a>
+## Credits
 
 * [Inorichi](https://github.com/inorichi/) for making the original **Tachiyomi**
 * [Jays2Kings](https://github.com/Jays2Kings/) for the wonderful new UI of **J2K**
 
-## Disclaimer <a href="#disclaimer" id="disclaimer"></a>
+## Disclaimer
 
 The developer of this application does not have any affiliation with the content providers available.

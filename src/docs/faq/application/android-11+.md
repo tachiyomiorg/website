@@ -19,7 +19,7 @@ These include deleting chapters, library load times, accessing the folders outsi
 
 You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site here.
 
-```
+```bash
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
 

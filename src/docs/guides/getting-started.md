@@ -5,12 +5,12 @@ description: Essential information to help you get set up with Tachiyomi.
 
 # Getting started
 
-## Installation <a href="#installation" id="installation"></a>
+## Installation
 
 You can download the latest version of **Tachiyomi** by going to our download page.
 When you've completed the download, open the APK file and proceed with installing it.
 
-## Installing an extension <a href="#installing-an-extension" id="installing-an-extension"></a>
+## Installing an extension
 
 Now that **Tachiyomi** is installed, open the app and navigate to Browse, and then switch to the **Extensions** tab.
 
@@ -18,7 +18,7 @@ Find the extension that you'd like to use then press the INSTALL button next to 
 
 You _might_ need to give **Tachiyomi** permission to _install unknown apps_, you can read how to do so here.
 
-## Adding manga to your library <a href="#adding-manga-to-your-library" id="adding-manga-to-your-library"></a>
+## Adding manga to your library
 
 Now that you've installed the desired extension, it will show in the **Sources** tab.
 This page contains all of your sources, which is obtained through extensions, some extensions contain _multiple_ sources.

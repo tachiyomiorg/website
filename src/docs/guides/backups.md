@@ -27,20 +27,20 @@ Restoring is done from the Backup and Restore settings.
 
 To restore a backup without issues be sure to:
 
-* Log into the Tracking services that you previously used.
+- Log into the Tracking services that you previously used.
 
-## How can I make my new install of Tachiyomi detect my old downloads? <a href="#how-can-i-make-my-new-install-of-tachiyomi-detect-my-old-downloads" id="how-can-i-make-my-new-install-of-tachiyomi-detect-my-old-downloads"></a>
+## How can I make my new install of Tachiyomi detect my old downloads?
 
 You can transfer downloaded manga chapters from one version of **Tachiyomi** to another.
 
-## How do I make Tachiyomi automatically backup? <a href="#turning-on-auto-backups" id="turning-on-auto-backups"></a>
+## How do I make Tachiyomi automatically backup?
 
 It is highly recommended you turn on auto backups, this will ensure you can recover if need be.
 
 You can do this by going to **More → Settings → Backup** and then setting a **backup frequency**.
 In the case of a catastrophic failure, at least you will be able to recover.
 
-## Forks information <a href="#forks-information" id="forks-information"></a>
+## Forks information
 
 This fork can only restore **MangaDex** entries in a backup.
 If there are entries from other sources that are a part of that backup then they will not transfer.

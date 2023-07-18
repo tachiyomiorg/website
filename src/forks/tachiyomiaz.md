@@ -14,7 +14,7 @@ Requires **Android 5.0** or higher.
 
 Requires **Android 5.0** or higher.
 
-## Features <a href="#features" id="features"></a>
+## Features
 
 ### Special Sources
 
@@ -35,7 +35,7 @@ Requires **Android 5.0** or higher.
 * Tsumino
 * HentaiCafe (Foolside)
 
-### From EH:
+### From EH
 
 * Save Searches for use later
 * AutoScroll
@@ -48,7 +48,7 @@ Requires **Android 5.0** or higher.
 * Batch import E-Hentai/ExHentai URLs (import single URLs by pasting them into the source search box)
 * Automatic CAPTCHA solving
 
-### From EH and fixed/changed:
+### From EH and fixed/changed
 
 * Auto Migration (Originally from EH, it was then improved in J2k, and we have reintegrated the J2k version)
 * Merged Sources (Merge 2 or more versions of a manga to get chapters from all of them)
@@ -59,12 +59,12 @@ Requires **Android 5.0** or higher.
 * Tri-state filter when filtering in library
 * Random bugfixes
 
-### Original AZ Features:
+### Original AZ Features
 
 * Maintained hamburger navigation
 * Grid view corner rounding configuration
 * Manga recommendations
 
-## Disclaimer <a href="#disclaimer" id="disclaimer"></a>
+## Disclaimer
 
 The developer of this application does not have any affiliation with the content providers available.
