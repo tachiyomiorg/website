@@ -1,40 +1,48 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, loadEnv } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-	lang: "en-US",
-	title: "Tachiyomi",
-	description: "Free and open source manga reader for Android",
+export default ({ mode }) => {
+	// Load app-level env vars to node-level env vars.
+	process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
-	lastUpdated: true,
-	cleanUrls: true,
+	return defineConfig({
+		lang: "en-US",
+		title: "Tachiyomi",
+		description: "Free and open source manga reader for Android",
 
-	head: [["meta", { name: "theme-color", content: "#4A74EA" }]],
+		lastUpdated: true,
+		cleanUrls: true,
 
-	themeConfig: {
-		// https://vitepress.dev/reference/default-theme-config
-		logo: "/logo.svg",
+		// Base directory, enabling override ability needed for GitHub Pages
+		base: process.env.VITE_BASE || "/",
 
-		nav: nav(),
+		head: [["meta", { name: "theme-color", content: "#4A74EA" }]],
 
-		sidebar: {
-			"/docs/": sidebarGuide(),
-			"/forks/": sidebarGuide(),
+		themeConfig: {
+			// https://vitepress.dev/reference/default-theme-config
+			logo: "/logo.svg",
+
+			nav: nav(),
+
+			sidebar: {
+				"/docs/": sidebarGuide(),
+				"/forks/": sidebarGuide(),
+			},
+
+			footer: {
+				message:
+					'<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Open-source Apache Licensed</a> | <a href="./privacy">Privacy policy</a>',
+				copyright: "Copyright © 2015 - 2023 Javier Tomás",
+			},
+
+			search: {
+				provider: "local",
+			},
+
+			socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
 		},
-
-		footer: {
-			message:
-				'<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Open-source Apache Licensed</a> | <a href="./privacy">Privacy policy</a>',
-			copyright: "Copyright © 2015 - 2023 Javier Tomás",
-		},
-
-		search: {
-			provider: "local",
-		},
-
-		socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
-	},
-});
+	});
+};
 
 function nav() {
 	return [

@@ -25,6 +25,8 @@ jobs:
             - run: npm ci
             - name: Build
               run: npm run docs:build
+              env:
+                VITE_BUILD: ${{ env.VITE_BUILD }}
             - uses: actions/configure-pages@v2
             - uses: actions/upload-pages-artifact@v1
               with:
