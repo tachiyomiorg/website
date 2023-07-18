@@ -22,5 +22,13 @@
 		"prettier": "^3.0.0",
 		"vitepress": "^1.0.0-beta.5",
 		"vue": "^3.3.4"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npm run lint-staged"
+	},
+	"lint-staged": {
+		"*": [
+			"prettier --write --ignore-unknown"
+		]
 	}
 }
