@@ -16,10 +16,14 @@
 		"docs:build": "vitepress build src",
 		"docs:preview": "vitepress preview src",
 		"format": "prettier --check --write .",
-		"format:fail": "prettier --check ."
+		"format:fail": "prettier --check .",
+		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line"
 	},
 	"devDependencies": {
+		"markdownlint": "^0.29.0",
+		"markdownlint-cli": "^0.35.0",
 		"prettier": "^3.0.0",
+		"sentences-per-line": "^0.2.1",
 		"vitepress": "^1.0.0-beta.5",
 		"vue": "^3.3.4"
 	},
