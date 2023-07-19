@@ -11,14 +11,14 @@
  * -------------------------------------------------------------------------- */
 
 :root .page-tachiyomij2k {
-    --vp-c-brand: #0952af;
+	--vp-c-brand: #0952af;
 	--vp-c-brand-light: #467dc3;
 	--vp-c-brand-lighter: #84a8d7;
 	--vp-c-brand-lightest: #c1d3eb;
 	--vp-c-brand-dark: #063d83;
 	--vp-c-brand-darker: #042957;
 	--vp-c-brand-darkest: #02142b;
-    --vp-c-brand-dimm: rgba(9, 82, 175, 0.08);
+	--vp-c-brand-dimm: rgba(9, 82, 175, 0.08);
 }
 
 /**

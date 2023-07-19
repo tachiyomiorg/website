@@ -11,14 +11,14 @@
  * -------------------------------------------------------------------------- */
 
 :root .page-tachiyomiaz {
-    --vp-c-brand: #ffcc4d;
+	--vp-c-brand: #ffcc4d;
 	--vp-c-brand-light: #ffd879;
 	--vp-c-brand-lighter: #ffe5a6;
 	--vp-c-brand-lightest: #fff2d2;
 	--vp-c-brand-dark: #bf9939;
 	--vp-c-brand-darker: #7f6626;
 	--vp-c-brand-darkest: #3f3313;
-    --vp-c-brand-dimm: rgba(255, 204, 77, 0.08);
+	--vp-c-brand-dimm: rgba(255, 204, 77, 0.08);
 }
 
 /**

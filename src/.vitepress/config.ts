@@ -21,9 +21,9 @@ export default ({ mode }) => {
 				"meta",
 				{
 					name: "theme-color",
-					content: "#818CF8"
-				}
-			]
+					content: "#818CF8",
+				},
+			],
 		],
 
 		themeConfig: {
@@ -38,8 +38,9 @@ export default ({ mode }) => {
 			},
 
 			footer: {
-				message: "<strong><a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>Open-source Apache Licensed</a></strong> | <strong><a href='./privacy'>Privacy policy</a></strong>",
-				copyright: `Copyright © 2015 - ${ new Date().getFullYear() } Javier Tomás`,
+				message:
+					"<strong><a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>Open-source Apache Licensed</a></strong> | <strong><a href='./privacy'>Privacy policy</a></strong>",
+				copyright: `Copyright © 2015 - ${new Date().getFullYear()} Javier Tomás`,
 			},
 
 			search: {
