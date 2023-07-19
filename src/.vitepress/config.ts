@@ -56,7 +56,7 @@ function nav() {
 			items: [
 				{
 					text: "Download",
-					link: "https://download.kodo.moe/",
+					link: "/download",
 				},
 				{
 					text: "Changelog",
