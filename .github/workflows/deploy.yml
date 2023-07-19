@@ -7,33 +7,44 @@ on:
             - v3-vitepress
 
 env:
-    VITE_BUILD: ${{ env.VITE_BUILD }}
+    VITE_BASE: /kodo/
 
 jobs:
     deploy:
         runs-on: ubuntu-latest
+
         permissions:
             contents: read
             pages: write
             id-token: write
+
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
+
         steps:
-            - uses: actions/checkout@v3
+            - name: Checkout
+              uses: actions/checkout@v3
               with:
                   fetch-depth: 0
-            - uses: actions/setup-node@v3
+
+            - name: Setup Node
+              uses: actions/setup-node@v3
               with:
                   node-version: 16
                   cache: npm
-            - run: npm ci
-            - name: Build
-              run: npm run docs:build
-            - uses: actions/configure-pages@v2
-            - uses: actions/upload-pages-artifact@v1
+
+            - name: Install and build
+              run: npm ci && npm run docs:build
+
+            - name: Configure pages
+              uses: actions/configure-pages@v2
+
+            - name: Upload pages artifact
+              uses: actions/upload-pages-artifact@v1
               with:
                   path: src/.vitepress/dist
+
             - name: Deploy
               id: deployment
               uses: actions/deploy-pages@v1
