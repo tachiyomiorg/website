@@ -16,7 +16,15 @@ export default ({ mode }) => {
 		// Base directory, enabling override ability needed for GitHub Pages
 		base: process.env.VITE_BASE || "/",
 
-		head: [["meta", { name: "theme-color", content: "#4A74EA" }]],
+		head: [
+			[
+				"meta",
+				{
+					name: "theme-color",
+					content: "#818CF8"
+				}
+			]
+		],
 
 		themeConfig: {
 			// https://vitepress.dev/reference/default-theme-config
@@ -30,9 +38,8 @@ export default ({ mode }) => {
 			},
 
 			footer: {
-				message:
-					'<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Open-source Apache Licensed</a> | <a href="./privacy">Privacy policy</a>',
-				copyright: "Copyright © 2015 - 2023 Javier Tomás",
+				message: "<strong><a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>Open-source Apache Licensed</a></strong> | <strong><a href='./privacy'>Privacy policy</a></strong>",
+				copyright: `Copyright © 2015 - ${ new Date().getFullYear() } Javier Tomás`,
 			},
 
 			search: {
