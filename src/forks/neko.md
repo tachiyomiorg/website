@@ -3,6 +3,7 @@ title: Neko
 description: LongDesc
 
 layout: home
+pageClass: page-neko
 
 hero:
   name: Neko
@@ -66,5 +67,5 @@ const members = [
 </script>
 
 <style>
-	@import "../.vitepress/theme/forks/neko.css"
+	@import "../.vitepress/theme/styles/forks/neko.css"
 </style>

@@ -3,6 +3,7 @@ title: TachiyomiJ2K
 description: LongDesc
 
 layout: home
+pageClass: page-tachiyomij2k
 
 hero:
   name: TachiyomiJ2K
@@ -67,5 +68,5 @@ const members = [
 </script>
 
 <style>
-	@import "../.vitepress/theme/forks/tachiyomij2k.css"
+	@import "../.vitepress/theme/styles/forks/tachiyomij2k.css"
 </style>

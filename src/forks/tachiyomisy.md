@@ -3,6 +3,7 @@ title: TachiyomiSY
 description: LongDesc
 
 layout: home
+pageClass: page-tachiyomisy
 
 hero:
   name: TachiyomiSY
@@ -83,5 +84,5 @@ const members = [
 </script>
 
 <style>
-	@import "../.vitepress/theme/forks/tachiyomisy.css"
+	@import "../.vitepress/theme/styles/forks/tachiyomisy.css"
 </style>

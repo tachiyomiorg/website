@@ -1,8 +1,8 @@
-.image-bg {
+.page-neko .image-bg {
 	display: none;
 }
 
-::selection {
+.page-neko ::selection {
 	background: rgba(255, 109, 137, 0.2);
 }
 
@@ -10,8 +10,8 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
-:root {
-    --vp-c-brand: #ff6884;
+ :root .page-neko  {
+    --vp-c-brand: #ff6884 !important;
 	--vp-c-brand-light: #ff8da2;
 	--vp-c-brand-lighter: #ffb3c1;
 	--vp-c-brand-lightest: #ffd9e0;
@@ -25,7 +25,7 @@
  * Component: Button
  * -------------------------------------------------------------------------- */
 
-:root {
+:root .page-neko  {
 	--vp-button-brand-text: var(--vp-c-black);
 	--vp-button-brand-hover-text: var(--vp-c-black);
 	--vp-button-brand-active-text: var(--vp-c-black);

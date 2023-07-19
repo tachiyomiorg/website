@@ -1,8 +1,8 @@
-.image-bg {
+.page-tachiyomiaz .image-bg {
 	display: none;
 }
 
-::selection {
+.page-tachiyomiaz ::selection {
 	background: rgba(255, 204, 77, 0.2);
 }
 
@@ -10,7 +10,7 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
-:root {
+:root .page-tachiyomiaz {
     --vp-c-brand: #ffcc4d;
 	--vp-c-brand-light: #ffd879;
 	--vp-c-brand-lighter: #ffe5a6;
@@ -25,7 +25,7 @@
  * Component: Button
  * -------------------------------------------------------------------------- */
 
-:root {
+:root .page-tachiyomiaz {
 	--vp-button-brand-text: var(--vp-c-black);
 	--vp-button-brand-hover-text: var(--vp-c-black);
 	--vp-button-brand-active-text: var(--vp-c-black);

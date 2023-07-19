@@ -1,8 +1,8 @@
-.image-bg {
+.page-tachiyomij2k .image-bg {
 	display: none;
 }
 
-::selection {
+.page-tachiyomij2k ::selection {
 	background: rgba(9, 82, 175, 0.2);
 }
 
@@ -10,7 +10,7 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
-:root {
+:root .page-tachiyomij2k {
     --vp-c-brand: #0952af;
 	--vp-c-brand-light: #467dc3;
 	--vp-c-brand-lighter: #84a8d7;
@@ -25,7 +25,7 @@
  * Component: Button
  * -------------------------------------------------------------------------- */
 
-:root {
+:root .page-tachiyomij2k {
 	--vp-button-brand-text: var(--vp-c-white);
 	--vp-button-brand-hover-text: var(--vp-c-white);
 	--vp-button-brand-active-text: var(--vp-c-white);
