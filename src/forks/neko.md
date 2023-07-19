@@ -1,20 +1,21 @@
 ---
 title: Neko
-description: WIP
+description: LongDesc
+
 layout: home
 
 hero:
   name: Neko
   text: For MangaDex
-  tagline: Features specific to MangaDex that no other fork can offer
-  image: https://raw.githubusercontent.com/CarlosEsco/Neko/main/.github/readme-images/logo.png
+  tagline: LongDesc
+  image: /forks/forks_logo-neko.png
   actions:
     - theme: brand
       text: Download
-      link: /
+      link: https://github.com/CarlosEsco/Neko/releases/latest
     - theme: alt
       text: GitHub
-      link: /
+      link: https://github.com/CarlosEsco/Neko
 
 features:
   - title: Feature 1
@@ -26,16 +27,43 @@ features:
   - title: Feature 3
     details: Describe Feature here.
     icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg">
-  - title: Feature 4
-    details: Describe Feature here.
-    icon: 🐈
-  - title: Feature 5
-    details: Describe Feature here.
-    icon: 🐈
-  - title: Feature 6
-    details: Describe Feature here.
-    icon: 🐈
+
+head:
+  - - meta
+    - property: og:image
+      content: /forks/forks_logo-neko.png
+  - - meta
+    - name: theme-color
+      content: "#FD6684"
+  - - meta
+    - name: msapplication-TileColor
+      content: "#FD6684"
 ---
+
+<br><VPTeamMembers size="small" :members="members" />
+
+<script setup>
+import { VPTeamMembers } from "vitepress/theme"
+
+const members = [
+  {
+    avatar: "https://www.github.com/CarlosEsco.png",
+    name: "CarlosEsco",
+    title: "Creator",
+    links: [
+      { icon: "github", link: "https://github.com/CarlosEsco" }
+    ]
+  },
+  {
+    avatar: "https://www.github.com/Jays2Kings.png",
+    name: "Jays2Kings",
+    title: "Fork base",
+    links: [
+      { icon: "github", link: "https://github.com/Jays2Kings" }
+    ]
+  }
+]
+</script>
 
 <style>
 	@import "../.vitepress/theme/forks/neko.css"

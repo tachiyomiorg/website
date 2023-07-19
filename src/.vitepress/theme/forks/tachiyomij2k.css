@@ -1,0 +1,32 @@
+.image-bg {
+	display: none;
+}
+
+::selection {
+	background: rgba(9, 82, 175, 0.2);
+}
+
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-c-brand: #0952af;
+	--vp-c-brand-light: #467dc3;
+	--vp-c-brand-lighter: #84a8d7;
+	--vp-c-brand-lightest: #c1d3eb;
+	--vp-c-brand-dark: #063d83;
+	--vp-c-brand-darker: #042957;
+	--vp-c-brand-darkest: #02142b;
+    --vp-c-brand-dimm: rgba(9, 82, 175, 0.08);
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+	--vp-button-brand-text: var(--vp-c-white);
+	--vp-button-brand-hover-text: var(--vp-c-white);
+	--vp-button-brand-active-text: var(--vp-c-white);
+}

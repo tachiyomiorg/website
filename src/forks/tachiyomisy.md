@@ -1,42 +1,87 @@
 ---
 title: TachiyomiSY
-description: WIP
+description: LongDesc
+
+layout: home
+
+hero:
+  name: TachiyomiSY
+  text: ShortDesc
+  tagline: LongDesc
+  image: /forks/forks_logo-sy.png
+  actions:
+    - theme: brand
+      text: Download
+      link: https://github.com/jobobby04/TachiyomiSY/releases/latest
+    - theme: alt
+      text: GitHub
+      link: https://github.com/jobobby04/TachiyomiSY
+
+features:
+  - title: Feature 1
+    details: Describe Feature here.
+    icon: <img src="/forks/forks_logo-sy.png" height="32px" width="32px">
+  - title: Feature 2
+    details: Describe Feature here.
+    icon: <img src="/forks/forks_logo-sy.png" height="32px" width="32px">
+  - title: Feature 3
+    details: Describe Feature here.
+    icon: <img src="/forks/forks_logo-sy.png" height="32px" width="32px">
+  - title: Feature 4
+    details: Describe Feature here.
+    icon: 🐍
+  - title: Feature 5
+    details: Describe Feature here.
+    icon: 🐍
+  - title: Feature 6
+    details: Describe Feature here.
+    icon: 🐍
+
+head:
+  - - meta
+    - property: og:image
+      content: /forks/forks_logo-sy.png
+  - - meta
+    - name: theme-color
+      content: "#CE2828"
+  - - meta
+    - name: msapplication-TileColor
+      content: "#CE2828"
 ---
 
-# TachiyomiSY
+<br><VPTeamMembers size="small" :members="members" />
 
-This fork is based on TachiyomiAZ and adds quite a few unique features, it also has new features from the latest Tachiyomi version as well as from other forks such as TachiyomiJ2K.
+<script setup>
+import { VPTeamMembers } from "vitepress/theme"
 
-## Download
+const members = [
+  {
+    avatar: "https://www.github.com/jobobby04.png",
+    name: "jobobby04",
+    title: "Creator",
+    links: [
+      { icon: "github", link: "https://github.com/jobobby04" }
+    ]
+  },
+  {
+    avatar: "https://www.github.com/she11sh0cked.png",
+    name: "she11sh0cked",
+    title: "Extra tracking, filter, recommendations, and more",
+    links: [
+      { icon: "github", link: "https://github.com/she11sh0cked" }
+    ]
+  },
+  {
+    avatar: "https://www.github.com/az4521.png",
+    name: "az4521",
+    title: "Base recommendations and AZ",
+    links: [
+      { icon: "github", link: "https://github.com/az4521" }
+    ]
+  }
+]
+</script>
 
-Requires **Android 6.0** or higher.
-
-Requires **Android 6.0** or higher.
-
-## Features
-
-* Uses the new **Tachiyomi** UI
-* Enhanced pages for certain sources
-* Latest tab preview configurable to show up to five sources
-* Ability to enable and disable Hentai features
-* Automatic webtoon detection, allowing the reader to switch to webtoon mode automatically when viewing one
-* Manga recommendations from both [MyAnimeList](https://myanimelist.net/) and [AniList](https://anilist.co/)
-* Lewd filter so you can hide the lewd manga in your library if you want to
-* Tracking filter so you can filter your tracked manga
-* Search tracking status in the library
-* Backup saved searches
-* New E-Hentai/ExHentai features such as language settings and watched list settings
-* Comfortable grid view
-* Source categories
-* Manga info edit
-* Enhanced views for internal and delegated sources
-* Numerous features from TachiyomiAZ
-
-## Credits
-
-* [She11Shocked](https://github.com/she11sh0cked/) for the extra tracking, filter, recommendation features, and a ton more.
-* [az4521](https://github.com/az4521) for the base recommendations and **AZ**.
-
-## Disclaimer
-
-The developer of this application does not have any affiliation with the content providers available.
+<style>
+	@import "../.vitepress/theme/forks/tachiyomisy.css"
+</style>
