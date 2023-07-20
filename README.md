@@ -45,10 +45,10 @@
 <div>
 	<p align="center">
 		<a href="https://github.com/tachiyomiorg/tachiyomi/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi&bg_color=161B22&text_color=c9d1d9&title_color=5A67D8&icon_color=5A67D8&border_radius=8&hide_border=true" alt="Android App">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi&bg_color=161B22&text_color=c9d1d9&title_color=818CF8&icon_color=818CF8&border_radius=8&hide_border=true" alt="Android App">
 		</a>
 		<a href="https://github.com/tachiyomiorg/tachiyomi-extensions/">
-			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions&bg_color=161B22&text_color=c9d1d9&title_color=5A67D8&icon_color=5A67D8&border_radius=8&hide_border=true" alt="App Extensions">
+			<img src="https://github-readme-stats.vercel.app/api/pin/?username=tachiyomiorg&repo=tachiyomi-extensions&bg_color=161B22&text_color=c9d1d9&title_color=818CF8&icon_color=818CF8&border_radius=8&hide_border=true" alt="App Extensions">
 		</a>
 	</p>
 </div>

@@ -20,10 +20,12 @@
 		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033"
 	},
 	"devDependencies": {
+		"feed": "^4.2.2",
 		"markdownlint": "^0.29.0",
 		"markdownlint-cli": "^0.35.0",
 		"prettier": "^3.0.0",
 		"sentences-per-line": "^0.2.1",
+		"sitemap": "^7.1.1",
 		"vitepress": "^1.0.0-beta.5",
 		"vue": "^3.3.4"
 	},
@@ -34,5 +36,8 @@
 		"*": [
 			"prettier --write --ignore-unknown"
 		]
+	},
+	"dependencies": {
+		"vitepress-plugin-auto-sidebar": "^1.1.0"
 	}
 }
