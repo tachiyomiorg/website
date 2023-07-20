@@ -38,16 +38,9 @@ features:
     details: Describe Feature here.
     icon: 🐍
 
-head:
-  - - meta
-    - property: og:image
-      content: /forks/forks_logo-sy.png
-  - - meta
-    - name: theme-color
-      content: "#CE2828"
-  - - meta
-    - name: msapplication-TileColor
-      content: "#CE2828"
+theme: "#CE2828"
+image: /forks/forks_logo-sy.png
+imageSize: small
 ---
 
 <br><VPTeamMembers size="small" :members="members" />

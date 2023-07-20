@@ -29,16 +29,9 @@ features:
     details: Describe Feature here.
     icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg">
 
-head:
-  - - meta
-    - property: og:image
-      content: /forks/forks_logo-neko.png
-  - - meta
-    - name: theme-color
-      content: "#FD6684"
-  - - meta
-    - name: msapplication-TileColor
-      content: "#FD6684"
+theme: "#FD6684"
+image: /forks/forks_logo-neko.png
+imageSize: small
 ---
 
 <br><VPTeamMembers size="small" :members="members" />

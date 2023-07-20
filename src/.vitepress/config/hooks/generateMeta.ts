@@ -8,6 +8,8 @@ const generateMeta = (context: TransformContext, hostname: string) => {
 
 	head.push(["link", { rel: "canonical", href: url }]);
 
+	head.push(["meta", { name: "theme-color", content: pageData.frontmatter.theme }]);
+
 	head.push(["meta", { property: "og:url", content: url }]);
 	head.push(["meta", { property: "og:type", content: pageData.frontmatter.type }]);
 	head.push(["meta", { property: "og:title", content: pageData.frontmatter.title }]);
@@ -18,8 +20,17 @@ const generateMeta = (context: TransformContext, hostname: string) => {
 	head.push(["meta", { name: "twitter:description", content: pageData.frontmatter.description }]);
 
 	if (pageData.frontmatter.image) {
-		head.push(["meta", { property: "og:image", content: `${hostname}/${pageData.frontmatter.image}` }]);
-		head.push(["meta", { name: "twitter:image", content: `${hostname}/${pageData.frontmatter.image}` }]);
+		head.push(["meta", { property: "og:image", content: `${hostname}/${pageData.frontmatter.image.replace(/^\//, "")}` }]);
+		head.push(["meta", { name: "twitter:image", content: `${hostname}/${pageData.frontmatter.image.replace(/^\//, "")}` }]);
+	}
+
+	switch (pageData.frontmatter.imageSize) {
+		case "small":
+			head.push(["meta", { name: "twitter:card", content: "summary" }]);
+			break;
+		case "large":
+			head.push(["meta", { name: "twitter:card", content: "summary_large_image" }]);
+			break;
 	}
 
 	if (pageData.frontmatter.tag) {

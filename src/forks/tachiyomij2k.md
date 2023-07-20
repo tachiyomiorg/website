@@ -38,16 +38,9 @@ features:
     details: Describe Feature here.
     icon: 👑
 
-head:
-  - - meta
-    - property: og:image
-      content: /forks/forks_logo-j2k.png
-  - - meta
-    - name: theme-color
-      content: "#0952AF"
-  - - meta
-    - name: msapplication-TileColor
-      content: "#0952AF"
+theme: "#0952AF"
+image: /forks/forks_logo-j2k.png
+imageSize: small
 ---
 
 <br><VPTeamMembers size="small" :members="members" />

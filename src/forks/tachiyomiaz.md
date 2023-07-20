@@ -29,16 +29,9 @@ features:
     details: Describe Feature here.
     icon: <img src="https://tachiyomi-v3-gridsome.netlify.app/assets/forks_logo-az.png" height="32px" width="32px">
 
-head:
-  - - meta
-    - property: og:image
-      content: /forks/forks_logo-az.png
-  - - meta
-    - name: theme-color
-      content: "#FFCC4D"
-  - - meta
-    - name: msapplication-TileColor
-      content: "#FFCC4D"
+theme: "#FFCC4D"
+image: /forks/forks_logo-az.png
+imageSize: small
 ---
 
 <br><VPTeamMembers size="small" :members="members" />
