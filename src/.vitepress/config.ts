@@ -47,7 +47,12 @@ export default ({ mode }) => {
 				provider: "local",
 			},
 
-			socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
+			socialLinks: [
+				{ icon: "github", link: "https://github.com/tachiyomiorg/tachiyomi" },
+				{ icon: "twitter", link: "https://twitter.com/tachiyomiorg" },
+				{ icon: "facebook", link: "https://facebook.com/tachiyomiorg" },
+				{ icon: "discord", link: "https://discord.gg/tachiyomi" },
+			],
 		},
 	});
 };
