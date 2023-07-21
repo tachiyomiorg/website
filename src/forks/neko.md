@@ -1,6 +1,6 @@
 ---
 title: Neko
-description: LongDesc
+description: Features specific to MangaDex with the featureset of TachiyomiJ2K
 
 layout: home
 pageClass: page-neko
@@ -8,7 +8,7 @@ pageClass: page-neko
 hero:
   name: Neko
   text: For MangaDex
-  tagline: LongDesc
+  tagline: Features specific to MangaDex with the featureset of TachiyomiJ2K
   image: /forks/forks_logo-neko.png
   actions:
     - theme: brand
@@ -19,15 +19,15 @@ hero:
       link: https://github.com/CarlosEsco/Neko
 
 features:
-  - title: Feature 1
-    details: Describe Feature here.
+  - title: MangaDex
+    details: Native login with support for MDList as a tracker, and syncing the MangaDex follows list.
     icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg">
-  - title: Feature 2
-    details: Describe Feature here.
-    icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg">
-  - title: Feature 3
-    details: Describe Feature here.
-    icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg">
+  - title: Similiar Manga
+    details: Recommendation system
+    icon: 📚
+  - title: Merging missing chapters
+    details: If anything is missing on MangaDex you can attempt to merge them with another source.
+    icon: ❔
 
 theme: "#FD6684"
 image: /forks/forks_logo-neko.png

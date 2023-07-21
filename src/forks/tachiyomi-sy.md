@@ -7,8 +7,8 @@ pageClass: page-tachiyomisy
 
 hero:
   name: TachiyomiSY
-  text: ShortDesc
-  tagline: LongDesc
+  text: Hentai-focused
+  tagline: Keeping up-to-date with Tachiyomi while also adding exclusive features
   image: /forks/forks_logo-sy.png
   actions:
     - theme: brand
@@ -19,24 +19,15 @@ hero:
       link: https://github.com/jobobby04/TachiyomiSY
 
 features:
-  - title: Feature 1
-    details: Describe Feature here.
-    icon: <img src="/forks/forks_logo-sy.png" height="32px" width="32px">
-  - title: Feature 2
-    details: Describe Feature here.
-    icon: <img src="/forks/forks_logo-sy.png" height="32px" width="32px">
-  - title: Feature 3
-    details: Describe Feature here.
-    icon: <img src="/forks/forks_logo-sy.png" height="32px" width="32px">
-  - title: Feature 4
-    details: Describe Feature here.
-    icon: 🐍
-  - title: Feature 5
-    details: Describe Feature here.
-    icon: 🐍
-  - title: Feature 6
-    details: Describe Feature here.
-    icon: 🐍
+  - title: Hentai-focused
+    details: Adds several features to enhance your Hentai experience.
+    icon: 🔞
+  - title: Manga recommendations
+    details: Get recommendations from MyAnimeList and AniDB.
+    icon: 📚
+  - title: Several exclusive fea
+    details: Keeps the old design of Tachiyomi with hamburger menu.
+    icon: 👵
 
 theme: "#CE2828"
 image: /forks/forks_logo-sy.png
@@ -77,5 +68,5 @@ const members = [
 </script>
 
 <style>
-	@import "../.vitepress/theme/styles/forks/tachiyomisy.css"
+	@import "../.vitepress/theme/styles/forks/tachiyomi-sy.css"
 </style>

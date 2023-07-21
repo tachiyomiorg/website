@@ -1,14 +1,14 @@
 ---
 title: TachiyomiAZ
-description: LongDesc
+description: Hentai-focused with legacy features
 
 layout: home
 pageClass: page-tachiyomiaz
 
 hero:
   name: TachiyomiAZ
-  text: ShortDesc
-  tagline: LongDesc
+  text: Hentai-focused
+  tagline: Recommendation system, a hamburger menu, and loads of hentai
   image: https://tachiyomi-v3-gridsome.netlify.app/assets/forks_logo-az.png
   actions:
     - theme: brand
@@ -19,15 +19,15 @@ hero:
       link: https://github.com/az4521/tachiyomiAZ
 
 features:
-  - title: Feature 1
-    details: Describe Feature here.
-    icon: <img src="https://tachiyomi-v3-gridsome.netlify.app/assets/forks_logo-az.png" height="32px" width="32px">
-  - title: Feature 2
-    details: Describe Feature here.
-    icon: <img src="https://tachiyomi-v3-gridsome.netlify.app/assets/forks_logo-az.png" height="32px" width="32px">
-  - title: Feature 3
-    details: Describe Feature here.
-    icon: <img src="https://tachiyomi-v3-gridsome.netlify.app/assets/forks_logo-az.png" height="32px" width="32px">
+  - title: Hentai-focused
+    details: Adds several features to enhance your Hentai experience.
+    icon: 🔞
+  - title: Manga recommendations
+    details: Get recommendations from MyAnimeList and AniDB.
+    icon: 📚
+  - title: Legacy design
+    details: Keeps the old design of Tachiyomi with hamburger menu.
+    icon: 👵
 
 theme: "#FFCC4D"
 image: /forks/forks_logo-az.png
@@ -67,6 +67,16 @@ const members = [
 ]
 </script>
 
-<style>
-	@import "../.vitepress/theme/styles/forks/tachiyomiaz.css"
+<br>
+
+<div class="azContainer">
+  <div class="azMarquee">
+    <div class="azWiggleText">
+      <span class="azText"><i>The BEST fork</i> --az4521</span>
+    </div>
+  </div>
+</div>
+
+<style scoped>
+	@import "../.vitepress/theme/styles/forks/tachiyomi-az.css"
 </style>

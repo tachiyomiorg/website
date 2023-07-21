@@ -1,14 +1,14 @@
 ---
 title: TachiyomiJ2K
-description: LongDesc
+description: New approach to the design of the base app along with several other enhancements
 
 layout: home
 pageClass: page-tachiyomij2k
 
 hero:
   name: TachiyomiJ2K
-  text: ShortDesc
-  tagline: LongDesc
+  text: Redesigned
+  tagline: New approach to the design of the base app along with several other enhancements
   image: /forks/forks_logo-j2k.png
   actions:
     - theme: brand
@@ -19,24 +19,15 @@ hero:
       link: https://github.com/Jays2Kings/tachiyomiJ2K
 
 features:
-  - title: Feature 1
-    details: Describe Feature here.
-    icon: <img src="/forks/forks_logo-j2k.png" height="32px" width="32px">
-  - title: Feature 2
-    details: Describe Feature here.
-    icon: <img src="/forks/forks_logo-j2k.png" height="32px" width="32px">
-  - title: Feature 3
-    details: Describe Feature here.
-    icon: <img src="/forks/forks_logo-j2k.png" height="32px" width="32px">
-  - title: Feature 4
-    details: Describe Feature here.
+  - title: Redesigned UI
+    details: Entirely different design from regular Tachiyomi, with exciting new features.
     icon: 👑
-  - title: Feature 5
-    details: Describe Feature here.
-    icon: 👑
-  - title: Feature 6
-    details: Describe Feature here.
-    icon: 👑
+  - title: Double-page for Tablets
+    details: Combine 2 pages while reading into a single one for a better tablet experience.
+    icon: 📖
+  - title: Dynamic categories
+    details: Group your library automatically by the tags, tracking status, source, and more.
+    icon: 🔖
 
 theme: "#0952AF"
 image: /forks/forks_logo-j2k.png
@@ -61,5 +52,5 @@ const members = [
 </script>
 
 <style>
-	@import "../.vitepress/theme/styles/forks/tachiyomij2k.css"
+	@import "../.vitepress/theme/styles/forks/tachiyomi-j2k.css"
 </style>
