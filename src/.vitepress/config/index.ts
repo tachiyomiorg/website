@@ -1,7 +1,10 @@
 import { defineConfig, loadEnv } from "vitepress";
 
-import theme from "./theme";
+import markdown from "./markdown";
+import themeConfig from "./theme";
 import head from "./head";
+
+import "./icons";
 
 import generateMeta from "./hooks/generateMeta";
 import generateSitemap from "./hooks/generateSitemap";
@@ -21,7 +24,8 @@ export default ({ mode }) => {
 		title: "Tachiyomi",
 		description: "Free and open source manga reader for Android",
 		head,
-		themeConfig: theme,
+		markdown,
+		themeConfig: themeConfig,
 		transformHead: async (context) => generateMeta(context, hostname),
 		buildEnd: async (context) => {
 			generateSitemap(context, hostname);

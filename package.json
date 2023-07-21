@@ -20,7 +20,15 @@
 		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033"
 	},
 	"devDependencies": {
+		"@mdit/plugin-attrs": "^0.4.8",
+		"@mdit/plugin-figure": "^0.4.8",
+		"@mdit/plugin-img-lazyload": "^0.4.8",
+		"@mdit/plugin-img-mark": "^0.4.8",
+		"@mdit/plugin-img-size": "^0.4.8",
+		"@mdit/plugin-include": "^0.4.8",
+		"@mdit/plugin-tab": "^0.4.8",
 		"feed": "^4.2.2",
+		"markdown-it-mdi": "^0.1.0",
 		"markdownlint": "^0.29.0",
 		"markdownlint-cli": "^0.35.0",
 		"prettier": "^3.0.0",
@@ -38,6 +46,7 @@
 		]
 	},
 	"dependencies": {
+		"@mdi/js": "^7.2.96",
 		"vitepress-plugin-auto-sidebar": "^1.1.0"
 	}
 }

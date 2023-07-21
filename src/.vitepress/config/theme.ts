@@ -19,8 +19,7 @@ const themeConfig: DefaultTheme.Config = {
 	],
 
 	footer: {
-		message:
-			`<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Open-source Apache Licensed</a> | <a href="./privacy">Privacy policy</a> | Powered by <a target="_blank" href="https://www.netlify.com/">Netlify <img src="/img/netlify.svg" height="12px" width="12px" style="display: inline-block"></a>`,
+		message: `<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Open-source Apache Licensed</a> | <a href="./privacy">Privacy policy</a> | Powered by <a target="_blank" href="https://www.netlify.com/">Netlify <img src="/img/netlify.svg" height="12px" width="12px" style="display: inline-block"></a>`,
 		copyright: `Copyright © 2015 - ${new Date().getFullYear()} Javier Tomás`,
 	},
 
