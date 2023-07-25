@@ -33,43 +33,91 @@ Images will then go into the chapter folder.
 See below for more information on archive files.
 You can refer to the following example:
 
-#### Example (Folder)
+#### Example <Badge type="info" text="SD Card" /> {#example-sd-card}
 
-```txt
-/sdcard/Tachiyomi/local
-└───[the series title]
-    |   cover.jpg
-    |
-    └───chapter_1
-    |   |   image_1
-    |   |   image_n
-    |
-    └───chapter_2
-    |   |   image_1
-    |   |   image_n
-    |
-    └───chaper_n
-        |   image_1
-        |   image_n
-```
+<div class="tree">
+	<ul>
+		<img src="/img/folder.svg" class="tree-icon icon-folder">
+		<span class="folder root">/sdcard/Tachiyomi/local</span>
+		<li>
+			<img src="/img/folder.svg" class="tree-icon icon-folder">
+			<span class="folder main">[the series title]</span>
+			<ul>
+				<li>
+					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+					<span class="file jpg">cover.jpg</span>
+				</li>
+				<li>
+					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<span class="folder">chapter_1</span>
+					<ul>
+						<li><span class="file">image_1.ext</span></li>
+						<li><span class="file">image_n.ext</span></li>
+					</ul>
+				</li>
+				<li>
+					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<span class="folder">chapter_2</span>
+					<ul>
+						<li><span class="file">image_1.ext</span></li>
+						<li><span class="file">image_n.ext</span></li>
+					</ul>
+				</li>
+				<li>
+					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<span class="folder">chapter_n</span>
+					<ul>
+						<li><span class="file">image_1.ext</span></li>
+						<li><span class="file">image_n.ext</span></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 
-```txt
-/storage/18F5-2C11/Tachiyomi/local
-└───[the series title]
-    |   cover.jpg
-    |
-    └───chapter_1
-    |   |   image_1
-    |   |   image_n
-    |
-    └───chapter_2
-    |   |   image_1
-    |   |   image_n
-    |
-    └───chaper_n
-        |   image_1
-        |   image_n
-```
+#### Example <Badge type="info" text="Phone storage" /> {#example-phone-storage}
+
+<div class="tree">
+	<ul>
+		<img src="/img/folder.svg" class="tree-icon icon-folder">
+		<span class="folder root">/storage/18F5-2C11/Tachiyomi/local</span>
+		<li>
+			<img src="/img/folder.svg" class="tree-icon icon-folder">
+			<span class="folder main">[the series title]</span>
+			<ul>
+				<li>
+					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+					<span class="file jpg">cover.jpg</span>
+				</li>
+				<li>
+					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<span class="folder">chapter_1</span>
+					<ul>
+						<li><span class="file">image_1.ext</span></li>
+						<li><span class="file">image_n.ext</span></li>
+					</ul>
+				</li>
+				<li>
+					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<span class="folder">chapter_2</span>
+					<ul>
+						<li><span class="file">image_1.ext</span></li>
+						<li><span class="file">image_n.ext</span></li>
+					</ul>
+				</li>
+				<li>
+					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<span class="folder">chapter_n</span>
+					<ul>
+						<li><span class="file">image_1.ext</span></li>
+						<li><span class="file">image_n.ext</span></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 
 Tachiyomi will see four chapters in a single manga.
 The path to the folder with images must contain both the manga title and the chapter name (as seen above).
@@ -81,25 +129,66 @@ Any folders inside the archive file are ignored.
 You must place the archive inside the `Manga` folder where the name will become the `Chapter` title.
 All images inside the archive regardless of folder structure will become pages for that chapter.
 
-Example (ZIP)
+#### Example <Badge type="info" text="ZIP" /> {#example-zip}
 
-```txt
-/sdcard/Tachiyomi/local
-└───[the series title]
-    |   cover.jpg
-    |
-    └───chapter_1.zip
-    |   |   image_1.jpg
-    |   |   image_n.jpg
-    |
-    └───chapter_2.zip
-    |   |   image_1.jpg
-    |   |   image_n.jpg
-    |
-    └───chaper_n.zip
-        |   image_1.jpg
-        |   image_n.jpg
-```
+<div class="tree">
+	<ul>
+		<img src="/img/folder.svg" class="tree-icon icon-folder">
+		<span class="folder root">/sdcard/Tachiyomi/local</span>
+		<li>
+			<img src="/img/folder.svg" class="tree-icon icon-folder">
+			<span class="folder main">[the series title]</span>
+			<ul>
+				<li>
+					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+					<span class="file jpg">cover.jpg</span>
+				</li>
+				<li>
+					<img src="/img/zip.svg" class="tree-icon icon-zip">
+					<span class="file zip">chapter_1.zip</span>
+					<ul>
+						<li>
+							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<span class="file jpg">image_1.jpg</span>
+						</li>
+						<li>
+							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<span class="file jpg">image_n.jpg</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<img src="/img/zip.svg" class="tree-icon icon-zip">
+					<span class="file zip">chapter_2.zip</span>
+					<ul>
+						<li>
+							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<span class="file jpg">image_1.jpg</span>
+						</li>
+						<li>
+							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<span class="file jpg">image_n.jpg</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<img src="/img/zip.svg" class="tree-icon icon-zip">
+					<span class="file zip">chapter_n.zip</span>
+					<ul>
+						<li>
+							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<span class="file jpg">image_1.jpg</span>
+						</li>
+						<li>
+							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<span class="file jpg">image_n.jpg</span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 
 ## Advanced
 
@@ -138,3 +227,8 @@ It is also possible to use a custom image as a cover for each local manga.
 
 To do this, you only need to place the image file, that needs to be named `cover.jpg`, in the root of the manga folder.
 The app will then use your custom image in the local source listing.
+
+
+<style scoped>
+	@import "../../.vitepress/theme/styles/tree.css"
+</style>
