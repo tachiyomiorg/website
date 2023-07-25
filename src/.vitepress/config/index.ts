@@ -22,7 +22,7 @@ export default ({ mode }) => {
 		base: process.env.VITE_BASE || "/",
 		lang: "en-US",
 		title: "Tachiyomi",
-		description: "Free and open source manga reader for Android",
+		description: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.",
 		head,
 		markdown,
 		themeConfig: themeConfig,

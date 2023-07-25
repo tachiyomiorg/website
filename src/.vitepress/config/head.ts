@@ -11,12 +11,16 @@ const head: HeadConfig[] = [
 	["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" }],
 	["link", { rel: "apple-touch-icon", type: "image/x-icon", sizes: "180x180", href: "/favicon.ico" }],
 
-	["meta", { name: "twitter:card", content: "summary_large_image" }],
+	["meta", { name: "twitter:card", content: "summary" }],
 	["meta", { name: "twitter:site", content: "@tachiyomiorg" }],
 	["meta", { name: "twitter:creator", content: "@tachiyomiorg" }],
+	["meta", { name: "twitter:image", content: "/img/logo.png" }],
 
 	["meta", { property: "og:site_name", content: "Tachiyomi" }],
+	["meta", { property: "og:description", content: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android." }],
 	["meta", { property: "og:locale", content: "en_US" }],
+	["meta", { property: "og:type", content: "website" }],
+	["meta", { property: "og:image", content: "/img/logo.png" }],
 ];
 
 export default head;
