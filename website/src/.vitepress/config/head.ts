@@ -26,7 +26,6 @@ const head: HeadConfig[] = [
 	],
 	["meta", { property: "og:locale", content: "en_US" }],
 	["meta", { property: "og:type", content: "website" }],
-	["meta", { property: "og:image", content: "/img/logo.png" }],
 ];
 
 export default head;
