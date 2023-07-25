@@ -12,6 +12,9 @@ env:
 jobs:
     deploy:
         runs-on: ubuntu-latest
+        defaults:
+          run:
+            working-directory: "website"
 
         permissions:
             contents: read
@@ -33,6 +36,7 @@ jobs:
               with:
                   node-version: 16
                   cache: npm
+                  cache-dependency-path: "**/package-lock.json"
 
             - name: Install and build
               run: npm ci && npm run docs:build
@@ -43,7 +47,7 @@ jobs:
             - name: Upload pages artifact
               uses: actions/upload-pages-artifact@v1
               with:
-                  path: src/.vitepress/dist
+                  path: website/src/.vitepress/dist
 
             - name: Deploy
               id: deployment

@@ -2,5 +2,6 @@
   NODE_VERSION = "16"
 
 [build]
+  base = "website"
   publish = "src/.vitepress/dist"
   command = "npm run docs:build"
