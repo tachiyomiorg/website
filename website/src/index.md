@@ -18,6 +18,8 @@ hero:
       text: Download
       link: /download
 
+customMetaTitle: Tachiyomi
+
 features:
   - title: Tracking
     details: Automatically keep track of your series with AniList, Bangumi, Kitsu, MangaUpdates, MyAnimeList, Shikimori, and more.

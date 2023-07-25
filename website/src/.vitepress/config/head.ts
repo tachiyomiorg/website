@@ -14,7 +14,6 @@ const head: HeadConfig[] = [
 	["meta", { name: "twitter:card", content: "summary" }],
 	["meta", { name: "twitter:site", content: "@tachiyomiorg" }],
 	["meta", { name: "twitter:creator", content: "@tachiyomiorg" }],
-	["meta", { name: "twitter:image", content: "/img/logo.png" }],
 
 	["meta", { property: "og:site_name", content: "Tachiyomi" }],
 	[
