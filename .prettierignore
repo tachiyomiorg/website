@@ -1,4 +1,11 @@
+*.png
+*.jpg
+*.webm
+*.webp
+*.ico
+*.svg
 *.md
+*.styl
 *.vue
 dist
 pnpm-lock.yaml

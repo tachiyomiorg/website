@@ -13,11 +13,15 @@
 	},
 	"scripts": {
 		"docs:dev": "vitepress dev src",
-		"docs:build": "vitepress build src",
+		"docs:build": "npm run lint && vitepress build src",
 		"docs:preview": "vitepress preview src",
-		"format": "prettier --check --write .",
-		"format:fail": "prettier --check .",
-		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033"
+		"lint": "npm run lint:prettier && npm run lint:mdl && npm run lint:style",
+		"lint:fix": "npm run lint:prettier:fix && npm run lint:style:fix",
+		"lint:prettier": "prettier --check \"src/**/*\"",
+		"lint:prettier:fix": "prettier --check --write \"src/**/*\"",
+		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033",
+		"lint:style": "stylelint \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\"",
+		"lint:style:fix": "stylelint --fix \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\""
 	},
 	"devDependencies": {
 		"@mdit/plugin-attrs": "^0.4.8",
@@ -34,6 +38,9 @@
 		"prettier": "^3.0.0",
 		"sentences-per-line": "^0.2.1",
 		"sitemap": "^7.1.1",
+		"stylelint": "^15.10.2",
+		"stylelint-stylus": "^0.18.0",
+		"stylus": "^0.59.0",
 		"vitepress": "^1.0.0-beta.6",
 		"vue": "^3.3.4"
 	},

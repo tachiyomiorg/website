@@ -2,7 +2,7 @@
 import { h } from "vue";
 import Theme from "vitepress/theme";
 import CustomLayout from "./layouts/CustomLayout.vue";
-import "./styles/style.css";
+import "./styles/base.styl";
 
 export default {
 	extends: Theme,

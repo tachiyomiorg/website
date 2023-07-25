@@ -60,5 +60,5 @@ const members = [
 </script>
 
 <style>
-	@import "../.vitepress/theme/styles/forks/neko.css"
+	@import "../.vitepress/theme/styles/forks/neko.styl"
 </style>

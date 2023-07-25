@@ -230,5 +230,5 @@ The app will then use your custom image in the local source listing.
 
 
 <style scoped>
-	@import "../../.vitepress/theme/styles/tree.css"
+	@import "../../.vitepress/theme/styles/tree.styl"
 </style>

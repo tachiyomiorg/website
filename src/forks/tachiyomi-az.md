@@ -3,7 +3,7 @@ title: TachiyomiAZ
 description: Hentai-focused with legacy features
 
 layout: home
-pageClass: page-tachiyomiaz
+pageClass: page-tachiyomi-az
 
 hero:
   name: TachiyomiAZ
@@ -78,5 +78,5 @@ const members = [
 </div>
 
 <style scoped>
-	@import "../.vitepress/theme/styles/forks/tachiyomi-az.css"
+	@import "../.vitepress/theme/styles/forks/tachiyomi-az.styl"
 </style>

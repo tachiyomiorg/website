@@ -3,7 +3,7 @@ title: TachiyomiJ2K
 description: New approach to the design of the base app along with several other enhancements
 
 layout: home
-pageClass: page-tachiyomij2k
+pageClass: page-tachiyomi-j2k
 
 hero:
   name: TachiyomiJ2K
@@ -52,5 +52,5 @@ const members = [
 </script>
 
 <style>
-	@import "../.vitepress/theme/styles/forks/tachiyomi-j2k.css"
+	@import "../.vitepress/theme/styles/forks/tachiyomi-j2k.styl"
 </style>
