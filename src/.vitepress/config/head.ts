@@ -17,7 +17,13 @@ const head: HeadConfig[] = [
 	["meta", { name: "twitter:image", content: "/img/logo.png" }],
 
 	["meta", { property: "og:site_name", content: "Tachiyomi" }],
-	["meta", { property: "og:description", content: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android." }],
+	[
+		"meta",
+		{
+			property: "og:description",
+			content: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.",
+		},
+	],
 	["meta", { property: "og:locale", content: "en_US" }],
 	["meta", { property: "og:type", content: "website" }],
 	["meta", { property: "og:image", content: "/img/logo.png" }],
