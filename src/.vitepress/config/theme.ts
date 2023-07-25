@@ -12,10 +12,11 @@ const themeConfig: DefaultTheme.Config = {
 	outline: [2, 3],
 
 	socialLinks: [
-		{ icon: "github", link: "https://github.com/tachiyomiorg/tachiyomi" },
-		{ icon: "twitter", link: "https://twitter.com/tachiyomiorg" },
-		{ icon: "facebook", link: "https://facebook.com/tachiyomiorg" },
-		{ icon: "discord", link: "https://discord.gg/tachiyomi" },
+		{ icon: "github", link: "https://github.com/tachiyomiorg/tachiyomi", ariaLabel: "Project GitHub" },
+		{ icon: "discord", link: "https://discord.gg/tachiyomi", ariaLabel: "Discord Server" },
+		{ icon: "twitter", link: "https://twitter.com/tachiyomiorg", ariaLabel: "Twitter Page" },
+		{ icon: "facebook", link: "https://facebook.com/tachiyomiorg", ariaLabel: "Facebook Page" },
+		//{ icon: "instagram", link: "https://instagram.com/tachiyomiorg", ariaLabel: "Instagram Page" },
 	],
 
 	footer: {
