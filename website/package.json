@@ -12,9 +12,9 @@
 		"url": "https://github.com/tachiyomiorg/website/issues"
 	},
 	"scripts": {
-		"docs:dev": "vitepress dev src",
-		"docs:build": "npm run lint && vitepress build src",
-		"docs:preview": "vitepress preview src",
+		"dev": "vitepress dev src",
+		"build": "npm run lint && vitepress build src",
+		"preview": "vitepress preview src",
 		"lint": "npm run lint:es && npm run lint:prettier && npm run lint:mdl && npm run lint:style",
 		"lint:fix": "npm run lint:es:fix && npm run lint:prettier:fix && npm run lint:style:fix",
 		"lint:es": "eslint . --ext .vue,.js,.ts,.jsx,.tsx",

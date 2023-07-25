@@ -10,7 +10,7 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 You will need [Node.js](http://nodejs.org) **version 16+**, and [npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm) **version 8+**.
 
-After cloning the repo, run:
+After cloning the repo and entering the the directory, go to the `/website` folder and run:
 
 ``` bash
 # Installs any dependencies needed.
@@ -21,32 +21,33 @@ To run the project now, run:
 
 ``` bash
 # This command start a local server you can access and edit live.
-$ npm run docs:dev
+$ npm run dev
 ```
 
 ### Commonly used NPM scripts
 
 ``` bash
 # This command will generate a static site inside a dist directory in your project.
-$ npm run docs:build
+$ npm run build
 
 # Run this command to preview the built files in a local server.
-$ npm run docs:preview
+$ npm run preview
 ```
 
- **Please make sure to have `npm run docs:build` pass successfully before submitting a PR.** Although the same tests will be run against your PR on the CI server, it is better to have it working locally.
+ **Please make sure to have `npm run build` pass successfully before submitting a PR.** Although the same tests will be run against your PR on the CI server, it is better to have it working locally.
 
 It is also recommended you lint your files before the PR.
 
 ## Project Structure
 
-- **`src`**: contains all the markdown files used for the website.
-  - **`.vitepress`**:
-    - **[`dist`](https://vitepress.dev/guide/deploy)**: contains built files for distribution. Note this directory is only updated when a release happens or when you run the build command. Changes to this folder will not carry over with Git.
-    - **`theme`**: contains custom theme files.
-    - `config.ts`: main configuration file for VitePress.
-  - **`public`**: files to be exposed publicly without any processing.
-- `package.json`: contains information about which plugins are installed in the project.
+- **`website`**: contains all the website related files.
+  - **`src`**: contains all the markdown files used for the website.
+    - **`.vitepress`**:
+      - **[`dist`](https://vitepress.dev/guide/deploy)**: contains built files for distribution. Note this directory is only updated when a release happens or when you run the build command. Changes to this folder will not carry over with Git.
+      - **`theme`**: contains custom theme files.
+      - `config.ts`: main configuration file for VitePress.
+    - **`public`**: files to be exposed publicly without any processing.
+  - `package.json`: contains information about which plugins are installed in the project.
 
 ## Images and Videos guidelines
 
