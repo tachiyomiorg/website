@@ -32,6 +32,7 @@
 		"@mdit/plugin-include": "^0.4.8",
 		"@mdit/plugin-tab": "^0.4.8",
 		"feed": "^4.2.2",
+		"lint-staged": "^13.2.3",
 		"markdown-it-mdi": "^0.1.0",
 		"markdownlint": "^0.29.0",
 		"markdownlint-cli": "^0.35.0",
@@ -48,9 +49,8 @@
 		"pre-commit": "npm run lint-staged"
 	},
 	"lint-staged": {
-		"*": [
-			"prettier --write --ignore-unknown"
-		]
+		"*.{styl,vue}": "stylelint --fix",
+		"*.{html,json}": "prettier --write"
 	},
 	"dependencies": {
 		"@mdi/js": "^7.2.96",
