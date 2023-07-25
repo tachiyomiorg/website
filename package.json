@@ -15,8 +15,10 @@
 		"docs:dev": "vitepress dev src",
 		"docs:build": "npm run lint && vitepress build src",
 		"docs:preview": "vitepress preview src",
-		"lint": "npm run lint:prettier && npm run lint:mdl && npm run lint:style",
-		"lint:fix": "npm run lint:prettier:fix && npm run lint:style:fix",
+		"lint": "npm run lint:es && npm run lint:prettier && npm run lint:mdl && npm run lint:style",
+		"lint:fix": "npm run lint:es:fix && npm run lint:prettier:fix && npm run lint:style:fix",
+		"lint:es": "eslint . --ext .vue,.js,.ts,.jsx,.tsx",
+		"lint:es:fix": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
 		"lint:prettier": "prettier --check \"src/**/*\"",
 		"lint:prettier:fix": "prettier --check --write \"src/**/*\"",
 		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033",
@@ -31,6 +33,11 @@
 		"@mdit/plugin-img-size": "^0.4.8",
 		"@mdit/plugin-include": "^0.4.8",
 		"@mdit/plugin-tab": "^0.4.8",
+		"@typescript-eslint/eslint-plugin": "^6.2.0",
+		"@typescript-eslint/parser": "^6.2.0",
+		"eslint": "^8.45.0",
+		"eslint-config-standard": "^17.1.0",
+		"eslint-plugin-vue": "^9.15.1",
 		"feed": "^4.2.2",
 		"lint-staged": "^13.2.3",
 		"markdown-it-mdi": "^0.1.0",
@@ -42,8 +49,10 @@
 		"stylelint": "^15.10.2",
 		"stylelint-stylus": "^0.18.0",
 		"stylus": "^0.59.0",
+		"vite-plugin-eslint": "^1.8.1",
 		"vitepress": "^1.0.0-beta.6",
-		"vue": "^3.3.4"
+		"vue": "^3.3.4",
+		"vue-eslint-parser": "^9.3.1"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npm run lint-staged"
