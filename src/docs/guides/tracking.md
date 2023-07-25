@@ -52,7 +52,9 @@ To log in with Kitsu, you need to use your email address as your username.
 If you cannot find a manga by name, you can look it up on MAL and then search for it in Tachiyomi using the following format: `id:<id from manga URL>`.
 You can also search for a manga on your MAL profile list by searching in the following format: `my:<manga name>`.
 
+::: tip
 Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
+:::
 
 ## How do I see which manga I have or have not tracked in my library?
 

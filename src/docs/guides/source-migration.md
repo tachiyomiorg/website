@@ -4,13 +4,18 @@ description: Migration is the process of moving manga between sources without lo
 ---
 
 # Source migration
+Migration is the process of moving manga between sources without losing progress. This is most often used when a source is no longer accessible or another source is more up-to-date.
 
+::: warning
 Always make sure to have a backup in case anything unexpected occurs.
+:::
 
+::: danger
 Downloaded chapter(s) do not transfer with migrations.
 
 Migrations with downloaded chapter(s) may leave the download behind.
 You will need to remove these manually with a file manager.
+:::
 
 ## Migrating from Manga
 

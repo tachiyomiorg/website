@@ -19,7 +19,9 @@ Backups can hold the following information:
 - **Manga information**
   - Author, Artist, Date Added to Library, Selected Viewer, Read Duration, etc.
 
+::: tip
 You can do this by going to **More → Backup and Restore** and then selecting **Create backup** and select a location to save it.
+:::
 
 ## How do I restore a backup?
 
@@ -37,8 +39,10 @@ You can transfer downloaded manga chapters from one version of **Tachiyomi** to 
 
 It is highly recommended you turn on auto backups, this will ensure you can recover if need be.
 
+::: tip
 You can do this by going to **More → Settings → Backup** and then setting a **backup frequency**.
 In the case of a catastrophic failure, at least you will be able to recover.
+:::
 
 ## Forks information
 

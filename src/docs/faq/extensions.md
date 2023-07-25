@@ -15,8 +15,9 @@ Tachiyomi does not endorse or recommend any manga source, and there is no best e
 Instead, we encourage users to spend some time trying out a few sources themselves and discover what sources work best for them.
 What works well for somebody else might not work well for you.
 
-
+::: info Disclaimer
 Tachiyomi is not hosting any content, we are not affiliated with or responsible for any source that is; slow, down, missing chapters, or has subpar image quality.
+:::
 
 ---
 
@@ -55,7 +56,9 @@ If you need more help regarding this, read [this](https://www.theandroidsoul.com
 Extensions for **Tachiyomi** are technically installed the same as standard apps.
 Either you uninstall them through the app section on your device's settings or do it in **Tachiyomi**.
 
+::: tip
 To uninstall an extension from within **Tachiyomi**, go to → **Extensions** then tap **Uninstall** on the extension you want to remove.
+:::
 
 ## Removed Extensions
 
