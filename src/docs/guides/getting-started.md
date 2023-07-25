@@ -5,44 +5,73 @@ description: Essential information to help you get set up with Tachiyomi.
 
 # Getting started
 
-## Installation
+Essential information to help you get set up with Tachiyomi.
 
-You can download the latest version of **Tachiyomi** by going to our download page.
-When you've completed the download, open the APK file and proceed with installing it.
+## Installation Guide
 
-## Installing an extension
+### 1. Downloading Tachiyomi
 
-Now that **Tachiyomi** is installed, open the app and navigate to Browse, and then switch to the **Extensions** tab.
+To get started with **Tachiyomi**, follow these steps:
 
-Find the extension that you'd like to use then press the INSTALL button next to your desired extension and then accept the installation prompt.
+1. Visit our [download](/download) page to get the latest version of **Tachiyomi**.
+1. After the download is complete, open the `tachiyomi-*.apk` file.
+1. Proceed with the installation process.
 
-You _might_ need to give **Tachiyomi** permission to _install unknown apps_, you can read how to do so here.
+### 2. Installing Extensions
 
-## Adding manga to your library
+Once **Tachiyomi** is installed on your device, you can add extensions to access a wide range of sources.
 
-Now that you've installed the desired extension, it will show in the **Sources** tab.
-This page contains all of your sources, which is obtained through extensions, some extensions contain _multiple_ sources.
+Here's how:
 
-To find and add manga to your library, tap **Latest** for a source's most recently updated manga, or tap on the source itself to browse and search their catalog.
+1. Open the **Tachiyomi** app.
+1. Navigate to the "**Browse**" section.
+1. Tap on the **Extensions** tab.
+1. Look for the extension you want to use and press the "**INSTALL**" button next to it.
+1. Accept the installation prompt that appears.
 
-Now that you've presumably found manga that you want to add, click on it and then press the `Add to library` button, it should now appear in your Library ready to be read!
+![Installing extensions](getting-started/installing-extensions_light.webp#light)
 
-Other ways to search for manga
+![Installing extensions](getting-started/installing-extensions_dark.webp#dark)
 
-You can also search for manga globally across all your sources by using Search located in the top-right of Browse → **Sources**.
+::: tip INSTALL PERMISSION
+Depending on your device settings, you might need to grant **Tachiyomi** permission to install unknown apps.
 
-Trouble finding a specific manga
+![Security warning](getting-started/security-warning.webp)
 
-Check your spelling and try again, there's also the chance that your used source may not host the manga you're looking for.
+> Relevant guide: [How do I allow third-party installations?](/docs/faq/extensions#how-do-i-allow-third-party-installations)
+:::
 
-*   Some sources use **Japanese romanized** titles instead of **English** ones.
+### 3. Adding Series to Your Library
 
-    > For example **Boku no Hero Academia** instead of **My Hero Academia**.
-*   Some sources use different spellings.
+After installing the desired extension, you'll find it in the **Sources** tab, which contains all your sources obtained through extensions.
 
-    > For example **Bungo Stray Dogs** instead of **Bungou Stray Dogs**.
-*   Some sources use different wordings
+Here's how you can add series to your library:
 
-    > For example **3-gatsu no Lion** instead of **Sangatsu no Lion**.
+1. Select the source you'd like to browse.
+1. You can use the **Popular**/**Latest** filters to browse, or you can search for the series name.
+1. Once you've found the series that you want to add, click on it for more details.
+1. Press the "**Add to library**" button, and the series will be added to your Library, ready to be read!
 
-Find more potential answers to your questions here.
+## Additional Setup
+
+### Series Search Options
+
+If you want to search for series across all your sources, you can use the global search feature.
+
+Follow these steps:
+
+1. Go to the "**Browse**" section.
+1. Tap on **Sources** located at the top-right corner.
+1. Use the Search function to find series from all available sources.
+
+### Trouble Finding a Specific Series?
+
+If you encounter difficulties while searching for a specific series, consider the following points:
+
+* Double-check your spelling and try again, as some sources might use **Japanese romanized** titles instead of **English** ones.
+  > Example: **Boku no Hero Academia** instead of **My Hero Academia**.
+
+* Some sources may use different spellings or wordings for titles.
+  > Example: **Bungo Stray Dogs** instead of **Bungou Stray Dogs**
+
+  > Example: **3-gatsu no Lion** instead of **Sangatsu no Lion**.

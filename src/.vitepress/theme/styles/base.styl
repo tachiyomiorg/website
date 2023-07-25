@@ -18,6 +18,30 @@
 }
 
 /**
+ * Dark/Light Theme Overrides
+ * -------------------------------------------------------------------------- */
+
+html:not(.dark) {
+	img[data-mode="darkmode-only"] {
+		display: none !important
+
+		& + figcaption {
+			display: none !important
+		}
+	}
+}
+
+.dark {
+	img[data-mode="lightmode-only"] {
+		display: none !important
+
+		& + figcaption {
+			display: none !important
+		}
+	}
+}
+
+/**
  * Component: Button
  * -------------------------------------------------------------------------- */
 
@@ -86,4 +110,45 @@
 
 .VPImage.image-src {
 	border-radius: 8px
+}
+
+/**
+ * Component: Image Figure
+ * -------------------------------------------------------------------------- */
+
+figure:has(img) {
+	position: relative
+	display: flex
+	flex-direction: column
+	width: auto
+	text-align: center
+	transition: transform var(--vp-tt)
+}
+
+figure:has(img) img {
+	overflow: hidden
+	margin: 0 auto
+	border-radius: 8px
+}
+
+figure:has(img) img[tabindex]:hover,
+figure:has(img) img[tabindex]:focus {
+	box-shadow: 2px 2px 10px 0 var(--card-shadow)
+}
+
+@media print {
+	figure:has(img)>a[href^="http://"]:after,
+figure:has(img)>a[href^="https://"]:after {
+		content: ""
+	}
+}
+
+figure:has(img)>a .external-link-icon {
+	display: none
+}
+
+figure:has(img) figcaption {
+	display: inline-block
+	margin: 6px auto
+	font-size: 0.8rem
 }
