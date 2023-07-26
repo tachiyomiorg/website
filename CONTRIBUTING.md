@@ -63,7 +63,7 @@ It is also recommended you lint your files before the PR.
 
 ### Images
 
-- Use `.png` format (should we use `.webp` to match videos?)
+- Use `.webp`
 
 ### Videos
 
