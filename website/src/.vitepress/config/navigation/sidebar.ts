@@ -59,11 +59,11 @@ function defaultSidebar() {
 		},
 		{
 			text: "Download",
-			link: "/download",
+			link: "/download/",
 		},
 		{
 			text: "Extensions",
-			link: "/extensions",
+			link: "/extensions/",
 		},
 		{
 			text: "Forks",

@@ -1,15 +1,15 @@
 ---
 title: Backups
-description: Backups are inter-compatible between Tachiyomi versions, with a few exceptions listed under forks information.
+description: Backups in Tachiyomi are compatible between different versions of the app, with a few exceptions listed under forks information.
 ---
 
 # Backups
 
-Backups are inter-compatible between Tachiyomi versions, with a few exceptions listed under forks information.
+Backups in Tachiyomi are compatible between different versions of the app, with a few exceptions listed under forks information.
 
-## What's in a backup?
+## What's Included in a Backup?
 
-Backups can hold the following information:
+Backups store the following information:
 
 - **Titles**
 - **Categories**
@@ -19,46 +19,51 @@ Backups can hold the following information:
 - **Manga information**
   - Author, Artist, Date Added to Library, Selected Viewer, Read Duration, etc.
 
-::: tip
-You can do this by going to **More → Backup and Restore** and then selecting **Create backup** and select a location to save it.
+::: tip How to create a backup
+1. Go to **More → Backup and Restore**.
+1. Select **Create backup** and choose a location to save it.
+
+![Backup and Restore](/docs/guides/backups/backup.light.webp#light)
+
+![Backup and Restore](/docs/guides/backups/backup.dark.webp#dark)
 :::
 
-## How do I restore a backup?
+## Restoring a Backup
 
-Restoring is done from the Backup and Restore settings.
+Restoring a backup can be done through the Backup and Restore settings.
+To ensure a smooth restoration process, remember to:
 
-To restore a backup without issues be sure to:
+1. Log into the Tracking services you previously used.
+1. Download any extensions you've used in your backup.
 
-- Log into the Tracking services that you previously used.
+## Transferring Downloads to a New Installation
 
-## How can I make my new install of Tachiyomi detect my old downloads?
+You can transfer downloaded manga chapters from one version of Tachiyomi to another.
 
-You can transfer downloaded manga chapters from one version of **Tachiyomi** to another.
+## Enabling Automatic Backups
 
-## How do I make Tachiyomi automatically backup?
+It is highly recommended to enable automatic backups to ensure you can recover in case of any issues.
 
-It is highly recommended you turn on auto backups, this will ensure you can recover if need be.
+::: tip How to enable
+1. Go to **More → Settings → Backup**.
+1. Set a **backup frequency** to schedule automatic backups.
+This way, you can recover from catastrophic failures.
 
-::: tip
-You can do this by going to **More → Settings → Backup** and then setting a **backup frequency**.
-In the case of a catastrophic failure, at least you will be able to recover.
+![Automatic Backups](/docs/guides/backups/automatic_backups.light.webp#light)
+
+![Automatic Backupse](/docs/guides/backups/automatic_backups.dark.webp#dark)
 :::
 
-## Forks information
+## Forks Information
 
-This fork can only restore **MangaDex** entries in a backup.
-If there are entries from other sources that are a part of that backup then they will not transfer.
+Some forks of Tachiyomi have specific limitations regarding backup restoration:
 
-This fork have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for TachiyomiAZ while TachiyomiSY only has **E-Hentai**.
+- [Neko](/forks/neko) can only restore [MangaDex](/extensions/#all.mangadex) entries in a backup.
+  > Entries from other sources will not transfer.
+- Some forks, such as [TachiyomiAZ](/forks/tachiyomi-az) and [TachiyomiSY](/forks/tachiyomi-sy), have built-in extensions.
+  > Example: [E-Hentai](/extensions/#all.ehentai), [nHentai](/extensions/#all.nhentai), and **Hitomi.la**.
+- Restoring a backup made by these forks to standard Tachiyomi will not restore titles from such extensions.
+  > While it is possible to restore titles to these forks, backing them up out of these forks is not possible.
+- Some forks only support restoring legacy backups and haven't implemented the changes needed for new backup formats yet.
 
-Titles from said extensions will not be restored when restoring a backup made by these forks to standard Tachiyomi.
-It is possible to restore titles to these forks, but it is not possible to back them up out of these forks.
-
-This fork can only restore legacy backups, as it has not made the changes needed to support the new backup yet.
-
-This fork have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for TachiyomiAZ while TachiyomiSY only has **E-Hentai**.
-
-Titles from said extensions will not be restored when restoring a backup made by these forks to standard Tachiyomi.
-It is possible to restore titles to these forks, but it is not possible to back them up out of these forks.
-
-This fork can only restore legacy backups, as it has not made the changes needed to support the new backup yet.
+Be aware of these limitations when dealing with backups in different Tachiyomi forks.

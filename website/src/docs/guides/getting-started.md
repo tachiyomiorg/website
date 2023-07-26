@@ -13,7 +13,7 @@ Essential information to help you get set up with Tachiyomi.
 
 To get started with **Tachiyomi**, follow these steps:
 
-1. Visit our [download](/download) page to get the latest version of **Tachiyomi**.
+1. Visit our [download](/download/) page to get the latest version of **Tachiyomi**.
 1. After the download is complete, open the `tachiyomi-*.apk` file.
 1. Proceed with the installation process.
 

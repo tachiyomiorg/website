@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-description: WIP
+description: Privacy Policy that explains how Tachiyomi collects, uses, and protects users' personal information.
 ---
 
 # Privacy policy

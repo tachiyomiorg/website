@@ -9,7 +9,7 @@ const nav = [
 		items: [
 			{
 				text: "Download",
-				link: "/download",
+				link: "/download/",
 			},
 			{
 				text: "Changelog",

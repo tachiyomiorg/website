@@ -33,7 +33,7 @@ Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikip
 Open an issue on [GitHub](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) if one does not already exist.
 Make sure it is not on the removed extensions list [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475) first.
 
-You can find the list of extensions to download [here](https://tachiyomi.org/extensions/)
+You can find the list of extensions to download [here](/extensions/)
 
 ---
 
