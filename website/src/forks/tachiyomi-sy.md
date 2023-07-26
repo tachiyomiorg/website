@@ -9,7 +9,7 @@ hero:
   name: TachiyomiSY
   text: Hentai-focused
   tagline: Keeping up-to-date with Tachiyomi while also adding exclusive features
-  image: /forks/forks_logo-sy.png
+  image: /forks/logo-sy.png
   actions:
     - theme: brand
       text: Download
@@ -32,7 +32,7 @@ features:
     icon: 👵
 
 theme: "#CE2828"
-image: /forks/forks_logo-sy.png
+image: /forks/logo-sy.png
 imageSize: small
 ---
 

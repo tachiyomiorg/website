@@ -44,7 +44,7 @@ You can transfer downloaded manga chapters from one version of Tachiyomi to anot
 
 It is highly recommended to enable automatic backups to ensure you can recover in case of any issues.
 
-::: tip How to enable
+::: tip How to enable automatic backups
 1. Go to **More → Settings → Backup**.
 1. Set a **backup frequency** to schedule automatic backups.
 This way, you can recover from catastrophic failures.

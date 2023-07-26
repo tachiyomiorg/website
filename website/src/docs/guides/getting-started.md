@@ -29,9 +29,9 @@ Here's how:
 1. Look for the extension you want to use and press the "**INSTALL**" button next to it.
 1. Accept the installation prompt that appears.
 
-![Installing extensions](/docs/guides/getting-started/installing-extensions_light.webp#light)
+![Installing extensions](/docs/guides/getting-started/installing-extensions.light.webp#light)
 
-![Installing extensions](/docs/guides/getting-started/installing-extensions_dark.webp#dark)
+![Installing extensions](/docs/guides/getting-started/installing-extensions.dark.webp#dark)
 
 ::: tip INSTALL PERMISSION
 Depending on your device settings, you might need to grant **Tachiyomi** permission to install unknown apps.

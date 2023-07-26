@@ -9,7 +9,7 @@ hero:
   name: TachiyomiAZ
   text: Hentai-focused
   tagline: Recommendation system, a hamburger menu, and loads of hentai
-  image: https://tachiyomi-v3-gridsome.netlify.app/assets/forks_logo-az.png
+  image: https://tachiyomi-v3-gridsome.netlify.app/assets/logo-az.png
   actions:
     - theme: brand
       text: Download
@@ -32,7 +32,7 @@ features:
     icon: 👵
 
 theme: "#FFCC4D"
-image: /forks/forks_logo-az.png
+image: /forks/logo-az.png
 imageSize: small
 ---
 

@@ -9,7 +9,7 @@ hero:
   name: Neko
   text: For MangaDex
   tagline: Features specific to MangaDex with the featureset of TachiyomiJ2K
-  image: /forks/forks_logo-neko.webp
+  image: /forks/logo-neko.webp
   actions:
     - theme: brand
       text: Download
@@ -32,7 +32,7 @@ features:
     icon: ❔
 
 theme: "#FD6684"
-image: /forks/forks_logo-neko.webp
+image: /forks/logo-neko.webp
 imageSize: small
 ---
 

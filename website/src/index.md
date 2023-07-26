@@ -8,8 +8,8 @@ hero:
   tagline: Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.
   image:
     alt: Tachiyomi Library Tab Dark
-    light: /home/phone-light.webp
-    dark: /home/phone-dark.webp
+    light: /home/phone.light.webp
+    dark: /home/phone.dark.webp
   actions:
     - theme: brand
       text: Get Started
