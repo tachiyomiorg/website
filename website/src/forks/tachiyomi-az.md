@@ -9,7 +9,7 @@ hero:
   name: TachiyomiAZ
   text: Hentai-focused
   tagline: Recommendation system, a hamburger menu, and loads of hentai
-  image: https://tachiyomi-v3-gridsome.netlify.app/assets/logo-az.png
+  image: /forks/logo-az.webp
   actions:
     - theme: brand
       text: Download
@@ -32,7 +32,7 @@ features:
     icon: 👵
 
 theme: "#FFCC4D"
-image: /forks/logo-az.png
+image: /forks/logo-az.webp
 imageSize: small
 ---
 
@@ -74,11 +74,11 @@ const members = [
 <div class="azContainer">
   <div class="azMarquee">
     <div class="azWiggleText">
-      <span class="azText"><i>The BEST fork</i> --az4521</span>
+      <span class="azText"><i>"The BEST fork"</i> - az4521</span>
     </div>
   </div>
 </div>
 
-<style scoped>
+<style>
 	@import "../.vitepress/theme/styles/forks/tachiyomi-az.styl"
 </style>

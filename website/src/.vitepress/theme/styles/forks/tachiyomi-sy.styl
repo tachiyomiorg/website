@@ -1,4 +1,20 @@
 .page-tachiyomi-sy {
+	.VPHero {
+		h1 {
+			.clip {
+				--vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--vp-c-brand) 30%, var(--vp-c-brand-dark))
+			}
+		}
+	}
+
+	.VPButton {
+		&.brand {
+			border-color: var(--vp-button-brand-border)
+			color: var(--vp-button-brand-text)
+			background-color: var(--vp-button-brand-bg)
+		}
+	}
+
 	.image-bg {
 		display: none
 	}
@@ -28,7 +44,13 @@
  * -------------------------------------------------------------------------- */
 
 :root .page-tachiyomi-sy {
+	--vp-button-brand-border: var(--vp-c-brand-light)
 	--vp-button-brand-text: var(--vp-c-white)
+	--vp-button-brand-bg: var(--vp-c-brand)
+	--vp-button-brand-hover-border: var(--vp-c-brand-light)
 	--vp-button-brand-hover-text: var(--vp-c-white)
+	--vp-button-brand-hover-bg: var(--vp-c-brand-light)
+	--vp-button-brand-active-border: var(--vp-c-brand-light)
 	--vp-button-brand-active-text: var(--vp-c-white)
+	--vp-button-brand-active-bg: var(--vp-button-brand-bg)
 }

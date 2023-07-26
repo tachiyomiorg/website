@@ -9,7 +9,7 @@ hero:
   name: TachiyomiJ2K
   text: Redesigned
   tagline: New approach to the design of the base app along with several other enhancements
-  image: /forks/logo-j2k.png
+  image: /forks/logo-j2k.webp
   actions:
     - theme: brand
       text: Download
@@ -32,7 +32,7 @@ features:
     icon: 🔖
 
 theme: "#0952AF"
-image: /forks/logo-j2k.png
+image: /forks/logo-j2k.webp
 imageSize: small
 ---
 

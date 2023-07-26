@@ -1,6 +1,7 @@
 ---
 title: Forks
 description: Forks are alternative versions of Tachiyomi with exclusive features.
+aside: false
 ---
 
 # Forks

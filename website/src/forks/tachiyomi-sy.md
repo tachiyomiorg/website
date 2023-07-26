@@ -1,6 +1,6 @@
 ---
 title: TachiyomiSY
-description: LongDesc
+description: Keeping up-to-date with Tachiyomi while also adding exclusive features
 
 layout: home
 pageClass: page-tachiyomi-sy
@@ -9,7 +9,7 @@ hero:
   name: TachiyomiSY
   text: Hentai-focused
   tagline: Keeping up-to-date with Tachiyomi while also adding exclusive features
-  image: /forks/logo-sy.png
+  image: /forks/logo-sy.webp
   actions:
     - theme: brand
       text: Download
@@ -32,7 +32,7 @@ features:
     icon: 👵
 
 theme: "#CE2828"
-image: /forks/logo-sy.png
+image: /forks/logo-sy.webp
 imageSize: small
 ---
 
