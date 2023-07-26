@@ -1,3 +1,6 @@
+// Assign theme color
+$themeColor = #ce2828
+
 .page-tachiyomi-sy {
 	.VPHero {
 		h1 {
@@ -20,23 +23,24 @@
 	}
 
 	::selection {
-		background: rgba(206, 40, 40, 0.2)
+		background: alpha($themeColor, 0.2)
 	}
 }
+
 
 /**
  * Colors
  * -------------------------------------------------------------------------- */
 
 :root .page-tachiyomi-sy {
-	--vp-c-brand: #ce2828
-	--vp-c-brand-light: #da5d5d
-	--vp-c-brand-lighter: #e69393
-	--vp-c-brand-lightest: #f2c9c9
-	--vp-c-brand-dark: #9a1e1e
-	--vp-c-brand-darker: #671414
-	--vp-c-brand-darkest: #330a0a
-	--vp-c-brand-dimm: rgba(206, 40, 40, 0.08)
+	--vp-c-brand: $themeColor
+	--vp-c-brand-light: tint($themeColor, 20%)
+	--vp-c-brand-lighter: tint($themeColor, 40%)
+	--vp-c-brand-lightest: tint($themeColor, 60%)
+	--vp-c-brand-dark: shade($themeColor, 25%)
+	--vp-c-brand-darker: shade($themeColor, 50%)
+	--vp-c-brand-darkest: shade($themeColor, 75%)
+	--vp-c-brand-dimm: alpha($themeColor, 0.08)
 }
 
 /**

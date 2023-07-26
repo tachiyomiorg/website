@@ -79,6 +79,6 @@ const members = [
   </div>
 </div>
 
-<style>
+<style lang="stylus">
 	@import "../.vitepress/theme/styles/forks/tachiyomi-az.styl"
 </style>

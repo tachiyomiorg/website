@@ -53,6 +53,6 @@ const members = [
 ]
 </script>
 
-<style>
+<style lang="stylus">
 	@import "../.vitepress/theme/styles/forks/tachiyomi-j2k.styl"
 </style>

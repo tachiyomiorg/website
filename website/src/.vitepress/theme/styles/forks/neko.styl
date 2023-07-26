@@ -1,3 +1,6 @@
+// Assign theme color
+$themeColor = #ff6884
+
 .page-neko {
 	.VPHero {
 		h1 {
@@ -20,23 +23,24 @@
 	}
 
 	::selection {
-		background: rgba(255, 109, 137, 0.2)
+		background: alpha($themeColor, 0.2)
 	}
 }
+
 
 /**
  * Colors
  * -------------------------------------------------------------------------- */
 
 :root .page-neko {
-	--vp-c-brand: #ff6884 !important
-	--vp-c-brand-light: #ff8da2
-	--vp-c-brand-lighter: #ffb3c1
-	--vp-c-brand-lightest: #ffd9e0
-	--vp-c-brand-dark: #bf4e63
-	--vp-c-brand-darker: #7f3442
-	--vp-c-brand-darkest: #3f1a21
-	--vp-c-brand-dimm: rgba(255, 109, 137, 0.08)
+	--vp-c-brand: $themeColor
+	--vp-c-brand-light: tint($themeColor, 20%)
+	--vp-c-brand-lighter: tint($themeColor, 40%)
+	--vp-c-brand-lightest: tint($themeColor, 60%)
+	--vp-c-brand-dark: shade($themeColor, 25%)
+	--vp-c-brand-darker: shade($themeColor, 50%)
+	--vp-c-brand-darkest: shade($themeColor, 75%)
+	--vp-c-brand-dimm: alpha($themeColor, 0.08)
 }
 
 /**

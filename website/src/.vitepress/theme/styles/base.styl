@@ -6,15 +6,18 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
+// Assign theme color
+$themeColor = #818cf8
+
 :root {
-	--vp-c-brand: #818cf8
-	--vp-c-brand-light: #a0a8f9
-	--vp-c-brand-lighter: #c0c5fb
-	--vp-c-brand-lightest: #dfe2fd
-	--vp-c-brand-dark: #6069ba
-	--vp-c-brand-darker: #40467c
-	--vp-c-brand-darkest: #20233e
-	--vp-c-brand-dimm: rgba(100, 108, 255, 0.08)
+	--vp-c-brand: $themeColor
+	--vp-c-brand-light: tint($themeColor, 20%)
+	--vp-c-brand-lighter: tint($themeColor, 40%)
+	--vp-c-brand-lightest: tint($themeColor, 60%)
+	--vp-c-brand-dark: shade($themeColor, 25%)
+	--vp-c-brand-darker: shade($themeColor, 50%)
+	--vp-c-brand-darkest: shade($themeColor, 75%)
+	--vp-c-brand-dimm: alpha($themeColor, 0.08)
 }
 
 /**

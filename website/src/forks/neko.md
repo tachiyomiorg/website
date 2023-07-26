@@ -61,6 +61,6 @@ const members = [
 ]
 </script>
 
-<style>
+<style lang="stylus">
 	@import "../.vitepress/theme/styles/forks/neko.styl"
 </style>
