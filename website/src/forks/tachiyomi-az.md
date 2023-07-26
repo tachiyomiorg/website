@@ -18,6 +18,8 @@ hero:
       text: GitHub
       link: https://github.com/az4521/tachiyomiAZ
 
+customMetaTitle: TachiyomiAZ
+
 features:
   - title: Hentai-focused
     details: Adds several features to enhance your Hentai experience.

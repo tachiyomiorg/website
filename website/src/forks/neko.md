@@ -9,7 +9,7 @@ hero:
   name: Neko
   text: For MangaDex
   tagline: Features specific to MangaDex with the featureset of TachiyomiJ2K
-  image: /forks/forks_logo-neko.png
+  image: /forks/forks_logo-neko.webp
   actions:
     - theme: brand
       text: Download
@@ -18,10 +18,12 @@ hero:
       text: GitHub
       link: https://github.com/CarlosEsco/Neko
 
+customMetaTitle: Neko
+
 features:
   - title: MangaDex
     details: Native login with support for MDList as a tracker, and syncing the MangaDex follows list.
-    icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg">
+    icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg" alt="MangaDex Logo" height="32" width="32">
   - title: Similiar Manga
     details: Recommendation system
     icon: 📚
@@ -30,7 +32,7 @@ features:
     icon: ❔
 
 theme: "#FD6684"
-image: /forks/forks_logo-neko.png
+image: /forks/forks_logo-neko.webp
 imageSize: small
 ---
 

@@ -18,6 +18,8 @@ hero:
       text: GitHub
       link: https://github.com/jobobby04/TachiyomiSY
 
+customMetaTitle: TachiyomiSY
+
 features:
   - title: Hentai-focused
     details: Adds several features to enhance your Hentai experience.
@@ -25,7 +27,7 @@ features:
   - title: Manga recommendations
     details: Get recommendations from MyAnimeList and AniDB.
     icon: 📚
-  - title: Several exclusive fea
+  - title: Several exclusive features
     details: Keeps the old design of Tachiyomi with hamburger menu.
     icon: 👵
 

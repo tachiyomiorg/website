@@ -18,6 +18,8 @@ hero:
       text: GitHub
       link: https://github.com/Jays2Kings/tachiyomiJ2K
 
+customMetaTitle: TachiyomiJ2K
+
 features:
   - title: Redesigned UI
     details: Entirely different design from regular Tachiyomi, with exciting new features.
