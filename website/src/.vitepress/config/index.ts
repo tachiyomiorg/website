@@ -7,7 +7,6 @@ import head from "./head";
 import "./icons";
 
 import generateMeta from "./hooks/generateMeta";
-import generateSitemap from "./hooks/generateSitemap";
 import generateFeed from "./hooks/generateFeed";
 
 const hostname: string = "https://kodo.moe";
@@ -23,12 +22,14 @@ export default ({ mode }) => {
 		lang: "en-US",
 		title: "Tachiyomi",
 		description: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.",
+		/*sitemap: {
+			hostname: "https://kodo.moe",
+		},*/
 		head,
 		markdown,
 		themeConfig: themeConfig,
 		transformHead: async (context) => generateMeta(context, hostname),
 		buildEnd: async (context) => {
-			generateSitemap(context, hostname);
 			generateFeed(context, hostname);
 		},
 	});

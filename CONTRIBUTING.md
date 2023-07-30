@@ -34,7 +34,7 @@ $ npm run build
 $ npm run preview
 ```
 
- **Please make sure to have `npm run build` pass successfully before submitting a PR.** Although the same tests will be run against your PR on the CI server, it is better to have it working locally.
+ **Please make sure to have `npm run test` pass successfully before submitting a PR.** Although the same tests will be run against your PR on the CI server, it is better to have it working locally.
 
 It is also recommended you lint your files before the PR.
 
