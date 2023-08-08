@@ -8,33 +8,33 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ## Development Setup
 
-You will need [Node.js](http://nodejs.org) **version 18+**, and [npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm) **version 9+**.
+You will need [Node.js](http://nodejs.org) **version 18+**, and [pnpm](https://pnpm.io/installation) **version 8+**.
 
 After cloning the repo and entering the the directory, go to the `/website` folder and run:
 
 ``` bash
 # Installs any dependencies needed.
-$ npm install
+$ pnpm install
 ```
 
 To run the project now, run:
 
 ``` bash
 # This command start a local server you can access and edit live.
-$ npm run dev
+$ pnpm dev
 ```
 
-### Commonly used NPM scripts
+### Commonly used PNPM scripts
 
 ``` bash
 # This command will generate a static site inside a dist directory in your project.
-$ npm run build
+$ pnpm build
 
 # Run this command to preview the built files in a local server.
-$ npm run preview
+$ pnpm preview
 ```
 
- **Please make sure to have `npm run test` pass successfully before submitting a PR.** Although the same tests will be run against your PR on the CI server, it is better to have it working locally.
+ **Please make sure to have `pnpm test` pass successfully before submitting a PR.** Although the same tests will be run against your PR on the CI server, it is better to have it working locally.
 
 It is also recommended you lint your files before the PR.
 

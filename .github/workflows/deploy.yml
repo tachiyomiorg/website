@@ -36,11 +36,11 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: 18
-                  cache: npm
+                  cache: pnpm
                   cache-dependency-path: "**/package-lock.json"
 
             - name: Install and build
-              run: npm ci && npm run build
+              run: pnpm install && pnpm build
 
             - name: Configure pages
               uses: actions/configure-pages@v2

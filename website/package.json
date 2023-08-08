@@ -13,12 +13,13 @@
 		"url": "https://github.com/tachiyomiorg/website/issues"
 	},
 	"scripts": {
-		"test": "npm run lint && npm run build && npm run preview",
+		"preinstall": "npx only-allow pnpm",
+		"test": "pnpm lint && pnpm build && pnpm preview",
 		"dev": "vitepress dev src",
 		"build": "vitepress build src",
 		"preview": "vitepress preview src",
-		"lint": "npm run lint:es && npm run lint:prettier && npm run lint:mdl && npm run lint:style",
-		"lint:fix": "npm run lint:es:fix && npm run lint:prettier:fix && npm run lint:style:fix",
+		"lint": "pnpm lint:es && pnpm lint:prettier && pnpm lint:mdl && pnpm lint:style",
+		"lint:fix": "pnpm lint:es:fix && pnpm lint:prettier:fix && pnpm lint:style:fix",
 		"lint:es": "eslint . --ext .vue,.js,.ts,.cjs,.mjs,.jsx,.tsx",
 		"lint:es:fix": "eslint . --ext .vue,.js,.ts,.cjs,.mjs,.jsx,.tsx --fix",
 		"lint:prettier": "prettier --check \"src/**/*\"",
@@ -56,7 +57,7 @@
 		"vue-eslint-parser": "^9.3.1"
 	},
 	"simple-git-hooks": {
-		"pre-commit": "npm run lint-staged"
+		"pre-commit": "pnpm lint-staged"
 	},
 	"lint-staged": {
 		"*.{styl,vue}": "stylelint --fix",
