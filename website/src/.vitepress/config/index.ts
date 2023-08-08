@@ -12,7 +12,10 @@ import generateFeed from "./hooks/generateFeed";
 export default ({ mode }) => {
 	process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
-	const hostname: string = process.env.VITE_HOSTNAME || "https://kodo.moe";
+	const baseUrl = process.env.VITE_HOSTNAME || "https://kodo.moe"
+	const basePath = process.env.VITE_BASE || "/"
+
+	const hostname: string = baseUrl + basePath.replace(/\/$/, "")
 
 	return defineConfig({
 		appearance: "dark",
