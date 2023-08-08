@@ -5,6 +5,10 @@
 	"license": "MPL-2.0",
 	"private": true,
 	"type": "module",
+    "engines": {
+        "node": ">=18",
+        "pnpm": ">=8"
+    },
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/tachiyomiorg/website.git"
