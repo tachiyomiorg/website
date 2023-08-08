@@ -32,18 +32,36 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Setup Pnpm
-              uses: pnpm/action-setup@v2
-
-            - name: Setup Node
+            - name: Install Node.js
               uses: actions/setup-node@v3
               with:
                   node-version: 18
-                  cache: pnpm
-                  cache-dependency-path: "**/package-lock.json"
 
-            - name: Install and build
-              run: pnpm install && pnpm build
+            - name: Install pnpm
+              uses: pnpm/action-setup@v2
+              with:
+                version: 8
+                run_install: false
+                package_json_file: "website/package-lock.json"
+
+            - name: Get pnpm store directory
+              shell: bash
+              run: |
+                echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+            - uses: actions/cache@v3
+              name: Setup pnpm cache
+              with:
+                path: ${{ env.STORE_PATH }}
+                key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+                restore-keys: |
+                  ${{ runner.os }}-pnpm-store-
+
+            - name: Install dependencies
+              run: pnpm install
+
+            - name: Build
+              run: pnpm build
 
             - name: Configure pages
               uses: actions/configure-pages@v2
