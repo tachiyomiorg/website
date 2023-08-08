@@ -9,10 +9,10 @@ import "./icons";
 import generateMeta from "./hooks/generateMeta";
 import generateFeed from "./hooks/generateFeed";
 
-const hostname: string = "https://kodo.moe";
-
 export default ({ mode }) => {
 	process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
+
+	const hostname: string = process.env.VITE_HOSTNAME || "https://kodo.moe";
 
 	return defineConfig({
 		appearance: "dark",
@@ -22,9 +22,9 @@ export default ({ mode }) => {
 		lang: "en-US",
 		title: "Tachiyomi",
 		description: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.",
-		/*sitemap: {
-			hostname: "https://kodo.moe",
-		},*/
+		sitemap: {
+			hostname: hostname,
+		},
 		head,
 		markdown,
 		themeConfig: themeConfig,
