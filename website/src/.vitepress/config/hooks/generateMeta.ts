@@ -17,25 +17,55 @@ const generateMeta = (context: TransformContext, hostname: string) => {
 		head.push(["meta", { property: "og:type", content: pageData.frontmatter.type }]);
 	}
 	if (pageData.frontmatter.customMetaTitle) {
-		head.push(["meta", { property: "og:title", content: pageData.frontmatter.customMetaTitle }]);
-		head.push(["meta", { name: "twitter:title", content: pageData.frontmatter.customMetaTitle }]);
+		head.push([
+			"meta",
+			{
+				property: "og:title",
+				content: pageData.frontmatter.customMetaTitle,
+			},
+		]);
+		head.push([
+			"meta",
+			{
+				name: "twitter:title",
+				content: pageData.frontmatter.customMetaTitle,
+			},
+		]);
 		head.push(["meta", { property: "og:site_name", content: "" }]);
 	} else {
 		head.push(["meta", { property: "og:title", content: pageData.frontmatter.title }]);
 		head.push(["meta", { name: "twitter:title", content: pageData.frontmatter.title }]);
 	}
 	if (pageData.frontmatter.description) {
-		head.push(["meta", { property: "og:description", content: pageData.frontmatter.description }]);
-		head.push(["meta", { name: "twitter:description", content: pageData.frontmatter.description }]);
+		head.push([
+			"meta",
+			{
+				property: "og:description",
+				content: pageData.frontmatter.description,
+			},
+		]);
+		head.push([
+			"meta",
+			{
+				name: "twitter:description",
+				content: pageData.frontmatter.description,
+			},
+		]);
 	}
 	if (pageData.frontmatter.image) {
 		head.push([
 			"meta",
-			{ property: "og:image", content: `${hostname}/${pageData.frontmatter.image.replace(/^\//, "")}` },
+			{
+				property: "og:image",
+				content: `${hostname}/${pageData.frontmatter.image.replace(/^\//, "")}`,
+			},
 		]);
 		head.push([
 			"meta",
-			{ name: "twitter:image", content: `${hostname}/${pageData.frontmatter.image.replace(/^\//, "")}` },
+			{
+				name: "twitter:image",
+				content: `${hostname}/${pageData.frontmatter.image.replace(/^\//, "")}`,
+			},
 		]);
 	} else {
 		head.push(["meta", { property: "og:image", content: `${hostname}/img/logo.png` }]);
@@ -45,12 +75,21 @@ const generateMeta = (context: TransformContext, hostname: string) => {
 		head.push(["meta", { property: "article:tag", content: pageData.frontmatter.tag }]);
 	}
 	if (pageData.frontmatter.date) {
-		head.push(["meta", { property: "article:published_time", content: pageData.frontmatter.date }]);
+		head.push([
+			"meta",
+			{
+				property: "article:published_time",
+				content: pageData.frontmatter.date,
+			},
+		]);
 	}
 	if (pageData.lastUpdated && pageData.frontmatter.lastUpdated !== false) {
 		head.push([
 			"meta",
-			{ property: "article:modified_time", content: new Date(pageData.lastUpdated).toISOString() },
+			{
+				property: "article:modified_time",
+				content: new Date(pageData.lastUpdated).toISOString(),
+			},
 		]);
 	}
 

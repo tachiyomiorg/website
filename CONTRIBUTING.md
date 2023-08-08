@@ -8,7 +8,7 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ## Development Setup
 
-You will need [Node.js](http://nodejs.org) **version 16+**, and [npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm) **version 8+**.
+You will need [Node.js](http://nodejs.org) **version 18+**, and [npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm) **version 9+**.
 
 After cloning the repo and entering the the directory, go to the `/website` folder and run:
 

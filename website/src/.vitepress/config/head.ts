@@ -8,11 +8,35 @@ const head: HeadConfig[] = [
 	["meta", { name: "referrer", content: "no-referrer-when-downgrade" }],
 
 	["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-	["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" }],
-	["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" }],
+	[
+		"link",
+		{
+			rel: "icon",
+			type: "image/png",
+			sizes: "32x32",
+			href: "/favicon-32x32.png",
+		},
+	],
+	[
+		"link",
+		{
+			rel: "icon",
+			type: "image/png",
+			sizes: "16x16",
+			href: "/favicon-16x16.png",
+		},
+	],
 	["link", { rel: "manifest", href: "/site.webmanifest" }],
 	["link", { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#818CF8" }],
-	["link", { rel: "apple-touch-icon", type: "image/x-icon", sizes: "180x180", href: "/favicon.ico" }],
+	[
+		"link",
+		{
+			rel: "apple-touch-icon",
+			type: "image/x-icon",
+			sizes: "180x180",
+			href: "/favicon.ico",
+		},
+	],
 
 	["meta", { name: "twitter:card", content: "summary" }],
 	["meta", { name: "twitter:site", content: "@tachiyomiorg" }],
