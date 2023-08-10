@@ -12,25 +12,27 @@ sidebarDepth: 2
 ### General
 
 #### Will there be an iOS version?
-No. There is no iOS version, and there are no plans for one. Since iOS and Android apps do not share code, it is hard to port.
+No. There is no iOS version and there are no plans for one.
+
+Any app in the App Store that shares a name, logo, or similar design with Tachiyomi is not affiliated with this project.
 
 #### Will Tachiyomi ever be on the Google Play Store?
-Google Play's content policy does not allow the APK based extension system to work. The content on some websites will lead to Google taking it down at some point, and Inorichi does not want to have to deal with it as they have stated [before](https://github.com/tachiyomiorg/tachiyomi/issues/1745#issuecomment-441208074).
+Google Play's policies would not allow the APK-based extension system nor some of the sources' content.
 
-To report Tachiyomi copycats on the Google Play Store, you can fill out [this form](https://support.google.com/googleplay/android-developer/contact/takedown) following [these steps](https://pastebin.com/08eeuJxH).
+Any app on the Play Store that shares a name, logo, or similar design with Tachiyomi is not affiliated with this project. To report copycats on the Play Store, you can fill out [this form](https://support.google.com/googleplay/android-developer/contact/takedown) following [these steps](https://pastebin.com/08eeuJxH).
 
 #### How do I migrate from the F-Droid version?
 Tachiyomi on F-Droid is not officially supported, so updates are not guaranteed. If you want to migrate to the official builds:
 
 1. Create a [backup](/help/guides/backups/).
 2. Uninstall the F-Droid version (do not keep any app data if it allows you to).
-3. [Download](/download/) and install Tachiyomi.
+3. [Download](/download/) and install the official version of Tachiyomi.
 4. [Restore](/help/guides/backups/#how-do-i-restore-a-backup) your backup.
 
-We have no intention to host our own F-Droid repo since Tachiyomi already manages updates by itself, making the usage of F-Droid redundant. For more detailed info, see [this GitHub comment](https://github.com/tachiyomiorg/tachiyomi/issues/6736#issuecomment-1059608058).
+We have no intention to host our own F-Droid repo since Tachiyomi already manages updates by itself, making the usage of F-Droid redundant. For more detailed info, refer to [this GitHub comment](https://github.com/tachiyomiorg/tachiyomi/issues/6736#issuecomment-1059608058).
 
 #### Can Tachiyomi read light novels or stream anime?
-No, Tachiyomi is only focused on delivering a great manga experience.
+No, Tachiyomi is focused on delivering a great manga experience.
 
 #### Can Tachiyomi sync between devices?
 No, but you can use the backup and restore feature to save and load data between devices.
