@@ -5,10 +5,10 @@
 	"license": "MPL-2.0",
 	"private": true,
 	"type": "module",
-    "engines": {
-        "node": ">=18",
-        "pnpm": ">=8"
-    },
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=8"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/tachiyomiorg/website.git"
@@ -69,6 +69,9 @@
 	},
 	"dependencies": {
 		"@mdi/js": "^7.2.96",
+		"axios": "^1.4.0",
+		"element-plus": "^2.3.9",
+		"lodash.groupby": "^4.6.0",
 		"vitepress-plugin-auto-sidebar": "^1.1.0"
 	}
 }
