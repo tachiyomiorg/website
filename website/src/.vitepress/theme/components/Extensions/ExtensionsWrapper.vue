@@ -1,8 +1,8 @@
 <script>
 import axios from "axios";
 import groupBy from "lodash.groupby";
-import { GITHUB_EXTENSION_JSON } from "../../config/constants";
-import { simpleLangName } from "../../config/scripts/languages";
+import { GITHUB_EXTENSION_JSON } from "../../../config/constants";
+import { simpleLangName } from "../../../config/scripts/languages";
 import ExtensionFilters from "./ExtensionFilters.vue";
 import ExtensionList from "./ExtensionList.vue";
 
@@ -96,9 +96,7 @@ export default {
 </script>
 
 <template>
-	<div v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
-	<div v-else>
-		<ExtensionFilters :extensions="extensions" @filters="filters = $event" />
-		<ExtensionList :extensions="filteredExtensions" />
-	</div>
+	<ExtensionFilters :extensions="extensions" @filters="filters = $event" />
+	<div class="loading" v-if="loading" v-loading.lock="loading" style="min-height: 200px"></div>
+	<ExtensionList v-else :extensions="filteredExtensions" />
 </template>

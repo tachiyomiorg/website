@@ -10,5 +10,5 @@ Web-based extensions page that enables users to browse and install additional so
 <ExtensionsWrapper/>
 
 <script setup>
-import ExtensionsWrapper from '../.vitepress/theme/components/ExtensionsWrapper.vue'
+import ExtensionsWrapper from '../.vitepress/theme/components/Extensions/ExtensionsWrapper.vue'
 </script>

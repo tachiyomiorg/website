@@ -9,7 +9,16 @@ export default {
 			return this.item.name.split(": ")[1];
 		},
 		pkgVersion: function () {
-			return "v" + this.item.version;
+			return this.item.version;
+		},
+		pkgIsNsfw: function () {
+			return !!parseInt(this.item.nsfw);
+		},
+		pkgHasReadme: function () {
+			return !!parseInt(this.item.hasReadme);
+		},
+		pkgHasChangelog: function () {
+			return !!parseInt(this.item.hasChangelog);
 		},
 		iconUrl: function () {
 			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${this.item.pkg}.png`;
@@ -27,15 +36,14 @@ export default {
 	<div class="extension-text">
 		<div class="upper">
 			{{ pkgName }}
-			<Badge :text="pkgVersion" />
 		</div>
 		<div class="lower">
 			{{ pkgId }}
 		</div>
 	</div>
-	<a :href="apkUrl" class="extension-download" title="Download APK" download>
-		<span>↓ Download</span>
-	</a>
+	<Badge v-if="pkgIsNsfw" type="danger" :text="pkgVersion" title="This extension contains NSFW entries." />
+	<Badge v-else type="info" :text="pkgVersion" title="This extension is free from NSFW entries." />
+	<a :href="apkUrl" class="extension-download" title="Download APK" download>↓</a>
 </template>
 
 <style lang="stylus">
@@ -43,6 +51,7 @@ export default {
 	align-items: center
 	display: flex
 	padding: 0.5em 1.5em
+	margin: 0.8em 0.2em
 	border-radius: 8px
 
 	&:hover {
@@ -61,7 +70,7 @@ export default {
 	}
 
 	.extension-icon {
-		margin-right: 0.5em
+		margin: 0.2em 0.5em
 	}
 
 	.extension-text {
@@ -84,16 +93,10 @@ export default {
 	}
 
 	.extension-download {
-		margin-right: 0.5em
-		padding-left: 1rem
-		padding-right: 1rem
-		padding-top: 0.5rem
-		padding-bottom: 0.5rem
+		padding: 0.4em
 		font-weight: 700
+		font-size: 1.4em
 		border-radius: 4px
-		color: var(--vp-c-brand)
-		background-color: transparent
-		border: 1px solid var(--vp-c-brand-darker)
 
 		.material-icons {
 			color: white
@@ -101,33 +104,26 @@ export default {
 		}
 
 		&:hover {
-			background-color: var(--vp-c-brand-darker)
-			text-decoration: none
-
-			.material-icons {
-				color: var(--vp-c-brand)
+			.VPBadge {
+				background-color: var(--vp-c-brand-darker)
+				text-decoration: none
 			}
 		}
 	}
 
 	@media (max-width 767px) {
 		padding: 0.4em 0em
-
-		.extension-text .lower,
-		.extension-download span {
-			display: none
-		}
 	}
 }
 
 @media (max-width 767px) {
-	.extension {
-		border: 1px solid var(--vp-c-gutter)
-		border-radius: 8px
+	.anchor {
+		display: none
+	}
 
-		.extension-download {
-			background-color: var(--vp-c-brand)
-		}
+	.extension {
+		border: 1px solid var(--vp-c-divider)
+		border-radius: 8px
 	}
 }
 
