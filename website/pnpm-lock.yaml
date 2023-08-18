@@ -94,6 +94,9 @@ devDependencies:
   vitepress:
     specifier: ^1.0.0-rc.4
     version: 1.0.0-rc.4(@algolia/client-search@4.19.1)(axios@1.4.0)(search-insights@2.7.0)(stylus@0.59.0)
+  vitepress-plugin-tabs:
+    specifier: ^0.3.0
+    version: 0.3.0(vitepress@1.0.0-rc.4)(vue@3.3.4)
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -4113,6 +4116,16 @@ packages:
     resolution: {integrity: sha512-LgkpjKVlNlQS54PFv5R/Y4+CHtHoXsJ3xgyVTKNi0sG1fXUmViKCg3Hnl9eo/SfNn894qsNRXoNneQmRBP2Lmw==}
     engines: {node: ^14.13.1 || ^16.7.0 || >=18}
     dev: false
+
+  /vitepress-plugin-tabs@0.3.0(vitepress@1.0.0-rc.4)(vue@3.3.4):
+    resolution: {integrity: sha512-3dKsBuP6PDzcFHgUtNCwwCs3bYoZduj7AcQkT9JfAKTRAKPCNmjiNInPT3IZ7AihL0SJNoQ3liz/e97z8oo+XA==}
+    peerDependencies:
+      vitepress: ^1.0.0-beta.2
+      vue: ^3.3.4
+    dependencies:
+      vitepress: 1.0.0-rc.4(@algolia/client-search@4.19.1)(axios@1.4.0)(search-insights@2.7.0)(stylus@0.59.0)
+      vue: 3.3.4
+    dev: true
 
   /vitepress@1.0.0-rc.4(@algolia/client-search@4.19.1)(axios@1.4.0)(search-insights@2.7.0)(stylus@0.59.0):
     resolution: {integrity: sha512-JCQ89Bm6ECUTnyzyas3JENo00UDJeK8q1SUQyJYou+4Yz5BKEc/F3O21cu++DnUT2zXc0kvQ2Aj4BZCc/nioXQ==}

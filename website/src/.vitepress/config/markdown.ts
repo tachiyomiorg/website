@@ -6,7 +6,7 @@ import { imgLazyload } from "@mdit/plugin-img-lazyload";
 import { imgMark } from "@mdit/plugin-img-mark";
 import { imgSize } from "@mdit/plugin-img-size";
 import { include } from "@mdit/plugin-include";
-import { tab } from "@mdit/plugin-tab";
+import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import mdi from "markdown-it-mdi";
 
 const markdown: MarkdownOptions = {
@@ -19,9 +19,7 @@ const markdown: MarkdownOptions = {
 			md.use(include, {
 				currentPath: (env) => env.filePath,
 			}),
-			md.use(tab, {
-				name: "tab",
-			}),
+			md.use(tabsMarkdownPlugin),
 			md.use(mdi);
 	},
 };

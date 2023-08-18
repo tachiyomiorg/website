@@ -33,8 +33,10 @@ Images will then go into the chapter folder.
 See below for more information on archive files.
 You can refer to the following example:
 
-#### Example <Badge type="info" text="SD Card" /> {#example-sd-card}
+#### Example
 
+:::tabs
+== Device Storage
 <div class="tree">
 	<ul>
 		<img src="/img/folder.svg" class="tree-icon icon-folder">
@@ -75,9 +77,7 @@ You can refer to the following example:
 		</li>
 	</ul>
 </div>
-
-#### Example <Badge type="info" text="Phone storage" /> {#example-phone-storage}
-
+== SD Card
 <div class="tree">
 	<ul>
 		<img src="/img/folder.svg" class="tree-icon icon-folder">
@@ -118,6 +118,7 @@ You can refer to the following example:
 		</li>
 	</ul>
 </div>
+:::
 
 Tachiyomi will see four chapters in a single manga.
 The path to the folder with images must contain both the manga title and the chapter name (as seen above).
