@@ -2,8 +2,8 @@
 	border-radius: 8px
 	margin: 16px
 	padding: 16px
-	color: var(--vp-code-block-color)
-	background-color: var(--vp-code-block-bg)
+	color: var(--vp-c-text-1)
+	// background-color: var(--vp-code-block-bg)
 	font-family: 'Roboto Mono', monospace
 	font-size: 0.85rem
 	line-height: 1.5
@@ -20,14 +20,20 @@
 
 	span {
 		&.folder {
+			&.root,
 			&.main {
-				color: var(--vp-c-brand) !important
+				color: var(--vp-c-brand-darker)
 			}
 		}
 
-		&.folder,
 		&.file.zip {
-			color: var(--vp-c-brand-lighter) !important
+			color: var(--vp-c-brand-darker) !important
+		}
+
+		&.file {
+			.file-extension {
+				color: var(--vp-c-text-2)
+			}
 		}
 	}
 
@@ -62,7 +68,7 @@
 			&:after {
 				position: absolute
 				content: ''
-				background-color: var(--vp-c-code-dimm)
+				background-color: var(--vp-c-text-3)
 			}
 
 			&:last-child {
@@ -78,5 +84,16 @@
 		width: 12px
 		margin-right: 6px
 		display: inline-block
+	}
+}
+
+.dark {
+	.tree {
+		span {
+			&.folder,
+			&.file.zip {
+				color: var(--vp-c-brand-lighter) !important
+			}
+		}
 	}
 }

@@ -17,7 +17,11 @@ Migrations with downloaded chapter(s) may leave the download behind.
 You will need to remove these manually with a file manager.
 :::
 
-## Migrating from Manga
+## Migration guide
+
+::::tabs
+==Tachiyomi
+### Migrating from Manga
 
 1. Tap into a **Manga** you would like to migrate.
 1. Go to Overflow and tap Migrate.
@@ -26,7 +30,7 @@ You will need to remove these manually with a file manager.
 1. Select the **Source** that you'd like to migrate _to_ by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
 
-## Migrating from Source
+### Migrating from Source
 
 1. Tap into Browse on the bottom navbar.
 1. Press the Migrate tab at the top next to Extensions.
@@ -37,15 +41,17 @@ You will need to remove these manually with a file manager.
 1. Select the **Source** you'd like to migrate _to_ by tapping the **Manga** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
 
-## Searching only pinned sources
+:::tip Searching only pinned sources
 
 You can restrict global searching to pinned sources if you wish to declutter your search.
 
 To do this, go to **More → Settings → Browse** then toggle the **Only include pinned sources** setting.
 
 Pin sources in Browse using the pin icon next to the source name.
+:::
 
-## Migrating multiple Manga
+==TachiyomiJ2K
+### Migrating multiple Manga
 
 1. Tap **Settings** → **Sources** → **Source migration**.
 1. Select the **Source** you'd like to migrate _from_ and select **All**.
@@ -55,7 +61,7 @@ Pin sources in Browse using the pin icon next to the source name.
 
     > If a manga is not found, or is wrong you can manually search it by pressing Overflow → **Search manually**.
 
-## Migrating a single Manga
+### Migrating a single Manga
 
 1. Tap into a **Manga** in your Library.
 1. Tap **Overflow** → **Migrate manga**.
@@ -64,7 +70,8 @@ Pin sources in Browse using the pin icon next to the source name.
 
     > If a manga is not found, or is wrong you can manually search it by pressing Overflow → **Search manually**
 
-## Migrating from Library
+==TachiyomiSY
+### Migrating from Library
 
 1. Tap into **Library**.
 1. Tap **Overflow** → **Source migration**.
@@ -75,7 +82,7 @@ Pin sources in Browse using the pin icon next to the source name.
 
     > If a manga is not found, or is wrong you can manually search it by pressing **Overflow** → **Search manually**.
 
-## Migrating from Source 2
+### Migrating from Source
 
 1. Tap into Browse on the bottom navbar.
 1. Press the Migrate tab at the top next to Extensions.
@@ -87,7 +94,8 @@ Pin sources in Browse using the pin icon next to the source name.
 
     > If a manga is not found, or is wrong you can manually search it by pressing **Overflow** → **Search manually**.
 
-## Instructions
+==TachiyomiAZ
+### Instructions
 
 1. Tap into **Library**.
 1. Tap **Overflow** → **Source migration**.
@@ -97,3 +105,4 @@ Pin sources in Browse using the pin icon next to the source name.
 1. Wait until all your **Manga** is found and hit the done at the top and you're done.
 
     > If a manga is not found, or is wrong you can manually search it by pressing **Overflow** → **Search manually**.
+::::

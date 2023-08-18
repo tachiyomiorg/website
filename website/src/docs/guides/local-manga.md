@@ -33,7 +33,7 @@ Images will then go into the chapter folder.
 See below for more information on archive files.
 You can refer to the following example:
 
-#### Example
+#### Example {#example-storages}
 
 :::tabs
 == Device Storage
@@ -47,30 +47,30 @@ You can refer to the following example:
 			<ul>
 				<li>
 					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-					<span class="file jpg">cover.jpg</span>
+					<span class="file jpg">cover<span class="file-extension">.jpg</span></span>
 				</li>
 				<li>
 					<img src="/img/folder.svg" class="tree-icon icon-folder">
 					<span class="folder">chapter_1</span>
 					<ul>
-						<li><span class="file">image_1.ext</span></li>
-						<li><span class="file">image_n.ext</span></li>
+						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
+						<li><span class="file">image_n<span class="file-extension">.ext</span></span></li>
 					</ul>
 				</li>
 				<li>
 					<img src="/img/folder.svg" class="tree-icon icon-folder">
 					<span class="folder">chapter_2</span>
 					<ul>
-						<li><span class="file">image_1.ext</span></li>
-						<li><span class="file">image_n.ext</span></li>
+						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
+						<li><span class="file">image_n<span class="file-extension">.ext</span></span></li>
 					</ul>
 				</li>
 				<li>
 					<img src="/img/folder.svg" class="tree-icon icon-folder">
 					<span class="folder">chapter_n</span>
 					<ul>
-						<li><span class="file">image_1.ext</span></li>
-						<li><span class="file">image_n.ext</span></li>
+						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
+						<li><span class="file">image_n<span class="file-extension">.ext</span></span></li>
 					</ul>
 				</li>
 			</ul>
@@ -88,30 +88,30 @@ You can refer to the following example:
 			<ul>
 				<li>
 					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-					<span class="file jpg">cover.jpg</span>
+					<span class="file jpg">cover<span class="file-extension">.jpg</span></span>
 				</li>
 				<li>
 					<img src="/img/folder.svg" class="tree-icon icon-folder">
 					<span class="folder">chapter_1</span>
 					<ul>
-						<li><span class="file">image_1.ext</span></li>
-						<li><span class="file">image_n.ext</span></li>
+						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
+						<li><span class="file">image_n<span class="file-extension">.ext</span></span></li>
 					</ul>
 				</li>
 				<li>
 					<img src="/img/folder.svg" class="tree-icon icon-folder">
 					<span class="folder">chapter_2</span>
 					<ul>
-						<li><span class="file">image_1.ext</span></li>
-						<li><span class="file">image_n.ext</span></li>
+						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
+						<li><span class="file">image_n<span class="file-extension">.ext</span></span></li>
 					</ul>
 				</li>
 				<li>
 					<img src="/img/folder.svg" class="tree-icon icon-folder">
 					<span class="folder">chapter_n</span>
 					<ul>
-						<li><span class="file">image_1.ext</span></li>
-						<li><span class="file">image_n.ext</span></li>
+						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
+						<li><span class="file">image_n<span class="file-extension">.ext</span></span></li>
 					</ul>
 				</li>
 			</ul>
@@ -130,8 +130,10 @@ Any folders inside the archive file are ignored.
 You must place the archive inside the `Manga` folder where the name will become the `Chapter` title.
 All images inside the archive regardless of folder structure will become pages for that chapter.
 
-#### Example <Badge type="info" text="ZIP" /> {#example-zip}
+#### Example {#example-archives}
 
+:::tabs
+== .ZIP
 <div class="tree">
 	<ul>
 		<img src="/img/folder.svg" class="tree-icon icon-folder">
@@ -142,47 +144,47 @@ All images inside the archive regardless of folder structure will become pages f
 			<ul>
 				<li>
 					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-					<span class="file jpg">cover.jpg</span>
+					<span class="file jpg">cover<span class="file-extension">.jpg</span></span>
 				</li>
 				<li>
 					<img src="/img/zip.svg" class="tree-icon icon-zip">
-					<span class="file zip">chapter_1.zip</span>
+					<span class="file zip">chapter_1<span class="file-extension">.zip</span></span>
 					<ul>
 						<li>
 							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-							<span class="file jpg">image_1.jpg</span>
+							<span class="file jpg">image_1<span class="file-extension">.jpg</span></span>
 						</li>
 						<li>
 							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-							<span class="file jpg">image_n.jpg</span>
+							<span class="file jpg">image_n<span class="file-extension">.jpg</span></span>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<img src="/img/zip.svg" class="tree-icon icon-zip">
-					<span class="file zip">chapter_2.zip</span>
+					<span class="file zip">chapter_2<span class="file-extension">.zip</span></span>
 					<ul>
 						<li>
 							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-							<span class="file jpg">image_1.jpg</span>
+							<span class="file jpg">image_1<span class="file-extension">.jpg</span></span>
 						</li>
 						<li>
 							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-							<span class="file jpg">image_n.jpg</span>
+							<span class="file jpg">image_n<span class="file-extension">.jpg</span></span>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<img src="/img/zip.svg" class="tree-icon icon-zip">
-					<span class="file zip">chapter_n.zip</span>
+					<span class="file zip">chapter_n<span class="file-extension">.zip</span></span>
 					<ul>
 						<li>
 							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-							<span class="file jpg">image_1.jpg</span>
+							<span class="file jpg">image_1<span class="file-extension">.jpg</span></span>
 						</li>
 						<li>
 							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
-							<span class="file jpg">image_n.jpg</span>
+							<span class="file jpg">image_n<span class="file-extension">.jpg</span></span>
 						</li>
 					</ul>
 				</li>
@@ -190,6 +192,7 @@ All images inside the archive regardless of folder structure will become pages f
 		</li>
 	</ul>
 </div>
+:::
 
 ## Advanced
 

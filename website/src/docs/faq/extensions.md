@@ -39,15 +39,20 @@ You can find the list of extensions to download [here](/extensions/)
 
 ### How do I allow third-party installations?
 
+::::tabs
+== Android 8.0 and higher
 When installing your first extension and you are prompted that your device _is not allowed_ to install unknown apps from that source, follow the prompt to allow it.
 
-In _newer_ versions of **Android**, you need to enable **Install unknown apps** on a per-app basis.
+> In _newer_ versions of **Android**, you need to enable **Install unknown apps** on a per-app basis.
 
+== Android 7.1 and lower
 When installing your first extension and you are prompted that your device _is not allowed_ to install unknown apps from that source, follow the prompt to allow it.
 
-In _older_ versions of **Android**, you only need to enable **Unknown sources** globally.
+> In _older_ versions of **Android**, you only need to enable **Unknown sources** globally.
 
-If you need more help regarding this, read [this](https://www.theandroidsoul.com/how-to-allow-apps-installation-from-unknown-sources-on-android-9-pie/)
+::: tip Still got questions?
+If you need more help regarding this, read [this](https://nerdschalk.com/how-to-allow-apps-installation-from-unknown-sources-on-android-9-pie/ "nerdschalk.com | How to allow apps installation from unknown sources on Android 9 Pie").
+::::
 
 ---
 
