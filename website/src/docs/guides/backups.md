@@ -23,9 +23,9 @@ Backups store the following information:
 1. Go to **More → Backup and Restore**.
 1. Select **Create backup** and choose a location to save it.
 
-![Backup and Restore](/docs/guides/backups/backup.light.webp#light)
+![Backup and Restore](/docs/guides/backups/backup.light.webp#light =414x215)
 
-![Backup and Restore](/docs/guides/backups/backup.dark.webp#dark)
+![Backup and Restore](/docs/guides/backups/backup.dark.webp#dark =414x215)
 :::
 
 ## Restoring a Backup
@@ -49,9 +49,9 @@ It is highly recommended to enable automatic backups to ensure you can recover i
 1. Set a **backup frequency** to schedule automatic backups.
 This way, you can recover from catastrophic failures.
 
-![Automatic Backups](/docs/guides/backups/automatic_backups.light.webp#light)
+![Automatic Backups](/docs/guides/backups/automatic_backups.light.webp#light =414x402)
 
-![Automatic Backupse](/docs/guides/backups/automatic_backups.dark.webp#dark)
+![Automatic Backupse](/docs/guides/backups/automatic_backups.dark.webp#dark =414x402)
 :::
 
 ## Forks Information

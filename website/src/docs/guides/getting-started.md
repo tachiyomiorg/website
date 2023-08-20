@@ -29,14 +29,14 @@ Here's how:
 1. Look for the extension you want to use and press the "**INSTALL**" button next to it.
 1. Accept the installation prompt that appears.
 
-![Installing extensions](/docs/guides/getting-started/installing-extensions.light.webp#light)
+![Installing extensions](/docs/guides/getting-started/installing-extensions.light.webp#light =414x245)
 
-![Installing extensions](/docs/guides/getting-started/installing-extensions.dark.webp#dark)
+![Installing extensions](/docs/guides/getting-started/installing-extensions.dark.webp#dark =414x245)
 
 ::: tip INSTALL PERMISSION
 Depending on your device settings, you might need to grant **Tachiyomi** permission to install unknown apps.
 
-![Security warning](/docs/guides/getting-started/security-warning.webp)
+![Security warning](/docs/guides/getting-started/security-warning.webp =546x165)
 
 > Relevant guide: [How do I allow third-party installations?](/docs/faq/extensions#how-do-i-allow-third-party-installations)
 :::
