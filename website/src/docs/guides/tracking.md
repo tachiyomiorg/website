@@ -1,62 +1,76 @@
 ---
 title: Tracking
-description: Tracking helps you automatically send read manga chapters to supported trackers, so you can keep track of what and when you read it online.
+description: Tracking helps you automatically send read chapters to supported trackers, so you can keep track of what and when you read it online.
 ---
 
 # Tracking
+Tracking helps you automatically send read chapters to supported trackers, so you can keep track of what and when you read it online.
 
-Tracking is currently supported on [MyAnimeList](https://myanimelist.net/), [AniList](https://anilist.co/), [Kitsu](https://kitsu.io/), [Shikimori](https://shikimori.one/), and [Bangumi](https://bangumi.tv/)
+## Services
 
-* Tracking must be done **manually** for every manga.
-* You must read the last page of a chapter to mark the chapter as read and track it.
-* You can manually set the chapter by tapping on the number and then entering the number in or dragging the ticker up or down.
-* After being offline, Tachiyomi will send progress made offline to the tracker.
-* Tachiyomi will attempt to automatically set the start date when starting a manga.
-* Tachiyomi will also set the finished date and reading status to completed if the read chapter is equal to the tracker's total chapters.
-* Tracking is one-way.
-  * Meaning updating status in Tachiyomi will update the tracker, but updating status in the tracker will not update Tachiyomi.
+[MyAnimeList](https://myanimelist.net/), [AniList](https://anilist.co/), [MangaUpdates](https://www.mangaupdates.com/), [Shikimori](https://shikimori.one/), [Bangumi](https://bangumi.tv/), and [Kitsu](https://kitsu.io/).
 
----
+- Tracking is manual for each entry.
+- Reading the last page of a chapter marks it as read.
+- Set chapters by tapping or dragging the ticker.
+- Offline progress syncs when online.
+- Start date is auto-set.
+- Completion status auto-updates.
+- Tracking is one-way: **Tachiyomi -> Tracker**.
 
-Unattended tracking is also supported for [Komga](https://komga.org/), and works a bit differently from other trackers:
+## Enhanced services
 
-* You don't need to login into the tracker, it uses the credentials from your Komga extension.
-* Tracking is done automatically, you don't have to search and bind every manga.
-* Tracking only works for the Komga sources.
-* Tracking is two-way, and local chapters will be marked as read.
-* You must read the last page of a chapter to mark the chapter as read and track it.
-* If you mark a chapter as read manually, the tracker will not be updated right away.
-  * You can update the tracker status on the server-side by opening the tracker sheet.
-* You can configure Tachiyomi to automatically track manga when adding to the library.
-  * Go to **More → Settings → Tracking** and then **Track silently when adding manga to the library**
+::::tabs
+==Komga
+- No separate login required.
+- Automatic tracking.
+- Works with **Komga** sources only.
+- Two-way sync for local chapters.
+- Manually read chapter syncs with delay.
+- Auto-track on library add: **More -> Settings -> Tracking**.
 
-## How do I login into trackers?
+> Learn how to set it up on the [Komga](https://komga.org/) website.
+==Kavita
+TBA
 
-1. Go to **More → Settings → Tracking** to Login
-1. Tap the tracker you would like to login to, it will automatically open the browser and lead you through the login process.
+> Learn how to set it up on the [Kavita](https://www.kavitareader.com/) website.
+==Suwayomi
+TBA
 
-## How do I set up tracking for each manga?
+> Learn how to set it up on the [Suwayomi](https://suwayomi.org/) website.
+::::
 
-1. Go to the manga you want to track.
-1. Tap the Tracking button.
-1. Tap **Add tracking** on the service you want to track the manga on.
+## General questions
 
-    > _You can also change the search query if there is no match._
+### How do I login into trackers?
 
-## How do I log in with Kitsu?
+1. Go to **More -> Settings -> Tracking**.
+1. Tap the desired tracker to begin login.
+
+### How do I set up tracking for each series?
+
+1. Open the series.
+1. Tap **Tracking**.
+1. Tap **Add tracking** for the desired service.
+
+::: tip
+You can also change the search query if there is no match.
+:::
+
+### How do I log in with Kitsu?
 
 To log in with Kitsu, you need to use your email address as your username.
 
-## Why am I unable to find a manga in MAL's search results?
+### Can't Find a Series on MyAnimeList?
 
-If you cannot find a manga by name, you can look it up on MAL and then search for it in Tachiyomi using the following format: `id:<id from manga URL>`.
-You can also search for a manga on your MAL profile list by searching in the following format: `my:<manga name>`.
+If you cannot find a series by name, you can look it up on MyAnimeList and then search for it in Tachiyomi using the following format: `id:<id from series URL>`.
 
-::: tip
+You can also search for a series on your MAL profile list by searching in the following format: `my:<series name>`.
+
+::: warning For your information
 Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
-## How do I see which manga I have or have not tracked in my library?
-
-Go to Library  → Tap Filter on the top right → Go to the Filter tab and toggle Tracked.
+### Check Tracked/Untracked Series in Library
+Go to **Library -> Tap Filter (top right) -> Go to Filter tab -> Toggle Tracked**.
 If you are logged into more than one tracker, toggle the tracker you want to include or exclude.
