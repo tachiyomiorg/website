@@ -7,6 +7,10 @@ description: If you like to download and organize your media, then you want to k
 
 If you like to download and organize your media, then you want to know how to manage your own manga in Tachiyomi.
 
+::: warning
+This page explores some advanced features.
+:::
+
 ## Creating local manga
 
 1. Create a folder named `local` in the `/Tachiyomi/` folder.
