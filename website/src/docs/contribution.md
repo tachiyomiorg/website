@@ -11,24 +11,12 @@ Find out how to help translate or build the app and extensions.
 
 Skilled at code? Know how to improve something or you generally want to support the creation of the app?
 
-### Application
 
-* The main application.
-* Current active repository
-* Planned rewrite repository
+[![tachiyomiorg/tachiyomi - GitHub](https://gh-card.dev/repos/tachiyomiorg/tachiyomi.svg)](https://github.com/tachiyomiorg/tachiyomi)
 
+[![tachiyomiorg/tachiyomi-extensions - GitHub](https://gh-card.dev/repos/tachiyomiorg/tachiyomi-extensions.svg)](https://github.com/tachiyomiorg/tachiyomi-extensions)
 
-### Extensions
-
-* Used to read from different manga services.
-* Current active repository
-* Planned rewrite repository
-
-### Website
-
-The repository that hosts this very website you're reading on now.
-
-* Current active repository
+[![tachiyomiorg/website - GitHub](https://gh-card.dev/repos/tachiyomiorg/website.svg)](https://github.com/tachiyomiorg/website)
 
 ## Translation
 
