@@ -91,7 +91,17 @@ function defaultSidebar() {
 				{ text: "Backups", link: "/docs/guides/backups" },
 				{ text: "Tracking", link: "/docs/guides/tracking" },
 				{ text: "Categories", link: "/docs/guides/categories" },
-				{ text: "Local manga", link: "/docs/guides/local-manga" },
+				{
+					text: "Local series",
+					link: "/docs/guides/local-series/",
+					collapsed: true,
+					items: [
+						{
+							text: "Advanced editing",
+							link: "/docs/guides/local-series/advanced",
+						},
+					],
+				},
 				{
 					text: "Reader settings",
 					link: "/docs/guides/reader-settings",
