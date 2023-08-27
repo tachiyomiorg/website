@@ -21,9 +21,11 @@ Try to load the website in **WebView**.
 1. Once done, press the X at the top left to return.
 :::
 
-You may need to try this multiple times. You can also try pressing the **Overflow** icon, opening the website in your regular browser, then checking for a **CAPTCHA** there.
+You may need to try this multiple times.
+You can also try pressing the **Overflow** icon, opening the website in your regular browser, then checking for a **CAPTCHA** there.
 
-Some sources may have more advanced **Cloudflare** protection. If you are facing issues, try the following options.
+Some sources may have more advanced **Cloudflare** protection.
+If you are facing issues, try the following options.
 
 ### Clearing cookies and WebView data
 ::: tip Guide
@@ -52,7 +54,8 @@ It is recommended to set your WebView implementation to [Android System WebView]
 ## Cloudflare
 
 ### Solving Cloudflare issues
-Cloudflare is an anti-bot mechanism. Some sources intentionally have a higher Cloudflare protection level to block apps like Tachiyomi.
+Cloudflare is an anti-bot mechanism.
+Some sources intentionally have a higher Cloudflare protection level to block apps like Tachiyomi.
 
 You can try the following suggestions to help resolve Cloudflare challenges.
 

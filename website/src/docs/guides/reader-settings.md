@@ -117,13 +117,13 @@ TBA
 ### Skip chapters marked read <Badge type="info" text="Off" />
 TBA
 
-### Skip filtered chapters  <Badge type="info" text="On" />
+### Skip filtered chapters <Badge type="info" text="On" />
 TBA
 
-### Skip duplicate chapters  <Badge type="info" text="Off" />
+### Skip duplicate chapters <Badge type="info" text="Off" />
 TBA
 
-### Always show chapter transition  <Badge type="info" text="On" />
+### Always show chapter transition <Badge type="info" text="On" />
 TBA
 
 ## Pages

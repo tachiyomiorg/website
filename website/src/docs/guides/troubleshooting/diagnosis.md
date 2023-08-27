@@ -25,7 +25,8 @@ This page is for when you encounter a problem with a source or the app.
 - Ensure your WebView is up to date.
 
 ### Use Public WebView
-- Attempt opening series in public WebView. Wait for CAPTCHA or Cloudflare protection if needed.
+- Attempt opening series in public WebView.
+  > Wait for CAPTCHA or Cloudflare protection if needed.
 
 ### Change Connection
 - Switch networks (Wi-Fi, mobile data, VPN) and confirm IP change.
@@ -58,16 +59,19 @@ Wait or check for an extension update if you have not already.
 > There are no ETAs for updates.
 :::
 
-If any of these solutions help, go to [it only happens to me](#it-only-happens-to-me). If it is not just you, go to [everyone is having this problem](https://tachiyomi.org/help/guides/troubleshooting/#everyone-is-having-this-problem).
+If any of these solutions help, go to [it only happens to me](#it-only-happens-to-me).
+If it is not just you, go to [everyone is having this problem](https://tachiyomi.org/help/guides/troubleshooting/#everyone-is-having-this-problem).
 
 If none of these solutions help, try asking in our [Discord server](https://discord.gg/tachiyomi).
 
-Check **#status-updates** first to see if your issue is known. State your app version and the source, series, and chapter with the problem if it is not listed.
+Check **#status-updates** first to see if your issue is known.
+State your app version and the source, series, and chapter with the problem if it is not listed.
 
 ## It only happens to me
 You may be getting a [Cloudflare](#solving-cloudflare-issues) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like Tachiyomi.
 
-If that is the case, there is probably nothing that Tachiyomi can do to solve it. Some of them (like [Cloudflare](#solving-cloudflare-issues)) have to be manually solved, and some are temporary (IP bans).
+If that is the case, there is probably nothing that Tachiyomi can do to solve it.
+Some of them (like [Cloudflare](#solving-cloudflare-issues)) have to be manually solved, and some are temporary (IP bans).
 
 **Workarounds that can the lower chance of an issue happening again:**
 - Don't use downloads with the source.
