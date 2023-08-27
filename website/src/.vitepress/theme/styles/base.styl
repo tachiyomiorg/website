@@ -49,15 +49,7 @@ html:not(.dark) {
  * -------------------------------------------------------------------------- */
 
 :root {
-	--vp-button-brand-border: var(--vp-c-brand-light)
-	--vp-button-brand-text: var(--vp-c-black)
-	--vp-button-brand-bg: var(--vp-c-brand)
-	--vp-button-brand-hover-border: var(--vp-c-brand-light)
-	--vp-button-brand-hover-text: var(--vp-c-black)
-	--vp-button-brand-hover-bg: var(--vp-c-brand-light)
-	--vp-button-brand-active-border: var(--vp-c-brand-light)
-	--vp-button-brand-active-text: var(--vp-c-black)
-	--vp-button-brand-active-bg: var(--vp-button-brand-bg)
+	--vp-button-brand-bg: var(--vp-c-brand-darker)
 }
 
 /**
@@ -125,24 +117,36 @@ html:not(.dark) {
  * Component: Image Figure
  * -------------------------------------------------------------------------- */
 
-figure:has(img) {
-	position: relative
-	display: flex
-	flex-direction: column
-	width: auto
-	text-align: center
-	transition: transform var(--vp-tt)
+// Shitty method to give elevation to image - TO BE REPLACED
+main > div > div > figure:has(img) img {
+	box-shadow: 2px 2px 8px 4px var(--vp-c-bg-alt)
 }
 
-figure:has(img) img {
-	overflow: hidden
-	margin: 0 auto
-	border-radius: 8px
-}
+figure {
+	&:has(img) {
+		position: relative
+		display: flex
+		flex-direction: column
+		width: auto
+		text-align: center
+		transition: transform var(--vp-tt)
 
-figure:has(img) img[tabindex]:hover,
-figure:has(img) img[tabindex]:focus {
-	box-shadow: 2px 2px 10px 0 var(--card-shadow)
+		img {
+			overflow: hidden
+			margin: 0 auto
+			border-radius: 8px
+		}
+
+		figcaption {
+			display: inline-block
+			margin: 6px auto
+			font-size: 0.8rem
+		}
+
+		& > a .external-link-icon {
+			display: none
+		}
+	}
 }
 
 @media print {
@@ -151,13 +155,11 @@ figure:has(img) img[tabindex]:focus {
 		content: ""
 	}
 }
+.vp-doc a {
+		text-decoration: none
 
-figure:has(img)>a .external-link-icon {
-	display: none
-}
-
-figure:has(img) figcaption {
-	display: inline-block
-	margin: 6px auto
-	font-size: 0.8rem
+	&:hover {
+		text-decoration: underline
+		text-underline-offset: 2px
+	}
 }
