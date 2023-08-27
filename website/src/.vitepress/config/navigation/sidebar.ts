@@ -71,7 +71,18 @@ function defaultSidebar() {
 				},
 				{
 					text: "Troubleshooting",
-					link: "/docs/guides/troubleshooting",
+					link: "/docs/guides/troubleshooting/",
+					collapsed: true,
+					items: [
+						{
+							text: "Common issues",
+							link: "/docs/guides/troubleshooting/common-issues",
+						},
+						{
+							text: "Diagnosis",
+							link: "/docs/guides/troubleshooting/diagnosis",
+						},
+					],
 				},
 				{
 					text: "Source migration",
