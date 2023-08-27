@@ -62,14 +62,14 @@ devDependencies:
     specifier: ^4.2.2
     version: 4.2.2
   lint-staged:
-    specifier: ^13.3.0
-    version: 13.3.0
+    specifier: ^14.0.1
+    version: 14.0.1
   markdown-it-mdi:
     specifier: ^0.1.0
     version: 0.1.0
   markdownlint:
-    specifier: ^0.29.0
-    version: 0.29.0
+    specifier: ^0.30.0
+    version: 0.30.0
   markdownlint-cli:
     specifier: ^0.35.0
     version: 0.35.0
@@ -92,11 +92,11 @@ devDependencies:
     specifier: ^1.8.1
     version: 1.8.1(eslint@8.48.0)(vite@4.4.9)
   vitepress:
-    specifier: 1.0.0-rc.5
-    version: 1.0.0-rc.5(@algolia/client-search@4.19.1)(axios@1.5.0)(search-insights@2.7.0)(stylus@0.59.0)
+    specifier: 1.0.0-rc.7
+    version: 1.0.0-rc.7(@algolia/client-search@4.19.1)(axios@1.5.0)(search-insights@2.7.0)(stylus@0.59.0)
   vitepress-plugin-tabs:
     specifier: ^0.3.0
-    version: 0.3.0(vitepress@1.0.0-rc.5)(vue@3.3.4)
+    version: 0.3.0(vitepress@1.0.0-rc.7)(vue@3.3.4)
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -958,17 +958,6 @@ packages:
     dependencies:
       '@typescript-eslint/types': 6.4.1
       eslint-visitor-keys: 3.4.3
-    dev: true
-
-  /@vitejs/plugin-vue@4.3.3(vite@5.0.0-beta.0)(vue@3.3.4):
-    resolution: {integrity: sha512-ssxyhIAZqB0TrpUg6R0cBpCuMk9jTIlO1GNSKKQD6S8VjnXi6JXKfUXjSsxey9IwQiaRGsO1WnW9Rkl1L6AJVw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      vite: ^4.0.0
-      vue: ^3.2.25
-    dependencies:
-      vite: 5.0.0-beta.0(stylus@0.59.0)
-      vue: 3.3.4
     dev: true
 
   /@vue/compiler-core@3.3.4:
@@ -2745,8 +2734,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /lint-staged@13.3.0:
-    resolution: {integrity: sha512-mPRtrYnipYYv1FEE134ufbWpeggNTo+O/UPzngoaKzbzHAthvR55am+8GfHTnqNRQVRRrYQLGW9ZyUoD7DsBHQ==}
+  /lint-staged@14.0.1:
+    resolution: {integrity: sha512-Mw0cL6HXnHN1ag0mN/Dg4g6sr8uf8sn98w2Oc1ECtFto9tvRF7nkXGJRbx8gPlHyoR0pLyBr2lQHbWwmUHe1Sw==}
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
     dependencies:
@@ -2920,6 +2909,11 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
+  /markdownlint-micromark@0.1.7:
+    resolution: {integrity: sha512-BbRPTC72fl5vlSKv37v/xIENSRDYL/7X/XoFzZ740FGEbs9vZerLrIkFRY0rv7slQKxDczToYuMmqQFN61fi4Q==}
+    engines: {node: '>=16'}
+    dev: true
+
   /markdownlint@0.11.0:
     resolution: {integrity: sha512-wE5WdKD6zW2DQaPQ5TFBTXh5j76DnWd/IFffnDQgHmi6Y61DJXBDfLftZ/suJHuv6cwPjM6gKw2GaRLJMOR+Mg==}
     engines: {node: '>=6'}
@@ -2933,6 +2927,14 @@ packages:
     dependencies:
       markdown-it: 13.0.1
       markdownlint-micromark: 0.1.5
+    dev: true
+
+  /markdownlint@0.30.0:
+    resolution: {integrity: sha512-nInuFvI/rEzanAOArW5490Ez4EYpB5ODqVM0mcDYCPx9DKJWCQqCgejjiCvbSeE7sjbDscVtZmwr665qpF5xGA==}
+    engines: {node: '>=16'}
+    dependencies:
+      markdown-it: 13.0.1
+      markdownlint-micromark: 0.1.7
     dev: true
 
   /mathml-tag-names@2.1.3:
@@ -4091,23 +4093,22 @@ packages:
     engines: {node: ^14.13.1 || ^16.7.0 || >=18}
     dev: false
 
-  /vitepress-plugin-tabs@0.3.0(vitepress@1.0.0-rc.5)(vue@3.3.4):
+  /vitepress-plugin-tabs@0.3.0(vitepress@1.0.0-rc.7)(vue@3.3.4):
     resolution: {integrity: sha512-3dKsBuP6PDzcFHgUtNCwwCs3bYoZduj7AcQkT9JfAKTRAKPCNmjiNInPT3IZ7AihL0SJNoQ3liz/e97z8oo+XA==}
     peerDependencies:
       vitepress: ^1.0.0-beta.2
       vue: ^3.3.4
     dependencies:
-      vitepress: 1.0.0-rc.5(@algolia/client-search@4.19.1)(axios@1.5.0)(search-insights@2.7.0)(stylus@0.59.0)
+      vitepress: 1.0.0-rc.7(@algolia/client-search@4.19.1)(axios@1.5.0)(search-insights@2.7.0)(stylus@0.59.0)
       vue: 3.3.4
     dev: true
 
-  /vitepress@1.0.0-rc.5(@algolia/client-search@4.19.1)(axios@1.5.0)(search-insights@2.7.0)(stylus@0.59.0):
-    resolution: {integrity: sha512-0hUhcIsLk5bjQsTxFIZ+ESyPTNllOxJEiUfxPxs6zqh7gk2kQnPjB7AFjEOajaKJ0SV+zQ0FmZz+aF8val5WpQ==}
+  /vitepress@1.0.0-rc.7(@algolia/client-search@4.19.1)(axios@1.5.0)(search-insights@2.7.0)(stylus@0.59.0):
+    resolution: {integrity: sha512-cuWPNoYzD9U9L/aouFrJ95dNQS99QKFo/vlF8ajOeqQKywOYhmHklnMB5bHH4k/x9VvUNZoLMevEOj/I8AGKiA==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.5.2
       '@docsearch/js': 3.5.2(@algolia/client-search@4.19.1)(search-insights@2.7.0)
-      '@vitejs/plugin-vue': 4.3.3(vite@5.0.0-beta.0)(vue@3.3.4)
       '@vue/devtools-api': 6.5.0
       '@vueuse/core': 10.4.0(vue@3.3.4)
       '@vueuse/integrations': 10.4.0(axios@1.5.0)(focus-trap@7.5.2)(vue@3.3.4)
