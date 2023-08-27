@@ -16,7 +16,7 @@ Backups store the following information:
 - **Read chapters**
 - **Tracking settings**
 - **Reading history**
-- **Manga information**
+- **Series information**
   - Author, Artist, Date Added to Library, Selected Viewer, Read Duration, etc.
 
 ::: tip How to create a backup
@@ -38,7 +38,7 @@ To ensure a smooth restoration process, remember to:
 
 ## Transferring Downloads to a New Installation
 
-You can transfer downloaded manga chapters from one version of Tachiyomi to another.
+You can transfer downloaded series chapters from one version of Tachiyomi to another.
 
 ## Enabling Automatic Backups
 

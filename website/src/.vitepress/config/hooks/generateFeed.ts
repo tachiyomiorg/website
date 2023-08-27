@@ -6,7 +6,7 @@ import { createContentLoader, type SiteConfig } from "vitepress";
 async function generateFeed(config: SiteConfig, hostname: string) {
 	const feed = new Feed({
 		title: "Tachiyomi",
-		description: "Free and open source manga reader for Android",
+		description: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.",
 		id: hostname,
 		link: hostname,
 		language: "en",

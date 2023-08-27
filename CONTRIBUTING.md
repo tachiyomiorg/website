@@ -57,7 +57,7 @@ It is also recommended you lint your files before the PR.
 
 - Use the default white theme
 
-- Preferably use local source or a self-hosted extension if your media contains manga
+- Preferably use local source or a self-hosted extension if your media contains series
 
 - Resize to have a width of 648px
 

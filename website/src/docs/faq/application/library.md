@@ -38,22 +38,22 @@ Tips to reduce server load As mentioned above, it is **recommended to keep the d
 
 ## How do I ignore duplicate chapters?
 
-Sometimes, you find a manga that is translated by more than one group.
-Because of this, you get multiple releases for each chapter in the manga.
+Sometimes, you find a series that is translated by more than one group.
+Because of this, you get multiple releases for each chapter in the series.
 There are several ways to skip the duplicate chapters:
 
 * Bookmark or mark as read the unwanted chapters, then tap on → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively.
 * This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under More → Settings → Reader → **Reading**.
 * Migrate to another source that does not have duplicates.
-* For more information on how to migrate a manga, see the migration guide.
+* For more information on how to migrate a series, see the migration guide.
 
 ## Why are some cover thumbnails corrupted, white, showing a broken page, or wrong?
 
 The thumbnail download likely did not complete correctly.
 To fix this, refresh the covers in settings.
 
-Refresh your covers by going to More → Settings → Advanced then pressing **Refresh library manga covers**.
+Refresh your covers by going to **More -> Settings -> Advanced** then pressing **Refresh library covers**.
 
-## Why have some manga chapters been marked as unread when I have not touched them?
+## Why have some series chapters been marked as unread when I have not touched them?
 
-The URLs of the manga chapters have changed, so Tachiyomi detects the chapter(s) as new chapters.
+The URLs of the series chapters have changed, so Tachiyomi detects the chapter(s) as new chapters.

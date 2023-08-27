@@ -62,7 +62,7 @@ If any of these solutions help, go to [it only happens to me](#it-only-happens-t
 
 If none of these solutions help, try asking in our [Discord server](https://discord.gg/tachiyomi).
 
-Check **#status-updates** first to see if your issue is known. State your app version and the source, manga, and chapter with the problem if it is not listed.
+Check **#status-updates** first to see if your issue is known. State your app version and the source, series, and chapter with the problem if it is not listed.
 
 ## It only happens to me
 You may be getting a [Cloudflare](#solving-cloudflare-issues) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like Tachiyomi.
@@ -71,7 +71,7 @@ If that is the case, there is probably nothing that Tachiyomi can do to solve it
 
 **Workarounds that can the lower chance of an issue happening again:**
 - Don't use downloads with the source.
-- Have less manga in your library from the source.
+- Have less series in your library from the source.
 
 ::: warning
 The above are imprecise and fuzzy rules because each site has its non-public limits and triggers.

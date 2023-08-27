@@ -9,9 +9,9 @@ Frequently Asked Questions related to Extensions.
 
 ## General
 
-### What are some recommended extensions? What source is the best? What is the replacement for source X? Where to read manga Y?
+### What are some recommended extensions? What source is the best? What is the replacement for source X? Where to read series Y?
 
-Tachiyomi does not endorse or recommend any manga source, and there is no best extension.
+Tachiyomi does not endorse or recommend any source, and there is no best extension.
 Instead, we encourage users to spend some time trying out a few sources themselves and discover what sources work best for them.
 What works well for somebody else might not work well for you.
 
@@ -23,8 +23,8 @@ Tachiyomi is not hosting any content, we are not affiliated with or responsible 
 
 ### What are scanlator sources?
 
-Manga that are not officially licensed are translated by scanlators, who either publish on their websites or **MangaDex**.
-This practice contrasts with official sources like **MANGA Plus By SHUEISHA** or **VIZ Shonen Jump**, which host officially licensed and translated manga.
+Series that are not officially licensed are translated by scanlators, who either publish on their websites or **MangaDex**.
+This practice contrasts with official sources like **MANGA Plus By SHUEISHA** or **VIZ Shonen Jump**, which host officially licensed and translated series.
 
 Learn more about scanlation in this **Wikipedia** [**article**](https://en.wikipedia.org/wiki/Scanlation).
 
@@ -103,8 +103,8 @@ It is not actually obsolete.
 
 ### How do I move to a split extension?
 
-Install the extension that your manga is from, and then uninstall the multisource extension.
-If the manga shows the source as a bunch of numbers, force close the app.
+Install the extension that your series is from, and then uninstall the multisource extension.
+If the series shows the source as a bunch of numbers, force close the app.
 For known issues with split extensions, go to this [GitHub issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/5672).
 
 ---

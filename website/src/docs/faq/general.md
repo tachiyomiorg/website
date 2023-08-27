@@ -39,4 +39,4 @@ Any project that calls itself Tachiyomi that supports anime is not affiliated wi
 
 ## Can Tachiyomi sync between devices?
 No.
-But you can use Tachiyomi backup and restore features to save and load manga database and move manga content to another device.
+But you can use Tachiyomi backup and restore features to save and load series database and move series content to another device.

@@ -11,7 +11,7 @@ This section relates to the reading experience in the app and navigating the rea
 
 ### Default reading mode <Badge type="info" text="Paged (right to left)" />
 
-This setting sets the reader's default direction when you open a manga.
+This setting sets the reader's default direction when you open a series.
 
 ::: tabs
 == Paged (RTL)

@@ -24,7 +24,7 @@ features:
   - title: Hentai-focused
     details: Adds several features to enhance your Hentai experience.
     icon: 🔞
-  - title: Manga recommendations
+  - title: Series recommendations
     details: Get recommendations from MyAnimeList and AniDB.
     icon: 📚
   - title: Several exclusive features

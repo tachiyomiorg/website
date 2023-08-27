@@ -24,7 +24,7 @@ features:
   - title: MangaDex
     details: Native login with support for MDList as a tracker, and syncing the MangaDex follows list.
     icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg" alt="MangaDex Logo" height="32" width="32">
-  - title: Similiar Manga
+  - title: Similiar Series
     details: Recommendation system
     icon: 📚
   - title: Merging missing chapters
