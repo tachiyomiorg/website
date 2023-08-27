@@ -13,10 +13,6 @@ This section relates to the reading experience in the app and navigating the rea
 
 This setting sets the reader's default direction when you open a manga.
 
-::: tip
-You can change viewer for different series by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**.
-:::
-
 ::: tabs
 == Paged (RTL)
 Right-to-left, the default way of reading manga.
@@ -36,6 +32,10 @@ Left-to-right, the default way of reading comics.
 Default way of reading webtoons.
 == Long strip with gaps
 Long strip but with a little space between pages.
+:::
+
+::: tip
+You can change viewer for different series by going to the series, opening a chapter, tapping the middle of the screen, pressing the gear icon, and selecting a different viewer in **Viewer for this series**.
 :::
 
 ### Double tap animation speed <Badge type="info" text="Normal" />
