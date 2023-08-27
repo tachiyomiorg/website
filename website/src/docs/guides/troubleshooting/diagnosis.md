@@ -68,10 +68,10 @@ Check **#status-updates** first to see if your issue is known.
 State your app version and the source, series, and chapter with the problem if it is not listed.
 
 ## It only happens to me
-You may be getting a [Cloudflare](#solving-cloudflare-issues) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like Tachiyomi.
+You may be getting a [Cloudflare](/docs/guides/troubleshooting/#cloudflare) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like Tachiyomi.
 
 If that is the case, there is probably nothing that Tachiyomi can do to solve it.
-Some of them (like [Cloudflare](#solving-cloudflare-issues)) have to be manually solved, and some are temporary (IP bans).
+Some of them (like [Cloudflare](/docs/guides/troubleshooting/#cloudflare)) have to be manually solved, and some are temporary (IP bans).
 
 **Workarounds that can the lower chance of an issue happening again:**
 - Don't use downloads with the source.

@@ -128,7 +128,7 @@ TBA
 
 ## Pages
 
-### Tap zones <Badge type="info" text="Default" />
+### Tap zones <Badge type="info" text="Default" /> {#tap-zones-pages}
 
 ::: tabs
 == Default
@@ -145,7 +145,7 @@ TBA
 No tap zones to assist with navigation will be active.
 :::
 
-### Invert tap zones <Badge type="info" text="None" />
+### Invert tap zones <Badge type="info" text="None" /> {#invert-tap-zones-pages}
 
 ::: tabs
 == None
@@ -188,7 +188,7 @@ Changes so that the tap zones are flipped horizontally and vertically.
 ![Center](/docs/guides/reader-settings/zoom-start-position_center.webp =512x788)
 :::
 
-### Crop borders <Badge type="info" text="Off" />
+### Crop borders <Badge type="info" text="Off" /> {#crop-borders-pages}
 
 :::tabs
 == Off
@@ -203,7 +203,7 @@ TBA
 ### Pan wide images <Badge type="info" text="On" />
 TBA
 
-### Split wide pages <Badge type="info" text="Off" />
+### Split wide pages <Badge type="info" text="Off" /> {#split-wide-pages}
 TBA
 
 ### Rotate wide pages to fit <Badge type="info" text="Off" />
@@ -211,7 +211,7 @@ TBA
 
 ## Long strip
 
-### Tap zones <Badge type="info" text="Default" />
+### Tap zones <Badge type="info" text="Default" /> {#tap-zones-longstrip}
 
 ::: tabs
 == Default
@@ -228,7 +228,7 @@ TBA
 No tap zones to assist with navigation will be active.
 :::
 
-### Invert tap zones <Badge type="info" text="None" />
+### Invert tap zones <Badge type="info" text="None" /> {#invert-tap-zones-longstrip}
 
 ::: tabs
 == None
@@ -271,10 +271,10 @@ TBA
 TBA
 :::
 
-### Crop borders <Badge type="info" text="Off" />
+### Crop borders <Badge type="info" text="Off" /> {#crop-borders-longstrip}
 TBA
 
-### Split wide pages <Badge type="info" text="Off" />
+### Split wide pages <Badge type="info" text="Off" /> {#split-wide-longstrip}
 TBA
 
 ### Double tap to zoom <Badge type="info" text="On" />

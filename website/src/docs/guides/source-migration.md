@@ -82,7 +82,7 @@ Pin sources in Browse using the pin icon next to the source name.
 
     > If a series is not found, or is wrong you can manually search it by pressing **Overflow** → **Search manually**.
 
-### Migrating from Source
+### Migrating from Source {#migrating-from-source-sy}
 
 1. Tap into Browse on the bottom navbar.
 1. Press the Migrate tab at the top next to Extensions.

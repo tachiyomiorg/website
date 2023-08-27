@@ -20,22 +20,22 @@ To makes changes to your categories, first navigate to **More -> Categories**.
 
 :::: tabs
 == Create
-### Create a category:
+### Create a category
 
 1. Press the **+ Add** button in the bottom right.
 1. Enter a name and press **OK**.
 == Edit
-### Edit a category:
+### Edit a category
 
 1. Long press a category.
 1. Tap **EDIT** on the top-right.
 == Reorder
-### Change category display order:
+### Change category display order
 
 1. Click the arrows to move the category to your preferred position.
   > The category in the top-most position will be the first one in your library.
 == Delete
-### Delete a category:
+### Delete a category
 
 1. Long press a category.
 2. Tap **DELETE** on the top-right.
@@ -48,7 +48,7 @@ Below is some tips for utilizing them.
 
 :::: tabs
 == Add entries
-### Add series to a category:
+### Add series to a category
 
 1. Long press the series you want to add.
 2. Press the **Set categories** button.
@@ -58,7 +58,7 @@ Below is some tips for utilizing them.
 You can also add multiple series to a category by selecting them when you see the **Set categories** button.
 :::
 == Remove entries
-### Remove series from a category:
+### Remove series from a category
 
 1. Long press series that you want to remove.
 2. Press the **Set categories** button.

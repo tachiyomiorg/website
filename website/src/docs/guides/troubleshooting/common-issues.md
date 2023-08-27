@@ -18,7 +18,7 @@ If you know the file or folder name that is the culprit, you can connect your SD
 Otherwise, delete the Tachiyomi downloads folder off of the SD Card.
 
 ### Storage issues with Android 11+
-See [this](troubleshooting.md#undefined) section of the FAQ to learn how Scoped Storage affects Tachiyomi in Android 11+ and how to fix it.
+See [this](/docs/faq/application/android-11+) section of the FAQ to learn how Scoped Storage affects Tachiyomi in Android 11+ and how to fix it.
 
 ### Slow loading
 If any sources are slow, it is likely due to the site being slow, your internet being slow, or a rate limit applied to the source to reduce the load or IP bans.
@@ -64,7 +64,7 @@ Try the following solutions to fix this issue:
 * Try using a different internet connection (switch to Wi-Fi, a different Wi-Fi network, mobile data or a VPN).
 * Try restarting the device.
 
-### Attempt to invoke virtual method 'com.hippo.unifile...
+### Attempt to invoke virtual method 'com.hippo.unifile...'
 The `Attempt to invoke virtual method' com.hippo.unifile...` error can be caused by various reasons, but they all have to do with storage.
 
 * Most commonly, it is caused by full storage.
