@@ -96,7 +96,7 @@ $ npm run lint
 - Resize to have a width of 648px
 
 ### Images
-- Use `.png` format
+- Use `.webp` format
 
 ### Videos
 - Use `.webm` format

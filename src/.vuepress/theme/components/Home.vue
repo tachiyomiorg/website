@@ -81,12 +81,12 @@ export default {
 					<img
 						class="feature__Animation--dark"
 						alt="Feature image (Dark theme)"
-						:src="$withBase('/assets/home_' + feature.image + '-dark.png')"
+						:src="$withBase('/assets/home_' + feature.image + '-dark.webp')"
 					/>
 					<img
 						class="feature__Animation--light"
 						alt="Feature image (Light theme)"
-						:src="$withBase('/assets/home_' + feature.image + '-light.png')"
+						:src="$withBase('/assets/home_' + feature.image + '-light.webp')"
 					/>
 				</section>
 			</div>

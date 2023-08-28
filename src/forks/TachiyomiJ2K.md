@@ -6,7 +6,7 @@ description: This fork takes a new approach to the design of the base app along 
 lang: en-US
 meta:
   - property: og:image
-    content: /assets/forks_logo-j2k.png
+    content: /assets/forks_logo-j2k.webp
   - name: theme-color
     content: "#0952AF"
   - name: msapplication-TileColor
@@ -14,7 +14,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/assets/forks_logo-j2k.png')"> TachiyomiJ2K
+# <img class="headerLogo" :src="$withBase('/assets/forks_logo-j2k.webp')"> TachiyomiJ2K
 
 <ForkButtons forkName="TachiyomiJ2K" downloadForkLink="https://api.github.com/repos/Jays2Kings/tachiyomiJ2K/releases/latest" downloadForkStyle="background-color:#0952AF;color:#FFFFFF;" githubForkLink="https://github.com/Jays2Kings/tachiyomiJ2K" androidVersion="6.0"/>
 

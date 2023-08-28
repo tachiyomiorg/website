@@ -212,7 +212,7 @@ To dump crash logs following an app crash, go to <NavigationText item="more"/> â
 
 ::: guide-empty
 <figure class="centered">
-	<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.png')">
+	<img class="zoomable" :src="$withBase('/assets/guides_dump-crashlogs.webp')">
 </figure>
 :::
 

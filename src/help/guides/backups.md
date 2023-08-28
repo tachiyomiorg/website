@@ -53,11 +53,11 @@ You can do this by going to <NavigationText item="more"/> → <NavigationText it
 
 ## Forks information
 
-### <img class="forkIconBefore" src="/assets/forks_logo-neko.png" width="24" height="24" /> [Neko](/forks/Neko)
+### <img class="forkIconBefore" src="/assets/forks_logo-neko.webp" width="24" height="24" /> [Neko](/forks/Neko)
 
 This fork can only restore **MangaDex** entries in a backup. If there are entries from other sources that are a part of that backup then they will not transfer.
 
-### <img class="forkIconBefore" src="/assets/forks_logo-az.png" width="24" height="24" /> [TachiyomiAZ](/forks/TachiyomiAZ) and <img class="forkIconBefore" src="/assets/forks_logo-sy.png" width="24" height="24" />  [TachiyomiSY](/forks/TachiyomiSY)
+### <img class="forkIconBefore" src="/assets/forks_logo-az.webp" width="24" height="24" /> [TachiyomiAZ](/forks/TachiyomiAZ) and <img class="forkIconBefore" src="/assets/forks_logo-sy.webp" width="24" height="24" />  [TachiyomiSY](/forks/TachiyomiSY)
 
 These forks have some built-in extensions, namely: **E-Hentai**, **Hitomi.la**, and **nHentai** for <NavigationText item="tachiyomiaz" /> while <NavigationText item="tachiyomisy" /> only has **E-Hentai**.
 

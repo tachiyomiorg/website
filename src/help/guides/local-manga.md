@@ -100,7 +100,7 @@ The path to the folder with images must contain both the manga title and the cha
 <figure class="centered">
 	<h4>Example structure using the file manager</h4>
 	<p>Here, the manga name is <strong>test</strong> so the file structure is <code>/Tachiyomi/local/test/ch1/images</code>.</p>
-	<img class="zoomable" height="300" :src="$withBase('/assets/guides_local-manga.jpg')">
+	<img class="zoomable" height="300" :src="$withBase('/assets/guides_local-manga.webp')">
 </figure>
 :::
 

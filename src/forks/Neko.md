@@ -6,7 +6,7 @@ description: MangaDex specific fork of Tachiyomi and TachiyomiJ2K. With a focus 
 lang: en-US
 meta:
   - property: og:image
-    content: /assets/forks_logo-neko.png
+    content: /assets/forks_logo-neko.webp
   - name: theme-color
     content: "#FD6684"
   - name: msapplication-TileColor
@@ -14,7 +14,7 @@ meta:
 sidebar: false
 ---
 
-# <img class="headerLogo" :src="$withBase('/assets/forks_logo-neko.png')"> Neko
+# <img class="headerLogo" :src="$withBase('/assets/forks_logo-neko.webp')"> Neko
 
 <ForkButtons forkName="Neko" downloadForkLink="https://api.github.com/repos/CarlosEsco/Neko/releases/latest" downloadForkStyle="background-color:#FD6684;color:#000000;" githubForkLink="https://github.com/CarlosEsco/Neko" androidVersion="7.0"/>
 

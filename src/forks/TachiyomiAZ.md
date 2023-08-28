@@ -6,7 +6,7 @@ description: This fork is based off of TachiyomiEH. It ports features and fixes 
 lang: en-US
 meta:
   - property: og:image
-    content: /assets/forks_logo-az.png
+    content: /assets/forks_logo-az.webp
   - name: theme-color
     content: "#FFCC4D"
   - name: msapplication-TileColor
@@ -80,7 +80,7 @@ sidebar: false
 }
 </style>
 
-# <img class="headerLogo" :src="$withBase('/assets/forks_logo-az.png')"> TachiyomiAZ
+# <img class="headerLogo" :src="$withBase('/assets/forks_logo-az.webp')"> TachiyomiAZ
 
 <ForkButtons forkName="TachiyomiAZ" downloadForkLink="https://api.github.com/repos/az4521/TachiyomiAZ/releases/latest" downloadForkStyle="background-color:#FFCC4D;color:#000000;" githubForkLink="https://github.com/az4521/TachiyomiAZ"/>
 <div class="overflowContainer">
@@ -135,4 +135,4 @@ This fork is based off of **[TachiyomiEH](https://github.com/NerdNumber9/Tachiyo
 - Grid view corner rounding configuration
 - Manga recommendations
 
-<img class="zoomable" :src="$withBase('/assets/forks_gunz-az.png')">
+<img class="zoomable" :src="$withBase('/assets/forks_gunz-az.webp')">
