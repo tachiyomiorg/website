@@ -25,7 +25,7 @@
 		"axios": "0.26.1",
 		"core-js": "2.6.12",
 		"docsearch.js": "2.6.3",
-		"element-ui": "2.15.13",
+		"element-ui": "2.15.14",
 		"lodash.groupby": "4.6.0",
 		"marked": "4.2.12",
 		"material-design-icons-iconfont": "6.7.0",
@@ -35,7 +35,7 @@
 		"vue-material-design-icons": "5.1.2",
 		"vue-moment": "4.1.0",
 		"vue-sweetalert2": "5.0.5",
-		"vuepress": "1.9.9",
+		"vuepress": "1.9.10",
 		"vuepress-plugin-clean-urls": "1.1.2",
 		"vuepress-plugin-container": "2.1.5",
 		"vuepress-plugin-dehydrate": "1.1.5",
@@ -53,7 +53,7 @@
 		"eslint-plugin-promise": "6.1.1",
 		"eslint-plugin-vue": "9.17.0",
 		"prettier": "2.8.8",
-		"sass": "1.65.1",
+		"sass": "1.66.1",
 		"sass-loader": "10.4.1",
 		"webpack": "4.46.0"
 	}
