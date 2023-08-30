@@ -1,91 +1,64 @@
 ---
 title: Diagnosis
-description: This page is for when you encounter a problem with a source or the app.
+description: Facing issues with a source or the app? Follow these steps to troubleshoot and find solutions.
 ---
 
 # Diagnosis
 
-This page is for when you encounter a problem with a source or the app.
+Facing issues with a source or the app?
+Follow these steps to troubleshoot and find solutions.
 
-## Main diagnosis
+## Primary diagnosis
 
-### Update Your Extensions
-- Go to **Browse -> Extensions**, ensure no extensions have an **Update** button.
-
-### Update Your App
-- Navigate to **More -> About** and tap **Check for updates**.
-
-### Manual Series Refresh
-- Drag down to manually refresh problematic series.
-
-### Test Other Series
-- Try different series from the same source.
-
-### Update WebView
-- Ensure your WebView is up to date.
-
-### Use Public WebView
-- Attempt opening series in public WebView.
-  > Wait for CAPTCHA or Cloudflare protection if needed.
-
-### Change Connection
-- Switch networks (Wi-Fi, mobile data, VPN) and confirm IP change.
-
-### Ask Others
-- Get others to replicate the error.
-
-### Source Status
-- Verify source's status in a browser.
-
-### Retry Button
-- Look for retry button on series page.
-
-### Advanced Settings
-- Go to **More -> Settings -> Advanced** and try any of the below:
+1. **Update Extensions**: Check **Browse -> Extensions** for updates, no pending updates should be present.
+1. **Update App**: Go to **More -> About** and tap **Check for updates**.
+1. **Manual Series Refresh**: Drag down to manually refresh problematic series.
+1. **Test Other Series**: Try different series from the same source.
+1. **Update WebView**: Ensure your WebView is current.
+1. **Public WebView**: Attempt opening series in public WebView. Wait for CAPTCHA or Cloudflare protection if needed.
+1. **Change Connection**: Switch networks (Wi-Fi, mobile data, VPN) and confirm IP change.
+1. **Collaborative Check**: Get others to replicate the error.
+1. **Source Status**: Verify the source's status in a browser.
+1. **Retry Button**: Look for a retry button on the series page.
+1. **Advanced Settings**: Under **More -> Settings -> Advanced**, try these options:
   - Clear Cache
   - Clear Cookies
   - Clear Database
   - DNS over HTTPS
+1. **Download Issues**: Delete the queue and retry downloads.
+1. **Restart Tachiyomi**: Force close and reopen the app.
 
-### Download Issues
-- Delete queue, retry downloads.
-
-### Restart Tachiyomi
-- Force close and reopen app.
-
-::: tip
-An extension update may fix your issue.
-Wait or check for an extension update if you have not already.
-> There are no ETAs for updates.
-:::
-
-If any of these solutions help, go to [it only happens to me](#it-only-happens-to-me).
-If it is not just you, go to [everyone is having this problem](https://tachiyomi.org/help/guides/troubleshooting/#everyone-is-having-this-problem).
+If any of these solutions help, go to [Personalized Issue](#personalized-issue).
+If it is not just you, go to [Widespread Issue](#widespread-issue).
 
 If none of these solutions help, try asking in our [Discord server](https://discord.gg/tachiyomi).
 
-Check **#status-updates** first to see if your issue is known.
+Check [#status-updates](https://discord.com/channels/349436576037732353/738862409284059239) first to see if your issue is known.
 State your app version and the source, series, and chapter with the problem if it is not listed.
 
-## It only happens to me
-You may be getting a [Cloudflare](/docs/guides/troubleshooting/#cloudflare) protection, may have been IP-banned, or encountered some other counter-measure that website owners deploy against programs like Tachiyomi.
-
-If that is the case, there is probably nothing that Tachiyomi can do to solve it.
-Some of them (like [Cloudflare](/docs/guides/troubleshooting/#cloudflare)) have to be manually solved, and some are temporary (IP bans).
-
-**Workarounds that can the lower chance of an issue happening again:**
-- Don't use downloads with the source.
-- Have less series in your library from the source.
-
-::: warning
-The above are imprecise and fuzzy rules because each site has its non-public limits and triggers.
+::: tip An extension update may fix your issue
+Wait or check for an extension update if you have not already.
+There are no ETAs for updates.
 :::
 
-## Everyone is having this problem
-If the site is reachable and fully functional, there may be an issue with the extension or app.
+## Personalized Issue
+If you're the only one facing a problem, you might be encountering [Cloudflare](/docs/guides/troubleshooting/#cloudflare) protection, an IP ban, or other countermeasures set by website owners against programs like **Tachiyomi**.
 
-1. Have a look at open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [**extensions**](https://github.com/tachiyomiorg/tachiyomi-extensions/issues).
-1. It may have been fixed already but not released yet, so look at closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed)/[extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) issues as well.
-1. If you can't find the issue there, open a new one.
+**To minimize future issues:**
+* Avoid using downloads with the source.
+* Reduce the number of series in your library from that source.
 
-> If the site is not reachable or has issues, all you can do is wait for the site to become functional again.
+::: warning
+These are general guidelines as each site has its specific undisclosed limits and triggers.
+:::
+
+## Widespread Issue
+When everyone experiences a problem, it could be with the extension or app:
+
+1. Check open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [**extensions**](https://github.com/tachiyomiorg/tachiyomi-extensions/issues).
+1. Check closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed)/[extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) in case it's resolved but not yet released.
+1. If not found, create a new issue.
+
+::: warning
+If the site itself is problematic, patience is the only solution until it becomes functional again.
+:::
