@@ -20,7 +20,7 @@ Occasionally, cover images for local series might not appear.
    * To verify, access the series with the missing cover and see if you can read chapters within the app.
    * If not, follow the [provided guide](/docs/guides/local-series/#folder-structure) first.
 1. Capture a screenshot of the read chapters, then remove the series from your library.
-1. Navigate to **Browse → Settings → Advanced** and tap **Clear database**.
+1. Navigate to **Browse -> Settings -> Advanced** and tap **Clear database**.
    * This action will only affect series not in your library.
 1. Return to **Browse -> Local source** and locate the series.
    * The cover issue should now be resolved.

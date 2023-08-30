@@ -45,7 +45,7 @@ You will need to remove these manually with a file manager.
 
 You can restrict global searching to pinned sources if you wish to declutter your search.
 
-To do this, go to **More → Settings → Browse** then toggle the **Only include pinned sources** setting.
+To do this, go to **More -> Settings -> Browse** then toggle the **Only include pinned sources** setting.
 
 Pin sources in Browse using the pin icon next to the source name.
 :::
@@ -53,34 +53,34 @@ Pin sources in Browse using the pin icon next to the source name.
 ==TachiyomiJ2K
 ### Migrating multiple Series
 
-1. Tap **Settings** → **Sources** → **Source migration**.
+1. Tap **Settings** -> **Sources** -> **Source migration**.
 1. Select the **Source** you'd like to migrate _from_ and select **All**.
 1. Select the **Sources** that you'd like to migrate _to_ and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Series** is found and hit the done at the top and you're done.
 
-    > If a series is not found, or is wrong you can manually search it by pressing Overflow → **Search manually**.
+    > If a series is not found, or is wrong you can manually search it by pressing Overflow -> **Search manually**.
 
 ### Migrating a single Series
 
 1. Tap into a **Series** in your Library.
-1. Tap **Overflow** → **Migrate**.
+1. Tap **Overflow** -> **Migrate**.
 1. Select the **Sources** you'd like to search and migrate _to_ and hit the arrow at the bottom right.
 1. Wait until it is found and select _done_ in the top right and you're done.
 
-    > If a series is not found, or is wrong you can manually search it by pressing Overflow → **Search manually**
+    > If a series is not found, or is wrong you can manually search it by pressing Overflow -> **Search manually**
 
 ==TachiyomiSY
 ### Migrating from Library
 
 1. Tap into **Library**.
-1. Tap **Overflow** → **Source migration**.
+1. Tap **Overflow** -> **Source migration**.
 1. Select the **Source** you'd like to migrate _from_ and select **All**.
 1. Select the **Sources** that you'd like to migrate _to_ and search by and tap the arrow labeled Migrate at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Series** is found and hit the done at the top and you're done.
 
-    > If a series is not found, or is wrong you can manually search it by pressing **Overflow** → **Search manually**.
+    > If a series is not found, or is wrong you can manually search it by pressing **Overflow** -> **Search manually**.
 
 ### Migrating from Source {#migrating-from-source-sy}
 
@@ -92,17 +92,17 @@ Pin sources in Browse using the pin icon next to the source name.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Series** is found and hit the done at the top and you're done.
 
-    > If a series is not found, or is wrong you can manually search it by pressing **Overflow** → **Search manually**.
+    > If a series is not found, or is wrong you can manually search it by pressing **Overflow** -> **Search manually**.
 
 ==TachiyomiAZ
 ### Instructions
 
 1. Tap into **Library**.
-1. Tap **Overflow** → **Source migration**.
+1. Tap **Overflow** -> **Source migration**.
 1. Select the **Source** you'd like to migrate _from_ and select **All**.
 1. Select the **Sources** that you'd like to migrate _to_ and search by and tap the arrow at the bottom right.
 1. Choose which data you want to transfer over.
 1. Wait until all your **Series** is found and hit the done at the top and you're done.
 
-    > If a series is not found, or is wrong you can manually search it by pressing **Overflow** → **Search manually**.
+    > If a series is not found, or is wrong you can manually search it by pressing **Overflow** -> **Search manually**.
 ::::

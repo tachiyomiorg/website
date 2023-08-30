@@ -57,7 +57,7 @@ Newer Android users can check/change WebView in [Developer Options](https://deve
 :::
 
 ::: warning Caution with Non-Standard WebView
-Using non-standard WebView (like Firefox) might cause Tachiyomi malfunction or crashes.
+Using non-standard WebView (like Firefox) might cause **Tachiyomi** malfunction or crashes.
 
 It's best to choose [Android System WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) or [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome).
 :::
@@ -77,9 +77,9 @@ While some sources have specific user agent strings, most rely on the app's defa
 
 ::: info Changing your user agent
 1. Navigate to **More -> Settings -> Advanced**.
-2. Modify **Default user agent string** to another value.
+1. Modify **Default user agent string** to another value.
 	> [Here's a reference](https://www.whatismybrowser.com/guides/the-latest-user-agent/).
-3. Restart the app and retry source access.
+1. Restart the app and retry source access.
 :::
 
 ::: tip Did these methods not work?

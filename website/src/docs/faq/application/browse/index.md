@@ -22,7 +22,7 @@ Here are strategies to help you find it:
 1. Search for the series on [Google](https://google.com/) or a database like [MangaUpdates](https://www.mangaupdates.com/).
 1. Consider alternate spellings or title variations for the series.
    - Retry searching your sources using the alternate titles you discovered.
-2. If you still can't find the series on any source:
+1. If you still can't find the series on any source:
    - Search for an extension for the website you found in *step 1* within the [extensions list](/extensions/).
 
 ### If You Find the Series on a Specific Scanlator or Aggregator With an Extension

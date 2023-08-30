@@ -38,7 +38,7 @@ To makes changes to your categories, first navigate to **More -> Categories**.
 ### Delete a category
 
 1. Long press a category.
-2. Tap **DELETE** on the top-right.
+1. Tap **DELETE** on the top-right.
 ::::
 
 ## Content
@@ -51,8 +51,8 @@ Below is some tips for utilizing them.
 ### Add series to a category
 
 1. Long press the series you want to add.
-2. Press the **Set categories** button.
-3. Select which category or categories you want it in and press **OK**.
+1. Press the **Set categories** button.
+1. Select which category or categories you want it in and press **OK**.
 
 ::: tip
 You can also add multiple series to a category by selecting them when you see the **Set categories** button.
@@ -61,8 +61,8 @@ You can also add multiple series to a category by selecting them when you see th
 ### Remove series from a category
 
 1. Long press series that you want to remove.
-2. Press the **Set categories** button.
-3. Deselect the category or categories you want to remove it from and press **OK**.
+1. Press the **Set categories** button.
+1. Deselect the category or categories you want to remove it from and press **OK**.
 
 ::: tip
 You can also remove multiple series from a category by selecting them when you see the **Set categories** button.

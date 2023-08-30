@@ -7,7 +7,7 @@ description: Frequently Asked Questions that don't fit other categories.
 Frequently Asked Questions that don't fit other categories.
 
 ## What's a Fork?
-Forks are alternate Tachiyomi versions with distinct features. Get more details here.
+Forks are alternate **Tachiyomi** versions with distinct features. Get more details here.
 
 ## Pausing Reading History or Going Incognito
 Activate **Incognito Mode** through **More -> Incognito Mode**.

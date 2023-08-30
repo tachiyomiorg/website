@@ -41,7 +41,7 @@ Dealing with series translated by multiple groups that result in duplicate chapt
 Bookmark or mark as read the undesired chapters, then open the **Filter** menu, ensure you're on the **Filter** tab, then double-tap **Bookmarked** or single-tap **Unread**.
 
 This hides bookmarked or read chapters, enabling you to skip them as you read.
-Ensure [Skip filtered chapters](/docs/guides/reader-settings#skip-filtered-chapters) is enabled at **More → Settings → Reader** under the section **Reading**.
+Ensure [Skip filtered chapters](/docs/guides/reader-settings#skip-filtered-chapters) is enabled at **More -> Settings -> Reader** under the section **Reading**.
 
 Alternatively, migrate to a source without duplicates.
 Refer to the [migration guide](/docs/guides/source-migration) for detailed instructions.

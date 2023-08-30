@@ -19,7 +19,7 @@ This page explores some advanced features.
 1. Place correctly structured series inside `/Tachiyomi/local/`.
 
     > If adding series in folders it is recommended to add a file named `.nomedia` to the local folder so images do not show up in the gallery.
-2. You should now be able to access the series in Browse → **Local source**.
+1. You should now be able to access the series in Browse -> **Local source**.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
 

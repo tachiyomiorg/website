@@ -63,7 +63,7 @@ To log in with Kitsu, you need to use your email address as your username.
 
 ### Can't Find a Series on MyAnimeList?
 
-If you cannot find a series by name, you can look it up on MyAnimeList and then search for it in Tachiyomi using the following format: `id:<id from series URL>`.
+If you cannot find a series by name, you can look it up on MyAnimeList and then search for it in **Tachiyomi** using the following format: `id:<id from series URL>`.
 
 You can also search for a series on your MAL profile list by searching in the following format: `my:<series name>`.
 
