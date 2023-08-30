@@ -1,10 +1,10 @@
 ---
 title: Local sources
-description: Frequently Asked Questions regarding local sources.
+description: Frequently Asked Questions about Local sources.
 ---
 
 # Local sources
-Frequently Asked Questions regarding local sources.
+Frequently Asked Questions about Local sources.
 
 ## How Can I Import My Downloaded Series into Tachiyomi?
 

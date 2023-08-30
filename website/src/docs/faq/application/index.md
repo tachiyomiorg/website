@@ -1,10 +1,10 @@
 ---
 title: Application - FAQ
-description: Frequently Asked Questions related to the Application.
+description: Frequently Asked Questions about the Application.
 ---
 
 # Application
-Frequently Asked Questions related to the Application.
+Frequently Asked Questions about the Application.
 
 ## Tachiyomi Preview
 

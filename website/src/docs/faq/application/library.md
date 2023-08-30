@@ -1,10 +1,10 @@
 ---
 title: Library
-description: Frequently Asked Questions regarding the Library.
+description: Frequently Asked Questions about the Library.
 ---
 
 # Library
-Frequently Asked Questions regarding the Library.
+Frequently Asked Questions about the Library.
 
 ## How Can I Monitor My Downloaded Chapters?
 You can enable badges by navigating to **Library -> Filter** and clicking the **Display** tab.

@@ -1,10 +1,10 @@
 ---
 title: Reader
-description: Frequently Asked Questions relating to the Reader.
+description: Frequently Asked Questions about the Reader.
 ---
 
 # Reader
-Frequently Asked Questions relating to the Reader.
+Frequently Asked Questions about the Reader.
 
 ## Unseen Images in Reader
 Besides network-related problems, **Tachiyomi** may occasionally fail to recognize certain images.

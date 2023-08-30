@@ -1,10 +1,10 @@
 ---
 title: Downloads
-description: Frequently Asked Question related to Downloads.
+description: Frequently Asked Question about Downloads.
 ---
 
 # Downloads
-Frequently Asked Question related to Downloads.
+Frequently Asked Question about Downloads.
 
 ## Downloading Multiple Chapters or Series Concurrently
 The app does not support parallel downloads from a single source to prevent potential IP bans due to excessive requests.

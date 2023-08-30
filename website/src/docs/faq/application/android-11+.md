@@ -1,10 +1,10 @@
 ---
 title: Android 11+
-description: Understanding Android 11 Changes
+description: Understanding Android 11 Changes.
 ---
 
 # Android 11+
-Understanding **Android 11** Changes
+Understanding **Android 11** Changes.
 
 ## Android 11 Modifications
 **Android 11** introduced changes related to [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage), which was initially introduced in **Android 5.0 Lollipop**.

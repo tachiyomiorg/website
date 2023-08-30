@@ -1,10 +1,10 @@
 ---
 title: Browse
-description: Frequently Asked Questions regarding Browse.
+description: Frequently Asked Questions about Browse.
 ---
 
 # Browse
-Frequently Asked Questions regarding Browse.
+Frequently Asked Questions about Browse.
 
 ## Why Can't I See Installed Sources?
 

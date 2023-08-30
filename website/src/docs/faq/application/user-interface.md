@@ -1,10 +1,10 @@
 ---
 title: User interface
-description: Frequently Asked Questions regarding the User Interface.
+description: Frequently Asked Questions about the User Interface.
 ---
 
 # User interface
-Frequently Asked Questions regarding the User Interface.
+Frequently Asked Questions about the User Interface.
 
 ## Can I Change the App Language?
 
