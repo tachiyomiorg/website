@@ -1,13 +1,14 @@
 ---
 title: User interface
-description: TBA
+description: Frequently Asked Questions regarding the User Interface.
 ---
 
 # User interface
+Frequently Asked Questions regarding the User Interface.
 
-## Can I change the app language?
+## Can I Change the App Language?
 
-No.
-It was removed due to it causing small bugs everywhere in **Tachiyomi**.
-Android does not provide a standard way of selecting a language that's not your device-language.
-You can improve the quality of the translations in your language [here](https://hosted.weblate.org/projects/tachiyomi/) or change your system language.
+Yes.
+With the introduction of [Per-app language preferences](https://developer.android.com/guide/topics/resources/app-languages) in **Android 13**.
+
+To enhance the translation quality in your preferred language, you can contribute [here](https://hosted.weblate.org/projects/tachiyomi/).

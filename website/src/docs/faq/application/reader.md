@@ -1,23 +1,26 @@
 ---
 title: Reader
-description: TBA
+description: Frequently Asked Questions relating to the Reader.
 ---
 
 # Reader
+Frequently Asked Questions relating to the Reader.
 
-## Why are some images not displayed?
+## Unseen Images in Reader
+Besides network-related problems, **Tachiyomi** may occasionally fail to recognize certain images.
+To address this, simply exit and re-enter the reader, often resolving the issue.
 
-Aside from network issues, sometimes Tachiyomi does not register the image as existing, exit, and re-enter the reader to fix this.
+## Dual-Page Reader Implementation
+Creating an effective dual-page reader that accommodates scanlator page inconsistencies and other complexities poses challenges.
+Consequently, implementing this feature is unlikely at present.
 
-## Will there ever be a dual-page reader option?
+## Settings
 
-The logic required to make a dual-page reader automatically work along with scanlator page inconsistencies and other issues means it is unlikely to be added at this time.
+### Modifying Tapping Zones
+For detailed instructions on changing tapping zones, please consult the guides section on the website [here](/docs/guides/reader-settings#tap-zones-pages).
 
----
+### Reversing Tapping Direction
+To reverse the direction of tapping for navigation, follow the instructions available [here](/docs/guides/reader-settings#invert-tap-zones-pages).
 
-### How can I make Tachiyomi turn pages with the volume rocker?
-### Can I reverse the tapping direction?
-### Can I change the tapping zones?
-
-Refer to the guides section of the site here.
-Refer to here if you want to use your volume rocker to navigate pages.
+### Volume Rocker Page Turning
+For using the volume keys to navigate pages, refer to the instructions provided [here](/docs/guides/reader-settings#volume-keys).

@@ -1,28 +1,32 @@
 ---
 title: Android 11+
-description: WIP
+description: Understanding Android 11 Changes
 ---
 
 # Android 11+
+Understanding **Android 11** Changes
 
-## What changed in Android 11?
+## Android 11 Modifications
+**Android 11** introduced changes related to [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage), which was initially introduced in **Android 5.0 Lollipop**.
 
-In Android 11, Google began forcing users to use [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage), which was introduced in Android 5.0 Lollipop, but Google only began forcing developers to use it on Android 11.
-Some OEMs seem to better implement Scoped Storage than others, with some users not running into any issues while users using other phone brands have multitudes of problems.
+However, the enforcement of **Scoped Storage** was initiated by **Google** with **Android 11**.
 
-## What does it mean for Tachiyomi?
+Different smartphone manufacturers implement **Scoped Storage** with varying levels of success, resulting in varying user experiences.
+Some encounter minimal issues, while others using different phone brands face numerous challenges.
 
-The introduction of Scoped Storage means that many storage-related functions that Tachiyomi uses may be much slower due to the inherent slowness of Scoped Storage, as outlined [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/).
-These include deleting chapters, library load times, accessing the folders outside the data folders to download to or read from, and more.
+## Implications for Tachiyomi
+**Scoped Storage**'s introduction affects various storage-related functions in **Tachiyomi**.
+These functions may become slower due to **Scoped Storage**'s inherent latency, as discussed in detail [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/).
 
-## Is there any way to improve performance?
+This impact encompasses tasks like deleting chapters, library loading times, accessing folders outside data directories for downloads and reading, and more.
 
-You can try the command below if you know how to use ADB, a guide on installing it is also outlined on the site here.
+## Enhancing Performance
+For potential performance improvements, consider utilizing the following ADB command if you are comfortable with it.
 
 ```bash
 adb shell cmd appops set eu.kanade.tachiyomi android:legacy_storage allow
 ```
 
-This command enables general storage access for the app, allowing Tachiyomi to use the old general storage access interface.
+This command grants general storage access to the app, enabling **Tachiyomi** to use the conventional storage access interface.
 
-If you are using a Tachiyomi Preview or a fork, replace `eu.kanade.tachiyomi` with the corresponding fork's package name.
+If using **Tachiyomi Preview**, or a fork, replace `eu.kanade.tachiyomi` with the corresponding package name.

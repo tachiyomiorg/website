@@ -1,39 +1,36 @@
 ---
 title: Browse
-description: WIP
+description: Frequently Asked Questions regarding Browse.
 ---
 
 # Browse
+Frequently Asked Questions regarding Browse.
 
-## Why can I not see sources that I have installed?
+## Why Can't I See Installed Sources?
 
-### If it is an extension that is not the same language as your phone's primary language
+### If the Extension Language Differs from Your Phone's Primary Language
+Enable the source's language at **Browse -> Sources -> Filter**, then turn on the language of the desired source.
 
-Enable the language of the source by going to Browse → Sources tab → Filter → Turn on the language of the source you would like to use.
+### If It's an NSFW Extension
+Navigate to **More -> Settings -> Browse** and check the **Show in sources list** option.
 
-### If it is an NSFW extension
+## How Can I Locate a Specific Series?
+At times, locating a source containing the series you want to read can be challenging.
 
-Settings → Browse → Check show in sources list.
+Here are strategies to help you find it:
 
-## How do I find a series I am looking for?
+1. Search for the series on [Google](https://google.com/) or a database like [MangaUpdates](https://www.mangaupdates.com/).
+1. Consider alternate spellings or title variations for the series.
+   - Retry searching your sources using the alternate titles you discovered.
+2. If you still can't find the series on any source:
+   - Search for an extension for the website you found in *step 1* within the [extensions list](/extensions/).
 
-Sometimes you can struggle to find a source that has the series you are looking to read.
-Here are some tips to help you find it:
+### If You Find the Series on a Specific Scanlator or Aggregator With an Extension
+Download the relevant extension, locate it under **Browse -> Sources**, and proceed to search for the series there.
 
-Tips to find your series
+### If You Find the Series on a Specific Scanlator or Aggregator Without an Extension
+Check if a request has been made to add the site as an extension [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) and confirm it's not on the [list of extensions that won't be added back](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475).
 
-1. Look up the series on [Google](https://google.com/) or a database such as [MangaUpdates](https://www.mangaupdates.com/).
-1. See if the series has any alternate spellings or other title variations.
-   1. Try searching again in your sources with the alternate titles you found.
-1. If you still cannot find the series in any of your sources, then try to search for an extension for the website you found in step 1 in the extensions list.
+If it's not requested and not on the exclusion list, you can [submit a request here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
-### If you find the series on a specific scanlator or aggregator and they do have an extension
-
-Download the corresponding extension, tap on it under → **Sources**, and then search for the series there.
-
-### If you find the series on a specific scanlator or aggregator and they do not have an extension
-
-Check if adding the site as an extension has [already been requested](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) and that it is not on the list of extensions that will not be added back [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475).
-If it has not been requested and it is not on the list, you can [request it here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
-
-If the scanlator or aggregator does not have an online reader, you can download the series from their website and set up the series as a local series.
+For scanlators or aggregators without an online reader, you can download the series from their website and set it up as a local series.

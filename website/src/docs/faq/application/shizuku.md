@@ -1,30 +1,34 @@
 ---
 title: Shizuku
-description: TBA
+description: Using Shizuku with Tachiyomi.
 ---
 
 # Shizuku
+Using **Shizuku** with **Tachiyomi**.
 
-## What is Shizuku?
+## Understanding Shizuku
+**Shizuku** serves as an alternative method for installing and updating extensions in **Tachiyomi**.
 
-Tachiyomi can use Shizuku as an alternate way to install and update extensions.
-It accesses system APIs to install packages directly without user input.
-Shizuku requires setup with ADB or root privileges.
-Read more about it [here](https://shizuku.rikka.app/introduction/).
+It taps into system APIs to directly install packages without requiring user interaction.
 
-## Do I need Shizuku?
+To get a detailed understanding of **Shizuku**, its purpose, and how it operates, refer to the information provided [here](https://shizuku.rikka.app/introduction/).
 
-No, only use Shizuku if you want to avoid being prompted during extension installations.
+## Is Shizuku Necessary?
+No, **Shizuku** is not obligatory.
 
-## How do I set Shizuku up?
+It should be considered if you wish to bypass installation prompts during extension setup.
 
-To learn how to set Shizuku up, go [here](https://shizuku.rikka.app/guide/setup/).
-Once you have set it up, enable it in Tachiyomi by going to **More** → **Settings** → **Advanced** → **Installer**.
+## Setting Up Shizuku
+To set up **Shizuku**, follow the instructions [here](https://shizuku.rikka.app/guide/setup/).
 
-## What is the difference between the installers?
+After configuring it, activate **Shizuku** within **Tachiyomi** by navigating to **More -> Settings -> Advanced** then changing the **Installer** setting.
 
-* **Legacy**: fallback method installer if the standard PackageInstaller has issues.
-  * This is the default for MIUI.
-* **PackageInstaller**: The default installer.
-  * This has more features depending on the Android version, such as skipping user prompts on Android 12 when updating extensions.
-* **Shizuku**: See above.
+## Comparing Installers
+Three installer options are available:
+
+* **Legacy**: A fallback installer if the standard **PackageInstaller** faces complications.
+  > This is the default for **MIUI**.
+* **PackageInstaller**: The primary installer option with additional features dependent on the Android version.
+  > For instance, it can bypass user prompts when updating extensions on **Android 12**.
+* **Shizuku**: Refer to the above section for details on **Shizuku**'s functionality.
+* **Private**: Installs directly to your device without passing as an application.

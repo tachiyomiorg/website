@@ -31,8 +31,8 @@ function defaultSidebar() {
 							collapsed: true,
 							items: [
 								{
-									text: "Reading with Local Source",
-									link: "/docs/faq/application/browse/reading-with-local-source",
+									text: "Local sources",
+									link: "/docs/faq/application/browse/local-sources",
 								},
 							],
 						},

@@ -1,59 +1,56 @@
 ---
 title: Library
-description: TBA
+description: Frequently Asked Questions regarding the Library.
 ---
 
 # Library
+Frequently Asked Questions regarding the Library.
 
-## How can I see how many chapters I have downloaded or unread?
+## How Can I Monitor My Downloaded Chapters?
+You can enable badges by navigating to **Library -> Filter** and clicking the **Display** tab.
+Then, at the bottom, select **Download badges**.
 
-Enable badges by going to Library → Filter → **Display** tab and then checking **Download badges** or **Unread badges** at the bottom.
+## Why Does Global Update Skip Certain Entries?
+The app's default behavior is to skip updates for entries that meet the following criteria:
 
-## Why does global update skip some entries?
+* Have unread chapters
+* Haven't been initiated
+* Carry a "**Completed**" status
 
-By default, the app does not check for updates if an entry:
+This strategy prevents unnecessary server traffic, which could lead to sources implementing measures against **Tachiyomi**.
+To manage entries with infrequent or no updates, consider using categories and excluding them from updates.
 
-* Has unread chapters
-* Hasn't been started
-* Has "Completed" status
+We recommend sticking with the default settings and prioritizing unread chapters for reading.
 
-This helps avoid unnecessary heavy traffic to sources to help ensure that they stay available.
-If you have entries that get infrequent or no updates, you should consider using categories and excluding them from updates.
+If you wish to disable the notification about skipped items, you can do so at **More -> Settings -> General -> Manage notifications** (doing so requires Android 8 or above).
 
-We recommend to **keep the defaults as they are** and read your unread chapters first.
+## Why Am I Warned About Large Bulk Updates and Downloads?
+Excessive server queries and superfluous site interactions could trigger anti-**Tachiyomi** measures from sources. See the previous question for more context. Long-running update checks and downloads might also impact your device's battery life.
 
-If you don't want to see the skipped items notification, you can disable it at More → Settings → General → **Manage notifications** (Android 8+).
+To mitigate these concerns:
 
-## Why does the app warn about large bulk updates and downloads?
+* It's advisable to maintain the default settings.
+* Try these tips if you still encounter the warning message:
+  * Use categories to segment your library (Reading, Plan to Read, Completed, etc.).
+  * Update only the Reading category by navigating to **More -> Settings -> Library -> Global update** and then tap **Categories**.
+  * If the warning persists, create a new category for infrequently updated entries (like monthly series or those on hiatus) and set global updates to target the more frequently updated reading category.
 
-Excessive server queries and unnecessary site interaction may cause sources to employ anti-Tachiyomi tactics.
-Also refer to the above question.
-Long running update checks and downloading may also negatively impact your battery life.
+## How Can I Ignore Duplicate Chapters?
+Dealing with series translated by multiple groups that result in duplicate chapter releases?
 
-Tips to reduce server load As mentioned above, it is **recommended to keep the defaults as they are**, but if you are still seeing this warning message, try the following suggestions:
+Bookmark or mark as read the undesired chapters, then open the **Filter** menu, ensure you're on the **Filter** tab, then double-tap **Bookmarked** or single-tap **Unread**.
 
-* Use categories (Reading, Plan to read and Completed, or anything else that segments your library).
-* Update only the Reading category by going to More → Settings → Library → **Global update** then tap **Categories**.
-* If the warning message still occurs, split your reading category down further by seperating entries in your library that are infrequently updated (such as monthly series or series that are on haitus) into a new category, then set global update to only update your more frequently updated reading category
+This hides bookmarked or read chapters, enabling you to skip them as you read.
+Ensure [Skip filtered chapters](/docs/guides/reader-settings#skip-filtered-chapters) is enabled at **More → Settings → Reader** under the section **Reading**.
 
-## How do I ignore duplicate chapters?
+Alternatively, migrate to a source without duplicates.
+Refer to the [migration guide](/docs/guides/source-migration) for detailed instructions.
 
-Sometimes, you find a series that is translated by more than one group.
-Because of this, you get multiple releases for each chapter in the series.
-There are several ways to skip the duplicate chapters:
+## Why Are Some Cover Thumbnails Corrupted or Blank?
+If cover thumbnails appear corrupted, blank, or broken, it's likely due to an incomplete download. Fix this by refreshing the covers in settings.
 
-* Bookmark or mark as read the unwanted chapters, then tap on → **Filter** and double-tap **Bookmarked** or single-tap **Unread**, respectively.
-* This will hide any bookmarked or read chapters and skip them as you read along, as long as you have **Skip filtered chapters** enabled under More → Settings → Reader → **Reading**.
-* Migrate to another source that does not have duplicates.
-* For more information on how to migrate a series, see the migration guide.
+Refresh your covers at **More -> Settings -> Advanced** then tap **Refresh library covers**.
 
-## Why are some cover thumbnails corrupted, white, showing a broken page, or wrong?
-
-The thumbnail download likely did not complete correctly.
-To fix this, refresh the covers in settings.
-
-Refresh your covers by going to **More -> Settings -> Advanced** then pressing **Refresh library covers**.
-
-## Why have some series chapters been marked as unread when I have not touched them?
-
-The URLs of the series chapters have changed, so Tachiyomi detects the chapter(s) as new chapters.
+## Why Have Some Series Chapters Been Marked as Unread?
+If certain series chapters are marked as unread without your interaction, it could be due to changed URLs.
+**Tachiyomi** detects these changes and interprets the chapters as new.

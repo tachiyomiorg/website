@@ -1,48 +1,46 @@
 ---
 title: Downloads
-description: WIP
+description: Frequently Asked Question related to Downloads.
 ---
 
 # Downloads
+Frequently Asked Question related to Downloads.
 
-## How do I download several chapters or series simultaneously?
+## Downloading Multiple Chapters or Series Concurrently
+The app does not support parallel downloads from a single source to prevent potential IP bans due to excessive requests.
+While this might impact speed, it's preferable to rendering a source inaccessible.
 
-The app does not allow parallel downloads from one source to prevent IP bans caused by too many requests.
-We know that speed is being sacrificed, but it is better than an overall inaccessible source.
+However, if you're downloading series from various sources, up to five different sources can be downloaded simultaneously.
 
-However, if you download several series from different sources, the app will start downloading simultaneously from up to five different sources.
+## Downloads Stopping Midway
+Downloads stopping midway may relate to network connection issues or source problems.
+**Tachiyomi** will provide notifications regarding encountered errors during download attempts.
 
-## Why do my downloads sometimes stop midway through?
+## Undetected Downloads Reasons
+Downloads might not be detected due to multiple factors:
 
-It is likely an issue to do with your connection to your network or the source.
-Tachiyomi will notify you of what error it has encountered trying to download.
+* Inaccessibility of the download location.
+  > Ensure the SD card is properly detected if in use.
+* Source name changes.
+  > Rename the source's folder to match the new name.
+* Series title modifications by the source.
+  > Adjust the folder title to the updated name.
 
-### Why aren't my downloads being detected?
+## Managing Download Queue
+Navigate to **More -> Download Queue** to interact with queued downloads.
 
-This can happen for a variety of reasons:
+Cancel all items by clicking the **Overflow** button beside a series chapter or the top right corner.
 
-* The download location may be inaccessible.
-  * If you are using an SD card, make sure it's detected.
-* The source name may have changed.
-  * Change the name of the source's folder to the new name.
-* The source you downloaded the series from may have changed the title.
-  * Change the title of the folder to the new title.
+To reorder the queue, long-press the `=` icon next to a queue item.
 
-## How do I cancel or change the download queue?
+## Internal Storage and External SD-Card Storage
+As of now, this option isn't available.
+You could explore using symlinks, but this requires device rooting.
 
-Go to **More** → **Download Queue** and cancel items in the queue or cancel all items by tapping on the overflow next to a series chapter or on the top right.
-If you would like the change the order of the queue, tap and hold the = on the side of an item in the queue.
+For more details on rooting your device, refer to [this guide](https://www.xda-developers.com/root/).
 
-## Can you make it possible to store series on both internal storage and external SD-card?
+## Series Pages in Device Photo Gallery
+**Tachiyomi** typically prevents series pages in downloads from appearing in your device's photo gallery by default through a `.nomedia` file.
+However, in some cases, this might not function as intended.
 
-At the moment, no.
-You could try using symlinks, but that requires having your device rooted.
-
-Read more about rooting your device [here](https://www.xda-developers.com/root/)
-
-## Why can I see series pages from my downloads in my device's photo gallery?
-
-Tachiyomi adds a `.nomedia` file to the Downloads folder by default to prevent this from happening, but sometimes it does not work, or something goes wrong.
-To fix this, all you need to do is create the file yourself.
-Name it `.nomedia` and place it in your downloads folder.
-If you have the same problem with your local series, place the `.nomedia` file in the local folder.
+A quick solution is to create the `.nomedia` file yourself, name it as such, and place it in your downloads folder. If the issue pertains to local series, put the `.nomedia` file in the respective local folder.
