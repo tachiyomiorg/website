@@ -45,8 +45,8 @@ There are no ETAs for updates.
 If you're the only one facing a problem, you might be encountering [Cloudflare](/docs/guides/troubleshooting/#cloudflare) protection, an IP ban, or other countermeasures set by website owners against programs like **Tachiyomi**.
 
 **To minimize future issues:**
-* Avoid using downloads with the source.
-* Reduce the number of series in your library from that source.
+- Avoid using downloads with the source.
+- Reduce the number of series in your library from that source.
 
 ::: warning
 These are general guidelines as each site has its specific undisclosed limits and triggers.
