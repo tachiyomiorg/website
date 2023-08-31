@@ -47,7 +47,7 @@ const downloadInformation = computed(() => ({
 			<span class="version">{{ downloadInformation.stable.tagName }}</span>
 		</a>
 		<a class="download-button secondary" :download="downloadInformation.preview.asset?.name" :href="downloadInformation.preview.asset?.browser_download_url">
-			<IconDownload />
+			<IconBugReport />
 			<span class="text">Preview</span>
 			<span class="version">{{ downloadInformation.preview.tagName }}</span>
 		</a>
@@ -124,6 +124,7 @@ const downloadInformation = computed(() => ({
 		display: inline-block
 		vertical-align: middle
 		margin-right: 0.5em
+		font-size: 1.25em
 	}
 
 	.text {
@@ -131,8 +132,7 @@ const downloadInformation = computed(() => ({
 	}
 
 	.version {
-		font-size: 12px
-		margin-left: 10px
+		font-size: 0.8em
 	}
 }
 
