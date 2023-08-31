@@ -10,7 +10,7 @@ import ReleaseDate from "../.vitepress/theme/components/ReleaseDate.vue";
 import WhatsNew from "../.vitepress/theme/components/WhatsNew.vue"
 </script>
 
-# Download <IconDownload/>
+# Download
 
 Download the latest stable version of **Tachiyomi** that released **<ReleaseDate type="stable" />** or the preview version that released **<ReleaseDate type="preview" />**.
 
