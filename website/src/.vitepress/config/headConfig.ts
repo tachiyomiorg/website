@@ -1,6 +1,6 @@
 import type { HeadConfig } from "vitepress";
 
-const head: HeadConfig[] = [
+const headConfig: HeadConfig[] = [
 	["meta", { name: "theme-color", content: "#818CF8" }],
 	["meta", { name: "msapplication-TileColor", content: "#818CF8" }],
 
@@ -54,4 +54,4 @@ const head: HeadConfig[] = [
 	["meta", { property: "og:type", content: "website" }],
 ];
 
-export default head;
+export default headConfig;

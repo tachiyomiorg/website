@@ -1,26 +1,27 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from "vue";
-import Theme from "vitepress/theme";
+import DefaultTheme from "vitepress/theme";
+
+// Import Stylus files
 import "./styles/base.styl";
 
+// Import Global plugins
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 import "element-plus/theme-chalk/dark/css-vars.css";
 
-import { VueQueryPlugin } from "@tanstack/vue-query"
+import { VueQueryPlugin } from "@tanstack/vue-query";
 
 import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client";
 
+// Import Icon components
+import { IconDownload } from "@iconify-prerendered/vue-mdi";
+
 export default {
-	extends: Theme,
-	Layout: () => {
-		return h(Theme.Layout, null, {
-			// https://vitepress.dev/guide/extending-default-theme#layout-slots
-		});
-	},
-	enhanceApp({ app, router, siteData }) {
+	...DefaultTheme,
+	enhanceApp({ app }) {
 		app.use(ElementPlus);
 		app.use(VueQueryPlugin);
 		enhanceAppWithTabs(app);
+		app.component("IconDownload", IconDownload);
 	},
 };

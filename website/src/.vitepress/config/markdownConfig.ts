@@ -7,9 +7,8 @@ import { imgMark } from "@mdit/plugin-img-mark";
 import { imgSize } from "@mdit/plugin-img-size";
 import { include } from "@mdit/plugin-include";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
-import mdi from "markdown-it-mdi";
 
-const markdown: MarkdownOptions = {
+const markdownConfig: MarkdownOptions = {
 	config: (md) => {
 		md.use(attrs),
 			md.use(figure),
@@ -19,9 +18,8 @@ const markdown: MarkdownOptions = {
 			md.use(include, {
 				currentPath: (env) => env.filePath,
 			}),
-			md.use(tabsMarkdownPlugin),
-			md.use(mdi);
+			md.use(tabsMarkdownPlugin);
 	},
 };
 
-export default markdown;
+export default markdownConfig;

@@ -1,22 +1,22 @@
 import { useQuery } from "@tanstack/vue-query";
 import axios from "axios";
 import { GITHUB_STABLE_API, GITHUB_PREVIEW_API } from "../../config/constants";
-import { unref, type Ref } from 'vue';
+import { unref, type Ref } from "vue";
 
 export type ReleaseType = "stable" | "preview";
 
 export interface GitHubRelease {
-	body: string
-	tag_name: string
-	name: string
-	assets: GitHubAsset[]
-	published_at: string
+	body: string;
+	tag_name: string;
+	name: string;
+	assets: GitHubAsset[];
+	published_at: string;
 }
 
 export interface GitHubAsset {
-	name: string
-	content_type: string
-	browser_download_url: string
+	name: string;
+	content_type: string;
+	browser_download_url: string;
 }
 
 const apiUrls: Record<ReleaseType, string> = {
@@ -35,5 +35,5 @@ export default function useReleaseQuery(type: ReleaseType | Ref<ReleaseType>) {
 		},
 		initialData: () => null,
 		refetchOnWindowFocus: false,
-	})
+	});
 }

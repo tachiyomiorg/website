@@ -1,6 +1,7 @@
 ---
 title: Download
 description: Download page that allows users to access and install the latest version of the app.
+aside: false
 ---
 
 <script setup>
@@ -9,9 +10,9 @@ import ReleaseDate from "../.vitepress/theme/components/ReleaseDate.vue";
 import WhatsNew from "../.vitepress/theme/components/WhatsNew.vue"
 </script>
 
-# Download
+# Download <IconDownload/>
 
-Download the latest stable version of **Tachiyomi** that released <ReleaseDate type="stable" /> or the preview version that released <ReleaseDate type="preview" />.
+Download the latest stable version of **Tachiyomi** that released **<ReleaseDate type="stable" />** or the preview version that released **<ReleaseDate type="preview" />**.
 
 <DownloadButtons />
 

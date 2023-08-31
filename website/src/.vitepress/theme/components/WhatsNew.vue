@@ -41,12 +41,14 @@ const whatsNew = computed(() => {
 </template>
 
 <style lang="stylus">
-.buttons-wrapper
+.buttons-wrapper {
 	display: flex
 	gap: 2rem
 
-	& > a
+	& > a {
 		display: flex
 		flex-direction: column
 		align-items: center
+	}
+}
 </style>
