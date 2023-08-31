@@ -40,6 +40,8 @@
 		"@mdit/plugin-img-size": "^0.4.8",
 		"@mdit/plugin-include": "^0.4.8",
 		"@mdit/plugin-tab": "^0.4.8",
+		"@types/lodash.groupby": "^4.6.7",
+		"@types/markdown-it": "^13.0.1",
 		"@typescript-eslint/eslint-plugin": "^6.5.0",
 		"@typescript-eslint/parser": "^6.5.0",
 		"eslint": "^8.48.0",
@@ -70,9 +72,12 @@
 	},
 	"dependencies": {
 		"@mdi/js": "^7.2.96",
+		"@tanstack/vue-query": "^4.34.0",
 		"axios": "^1.5.0",
 		"element-plus": "^2.3.12",
 		"lodash.groupby": "^4.6.0",
+		"markdown-it": "^13.0.1",
+		"moment": "^2.29.4",
 		"vitepress-plugin-auto-sidebar": "^1.1.0"
 	}
 }

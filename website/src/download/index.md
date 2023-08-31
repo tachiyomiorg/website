@@ -3,8 +3,16 @@ title: Download
 description: Download page that allows users to access and install the latest version of the app.
 ---
 
+<script setup>
+import DownloadButtons from "../.vitepress/theme/components/DownloadButtons.vue"
+import ReleaseDate from "../.vitepress/theme/components/ReleaseDate.vue";
+import WhatsNew from "../.vitepress/theme/components/WhatsNew.vue"
+</script>
+
 # Download
 
-Download page that allows users to access and install the latest version of the app.
+Download the latest stable version of **Tachiyomi** that released <ReleaseDate type="stable" /> or the preview version that released <ReleaseDate type="preview" />.
 
-![GitHub all releases](https://img.shields.io/github/downloads/tachiyomiorg/tachiyomi/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat)
+<DownloadButtons />
+
+<WhatsNew type="stable" />

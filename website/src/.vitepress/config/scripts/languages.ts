@@ -1,12 +1,12 @@
-export function simpleLangName(code) {
+export function simpleLangName(code: string) {
 	if (code === "all") {
 		return "All";
 	}
 	const namesInEnglish = new Intl.DisplayNames(["en"], { type: "language" });
-	return namesInEnglish.of(code);
+	return namesInEnglish.of(code)!;
 }
 
-export function langName(code) {
+export function langName(code: string) {
 	if (code === "all") {
 		return "All";
 	}
