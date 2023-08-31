@@ -26,9 +26,13 @@ const whatsNew = computed(() => {
 	<div v-else-if="isError">
 		This is the error message: {{ error }}
 	</div>
-	<div v-else>
-		<h2>What's new</h2>
-		<div v-html="whatsNew"></div>
+	<div class="whatsNew" v-else>
+		<header>
+			<IconNewReleases />
+			<h2>What's new</h2>
+		</header>
+		<div v-html="whatsNew">
+		</div>
 		<div>
 			<p>
 				View the full release
@@ -41,14 +45,69 @@ const whatsNew = computed(() => {
 </template>
 
 <style lang="stylus">
-.buttons-wrapper {
-	display: flex
-	gap: 2rem
+.whatsNew {
+	display: block
+	border: 1px solid var(--vp-c-bg-soft)
+	border-radius: 12px
+	background-color: var(--vp-c-bg-soft)
+	transition: border-color 0.25s, background-color 0.25s
+	padding: 24px
+	height: 100%
+	margin: 2em auto
 
-	& > a {
+	header {
 		display: flex
-		flex-direction: column
-		align-items: center
+		justify-content: center
+		align-items: baseline
+		margin: 0 0 1rem
+	}
+
+	svg {
+		font-size: 1.2em
+		margin-right: 0.5rem
+		vertical-align: middle
+	}
+
+	h2 {
+		font-size: 1.5rem
+		margin: 0
+		padding: 0
+		color: var(--vp-c-text-1)
+		border: none
+	}
+
+	div > p {
+		margin: 0 0 1rem
+		color: var(--vp-c-text-2)
+		font-size: 0.9rem
+	}
+
+	table {
+		border-radius: 8px
+		border-collapse: collapse
+		border: 1px solid var(--vp-c-divider)
+
+		tr,
+		th,
+		td {
+			border: none
+			width: 100%
+		}
+
+		tbody tr {
+			border-top: 1px solid var(--vp-c-divider)
+		}
+
+		tr > td {
+			&:first-child {
+				color: var(--vp-c-text-2)
+			}
+
+			&:last-child {
+				font-family: var(--vp-font-family-mono)
+				font-size: var(--vp-code-font-size)
+			}
+		}
 	}
 }
 </style>
