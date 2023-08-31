@@ -33,14 +33,14 @@ const whatsNew = computed(() => {
 		</header>
 		<div v-html="whatsNew">
 		</div>
-		<div>
-			<p>
-				View the full release
-				<a href="https://github.com/tachiyomiorg/tachiyomi/releases/latest" target="_blank" rel="noopener">
-					here
-				</a>
-			</p>
-		</div>
+	</div>
+	<div class="fullChangelog">
+		<p>
+			View the full release
+			<a href="https://github.com/tachiyomiorg/tachiyomi/releases/latest" target="_blank" rel="noopener">
+				here
+			</a>
+		</p>
 	</div>
 </template>
 
@@ -53,7 +53,7 @@ const whatsNew = computed(() => {
 	transition: border-color 0.25s, background-color 0.25s
 	padding: 24px
 	height: 100%
-	margin: 2em auto
+	margin: 1.5em auto 0.5em auto
 
 	header {
 		display: flex
@@ -109,5 +109,11 @@ const whatsNew = computed(() => {
 			}
 		}
 	}
+}
+
+.fullChangelog {
+	margin: 0 0 1rem
+	color: var(--vp-c-text-2)
+	font-size: 0.9rem
 }
 </style>
