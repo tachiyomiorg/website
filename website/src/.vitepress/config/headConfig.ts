@@ -1,6 +1,8 @@
 import type { HeadConfig } from "vitepress";
 
 const headConfig: HeadConfig[] = [
+	["meta", { name: "darkreader-lock" }],
+
 	["meta", { name: "theme-color", content: "#818CF8" }],
 	["meta", { name: "msapplication-TileColor", content: "#818CF8" }],
 
