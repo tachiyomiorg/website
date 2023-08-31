@@ -19,8 +19,8 @@ export default defineConfig({
 	sitemap: {
 		hostname: hostname,
 	},
-	headConfig,
-	markdownConfig,
+	head: headConfig,
+	markdown: markdownConfig,
 	themeConfig: themeConfig,
 	transformHead: async (context) => generateMeta(context, hostname),
 	buildEnd: async (context) => {
