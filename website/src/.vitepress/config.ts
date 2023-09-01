@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, loadEnv } from "vitepress";
 
 import markdownConfig from "./config/markdownConfig"; // For use with loading Markdown plugins
 import themeConfig from "./config/themeConfig"; // Theme related config
@@ -10,7 +10,9 @@ import generateOgImages from "./config/hooks/generateOgImages";
 
 const title = "Tachiyomi";
 const description = "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.";
-const hostname: string = "https://kodo.moe";
+
+const env = loadEnv("", process.cwd())
+const hostname: string = env.VITE_HOSTNAME || "http://localhost:4173";
 
 export default defineConfig({
 	lastUpdated: true,

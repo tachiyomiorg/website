@@ -4,4 +4,9 @@
 [build]
   base = "website"
   publish = "src/.vitepress/dist"
-  command = "pnpm build"
+
+[context.production]
+  command = "VITE_HOSTNAME=$URL pnpm build"
+
+[context.deploy-preview]
+  command = "VITE_HOSTNAME=$DEPLOY_PRIME_URL pnpm build"
