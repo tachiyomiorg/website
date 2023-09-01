@@ -39,6 +39,7 @@
 		"@mdit/plugin-img-mark": "^0.4.8",
 		"@mdit/plugin-img-size": "^0.4.8",
 		"@mdit/plugin-include": "^0.4.8",
+		"@resvg/resvg-js": "^2.4.1",
 		"@types/lodash.groupby": "^4.6.7",
 		"@types/markdown-it": "^13.0.1",
 		"@types/node": "^20.5.7",
@@ -60,7 +61,8 @@
 		"vitepress": "1.0.0-rc.10",
 		"vitepress-plugin-tabs": "^0.3.0",
 		"vue": "^3.3.4",
-		"vue-eslint-parser": "^9.3.1"
+		"vue-eslint-parser": "^9.3.1",
+		"x-satori": "^0.1.4"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "pnpm lint-staged"

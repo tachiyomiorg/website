@@ -6,6 +6,7 @@ import headConfig from "./config/headConfig"; // Provides how to generate Meta h
 
 import generateMeta from "./config/hooks/generateMeta"; // Enhanced meta generation
 import generateFeed from "./config/hooks/generateFeed"; // Allows generation of RSS feed
+import generateOgImages from "./config/hooks/generateOgImages";
 
 const title = "Tachiyomi";
 const description = "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.";
@@ -25,5 +26,6 @@ export default defineConfig({
 	transformHead: async (context) => generateMeta(context, hostname),
 	buildEnd: async (context) => {
 		generateFeed(context, hostname);
+		generateOgImages(context);
 	},
 });

@@ -9,6 +9,7 @@ const generateMeta = (context: TransformContext, hostname: string) => {
 	head.push(["link", { rel: "canonical", href: url }]);
 	head.push(["meta", { property: "og:url", content: url }]);
 	head.push(["meta", { name: "twitter:url", content: url }]);
+	head.push(["meta", { name: "twitter:card", content: "summary_large_image" }]);
 
 	if (pageData.frontmatter.theme) {
 		head.push(["meta", { name: "theme-color", content: pageData.frontmatter.theme }]);
@@ -68,8 +69,18 @@ const generateMeta = (context: TransformContext, hostname: string) => {
 			},
 		]);
 	} else {
-		head.push(["meta", { property: "og:image", content: `${hostname}/img/logo.png` }]);
-		head.push(["meta", { name: "twitter:image", content: `${hostname}/img/logo.png` }]);
+		const url = pageData.filePath
+			.replace("index.md", "")
+			.replace(".md", "");
+		head.push(["meta", { property: "og:image", content: `${hostname}/${url}__og_image__/og.png` }]);
+		head.push(["meta", { property: "og:image:width", content: "1200" }]);
+		head.push(["meta", { property: "og:image:height", content: "628" }]);
+		head.push(["meta", { property: "og:image:type", content: "image/png" }]);
+		head.push(["meta", { property: "og:image:alt", content: pageData.frontmatter.title }]);
+		head.push(["meta", { name: "twitter:image", content: `${hostname}/${url}__og_image__/og.png` }]);
+		head.push(["meta", { name: "twitter:image:width", content: "1200" }]);
+		head.push(["meta", { name: "twitter:image:height", content: "628" }]);
+		head.push(["meta", { name: "twitter:image:alt", content: pageData.frontmatter.title }]);
 	}
 	if (pageData.frontmatter.tag) {
 		head.push(["meta", { property: "article:tag", content: pageData.frontmatter.tag }]);
