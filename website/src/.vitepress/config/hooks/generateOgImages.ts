@@ -75,6 +75,11 @@ async function generateImage({ page, template, outDir, fonts }: GenerateImagesOp
 			description: frontmatter.layout === "home"
 				? (frontmatter.hero.tagline ?? frontmatter.description)
 				: frontmatter.description,
+			dir: (url.startsWith("/docs/faq/"))
+				? "FAQ"
+				: (url.startsWith("/docs/guides/"))
+				? "Guides"
+				: undefined,
 		}
 	}
 
