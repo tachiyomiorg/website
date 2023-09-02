@@ -1,6 +1,6 @@
 ---
 title: Source migration
-description: Migration is the process of moving series between sources without losing progress. This is most often used when a source is no longer accessible or another source is more up-to-date.
+description: Migration is the process of moving series between sources without losing progress.
 ---
 
 # Source migration

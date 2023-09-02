@@ -1,6 +1,6 @@
 ---
 title: Backups
-description: Backups in Tachiyomi are compatible between different versions of the app, with a few exceptions listed under forks information.
+description: Backups helps you prevent losing your library if something happens.
 ---
 
 # Backups

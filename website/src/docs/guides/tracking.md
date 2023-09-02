@@ -1,6 +1,6 @@
 ---
 title: Tracking
-description: Tracking helps you automatically send read chapters to supported trackers, so you can keep track of what and when you read it online.
+description: Tracking helps track your library with different online services.
 ---
 
 # Tracking

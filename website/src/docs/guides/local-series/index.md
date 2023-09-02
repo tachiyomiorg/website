@@ -1,6 +1,6 @@
 ---
 title: Local series
-description: If you like to download and organize your media, then you want to know how to manage your own series in Tachiyomi.
+description: For users who would like to download and organize their own media.
 ---
 
 # Local series
