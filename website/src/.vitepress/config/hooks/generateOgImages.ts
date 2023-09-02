@@ -70,15 +70,15 @@ async function generateImage({ page, template, outDir, fonts }: GenerateImagesOp
 		fonts,
 		props: {
 			title: frontmatter.layout === "home"
-				? (frontmatter.hero.name ?? frontmatter.title)
-				: (frontmatter.customMetaTitle ?? frontmatter.title),
+				? (frontmatter.hero.name ?? frontmatter.title.replace(/\s\-.*$/, ""))
+				: (frontmatter.customMetaTitle ?? frontmatter.title.replace(/\s\-.*$/, "")),
 			description: frontmatter.layout === "home"
 				? (frontmatter.hero.tagline ?? frontmatter.description)
 				: frontmatter.description,
 			dir: (url.startsWith("/docs/faq/"))
 				? "FAQ"
 				: (url.startsWith("/docs/guides/"))
-				? "Guides"
+				? "Guide"
 				: undefined,
 		}
 	}
