@@ -1,18 +1,15 @@
 <script setup lang="ts">
 import { computed, toRefs } from "vue";
 import MarkdownIt from "markdown-it";
-import useReleaseQuery from "../queries/useReleaseQuery";
-import type { ReleaseType } from "../queries/useReleaseQuery";
+import { data as release, type AppRelease } from "../data/release.data";
 
-const props = defineProps<{ type: ReleaseType }>();
+const props = defineProps<{ type: keyof AppRelease }>();
 const { type } = toRefs(props);
-
-const {	data: release, isLoading, isError, error } = useReleaseQuery(type);
 
 const md = new MarkdownIt();
 
 const whatsNew = computed(() => {
-	const flavoredString = (release.value?.body ?? "")
+	const flavoredString = (release[type.value].body ?? "")
 		.replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, "[@$2](https://github.com/$2)")
 
 	return md.render(flavoredString);
@@ -20,13 +17,7 @@ const whatsNew = computed(() => {
 </script>
 
 <template>
-	<div v-if="isLoading">
-		This is the fancy loading indicator
-	</div>
-	<div v-else-if="isError">
-		This is the error message: {{ error }}
-	</div>
-	<div class="whatsNew" v-else>
+	<div class="whatsNew">
 		<header>
 			<IconNewReleases />
 			<h2>What's new</h2>

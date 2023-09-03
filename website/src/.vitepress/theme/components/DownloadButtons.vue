@@ -1,46 +1,23 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import useReleaseQuery from "../queries/useReleaseQuery";
-
-const {
-	data: stableRelease,
-	isLoading: isLoadingStable,
-	isError: isErrorStable,
-	error: errorStable
-} = useReleaseQuery("stable");
-
-const {
-	data: previewRelease,
-	isLoading: isLoadingPreview,
-	isError: isErrorPreview,
-	error: errorPreview
-} = useReleaseQuery("preview");
+import { data as release } from "../data/release.data";
 
 const downloadInformation = computed(() => ({
 	preview: {
-		tagName: previewRelease.value?.tag_name || "0.00.0",
-		asset: (previewRelease.value?.assets ?? [])
+		tagName: release.preview.tag_name ?? "r0000",
+		asset: (release.preview.assets ?? [])
 			.find(a => /^tachiyomi-r\d{4,}.apk/.test(a.name)),
 	},
 	stable: {
-		tagName: stableRelease.value?.tag_name?.slice(1) || "r0000",
-		asset: (stableRelease.value?.assets ?? [])
+		tagName: release.stable.tag_name?.slice(1) ?? "0.00.0",
+		asset: (release.stable.assets ?? [])
 			.find(a => /^tachiyomi-v\d+\.\d+\.\d+.apk/.test(a.name)),
 	}
 }))
 </script>
 
 <template>
-	<div v-if="isLoadingStable || isLoadingPreview">
-		This is the fancy loading indicator
-	</div>
-	<div v-else-if="isErrorStable">
-		This is the error message: {{ errorStable }}
-	</div>
-	<div v-else-if="isErrorPreview">
-		This is the error message: {{ errorPreview }}
-	</div>
-	<div v-else class="download-buttons">
+	<div class="download-buttons">
 		<a class="download-button primary" :download="downloadInformation.stable.asset?.name" :href="downloadInformation.stable.asset?.browser_download_url">
 			<IconDownload />
 			<span class="text">Stable</span>
