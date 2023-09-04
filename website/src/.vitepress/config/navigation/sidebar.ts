@@ -110,24 +110,29 @@ function defaultSidebar() {
 			],
 		},
 		{
-			text: "Contribution",
-			link: "/docs/contribution",
-		},
-		{
-			text: "Download",
-			link: "/download/",
-		},
-		{
-			text: "Extensions",
-			link: "/extensions/",
-		},
-		{
-			text: "Changelogs",
-			link: "/changelogs/",
-		},
-		{
-			text: "Forks",
-			link: "/forks/",
+			text: "Application",
+			items: [
+				{
+					text: "Contribution",
+					link: "/docs/contribution",
+				},
+				{
+					text: "Download",
+					link: "/download/",
+				},
+				{
+					text: "Extensions",
+					link: "/extensions/",
+				},
+				{
+					text: "Changelogs",
+					link: "/changelogs/",
+				},
+				{
+					text: "Forks",
+					link: "/forks/",
+				},
+			],
 		},
 	];
 }
