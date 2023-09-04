@@ -2,6 +2,7 @@
 import { computed, toRefs } from "vue";
 import MarkdownIt from "markdown-it";
 import { data as release, type AppRelease } from "../data/release.data";
+import Contributors from "./Contributors.vue";
 
 const props = defineProps<{ type: keyof AppRelease }>();
 const { type } = toRefs(props);
@@ -11,6 +12,7 @@ const md = new MarkdownIt();
 const whatsNew = computed(() => {
 	const flavoredString = (release[type.value].body ?? "")
 		.replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, "[@$2](https://github.com/$2)")
+		.replace('https://github.com/tachiyomiorg/tachiyomi/releases', '/changelogs/');
 
 	return md.render(flavoredString);
 })
@@ -22,8 +24,12 @@ const whatsNew = computed(() => {
 			<IconNewReleases />
 			<h2>What's new</h2>
 		</header>
-		<div v-html="whatsNew">
-		</div>
+		<div v-html="whatsNew" />
+		<Contributors
+			:body="release[type].body!"
+			:author="release[type].author.login"
+			:tag="release[type].tag_name"
+		/>
 	</div>
 	<div class="fullChangelog">
 		<p>

@@ -1,24 +1,14 @@
 import { defineLoader } from "vitepress"
-import axios from "axios";
-import { GITHUB_PREVIEW_API, GITHUB_STABLE_API } from "../../config/constants";
+import { Octokit } from "@octokit/rest";
+import type { GetResponseDataTypeFromEndpointMethod } from "@octokit/types";
+
+const octokit = new Octokit();
+
+type GitHubRelease = GetResponseDataTypeFromEndpointMethod<typeof octokit.repos.getLatestRelease>;
 
 export interface AppRelease {
 	stable: GitHubRelease;
 	preview: GitHubRelease;
-}
-
-export interface GitHubRelease {
-	body: string;
-	tag_name: string;
-	name: string;
-	assets: GitHubAsset[];
-	published_at: string;
-}
-
-export interface GitHubAsset {
-	name: string;
-	content_type: string;
-	browser_download_url: string;
 }
 
 declare const data: AppRelease;
@@ -26,8 +16,15 @@ export { data };
 
 export default defineLoader({
 	async load(): Promise<AppRelease> {
-		const { data: stable } = await axios.get<GitHubRelease>(GITHUB_STABLE_API);
-		const { data: preview } = await axios.get<GitHubRelease>(GITHUB_PREVIEW_API);
+		const { data: stable } = await octokit.repos.getLatestRelease({
+			owner: "tachiyomiorg",
+			repo: "tachiyomi",
+		});
+
+		const { data: preview } = await octokit.repos.getLatestRelease({
+			owner: "tachiyomiorg",
+			repo: "tachiyomi-preview",
+		});
 
 		return { stable, preview };
 	}

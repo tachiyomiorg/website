@@ -30,14 +30,12 @@ export default {
 				</span>
 			</span>
 		</h2>
-		<div
+		<ExtensionItem
 			v-for="extension in list"
 			:id="extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')"
 			:key="extension.apk"
-			class="extension"
-		>
-			<ExtensionItem :item="extension" />
-		</div>
+			:item="extension"
+		/>
 	</div>
 </template>
 

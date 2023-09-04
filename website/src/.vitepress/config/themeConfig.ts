@@ -59,7 +59,7 @@ const themeConfig: DefaultTheme.Config = {
 	lastUpdated: {
 		text: "Last updated",
 		formatOptions: {
-			dateStyle: "long",
+			dateStyle: "short",
 			timeStyle: "short",
 		},
 	},

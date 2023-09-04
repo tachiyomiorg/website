@@ -17,7 +17,7 @@ import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client";
 import { IconDownload, IconNewReleases, IconBugReport } from "@iconify-prerendered/vue-mdi";
 
 export default {
-	...DefaultTheme,
+	extends: DefaultTheme,
 	enhanceApp({ app }) {
 		app.use(ElementPlus);
 		app.use(VueQueryPlugin);

@@ -1,3 +1,5 @@
+const APP_VERSION = "0.14.6";
+
 const nav = [
 	{
 		text: "Documentation",
@@ -5,7 +7,7 @@ const nav = [
 		activeMatch: "/docs/",
 	},
 	{
-		text: "0.14.6",
+		text: APP_VERSION,
 		items: [
 			{
 				text: "Download",
@@ -13,7 +15,7 @@ const nav = [
 			},
 			{
 				text: "Changelog",
-				link: "https://github.com/tachiyomiorg/tachiyomi/releases/latest",
+				link: `/changelogs/#v${APP_VERSION}`,
 			},
 			{
 				text: "Contributing",

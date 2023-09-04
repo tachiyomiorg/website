@@ -9,9 +9,9 @@ next: false
 ---
 
 <script setup>
-import DownloadButtons from "../.vitepress/theme/components/DownloadButtons.vue"
-import ReleaseDate from "../.vitepress/theme/components/ReleaseDate.vue";
-import WhatsNew from "../.vitepress/theme/components/WhatsNew.vue"
+import DownloadButtons from "@theme/components/DownloadButtons.vue";
+import ReleaseDate from "@theme/components/ReleaseDate.vue";
+import WhatsNew from "@theme/components/WhatsNew.vue";
 </script>
 
 # Download

@@ -30,37 +30,43 @@ export default {
 };
 </script>
 
-<template v-if="item">
-	<a :href="`#${pkgId}`" class="anchor" aria-hidden="true" @click.stop>#</a>
-	<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42" />
-	<div class="extension-text">
-		<div class="upper">
-			{{ pkgName }}
+<template>
+	<div class="extension">
+		<a :href="`#${pkgId}`" class="anchor" aria-hidden="true" @click.stop>#</a>
+		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42" />
+		<div class="extension-text">
+			<div class="upper">
+				{{ pkgName }}
+			</div>
+			<div class="lower">
+				{{ pkgId }}
+			</div>
 		</div>
-		<div class="lower">
-			{{ pkgId }}
-		</div>
+		<Badge v-if="pkgIsNsfw" type="danger" :text="pkgVersion" title="This extension contains NSFW entries." />
+		<Badge v-else type="info" :text="pkgVersion" title="This extension is free from NSFW entries." />
+		<a :href="apkUrl" class="extension-download" title="Download APK" download>↓</a>
 	</div>
-	<Badge v-if="pkgIsNsfw" type="danger" :text="pkgVersion" title="This extension contains NSFW entries." />
-	<Badge v-else type="info" :text="pkgVersion" title="This extension is free from NSFW entries." />
-	<a :href="apkUrl" class="extension-download" title="Download APK" download>↓</a>
 </template>
 
 <style lang="stylus">
 .extension {
+	position: relative
 	align-items: center
 	display: flex
-	padding: 0.5em 1.5em
-	margin: 0.8em 0.2em
+	width: 100%
+	padding: 0.5em 0
+	margin: 0.8em 0
 	border-radius: 8px
+	gap: 0.675rem
 
 	&:hover {
 		background-color: var(--vp-c-bg-soft-mute)
 	}
 
 	.anchor {
-		margin-left: 0.2em
-		margin-right: 0.2em
+		position: absolute
+		left: 0
+		margin-left: -1em
 		font-size: 1.4em
 		opacity: 0
 	}
@@ -70,25 +76,34 @@ export default {
 	}
 
 	.extension-icon {
-		margin: 0.2em 0.5em
+		flex-shrink: 0
+		margin-left: -4px;
 	}
 
 	.extension-text {
-		flex: 1
+		flex-grow: 1
+		min-width: 0
 
 		.upper {
 			font-weight: 600
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
 
 			.badge {
 				font-weight: 400
-				margin-left: 8px
 			}
 		}
 
 		.lower {
+			margin-top: 0.25rem
 			color: #6c757d
-			font-family: monospace
+			font-family: var(--vp-font-family-mono)
 			font-size: 0.9rem
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+			line-height: 16px
 		}
 	}
 
@@ -97,6 +112,8 @@ export default {
 		font-weight: 700
 		font-size: 1.4em
 		border-radius: 4px
+		flex-shrink: 0
+		margin-right: -0.4em
 
 		.material-icons {
 			color: white
@@ -124,6 +141,11 @@ export default {
 	.extension {
 		border: 1px solid var(--vp-c-divider)
 		border-radius: 8px
+		padding: 0.5em
+
+		.extension-download {
+			margin-right: 0
+		}
 	}
 }
 

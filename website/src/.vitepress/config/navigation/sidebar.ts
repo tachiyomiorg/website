@@ -3,6 +3,7 @@ import { getSidebar } from "vitepress-plugin-auto-sidebar";
 const sidebar = {
 	"/docs/": defaultSidebar(),
 	"/forks/": defaultSidebar(),
+	"/changelogs/": defaultSidebar(),
 	"/news/": getSidebar({
 		contentRoot: "/src/",
 		contentDirs: ["news"],
@@ -119,6 +120,10 @@ function defaultSidebar() {
 		{
 			text: "Extensions",
 			link: "/extensions/",
+		},
+		{
+			text: "Changelogs",
+			link: "/changelogs/",
 		},
 		{
 			text: "Forks",
