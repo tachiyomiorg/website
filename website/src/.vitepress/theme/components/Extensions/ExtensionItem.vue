@@ -143,6 +143,10 @@ export default {
 		border-radius: 8px
 		padding: 0.5em
 
+		.extension-icon {
+			margin-left: 0;
+		}
+
 		.extension-download {
 			margin-right: 0
 		}

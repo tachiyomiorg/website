@@ -1,7 +1,6 @@
 ---
 title: Extensions
 description: Browse and install the full list of sources for Tachiyomi.
-aside: false
 lastUpdated: false
 editLink: false
 prev: false

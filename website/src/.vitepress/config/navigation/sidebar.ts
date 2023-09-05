@@ -1,4 +1,6 @@
 const sidebar = {
+	"/download/": defaultSidebar(),
+	"/extensions/": defaultSidebar(),
 	"/docs/": defaultSidebar(),
 	"/forks/": defaultSidebar(),
 	"/changelogs/": defaultSidebar(),
