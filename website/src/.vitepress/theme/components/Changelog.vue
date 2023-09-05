@@ -9,7 +9,7 @@ const { type } = toRefs(props);
 
 const md = new MarkdownIt();
 
-const whatsNew = computed(() => {
+const changelog = computed(() => {
 	const flavoredString = (release[type.value].body ?? "")
 		.replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, "[@$2](https://github.com/$2)")
 		.replace('https://github.com/tachiyomiorg/tachiyomi/releases', '/changelogs/');
@@ -19,12 +19,12 @@ const whatsNew = computed(() => {
 </script>
 
 <template>
-	<div class="whatsNew">
+	<div class="changelog">
 		<header>
-			<IconNewReleases />
-			<h2>What's new</h2>
+			<IconNewspaperVariant />
+			<h2>Changelog</h2>
 		</header>
-		<div v-html="whatsNew" />
+		<div v-html="changelog" />
 		<Contributors
 			:body="release[type].body!"
 			:author="release[type].author.login"
@@ -42,7 +42,7 @@ const whatsNew = computed(() => {
 </template>
 
 <style lang="stylus">
-.whatsNew {
+.changelog {
 	display: block
 	border: 1px solid var(--vp-c-bg-soft)
 	border-radius: 12px

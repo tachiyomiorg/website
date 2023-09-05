@@ -10,7 +10,7 @@ next: false
 <script setup>
 import DownloadButtons from "@theme/components/DownloadButtons.vue";
 import ReleaseDate from "@theme/components/ReleaseDate.vue";
-import WhatsNew from "@theme/components/WhatsNew.vue";
+import Changelog from "@theme/components/Changelog.vue";
 </script>
 
 # Download
@@ -19,4 +19,4 @@ Download the latest stable version of **Tachiyomi** that released **<ReleaseDate
 
 <DownloadButtons />
 
-<WhatsNew type="stable" />
+<Changelog type="stable" />

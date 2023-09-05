@@ -14,7 +14,7 @@ import { VueQueryPlugin } from "@tanstack/vue-query";
 import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client";
 
 // Import Icon components
-import { IconDownload, IconNewReleases, IconBugReport } from "@iconify-prerendered/vue-mdi";
+import { IconDownload, IconNewspaperVariant, IconBugReport } from "@iconify-prerendered/vue-mdi";
 
 export default {
 	extends: DefaultTheme,
@@ -23,7 +23,7 @@ export default {
 		app.use(VueQueryPlugin);
 		enhanceAppWithTabs(app);
 		app.component("IconDownload", IconDownload);
-		app.component("IconNewReleases", IconNewReleases);
+		app.component("IconNewspaperVariant", IconNewspaperVariant);
 		app.component("IconBugReport", IconBugReport);
 	},
 };
