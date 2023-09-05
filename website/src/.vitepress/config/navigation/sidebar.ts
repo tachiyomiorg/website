@@ -1,14 +1,8 @@
-import { getSidebar } from "vitepress-plugin-auto-sidebar";
-
 const sidebar = {
 	"/docs/": defaultSidebar(),
 	"/forks/": defaultSidebar(),
 	"/changelogs/": defaultSidebar(),
-	"/news/": getSidebar({
-		contentRoot: "/src/",
-		contentDirs: ["news"],
-		collapsed: false,
-	}),
+	"/news/": defaultSidebar(),
 };
 
 function defaultSidebar() {
@@ -131,6 +125,10 @@ function defaultSidebar() {
 				{
 					text: "Forks",
 					link: "/forks/",
+				},
+				{
+					text: "News",
+					link: "/news/",
 				},
 			],
 		},
