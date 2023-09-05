@@ -8,6 +8,7 @@
 *.styl
 *.vue
 *.xml
+*.otf
 dist
 pnpm-lock.yaml
 cache

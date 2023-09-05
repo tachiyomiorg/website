@@ -187,3 +187,29 @@ main :where(h1, h2, h3, h4, h5, h6) + figure {
 		text-underline-offset: 2px
 	}
 }
+
+/**
+ * Component: Shortcodes
+ * -------------------------------------------------------------------------- */
+.navigation {
+	color: var(--vp-c-text-2)
+	font-weight: 600
+
+	&:hover {
+		color: var(--vp-c-text-1)
+		cursor: help
+	}
+
+	svg,
+	span.name {
+		vertical-align: middle; /* Align both SVG and <span> vertically */
+	}
+
+	svg {
+		fill: currentColor
+		height: 1em
+		width: 1em
+		display: inline-block
+		margin-right: 4px
+	}
+}

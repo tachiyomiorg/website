@@ -5,6 +5,7 @@ const sidebar = {
 	"/forks/": defaultSidebar(),
 	"/changelogs/": defaultSidebar(),
 	"/news/": defaultSidebar(),
+	"/sandbox/": defaultSidebar(),
 };
 
 function defaultSidebar() {

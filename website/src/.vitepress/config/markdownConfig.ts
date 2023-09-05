@@ -7,19 +7,24 @@ import { imgMark } from "@mdit/plugin-img-mark";
 import { imgSize } from "@mdit/plugin-img-size";
 import { include } from "@mdit/plugin-include";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
+import shortcode_plugin from "markdown-it-shortcode-tag";
+import shortcodes from "./shortcodes";
 
 const markdownConfig: MarkdownOptions = {
 	config: (md) => {
 		md.use(attrs),
-			md.use(figure),
-			md.use(imgLazyload),
-			md.use(imgMark),
-			md.use(imgSize),
-			md.use(include, {
-				currentPath: (env) => env.filePath,
-			}),
-			md.use(tabsMarkdownPlugin);
+		md.use(figure),
+		md.use(imgLazyload),
+		md.use(imgMark),
+		md.use(imgSize),
+		md.use(include, {
+			currentPath: (env) => env.filePath,
+		}),
+		md.use(tabsMarkdownPlugin);
+
+		md.use(shortcode_plugin, shortcodes);
 	},
+
 };
 
 export default markdownConfig;

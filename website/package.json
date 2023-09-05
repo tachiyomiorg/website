@@ -80,6 +80,7 @@
 		"element-plus": "^2.3.12",
 		"lodash.groupby": "^4.6.0",
 		"markdown-it": "^13.0.1",
+		"markdown-it-shortcode-tag": "^1.1.0",
 		"moment": "^2.29.4"
 	}
 }

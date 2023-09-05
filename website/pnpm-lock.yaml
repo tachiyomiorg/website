@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@iconify-prerendered/vue-mdi':
     specifier: ^0.23.1689058119
@@ -25,6 +29,9 @@ dependencies:
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
+  markdown-it-shortcode-tag:
+    specifier: ^1.1.0
+    version: 1.1.0
   moment:
     specifier: ^2.29.4
     version: 2.29.4
@@ -3385,6 +3392,11 @@ packages:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
     dev: true
 
+  /markdown-it-shortcode-tag@1.1.0:
+    resolution: {integrity: sha512-6qVQHmfVYMYlO2HebbF6ydXoTpOl3jPJvw6RyPnWaGJLSXdxlIJ7ihyzzbXNNHkZlQPfoDehDQYMfqeOv1KwgQ==}
+    engines: {node: '>=4.0'}
+    dev: false
+
   /markdown-it@13.0.1:
     resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
     hasBin: true
@@ -5010,7 +5022,3 @@ packages:
   /yoga-wasm-web@0.3.3:
     resolution: {integrity: sha512-N+d4UJSJbt/R3wqY7Coqs5pcV0aUj2j9IaQ3rNj9bVCLld8tTGKRa2USARjnvZJWVx1NDmQev8EknoczaOQDOA==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
