@@ -132,34 +132,39 @@ html:not(.dark) {
 
 // Shitty method to give elevation to image - TO BE REPLACED
 
-main > div > div > figure:has(img) img {
-	box-shadow: 2px 2px 8px 4px var(--vp-c-bg-alt)
+main figure {
+	margin: 2rem 0
+	transition: transform var(--vp-tt)
+
+	img {
+		margin: 0 auto
+		border-radius: 12px
+		box-shadow: 2px 2px 8px 4px var(--vp-c-bg-alt)
+	}
+
+	figcaption {
+		text-align: center
+		margin-top: 1.25rem
+		font-size: 0.875rem
+		color: var(--vp-c-text-2)
+	}
+
+	& > a .external-link-icon {
+		display: none
+	}
 }
 
-figure {
-	&:has(img) {
-		position: relative
-		display: flex
-		flex-direction: column
-		width: auto
-		text-align: center
-		transition: transform var(--vp-tt)
+main :where(h1, h2, h3, h4, h5, h6) + figure {
+	margin-top: 1.5rem
+}
 
-		img {
-			overflow: hidden
-			margin: 0 auto
-			border-radius: 8px
-		}
+.custom-block {
+	figure figcaption {
+		color: inherit
+	}
 
-		figcaption {
-			display: inline-block
-			margin: 6px auto
-			font-size: 0.8rem
-		}
-
-		& > a .external-link-icon {
-			display: none
-		}
+	&.tip figure img {
+		--vp-c-bg-alt: var(--vp-custom-block-tip-bg)
 	}
 }
 
