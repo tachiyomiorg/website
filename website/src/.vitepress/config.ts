@@ -11,7 +11,7 @@ import generateOgImages from "./config/hooks/generateOgImages";
 const title = "Tachiyomi";
 const description = "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.";
 
-const env = loadEnv("", process.cwd())
+const env = loadEnv("", process.cwd());
 const hostname: string = env.VITE_HOSTNAME || "http://localhost:4173";
 
 export default defineConfig({

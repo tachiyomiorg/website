@@ -77,7 +77,7 @@ export default {
 
 	.extension-icon {
 		flex-shrink: 0
-		margin-left: -4px;
+		margin-left: -4px
 	}
 
 	.extension-text {
@@ -129,7 +129,7 @@ export default {
 	}
 
 	@media (max-width 767px) {
-		padding: 0.4em 0em
+		padding: 0.4em 0
 	}
 }
 
@@ -144,7 +144,7 @@ export default {
 		padding: 0.5em
 
 		.extension-icon {
-			margin-left: 0;
+			margin-left: 0
 		}
 
 		.extension-download {

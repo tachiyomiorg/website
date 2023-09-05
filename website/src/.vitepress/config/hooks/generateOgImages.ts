@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const __fonts = resolve(__dirname, "../../fonts");
 
 async function generateOgImages(config: SiteConfig) {
-	const pages = await createContentLoader("**/*.md", { excerpt: true }).load()
+	const pages = await createContentLoader("**/*.md", { excerpt: true }).load();
 	const template = await readFile(resolve(__dirname, "../../theme/components/OgImageTemplate.vue"), "utf-8");
 
 	const fonts: SatoriOptions["fonts"] = [
@@ -40,14 +40,14 @@ async function generateOgImages(config: SiteConfig) {
 		},
 	];
 
-	const filteredPages = pages.filter(p => p.frontmatter.image === undefined);
+	const filteredPages = pages.filter((p) => p.frontmatter.image === undefined);
 
 	for (const page of filteredPages) {
 		await generateImage({
 			page,
 			template,
 			outDir: config.outDir,
-			fonts
+			fonts,
 		});
 	}
 }
@@ -69,19 +69,17 @@ async function generateImage({ page, template, outDir, fonts }: GenerateImagesOp
 		height: 628,
 		fonts,
 		props: {
-			title: frontmatter.layout === "home"
-				? (frontmatter.hero.name ?? frontmatter.title.replace(/\s\-.*$/, ""))
-				: (frontmatter.customMetaTitle ?? frontmatter.title.replace(/\s\-.*$/, "")),
-			description: frontmatter.layout === "home"
-				? (frontmatter.hero.tagline ?? frontmatter.description)
-				: frontmatter.description,
-			dir: (url.startsWith("/docs/faq/"))
-				? "FAQ"
-				: (url.startsWith("/docs/guides/"))
-				? "Guide"
-				: undefined,
-		}
-	}
+			title:
+				frontmatter.layout === "home"
+					? frontmatter.hero.name ?? frontmatter.title.replace(/\s\-.*$/, "")
+					: frontmatter.customMetaTitle ?? frontmatter.title.replace(/\s\-.*$/, ""),
+			description:
+				frontmatter.layout === "home"
+					? frontmatter.hero.tagline ?? frontmatter.description
+					: frontmatter.description,
+			dir: url.startsWith("/docs/faq/") ? "FAQ" : url.startsWith("/docs/guides/") ? "Guide" : undefined,
+		},
+	};
 
 	const svg = await satoriVue(options, template);
 

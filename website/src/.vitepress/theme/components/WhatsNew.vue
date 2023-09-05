@@ -50,7 +50,7 @@ const whatsNew = computed(() => {
 	transition: border-color 0.25s, background-color 0.25s
 	padding: 24px
 	height: 100%
-	margin: 1.5em auto 0.5em auto
+	margin: 1.5em auto 0.5em
 
 	header {
 		display: flex

@@ -1,4 +1,4 @@
-import { defineLoader, createContentLoader } from "vitepress"
+import { defineLoader, createContentLoader } from "vitepress";
 
 export interface News {
 	title: string;
@@ -16,12 +16,15 @@ export default defineLoader({
 
 		return articles
 			.filter(({ url }) => url !== "/news/")
-			.map(({ frontmatter, url }) => <News>({
-				title: frontmatter.title,
-				description: frontmatter.description,
-				date: frontmatter.date,
-				url,
-			}))
+			.map(
+				({ frontmatter, url }) =>
+					<News>{
+						title: frontmatter.title,
+						description: frontmatter.description,
+						date: frontmatter.date,
+						url,
+					}
+			)
 			.sort((a, b) => b.date.localeCompare(a.date));
-	}
+	},
 });

@@ -1,4 +1,4 @@
-import { defineLoader } from "vitepress"
+import { defineLoader } from "vitepress";
 import { Octokit } from "@octokit/rest";
 import type { GetResponseDataTypeFromEndpointMethod } from "@octokit/types";
 
@@ -18,5 +18,5 @@ export default defineLoader({
 		});
 
 		return releases;
-	}
+	},
 });

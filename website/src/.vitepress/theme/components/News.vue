@@ -33,14 +33,15 @@ const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" });
 
 <style lang="stylus" scoped>
 .news {
-	display: flex;
-	flex-direction: column;
+	display: flex
+	flex-direction: column
 	gap: 0.5rem
 	position: relative
 
 	&:first-of-type {
 		margin-top: 3rem
 	}
+
 	& + .news {
 		margin-top: 3rem
 	}
@@ -52,7 +53,8 @@ const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" });
 		z-index: 10
 	}
 
-	h3, p {
+	h3,
+	p {
 		margin: 0
 	}
 
@@ -77,7 +79,10 @@ const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" });
 		}
 	}
 
-	.title,	.readPrompt, p,	time {
+	.title,
+	.readPrompt,
+	p,
+	time {
 		position: relative
 	}
 
@@ -102,7 +107,8 @@ const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" });
 		}
 	}
 
-	.hover, .background {
+	.hover,
+	.background {
 		position: absolute
 		z-index: 20
 		bottom: -1rem
@@ -117,18 +123,27 @@ const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" });
 		transform: scale(0.95)
 		opacity: 0
 		z-index: 0
-		transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-			transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1)
 	}
 
-	&:hover .background, &:focus-within .background {
+	&:hover .background,
+	&:focus-within .background {
 		opacity: 1
 		transform: scale(1)
 	}
 
-	h3 a:focus-visible + .background {
+	h3: a
+
+	:focus-visible + .background {
+		outline: 2px solid var(--vp-c-brand-2)
+	}
+
+	:focus-visible + .background {
+		outline: 2px solid var(--vp-c-brand-2)
+	}
+
+	:focus-visible + .background {
 		outline: 2px solid var(--vp-c-brand-2)
 	}
 }
-
 </style>

@@ -81,29 +81,29 @@ function addToNonExistent(user: string) {
 <style lang="stylus" scoped>
 .contributors {
 	ul {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-		list-style-type: none;
-		padding-left: 0;
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		gap: 0.5rem
+		list-style-type: none
+		padding-left: 0
 
 		li + li {
-			margin-top: 0;
+			margin-top: 0
 		}
 	}
 
 	.avatar {
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		box-shadow: var(--vp-shadow-1);
-		border: 1px solid var(--vp-c-divider);
+		width: 32px
+		height: 32px
+		border-radius: 50%
+		box-shadow: var(--vp-shadow-1)
+		border: 1px solid var(--vp-c-divider)
 	}
 
 	.names {
-		font-size: 0.875rem;
-		color: var(--vp-c-text-2);
+		font-size: 0.875rem
+		color: var(--vp-c-text-2)
 	}
 }
 </style>

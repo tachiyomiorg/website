@@ -24,6 +24,6 @@
 				<div v-if="description" tw="mt-2 text-4xl text-slate-600">{{ description }}</div>
 			</div>
 		</div>
-		<div tw="shrink-0 h-2 w-full flex" style="background-color: #8995FF;" />
+		<div tw="shrink-0 h-2 w-full flex" style="background-color: #8995ff;" />
 	</div>
 </template>

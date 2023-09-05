@@ -69,12 +69,8 @@ const generateMeta = (context: TransformContext, hostname: string) => {
 			},
 		]);
 	} else {
-		const url = pageData.filePath
-			.replace("index.md", "")
-			.replace(".md", "");
-		const imageUrl = `${url}/__og_image__/og.png`
-			.replace(/\/\//g, "/")
-			.replace(/^\//, "");
+		const url = pageData.filePath.replace("index.md", "").replace(".md", "");
+		const imageUrl = `${url}/__og_image__/og.png`.replace(/\/\//g, "/").replace(/^\//, "");
 
 		head.push(["meta", { property: "og:image", content: `${hostname}/${imageUrl}` }]);
 		head.push(["meta", { property: "og:image:width", content: "1200" }]);

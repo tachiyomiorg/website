@@ -56,14 +56,14 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
 
 <style lang="stylus" scoped>
 h2 {
-	margin-bottom: 0;
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
+	margin-bottom: 0
+	display: flex
+	align-items: center
+	gap: 0.5rem
 }
 
 time {
-	font-size: 0.875rem;
-	color: var(--vp-c-text-2);
+	font-size: 0.875rem
+	color: var(--vp-c-text-2)
 }
 </style>
