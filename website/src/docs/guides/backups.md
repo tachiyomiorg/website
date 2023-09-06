@@ -20,7 +20,7 @@ Backups store the following information:
   - Author, Artist, Date Added to Library, Selected Viewer, Read Duration, etc.
 
 ::: tip How to create a backup
-1. Go to **More -> Backup and Restore**.
+1. Go to <nav to="backup-and-restore">.
 1. Select **Create backup** and choose a location to save it.
 
 ![Backup and Restore](/docs/guides/backups/backup.light.webp#light =414x215)
@@ -45,7 +45,7 @@ You can transfer downloaded series chapters from one version of **Tachiyomi** to
 It is highly recommended to enable automatic backups to ensure you can recover in case of any issues.
 
 ::: tip How to enable automatic backups
-1. Go to **More -> Settings -> Backup**.
+1. Go to <nav to="backup-and-restore">.
 1. Set a **backup frequency** to schedule automatic backups.
 This way, you can recover from catastrophic failures.
 

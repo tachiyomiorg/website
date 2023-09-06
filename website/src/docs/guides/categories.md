@@ -16,7 +16,7 @@ Organize your favorite series effortlessly with categories that declutter and st
 
 There are various things you can do to categories to help enhance your library.
 
-To makes changes to your categories, first navigate to **More -> Categories**.
+To makes changes to your categories, first navigate to <nav to="categories">.
 
 :::: tabs
 == Create

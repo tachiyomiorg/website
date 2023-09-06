@@ -21,7 +21,7 @@ It should be considered if you wish to bypass installation prompts during extens
 ## Setting Up Shizuku
 To set up **Shizuku**, follow the instructions [here](https://shizuku.rikka.app/guide/setup/).
 
-After configuring it, activate **Shizuku** within **Tachiyomi** by navigating to **More -> Settings -> Advanced** then changing the **Installer** setting.
+After configuring it, activate **Shizuku** within **Tachiyomi** by navigating to <nav to="advanced"> then changing the **Installer** setting.
 
 ## Comparing Installers
 Three installer options are available:

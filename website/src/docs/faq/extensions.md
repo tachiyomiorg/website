@@ -56,7 +56,7 @@ When prompted while installing your first extension, allow unknown apps installa
 Uninstall extensions like regular apps: through device settings or in **Tachiyomi**.
 
 ::: tip Uninstalling an Extension
-In **Tachiyomi**, uninstall an extension via **Browse -> Extensions**, then tap **Uninstall** on the chosen extension.
+In **Tachiyomi**, uninstall an extension via <nav to="extensions">, then tap **Uninstall** on the chosen extension.
 :::
 
 ## Removed Extensions

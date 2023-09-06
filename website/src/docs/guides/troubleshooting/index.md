@@ -33,7 +33,7 @@ Alternatively, try opening the website in your browser using the **Overflow** ic
 
 ### Clearing cookies and WebView data
 ::: info Clearing cookies and WebView data
-1. Navigate to **More -> Settings -> Advanced**.
+1. Navigate to <nav to="advanced">.
 1. Tap **Clear cookies**.
 1. Tap **Clear WebView data**.
 :::
@@ -76,7 +76,7 @@ A user agent string shares requester information with websites, potentially affe
 While some sources have specific user agent strings, most rely on the app's default.
 
 ::: info Changing your user agent
-1. Navigate to **More -> Settings -> Advanced**.
+1. Navigate to <nav to="advanced">.
 1. Modify **Default user agent string** to another value.
 	> [Here's a reference](https://www.whatismybrowser.com/guides/the-latest-user-agent/).
 1. Restart the app and retry source access.
@@ -92,7 +92,7 @@ Wait for the source to lower its protection or switch to different sources.
 To diagnose abnormal app behavior, record device logs using a [Logcat Reader](https://play.google.com/store/apps/details?id=com.dp.logcatapp).
 
 ### Obtaining Crash Logs
-For crash investigations, navigate to **More -> Settings -> Advanced** and tap **Dump crash logs**.
+For crash investigations, navigate to <nav to="advanced"> and tap **Dump crash logs**.
 
 ![Dump crashlogs](/docs/guides/troubleshooting/dump-crash-logs.dark.webp =512x386)
 

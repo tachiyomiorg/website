@@ -9,10 +9,10 @@ Frequently Asked Questions about Browse.
 ## Why Can't I See Installed Sources?
 
 ### If the Extension Language Differs from Your Phone's Primary Language
-Enable the source's language at **Browse -> Sources -> Filter**, then turn on the language of the desired source.
+Enable the source's language at <nav to="sources">, tap on **Filter**, then turn on the language of the desired source.
 
 ### If It's an NSFW Extension
-Navigate to **More -> Settings -> Browse** and check the **Show in sources list** option.
+Navigate to <nav to="browse"> and check the **Show in sources and extensions list** option.
 
 ## How Can I Locate a Specific Series?
 At times, locating a source containing the series you want to read can be challenging.
@@ -26,7 +26,7 @@ Here are strategies to help you find it:
    - Search for an extension for the website you found in *step 1* within the [extensions list](/extensions/).
 
 ### If You Find the Series on a Specific Scanlator or Aggregator With an Extension
-Download the relevant extension, locate it under **Browse -> Sources**, and proceed to search for the series there.
+Download the relevant extension, locate it under <nav to="sources">, and proceed to search for the series there.
 
 ### If You Find the Series on a Specific Scanlator or Aggregator Without an Extension
 Check if a request has been made to add the site as an extension [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) and confirm it's not on the [list of extensions that won't be added back](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475).

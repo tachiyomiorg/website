@@ -27,7 +27,7 @@ Downloads might not be detected due to multiple factors:
   > Adjust the folder title to the updated name.
 
 ## Managing Download Queue
-Navigate to **More -> Download Queue** to interact with queued downloads.
+Navigate to <nav to="download-queue"> to interact with queued downloads.
 
 Cancel all items by clicking the **Overflow** button beside a series chapter or the top right corner.
 

@@ -194,17 +194,19 @@ main :where(h1, h2, h3, h4, h5, h6) + figure {
  * -------------------------------------------------------------------------- */
 
 .navigation {
-	color: var(--vp-c-text-2)
+	color: var(--vp-c-green-2)
 	font-weight: 600
 
 	&:hover {
-		color: var(--vp-c-text-1)
-		cursor: help
+		color: var(--vp-c-green-1)
+		cursor: default
 	}
 
 	svg,
 	span.name {
 		vertical-align: middle // Align both SVG and <span> vertically
+		position: relative
+		bottom: 1px
 	}
 
 	svg {

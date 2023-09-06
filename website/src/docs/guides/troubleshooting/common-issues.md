@@ -24,7 +24,7 @@ Sources being slow could stem from site slowness, your internet, or source-impos
 
 ### Reading is laggy
 * Caused by oversized images in chapters.
-* For **32-bit color** users, try disabling in **More -> Settings -> Reader**.
+* For **32-bit color** users, try disabling in <nav to="reader">.
 * Free up RAM.
 * Use sources with smaller images.
 
@@ -49,7 +49,7 @@ These errors indicate connection issues. Possible causes include:
 
 Try these solutions:
 
-* Enable **More -> Settings -> Advanced -> DNS over HTTPS**.
+* Enable **DNS over HTTPS** under <nav to="advanced">.
 * Change network (Wi-Fi, mobile data, VPN).
 * Reboot router.
 
@@ -60,7 +60,7 @@ Try these solutions:
 
 * Check expired certificate, use SSL checker.
 * Set correct device date and time.
-* In **More -> Settings -> Advanced**, try **Clear cache** and **Clear cookies**.
+* In <nav to="advanced">, try **Clear cache** and **Clear cookies**.
 * Change network (Wi-Fi, mobile data, VPN).
 * Reboot device.
 

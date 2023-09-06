@@ -17,7 +17,7 @@ Ideal for users seeking the latest **Tachiyomi** experience, it's essential to [
 
 Some Android skins (e.g., **MIUI**) aggressively save battery, potentially shutting down apps in the background.
 
-Whitelist **Tachiyomi** from your battery saver by going to **More -> Settings -> Advanced** and tapping **Disable battery optimization**.
+Whitelist **Tachiyomi** from your battery saver by going to <nav to="advanced"> and tapping **Disable battery optimization**.
 
 If unsuccessful, try [DontKillMyApp](https://dontkillmyapp.com/) for battery-saving options on your device and workarounds.
 

@@ -27,7 +27,7 @@ Tracking helps you automatically send read chapters to supported trackers, so yo
 - Works with **Komga** sources only.
 - Two-way sync for local chapters.
 - Manually read chapter syncs with delay.
-- Auto-track on library add: **More -> Settings -> Tracking**.
+- Auto-track on library add: <nav to="tracking">.
 
 > Learn how to set it up on the [Komga](https://komga.org/) website.
 ==Kavita
@@ -44,7 +44,7 @@ TBA
 
 ### How do I login into trackers?
 
-1. Go to **More -> Settings -> Tracking**.
+1. Go to <nav to="tracking">.
 1. Tap the desired tracker to begin login.
 
 ### How do I set up tracking for each series?
@@ -72,5 +72,5 @@ Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
 ### Check Tracked/Untracked Series in Library
-Go to **Library -> Tap Filter (top right) -> Go to Filter tab -> Toggle Tracked**.
+Go to <nav to="main_library">, then **Filter (top right) -> Filter tab** then **Toggle Tracked**.
 If you are logged into more than one tracker, toggle the tracker you want to include or exclude.

@@ -10,8 +10,8 @@ Follow these steps to troubleshoot and find solutions.
 
 ## Primary diagnosis
 
-1. **Update Extensions**: Check **Browse -> Extensions** for updates, no pending updates should be present.
-1. **Update App**: Go to **More -> About** and tap **Check for updates**.
+1. **Update Extensions**: Check <nav to="extensions"> for updates, no pending updates should be present.
+1. **Update App**: Go to <nav to="about"> and tap **Check for updates**.
 1. **Manual Series Refresh**: Drag down to manually refresh problematic series.
 1. **Test Other Series**: Try different series from the same source.
 1. **Update WebView**: Ensure your WebView is current.
@@ -20,7 +20,7 @@ Follow these steps to troubleshoot and find solutions.
 1. **Collaborative Check**: Get others to replicate the error.
 1. **Source Status**: Verify the source's status in a browser.
 1. **Retry Button**: Look for a retry button on the series page.
-1. **Advanced Settings**: Under **More -> Settings -> Advanced**, try these options:
+1. **Advanced Settings**: Under <nav to="advanced">, try these options:
   - Clear Cache
   - Clear Cookies
   - Clear Database

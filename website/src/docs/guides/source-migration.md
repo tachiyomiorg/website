@@ -41,15 +41,6 @@ You will need to remove these manually with a file manager.
 1. Select the **Source** you'd like to migrate _to_ by tapping the **Series** thumbnail.
 1. Choose which data you want to transfer over, and you're done.
 
-:::tip Searching only pinned sources
-
-You can restrict global searching to pinned sources if you wish to declutter your search.
-
-To do this, go to **More -> Settings -> Browse** then toggle the **Only include pinned sources** setting.
-
-Pin sources in Browse using the pin icon next to the source name.
-:::
-
 ==TachiyomiJ2K
 ### Migrating multiple Series
 
