@@ -18,42 +18,42 @@ const iconMappings = {
 	queryStats: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m105-233-65-47 200-320 120 140 160-260 109 163q-23 1-43.5 5.5T545-539l-22-33-152 247-121-141-145 233ZM863-40 738-165q-20 14-44.5 21t-50.5 7q-75 0-127.5-52.5T463-317q0-75 52.5-127.5T643-497q75 0 127.5 52.5T823-317q0 26-7 50.5T795-221L920-97l-57 57ZM643-217q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm89-320q-19-8-39.5-13t-42.5-6l205-324 65 47-188 296Z"/></svg>`,
 	security: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" /></svg>`,
 	sync: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,18A6,6 0 0,1 6,12C6,11 6.25,10.03 6.7,9.2L5.24,7.74C4.46,8.97 4,10.43 4,12A8,8 0 0,0 12,20V23L16,19L12,15M12,4V1L8,5L12,9V6A6,6 0 0,1 18,12C18,13 17.75,13.97 17.3,14.8L18.76,16.26C19.54,15.03 20,13.57 20,12A8,8 0 0,0 12,4Z" /></svg>`,
-}
+};
 
 const navigationMappings = {
 	// Main menus
-	"main_library": { name: "Library", icon: iconMappings["bookmarkBoxOutline"] },
-	"main_updates": { name: "Updates", icon: iconMappings["alertDecagramOutline"] },
-	"main_history": { name: "History", icon: iconMappings["history"] },
-	"main_browse": { name: "Browse", icon: iconMappings["compassOutline"] },
-	"main_more": { name: "More", icon: iconMappings["dotsHorizontal"] },
+	main_library: { name: "Library", icon: iconMappings["bookmarkBoxOutline"] },
+	main_updates: { name: "Updates", icon: iconMappings["alertDecagramOutline"] },
+	main_history: { name: "History", icon: iconMappings["history"] },
+	main_browse: { name: "Browse", icon: iconMappings["compassOutline"] },
+	main_more: { name: "More", icon: iconMappings["dotsHorizontal"] },
 
 	// Browse menu
-	"sources": { name: "Sources", dependsOn: "main_browse" },
-	"extensions": { name: "Extensions", dependsOn: "main_browse" },
-	"migrate": { name: "Migrate", dependsOn: "main_browse" },
+	sources: { name: "Sources", dependsOn: "main_browse" },
+	extensions: { name: "Extensions", dependsOn: "main_browse" },
+	migrate: { name: "Migrate", dependsOn: "main_browse" },
 
 	// More menu
 	"downloaded-only": { name: "Downloaded only", icon: iconMappings["cloudOffOutline"], dependsOn: "main_more" },
 	"incognito-mode": { name: "Incognito mode", icon: iconMappings["glasses"], dependsOn: "main_more" },
 	"download-queue": { name: "Download queue", icon: iconMappings["downloadOutline"], dependsOn: "main_more" },
-	"categories": { name: "Categories", icon: iconMappings["labelOutline"], dependsOn: "main_more" },
-	"statistics": { name: "Statistics", icon: iconMappings["queryStats"], dependsOn: "main_more" },
+	categories: { name: "Categories", icon: iconMappings["labelOutline"], dependsOn: "main_more" },
+	statistics: { name: "Statistics", icon: iconMappings["queryStats"], dependsOn: "main_more" },
 	"backup-and-restore": { name: "Backup and restore", icon: iconMappings["backupRestore"], dependsOn: "main_more" },
-	"settings": { name: "Settings", icon: iconMappings["cog"], dependsOn: "main_more" },
-	"about": { name: "About", icon: iconMappings["informationOutline"], dependsOn: "main_more" },
-	"help": { name: "Help", icon: iconMappings["helpCircleOutline"], dependsOn: "main_more" },
+	settings: { name: "Settings", icon: iconMappings["cog"], dependsOn: "main_more" },
+	about: { name: "About", icon: iconMappings["informationOutline"], dependsOn: "main_more" },
+	help: { name: "Help", icon: iconMappings["helpCircleOutline"], dependsOn: "main_more" },
 
 	// Settings submenu
-	"appearance": { name: "Appearance", icon: iconMappings["paletteOutline"], dependsOn: "settings" },
-	"library": { name: "Library", icon: iconMappings["bookmarkBoxOutline"], dependsOn: "settings" },
-	"downloads": { name: "Downloads", icon: iconMappings["downloadOutline"], dependsOn: "settings" },
-	"tracking": { name: "Tracking", icon: iconMappings["sync"], dependsOn: "settings" },
-	"browse": { name: "Browse", icon: iconMappings["compassOutline"], dependsOn: "settings" },
+	appearance: { name: "Appearance", icon: iconMappings["paletteOutline"], dependsOn: "settings" },
+	library: { name: "Library", icon: iconMappings["bookmarkBoxOutline"], dependsOn: "settings" },
+	downloads: { name: "Downloads", icon: iconMappings["downloadOutline"], dependsOn: "settings" },
+	tracking: { name: "Tracking", icon: iconMappings["sync"], dependsOn: "settings" },
+	browse: { name: "Browse", icon: iconMappings["compassOutline"], dependsOn: "settings" },
 	"security-and-privacy": { name: "Security and privacy", icon: iconMappings["security"], dependsOn: "settings" },
-	"reader": { name: "Reader", icon: iconMappings["bookOpenOutline"], dependsOn: "settings" },
-	"advanced": { name: "Advanced", icon: iconMappings["codeTags"], dependsOn: "settings" },
-}
+	reader: { name: "Reader", icon: iconMappings["bookOpenOutline"], dependsOn: "settings" },
+	advanced: { name: "Advanced", icon: iconMappings["codeTags"], dependsOn: "settings" },
+};
 
 function generateNavigationHtml(navKey) {
 	const navData = navigationMappings[navKey];
@@ -64,7 +64,7 @@ function generateNavigationHtml(navKey) {
 
 	const { name, icon, dependsOn } = navData;
 
-	const iconHtml = icon ? icon : '';
+	const iconHtml = icon ? icon : "";
 	let html = `<span class='shortcode navigation ${navKey}'>${iconHtml}<span class="name">${name}</span></span>`;
 
 	if (dependsOn) {
