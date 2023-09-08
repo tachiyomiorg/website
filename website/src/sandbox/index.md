@@ -1,6 +1,7 @@
 ---
 title: Sandbox
 description: Area to test and demonstrate different features and capabilities.
+search: false
 ---
 
 # Sandbox
