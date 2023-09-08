@@ -1,55 +1,54 @@
 <script setup lang="ts">
-import { computed, ref, toRefs } from "vue";
+import { computed, ref, toRefs } from "vue"
 
-const props = defineProps<{ body: string; author: string; tag: string; }>();
-const { body, author, tag } = toRefs(props);
+const props = defineProps<{ body: string; author: string; tag: string }>()
+const { body, author, tag } = toRefs(props)
 
 function isHigherThan(tagName: string, reference: string) {
-	return reference.localeCompare(tagName, undefined, { numeric: true, sensitivity: "base" }) >= 0;
+	return reference.localeCompare(tagName, undefined, { numeric: true, sensitivity: "base" }) >= 0
 }
 
 const notMentioned = computed(() => {
-	return isHigherThan("v0.8.5", tag.value) ? ['arkon'] : [];
-});
+	return isHigherThan("v0.8.5", tag.value) ? ["arkon"] : []
+})
 
 const nonExistent = ref<string[]>([])
 
 const contributors = computed(() => {
 	const list = [...body.value.matchAll(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g)]
 		.map((match) => match[2])
-	const uncredited = author.value.includes('[bot]')
+	const uncredited = author.value.includes("[bot]")
 		? notMentioned.value
-		: [author.value, ...notMentioned.value];
+		: [author.value, ...notMentioned.value]
 
-	return [...new Set([...uncredited, ...list])].filter((user) => !nonExistent.value.includes(user));
-});
+	return [...new Set([...uncredited, ...list])].filter((user) => !nonExistent.value.includes(user))
+})
 
-// @ts-expect-error
 const listFormatter = new Intl.ListFormat("en", {
 	style: "long",
 	type: "conjunction",
-});
+})
 
 const contributorsText = computed(() => {
 	if (contributors.value.length <= 3) {
-		return listFormatter.format(contributors.value);
+		return listFormatter.format(contributors.value)
 	}
 
 	return listFormatter.format([
 		...contributors.value.slice(0, 2),
-		`${contributors.value.length - 2} other contributors`
-	]);
-});
+		`${contributors.value.length - 2} other contributors`,
+	])
+})
 
 function addToNonExistent(user: string) {
 	if (!nonExistent.value.includes(user)) {
-		nonExistent.value.push(user);
+		nonExistent.value.push(user)
 	}
 }
 </script>
 
 <template>
-	<div class="contributors" v-if="contributors.length > 0">
+	<div v-if="contributors.length > 0" class="contributors">
 		<h3>Contributors</h3>
 		<ul>
 			<li
@@ -65,9 +64,9 @@ function addToNonExistent(user: string) {
 					<img
 						:src="`https://github.com/${contributor}.png?size=32`"
 						:alt="`@${contributor} profile picture`"
-						@error="addToNonExistent(contributor)"
 						loading="lazy"
 						class="avatar"
+						@error="addToNonExistent(contributor)"
 					>
 				</a>
 			</li>

@@ -1,4 +1,4 @@
-import type { DefaultTheme } from "vitepress";
+import type { DefaultTheme } from "vitepress"
 
 const nav: DefaultTheme.NavItem[] = [
 	{
@@ -24,6 +24,6 @@ const nav: DefaultTheme.NavItem[] = [
 			},
 		],
 	},
-];
+]
 
-export default nav;
+export default nav

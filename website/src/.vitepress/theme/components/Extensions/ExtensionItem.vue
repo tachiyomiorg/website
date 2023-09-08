@@ -1,30 +1,30 @@
 <script setup lang="ts">
-import { computed, toRefs } from "vue";
-import type { Extension } from "../../queries/useExtensionsRepositoryQuery";
+import { computed, toRefs } from "vue"
+import type { Extension } from "../../queries/useExtensionsRepositoryQuery"
 
-const props = defineProps<{ item: Extension }>();
-const { item } = toRefs(props);
+const props = defineProps<{ item: Extension }>()
+const { item } = toRefs(props)
 
 const pkgId = computed(() => {
-	return item.value.pkg.replace("eu.kanade.tachiyomi.extension.", "");
-});
+	return item.value.pkg.replace("eu.kanade.tachiyomi.extension.", "")
+})
 
-const pkgName = computed(() => item.value.name.split(": ")[1]);
-const pkgIsNsfw = computed(() => item.value.nsfw === 1);
+const pkgName = computed(() => item.value.name.split(": ")[1])
+const pkgIsNsfw = computed(() => item.value.nsfw === 1)
 
 const iconUrl = computed(() => {
-	return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${item.value.pkg}.png`;
-});
+	return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${item.value.pkg}.png`
+})
 
 const apkUrl = computed(() => {
-	return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${item.value.apk}`;
-});
+	return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${item.value.apk}`
+})
 </script>
 
 <template>
 	<div class="extension">
 		<a :href="`#${pkgId}`" class="anchor" aria-hidden="true" @click.stop>#</a>
-		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42" />
+		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42">
 		<div class="extension-text">
 			<div class="upper">
 				{{ pkgName }}

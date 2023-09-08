@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { computed, toRefs } from "vue";
-import ExtensionGroup from "./ExtensionGroup.vue";
-import type { Extension } from "../../queries/useExtensionsRepositoryQuery";
+import { computed, toRefs } from "vue"
+import type { Extension } from "../../queries/useExtensionsRepositoryQuery"
+import ExtensionGroup from "./ExtensionGroup.vue"
 
-const props = defineProps<{ extensions: Extension[][] }>();
-const { extensions } = toRefs(props);
+const props = defineProps<{ extensions: Extension[][] }>()
+const { extensions } = toRefs(props)
 
 const totalCount = computed(() => {
-	return extensions.value.reduce((sum, item) => sum + item.length, 0);
-});
+	return extensions.value.reduce((sum, item) => sum + item.length, 0)
+})
 </script>
 
 <template>

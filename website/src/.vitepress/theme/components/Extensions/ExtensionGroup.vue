@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { computed, toRefs } from "vue";
-import { langName, simpleLangName } from "../../../config/scripts/languages";
-import ExtensionItem from "./ExtensionItem.vue";
-import type { Extension } from "../../queries/useExtensionsRepositoryQuery";
+import { computed, toRefs } from "vue"
+import { langName, simpleLangName } from "../../../config/scripts/languages"
+import type { Extension } from "../../queries/useExtensionsRepositoryQuery"
+import ExtensionItem from "./ExtensionItem.vue"
 
-const props = defineProps<{ list: Extension[]; totalCount: number }>();
-const { list } = toRefs(props);
+const props = defineProps<{ list: Extension[]; totalCount: number }>()
+const { list } = toRefs(props)
 
 const groupName = computed(() => {
-	const firstItem = list.value[0];
+	const firstItem = list.value[0]
 
 	return firstItem.lang === "en"
 		? simpleLangName(firstItem.lang)
-		: langName(firstItem.lang);
-});
+		: langName(firstItem.lang)
+})
 </script>
 
 <template>

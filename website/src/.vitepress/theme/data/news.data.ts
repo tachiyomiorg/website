@@ -1,14 +1,14 @@
-import { defineLoader, createContentLoader } from "vitepress";
+import { createContentLoader } from "vitepress"
 
 export interface News {
-	title: string;
-	description: string;
-	date: string;
-	url: string;
+	title: string
+	description: string
+	date: string
+	url: string
 }
 
-declare const data: News[];
-export { data };
+declare const data: News[]
+export { data }
 
 export default createContentLoader("news/*.md", {
 	excerpt: true,
@@ -22,8 +22,8 @@ export default createContentLoader("news/*.md", {
 						description: frontmatter.description,
 						date: frontmatter.date,
 						url,
-					}
+					},
 			)
-			.sort((a, b) => b.date.localeCompare(a.date));
-	}
-});
+			.sort((a, b) => b.date.localeCompare(a.date))
+	},
+})

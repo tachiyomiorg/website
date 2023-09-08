@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import MarkdownIt from "markdown-it";
-import { data as changelogs } from "../data/changelogs.data";
-import Contributors from "./Contributors.vue";
+import MarkdownIt from "markdown-it"
+import { data as changelogs } from "../data/changelogs.data"
+import Contributors from "./Contributors.vue"
 
-const md = new MarkdownIt();
+const md = new MarkdownIt()
 
 function renderMarkdown(string: string | null | undefined) {
-	const body = string ?? "No changelog provided.";
+	const body = string ?? "No changelog provided."
 	const flavoredString = body
 		.split(/---\r\n\r\n### Checksums|---\r\n\r\nMD5/)[0]
 		.replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, "[@$2](https://github.com/$2)")
-		.replace(/#(\d+)/g, '[#$1](https://github.com/tachiyomiorg/tachiyomi/issues/$1)')
+		.replace(/#(\d+)/g, "[#$1](https://github.com/tachiyomiorg/tachiyomi/issues/$1)")
 		.replace(/^Check out the .*past release notes.* if you're.*$/m, "")
 		.replace(/https\:\/\/github.com\/tachiyomiorg\/tachiyomi\/releases\/tag\/(.*?)/g, "#$1")
-		.trim();
+		.trim()
 
-	return md.render(flavoredString);
+	return md.render(flavoredString)
 }
 
 const dateFormatter = new Intl.DateTimeFormat("en", {
 	dateStyle: "medium",
-});
+})
 </script>
 
 <template>
@@ -45,7 +45,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
 		<time :datetime="release.published_at!">
 			{{ dateFormatter.format(new Date(release.published_at!)) }}
 		</time>
-		<div v-html="renderMarkdown(release.body)"></div>
+		<div v-html="renderMarkdown(release.body)" />
 		<Contributors
 			:body="release.body!"
 			:author="release.author.login"

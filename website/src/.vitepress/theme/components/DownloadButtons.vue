@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { data as release } from "../data/release.data";
+import { computed } from "vue"
+import { data as release } from "../data/release.data"
 
 const downloadInformation = computed(() => ({
 	preview: {
 		tagName: release.preview.tag_name ?? "r0000",
 		asset: (release.preview.assets ?? [])
-			.find(a => /^tachiyomi-r\d{4,}.apk/.test(a.name)),
+			.find((a) => /^tachiyomi-r\d{4,}.apk/.test(a.name)),
 	},
 	stable: {
 		tagName: release.stable.tag_name?.slice(1) ?? "0.00.0",
 		asset: (release.stable.assets ?? [])
-			.find(a => /^tachiyomi-v\d+\.\d+\.\d+.apk/.test(a.name)),
-	}
+			.find((a) => /^tachiyomi-v\d+\.\d+\.\d+.apk/.test(a.name)),
+	},
 }))
 </script>
 

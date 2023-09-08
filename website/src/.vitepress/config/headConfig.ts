@@ -1,4 +1,4 @@
-import type { HeadConfig } from "vitepress";
+import type { HeadConfig } from "vitepress"
 
 const headConfig: HeadConfig[] = [
 	["meta", { name: "darkreader-lock" }],
@@ -54,6 +54,6 @@ const headConfig: HeadConfig[] = [
 	],
 	["meta", { property: "og:locale", content: "en_US" }],
 	["meta", { property: "og:type", content: "website" }],
-];
+]
 
-export default headConfig;
+export default headConfig

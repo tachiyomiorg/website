@@ -1,4 +1,4 @@
-import type { DefaultTheme } from "vitepress";
+import type { DefaultTheme } from "vitepress"
 
 const sidebar: DefaultTheme.SidebarMulti = {
 	"/download/": defaultSidebar(),
@@ -8,7 +8,7 @@ const sidebar: DefaultTheme.SidebarMulti = {
 	"/changelogs/": defaultSidebar(),
 	"/news/": defaultSidebar(),
 	"/sandbox/": defaultSidebar(),
-};
+}
 
 function defaultSidebar(): DefaultTheme.SidebarItem[] {
 	return [
@@ -137,7 +137,7 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
 				},
 			],
 		},
-	];
+	]
 }
 
-export default sidebar;
+export default sidebar

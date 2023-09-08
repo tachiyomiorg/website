@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { type DefaultTheme, useData } from "vitepress";
+import { computed } from "vue"
+import { type DefaultTheme, useData } from "vitepress"
 
-import { data as release } from "../data/release.data";
+import { data as release } from "../data/release.data"
 
-import VPNavBarMenuLink from "vitepress/dist/client/theme-default/components/VPNavBarMenuLink.vue";
-import VPNavBarMenuGroup from "vitepress/dist/client/theme-default/components/VPNavBarMenuGroup.vue";
+import VPNavBarMenuLink from "vitepress/dist/client/theme-default/components/VPNavBarMenuLink.vue"
+import VPNavBarMenuGroup from "vitepress/dist/client/theme-default/components/VPNavBarMenuGroup.vue"
 
-const { theme } = useData<DefaultTheme.Config>();
+const { theme } = useData<DefaultTheme.Config>()
 
 /**
  * Workaround to use the release data directly while the sidebar
@@ -19,14 +19,14 @@ const nav = computed(() => {
 			return item
 		}
 
-		const appVersion = release.stable.tag_name.substring(1);
+		const appVersion = release.stable.tag_name.substring(1)
 
 		return <DefaultTheme.NavItemWithChildren> {
 			...item,
 			text: item.text === "{app_version}"	? appVersion : item.text,
 			items: (item as DefaultTheme.NavItemWithChildren).items.map((child) => {
 				if (!("link" in child)) {
-					return child;
+					return child
 				}
 
 				return <DefaultTheme.NavItemWithLink> {
@@ -35,7 +35,7 @@ const nav = computed(() => {
 				}
 			}),
 		}
-	});
+	})
 })
 </script>
 

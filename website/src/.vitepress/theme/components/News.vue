@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { data as newsList } from "../data/news.data";
-import { IconChevronRight } from "@iconify-prerendered/vue-mdi";
+import { IconChevronRight } from "@iconify-prerendered/vue-mdi"
+import { data as newsList } from "../data/news.data"
 
-const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" });
+const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" })
 </script>
 
 <template>

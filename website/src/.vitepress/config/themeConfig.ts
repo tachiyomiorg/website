@@ -1,7 +1,7 @@
-import type { DefaultTheme } from "vitepress";
+import type { DefaultTheme } from "vitepress"
 
-import nav from "./navigation/navbar";
-import sidebar from "./navigation/sidebar";
+import nav from "./navigation/navbar"
+import sidebar from "./navigation/sidebar"
 
 const themeConfig: DefaultTheme.Config = {
 	logo: {
@@ -10,8 +10,8 @@ const themeConfig: DefaultTheme.Config = {
 		height: 24,
 	},
 
-	nav: nav,
-	sidebar: sidebar,
+	nav,
+	sidebar,
 
 	outline: [2, 3],
 
@@ -43,11 +43,11 @@ const themeConfig: DefaultTheme.Config = {
 			link: "https://reddit.com/r/Tachiyomi",
 			ariaLabel: "Support subreddit",
 		},
-		//{ icon: "instagram", link: "https://instagram.com/tachiyomiorg", ariaLabel: "Instagram Page" },
+		// { icon: "instagram", link: "https://instagram.com/tachiyomiorg", ariaLabel: "Instagram Page" },
 	],
 
 	footer: {
-		message: `<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Open-source Apache Licensed</a> | <a href="/privacy/">Privacy policy</a> | Powered by <a target="_blank" href="https://www.netlify.com/">Netlify <img src="/img/netlify.svg" alt="Netlify Logo" height="12px" width="12px" style="display: inline-block"></a>`,
+		message: "<a href=\"https://www.apache.org/licenses/LICENSE-2.0\" target=\"_blank\">Open-source Apache Licensed</a> | <a href=\"/privacy/\">Privacy policy</a> | Powered by <a target=\"_blank\" href=\"https://www.netlify.com/\">Netlify <img src=\"/img/netlify.svg\" alt=\"Netlify Logo\" height=\"12px\" width=\"12px\" style=\"display: inline-block\"></a>",
 		copyright: `Copyright © 2015 - ${new Date().getFullYear()} Javier Tomás`,
 	},
 
@@ -67,6 +67,6 @@ const themeConfig: DefaultTheme.Config = {
 	search: {
 		provider: "local",
 	},
-};
+}
 
-export default themeConfig;
+export default themeConfig

@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import { computed, toRefs } from "vue";
-import MarkdownIt from "markdown-it";
-import { data as release, type AppRelease } from "../data/release.data";
-import Contributors from "./Contributors.vue";
+import { computed, toRefs } from "vue"
+import MarkdownIt from "markdown-it"
+import { type AppRelease, data as release } from "../data/release.data"
+import Contributors from "./Contributors.vue"
 
-const props = defineProps<{ type: keyof AppRelease }>();
-const { type } = toRefs(props);
+const props = defineProps<{ type: keyof AppRelease }>()
+const { type } = toRefs(props)
 
-const md = new MarkdownIt();
+const md = new MarkdownIt()
 
 const changelog = computed(() => {
 	const flavoredString = (release[type.value].body ?? "")
 		.replace(/(?<=\(|(, ))@(.*?)(?=\)|(, ))/g, "[@$2](https://github.com/$2)")
-		.replace('https://github.com/tachiyomiorg/tachiyomi/releases', '/changelogs/');
+		.replace("https://github.com/tachiyomiorg/tachiyomi/releases", "/changelogs/")
 
-	return md.render(flavoredString);
+	return md.render(flavoredString)
 })
 </script>
 
