@@ -1,0 +1,8 @@
+# Cache headers for media files for the Google recommended of 6 months minimum.
+*.webp
+*.webm
+*.png
+*.jpg
+*.svg
+*.ico
+    Cache-Control: public, max-age=15552000
