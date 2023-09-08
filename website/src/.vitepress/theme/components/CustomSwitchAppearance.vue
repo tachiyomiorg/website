@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { inject } from "vue"
+import { inject, onMounted, ref } from "vue"
 import { useData } from "vitepress"
 
 import VPIconMoon from "vitepress/dist/client/theme-default/components/icons/VPIconMoon.vue"
@@ -11,7 +11,12 @@ const toggleAppearance = inject("toggle-appearance", () => {
 	isDark.value = !isDark.value
 })
 
-const supportsViewTransition = "startViewTransition" in document
+const supportsViewTransition = ref(false)
+
+onMounted(() => {
+	supportsViewTransition.value = "startViewTransition" in document
+		&& window.matchMedia("(prefers-reduced-motion: no-preference)").matches
+})
 </script>
 
 <template>
