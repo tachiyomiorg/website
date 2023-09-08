@@ -1,4 +1,6 @@
-const sidebar = {
+import type { DefaultTheme } from "vitepress";
+
+const sidebar: DefaultTheme.SidebarMulti = {
 	"/download/": defaultSidebar(),
 	"/extensions/": defaultSidebar(),
 	"/docs/": defaultSidebar(),
@@ -8,7 +10,7 @@ const sidebar = {
 	"/sandbox/": defaultSidebar(),
 };
 
-function defaultSidebar() {
+function defaultSidebar(): DefaultTheme.SidebarItem[] {
 	return [
 		{
 			text: "Frequently Asked Questions",

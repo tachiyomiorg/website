@@ -1,6 +1,8 @@
+import type { DefaultTheme } from "vitepress";
+
 const APP_VERSION = "0.14.6";
 
-const nav = [
+const nav: DefaultTheme.NavItem[] = [
 	{
 		text: "Documentation",
 		link: "/docs/guides/getting-started",
