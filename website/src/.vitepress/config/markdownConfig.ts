@@ -12,17 +12,17 @@ import shortcodes from "./shortcodes";
 
 const markdownConfig: MarkdownOptions = {
 	config: (md) => {
-		md.use(attrs),
-			md.use(figure),
-			md.use(imgLazyload),
-			md.use(imgMark),
-			md.use(imgSize),
-			md.use(include, {
+		md
+			.use(attrs)
+			.use(figure)
+			.use(imgLazyload)
+			.use(imgMark)
+			.use(imgSize)
+			.use(include, {
 				currentPath: (env) => env.filePath,
-			}),
-			md.use(tabsMarkdownPlugin);
-
-		md.use(shortcode_plugin, shortcodes);
+			})
+			.use(tabsMarkdownPlugin)
+			.use(shortcode_plugin, shortcodes);
 	},
 };
 

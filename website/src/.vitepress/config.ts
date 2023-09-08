@@ -1,4 +1,5 @@
 import { defineConfig, loadEnv } from "vitepress";
+import ElementPlus from "unplugin-element-plus/vite";
 
 import markdownConfig from "./config/markdownConfig"; // For use with loading Markdown plugins
 import themeConfig from "./config/themeConfig"; // Theme related config
@@ -29,5 +30,11 @@ export default defineConfig({
 	buildEnd: async (context) => {
 		generateFeed(context, hostname);
 		generateOgImages(context);
+	},
+	vite: {
+		plugins: [ElementPlus({})],
+		ssr: {
+			noExternal: ["element-plus"],
+		},
 	},
 });

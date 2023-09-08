@@ -1,27 +1,25 @@
-<script>
+<script setup lang="ts">
+import { computed, toRefs } from "vue";
 import { langName, simpleLangName } from "../../../config/scripts/languages";
 import ExtensionItem from "./ExtensionItem.vue";
+import type { Extension } from "../../queries/useExtensionsRepositoryQuery";
 
-export default {
-	components: { ExtensionItem },
-	props: ["list", "totalCount"],
-	computed: {
-		groupName: function () {
-			const firstItem = this.list[0];
-			return firstItem.lang === "en" ? simpleLangName(firstItem.lang) : langName(firstItem.lang);
-		},
-	},
-	methods: {
-		simpleLangName,
-		langName,
-	},
-};
+const props = defineProps<{ list: Extension[]; totalCount: number }>();
+const { list } = toRefs(props);
+
+const groupName = computed(() => {
+	const firstItem = list.value[0];
+
+	return firstItem.lang === "en"
+		? simpleLangName(firstItem.lang)
+		: langName(firstItem.lang);
+});
 </script>
 
 <template>
 	<div class="extension-group">
 		<h2>
-			{{ groupName }}
+			<span>{{ groupName }}</span>
 
 			<span class="extensions-total">
 				Total:
@@ -30,6 +28,7 @@ export default {
 				</span>
 			</span>
 		</h2>
+
 		<ExtensionItem
 			v-for="extension in list"
 			:id="extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')"
@@ -40,10 +39,12 @@ export default {
 </template>
 
 <style lang="stylus">
-.extensions-total {
-	float: right
+.extension-group h2 {
+	display: flex
+	align-items: center
+	justify-content: space-between
 
-	&-sum {
+	.extensions-total-sum {
 		color: var(--vp-c-brand)
 	}
 }

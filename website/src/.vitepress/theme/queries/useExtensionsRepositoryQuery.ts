@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/vue-query";
+import { UseQueryOptions, useQuery } from "@tanstack/vue-query";
 import axios from "axios";
 import { GITHUB_EXTENSION_JSON } from "../../config/constants";
 
@@ -26,14 +26,11 @@ export interface Source {
 	hasCloudflare: string;
 }
 
-export interface GitHubAsset {
-	name: string;
-	content_type: string;
-	browser_download_url: string;
-}
+type UseExtensionsRepositoryQueryOptions<S = Extension[]> =
+	UseQueryOptions<Extension[], Error, S>
 
-export default function useExtensionsRepositoryQuery() {
-	return useQuery({
+export default function useExtensionsRepositoryQuery<S = Extension[]>(options: UseExtensionsRepositoryQueryOptions<S> = {}) {
+	return useQuery<Extension[], Error, S>({
 		queryKey: ["extensions"],
 		queryFn: async () => {
 			const { data } = await axios.get<Extension[]>(GITHUB_EXTENSION_JSON);
@@ -42,5 +39,6 @@ export default function useExtensionsRepositoryQuery() {
 		},
 		initialData: () => [],
 		refetchOnWindowFocus: false,
+		...options,
 	});
 }

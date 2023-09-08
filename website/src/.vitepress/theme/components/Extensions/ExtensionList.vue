@@ -1,21 +1,28 @@
-<script>
+<script setup lang="ts">
+import { computed, toRefs } from "vue";
 import ExtensionGroup from "./ExtensionGroup.vue";
+import type { Extension } from "../../queries/useExtensionsRepositoryQuery";
 
-export default {
-	components: { ExtensionGroup },
-	props: ["extensions"],
-	computed: {
-		totalCount() {
-			return this.extensions.reduce((sum, item) => sum + item.length, 0);
-		},
-	},
-};
+const props = defineProps<{ extensions: Extension[][] }>();
+const { extensions } = toRefs(props);
+
+const totalCount = computed(() => {
+	return extensions.value.reduce((sum, item) => sum + item.length, 0);
+});
 </script>
+
 <template>
 	<div class="extension-list">
-		<ExtensionGroup v-for="group in extensions" :key="group[0].lang" :list="group" :class="group[0].lang" :total-count="totalCount" />
+		<ExtensionGroup
+			v-for="group in extensions"
+			:key="group[0].lang"
+			:list="group"
+			:class="group[0].lang"
+			:total-count="totalCount"
+		/>
 	</div>
 </template>
+
 <style lang="stylus">
 .extension-list {
 	> div {

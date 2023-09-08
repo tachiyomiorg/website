@@ -5,8 +5,6 @@ import DefaultTheme from "vitepress/theme";
 import "./styles/base.styl";
 
 // Import Global plugins
-import ElementPlus from "element-plus";
-import "element-plus/dist/index.css";
 import "element-plus/theme-chalk/dark/css-vars.css";
 
 import { VueQueryPlugin } from "@tanstack/vue-query";
@@ -19,7 +17,6 @@ import { IconDownload, IconNewspaperVariant, IconBugReport } from "@iconify-prer
 export default {
 	extends: DefaultTheme,
 	enhanceApp({ app }) {
-		app.use(ElementPlus);
 		app.use(VueQueryPlugin);
 		enhanceAppWithTabs(app);
 		app.component("IconDownload", IconDownload);

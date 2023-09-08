@@ -1,19 +1,29 @@
 <script setup lang="ts">
 import groupBy from "lodash.groupby";
+import { ElLoading } from "element-plus";
+
 import { simpleLangName } from "../../../config/scripts/languages";
 import ExtensionFilters from "./ExtensionFilters.vue";
 import ExtensionList from "./ExtensionList.vue";
 import useExtensionsRepositoryQuery from "../../queries/useExtensionsRepositoryQuery";
-import { computed, onUpdated, ref } from 'vue';
+import { computed, nextTick, onMounted, onUpdated, reactive, ref, watch } from 'vue';
 import type { Extension } from "../../queries/useExtensionsRepositoryQuery";
+import type { Nsfw, Sort } from "./ExtensionFilters.vue";
 
-const { data: extensions, isLoading } = useExtensionsRepositoryQuery();
+const { data: extensions, isLoading } = useExtensionsRepositoryQuery({
+	select: (response) => {
+		const values: Extension[][] = Object.values(groupBy(response, "lang"));
+		values.sort(languageComparator)
 
-const filters = ref({
+		return values
+	},
+});
+
+const filters = reactive({
 	search: "",
 	lang: [] as string[],
-	nsfw: "Show all",
-	sort: "Ascending",
+	nsfw: "Show all" as Nsfw,
+	sort: "Ascending" as Sort,
 });
 
 function languageComparator(a: Extension[], b: Extension[]) {
@@ -40,33 +50,26 @@ function languageComparator(a: Extension[], b: Extension[]) {
 	return 0;
 }
 
-const groupedExtensions = computed(() => {
-	const values: Extension[][] = Object.values(groupBy(extensions.value, "lang"));
-	values.sort(languageComparator)
-
-	return values
-})
-
 const filteredExtensions = computed(() => {
 	const filtered: Extension[][] = [];
 
-	for (const group of groupedExtensions.value) {
-		let filteredGroup = filters.value.lang.length
-			? (filters.value.lang.includes(group[0].lang) ? group : [])
+	for (const group of (extensions.value ?? [])) {
+		let filteredGroup = filters.lang.length
+			? (filters.lang.includes(group[0].lang) ? group : [])
 			: group;
 
-		if (filters.value.search) {
+		if (filters.search) {
 			filteredGroup = filteredGroup.filter(
 				(ext) =>
-					ext.name.toLowerCase().includes(filters.value.search.toLowerCase()) ||
-					ext.sources.some((source) => source.id.includes(filters.value.search))
+					ext.name.toLowerCase().includes(filters.search.toLowerCase()) ||
+					ext.sources.some((source) => source.id.includes(filters.search))
 			);
 		}
 		filteredGroup = filteredGroup.filter((ext) =>
-			filters.value.nsfw === "Show all" ? true : ext.nsfw === (filters.value.nsfw === "NSFW" ? 1 : 0)
+			filters.nsfw === "Show all" ? true : ext.nsfw === (filters.nsfw === "NSFW" ? 1 : 0)
 		);
 
-		if (filters.value.sort && filters.value.sort === "Descending") {
+		if (filters.sort && filters.sort === "Descending") {
 			filteredGroup = filteredGroup.reverse();
 		}
 		if (filteredGroup.length) {
@@ -77,15 +80,46 @@ const filteredExtensions = computed(() => {
 	return filtered;
 });
 
-onUpdated(() => {
+const loadingInstance = ref<ReturnType<typeof ElLoading['service']>>();
+
+onMounted(() => {
+	loadingInstance.value = ElLoading.service({
+		target: ".extensions",
+		fullscreen: false,
+		background: "transparent",
+	});
+})
+
+watch(extensions, async () => {
 	if (window.location.hash) {
-		window.location.replace(window.location.hash);
+		await nextTick()
+		document.getElementById(window.location.hash.substring(1))
+			?.scrollIntoView({ behavior: 'smooth' });
+	}
+});
+
+watch([isLoading, loadingInstance], async ([newIsLoading]) => {
+	if (!newIsLoading) {
+		loadingInstance.value?.close();
 	}
 });
 </script>
 
 <template>
-	<ExtensionFilters :extensions="groupedExtensions" @filters="filters = $event" />
-	<div class="loading" v-if="isLoading" v-loading.lock="isLoading" style="min-height: 200px"></div>
-	<ExtensionList v-else :extensions="filteredExtensions" />
+	<ExtensionFilters
+		:extensions="extensions ?? []"
+		v-model:search="filters.search"
+		v-model:lang="filters.lang"
+		v-model:nsfw="filters.nsfw"
+		v-model:sort="filters.sort"
+	/>
+	<div class="extensions">
+		<ExtensionList v-if="!isLoading" :extensions="filteredExtensions" />
+	</div>
 </template>
+
+<style lang="stylus" scoped>
+.extensions {
+	min-height: 200px
+}
+</style>

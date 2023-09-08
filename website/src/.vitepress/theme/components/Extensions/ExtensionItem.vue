@@ -1,33 +1,24 @@
-<script>
-export default {
-	props: ["item"],
-	computed: {
-		pkgId: function () {
-			return this.item.pkg.replace("eu.kanade.tachiyomi.extension.", "");
-		},
-		pkgName: function () {
-			return this.item.name.split(": ")[1];
-		},
-		pkgVersion: function () {
-			return this.item.version;
-		},
-		pkgIsNsfw: function () {
-			return !!parseInt(this.item.nsfw);
-		},
-		pkgHasReadme: function () {
-			return !!parseInt(this.item.hasReadme);
-		},
-		pkgHasChangelog: function () {
-			return !!parseInt(this.item.hasChangelog);
-		},
-		iconUrl: function () {
-			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${this.item.pkg}.png`;
-		},
-		apkUrl: function () {
-			return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${this.item.apk}`;
-		},
-	},
-};
+<script setup lang="ts">
+import { computed, toRefs } from "vue";
+import type { Extension } from "../../queries/useExtensionsRepositoryQuery";
+
+const props = defineProps<{ item: Extension }>();
+const { item } = toRefs(props);
+
+const pkgId = computed(() => {
+	return item.value.pkg.replace("eu.kanade.tachiyomi.extension.", "");
+});
+
+const pkgName = computed(() => item.value.name.split(": ")[1]);
+const pkgIsNsfw = computed(() => item.value.nsfw === 1);
+
+const iconUrl = computed(() => {
+	return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${item.value.pkg}.png`;
+});
+
+const apkUrl = computed(() => {
+	return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${item.value.apk}`;
+});
 </script>
 
 <template>
@@ -42,8 +33,8 @@ export default {
 				{{ pkgId }}
 			</div>
 		</div>
-		<Badge v-if="pkgIsNsfw" type="danger" :text="pkgVersion" title="This extension contains NSFW entries." />
-		<Badge v-else type="info" :text="pkgVersion" title="This extension is free from NSFW entries." />
+		<Badge v-if="pkgIsNsfw" type="danger" :text="item.version" title="This extension contains NSFW entries." />
+		<Badge v-else type="info" :text="item.version" title="This extension is free from NSFW entries." />
 		<a :href="apkUrl" class="extension-download" title="Download APK" download>↓</a>
 	</div>
 </template>
@@ -53,14 +44,20 @@ export default {
 	position: relative
 	align-items: center
 	display: flex
-	width: 100%
-	padding: 0.5em 0
-	margin: 0.8em 0
+	width: calc(100% + 1em)
+	padding: 0.5em
+	margin: 0.8em -0.5em
 	border-radius: 8px
 	gap: 0.675rem
 
 	&:hover {
-		background-color: var(--vp-c-bg-soft-mute)
+		background-color: var(--vp-c-bg-soft)
+	}
+
+	&:target {
+		background-color: var(--vp-c-brand-soft)
+		border-radius: 8px
+		transition: 500ms background-color
 	}
 
 	.anchor {
@@ -142,6 +139,8 @@ export default {
 		border: 1px solid var(--vp-c-divider)
 		border-radius: 8px
 		padding: 0.5em
+		margin: 0.8em 0
+		width: 100%
 
 		.extension-icon {
 			margin-left: 0
@@ -151,11 +150,5 @@ export default {
 			margin-right: 0
 		}
 	}
-}
-
-&:target {
-	background-color: var(--vp-c-bg-soft-mute)
-	border-radius: 8px
-	transition: 500ms background-color
 }
 </style>

@@ -57,6 +57,7 @@
 		"stylelint": "^15.10.3",
 		"stylelint-stylus": "^0.18.0",
 		"stylus": "^0.60.0",
+		"unplugin-element-plus": "^0.8.0",
 		"vite-plugin-eslint": "^1.8.1",
 		"vitepress": "1.0.0-rc.10",
 		"vitepress-plugin-tabs": "^0.3.0",
