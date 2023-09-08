@@ -21,6 +21,8 @@ onMounted(() => {
 
 <template>
 	<button
+		type="button"
+		role="switch"
 		title="Toggle dark mode"
 		class="CustomSwitchAppearance"
 		:aria-checked="isDark"
