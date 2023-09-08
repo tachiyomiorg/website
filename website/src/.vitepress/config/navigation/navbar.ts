@@ -16,7 +16,7 @@ const nav: DefaultTheme.NavItem[] = [
 			},
 			{
 				text: "Changelog",
-				link: "/changelogs/#v{app_version}",
+				link: "/changelogs/#latest",
 			},
 			{
 				text: "Contributing",

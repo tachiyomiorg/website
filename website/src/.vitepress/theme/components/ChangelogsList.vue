@@ -28,7 +28,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
 		v-for="(release, index) of changelogs"
 		:key="release.tag_name"
 	>
-		<h2 :id="release.tag_name">
+		<h2 :id="index === 0 ? 'latest' : release.tag_name">
 			<a
 				:href="release.html_url"
 				target="_blank"
@@ -38,7 +38,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
 			<Badge v-if="index === 0" type="tip" text="Latest" />
 			<a
 				class="header-anchor"
-				:href="`#${release.tag_name}`"
+				:href="index === 0 ? '#latest' : `#${release.tag_name}`"
 				:aria-label="`Permalink to &quot;${release.tag_name}&quot;`"
 			/>
 		</h2>
