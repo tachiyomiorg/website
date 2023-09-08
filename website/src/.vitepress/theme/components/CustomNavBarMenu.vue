@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed } from "vue"
-import { type DefaultTheme, useData } from "vitepress"
-
-import { data as release } from "../data/release.data"
+import { useData } from "vitepress"
+import type { DefaultTheme } from "vitepress/theme"
 
 import VPNavBarMenuLink from "vitepress/dist/client/theme-default/components/VPNavBarMenuLink.vue"
 import VPNavBarMenuGroup from "vitepress/dist/client/theme-default/components/VPNavBarMenuGroup.vue"
+
+import { data as release } from "../data/release.data"
 
 const { theme } = useData<DefaultTheme.Config>()
 
@@ -21,7 +22,7 @@ const nav = computed(() => {
 
 		const appVersion = release.stable.tag_name.substring(1)
 
-		return <DefaultTheme.NavItemWithChildren> {
+		return {
 			...item,
 			text: item.text === "{app_version}"	? appVersion : item.text,
 			items: (item as DefaultTheme.NavItemWithChildren).items.map((child) => {
@@ -29,12 +30,12 @@ const nav = computed(() => {
 					return child
 				}
 
-				return <DefaultTheme.NavItemWithLink> {
+				return {
 					...child,
 					link: child.link.replace("{app_version}", appVersion),
-				}
+				} satisfies DefaultTheme.NavItemWithLink
 			}),
-		}
+		} satisfies DefaultTheme.NavItemWithChildren
 	})
 })
 </script>
