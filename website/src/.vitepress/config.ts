@@ -55,6 +55,12 @@ export default defineConfig({
 						new URL("./theme/components/CustomNavScreenMenu.vue", import.meta.url),
 					),
 				},
+				{
+					find: /^.*VPSwitchAppearance\.vue$/,
+					replacement: fileURLToPath(
+						new URL("./theme/components/CustomSwitchAppearance.vue", import.meta.url),
+					),
+				},
 			],
 		},
 		plugins: [ElementPlus({})],

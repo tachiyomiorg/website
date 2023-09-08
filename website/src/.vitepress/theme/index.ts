@@ -11,8 +11,9 @@ import { VueQueryPlugin } from "@tanstack/vue-query"
 
 import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client"
 
-// Import Icon components
+// Import components
 import { IconBugReport, IconDownload, IconNewspaperVariant } from "@iconify-prerendered/vue-mdi"
+import Layout from "./Layout.vue"
 
 // Import Google Analytics plugin
 import googleAnalytics from "vitepress-plugin-google-analytics"
@@ -27,4 +28,5 @@ export default {
 		app.component("IconBugReport", IconBugReport)
 		// googleAnalytics({ id: "G-2CBXXM1Y86" })
 	},
+	Layout,
 }
