@@ -39,6 +39,7 @@ imageSize: small
 <br><VPTeamMembers size="small" :members="members" />
 
 <script setup>
+import "@theme/styles/forks/tachiyomi-az.styl"
 import { VPTeamMembers } from "vitepress/theme"
 
 const members = [
@@ -78,7 +79,3 @@ const members = [
     </div>
   </div>
 </div>
-
-<style lang="stylus">
-	@import "../.vitepress/theme/styles/forks/tachiyomi-az.styl"
-</style>

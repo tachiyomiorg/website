@@ -58,9 +58,9 @@ This way, you can recover from catastrophic failures.
 
 Some forks of **Tachiyomi** have specific limitations regarding backup restoration:
 
-- [Neko](/forks/neko) can only restore [MangaDex](/extensions/#all.mangadex) entries in a backup.
+- [Neko](/forks/Neko/) can only restore [MangaDex](/extensions/#all.mangadex) entries in a backup.
   > Entries from other sources will not transfer.
-- Some forks, such as [TachiyomiAZ](/forks/tachiyomi-az) and [TachiyomiSY](/forks/tachiyomi-sy), have built-in extensions.
+- Some forks, such as [TachiyomiAZ](/forks/TachiyomiAZ/) and [TachiyomiSY](/forks/TachiyomiSY/), have built-in extensions.
   > Example: [E-Hentai](/extensions/#all.ehentai), [nHentai](/extensions/#all.nhentai), and **Hitomi.la**.
 - Restoring a backup made by these forks to standard **Tachiyomi** will not restore titles from such extensions.
   > While it is possible to restore titles to these forks, backing them up out of these forks is not possible.
