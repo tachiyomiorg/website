@@ -10,10 +10,9 @@ export interface News {
 declare const data: News[];
 export { data };
 
-export default defineLoader({
-	async load(): Promise<News[]> {
-		const articles = await createContentLoader("news/*.md", { excerpt: true }).load();
-
+export default createContentLoader("news/*.md", {
+	excerpt: true,
+	transform(articles) {
 		return articles
 			.filter(({ url }) => url !== "/news/")
 			.map(
@@ -26,5 +25,5 @@ export default defineLoader({
 					}
 			)
 			.sort((a, b) => b.date.localeCompare(a.date));
-	},
+	}
 });
