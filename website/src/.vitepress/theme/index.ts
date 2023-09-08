@@ -14,6 +14,9 @@ import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client"
 // Import Icon components
 import { IconBugReport, IconDownload, IconNewspaperVariant } from "@iconify-prerendered/vue-mdi"
 
+// Import Google Analytics plugin
+import googleAnalytics from "vitepress-plugin-google-analytics"
+
 export default {
 	extends: DefaultTheme,
 	enhanceApp({ app }) {
@@ -22,5 +25,6 @@ export default {
 		app.component("IconDownload", IconDownload)
 		app.component("IconNewspaperVariant", IconNewspaperVariant)
 		app.component("IconBugReport", IconBugReport)
+		// googleAnalytics({ id: "G-2CBXXM1Y86" })
 	},
 }

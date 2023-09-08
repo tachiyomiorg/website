@@ -58,6 +58,7 @@
 		"unplugin-element-plus": "^0.8.0",
 		"vite-plugin-eslint": "^1.8.1",
 		"vitepress": "1.0.0-rc.10",
+		"vitepress-plugin-google-analytics": "^1.0.2",
 		"vitepress-plugin-tabs": "^0.3.0",
 		"vue": "^3.3.4",
 		"vue-eslint-parser": "^9.3.1",
