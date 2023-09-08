@@ -23,10 +23,10 @@ customMetaTitle: Tachiyomi
 features:
   - title: Tracking
     details: Automatically keep track of your series with AniList, Bangumi, Kitsu, MangaUpdates, MyAnimeList, Shikimori, and more.
-    icon: <img src="https://anilist.co/img/icons/icon.svg" alt="AniList Logo" height="32" width="32">
+    icon: <img src="/img/logo-anilist.svg" alt="AniList Logo" height="32" width="32">
   - title: Extensions
     details: Online and offline reading from over a thousand sources, including MangaDex.
-    icon: <img src="https://mangadex.org/img/brand/mangadex-logo.svg" alt="MangaDex Logo" height="32" width="32">
+    icon: <img src="/img/logo-mangadex.svg" alt="MangaDex Logo" height="32" width="32">
     link: /extensions/
   - title: Customization
     details: A configurable reader with multiple reading modes, custom color filters, and many other settings.
