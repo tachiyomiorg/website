@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { toRefs } from "vue"
+import { computed, toRefs } from "vue"
+import { useMediaQuery } from "@vueuse/core"
+
 import {
 	ElForm,
 	ElFormItem,
@@ -9,6 +11,7 @@ import {
 	ElRadioGroup,
 	ElSelect,
 } from "element-plus"
+
 import { langName, simpleLangName } from "../../../config/scripts/languages"
 import type { Extension } from "../../queries/useExtensionsRepositoryQuery"
 
@@ -31,11 +34,14 @@ defineEmits<{
 }>()
 
 const { extensions } = toRefs(props)
+
+const isSmallScreen = useMediaQuery("(max-width: 767px)")
+const labelPosition = computed(() => isSmallScreen.value ? "top" : "right")
 </script>
 
 <template>
 	<div class="filters-list">
-		<ElForm label-width="120px">
+		<ElForm label-width="120px" :label-position="labelPosition">
 			<ElFormItem label="Search:">
 				<ElInput
 					:model-value="search"
