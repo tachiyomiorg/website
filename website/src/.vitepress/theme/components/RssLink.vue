@@ -3,7 +3,7 @@ import { IconRssBox } from "@iconify-prerendered/vue-mdi"
 </script>
 
 <template>
-	<a href="/feed.xml" class="rss" title="RSS feed for the news archive">
+	<a href="/feed.rss" class="rss" title="RSS feed for the news archive">
 		<IconRssBox />
 		<span>RSS feed</span>
 	</a>

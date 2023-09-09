@@ -111,7 +111,7 @@ function generateMeta(context: TransformContext, hostname: string) {
 				rel: "alternate",
 				type: "application/rss+xml",
 				title: "RSS feed for the news archive",
-				href: `${hostname}/feed.xml`,
+				href: `${hostname}/feed.rss`,
 			},
 		])
 		head.push([
