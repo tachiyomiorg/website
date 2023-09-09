@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue"
+import { computed, onMounted, ref } from "vue"
 import { data as release } from "../data/release.data"
 
 const downloadInformation = computed(() => ({
@@ -14,24 +14,57 @@ const downloadInformation = computed(() => ({
 			.find((a) => /^tachiyomi-v\d+\.\d+\.\d+.apk/.test(a.name)),
 	},
 }))
+
+const isAndroid = ref(true)
+
+onMounted(() => {
+	isAndroid.value = !!navigator.userAgent.match(/android/i)
+})
 </script>
 
 <template>
-	<div class="download-buttons">
-		<a class="download-button primary" :download="downloadInformation.stable.asset?.name" :href="downloadInformation.stable.asset?.browser_download_url">
-			<IconDownload />
-			<span class="text">Stable</span>
-			<span class="version">{{ downloadInformation.stable.tagName }}</span>
-		</a>
-		<a class="download-button secondary" :download="downloadInformation.preview.asset?.name" :href="downloadInformation.preview.asset?.browser_download_url">
-			<IconBugReport />
-			<span class="text">Preview</span>
-			<span class="version">{{ downloadInformation.preview.tagName }}</span>
-		</a>
+	<div>
+		<div v-if="!isAndroid" class="custom-block danger">
+			<p class="custom-block-title">
+				Unsupported Operating System
+			</p>
+			<p>
+				<strong>Tachiyomi</strong> is an <strong>Android app</strong> only.
+				Use an <strong>Android device</strong> to download and install the app.
+			</p>
+		</div>
+		<div v-if="!isAndroid" class="custom-block warning">
+			<p class="custom-block-title">
+				Caution
+			</p>
+			<p>
+				Any app for other operating systems that are not Android and
+				that calls itself <strong>Tachiyomi</strong> is
+				<strong>impersonating</strong> the original
+				<strong>Tachiyomi</strong> app for <strong>Android</strong>
+				and is not affiliated with the project.
+			</p>
+			<blockquote>
+				For more information, read the
+				<a href="/docs/faq/general">General FAQ</a>.
+			</blockquote>
+		</div>
+		<div class="download-buttons">
+			<a class="download-button primary" :download="downloadInformation.stable.asset?.name" :href="downloadInformation.stable.asset?.browser_download_url">
+				<IconDownload />
+				<span class="text">Stable</span>
+				<span class="version">{{ downloadInformation.stable.tagName }}</span>
+			</a>
+			<a class="download-button secondary" :download="downloadInformation.preview.asset?.name" :href="downloadInformation.preview.asset?.browser_download_url">
+				<IconBugReport />
+				<span class="text">Preview</span>
+				<span class="version">{{ downloadInformation.preview.tagName }}</span>
+			</a>
+		</div>
+		<span class="version-disclaimer">
+			Requires <strong>Android 6.0</strong> or higher.
+		</span>
 	</div>
-	<span class="version-disclaimer">
-		Requires <strong>Android 6.0</strong> or higher.
-	</span>
 </template>
 
 <style lang="stylus">
