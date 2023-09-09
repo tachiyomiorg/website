@@ -1,12 +1,12 @@
 import path from "node:path"
 import { writeFileSync } from "node:fs"
-import { Feed } from "feed"
+import { Feed, type Item } from "feed"
 import { type SiteConfig, createContentLoader } from "vitepress"
 
 async function generateFeed(config: SiteConfig, hostname: string) {
 	const feed = new Feed({
-		title: "Tachiyomi",
-		description: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.",
+		title: config.site.title,
+		description: config.site.description,
 		id: hostname,
 		link: hostname,
 		language: "en",
@@ -14,10 +14,12 @@ async function generateFeed(config: SiteConfig, hostname: string) {
 		favicon: `${hostname}/favicon.ico`,
 		copyright: `Copyright © 2015 - ${new Date().getFullYear()} Javier Tomás`,
 	})
+	const json: Item[] = []
 
 	const posts = await createContentLoader("news/*.md", {
 		excerpt: true,
 		render: true,
+		includeSrc: true,
 	}).load()
 
 	// Filter everything that"s not of type `article` (e.g. index.md)
@@ -25,24 +27,34 @@ async function generateFeed(config: SiteConfig, hostname: string) {
 
 	filteredPosts.sort((a, b) => +new Date(b.frontmatter.date as string) - +new Date(a.frontmatter.date as string))
 
-	for (const { url, frontmatter, html } of filteredPosts) {
+	for (const { url, frontmatter, html, src } of filteredPosts) {
 		const fullUrl = `${hostname}${url}`
 
 		// Strip `&ZeroWidthSpace;` from `html` string
-		const content = html?.replace(/&ZeroWidthSpace;/g, "")
+		const content = (html ?? "")
+			.replace(/&ZeroWidthSpace;/g, "")
+			.replace(/<a href="(\/.*?)">/g, `<a href="${hostname}$1">`)
 
-		feed.addItem({
+		const markdown = (src ?? "")
+			.replace(/^---.*---/s, "")
+			.replace(/]\((\/.*?)\)/g, `](${hostname}$1)`)
+			.trim()
+
+		const post = {
 			title: frontmatter.title,
 			id: fullUrl,
 			link: fullUrl,
-			// description: excerpt,
 			description: frontmatter.description,
 			content,
 			date: frontmatter.date,
-		})
+		} satisfies Item
+
+		feed.addItem(post)
+		json.push({ ...post, content: markdown })
 	}
 
 	writeFileSync(path.join(config.outDir, "feed.rss"), feed.rss2())
+	writeFileSync(path.join(config.outDir, "news.json"), JSON.stringify(json))
 }
 
 export default generateFeed

@@ -104,6 +104,27 @@ function generateMeta(context: TransformContext, hostname: string) {
 		])
 	}
 
+	if (pageData.filePath === "news/index.md") {
+		head.push([
+			"link",
+			{
+				rel: "alternate",
+				type: "application/rss+xml",
+				title: "RSS feed for the news archive",
+				href: `${hostname}/feed.xml`,
+			},
+		])
+		head.push([
+			"link",
+			{
+				rel: "alternate",
+				type: "application/json",
+				title: "JSON of the news archive",
+				href: `${hostname}/news.json`,
+			},
+		])
+	}
+
 	return head
 }
 
