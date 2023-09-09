@@ -29,10 +29,12 @@ onMounted(() => {
 		:data-view-transition="supportsViewTransition"
 		@click="toggleAppearance"
 	>
-		<Transition name="fade" mode="out-in">
-			<VPIconSun v-if="!isDark" class="sun" />
-			<VPIconMoon v-else class="moon" />
-		</Transition>
+		<ClientOnly>
+			<Transition name="fade" mode="out-in">
+				<VPIconSun v-if="!isDark" class="sun" />
+				<VPIconMoon v-else class="moon" />
+			</Transition>
+		</ClientOnly>
 	</button>
 </template>
 
