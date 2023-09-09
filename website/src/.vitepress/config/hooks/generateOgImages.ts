@@ -61,6 +61,18 @@ interface GenerateImagesOptions {
 	fonts: SatoriOptions["fonts"]
 }
 
+function getDir(url: string) {
+	if (url.startsWith("/docs/faq/")) {
+		return "FAQ"
+	} else if (url.startsWith("/docs/guides/")) {
+		return "Guide"
+	} else if (url.startsWith("/news/") && url !== "/news/") {
+		return "News"
+	}
+
+	return undefined
+}
+
 async function generateImage({ page, template, outDir, fonts }: GenerateImagesOptions) {
 	const { frontmatter, url } = page
 
@@ -77,7 +89,7 @@ async function generateImage({ page, template, outDir, fonts }: GenerateImagesOp
 				frontmatter.layout === "home"
 					? frontmatter.hero.tagline ?? frontmatter.description
 					: frontmatter.description,
-			dir: url.startsWith("/docs/faq/") ? "FAQ" : url.startsWith("/docs/guides/") ? "Guide" : undefined,
+			dir: getDir(url),
 		},
 	}
 
