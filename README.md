@@ -13,9 +13,6 @@
 	<a title="Discord server" href="https://discord.gg/tachiyomi">
 		<img src="https://img.shields.io/discord/349436576037732353.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF">
 	</a>
-	<a title="Twitter account" href="https://twitter.com/tachiyomiorg">
-		<img src="https://img.shields.io/twitter/follow/tachiyomiorg?label=followers&labelColor=279EE6&color=188ED5&logo=twitter&logoColor=FFFFFF&style=flat">
-	</a>
 	<a title="GitHub downloads" href="https://github.com/tachiyomiorg/tachiyomi/releases">
 		<img src="https://img.shields.io/github/downloads/tachiyomiorg/tachiyomi/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat">
 	</a>
