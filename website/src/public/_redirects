@@ -1,5 +1,5 @@
 # Requested URL -> Redirected URL -> HTTP Code
-/help/                               /                                   301
+/help/                               /docs/guides/troubleshooting/       301
 /help/guides/getting-started/        /docs/guides/getting-started        301
 /help/guides/troubleshooting/        /docs/guides/troubleshooting/       301
 /help/guides/source-migration/       /docs/guides/source-migration       301
