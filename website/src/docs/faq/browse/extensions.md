@@ -24,7 +24,7 @@ Learn more in this [Wikipedia article](https://en.wikipedia.org/wiki/Scanlation)
 
 ## How do I request new extensions?
 [Open an issue](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) on **GitHub** if not already there.
-Check the removed [extensions list](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475) first.
+Check the removed [extensions list](https://github.com/tachiyomiorg/tachiyomi-extensions/blob/master/REMOVED_SOURCES.md) first.
 
 You can find the list of extensions to download [here](/extensions/)
 
@@ -69,4 +69,4 @@ Extensions can be removed due to several reasons:
 * Reverse engineering needs.
 * Site shutdown.
 
-Find the list of removed extensions [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475), excluding offline sites.
+Find the list of removed extensions [here](https://github.com/tachiyomiorg/tachiyomi-extensions/blob/master/REMOVED_SOURCES.md), excluding offline sites.

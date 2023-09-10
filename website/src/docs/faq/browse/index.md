@@ -30,7 +30,7 @@ Here are strategies to help you find it:
 Download the relevant extension, locate it under <nav to="sources">, and proceed to search for the series there.
 
 ### If you find the series on a specific scanlator or aggregator without an extension
-Check if a request has been made to add the site as an extension [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) and confirm it's not on the [list of extensions that won't be added back](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/3475).
+Check if a request has been made to add the site as an extension [here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues) and confirm it's not on the [list of extensions that won't be added back](https://github.com/tachiyomiorg/tachiyomi-extensions/blob/master/REMOVED_SOURCES.md).
 
 If it's not requested and not on the exclusion list, you can [submit a request here](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new/choose).
 
