@@ -43,12 +43,12 @@ It is also recommended you lint your files before the PR.
 - **`website`**: contains all the website related files.
   - **`src`**: contains all the markdown files used for the website.
     - **`.vitepress`**:
-      - **[`dist`](https://vitepress.dev/guide/deploy)**: contains built files for distribution.
-        Note this directory is only updated when a release happens or when you run the build command.
-        Changes to this folder will not carry over with Git.
       - **`theme`**: contains custom theme files.
       - `config.ts`: main configuration file for VitePress.
     - **`public`**: files to be exposed publicly without any processing.
+  - **[`dist`](https://vitepress.dev/guide/deploy)**: contains built files for distribution.
+    Note this directory is only updated when a release happens or when you run the build command.
+    Changes to this folder will not carry over with Git.
   - `package.json`: contains information about which plugins are installed in the project.
 
 ## Images and Videos guidelines

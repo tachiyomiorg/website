@@ -3,7 +3,7 @@
 
 [build]
   base = "website"
-  publish = "src/.vitepress/dist"
+  publish = "dist"
 
 [context.production]
   command = "VITE_HOSTNAME=$URL pnpm build"

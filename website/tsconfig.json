@@ -26,7 +26,7 @@
     "docs/.**/**/*.tsx",
     "docs/.**/**/*.vue"
   ],
-  "exclude": ["**/node_modules/**", "**/dist/**"],
+  "exclude": ["**/node_modules/**", "dist/**"],
   "extensions": [".js", ".ts", ".tsx", ".jsx", ".vue"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "allowSyntheticDefaultImports": true
