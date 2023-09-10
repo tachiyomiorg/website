@@ -5,7 +5,7 @@ defineProps<{ title: string; description?: string; dir?: string }>()
 <template>
 	<div
 		tw="w-full h-full bg-white flex flex-col"
-		style="background:linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(231,230,255,0.86)), url(https://kodo.moe/img/open-graph-background.png)"
+		style="background:linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(231,230,255,0.86)), url(https://tachiyomi.org/img/open-graph-background.png)"
 	>
 		<div tw="p-10 w-full min-h-0 grow flex flex-col items-center justify-between">
 			<div tw="w-full flex justify-between items-center text-4xl font-medium">

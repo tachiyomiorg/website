@@ -25,7 +25,7 @@ export default {
 		app.component("IconDownload", IconDownload)
 		app.component("IconNewspaperVariant", IconNewspaperVariant)
 		app.component("IconBugReport", IconBugReport)
-		analytics({ id: "G-J1GE7WPJEX" })
+		analytics({ id: "G-2CBXXM1Y86" })
 	},
 	Layout,
 }
