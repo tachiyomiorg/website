@@ -2,135 +2,135 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@iconify-prerendered/vue-mdi':
-    specifier: ^0.23.1689058119
+    specifier: 0.23.1689058119
     version: 0.23.1689058119(vue@3.3.4)
   '@octokit/rest':
-    specifier: ^20.0.1
+    specifier: 20.0.1
     version: 20.0.1
   '@octokit/types':
-    specifier: ^11.1.0
+    specifier: 11.1.0
     version: 11.1.0
   '@tanstack/vue-query':
-    specifier: ^4.35.2
+    specifier: 4.35.2
     version: 4.35.2(vue@3.3.4)
   '@vueuse/core':
-    specifier: ^10.4.1
+    specifier: 10.4.1
     version: 10.4.1(vue@3.3.4)
   axios:
-    specifier: ^1.5.0
+    specifier: 1.5.0
     version: 1.5.0
   element-plus:
-    specifier: ^2.3.12
+    specifier: 2.3.12
     version: 2.3.12(vue@3.3.4)
   lodash.groupby:
-    specifier: ^4.6.0
+    specifier: 4.6.0
     version: 4.6.0
   markdown-it:
-    specifier: ^13.0.1
+    specifier: 13.0.1
     version: 13.0.1
   markdown-it-shortcode-tag:
-    specifier: ^1.1.0
+    specifier: 1.1.0
     version: 1.1.0
   moment:
-    specifier: ^2.29.4
+    specifier: 2.29.4
     version: 2.29.4
 
 devDependencies:
   '@antfu/eslint-config':
-    specifier: ^0.41.0
+    specifier: 0.41.0
     version: 0.41.0(eslint@8.49.0)(typescript@5.2.2)
   '@mdit/plugin-attrs':
-    specifier: ^0.4.8
+    specifier: 0.4.8
     version: 0.4.8
   '@mdit/plugin-figure':
-    specifier: ^0.4.8
+    specifier: 0.4.8
     version: 0.4.8
   '@mdit/plugin-img-lazyload':
-    specifier: ^0.4.8
+    specifier: 0.4.8
     version: 0.4.8
   '@mdit/plugin-img-mark':
-    specifier: ^0.4.8
+    specifier: 0.4.8
     version: 0.4.8
   '@mdit/plugin-img-size':
-    specifier: ^0.4.8
+    specifier: 0.4.8
     version: 0.4.8
   '@mdit/plugin-include':
-    specifier: ^0.4.8
+    specifier: 0.4.8
     version: 0.4.8
   '@resvg/resvg-js':
-    specifier: ^2.4.1
+    specifier: 2.4.1
     version: 2.4.1
   '@types/gtag.js':
-    specifier: ^0.0.13
+    specifier: 0.0.13
     version: 0.0.13
   '@types/lodash.groupby':
-    specifier: ^4.6.7
+    specifier: 4.6.7
     version: 4.6.7
   '@types/markdown-it':
-    specifier: ^13.0.1
+    specifier: 13.0.1
     version: 13.0.1
   '@types/node':
-    specifier: ^20.6.0
+    specifier: 20.6.0
     version: 20.6.0
   '@typescript-eslint/eslint-plugin':
-    specifier: ^6.6.0
+    specifier: 6.6.0
     version: 6.6.0(@typescript-eslint/parser@6.6.0)(eslint@8.49.0)(typescript@5.2.2)
   '@typescript-eslint/parser':
-    specifier: ^6.6.0
+    specifier: 6.6.0
     version: 6.6.0(eslint@8.49.0)(typescript@5.2.2)
   eslint:
-    specifier: ^8.49.0
+    specifier: 8.49.0
     version: 8.49.0
   eslint-config-standard:
-    specifier: ^17.1.0
+    specifier: 17.1.0
     version: 17.1.0(eslint-plugin-import@2.28.1)(eslint-plugin-n@16.0.2)(eslint-plugin-promise@6.1.1)(eslint@8.49.0)
   eslint-plugin-vue:
-    specifier: ^9.17.0
+    specifier: 9.17.0
     version: 9.17.0(eslint@8.49.0)
   feed:
-    specifier: ^4.2.2
+    specifier: 4.2.2
     version: 4.2.2
   lint-staged:
-    specifier: ^14.0.1
+    specifier: 14.0.1
     version: 14.0.1
   markdownlint:
-    specifier: ^0.31.0
+    specifier: 0.31.0
     version: 0.31.0
   markdownlint-cli:
-    specifier: ^0.36.0
+    specifier: 0.36.0
     version: 0.36.0
   sentences-per-line:
-    specifier: ^0.2.1
+    specifier: 0.2.1
     version: 0.2.1
   stylelint:
-    specifier: ^15.10.3
+    specifier: 15.10.3
     version: 15.10.3(typescript@5.2.2)
   stylelint-stylus:
-    specifier: ^0.18.0
+    specifier: 0.18.0
     version: 0.18.0(stylelint@15.10.3)
   stylus:
-    specifier: ^0.60.0
+    specifier: 0.60.0
     version: 0.60.0
   unplugin-element-plus:
-    specifier: ^0.8.0
+    specifier: 0.8.0
     version: 0.8.0
   vite-plugin-eslint:
-    specifier: ^1.8.1
+    specifier: 1.8.1
     version: 1.8.1(eslint@8.49.0)(vite@4.4.9)
   vitepress:
-    specifier: 1.0.0-rc.11
-    version: 1.0.0-rc.11(@algolia/client-search@4.19.1)(@types/node@20.6.0)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0)
+    specifier: 1.0.0-rc.12
+    version: 1.0.0-rc.12(@algolia/client-search@4.19.1)(@types/node@20.6.0)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0)
   vitepress-plugin-tabs:
-    specifier: ^0.3.0
-    version: 0.3.0(vitepress@1.0.0-rc.11)(vue@3.3.4)
+    specifier: 0.3.0
+    version: 0.3.0(vitepress@1.0.0-rc.12)(vue@3.3.4)
   vue:
-    specifier: ^3.3.4
+    specifier: 3.3.4
     version: 3.3.4
   vue-eslint-parser:
-    specifier: ^9.3.1
+    specifier: 9.3.1
     version: 9.3.1(eslint@8.49.0)
   x-satori:
-    specifier: ^0.1.5
+    specifier: 0.1.5
     version: 0.1.5
 
 packages:
@@ -5472,18 +5472,18 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress-plugin-tabs@0.3.0(vitepress@1.0.0-rc.11)(vue@3.3.4):
+  /vitepress-plugin-tabs@0.3.0(vitepress@1.0.0-rc.12)(vue@3.3.4):
     resolution: {integrity: sha512-3dKsBuP6PDzcFHgUtNCwwCs3bYoZduj7AcQkT9JfAKTRAKPCNmjiNInPT3IZ7AihL0SJNoQ3liz/e97z8oo+XA==}
     peerDependencies:
       vitepress: ^1.0.0-beta.2
       vue: ^3.3.4
     dependencies:
-      vitepress: 1.0.0-rc.11(@algolia/client-search@4.19.1)(@types/node@20.6.0)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0)
+      vitepress: 1.0.0-rc.12(@algolia/client-search@4.19.1)(@types/node@20.6.0)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0)
       vue: 3.3.4
     dev: true
 
-  /vitepress@1.0.0-rc.11(@algolia/client-search@4.19.1)(@types/node@20.6.0)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0):
-    resolution: {integrity: sha512-HUnfYOadqwLSahtgQxKt9/wiNHdd80BaUfQ+DIMpfq03Iv9CWX1SCBK4gxK/bMWns3Q0ArhXajQbU/fmBwYUMg==}
+  /vitepress@1.0.0-rc.12(@algolia/client-search@4.19.1)(@types/node@20.6.0)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0):
+    resolution: {integrity: sha512-mZknN5l9lgbBjXwumwdOQQDM+gPivswFEykEQeenY0tv7eocS+bb801IpFZT3mFV6YRhSddmbutHlFgPPADjEg==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.5.2
