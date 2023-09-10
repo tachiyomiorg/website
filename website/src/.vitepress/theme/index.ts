@@ -11,12 +11,11 @@ import { VueQueryPlugin } from "@tanstack/vue-query"
 
 import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client"
 
-// Import components
+// Import icon components
 import { IconBugReport, IconDownload, IconNewspaperVariant } from "@iconify-prerendered/vue-mdi"
-import Layout from "./Layout.vue"
 
-// Import Google Analytics plugin
-import googleAnalytics from "vitepress-plugin-google-analytics"
+import analytics from "./plugin/analytics"
+import Layout from "./Layout.vue"
 
 export default {
 	extends: DefaultTheme,
@@ -26,7 +25,7 @@ export default {
 		app.component("IconDownload", IconDownload)
 		app.component("IconNewspaperVariant", IconNewspaperVariant)
 		app.component("IconBugReport", IconBugReport)
-		// googleAnalytics({ id: "G-2CBXXM1Y86" })
+		analytics({ id: "G-J1GE7WPJEX" })
 	},
 	Layout,
 }

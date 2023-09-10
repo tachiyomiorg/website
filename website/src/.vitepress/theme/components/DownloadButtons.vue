@@ -1,4 +1,6 @@
 <script setup lang="ts">
+/// <reference types="@types/gtag.js" />
+
 import { computed, onMounted, ref } from "vue"
 import { data as release } from "../data/release.data"
 
@@ -20,6 +22,16 @@ const isAndroid = ref(true)
 onMounted(() => {
 	isAndroid.value = !!navigator.userAgent.match(/android/i)
 })
+
+function handleAnalytics(type: "preview" | "stable") {
+	window.gtag?.("event", "Download", {
+		event_category: "App",
+		event_label: type === "stable" ? "Stable" : "Preview",
+		version: type === "stable"
+			? release.stable.tag_name
+			: release.preview.tag_name,
+	})
+}
 </script>
 
 <template>
@@ -47,12 +59,22 @@ onMounted(() => {
 			</blockquote>
 		</div>
 		<div class="download-buttons">
-			<a class="download-button primary" :download="downloadInformation.stable.asset?.name" :href="downloadInformation.stable.asset?.browser_download_url">
+			<a
+				class="download-button primary"
+				:download="downloadInformation.stable.asset?.name"
+				:href="downloadInformation.stable.asset?.browser_download_url"
+				@click="handleAnalytics('stable')"
+			>
 				<IconDownload />
 				<span class="text">Stable</span>
 				<span class="version">{{ downloadInformation.stable.tagName }}</span>
 			</a>
-			<a class="download-button secondary" :download="downloadInformation.preview.asset?.name" :href="downloadInformation.preview.asset?.browser_download_url">
+			<a
+				class="download-button secondary"
+				:download="downloadInformation.preview.asset?.name"
+				:href="downloadInformation.preview.asset?.browser_download_url"
+				@click="handleAnalytics('preview')"
+			>
 				<IconBugReport />
 				<span class="text">Preview</span>
 				<span class="version">{{ downloadInformation.preview.tagName }}</span>
