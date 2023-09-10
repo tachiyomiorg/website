@@ -19,9 +19,9 @@
 	},
 	"dependencies": {
 		"@mr-hope/vuepress-plugin-sitemap": "1.30.0",
-		"@vuepress/plugin-active-header-links": "1.9.9",
-		"@vuepress/plugin-back-to-top": "1.9.9",
-		"@vuepress/plugin-pwa": "1.9.9",
+		"@vuepress/plugin-active-header-links": "1.9.10",
+		"@vuepress/plugin-back-to-top": "1.9.10",
+		"@vuepress/plugin-pwa": "1.9.10",
 		"axios": "0.26.1",
 		"core-js": "2.6.12",
 		"docsearch.js": "2.6.3",
