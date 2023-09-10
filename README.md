@@ -17,8 +17,8 @@
 		<img src="https://img.shields.io/github/downloads/tachiyomiorg/tachiyomi/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat">
 	</a>
 	<br>
-	<a title="Netlify deployment" href="https://app.netlify.com/sites/tachiyomi-v3-vitepress/deploys">
-		<img src="https://api.netlify.com/api/v1/badges/a2fcfa92-2d32-463c-9051-909f97e06f46/deploy-status">
+	<a title="Netlify deployment" href="https://app.netlify.com/sites/tachiyomiorg/deploys">
+		<img src="https://api.netlify.com/api/v1/badges/95d9e2f8-42ae-4e40-8c99-82b870c51e1a/deploy-status">
 	</a>
 	<br>
 	<br>
