@@ -1,0 +1,12 @@
+*.sh
+*.md
+*.woff
+*.ttf
+.vscode
+.idea
+.husky
+.local
+dist
+node_modules
+!docs/.vitepress
+docs/.vitepress/cache

@@ -1,0 +1,12 @@
+[build.environment]
+  NODE_VERSION = "18"
+
+[build]
+  base = "website"
+  publish = "dist"
+
+[context.production]
+  command = "VITE_HOSTNAME=$URL pnpm build"
+
+[context.deploy-preview]
+  command = "VITE_HOSTNAME=$DEPLOY_PRIME_URL pnpm build"

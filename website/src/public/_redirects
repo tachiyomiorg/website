@@ -1,0 +1,12 @@
+# Requested URL -> Redirected URL -> HTTP Code
+/help/                               /                                   301
+/help/guides/getting-started/        /docs/guides/getting-started        301
+/help/guides/troubleshooting/        /docs/guides/troubleshooting/       301
+/help/guides/source-migration/       /docs/guides/source-migration       301
+/help/guides/backups/                /docs/guides/backups                301
+/help/guides/tracking/               /docs/guides/tracking               301
+/help/guides/categories/             /docs/guides/categories             301
+/help/guides/local-manga/            /docs/guides/local-source/          301
+/help/guides/reader-settings/        /docs/guides/reader-settings        301
+/help/contribution/                  /docs/contribute                    301
+/help/faq/                           /docs/faq/general                   301
