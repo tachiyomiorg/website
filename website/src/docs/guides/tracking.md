@@ -32,18 +32,14 @@ Tracking helps you automatically send read chapters to supported trackers, so yo
 
 > Learn how to set it up on the [Komga](https://komga.org/) website.
 ==Kavita
-TBA
-
 > Learn how to set it up on the [Kavita](https://www.kavitareader.com/) website.
 ==Suwayomi
-TBA
-
 > Learn how to set it up on the [Suwayomi](https://suwayomi.org/) website.
 ::::
 
 ## General questions
 
-### How do I login into trackers?
+### How do I log in to trackers?
 1. Go to <nav to="tracking">.
 1. Tap the desired tracker to begin login.
 
@@ -68,6 +64,6 @@ You can also search for a series on your MAL profile list by searching in the fo
 Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
-### Finding tracked/intracked series in your library
+### Finding tracked/untracked series in your library
 Go to <nav to="main_library">, then **Filter (top right) -> Filter tab** then **Toggle Tracked**.
 If you are logged into more than one tracker, toggle the tracker you want to include or exclude.
