@@ -34,7 +34,7 @@ Depending on your device settings, you might need to grant **Tachiyomi** permiss
 
 ![Security warning](/docs/guides/getting-started/security-warning.webp =546x165)
 
-> Relevant guide: [Enabling Third-Party Installations](/docs/faq/extensions#enabling-third-party-installations)
+> Relevant guide: [Enabling Third-Party Installations](/docs/faq/browse/extensions#enabling-third-party-installations)
 :::
 
 ### 3. Adding series to your library

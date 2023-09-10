@@ -35,6 +35,17 @@ To mitigate these concerns:
   * Update only the Reading category by navigating to <nav to="library">, then tap **Categories** under **Global update**.
   * If the warning persists, create a new category for infrequently updated entries (like monthly series or those on hiatus) and set global updates to target the more frequently updated reading category.
 
+## Why aren't library updates working?
+Some Android skins (e.g., **MIUI**) aggressively save battery, potentially shutting down apps in the background.
+
+Whitelist **Tachiyomi** from your battery saver by going to <nav to="advanced"> and tapping **Disable battery optimization**.
+
+If unsuccessful, refer to [DontKillMyApp](https://dontkillmyapp.com/) for battery-saving options on your device and workarounds.
+
+## Can I sync between multiple devices?
+**Tachiyomi** can't sync between devices.
+Use its [backup and restore](/docs/guides/backups) features, including [auto backups](/docs/guides/backups#enabling-automatic-backups), for series database and content migration to another device.
+
 ## How can I ignore duplicate chapters?
 Dealing with series translated by multiple groups that result in duplicate chapter releases?
 
@@ -54,6 +65,12 @@ Refresh your covers at <nav to="advanced"> then tap **Refresh library covers**.
 ## Why have some chapters been marked as unread?
 If certain series chapters are marked as unread without your interaction, it could be due to changed URLs.
 **Tachiyomi** detects these changes and interprets the chapters as new.
+
+## How do I pause reading history?
+Activate **Incognito Mode** through <nav to="incognito-mode">.
+
+## How do I only read downloaded chapters?
+Activate **Download only** via <nav to="downloaded-only">.
 
 ## Why can't I disable the Downloaded filter?
 Deactivate **Download only** via <nav to="downloaded-only">.

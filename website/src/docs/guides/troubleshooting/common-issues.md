@@ -17,7 +17,7 @@ Here's how to tackle common challenges.
 * Else, delete **Tachiyomi** downloads folder on SD card.
 
 ### Storage issues with Android 11+
-See [this](/docs/faq/application/android-11+) section of the FAQ to learn how Scoped Storage affects **Tachiyomi** in **Android 11+** and how to fix it.
+See [this](/docs/faq/android-11+) section of the FAQ to learn how Scoped Storage affects **Tachiyomi** in **Android 11+** and how to fix it.
 
 ### Slow loading
 Sources being slow could stem from site slowness, your internet, or source-imposed rate limits/IP bans.

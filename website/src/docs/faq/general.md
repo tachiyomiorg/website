@@ -20,6 +20,12 @@ Porting is difficult due to the separate codebases of iOS and Android apps.
 
 Any app proclaiming to be "**Tachiyomi for iOS**" is not by us and should be treated as a scam.
 
+## What is Tachiyomi Preview?
+**Tachiyomi Preview** is a regularly updated beta version of the app.
+It showcases potential upcoming features, but it's more prone to bugs and crashes.
+
+Ideal for users seeking the latest **Tachiyomi** experience, it's essential to [enable auto-backup](/docs/guides/backups#enabling-automatic-backups) to prevent library loss due to issues.
+
 ## How do I update from the F-Droid builds?
 **Tachiyomi** on **F-Droid** lacks official support, updates aren't guaranteed.
 
@@ -40,10 +46,6 @@ Refer to [this GitHub comment](https://github.com/tachiyomiorg/tachiyomi/issues/
 **Tachiyomi** isn't designed for anime streaming.
 
 Projects using the **Tachiyomi** name for anime streaming aren't affiliated with the main project.
-
-## Can I sync between multiple devices?
-**Tachiyomi** can't sync between devices.
-Use its [backup and restore](/docs/guides/backups) features for series database and content migration to another device.
 
 ## What's a fork?
 Forks are alternate **Tachiyomi** versions with distinct features. Get more details here.
