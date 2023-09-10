@@ -1,6 +1,8 @@
 ---
 title: Privacy policy
 description: Privacy Policy that explains how Tachiyomi collects, uses, and protects users' personal information.
+lastUpdated: false
+editLink: false
 ---
 
 # Privacy policy

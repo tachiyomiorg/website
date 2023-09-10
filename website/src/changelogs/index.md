@@ -13,6 +13,6 @@ import ChangelogsList from "@theme/components/ChangelogsList.vue";
 
 # Changelogs
 
-Changelogs of all Tachiyomi stable releases, obtained from the GitHub repository.
+Changelogs of all Tachiyomi stable releases. Also available [on GitHub](https://github.com/tachiyomiorg/tachiyomi/releases).
 
 <ChangelogsList />

@@ -1,9 +1,9 @@
 ---
-title: Contribution
+title: Contribute
 description: Find out how to help translate or build the app and extensions.
 ---
 
-# Contribution
+# Contribute
 
 Find out how to help translate or build the app and extensions.
 

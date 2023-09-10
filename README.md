@@ -7,7 +7,7 @@
 
 <h1 align="center">Tachiyomi <a href="#">Website</a></h1>
 <h3 align="center">Full-featured reader</h3>
-<p align="center">Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.</p>
+<p align="center">Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.</p>
 
 <p align="center">
 	<a title="Discord server" href="https://discord.gg/tachiyomi">

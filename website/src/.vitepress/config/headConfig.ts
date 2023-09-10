@@ -49,7 +49,7 @@ const headConfig: HeadConfig[] = [
 		"meta",
 		{
 			property: "og:description",
-			content: "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android.",
+			content: "Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.",
 		},
 	],
 	["meta", { property: "og:locale", content: "en_US" }],

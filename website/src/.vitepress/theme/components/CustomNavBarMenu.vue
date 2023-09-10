@@ -27,7 +27,7 @@ const nav = computed(() => {
 	}
 
 	return theme.value.nav?.map((item) => {
-		if (item.text !== "{app_version}") {
+		if (!item.text.includes("{app_version}")) {
 			return item
 		}
 
@@ -35,7 +35,7 @@ const nav = computed(() => {
 
 		return {
 			...item,
-			text: item.text === "{app_version}"	? appVersion : item.text,
+			text: item.text.replace("{app_version}", appVersion),
 		} satisfies DefaultTheme.NavItem
 	})
 })
@@ -43,7 +43,7 @@ const nav = computed(() => {
 
 <template>
 	<nav v-if="nav" aria-labelledby="main-nav-aria-label" class="VPNavBarMenu">
-		<span id="main-nav-aria-label" class="visually-hidden">Main Navigation</span>
+		<span id="main-nav-aria-label" class="visually-hidden">Main navigation</span>
 		<template v-for="item in nav" :key="item.text">
 			<VPNavBarMenuLink v-if="'link' in item" :item="item" />
 			<VPNavBarMenuGroup v-else :item="item" />
@@ -56,7 +56,7 @@ const nav = computed(() => {
 	display: none
 }
 
-@media (min-width: 768px) {
+@media (min-width 768px) {
 	.VPNavBarMenu {
 		display: flex
 	}

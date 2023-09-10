@@ -15,7 +15,9 @@ import Changelog from "@theme/components/Changelog.vue";
 
 # Download
 
-Download the latest stable version of **Tachiyomi** that released **<ReleaseDate type="stable" />** or the preview version that released **<ReleaseDate type="preview" />**.
+The latest stable version of **Tachiyomi** was released **<ReleaseDate type="stable" />** and the latest preview version was released **<ReleaseDate type="preview" />**.
+
+Preview releases are intended for testing upcoming changes and may not be a stable experience.
 
 <DownloadButtons />
 

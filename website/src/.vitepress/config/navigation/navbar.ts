@@ -2,12 +2,7 @@ import type { DefaultTheme } from "vitepress"
 
 const nav: DefaultTheme.NavItem[] = [
 	{
-		text: "Documentation",
-		link: "/docs/guides/getting-started",
-		activeMatch: "/docs/",
-	},
-	{
-		text: "{app_version}",
+		text: "Get {app_version}",
 		activeMatch: "^/*?(download|changelogs)/*?$",
 		items: [
 			{
@@ -15,14 +10,20 @@ const nav: DefaultTheme.NavItem[] = [
 				link: "/download/",
 			},
 			{
-				text: "Changelog",
-				link: "/changelogs/#latest",
-			},
-			{
-				text: "Contributing",
-				link: "https://github.com/tachiyomiorg/tachiyomi/blob/master/CONTRIBUTING.md",
+				text: "Changelogs",
+				link: "/changelogs/",
 			},
 		],
+	},
+	{
+		text: "Docs",
+		link: "/docs/guides/getting-started",
+		activeMatch: "/docs/",
+	},
+	{
+		text: "News",
+		link: "/news/",
+		activeMatch: "/news/",
 	},
 ]
 

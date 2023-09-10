@@ -26,7 +26,7 @@ const nav = computed(() => {
 	}
 
 	return theme.value.nav?.map((item) => {
-		if (item.text !== "{app_version}") {
+		if (!item.text.includes("{app_version}")) {
 			return item
 		}
 
@@ -34,7 +34,7 @@ const nav = computed(() => {
 
 		return {
 			...item,
-			text: item.text === "{app_version}"	? appVersion : item.text,
+			text: item.text.replace("{app_version}", appVersion),
 		} satisfies DefaultTheme.NavItem
 	})
 })

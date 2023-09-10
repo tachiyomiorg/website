@@ -13,6 +13,30 @@ const sidebar: DefaultTheme.SidebarMulti = {
 function defaultSidebar(): DefaultTheme.SidebarItem[] {
 	return [
 		{
+			items: [
+				{
+					text: "Download",
+					link: "/download/",
+				},
+				{
+					text: "Extensions",
+					link: "/extensions/",
+				},
+				{
+					text: "Changelogs",
+					link: "/changelogs/",
+				},
+				{
+					text: "Forks",
+					link: "/forks/",
+				},
+				{
+					text: "Contribute",
+					link: "/docs/contribute",
+				},
+			],
+		},
+		{
 			text: "Frequently Asked Questions",
 			items: [
 				{ text: "General", link: "/docs/faq/general" },
@@ -105,35 +129,6 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
 				{
 					text: "Reader settings",
 					link: "/docs/guides/reader-settings",
-				},
-			],
-		},
-		{
-			text: "Application",
-			items: [
-				{
-					text: "Contribution",
-					link: "/docs/contribution",
-				},
-				{
-					text: "Download",
-					link: "/download/",
-				},
-				{
-					text: "Extensions",
-					link: "/extensions/",
-				},
-				{
-					text: "Changelogs",
-					link: "/changelogs/",
-				},
-				{
-					text: "Forks",
-					link: "/forks/",
-				},
-				{
-					text: "News",
-					link: "/news/",
 				},
 			],
 		},

@@ -1,5 +1,5 @@
 ---
-title: News archive
+title: News
 description: Collection of news and announcements about Tachiyomi.
 lastUpdated: false
 editLink: false
@@ -12,7 +12,7 @@ import News from "@theme/components/News.vue";
 import RssLink from "@theme/components/RssLink.vue";
 </script>
 
-# News archive
+# News
 
 Collection of news and announcements about Tachiyomi.
 

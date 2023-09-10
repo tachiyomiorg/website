@@ -18,7 +18,7 @@ import generateFeed from "./config/hooks/generateFeed" // Allows generation of R
 import generateOgImages from "./config/hooks/generateOgImages"
 
 const title = "Tachiyomi"
-const description = "Read your favorite manga, webtoons, comics, and more – easier than ever on your Android."
+const description = "Discover and read manga, webtoons, comics, and more – easier than ever on your Android device."
 
 const env = loadEnv("", process.cwd())
 const hostname: string = env.VITE_HOSTNAME || "http://localhost:4173"
