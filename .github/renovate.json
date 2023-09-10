@@ -1,0 +1,10 @@
+{
+	"extends": [
+		"config:base"
+	],
+	"schedule": ["every sunday"],
+	"ignoreDeps": [
+		"vue monorepo",
+		"vue"
+	]
+}
