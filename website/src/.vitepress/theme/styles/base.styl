@@ -247,3 +247,32 @@ body {
 .VPMenu .CustomSwitchAppearance {
 	margin-right: -8px
 }
+
+/**
+ * Component: Forks page
+ */
+
+.forks .VPFeatures {
+	padding: 2rem 0 !important
+
+	.VPLink:hover {
+		text-decoration: none
+	}
+
+	.title {
+		line-height: 24px
+		font-size: 16px
+		font-weight: 600
+		margin: 0
+		border-top: none
+		padding-top: 0
+		letter-spacing: 0
+		color: var(--vp-c-text-1)
+	}
+}
+
+@media (min-width 640px) {
+	.forks .item.grid-4 {
+		width: 50% !important
+	}
+}

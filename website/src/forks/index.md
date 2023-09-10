@@ -1,11 +1,11 @@
 ---
-title: Forks
+title: Endorsed Forks
 description: Forks are alternative versions of Tachiyomi with exclusive features.
-layout: home
-
-hero:
-  text: Endorsed Forks
-  tagline: Forks are alternative versions of Tachiyomi with exclusive features.
+lastUpdated: false
+editLink: false
+prev: false
+next: false
+pageClass: forks
 
 features:
   - title: Neko
@@ -25,3 +25,13 @@ features:
     icon: <img src="/forks/logo-az.webp" alt="TachiyomiAZ Logo" height="32" width="32">
     link: /forks/TachiyomiAZ/
 ---
+
+<script setup>
+import { VPHomeFeatures } from "vitepress/theme"
+</script>
+
+# Endorsed Forks
+
+Forks are alternative versions of Tachiyomi with exclusive features.
+
+<VPHomeFeatures />
