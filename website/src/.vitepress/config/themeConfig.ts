@@ -65,7 +65,12 @@ const themeConfig: DefaultTheme.Config = {
 	},
 
 	search: {
-		provider: "local",
+		provider: "algolia",
+		options: {
+			appId: "2C8EHFTRW7",
+			apiKey: "ee38c6e04295e4d206399ab59a58ea9a",
+			indexName: "tachiyomi",
+		},
 	},
 }
 
