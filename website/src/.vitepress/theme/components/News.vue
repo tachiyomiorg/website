@@ -2,7 +2,10 @@
 import { IconChevronRight } from "@iconify-prerendered/vue-mdi"
 import { data as newsList } from "../data/news.data"
 
-const dateFormatter = new Intl.DateTimeFormat("en", { dateStyle: "medium" })
+const dateFormatter = new Intl.DateTimeFormat("en", {
+	dateStyle: "medium",
+	timeZone: "UTC",
+})
 </script>
 
 <template>
