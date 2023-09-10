@@ -28,9 +28,9 @@ features:
   - title: Series recommendations
     details: Get recommendations from MyAnimeList and AniDB.
     icon: 📚
-  - title: Several exclusive features
-    details: Keeps the old design of Tachiyomi with hamburger menu.
-    icon: 👵
+  - title: Autoscroll
+    details: Allows you to read without any extra interaction.
+    icon: 📜
 
 theme: "#CE2828"
 image: /forks/logo-sy.webp
