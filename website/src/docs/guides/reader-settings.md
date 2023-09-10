@@ -1,5 +1,6 @@
 ---
 title: Reader settings
+titleTemplate: Guides
 description: This section relates to the reading experience in the app and navigating the reader.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Neko
+titleTemplate: false
 description: Features specific to MangaDex with the featureset of TachiyomiJ2K
 
 layout: home

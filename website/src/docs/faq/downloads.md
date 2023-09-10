@@ -1,5 +1,6 @@
 ---
 title: Downloads
+titleTemplate: Frequently Asked Questions
 description: Frequently Asked Question about Downloads.
 ---
 

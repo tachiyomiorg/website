@@ -83,8 +83,8 @@ async function generateImage({ page, template, outDir, fonts }: GenerateImagesOp
 		props: {
 			title:
 				frontmatter.layout === "home"
-					? frontmatter.hero.name ?? frontmatter.title.replace(/\s\-.*$/, "")
-					: frontmatter.customMetaTitle ?? frontmatter.title.replace(/\s\-.*$/, ""),
+					? frontmatter.hero.name ?? frontmatter.title
+					: frontmatter.customMetaTitle ?? frontmatter.title,
 			description:
 				frontmatter.layout === "home"
 					? frontmatter.hero.tagline ?? frontmatter.description

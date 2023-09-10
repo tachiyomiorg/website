@@ -1,5 +1,6 @@
 ---
-title: Extensions - FAQ
+title: Extensions
+titleTemplate: Browse - Frequently Asked Questions
 description: Frequently Asked Questions about Extensions.
 ---
 

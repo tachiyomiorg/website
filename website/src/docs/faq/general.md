@@ -1,5 +1,6 @@
 ---
-title: General - FAQ
+title: General
+titleTemplate: Frequently Asked Questions
 description: Frequently Asked Questions
 ---
 

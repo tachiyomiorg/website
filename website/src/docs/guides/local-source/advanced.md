@@ -1,5 +1,6 @@
 ---
 title: Advanced editing
+titleTemplate: Local source - Guides
 description: Advanced local series metadata editing for enhanced library organization.
 ---
 

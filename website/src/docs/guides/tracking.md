@@ -1,5 +1,6 @@
 ---
 title: Tracking
+titleTemplate: Guides
 description: Tracking helps track your library with different online services.
 ---
 

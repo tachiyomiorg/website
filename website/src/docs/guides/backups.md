@@ -1,5 +1,6 @@
 ---
 title: Backups
+titleTemplate: Guides
 description: Backups helps you prevent losing your library if something happens.
 ---
 
@@ -73,7 +74,7 @@ This way, you can recover from catastrophic failures.
 
 ### Syncing backups with external cloud services
 
-Cross device sync in **Tachiyomi** is not planned in the future, but users can use 
+Cross device sync in **Tachiyomi** is not planned in the future, but users can use
 [Autosync for Google Drive](https://play.google.com/store/apps/details?id=com.ttxapps.drivesync)
 in order to sync backup files to Drive automatically with the following steps:
 
@@ -98,12 +99,12 @@ In addition, some forks have specific limitations regarding backup restoration:
 
 - [Neko](/forks/Neko/) can only restore [MangaDex](/extensions/#all.mangadex) entries in a backup.
   > Entries from other sources will not transfer.
-  
+
   > Migrate everything to MangaDex if you require to.
 - All forks have fork-specific settings and changes that might be saved in Backups.
   Such settings are not restored in original Tachiyomi and will get lost when creating a new backup.
   > For Example: [TachiyomiSY](/forks/TachiyomiSY/) has the option to backup/restore saved searches.
-  
+
   These will **NOT** be restored to original Tachiyomi or its forks.
 - Only [TachiyomiAZ](/forks/TachiyomiAZ/) supports creating/restoring legacy `.json` backups and current `.proto.gz` backups.
   > Users are recommended to update their `.json` backups to use the improved and efficient `.proto.gz` backups.

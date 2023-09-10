@@ -1,5 +1,6 @@
 ---
 title: TachiyomiJ2K
+titleTemplate: false
 description: New approach to the design of the base app along with several other enhancements
 
 layout: home

@@ -1,5 +1,6 @@
 ---
 title: TachiyomiSY
+titleTemplate: false
 description: Keeping up-to-date with Tachiyomi while also adding exclusive features
 
 layout: home

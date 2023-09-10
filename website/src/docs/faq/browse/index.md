@@ -1,5 +1,6 @@
 ---
 title: Browse
+titleTemplate: Frequently Asked Questions
 description: Frequently Asked Questions about Browse.
 ---
 

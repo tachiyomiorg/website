@@ -1,5 +1,6 @@
 ---
 title: Local source
+titleTemplate: Browse - Frequently Asked Questions
 description: Frequently Asked Questions about the Local source.
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: TachiyomiAZ
+titleTemplate: false
 description: Hentai-focused with legacy features
 
 layout: home
