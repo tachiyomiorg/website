@@ -7,40 +7,37 @@ description: Frequently Asked Question about Downloads.
 # Downloads
 Frequently Asked Question about Downloads.
 
-## Downloading multiple chapters or series concurrently
+## How do I download multiple chapters or series at the same time?
 The app does not support parallel downloads from a single source to prevent potential IP bans due to excessive requests.
-While this might impact speed, it's preferable to rendering a source inaccessible.
+While this might impact speed, it's preferable over rendering a source inaccessible.
 
-However, if you're downloading series from various sources, up to five different sources can be downloaded simultaneously.
+Note that Tachiyomi will download from up to five different sources in parallel.
 
-## Downloads stopping midway
-Downloads stopping midway may relate to network connection issues or source problems.
+## Why did my downloads stop midway?
+Downloads stopping midway may be related to network connection issues or source problems.
 **Tachiyomi** will provide notifications regarding encountered errors during download attempts.
 
-## Downloads aren't detected
+## Why can't I see my downloads?
 Downloads might not be detected due to multiple factors:
 
 * Inaccessibility of the download location.
   > Ensure the SD card is properly detected if in use.
 * Source name changes.
   > Rename the source's folder to match the new name.
-* Series title modifications by the source.
+* Series title modified by the source.
   > Adjust the folder title to the updated name.
 
-## Managing download queue
+## How do I manage what's downloading?
 Navigate to <nav to="download-queue"> to interact with queued downloads.
 
 Cancel all items by clicking the **Overflow** button beside a series chapter or the top right corner.
 
-To reorder the queue, long-press the `=` icon next to a queue item.
+To reorder the queue, long-press and drag the `=` icon next to a queue item.
 
-## Internal storage and external SD card storage
-As of now, this option isn't available.
-You could explore using symlinks, but this requires device rooting.
+## Can I use both internal storage and external SD card storage?
+No, you must choose a single location. Internal storage performs better than external SD cards.
 
-For more details on rooting your device, refer to [this guide](https://www.xda-developers.com/root/).
-
-## Series pages in device photo gallery
+## Why does my device photo gallery contain series pages?
 **Tachiyomi** typically prevents series pages in downloads from appearing in your device's photo gallery by default through a `.nomedia` file.
 However, in some cases, this might not function as intended.
 

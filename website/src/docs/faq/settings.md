@@ -1,10 +1,11 @@
 ---
 title: Settings
 titleTemplate: Frequently Asked Questions
-description: Frequently Asked Questions about various settings.
+description: Frequently Asked Questions about various app settings.
 ---
 
 # Settings
+Frequently Asked Questions about various app settings.
 
 ## Why is taking screenshots blocked?
 Turn off **Secure Screen** in <nav to="security-and-privacy">.
