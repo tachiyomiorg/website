@@ -7,6 +7,10 @@
 		<a href="https://discord.gg/tachiyomi">
 			<img src="https://img.shields.io/discord/349436576037732353.svg?label=Discord&labelColor=7289da&color=2c2f33&style=flat" alt="Discord">
 		</a>
+		<br>
+		<a title="Netlify deployment" href="https://app.netlify.com/sites/tachiyomiorg/deploys">
+			<img src="https://api.netlify.com/api/v1/badges/95d9e2f8-42ae-4e40-8c99-82b870c51e1a/deploy-status">
+		</a>
 	</p>
 </div>
 
