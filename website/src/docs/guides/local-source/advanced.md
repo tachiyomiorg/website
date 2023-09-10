@@ -9,7 +9,7 @@ Advanced local series metadata editing for enhanced library organization.
 ## Editing local series details
 
 It is possible to add details to local series.
-Like series from other catalogs, you add information about the series such as the `author`, `artist`, `description`, and `genre` tags.
+Like series from other sources, you add information about the series such as the `author`, `artist`, `description`, and `genre` tags.
 
 To import details along with your local series, you have to create a JSON file.
 It can be named anything but it must be placed within the **Series** folder.

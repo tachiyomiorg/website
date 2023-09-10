@@ -9,7 +9,7 @@ const downloadInformation = computed(() => ({
 			.find((a) => /^tachiyomi-r\d{4,}.apk/.test(a.name)),
 	},
 	stable: {
-		tagName: release.stable.tag_name?.slice(1) ?? "0.00.0",
+		tagName: release.stable.tag_name ?? "v0.00.0",
 		asset: (release.stable.assets ?? [])
 			.find((a) => /^tachiyomi-v\d+\.\d+\.\d+.apk/.test(a.name)),
 	},

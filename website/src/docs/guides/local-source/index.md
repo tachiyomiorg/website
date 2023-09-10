@@ -1,9 +1,9 @@
 ---
-title: Local series
+title: Local source
 description: For users who would like to download and organize their own media.
 ---
 
-# Local series
+# Local source
 
 If you like to download and organize your media, then you want to know how to manage your own series in Tachiyomi.
 
@@ -28,7 +28,7 @@ But expect better performance with directories and `ZIP`/`CBZ`.
 
 Remember to give the app storage permissions on **Android 6** and newer.
 
-### Folder Structure
+### Folder structure
 
 Tachiyomi requires a specific folder structure for local series to be correctly processed.
 Local series will be read from the `Tachiyomi/local` folder.
@@ -127,7 +127,7 @@ You can refer to the following example:
 Tachiyomi will see four chapters in a single series.
 The path to the folder with images must contain both the series title and the chapter name (as seen above).
 
-### Archive Files
+### Archive files
 
 Archive files such as `ZIP`/`CBZ` are supported but the folder structure inside is not.
 Any folders inside the archive file are ignored.

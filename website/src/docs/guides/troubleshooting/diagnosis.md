@@ -41,7 +41,7 @@ Wait or check for an extension update if you have not already.
 There are no ETAs for updates.
 :::
 
-## Personalized Issue
+## Personalized issue
 If you're the only one facing a problem, you might be encountering [Cloudflare](/docs/guides/troubleshooting/#cloudflare) protection, an IP ban, or other countermeasures set by website owners against programs like **Tachiyomi**.
 
 **To minimize future issues:**
@@ -52,7 +52,7 @@ If you're the only one facing a problem, you might be encountering [Cloudflare](
 These are general guidelines as each site has its specific undisclosed limits and triggers.
 :::
 
-## Widespread Issue
+## Widespread issue
 When everyone experiences a problem, it could be with the extension or app:
 
 1. Check open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [**extensions**](https://github.com/tachiyomiorg/tachiyomi-extensions/issues).

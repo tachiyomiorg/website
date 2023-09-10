@@ -7,7 +7,7 @@ description: Backups helps you prevent losing your library if something happens.
 
 Backups in **Tachiyomi** are compatible between different versions of the app, with a few exceptions listed under forks information.
 
-## What's Included in a Backup?
+## What's included in a backup?
 
 Backups store the following information:
 
@@ -28,7 +28,7 @@ Backups store the following information:
 ![Backup and Restore](/docs/guides/backups/backup.dark.webp#dark =414x215)
 :::
 
-## Restoring a Backup
+## Restoring a backup
 
 Restoring a backup can be done through the Backup and Restore settings.
 To ensure a smooth restoration process, remember to:
@@ -36,11 +36,11 @@ To ensure a smooth restoration process, remember to:
 1. Log into the Tracking services you previously used.
 1. Download any extensions you've used in your backup.
 
-## Transferring Downloads to a New Installation
+## Transferring downloads to a new installation
 
 You can transfer downloaded series chapters from one version of **Tachiyomi** to another.
 
-## Enabling Automatic Backups
+## Enabling automatic backups
 
 It is highly recommended to enable automatic backups to ensure you can recover in case of any issues.
 
@@ -54,7 +54,7 @@ This way, you can recover from catastrophic failures.
 ![Automatic Backupse](/docs/guides/backups/automatic_backups.dark.webp#dark =414x402)
 :::
 
-## Forks Information
+## Forks information
 
 Some forks of **Tachiyomi** have specific limitations regarding backup restoration:
 

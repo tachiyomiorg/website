@@ -6,14 +6,14 @@ description: Frequently Asked Questions about the Application.
 # Application
 Frequently Asked Questions about the Application.
 
-## Tachiyomi Preview
+## What is Tachiyomi Preview?
 
 **Tachiyomi Preview** is a regularly updated beta version of the app.
 It showcases potential upcoming features, but it's more prone to bugs and crashes.
 
 Ideal for users seeking the latest **Tachiyomi** experience, it's essential to [enable auto-backup](/docs/guides/backups#enabling-automatic-backups) to prevent library loss due to issues.
 
-## Automatic Updates Not Working
+## Why aren't library updates working?
 
 Some Android skins (e.g., **MIUI**) aggressively save battery, potentially shutting down apps in the background.
 
@@ -21,7 +21,5 @@ Whitelist **Tachiyomi** from your battery saver by going to <nav to="advanced"> 
 
 If unsuccessful, try [DontKillMyApp](https://dontkillmyapp.com/) for battery-saving options on your device and workarounds.
 
-## Uninstall Issues
-
-On **Android 10**, a bug emerged preventing **Tachiyomi** uninstallation if a MicroSD card was present.
-To resolve this, remove the MicroSD card from your device before uninstalling **Tachiyomi**.
+## Why is taking screenshots blocked?
+Turn off **Secure Screen** in <nav to="security-and-privacy">.

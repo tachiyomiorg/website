@@ -55,8 +55,8 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
 							collapsed: true,
 							items: [
 								{
-									text: "Local sources",
-									link: "/docs/faq/application/browse/local-sources",
+									text: "Local source",
+									link: "/docs/faq/application/browse/local-source",
 								},
 							],
 						},
@@ -69,10 +69,6 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
 							link: "/docs/faq/application/reader",
 						},
 						{
-							text: "User interface",
-							link: "/docs/faq/application/user-interface",
-						},
-						{
 							text: "Android 11+",
 							link: "/docs/faq/application/android-11+",
 						},
@@ -80,10 +76,13 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
 							text: "Shizuku",
 							link: "/docs/faq/application/shizuku",
 						},
+						{
+							text: "Miscellaneous",
+							link: "/docs/faq/application/miscellaneous",
+						},
 					],
 				},
 				{ text: "Extensions", link: "/docs/faq/extensions" },
-				{ text: "Miscellaneous", link: "/docs/faq/miscellaneous" },
 			],
 		},
 		{
@@ -116,13 +115,13 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
 				{ text: "Tracking", link: "/docs/guides/tracking" },
 				{ text: "Categories", link: "/docs/guides/categories" },
 				{
-					text: "Local series",
-					link: "/docs/guides/local-series/",
+					text: "Local source",
+					link: "/docs/guides/local-source/",
 					collapsed: true,
 					items: [
 						{
 							text: "Advanced editing",
-							link: "/docs/guides/local-series/advanced",
+							link: "/docs/guides/local-source/advanced",
 						},
 					],
 				},

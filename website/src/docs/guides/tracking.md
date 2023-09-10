@@ -43,12 +43,10 @@ TBA
 ## General questions
 
 ### How do I login into trackers?
-
 1. Go to <nav to="tracking">.
 1. Tap the desired tracker to begin login.
 
 ### How do I set up tracking for each series?
-
 1. Open the series.
 1. Tap **Tracking**.
 1. Tap **Add tracking** for the desired service.
@@ -58,11 +56,9 @@ You can also change the search query if there is no match.
 :::
 
 ### How do I log in with Kitsu?
-
 To log in with Kitsu, you need to use your email address as your username.
 
-### Can't Find a Series on MyAnimeList?
-
+### Can't find a series on MyAnimeList?
 If you cannot find a series by name, you can look it up on MyAnimeList and then search for it in **Tachiyomi** using the following format: `id:<id from series URL>`.
 
 You can also search for a series on your MAL profile list by searching in the following format: `my:<series name>`.
@@ -71,6 +67,6 @@ You can also search for a series on your MAL profile list by searching in the fo
 Related GitHub issue: [#65](https://github.com/tachiyomiorg/tachiyomi/issues/65)
 :::
 
-### Check Tracked/Untracked Series in Library
+### Finding tracked/intracked series in your library
 Go to <nav to="main_library">, then **Filter (top right) -> Filter tab** then **Toggle Tracked**.
 If you are logged into more than one tracker, toggle the tracker you want to include or exclude.

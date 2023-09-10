@@ -7,27 +7,23 @@ description: Essential information to help you get set up with Tachiyomi.
 
 Essential information to help you get set up with Tachiyomi.
 
-## Installation Guide
+## Installation guide
 
 ### 1. Downloading Tachiyomi
-
-To get started with **Tachiyomi**, follow these steps:
 
 1. Visit our [download](/download/) page to get the latest version of **Tachiyomi**.
 1. After the download is complete, open the `tachiyomi-*.apk` file.
 1. Proceed with the installation process.
 
-### 2. Installing Extensions
+### 2. Adding sources
 
-Once **Tachiyomi** is installed on your device, you can add extensions to access a wide range of sources.
-
-Here's how:
+Once **Tachiyomi** is installed on your device, you can install extensions to access a wide range of sources.
 
 1. Open the **Tachiyomi** app.
 1. Navigate to the "**Browse**" section.
-1. Tap on the **Extensions** tab.
+1. Tap on the "**Extensions**" tab.
 1. Look for the extension you want to use and press the "**INSTALL**" button next to it.
-1. Accept the installation prompt that appears.
+1. Proceed with the installation process.
 
 ![Installing extensions](/docs/guides/getting-started/installing-extensions.light.webp#light =414x245)
 
@@ -41,30 +37,30 @@ Depending on your device settings, you might need to grant **Tachiyomi** permiss
 > Relevant guide: [Enabling Third-Party Installations](/docs/faq/extensions#enabling-third-party-installations)
 :::
 
-### 3. Adding Series to Your Library
+### 3. Adding series to your library
 
-After installing the desired extension, you'll find it in the **Sources** tab, which contains all your sources obtained through extensions.
+After installing the desired extension, you'll find it in the **Sources** tab.
 
 Here's how you can add series to your library:
 
 1. Select the source you'd like to browse.
-1. You can use the **Popular**/**Latest** filters to browse, or you can search for the series name.
-1. Once you've found the series that you want to add, click on it for more details.
+1. You can use the **Popular**/**Latest** listings to browse, or you can search for the series name.
+1. Once you've found the series that you want to add, tap on it for more details.
 1. Press the "**Add to library**" button, and the series will be added to your Library, ready to be read!
 
-## Additional Setup
+## Additional setup
 
-### Series Search Options
+### Series search options
 
-If you want to search for series across all your sources, you can use the global search feature.
+If you want to search for series across all your sources, you can use the Global Search feature.
 
 Follow these steps:
 
 1. Go to the "**Browse**" section.
-1. Tap on **Sources** located at the top-right corner.
-1. Use the Search function to find series from all available sources.
+1. Ensure you're on the "**Sources**" tab located at the top-right corner.
+1. Use the Search icon in the toolbar to find series from all available sources.
 
-### Trouble Finding a Specific Series?
+### Trouble finding a specific series?
 
 If you encounter difficulties while searching for a specific series, consider the following points:
 

@@ -6,13 +6,7 @@ description: Frequently Asked Questions
 # General
 Frequently Asked Questions
 
-## iOS Availability
-There is no iOS version and neither are there plans for one.
-Porting is difficult due to the separate codebases of iOS and Android apps.
-
-Any app proclaiming to be "**Tachiyomi for iOS**" is not by us and should be treated as a scam.
-
-## Google Play Store Availability
+## Why isn't Tachiyomi on the Google Play Store?
 **Tachiyomi** won't be on the **Google Play Store**.
 
 APK-based extensions conflict with [Google Play's content policy](https://play.google.com/about/developer-content-policy/).
@@ -20,7 +14,13 @@ APK-based extensions conflict with [Google Play's content policy](https://play.g
 
 To report **Tachiyomi** copycats on the **Google Play Store**, fill out [this form](https://support.google.com/googleplay/android-developer/contact/takedown) following [these steps](https://pastebin.com/08eeuJxH).
 
-## Migrating from F-Droid
+## Is Tachiyomi available for iOS/iPadOS?
+There is no iOS or iPadOS version and neither are there plans for one.
+Porting is difficult due to the separate codebases of iOS and Android apps.
+
+Any app proclaiming to be "**Tachiyomi for iOS**" is not by us and should be treated as a scam.
+
+## How do I update from the F-Droid builds?
 **Tachiyomi** on **F-Droid** lacks official support, updates aren't guaranteed.
 
 To migrate to official builds:
@@ -33,14 +33,17 @@ To migrate to official builds:
 Hosting an **F-Droid** repo isn't planned, as **Tachiyomi** manages updates independently, rendering **F-Droid** usage redundant.
 Refer to [this GitHub comment](https://github.com/tachiyomiorg/tachiyomi/issues/6736#issuecomment-1059608058) for details.
 
-## Light Novels Compatibility
+## Can I read light novels?
 **Tachiyomi** can't read light novels; it's an image parser, not a text parser.
 
-## Anime Streaming
+## Can I stream anime?
 **Tachiyomi** isn't designed for anime streaming.
 
 Projects using the **Tachiyomi** name for anime streaming aren't affiliated with the main project.
 
-## Device Syncing
+## Can I sync between multiple devices?
 **Tachiyomi** can't sync between devices.
 Use its [backup and restore](/docs/guides/backups) features for series database and content migration to another device.
+
+## What's a fork?
+Forks are alternate **Tachiyomi** versions with distinct features. Get more details here.

@@ -7,44 +7,17 @@ description: Organize your favorite series effortlessly with categories that dec
 
 Organize your favorite series effortlessly with categories that declutter and structure your library.
 
+To manage your categories, navigate to <nav to="categories">.
+
 - You can name and sort categories as you prefer (e.g., by `Genre`, `Reading Status`).
 - Add series to multiple categories and control update options through Library settings, even auto-download chapters from chosen categories.
   > If you've enabled **Download new chapters** in the Downloads settings.
 
 
-## Customization
-
-There are various things you can do to categories to help enhance your library.
-
-To makes changes to your categories, first navigate to <nav to="categories">.
-
-:::: tabs
-== Create
-### Create a category
-
-1. Press the **+ Add** button in the bottom right.
-1. Enter a name and press **OK**.
-== Edit
-### Edit a category
-
-1. Long press a category.
-1. Tap **EDIT** on the top-right.
-== Reorder
-### Change category display order
-
-1. Click the arrows to move the category to your preferred position.
-  > The category in the top-most position will be the first one in your library.
-== Delete
-### Delete a category
-
-1. Long press a category.
-1. Tap **DELETE** on the top-right.
-::::
-
 ## Content
 
 Categories would be useless without any content in them.
-Below is some tips for utilizing them.
+Below are some tips for using them.
 
 :::: tabs
 == Add entries

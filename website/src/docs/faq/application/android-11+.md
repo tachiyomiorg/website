@@ -6,7 +6,7 @@ description: Understanding Android 11 Changes.
 # Android 11+
 Understanding **Android 11** Changes.
 
-## Android 11 Modifications
+## Android 11 modifications
 **Android 11** introduced changes related to [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage), which was initially introduced in **Android 5.0 Lollipop**.
 
 However, the enforcement of **Scoped Storage** was initiated by **Google** with **Android 11**.
@@ -20,7 +20,7 @@ These functions may become slower due to **Scoped Storage**'s inherent latency, 
 
 This impact encompasses tasks like deleting chapters, library loading times, accessing folders outside data directories for downloads and reading, and more.
 
-## Enhancing Performance
+## Enhancing performance
 For potential performance improvements, consider utilizing the following ADB command if you are comfortable with it.
 
 ```bash
