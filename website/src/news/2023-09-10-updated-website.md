@@ -2,7 +2,7 @@
 type: article
 title: Updated website
 description: We've got a fresh new website we hope will be even easier to use
-date: 2023-09-09
+date: 2023-09-10
 ---
 
 # Updated website

@@ -6,6 +6,15 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
 	dateStyle: "medium",
 	timeZone: "UTC",
 })
+
+function formatDate(date: string) {
+	const [year, month, day] = date
+		.substring(0, 10)
+		.split("-")
+		.map((number) => Number.parseInt(number, 10))
+	const utcDate = Date.UTC(year, month - 1, day)
+	return dateFormatter.format(utcDate)
+}
 </script>
 
 <template>
@@ -23,7 +32,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
 				<div class="background" />
 			</h3>
 			<time :datetime="news.date">
-				{{ dateFormatter.format(new Date(news.date)) }}
+				{{ formatDate(news.date) }}
 			</time>
 		</div>
 		<p>{{ news.description }}</p>
