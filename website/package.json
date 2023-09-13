@@ -44,7 +44,7 @@
 		"moment": "2.29.4"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "0.41.0",
+		"@antfu/eslint-config": "0.41.3",
 		"@mdit/plugin-attrs": "0.4.8",
 		"@mdit/plugin-figure": "0.4.8",
 		"@mdit/plugin-img-lazyload": "0.4.8",
