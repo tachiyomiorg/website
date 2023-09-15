@@ -24,7 +24,6 @@ export interface Source {
 	id: string
 	baseUrl: string
 	versionId: number
-	hasCloudflare: string
 }
 
 type UseExtensionsRepositoryQueryOptions<S = Extension[]> =
