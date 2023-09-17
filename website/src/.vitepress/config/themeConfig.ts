@@ -52,7 +52,7 @@ const themeConfig: DefaultTheme.Config = {
 	},
 
 	editLink: {
-		pattern: "https://github.com/xhenos/kodo/edit/v3-vitepress/website/src/:path",
+		pattern: "https://github.com/tachiyomiorg/website/edit/main/website/src/:path",
 		text: "Help us improve this page",
 	},
 
