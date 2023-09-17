@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@iconify-prerendered/vue-mdi':
     specifier: 0.23.1689058119
@@ -121,8 +125,8 @@ devDependencies:
     specifier: 1.0.0-rc.14
     version: 1.0.0-rc.14(@algolia/client-search@4.20.0)(@types/node@20.6.2)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0)
   vitepress-plugin-tabs:
-    specifier: 0.3.0
-    version: 0.3.0(vitepress@1.0.0-rc.14)(vue@3.3.4)
+    specifier: 0.4.0
+    version: 0.4.0(vitepress@1.0.0-rc.14)(vue@3.3.4)
   vue:
     specifier: 3.3.4
     version: 3.3.4
@@ -5537,10 +5541,10 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress-plugin-tabs@0.3.0(vitepress@1.0.0-rc.14)(vue@3.3.4):
-    resolution: {integrity: sha512-3dKsBuP6PDzcFHgUtNCwwCs3bYoZduj7AcQkT9JfAKTRAKPCNmjiNInPT3IZ7AihL0SJNoQ3liz/e97z8oo+XA==}
+  /vitepress-plugin-tabs@0.4.0(vitepress@1.0.0-rc.14)(vue@3.3.4):
+    resolution: {integrity: sha512-INHkt9xBLE/lNv+5e/l6PVWkvuEjwlTrp06bKjgGADbpC7z+lIvNYRcvQigGQs9EZYzcCgUJzBUZf0m1P+nBbw==}
     peerDependencies:
-      vitepress: ^1.0.0-beta.2
+      vitepress: ^1.0.0-rc.14
       vue: ^3.3.4
     dependencies:
       vitepress: 1.0.0-rc.14(@algolia/client-search@4.20.0)(@types/node@20.6.2)(axios@1.5.0)(search-insights@2.8.2)(stylus@0.60.0)
@@ -5794,7 +5798,3 @@ packages:
   /yoga-wasm-web@0.3.3:
     resolution: {integrity: sha512-N+d4UJSJbt/R3wqY7Coqs5pcV0aUj2j9IaQ3rNj9bVCLld8tTGKRa2USARjnvZJWVx1NDmQev8EknoczaOQDOA==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
