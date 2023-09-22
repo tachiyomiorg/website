@@ -101,8 +101,8 @@ devDependencies:
     specifier: 0.31.1
     version: 0.31.1
   markdownlint-cli:
-    specifier: 0.36.0
-    version: 0.36.0
+    specifier: 0.37.0
+    version: 0.37.0
   sentences-per-line:
     specifier: 0.2.1
     version: 0.2.1
@@ -4105,8 +4105,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /markdownlint-cli@0.36.0:
-    resolution: {integrity: sha512-h4WdqOam3+QOVOcJSOQuG8KvvN8dlS0OiJhbPwYWBk7VMZR40UtSSMIOpSP5B4EHPHg3W3ILSQUvqg1HNpTCxA==}
+  /markdownlint-cli@0.37.0:
+    resolution: {integrity: sha512-hNKAc0bWBBuVhJbSWbUhRzavstiB4o1jh3JeSpwC4/dt6eJ54lRfYHRxVdzVp4qGWBKbeE6Pg490PFEfrKjqSg==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
@@ -4116,7 +4116,7 @@ packages:
       ignore: 5.2.4
       js-yaml: 4.1.0
       jsonc-parser: 3.2.0
-      markdownlint: 0.30.0
+      markdownlint: 0.31.1
       minimatch: 9.0.3
       run-con: 1.3.2
     dev: true
@@ -4131,14 +4131,6 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       markdown-it: 8.4.2
-    dev: true
-
-  /markdownlint@0.30.0:
-    resolution: {integrity: sha512-nInuFvI/rEzanAOArW5490Ez4EYpB5ODqVM0mcDYCPx9DKJWCQqCgejjiCvbSeE7sjbDscVtZmwr665qpF5xGA==}
-    engines: {node: '>=16'}
-    dependencies:
-      markdown-it: 13.0.1
-      markdownlint-micromark: 0.1.7
     dev: true
 
   /markdownlint@0.31.1:
