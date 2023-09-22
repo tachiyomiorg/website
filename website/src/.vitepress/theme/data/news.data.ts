@@ -18,10 +18,10 @@ export default createContentLoader("news/*.md", {
 			.map(
 				({ frontmatter, url }) =>
 					<News>{
-						title: frontmatter.title,
-						description: frontmatter.description,
-						date: frontmatter.date,
-						url,
+					  title: frontmatter.title,
+					  description: frontmatter.description,
+					  date: frontmatter.date,
+					  url,
 					},
 			)
 			.sort((a, b) => b.date.localeCompare(a.date))
