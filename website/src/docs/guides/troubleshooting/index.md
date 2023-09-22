@@ -4,10 +4,6 @@ titleTemplate: Guides
 description: Facing source or app issues? Here's how to troubleshoot.
 ---
 
-<script setup>
-const userAgent = navigator.userAgent;
-</script>
-
 # Troubleshooting
 
 Facing source or app issues? Here's how to troubleshoot.
@@ -84,13 +80,8 @@ While some sources have specific user agent strings, most rely on the app's defa
 ::: info Changing your user agent
 1. Navigate to <nav to="advanced">.
 1. Modify **Default user agent string** to another value. You may need to experiment to find one that works.
+	> [Here's a reference](https://www.whatismybrowser.com/guides/the-latest-user-agent/).
 1. Restart the app and retry source access.
-:::
-
-::: tip User agent strings
-Your current user agent: `{{userAgent}}`
-
-You can also refer to [this website](https://www.whatismybrowser.com/guides/the-latest-user-agent/) for more references.
 :::
 
 ::: tip Did these methods not work?
