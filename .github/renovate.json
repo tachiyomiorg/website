@@ -11,7 +11,7 @@
 	],
 	"packageRules": [
 		{
-			"groupName": "maintenance",
+			"groupName": "dependencies",
 			"matchUpdateTypes": ["minor", "patch", "pin", "digest"]
 		}
 	],
