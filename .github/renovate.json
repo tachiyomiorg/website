@@ -2,9 +2,18 @@
 	"extends": [
 		"config:base"
 	],
-	"schedule": ["every sunday"],
 	"ignoreDeps": [
 		"vue monorepo",
 		"vue"
-	]
+	],
+	"labels": [
+		"Dependencies"
+	],
+	"packageRules": [
+		{
+			"groupName": "maintenance",
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+		}
+	],
+	"schedule": ["every sunday"]
 }
