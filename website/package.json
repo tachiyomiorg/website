@@ -34,7 +34,7 @@
 		"@iconify-prerendered/vue-mdi": "0.23.1689058119",
 		"@octokit/rest": "20.0.2",
 		"@octokit/types": "12.0.0",
-		"@tanstack/vue-query": "4.35.6",
+		"@tanstack/vue-query": "4.35.7",
 		"@vueuse/core": "10.4.1",
 		"axios": "1.5.1",
 		"element-plus": "2.3.14",
