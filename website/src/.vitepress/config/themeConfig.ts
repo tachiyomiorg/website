@@ -27,9 +27,9 @@ const themeConfig: DefaultTheme.Config = {
 			ariaLabel: "Discord Server",
 		},
 		{
-			icon: "twitter",
+			icon: "x",
 			link: "https://twitter.com/tachiyomiorg",
-			ariaLabel: "Twitter Page",
+			ariaLabel: "X Page",
 		},
 		{
 			icon: "facebook",
