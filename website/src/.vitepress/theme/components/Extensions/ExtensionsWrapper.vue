@@ -93,8 +93,10 @@ onMounted(() => {
 watch(extensions, async () => {
 	if (window.location.hash) {
 		await nextTick()
-		document.getElementById(window.location.hash.substring(1))
-			?.scrollIntoView({ behavior: "smooth" })
+		const extElement = document.getElementById(window.location.hash.substring(1))
+
+		extElement?.scrollIntoView({ behavior: "smooth" })
+		extElement?.focus({ preventScroll: true })
 	}
 })
 

@@ -32,7 +32,7 @@ function handleAnalytics() {
 </script>
 
 <template>
-	<div class="extension">
+	<div class="extension" tabindex="-1">
 		<a :href="`#${pkgId}`" class="anchor" aria-hidden="true" @click.stop>#</a>
 		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42">
 		<div class="extension-text">
@@ -67,12 +67,14 @@ function handleAnalytics() {
 	margin: 0.8em -0.5em
 	border-radius: 8px
 	gap: 0.675rem
+	scroll-margin-top: calc(var(--vp-nav-height) + 24px)
 
 	&:hover {
 		background-color: var(--vp-c-bg-soft)
 	}
 
-	&:target {
+	&:target,
+	&:focus {
 		background-color: var(--vp-c-brand-soft)
 		border-radius: 8px
 		transition: 500ms background-color
@@ -86,7 +88,8 @@ function handleAnalytics() {
 		opacity: 0
 	}
 
-	&:hover .anchor {
+	&:hover .anchor
+	.anchor:focus-visible {
 		opacity: 1
 	}
 
