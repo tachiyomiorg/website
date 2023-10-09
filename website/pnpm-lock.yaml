@@ -15,8 +15,8 @@ dependencies:
     specifier: 12.0.0
     version: 12.0.0
   '@tanstack/vue-query':
-    specifier: 4.36.1
-    version: 4.36.1(vue@3.3.4)
+    specifier: 4.36.2
+    version: 4.36.2(vue@3.3.4)
   '@vueuse/core':
     specifier: 10.5.0
     version: 10.5.0(vue@3.3.4)
@@ -131,8 +131,8 @@ devDependencies:
     specifier: 3.3.4
     version: 3.3.4
   vue-eslint-parser:
-    specifier: 9.3.1
-    version: 9.3.1(eslint@8.51.0)
+    specifier: 9.3.2
+    version: 9.3.2(eslint@8.51.0)
   x-satori:
     specifier: 0.1.5
     version: 0.1.5
@@ -1206,8 +1206,8 @@ packages:
     resolution: {integrity: sha512-DJSilV5+ytBP1FbFcEJovv4rnnm/CokuVvrBEtW/Va9DvuJ3HksbXUJEpI0aV1KtuL4ZoO9AVE6PyNLzF7tLeA==}
     dev: false
 
-  /@tanstack/vue-query@4.36.1(vue@3.3.4):
-    resolution: {integrity: sha512-+dS/+Xb5OL0bdy8iurT2U4oX9R5T+eUJCK3JHIn6JAQKcVk+Zp09uVzF/dwy1Xe/8Xhy593vcr+wWc9fMrsAPQ==}
+  /@tanstack/vue-query@4.36.2(vue@3.3.4):
+    resolution: {integrity: sha512-zZjP1q7Fe+tmvZeJeQ9v56VQ4VgyafdjjCRaYxLNHDBlXB+fpqP4kWhUfTKQEDHSAyzrtX8Bk789jg/yUPyIKQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.2
       vue: ^2.5.0 || ^3.0.0
@@ -2993,7 +2993,7 @@ packages:
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.13
       semver: 7.5.4
-      vue-eslint-parser: 9.3.1(eslint@8.51.0)
+      vue-eslint-parser: 9.3.2(eslint@8.51.0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -5793,8 +5793,8 @@ packages:
     dependencies:
       vue: 3.3.4
 
-  /vue-eslint-parser@9.3.1(eslint@8.51.0):
-    resolution: {integrity: sha512-Clr85iD2XFZ3lJ52/ppmUDG/spxQu6+MAeHXjjyI4I1NUYZ9xmenQp4N0oaHJhrA8OOxltCVxMRfANGa70vU0g==}
+  /vue-eslint-parser@9.3.2(eslint@8.51.0):
+    resolution: {integrity: sha512-q7tWyCVaV9f8iQyIA5Mkj/S6AoJ9KBN8IeUSf3XEmBrOtxOZnfTg5s4KClbZBCK3GtnT/+RyCLZyDHuZwTuBjg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
