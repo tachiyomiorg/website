@@ -80,6 +80,10 @@ function handleAnalytics() {
 		transition: 500ms background-color
 	}
 
+	&:focus {
+		outline: none
+	}
+
 	.anchor {
 		position: absolute
 		left: 0
@@ -103,6 +107,7 @@ function handleAnalytics() {
 		min-width: 0
 
 		.upper {
+			color: var(--vp-c-text-1)
 			font-weight: 600
 			overflow: hidden
 			text-overflow: ellipsis
@@ -114,14 +119,13 @@ function handleAnalytics() {
 		}
 
 		.lower {
-			margin-top: 0.25rem
-			color: #6c757d
+			color: var(--vp-c-text-2)
 			font-family: var(--vp-font-family-mono)
-			font-size: 0.9rem
+			font-size: 0.75rem
 			overflow: hidden
 			text-overflow: ellipsis
 			white-space: nowrap
-			line-height: 16px
+			line-height: 1rem
 		}
 	}
 
