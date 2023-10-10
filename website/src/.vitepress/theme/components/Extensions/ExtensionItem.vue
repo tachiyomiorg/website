@@ -32,7 +32,7 @@ function handleAnalytics() {
 </script>
 
 <template>
-	<div class="extension">
+	<div class="extension" tabindex="-1">
 		<a :href="`#${pkgId}`" class="anchor" aria-hidden="true" @click.stop>#</a>
 		<img class="extension-icon" :src="iconUrl" loading="lazy" width="42" height="42">
 		<div class="extension-text">
@@ -67,15 +67,21 @@ function handleAnalytics() {
 	margin: 0.8em -0.5em
 	border-radius: 8px
 	gap: 0.675rem
+	scroll-margin-top: calc(var(--vp-nav-height) + 24px)
 
 	&:hover {
 		background-color: var(--vp-c-bg-soft)
 	}
 
-	&:target {
+	&:target,
+	&:focus {
 		background-color: var(--vp-c-brand-soft)
 		border-radius: 8px
 		transition: 500ms background-color
+	}
+
+	&:focus {
+		outline: none
 	}
 
 	.anchor {
@@ -86,7 +92,8 @@ function handleAnalytics() {
 		opacity: 0
 	}
 
-	&:hover .anchor {
+	&:hover .anchor
+	.anchor:focus-visible {
 		opacity: 1
 	}
 
@@ -100,6 +107,7 @@ function handleAnalytics() {
 		min-width: 0
 
 		.upper {
+			color: var(--vp-c-text-1)
 			font-weight: 600
 			overflow: hidden
 			text-overflow: ellipsis
@@ -111,14 +119,13 @@ function handleAnalytics() {
 		}
 
 		.lower {
-			margin-top: 0.25rem
-			color: #6c757d
+			color: var(--vp-c-text-2)
 			font-family: var(--vp-font-family-mono)
-			font-size: 0.9rem
+			font-size: 0.75rem
 			overflow: hidden
 			text-overflow: ellipsis
 			white-space: nowrap
-			line-height: 16px
+			line-height: 1rem
 		}
 	}
 
