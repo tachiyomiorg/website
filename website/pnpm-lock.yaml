@@ -95,8 +95,8 @@ devDependencies:
     specifier: 4.2.2
     version: 4.2.2
   lint-staged:
-    specifier: 15.0.0
-    version: 15.0.0
+    specifier: 15.0.1
+    version: 15.0.1
   markdownlint:
     specifier: 0.31.1
     version: 0.31.1
@@ -3967,8 +3967,8 @@ packages:
     dependencies:
       uc.micro: 1.0.6
 
-  /lint-staged@15.0.0:
-    resolution: {integrity: sha512-OdrAd/qZhO4MnPyNRehI1Fh6j8kcfQoGpjQ1Vw8dSkDkNONdqe/HpKXqtKpFIPCAYeF4/tfnE11MnjLYuLKjqA==}
+  /lint-staged@15.0.1:
+    resolution: {integrity: sha512-2IU5OWmCaxch0X0+IBF4/v7sutpB+F3qoXbro43pYjQTOo5wumckjxoxn47pQBqqBsCWrD5HnI2uG/zJA7isew==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
