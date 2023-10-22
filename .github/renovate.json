@@ -2,10 +2,6 @@
 	"extends": [
 		"config:base"
 	],
-	"ignoreDeps": [
-		"vue monorepo",
-		"vue"
-	],
 	"labels": [
 		"Dependencies"
 	],
