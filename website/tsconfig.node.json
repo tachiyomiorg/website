@@ -3,8 +3,8 @@
     "composite": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "allowSyntheticDefaultImports": true
   },
   "exclude": ["**/node_modules/**", "dist/**"]
 }

@@ -1,41 +1,41 @@
 <script setup lang="ts">
-import { inject, onMounted, ref } from "vue"
-import { useData } from "vitepress"
+import { inject, onMounted, ref } from 'vue'
+import { useData } from 'vitepress'
 
-import VPIconMoon from "vitepress/dist/client/theme-default/components/icons/VPIconMoon.vue"
-import VPIconSun from "vitepress/dist/client/theme-default/components/icons/VPIconSun.vue"
+import VPIconMoon from 'vitepress/dist/client/theme-default/components/icons/VPIconMoon.vue'
+import VPIconSun from 'vitepress/dist/client/theme-default/components/icons/VPIconSun.vue'
 
 const { isDark } = useData()
 
-const toggleAppearance = inject("toggle-appearance", () => {
-	isDark.value = !isDark.value
+const toggleAppearance = inject('toggle-appearance', () => {
+  isDark.value = !isDark.value
 })
 
 const supportsViewTransition = ref(false)
 
 onMounted(() => {
-	supportsViewTransition.value = "startViewTransition" in document
-		&& window.matchMedia("(prefers-reduced-motion: no-preference)").matches
+  supportsViewTransition.value = 'startViewTransition' in document
+		&& window.matchMedia('(prefers-reduced-motion: no-preference)').matches
 })
 </script>
 
 <template>
-	<button
-		type="button"
-		role="switch"
-		title="Toggle dark mode"
-		class="CustomSwitchAppearance"
-		:aria-checked="isDark"
-		:data-view-transition="supportsViewTransition"
-		@click="toggleAppearance"
-	>
-		<ClientOnly>
-			<Transition name="fade" mode="out-in">
-				<VPIconSun v-if="!isDark" class="sun" />
-				<VPIconMoon v-else class="moon" />
-			</Transition>
-		</ClientOnly>
-	</button>
+  <button
+    type="button"
+    role="switch"
+    title="Toggle dark mode"
+    class="CustomSwitchAppearance"
+    :aria-checked="isDark"
+    :data-view-transition="supportsViewTransition"
+    @click="toggleAppearance"
+  >
+    <ClientOnly>
+      <Transition name="fade" mode="out-in">
+        <VPIconSun v-if="!isDark" class="sun" />
+        <VPIconMoon v-else class="moon" />
+      </Transition>
+    </ClientOnly>
+  </button>
 </template>
 
 <style lang="stylus" scoped>

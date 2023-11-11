@@ -1,87 +1,88 @@
 {
-	"name": "tachiyomi-website",
-	"version": "3.0.0",
-	"description": "Official website for the Tachiyomi app.",
-	"license": "MPL-2.0",
-	"private": true,
-	"type": "module",
-	"engines": {
-		"node": ">=20",
-		"pnpm": ">=8"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/tachiyomiorg/website.git"
-	},
-	"bugs": {
-		"url": "https://github.com/tachiyomiorg/website/issues"
-	},
-	"scripts": {
-		"preinstall": "npx only-allow pnpm",
-		"test": "pnpm lint && pnpm build && pnpm preview",
-		"dev": "vitepress dev src",
-		"build": "vitepress build src",
-		"preview": "vitepress preview src",
-		"lint": "pnpm lint:es && pnpm lint:mdl && pnpm lint:style",
-		"lint:fix": "pnpm lint:es:fix && pnpm lint:style:fix",
-		"lint:es": "eslint . --ext .vue,.js,.ts,.cjs,.mjs,.jsx,.tsx",
-		"lint:es:fix": "eslint . --ext .vue,.js,.ts,.cjs,.mjs,.jsx,.tsx --fix",
-		"lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033",
-		"lint:style": "stylelint \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\"",
-		"lint:style:fix": "stylelint --fix \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\""
-	},
-	"dependencies": {
-		"@iconify-prerendered/vue-mdi": "0.23.1698215149",
-		"@octokit/rest": "20.0.2",
-		"@octokit/types": "12.2.0",
-		"@tanstack/vue-query": "5.8.1",
-		"@vueuse/core": "10.6.0",
-		"axios": "1.6.1",
-		"element-plus": "2.4.2",
-		"lodash.groupby": "4.6.0",
-		"markdown-it": "13.0.2",
-		"markdown-it-shortcode-tag": "1.1.0",
-		"moment": "2.29.4"
-	},
-	"devDependencies": {
-		"@antfu/eslint-config": "1.1.1",
-		"@mdit/plugin-attrs": "0.6.5",
-		"@mdit/plugin-figure": "0.6.5",
-		"@mdit/plugin-img-lazyload": "0.6.5",
-		"@mdit/plugin-img-mark": "0.6.5",
-		"@mdit/plugin-img-size": "0.6.5",
-		"@mdit/plugin-include": "0.6.5",
-		"@resvg/resvg-js": "2.6.0",
-		"@types/gtag.js": "0.0.18",
-		"@types/lodash.groupby": "4.6.9",
-		"@types/markdown-it": "13.0.6",
-		"@types/node": "20.9.0",
-		"@typescript-eslint/eslint-plugin": "6.10.0",
-		"@typescript-eslint/parser": "6.10.0",
-		"eslint": "8.53.0",
-		"eslint-config-standard": "17.1.0",
-		"eslint-plugin-vue": "9.18.1",
-		"feed": "4.2.2",
-		"lint-staged": "15.0.2",
-		"markdownlint": "0.31.1",
-		"markdownlint-cli": "0.37.0",
-		"sentences-per-line": "0.2.1",
-		"stylelint": "15.11.0",
-		"stylelint-stylus": "0.18.0",
-		"stylus": "0.61.0",
-		"unplugin-element-plus": "0.8.0",
-		"vite-plugin-eslint": "1.8.1",
-		"vitepress": "1.0.0-rc.25",
-		"vitepress-plugin-tabs": "0.4.1",
-		"vue": "3.3.8",
-		"vue-eslint-parser": "9.3.2",
-		"x-satori": "0.1.5"
-	},
-	"simple-git-hooks": {
-		"pre-commit": "pnpm lint-staged"
-	},
-	"lint-staged": {
-		"*.{styl,vue}": "stylelint --fix",
-		"*.{html,json}": "prettier --write"
-	}
+  "name": "tachiyomi-website",
+  "type": "module",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Official website for the Tachiyomi app.",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tachiyomiorg/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tachiyomiorg/website/issues"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "pnpm lint && pnpm build && pnpm preview",
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src",
+    "lint": "pnpm lint:es && pnpm lint:mdl && pnpm lint:style",
+    "lint:fix": "pnpm lint:es:fix && pnpm lint:style:fix",
+    "lint:es": "eslint . ",
+    "lint:es:fix": "eslint . --fix",
+    "lint:mdl": "markdownlint \"**/*.md\" \".github/**/*.md\" --enable sentences-per-line --disable MD025 MD033",
+    "lint:style": "stylelint \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\"",
+    "lint:style:fix": "stylelint --fix \"**/*.{styl,vue}\" \"src/.vitepress/**/*.{styl,vue}\""
+  },
+  "dependencies": {
+    "@iconify-prerendered/vue-mdi": "0.23.1698215149",
+    "@octokit/rest": "20.0.2",
+    "@octokit/types": "12.2.0",
+    "@tanstack/vue-query": "5.8.1",
+    "@vueuse/core": "10.6.0",
+    "axios": "1.6.1",
+    "element-plus": "2.4.2",
+    "lodash.groupby": "4.6.0",
+    "markdown-it": "13.0.2",
+    "markdown-it-shortcode-tag": "1.1.0",
+    "moment": "2.29.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^1.1.1",
+    "@eslint/eslintrc": "^2.1.3",
+    "@mdit/plugin-attrs": "0.6.5",
+    "@mdit/plugin-figure": "0.6.5",
+    "@mdit/plugin-img-lazyload": "0.6.5",
+    "@mdit/plugin-img-mark": "0.6.5",
+    "@mdit/plugin-img-size": "0.6.5",
+    "@mdit/plugin-include": "0.6.5",
+    "@resvg/resvg-js": "2.6.0",
+    "@types/gtag.js": "0.0.18",
+    "@types/lodash.groupby": "4.6.9",
+    "@types/markdown-it": "13.0.6",
+    "@types/node": "20.9.0",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
+    "eslint": "8.53.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-vue": "9.18.1",
+    "feed": "4.2.2",
+    "lint-staged": "15.0.2",
+    "markdownlint": "0.31.1",
+    "markdownlint-cli": "0.37.0",
+    "sentences-per-line": "0.2.1",
+    "stylelint": "15.11.0",
+    "stylelint-stylus": "0.18.0",
+    "stylus": "0.61.0",
+    "unplugin-element-plus": "0.8.0",
+    "vite-plugin-eslint": "1.8.1",
+    "vitepress": "1.0.0-rc.25",
+    "vitepress-plugin-tabs": "0.4.1",
+    "vue": "3.3.8",
+    "vue-eslint-parser": "9.3.2",
+    "x-satori": "0.1.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{styl,vue}": "stylelint --fix",
+    "*.{html,json}": "prettier --write"
+  }
 }

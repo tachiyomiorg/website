@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { IconRssBox } from "@iconify-prerendered/vue-mdi"
+import { IconRssBox } from '@iconify-prerendered/vue-mdi'
 </script>
 
 <template>
-	<a href="/feed.rss" class="rss" title="RSS feed for the news archive">
-		<IconRssBox />
-		<span>RSS feed</span>
-	</a>
+  <a href="/feed.rss" class="rss" title="RSS feed for the news archive">
+    <IconRssBox />
+    <span>RSS feed</span>
+  </a>
 </template>
 
 <style lang="stylus" scoped>
