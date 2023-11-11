@@ -92,7 +92,7 @@ function handleAnalytics() {
 		opacity: 0
 	}
 
-	&:hover .anchor
+	&:hover .anchor,
 	.anchor:focus-visible {
 		opacity: 1
 	}
