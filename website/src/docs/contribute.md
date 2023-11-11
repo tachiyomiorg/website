@@ -16,7 +16,9 @@ Know how to code and want to improve something or you generally want to support 
 [![tachiyomiorg/website - GitHub](https://gh-card.dev/repos/tachiyomiorg/website.svg)](https://github.com/tachiyomiorg/website)
 
 ## Translation
-![Graph of Weblate Translations](https://hosted.weblate.org/widgets/tachiyomi/-/strings/open-graph.png)
+![Translation stats](https://hosted.weblate.org/widget/tachiyomi/strings/287x66-grey.png)
+
+![Translation progress](https://hosted.weblate.org/widget/tachiyomi/strings/horizontal-auto.svg)
 
 Want to help translate the app to your language? You can easily help by utilizing a service we use called **Weblate**.
 
