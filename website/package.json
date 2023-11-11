@@ -18,7 +18,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "test": "pnpm lint && pnpm build && pnpm preview",
+    "test": "pnpm lint && pnpm build",
     "dev": "vitepress dev src",
     "build": "vitepress build src",
     "preview": "vitepress preview src",
