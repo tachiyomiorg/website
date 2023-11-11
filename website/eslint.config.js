@@ -17,6 +17,7 @@ export default antfu({
     'node_modules/**',
     '!docs/.vitepress/**',
     'docs/.vitepress/cache/**',
+    '.netlify/**',
   ],
 
   typescript: true,
