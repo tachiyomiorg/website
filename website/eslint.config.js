@@ -19,6 +19,9 @@ export default antfu({
     'docs/.vitepress/cache/**',
   ],
 
+  typescript: true,
+  vue: true,
+
   ...compat.config({
     rules: {
       'comma-dangle': ['error', 'only-multiline'],

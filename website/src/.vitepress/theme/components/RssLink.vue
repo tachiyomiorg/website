@@ -11,17 +11,17 @@ import { IconRssBox } from '@iconify-prerendered/vue-mdi'
 
 <style lang="stylus" scoped>
 .rss {
-	& > * {
-		vertical-align: middle
-		position: relative
-		bottom: 1px
-	}
+  & > * {
+    vertical-align: middle
+    position: relative
+    bottom: 1px
+  }
 
-	svg {
-		width: 1em
-		height: 1em
-		display: inline-block
-		margin-right: 4px
-	}
+  svg {
+    width: 1em
+    height: 1em
+    display: inline-block
+    margin-right: 4px
+  }
 }
 </style>

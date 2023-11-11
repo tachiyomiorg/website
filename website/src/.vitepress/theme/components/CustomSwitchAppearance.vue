@@ -15,7 +15,7 @@ const supportsViewTransition = ref(false)
 
 onMounted(() => {
   supportsViewTransition.value = 'startViewTransition' in document
-		&& window.matchMedia('(prefers-reduced-motion: no-preference)').matches
+        && window.matchMedia('(prefers-reduced-motion: no-preference)').matches
 })
 </script>
 
@@ -40,35 +40,35 @@ onMounted(() => {
 
 <style lang="stylus" scoped>
 .CustomSwitchAppearance {
-	display: flex
-	justify-content: center
-	align-items: center
-	width: 36px
-	height: 36px
-	color: var(--vp-c-text-2)
-	transition: color 0.5s
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 36px
+  height: 36px
+  color: var(--vp-c-text-2)
+  transition: color 0.5s
 
-	&:hover {
-		color: var(--vp-c-text-1)
-		transition: color 0.25s
-	}
+  &:hover {
+    color: var(--vp-c-text-1)
+    transition: color 0.25s
+  }
 
-	& > :deep(svg) {
-		width: 20px
-		height: 20px
-		fill: currentColor
-	}
+  & > :deep(svg) {
+    width: 20px
+    height: 20px
+    fill: currentColor
+  }
 
-	&[data-view-transition="false"] {
-		.fade-enter-active,
-		.fade-leave-active {
-			transition: opacity 0.1s ease
-		}
+  &[data-view-transition="false"] {
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 0.1s ease
+    }
 
-		.fade-enter-from,
-		.fade-leave-to {
-			opacity: 0
-		}
-	}
+    .fade-enter-from,
+    .fade-leave-to {
+      opacity: 0
+    }
+  }
 }
 </style>

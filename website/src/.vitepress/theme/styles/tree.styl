@@ -1,99 +1,99 @@
 .tree {
-	border-radius: 8px
-	margin: 16px
-	padding: 16px
-	color: var(--vp-c-text-1)
-	// background-color: var(--vp-code-block-bg)
-	font-family: var(--vp-font-family-mono)
-	font-size: 0.85rem
-	line-height: 1.5
+  border-radius: 8px
+  margin: 16px
+  padding: 16px
+  color: var(--vp-c-text-1)
+  // background-color: var(--vp-code-block-bg)
+  font-family: var(--vp-font-family-mono)
+  font-size: 0.85rem
+  line-height: 1.5
 
-	& > ul {
-		margin: 0
-	}
+  & > ul {
+    margin: 0
+  }
 
-	li {
-		& + li {
-			margin-top: 0
-		}
-	}
+  li {
+    & + li {
+      margin-top: 0
+    }
+  }
 
-	span {
-		&.folder {
-			&.root,
-			&.main {
-				color: var(--vp-c-brand-darker)
-			}
-		}
+  span {
+    &.folder {
+      &.root,
+      &.main {
+        color: var(--vp-c-brand-darker)
+      }
+    }
 
-		&.file.zip {
-			color: var(--vp-c-brand-darker) !important
-		}
+    &.file.zip {
+      color: var(--vp-c-brand-darker) !important
+    }
 
-		&.file {
-			.file-extension {
-				color: var(--vp-c-text-2)
-			}
-		}
-	}
+    &.file {
+      .file-extension {
+        color: var(--vp-c-text-2)
+      }
+    }
+  }
 
-	ul {
-		padding-left: 5px
-		list-style: none
+  ul {
+    padding-left: 5px
+    list-style: none
 
-		li {
-			position: relative
-			padding-left: 15px
-			-webkit-box-sizing: border-box
-			-moz-box-sizing: border-box
-			box-sizing: border-box
+    li {
+      position: relative
+      padding-left: 15px
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
 
-			&:before {
-				top: 15px
-				left: 0
-				width: 10px
-				height: 1px
-				margin: auto
-			}
+      &:before {
+        top: 15px
+        left: 0
+        width: 10px
+        height: 1px
+        margin: auto
+      }
 
-			&:after {
-				top: 0
-				bottom: 0
-				left: 0
-				width: 1px
-				height: 100%
-			}
+      &:after {
+        top: 0
+        bottom: 0
+        left: 0
+        width: 1px
+        height: 100%
+      }
 
-			&:before,
-			&:after {
-				position: absolute
-				content: ''
-				background-color: var(--vp-c-text-3)
-			}
+      &:before,
+      &:after {
+        position: absolute
+        content: ''
+        background-color: var(--vp-c-text-3)
+      }
 
-			&:last-child {
-				&:after {
-					height: 15px
-				}
-			}
-		}
-	}
+      &:last-child {
+        &:after {
+          height: 15px
+        }
+      }
+    }
+  }
 
-	&-icon {
-		height: 12px
-		width: 12px
-		margin-right: 6px
-		display: inline-block
-	}
+  &-icon {
+    height: 12px
+    width: 12px
+    margin-right: 6px
+    display: inline-block
+  }
 }
 
 .dark {
-	.tree {
-		span {
-			&.folder,
-			&.file.zip {
-				color: var(--vp-c-brand-lighter) !important
-			}
-		}
-	}
+  .tree {
+    span {
+      &.folder,
+      &.file.zip {
+        color: var(--vp-c-brand-lighter) !important
+      }
+    }
+  }
 }

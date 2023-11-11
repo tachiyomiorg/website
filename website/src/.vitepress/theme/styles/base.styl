@@ -10,14 +10,14 @@
 $themeColor = #818cf8
 
 :root {
-	--vp-c-brand: $themeColor
-	--vp-c-brand-light: tint($themeColor, 20%)
-	--vp-c-brand-lighter: tint($themeColor, 40%)
-	--vp-c-brand-lightest: tint($themeColor, 60%)
-	--vp-c-brand-dark: shade($themeColor, 25%)
-	--vp-c-brand-darker: shade($themeColor, 50%)
-	--vp-c-brand-darkest: shade($themeColor, 75%)
-	--vp-c-brand-dimm: alpha($themeColor, 0.08)
+  --vp-c-brand: $themeColor
+  --vp-c-brand-light: tint($themeColor, 20%)
+  --vp-c-brand-lighter: tint($themeColor, 40%)
+  --vp-c-brand-lightest: tint($themeColor, 60%)
+  --vp-c-brand-dark: shade($themeColor, 25%)
+  --vp-c-brand-darker: shade($themeColor, 50%)
+  --vp-c-brand-darkest: shade($themeColor, 75%)
+  --vp-c-brand-dimm: alpha($themeColor, 0.08)
 }
 
 /**
@@ -25,23 +25,23 @@ $themeColor = #818cf8
  * -------------------------------------------------------------------------- */
 
 html:not(.dark) {
-	img[data-mode="darkmode-only"] {
-		display: none !important
+  img[data-mode="darkmode-only"] {
+    display: none !important
 
-		& + figcaption {
-			display: none !important
-		}
-	}
+    & + figcaption {
+      display: none !important
+    }
+  }
 }
 
 .dark {
-	img[data-mode="lightmode-only"] {
-		display: none !important
+  img[data-mode="lightmode-only"] {
+    display: none !important
 
-		& + figcaption {
-			display: none !important
-		}
-	}
+    & + figcaption {
+      display: none !important
+    }
+  }
 }
 
 /**
@@ -49,7 +49,7 @@ html:not(.dark) {
  * -------------------------------------------------------------------------- */
 
 :root {
-	--vp-button-brand-bg: var(--vp-c-brand-darker)
+  --vp-button-brand-bg: var(--vp-c-brand-darker)
 }
 
 /**
@@ -57,32 +57,32 @@ html:not(.dark) {
  * -------------------------------------------------------------------------- */
 
 :root {
-	--vp-home-hero-name-color: transparent
-	--vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--vp-c-brand) 30%, var(--vp-c-brand-dark))
-	--vp-home-hero-image-background-image: linear-gradient(-45deg, var(--vp-c-brand-light) 50%, var(--vp-c-brand-lighter) 50%)
-	--vp-home-hero-image-filter: blur(40px)
+  --vp-home-hero-name-color: transparent
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--vp-c-brand) 30%, var(--vp-c-brand-dark))
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--vp-c-brand-light) 50%, var(--vp-c-brand-lighter) 50%)
+  --vp-home-hero-image-filter: blur(40px)
 }
 
 .dark {
-	--vp-home-hero-image-background-image: linear-gradient(-45deg, var(--vp-c-brand-darker) 25%, var(--vp-c-brand-darkest) 25%)
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--vp-c-brand-darker) 25%, var(--vp-c-brand-darkest) 25%)
 }
 
 @media (min-width 640px) {
-	:root {
-		--vp-home-hero-image-filter: blur(56px)
-	}
+  :root {
+    --vp-home-hero-image-filter: blur(56px)
+  }
 }
 
 @media (min-width 960px) {
-	:root {
-		--vp-home-hero-image-filter: blur(72px)
-	}
+  :root {
+    --vp-home-hero-image-filter: blur(72px)
+  }
 }
 
 .VPFooter {
-	.divider {
-		color: var(--vp-c-divider)
-	}
+  .divider {
+    color: var(--vp-c-divider)
+  }
 }
 
 /**
@@ -90,22 +90,22 @@ html:not(.dark) {
  * -------------------------------------------------------------------------- */
 
 :root {
-	--vp-custom-block-tip-border: var(--vp-c-brand)
-	--vp-custom-block-tip-text: var(--vp-c-brand-darker)
-	--vp-custom-block-tip-bg: var(--vp-c-brand-dimm)
+  --vp-custom-block-tip-border: var(--vp-c-brand)
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker)
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm)
 }
 
 .dark {
-	--vp-custom-block-tip-border: var(--vp-c-brand)
-	--vp-custom-block-tip-text: var(--vp-c-brand-lightest)
-	--vp-custom-block-tip-bg: var(--vp-c-brand-dimm)
-	--vp-custom-block-info-bg: #212127
+  --vp-custom-block-tip-border: var(--vp-c-brand)
+  --vp-custom-block-tip-text: var(--vp-c-brand-lightest)
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm)
+  --vp-custom-block-info-bg: #212127
 }
 
 .plugin-tabs {
-	&--content {
-		padding: 2rem !important
-	}
+  &--content {
+    padding: 2rem !important
+  }
 }
 
 /**
@@ -113,11 +113,11 @@ html:not(.dark) {
  * -------------------------------------------------------------------------- */
 
 .DocSearch {
-	--docsearch-primary-color: var(--vp-c-brand) !important
+  --docsearch-primary-color: var(--vp-c-brand) !important
 }
 
 .VPImage.image-src {
-	border-radius: 8px
+  border-radius: 8px
 }
 
 /**
@@ -125,12 +125,12 @@ html:not(.dark) {
  */
 
 .VPLocalSearchBox {
-	--vp-local-search-highlight-bg: var(--vp-c-brand-soft)
-	--vp-local-search-highlight-text: var(--vp-c-brand-dark)
+  --vp-local-search-highlight-bg: var(--vp-c-brand-soft)
+  --vp-local-search-highlight-text: var(--vp-c-brand-dark)
 }
 
 .dark .VPLocalSearchBox {
-	--vp-local-search-highlight-text: var(--vp-c-brand-lightest)
+  --vp-local-search-highlight-text: var(--vp-c-brand-lightest)
 }
 
 /**
@@ -140,39 +140,39 @@ html:not(.dark) {
 // Shitty method to give elevation to image - TO BE REPLACED
 
 main figure {
-	margin: 2rem 0
-	transition: transform var(--vp-tt)
+  margin: 2rem 0
+  transition: transform var(--vp-tt)
 
-	img {
-		margin: 0 auto
-		border-radius: 12px
-		box-shadow: 2px 2px 8px 4px var(--vp-c-bg-alt)
-	}
+  img {
+    margin: 0 auto
+    border-radius: 12px
+    box-shadow: 2px 2px 8px 4px var(--vp-c-bg-alt)
+  }
 
-	figcaption {
-		text-align: center
-		margin-top: 1.25rem
-		font-size: 0.875rem
-		color: var(--vp-c-text-2)
-	}
+  figcaption {
+    text-align: center
+    margin-top: 1.25rem
+    font-size: 0.875rem
+    color: var(--vp-c-text-2)
+  }
 
-	& > a .external-link-icon {
-		display: none
-	}
+  & > a .external-link-icon {
+    display: none
+  }
 }
 
 main :where(h1, h2, h3, h4, h5, h6) + figure {
-	margin-top: 1.5rem
+  margin-top: 1.5rem
 }
 
 .custom-block {
-	figure figcaption {
-		color: inherit
-	}
+  figure figcaption {
+    color: inherit
+  }
 
-	&.tip figure img {
-		--vp-c-bg-alt: var(--vp-custom-block-tip-bg)
-	}
+  &.tip figure img {
+    --vp-c-bg-alt: var(--vp-custom-block-tip-bg)
+  }
 }
 
 /**
@@ -180,19 +180,19 @@ main :where(h1, h2, h3, h4, h5, h6) + figure {
  * -------------------------------------------------------------------------- */
 
 @media print {
-	figure:has(img)>a[href^="http://"]:after,
-	figure:has(img)>a[href^="https://"]:after {
-		content: ""
-	}
+  figure:has(img)>a[href^="http://"]:after,
+  figure:has(img)>a[href^="https://"]:after {
+    content: ""
+  }
 }
 
 .vp-doc a {
-	text-decoration: none
+  text-decoration: none
 
-	&:hover {
-		text-decoration: underline
-		text-underline-offset: 2px
-	}
+  &:hover {
+    text-decoration: underline
+    text-underline-offset: 2px
+  }
 }
 
 /**
@@ -200,28 +200,28 @@ main :where(h1, h2, h3, h4, h5, h6) + figure {
  * -------------------------------------------------------------------------- */
 
 .navigation {
-	color: var(--vp-c-green-2)
-	font-weight: 600
+  color: var(--vp-c-green-2)
+  font-weight: 600
 
-	&:hover {
-		color: var(--vp-c-green-1)
-		cursor: default
-	}
+  &:hover {
+    color: var(--vp-c-green-1)
+    cursor: default
+  }
 
-	svg,
-	span.name {
-		vertical-align: middle // Align both SVG and <span> vertically
-		position: relative
-		bottom: 1px
-	}
+  svg,
+  span.name {
+    vertical-align: middle // Align both SVG and <span> vertically
+    position: relative
+    bottom: 1px
+  }
 
-	svg {
-		fill: currentColor
-		height: 1em
-		width: 1em
-		display: inline-block
-		margin-right: 4px
-	}
+  svg {
+    fill: currentColor
+    height: 1em
+    width: 1em
+    display: inline-block
+    margin-right: 4px
+  }
 }
 
 /**
@@ -229,7 +229,7 @@ main :where(h1, h2, h3, h4, h5, h6) + figure {
  */
 
 body {
-	--el-color-primary: var(--vp-c-brand-1)
+  --el-color-primary: var(--vp-c-brand-1)
 }
 
 /**
@@ -237,15 +237,15 @@ body {
  */
 
 .menu + .appearance::before {
-	margin-right: 8px !important
+  margin-right: 8px !important
 }
 
 .appearance + .social-links::before {
-	margin-left: 8px !important
+  margin-left: 8px !important
 }
 
 .VPMenu .CustomSwitchAppearance {
-	margin-right: -8px
+  margin-right: -8px
 }
 
 /**
@@ -253,26 +253,26 @@ body {
  */
 
 .forks .VPFeatures {
-	padding: 2rem 0 !important
+  padding: 2rem 0 !important
 
-	.VPLink:hover {
-		text-decoration: none
-	}
+  .VPLink:hover {
+    text-decoration: none
+  }
 
-	.title {
-		line-height: 24px
-		font-size: 16px
-		font-weight: 600
-		margin: 0
-		border-top: none
-		padding-top: 0
-		letter-spacing: 0
-		color: var(--vp-c-text-1)
-	}
+  .title {
+    line-height: 24px
+    font-size: 16px
+    font-weight: 600
+    margin: 0
+    border-top: none
+    padding-top: 0
+    letter-spacing: 0
+    color: var(--vp-c-text-1)
+  }
 }
 
 @media (min-width 640px) {
-	.forks .item.grid-4 {
-		width: 50% !important
-	}
+  .forks .item.grid-4 {
+    width: 50% !important
+  }
 }

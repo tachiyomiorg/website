@@ -9,7 +9,7 @@ module.exports = {
     'stylus/selector-type-no-unknown': null,
     'stylus/selector-list-comma': 'always',
     'stylus/indentation': [
-      'tab',
+      2,
       {
         indentInsideParens: 'twice',
       },
