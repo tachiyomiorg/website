@@ -45,7 +45,7 @@ You can refer to the following example:
 <div class="tree">
 	<ul>
 		<img src="/img/folder.svg" class="tree-icon icon-folder">
-		<span class="folder root">/sdcard/Tachiyomi/local</span>
+		<span class="folder root">/storage/18F5-2C11/Tachiyomi/local</span>
 		<li>
 			<img src="/img/folder.svg" class="tree-icon icon-folder">
 			<span class="folder main">[the series title]</span>
@@ -86,7 +86,7 @@ You can refer to the following example:
 <div class="tree">
 	<ul>
 		<img src="/img/folder.svg" class="tree-icon icon-folder">
-		<span class="folder root">/storage/18F5-2C11/Tachiyomi/local</span>
+		<span class="folder root">/sdcard/Tachiyomi/local</span>
 		<li>
 			<img src="/img/folder.svg" class="tree-icon icon-folder">
 			<span class="folder main">[the series title]</span>
