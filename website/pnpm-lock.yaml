@@ -12,8 +12,8 @@ dependencies:
     specifier: 20.0.2
     version: 20.0.2
   '@octokit/types':
-    specifier: 12.2.0
-    version: 12.2.0
+    specifier: 12.3.0
+    version: 12.3.0
   '@tanstack/vue-query':
     specifier: 5.8.1
     version: 5.8.1(vue@3.3.8)
@@ -921,7 +921,7 @@ packages:
       '@octokit/core': '>=5'
     dependencies:
       '@octokit/core': 5.0.0
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
     dev: false
 
   /@octokit/plugin-request-log@4.0.0(@octokit/core@5.0.0):
@@ -940,7 +940,7 @@ packages:
       '@octokit/core': '>=5'
     dependencies:
       '@octokit/core': 5.0.0
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
     dev: false
 
   /@octokit/request-error@5.0.0:
@@ -979,8 +979,8 @@ packages:
       '@octokit/openapi-types': 18.0.0
     dev: false
 
-  /@octokit/types@12.2.0:
-    resolution: {integrity: sha512-ZkdHqHJdifVndN7Pha10+qrgAjy3AcG//Vmjr/o5UFuTiYCcMhqDj39Yr9VM9zJ/42KO2xAYhV7cvLnLI9Kvwg==}
+  /@octokit/types@12.3.0:
+    resolution: {integrity: sha512-nJ8X2HRr234q3w/FcovDlA+ttUU4m1eJAourvfUUtwAWeqL8AsyRqfnLvVnYn3NFbUnsmzQCzLNdFerPwdmcDQ==}
     dependencies:
       '@octokit/openapi-types': 19.0.2
     dev: false
