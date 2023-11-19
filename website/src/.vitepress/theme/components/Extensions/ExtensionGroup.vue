@@ -4,7 +4,7 @@ import { langName, simpleLangName } from '../../../config/scripts/languages'
 import type { Extension } from '../../queries/useExtensionsRepositoryQuery'
 import ExtensionItem from './ExtensionItem.vue'
 
-const props = defineProps<{ list: Extension[]; totalCount: number }>()
+const props = defineProps<{ list: Extension[], totalCount: number }>()
 const { list } = toRefs(props)
 
 const groupName = computed(() => {
