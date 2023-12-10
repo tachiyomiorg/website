@@ -39,7 +39,7 @@
     "axios": "1.6.2",
     "element-plus": "2.4.3",
     "lodash.groupby": "4.6.0",
-    "markdown-it": "13.0.2",
+    "markdown-it": "14.0.0",
     "markdown-it-shortcode-tag": "1.1.0",
     "moment": "2.29.4"
   },
