@@ -24,10 +24,10 @@ This page explores some advanced features.
 
 If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
 
-Supported chapter formats are folders with pictures inside (such as `.jpg`, `.png`, etc), `ZIP`/`CBZ`, `RAR`/`CBR` and `EPUB`.
+Supported chapter formats are folders with pictures inside (such as `.jpg`, `.png`, etc) or archive files (`ZIP`/`CBZ`, `RAR`/`CBR`, and `EPUB`).
 But expect better performance with directories and `ZIP`/`CBZ`.
 
-Please note that when using `EPUB` files, that if you would like each chapter of the series to be listed. Then you must split up each chapter into its own `EPUB` file. As one `EPUB` file equals one chapter.
+Note that a single folder or archive file is treated as a single chapter. For Example, Tachiyomi will not automatically split an `EPUB` file containing multiple chapters into separate chapters within the app.
 
 Remember to give the app storage permissions on **Android 6** and newer.
 
