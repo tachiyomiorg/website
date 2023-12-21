@@ -44,18 +44,18 @@ You can refer to the following example:
 == Device Storage
 <div class="tree">
 	<ul>
-		<img src="/img/folder.svg" class="tree-icon icon-folder">
+		<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 		<span class="folder root">/sdcard/Tachiyomi/local</span>
 		<li>
-			<img src="/img/folder.svg" class="tree-icon icon-folder">
+			<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 			<span class="folder main">[the series title]</span>
 			<ul>
 				<li>
-					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+					<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 					<span class="file jpg">cover<span class="file-extension">.jpg</span></span>
 				</li>
 				<li>
-					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 					<span class="folder">chapter_1</span>
 					<ul>
 						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
@@ -63,7 +63,7 @@ You can refer to the following example:
 					</ul>
 				</li>
 				<li>
-					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 					<span class="folder">chapter_2</span>
 					<ul>
 						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
@@ -71,7 +71,7 @@ You can refer to the following example:
 					</ul>
 				</li>
 				<li>
-					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 					<span class="folder">chapter_n</span>
 					<ul>
 						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
@@ -85,18 +85,18 @@ You can refer to the following example:
 == SD Card
 <div class="tree">
 	<ul>
-		<img src="/img/folder.svg" class="tree-icon icon-folder">
+		<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 		<span class="folder root">/storage/18F5-2C11/Tachiyomi/local</span>
 		<li>
-			<img src="/img/folder.svg" class="tree-icon icon-folder">
+			<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 			<span class="folder main">[the series title]</span>
 			<ul>
 				<li>
-					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+					<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 					<span class="file jpg">cover<span class="file-extension">.jpg</span></span>
 				</li>
 				<li>
-					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 					<span class="folder">chapter_1</span>
 					<ul>
 						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
@@ -104,7 +104,7 @@ You can refer to the following example:
 					</ul>
 				</li>
 				<li>
-					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 					<span class="folder">chapter_2</span>
 					<ul>
 						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
@@ -112,7 +112,7 @@ You can refer to the following example:
 					</ul>
 				</li>
 				<li>
-					<img src="/img/folder.svg" class="tree-icon icon-folder">
+					<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 					<span class="folder">chapter_n</span>
 					<ul>
 						<li><span class="file">image_1<span class="file-extension">.ext</span></span></li>
@@ -141,54 +141,54 @@ All images inside the archive regardless of folder structure will become pages f
 == .ZIP
 <div class="tree">
 	<ul>
-		<img src="/img/folder.svg" class="tree-icon icon-folder">
+		<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 		<span class="folder root">/sdcard/Tachiyomi/local</span>
 		<li>
-			<img src="/img/folder.svg" class="tree-icon icon-folder">
+			<img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
 			<span class="folder main">[the series title]</span>
 			<ul>
 				<li>
-					<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+					<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 					<span class="file jpg">cover<span class="file-extension">.jpg</span></span>
 				</li>
 				<li>
-					<img src="/img/zip.svg" class="tree-icon icon-zip">
+					<img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-zip">
 					<span class="file zip">chapter_1<span class="file-extension">.zip</span></span>
 					<ul>
 						<li>
-							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 							<span class="file jpg">image_1<span class="file-extension">.jpg</span></span>
 						</li>
 						<li>
-							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 							<span class="file jpg">image_n<span class="file-extension">.jpg</span></span>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<img src="/img/zip.svg" class="tree-icon icon-zip">
+					<img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-zip">
 					<span class="file zip">chapter_2<span class="file-extension">.zip</span></span>
 					<ul>
 						<li>
-							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 							<span class="file jpg">image_1<span class="file-extension">.jpg</span></span>
 						</li>
 						<li>
-							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 							<span class="file jpg">image_n<span class="file-extension">.jpg</span></span>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<img src="/img/zip.svg" class="tree-icon icon-zip">
+					<img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-zip">
 					<span class="file zip">chapter_n<span class="file-extension">.zip</span></span>
 					<ul>
 						<li>
-							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 							<span class="file jpg">image_1<span class="file-extension">.jpg</span></span>
 						</li>
 						<li>
-							<img src="/img/jpeg.svg" class="tree-icon icon-jpeg">
+							<img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
 							<span class="file jpg">image_n<span class="file-extension">.jpg</span></span>
 						</li>
 					</ul>
