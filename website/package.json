@@ -68,7 +68,7 @@
     "markdownlint-cli": "0.38.0",
     "sentences-per-line": "0.2.1",
     "stylelint": "15.11.0",
-    "stylelint-stylus": "0.18.0",
+    "stylelint-stylus": "1.0.0",
     "stylus": "0.62.0",
     "unplugin-element-plus": "0.8.0",
     "vite-plugin-eslint": "1.8.1",
