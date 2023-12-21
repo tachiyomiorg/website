@@ -67,7 +67,7 @@
     "markdownlint": "0.32.1",
     "markdownlint-cli": "0.38.0",
     "sentences-per-line": "0.2.1",
-    "stylelint": "15.11.0",
+    "stylelint": "16.0.2",
     "stylelint-stylus": "1.0.0",
     "stylus": "0.62.0",
     "unplugin-element-plus": "0.8.0",
