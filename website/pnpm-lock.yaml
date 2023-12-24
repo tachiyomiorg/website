@@ -15,8 +15,8 @@ dependencies:
     specifier: 12.4.0
     version: 12.4.0
   '@tanstack/vue-query':
-    specifier: 5.14.4
-    version: 5.14.4(vue@3.3.13)
+    specifier: 5.14.6
+    version: 5.14.6(vue@3.3.13)
   '@vueuse/core':
     specifier: 10.7.0
     version: 10.7.0(vue@3.3.13)
@@ -1337,8 +1337,8 @@ packages:
     resolution: {integrity: sha512-QmoJvC72sSWs3hgGis8JdmlDvqLfYGWUK4UG6OR9Q6t28JMN9m2FDwKPqoSJ9YVocELCSjMt/FGjEiLfk8000Q==}
     dev: false
 
-  /@tanstack/vue-query@5.14.4(vue@3.3.13):
-    resolution: {integrity: sha512-UXqJOqSNO+XEDHg50TBt+sGRoVG0quk2y3C+npfghY50tl6NEgk5EncNYnIbO+GysaHRTH0y22dzksFGMxbpUg==}
+  /@tanstack/vue-query@5.14.6(vue@3.3.13):
+    resolution: {integrity: sha512-h8FuSaje//z5B5h0B79+fnNt32Dp44xmxxXqXiUl4H/1l5i1rtea7Si0Uxst9AevYmpl1gZewmTlJzb/2RKCIQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.2
       vue: ^2.6.0 || ^3.3.0
