@@ -11,25 +11,24 @@ Tachiyomi manages several things within a selected storage location, including a
 The following illustrates the folder structure:
 
 ```txt
-[your selected storage location]/
-    |- autobackup/
-        |- eu.kanade.tachiyomi_yyyy-mm-dd_hh-mm.tachibk
-        |- ...
-    |- downloads/
-        |- Source name (LANG)
-            |- Title
-                |- Chapter01.cbz
-                |- ...
-            |- Other title
-                |- Chapter01.cbz
-                |- ...
-    |- local/
-        |- Title
-            |- Chapter01.cbz
-            |- ...
-        |- Other title
-            |- Chapter01.cbz
-            |- ...
+<Your selected storage location>/
+├── autobackup
+│   ├── eu.kanade.tachiyomi_yyyy-mm-dd_hh-mm.tachibk
+│   └── ...
+├── downloads
+│   └── Source name (LANG)
+│       ├── Title
+│       │   ├── Chapter01.cbz
+│       │   └── ...
+│       └── Other title
+│           ├── Chapter01.cbz
+│           └── ...
+└── local
+    ├── Title
+    │   ├── Chapter01.cbz
+    │   └── ...
+    └── Other title
+        └── Chapter01.cbz
 ```
 
 Backup file name prefixes are unique for the app to avoid potential collisions between forks.
