@@ -15,17 +15,17 @@ This section relates to the reading experience in the app and navigating the rea
 This setting sets the reader's default direction when you open a series.
 
 ::: tabs
-== Paged (RTL)
+== Paged (right to left)
 Right-to-left, the default way of reading manga.
 
 - Swipe right for next page.
 - Swipe left for previous page.
-== Paged (LTR)
+== Paged (left to right)
 Left-to-right, the default way of reading comics.
 
 - Swipe left for next page.
 - Swipe right for previous page.
-== Paged (Vertical)
+== Paged (vertical)
 - Swipe up for next page.
 - Swipe down for previous.
 
@@ -243,21 +243,7 @@ TBA
 :::
 
 ### Side padding <Badge type="info" text="None" />
-
-::: tabs
-== None
 TBA
-== 5%
-TBA
-== 10%
-TBA
-== 15%
-TBA
-== 20%
-TBA
-== 25%
-TBA
-:::
 
 ### Sensitivity for hiding menu on scroll <Badge type="info" text="Low" />
 

@@ -69,8 +69,8 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/docs/faq/settings',
         },
         {
-          text: 'Android 11+',
-          link: '/docs/faq/android-11+',
+          text: 'Storage',
+          link: '/docs/faq/storage',
         },
       ],
     },
