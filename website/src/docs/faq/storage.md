@@ -33,7 +33,7 @@ The following illustrates the folder structure:
 
 Backup file name prefixes are unique for the app to avoid potential collisions between forks.
 
-## Migrating from v0.14.x or ealier
+## Migrating from v0.14.x or earlier
 
 If you were using the default locations before, then simply select the existing `Tachiyomi` folder.
 
