@@ -77,7 +77,7 @@ In <nav to="advanced">, try **Clear cache** and **Clear cookies**.
 
 <style lang="stylus" scoped>
 #full-list + div + ul {
-	padding-left: unset
-	list-style: none
+  padding-left: unset
+  list-style: none
 }
 </style>

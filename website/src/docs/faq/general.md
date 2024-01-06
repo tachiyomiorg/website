@@ -19,23 +19,23 @@ To report **Tachiyomi** copycats on the **Google Play Store**, fill out [this fo
 1. Go to the page -> three dots menu -> Flag as inappropriate -> Other objection.
 1. After choosing "Other objection", you may choose to put down any or all of the following:
 
-	The app infringes on the Google Play Developer Policy by
+  The app infringes on the Google Play Developer Policy by
 
-	Encouraging Infringement of Copyright
+  Encouraging Infringement of Copyright
 
-	> We don’t allow apps that induce or encourage copyright infringement. Before you publish your app, look for ways your app may be encouraging copyright infringement and get legal advice if necessary.
+  > We don’t allow apps that induce or encourage copyright infringement. Before you publish your app, look for ways your app may be encouraging copyright infringement and get legal advice if necessary.
 
-	Trademark Infringement
+  Trademark Infringement
 
-	> We don’t allow apps that infringe on others’ trademarks. A trademark is a word, symbol, or combination that identifies the source of a good or service. Once acquired, a trademark gives the owner exclusive rights to the trademark usage with respect to certain goods or services.
+  > We don’t allow apps that infringe on others’ trademarks. A trademark is a word, symbol, or combination that identifies the source of a good or service. Once acquired, a trademark gives the owner exclusive rights to the trademark usage with respect to certain goods or services.
     >
-	> Trademark infringement is an improper or unauthorized use of an identical or similar trademark in a way that is likely to cause confusion as to the source of that product. If your app uses another party’s trademarks in a way that is likely to cause confusion, your app may be suspended.
+  > Trademark infringement is an improper or unauthorized use of an identical or similar trademark in a way that is likely to cause confusion as to the source of that product. If your app uses another party’s trademarks in a way that is likely to cause confusion, your app may be suspended.
 
-	Misleading Claims, e.g. "MangaKa - Best Manga Reader"
+  Misleading Claims, e.g. "MangaKa - Best Manga Reader"
 
-	> We don’t allow apps that contain false or misleading information or claims, including in the description, title, icon, and screenshots. Here are some examples of common violations: Apps that misrepresent or do not accurately and clearly describe their functionality:
-	> - Developer or app names that misrepresent their current status or performance on Play.  (E.g. “Editor’s Choice,” “Number 1 App,” “Top Paid”)...
-	> - Apps that are improperly categorized.
+  > We don’t allow apps that contain false or misleading information or claims, including in the description, title, icon, and screenshots. Here are some examples of common violations: Apps that misrepresent or do not accurately and clearly describe their functionality:
+  > - Developer or app names that misrepresent their current status or performance on Play.  (E.g. “Editor’s Choice,” “Number 1 App,” “Top Paid”)...
+  > - Apps that are improperly categorized.
 :::
 
 ## Is Tachiyomi available for iOS/iPadOS?

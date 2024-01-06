@@ -35,7 +35,7 @@ When prompted while installing your first extension, allow unknown apps installa
 
 ::: details Video guide - Recorded on Android 10
 <video controls muted preload="metadata">
-	<source src="/docs/faq/browse/extensions/unknown-sources-A10.light.webm" type="video/webm">
+  <source src="/docs/faq/browse/extensions/unknown-sources-A10.light.webm" type="video/webm">
 </video>
 :::
 
@@ -47,7 +47,7 @@ When prompted while installing your first extension, allow unknown apps installa
 
 ::: details Video guide - Recorded on Android 7
 <video controls muted preload="metadata">
-	<source src="/docs/faq/browse/extensions/unknown-sources-A7.light.webm">
+  <source src="/docs/faq/browse/extensions/unknown-sources-A7.light.webm">
 </video>
 :::
 ::::

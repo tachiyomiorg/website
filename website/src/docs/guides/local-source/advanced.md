@@ -43,7 +43,6 @@ It is also possible to use a custom image as a cover for each local series.
 To do this, you only need to place the image file, that needs to be named `cover.jpg`, in the root of the series folder.
 The app will then use your custom image in the local source listing.
 
-
 <style scoped>
-	@import "../../../.vitepress/theme/styles/tree.styl"
+  @import "../../../.vitepress/theme/styles/tree.styl"
 </style>
