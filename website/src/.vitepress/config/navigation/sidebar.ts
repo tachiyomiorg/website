@@ -21,6 +21,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
         {
           text: 'Extensions',
           link: '/extensions/',
+          collapsed: true,
+          items: [
+            { text: 'Removed sources', link: '/extensions/removed' },
+          ],
         },
         {
           text: 'Changelogs',
