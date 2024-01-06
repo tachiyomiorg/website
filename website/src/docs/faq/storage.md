@@ -37,7 +37,13 @@ Backup file name prefixes are unique for the app to avoid potential collisions b
 
 If you were using the default locations before, then simply select the existing `Tachiyomi` folder.
 
-If were using non-standard downloads folder, you may want to either choose the parent folder (if applicable; avoid choosing the root of your storage) or move your downloads to a new location.
+::: warning
+If you have an existing `downloads` folder, you should be selecting its parent folder (if applicable; avoid choosing the root of your storage) or you should move your downloads to a new location.
+
+Note the illustrated example above where `downloads` is a folder _within_ the location being set, and the individual source folders are _within_ that `downloads` folder.
+:::
+
+If you need to change your storage location or have moved files around from outside the app, you may need to force the app to recheck for the files by going to <nav to="advanced"> then **Invalidate downloads index**.
 
 # Scoped Storage
 
@@ -46,4 +52,4 @@ Since Android 11, most apps are enforced to use [Scoped Storage](https://develop
 **Scoped Storage**'s introduction affects various storage-related functions in **Tachiyomi**.
 These functions may become slower due to **Scoped Storage**'s inherent latency, as discussed in detail [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/).
 
-This can impact tasks like deleting chapters, library loading times, accessing local files like downloads or the local source, and more.
+This can impact tasks like deleting chapters, library loading times, accessing local files like downloads or the local source, and more. As always, using internal storage is recommended over SD cards if latency is of concern.
