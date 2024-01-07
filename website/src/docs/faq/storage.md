@@ -10,26 +10,94 @@ Tachiyomi manages several things within a selected storage location, including a
 
 The following illustrates the folder structure:
 
-```txt
-<Your selected storage location>/
-├── autobackup
-│   ├── eu.kanade.tachiyomi_yyyy-mm-dd_hh-mm.tachibk
-│   └── ...
-├── downloads
-│   └── Source name (LANG)
-│       ├── Title
-│       │   ├── Chapter01.cbz
-│       │   └── ...
-│       └── Other title
-│           ├── Chapter01.cbz
-│           └── ...
-└── local
-    ├── Title
-    │   ├── Chapter01.cbz
-    │   └── ...
-    └── Other title
-        └── Chapter01.cbz
-```
+:::info Example
+<div class="tree">
+  <ul>
+    <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+    <span class="folder root">[your selected storage location]</span>
+    <li>
+      <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+      <span class="folder main">autobackup</span>
+      <ul>
+        <li>
+          <img src="/img/tachiyomi-book.png" alt="File" class="tree-icon icon-tachiyomi">
+          <span class="file jpg">eu.kanade.tachiyomi_yyyy-mm-dd_hh-mm<span class="file-extension">.tachibk</span></span>
+        </li>
+        <li>
+          <img src="/img/tachiyomi-book.png" alt="File" class="tree-icon icon-tachiyomi">
+          <span>...</span>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+      <span class="folder main">downloads</span>
+      <ul>
+        <li>
+          <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+          <span class="folder dynamic">Source name (LANG)</span>
+            <ul>
+              <li>
+                <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+                <span class="folder dynamic">Series title</span>
+                <ul>
+                  <li>
+                    <img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-cbz">
+                    <span class="file cbz">Chapter01<span class="file-extension">.cbz</span></span>
+                  </li>
+                  <li>
+                    <img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-cbz">
+                    <span class="file cbz">...</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+                <span class="folder dynamic">Other series title</span>
+                <ul>
+                  <li>
+                    <img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-cbz">
+                    <span class="file cbz">Chapter01<span class="file-extension">.cbz</span></span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+      <span class="folder main">local</span>
+      <ul>
+        <li>
+          <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+          <span class="folder dynamic">Series title</span>
+          <ul>
+            <li>
+              <img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-cbz">
+              <span class="file cbz">Chapter01<span class="file-extension">.cbz</span></span>
+            </li>
+            <li>
+              <img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-cbz">
+              <span class="file cbz">...</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
+          <span class="folder dynamic">Other series title</span>
+          <ul>
+            <li>
+              <img src="/img/zip.svg" alt="Compressed File" class="tree-icon icon-cbz">
+              <span class="file cbz">Chapter01<span class="file-extension">.cbz</span></span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+:::
 
 Backup file name prefixes are unique for the app to avoid potential collisions between forks.
 
@@ -53,3 +121,7 @@ Since Android 11, most apps are enforced to use [Scoped Storage](https://develop
 These functions may become slower due to **Scoped Storage**'s inherent latency, as discussed in detail [here](https://www.xda-developers.com/android-q-storage-access-framework-scoped-storage/).
 
 This can impact tasks like deleting chapters, library loading times, accessing local files like downloads or the local source, and more. As always, using internal storage is recommended over SD cards if latency is of concern.
+
+<style scoped>
+  @import "../../.vitepress/theme/styles/tree.styl"
+</style>
