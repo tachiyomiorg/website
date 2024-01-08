@@ -1,7 +1,7 @@
 ---
 type: article
 title: Extensions list removed
-description: Due to extenuating circumstances and legal considerations.
+description: Due to extenuating circumstances.
 date: "2024-01-09"
 ---
 
