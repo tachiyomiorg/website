@@ -15,11 +15,11 @@ const pkgName = computed(() => item.value.name.split(': ')[1])
 const pkgIsNsfw = computed(() => item.value.nsfw === 1)
 
 const iconUrl = computed(() => {
-  return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/icon/${item.value.pkg}.png`
+  return `https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/icon/${item.value.pkg}.png`
 })
 
 const apkUrl = computed(() => {
-  return `https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/${item.value.apk}`
+  return `https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/apk/${item.value.apk}`
 })
 
 function handleAnalytics() {

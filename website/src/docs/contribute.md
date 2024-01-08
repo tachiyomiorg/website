@@ -11,7 +11,7 @@ Know how to code and want to improve something or you generally want to support 
 
 [![tachiyomiorg/tachiyomi - GitHub](https://gh-card.dev/repos/tachiyomiorg/tachiyomi.svg)](https://github.com/tachiyomiorg/tachiyomi)
 
-[![tachiyomiorg/tachiyomi-extensions - GitHub](https://gh-card.dev/repos/tachiyomiorg/tachiyomi-extensions.svg)](https://github.com/tachiyomiorg/tachiyomi-extensions)
+[![tachiyomiorg/extensions - GitHub](https://gh-card.dev/repos/tachiyomiorg/extensions.svg)](https://github.com/tachiyomiorg/extensions)
 
 [![tachiyomiorg/website - GitHub](https://gh-card.dev/repos/tachiyomiorg/website.svg)](https://github.com/tachiyomiorg/website)
 

@@ -56,8 +56,8 @@ These are general guidelines as each site has its specific undisclosed limits an
 ## Widespread issue
 When everyone experiences a problem, it could be with the extension or app:
 
-1. Check open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [**extensions**](https://github.com/tachiyomiorg/tachiyomi-extensions/issues).
-1. Check closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed)/[extensions](https://github.com/tachiyomiorg/tachiyomi-extensions/issues?q=is%3Aissue+is%3Aclosed)) in case it's resolved but not yet released.
+1. Check open issues [for the app](https://github.com/tachiyomiorg/tachiyomi/issues) and/or [**extensions**](https://github.com/tachiyomiorg/extensions/issues).
+1. Check closed issues ([app](https://github.com/tachiyomiorg/tachiyomi/issues?q=is%3Aissue+is%3Aclosed)/[extensions](https://github.com/tachiyomiorg/extensions/issues?q=is%3Aissue+is%3Aclosed)) in case it's resolved but not yet released.
 1. If not found, create a new issue.
 
 ::: warning
