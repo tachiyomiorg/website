@@ -47,7 +47,7 @@ async function generateFeed(config: SiteConfig, hostname: string) {
       link: fullUrl,
       description: frontmatter.description,
       content,
-      date: frontmatter.date,
+      date: typeof frontmatter.date == 'string' ? new Date(frontmatter.date) : frontmatter.date,
     } satisfies Item
 
     feed.addItem(post)
