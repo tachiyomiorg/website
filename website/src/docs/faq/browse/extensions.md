@@ -18,7 +18,7 @@ What works well for somebody else might not work well for you.
 :::
 
 ## What is a scanlator source?
-Non-officially licensed series are translated by scanlators, often found on their websites or [MangaDex](https://mangadex.org/).
+Non-officially licensed series are translated by scanlators, often found on their own websites or aggregator websites.
 Compare with official sources like [MANGA Plus By SHUEISHA](https://mangaplus.shueisha.co.jp) or [VIZ Shonen Jump](https://www.viz.com/shonenjump).
 Learn more in this [Wikipedia article](https://en.wikipedia.org/wiki/Scanlation).
 

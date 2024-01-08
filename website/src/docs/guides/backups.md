@@ -86,10 +86,6 @@ All [endorsed Tachiyomi forks](/forks/) support the `.tachibk`/`.proto.gz` forma
 
 In addition, some forks have specific limitations regarding backup restoration:
 
-- [Neko](/forks/Neko/) can only restore [MangaDex](/extensions/#all.mangadex) entries in a backup.
-  > Entries from other sources will not transfer.
-
-  > Migrate everything to MangaDex if you require to.
 - All forks have fork-specific settings and changes that might be saved in Backups.
   Such settings are not restored in original Tachiyomi and will get lost when creating a new backup.
   > For Example: [TachiyomiSY](/forks/TachiyomiSY/) has the option to backup/restore saved searches.

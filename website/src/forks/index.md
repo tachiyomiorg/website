@@ -8,10 +8,6 @@ next: false
 pageClass: forks
 
 features:
-  - title: Neko
-    details: Features specific to MangaDex with the feature set of TachiyomiJ2K
-    icon: <img src="/forks/logo-neko.webp" alt="Neko Logo" height="32" width="32">
-    link: /forks/Neko/
   - title: TachiyomiJ2K
     details: New design approach along with several other enhancements
     icon: <img src="/forks/logo-j2k.webp" alt="TachiyomiJ2K Logo" height="32" width="32">
