@@ -19,7 +19,7 @@ To make this transition smoother for our users, we are retaining a select few ex
 
 We strongly encourage all users to exercise caution, and avoid utilizing extensions from unknown repositories, as they may contain malware.
 
-It's important to note that while existing extensions may continue to work, but we cannot guarantee their functionality indefinitely.
+It's important to note that while existing extensions may continue to work, we cannot guarantee their functionality indefinitely.
 
 Additionally, please be aware that neither our Discord server nor our GitHub repository's issues page will provide support for unofficial extensions.
 
