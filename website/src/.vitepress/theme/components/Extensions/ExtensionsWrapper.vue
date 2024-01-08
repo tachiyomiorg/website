@@ -8,7 +8,7 @@ import useExtensionsRepositoryQuery from '../../queries/useExtensionsRepositoryQ
 import type { Extension } from '../../queries/useExtensionsRepositoryQuery'
 import ExtensionFilters from './ExtensionFilters.vue'
 import ExtensionList from './ExtensionList.vue'
-import type { Nsfw, Sort } from './ExtensionFilters.vue'
+import type { Sort } from './ExtensionFilters.vue'
 
 const { data: extensions, isLoading } = useExtensionsRepositoryQuery({
   select: (response) => {
@@ -22,7 +22,6 @@ const { data: extensions, isLoading } = useExtensionsRepositoryQuery({
 const filters = reactive({
   search: '',
   lang: [] as string[],
-  nsfw: 'Show all' as Nsfw,
   sort: 'Ascending' as Sort,
 })
 
@@ -65,9 +64,6 @@ const filteredExtensions = computed(() => {
           || ext.sources.some(source => source.id.includes(filters.search)),
       )
     }
-    filteredGroup = filteredGroup.filter(ext =>
-      filters.nsfw === 'Show all' ? true : ext.nsfw === (filters.nsfw === 'NSFW' ? 1 : 0),
-    )
 
     if (filters.sort && filters.sort === 'Descending')
       filteredGroup = filteredGroup.reverse()
@@ -109,7 +105,6 @@ watch([isLoading, loadingInstance], async ([newIsLoading]) => {
   <ExtensionFilters
     v-model:search="filters.search"
     v-model:lang="filters.lang"
-    v-model:nsfw="filters.nsfw"
     v-model:sort="filters.sort"
     :extensions="extensions ?? []"
   />

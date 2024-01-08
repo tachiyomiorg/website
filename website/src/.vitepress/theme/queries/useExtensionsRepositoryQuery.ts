@@ -12,9 +12,6 @@ export interface Extension {
   lang: string
   code: number
   version: string
-  nsfw: number
-  hasReadme: number
-  hasChangelog: number
   sources: Source[]
 }
 

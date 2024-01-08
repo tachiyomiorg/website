@@ -12,7 +12,6 @@ const pkgId = computed(() => {
 })
 
 const pkgName = computed(() => item.value.name.split(': ')[1])
-const pkgIsNsfw = computed(() => item.value.nsfw === 1)
 
 const iconUrl = computed(() => {
   return `https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/icon/${item.value.pkg}.png`
@@ -43,8 +42,7 @@ function handleAnalytics() {
         {{ pkgId }}
       </div>
     </div>
-    <Badge v-if="pkgIsNsfw" type="danger" :text="item.version" title="This extension contains NSFW entries." />
-    <Badge v-else type="info" :text="item.version" title="This extension is free from NSFW entries." />
+    <Badge type="info" :text="item.version" />
     <a
       :href="apkUrl"
       class="extension-download"

@@ -15,21 +15,18 @@ import {
 import { langName, simpleLangName } from '../../../config/scripts/languages'
 import type { Extension } from '../../queries/useExtensionsRepositoryQuery'
 
-export type Nsfw = 'Show all' | 'NSFW' | 'SFW'
 export type Sort = 'Ascending' | 'Descending'
 
 const props = defineProps<{
   extensions: Extension[][]
   search: string
   lang: string[]
-  nsfw: Nsfw
   sort: Sort
 }>()
 
 defineEmits<{
   (e: 'update:search', search: string): void
   (e: 'update:lang', lang: string[]): void
-  (e: 'update:nsfw', nsfw: Nsfw): void
   (e: 'update:sort', sort: Sort): void
 }>()
 
@@ -74,16 +71,6 @@ const labelPosition = computed(() => isSmallScreen.value ? 'top' : 'right')
           >
             <ElRadio label="Ascending" />
             <ElRadio label="Descending" />
-          </ElRadioGroup>
-        </ElFormItem>
-        <ElFormItem label="Display mode:">
-          <ElRadioGroup
-            :model-value="nsfw"
-            @update:model-value="$emit('update:nsfw', $event)"
-          >
-            <ElRadio label="NSFW" />
-            <ElRadio label="SFW" />
-            <ElRadio label="Show all" />
           </ElRadioGroup>
         </ElFormItem>
       </ElForm>
