@@ -9,7 +9,7 @@ date: "2024-01-09"
 
 **Dear Tachiyomi Community,**
 
-Due to extenuating circumstances and legal considerations, we have made the decision to purge our list of extensions to ensure the long-term sustainability of **Tachiyomi**.
+Due to extenuating circumstances, we have made the decision to purge our list of extensions to ensure the long-term sustainability of **Tachiyomi**.
 
 As of now, **Tachiyomi** is transitioning to a fully bring-your-own-content model. What this means is that you can still enjoy **Tachiyomi** for manga reading, but you'll need to source and add your own content.
 
