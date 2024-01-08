@@ -25,4 +25,5 @@ Additionally, please be aware that neither our Discord server nor our GitHub rep
 
 Best regards,
 
+<!-- markdownlint-disable-next-line MD036 -->
 *The Tachiyomi Team*
