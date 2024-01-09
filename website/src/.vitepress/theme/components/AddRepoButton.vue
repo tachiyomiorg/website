@@ -1,6 +1,8 @@
 <script setup lang="ts">
 /// <reference types="@types/gtag.js" />
 
+import { onMounted, ref } from 'vue'
+
 function handleAnalytics() {
   window.gtag?.('event', 'Add', {
     event_category: 'Extension',
@@ -10,53 +12,61 @@ function handleAnalytics() {
 
 const url = new URL('tachiyomi://add-repo')
 url.searchParams.append('url', 'https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json')
+
+const isAndroid = ref(true)
+
+onMounted(() => {
+  isAndroid.value = !!navigator.userAgent.match(/android/i)
+})
 </script>
 
 <template>
-  <div v-if="!isAndroid">
-    <div class="action-buttons">
-      <a
-        class="action-button primary"
-        href="/docs/guides/getting-started"
-      >
-        Get started
-      </a>
+  <div>
+    <div v-if="!isAndroid">
+      <div class="action-buttons">
+        <a
+          class="action-button primary"
+          href="/docs/guides/getting-started"
+        >
+          Get started
+        </a>
+      </div>
+      <span class="version-disclaimer">
+        Requires <strong>Android 6.0</strong> or higher.
+      </span>
+      <div class="custom-block warning">
+        <p class="custom-block-title">
+          Unsupported operating system
+        </p>
+        <p>
+          <strong>Tachiyomi</strong> is an <strong>Android app</strong> only.
+          Use an <strong>Android device</strong> to download and install the app.
+        </p>
+      </div>
     </div>
-    <span class="version-disclaimer">
-      Requires <strong>Android 6.0</strong> or higher.
-    </span>
-    <div class="custom-block warning">
-      <p class="custom-block-title">
-        Unsupported operating system
-      </p>
-      <p>
-        <strong>Tachiyomi</strong> is an <strong>Android app</strong> only.
-        Use an <strong>Android device</strong> to download and install the app.
-      </p>
-    </div>
-  </div>
-  <div v-if="isAndroid">
-    <div class="action-buttons">
-      <a
-        class="action-button primary"
-        :href="url"
-        @click="handleAnalytics()"
-      >
-        <IconDownload />
-        <span class="text">Add repository</span>
-        <span class="version">Official</span>
-      </a>
-    </div>
-    <span class="version-disclaimer">
-      Requires <strong>Tachiyomi 0.15.2</strong> or higher.
-    </span>
-    <div class="custom-block danger">
-      <p class="custom-block-title">
-        Caution
-      </p>
-      <p>
-        Beware that any third-party repository or extension can contain malware.
-      </p>
+    <div v-if="isAndroid">
+      <div class="action-buttons">
+        <a
+          class="action-button primary"
+          :href="url"
+          @click="handleAnalytics()"
+        >
+          <IconDownload />
+          <span class="text">Add repository</span>
+          <span class="version">Official</span>
+        </a>
+      </div>
+      <span class="version-disclaimer">
+        Requires <strong>Tachiyomi 0.15.2</strong> or higher.
+      </span>
+      <div class="custom-block danger">
+        <p class="custom-block-title">
+          Caution
+        </p>
+        <p>
+          Beware that any third-party repository or extension can contain malware.
+        </p>
+      </div>
     </div>
   </div>
 </template>
