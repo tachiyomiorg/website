@@ -2,8 +2,8 @@
 /// <reference types="@types/gtag.js" />
 
 function handleAnalytics() {
-  window.gtag?.('event', 'Repository', {
-    event_category: 'App',
+  window.gtag?.('event', 'Add', {
+    event_category: 'Extension',
     event_label: 'Repository',
   })
 }
