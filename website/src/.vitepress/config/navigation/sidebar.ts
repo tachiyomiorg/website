@@ -97,6 +97,24 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           ],
         },
         {
+          text: 'Creating extensions',
+          collapsed: true,
+          items: [
+            {
+              text: 'Prerequisites',
+              link: '/docs/guides/creating-extensions/prerequisites',
+            },
+            {
+              text: 'Writing an extension',
+              link: '/docs/guides/creating-extensions/writing',
+            },
+            {
+              text: 'Compiling and running',
+              link: '/docs/guides/creating-extensions/compiling',
+            },
+          ],
+        },
+        {
           text: 'Source migration',
           link: '/docs/guides/source-migration',
         },
