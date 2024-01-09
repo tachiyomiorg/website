@@ -56,7 +56,7 @@ Beware that any third-party repository or extension can contain malware.
 Extensions can be manually installed through `.apk` files.
 
 ::: danger Caution
-Beware that any third-party repository or extension can contain malware.
+Tachiyomi will not provide resources for any unofficial extensions. Beware that any third-party repositories or extensions will have full access to the app and may contain malware.
 :::
 ::::
 
