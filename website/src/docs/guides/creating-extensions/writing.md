@@ -25,7 +25,7 @@ To adjust which modules are loaded, make adjustments to the `settings.gradle.kts
 
 The simplest extension structure looks like this:
 
-```console
+```bash
 $ tree src/<lang>/<mysourcename>/
 src/<lang>/<mysourcename>/
 ├── AndroidManifest.xml
@@ -60,7 +60,7 @@ A minimal [Android manifest file](https://developer.android.com/guide/topics/man
 ### build.gradle
 Make sure that your new extension's `build.gradle` file follows the following structure:
 
-```gradle
+```kotlin
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
@@ -96,7 +96,7 @@ Extensions rely on [extensions-lib](https://github.com/tachiyomiorg/extensions-l
 
 [`lib-dataimage`](https://github.com/tachiyomiorg/extensions/tree/main/lib/dataimage) is a library for handling [base 64 encoded image data](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) using an [OkHttp interceptor](https://square.github.io/okhttp/interceptors/).
 
-```gradle
+```kotlin
 dependencies {
     implementation(project(':lib-dataimage'))
 }
@@ -106,7 +106,7 @@ dependencies {
 
 [`lib-i18n`](https://github.com/tachiyomiorg/extensions/tree/main/lib/i18n) is a library for handling internationalization in the sources. It allows loading `.properties` files with messages located under the `assets/i18n` folder of each extension, that can be used to translate strings under the source.
 
-```gradle
+```kotlin
 dependencies {
     implementation(project(':lib-i18n'))
 }
@@ -267,8 +267,8 @@ Extensions can define URL intent filters by defining it inside a custom `Android
 
 To test if the URL intent filter is working as expected, you can try opening the website in a browser and navigating to the endpoint that was added as a filter or clicking a hyperlink. Alternatively, you can use the `adb` command below.
 
-```console
-$ adb shell am start -d "<your-link>" -a android.intent.action.VIEW
+```bash
+adb shell am start -d "<your-link>" -a android.intent.action.VIEW
 ```
 ::: warning CAUTION
 The activity does not support any Kotlin Intrinsics specific methods or calls, and using them will causes crashes in the activity.

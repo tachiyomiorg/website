@@ -10,7 +10,7 @@ description: Compile and run own Tachiyomi extension.
 
 To make local development more convenient, you can use the following run configuration to launch **Tachiyomi** directly at the Browse panel:
 
-![](https://i.imgur.com/STy0UFY.png)
+![Browse panel](/docs/guides/creating-extensions/compiling/BrowsePanel.webp =801x394)
 
 If you're running a Preview or debug build of **Tachiyomi**:
 
@@ -38,7 +38,7 @@ You *cannot* simply use **Android Studio**'s `Debug 'module.name'` -> this will 
 
 Instead, once you've built and installed your extension on the target device, use `Attach Debugger to Android Process` to start debugging **Tachiyomi**.
 
-![](https://i.imgur.com/muhXyfu.png)
+![Android Debugger](/docs/guides/creating-extensions/compiling/AndroidDebugger.webp =532x474)
 
 ### Logs
 
@@ -64,7 +64,7 @@ If you want to take a deeper look into the network flow, such as taking a look i
 #### Setup your proxy server
 We are going to use [mitm-proxy](https://mitmproxy.org/) but you can replace it with any other Web Debugger (i.e. Charles, Burp Suite, Fiddler etc). To install and execute, follow the commands bellow.
 
-```console
+```bash
 Install the tool.
 $ sudo pip3 install mitmproxy
 Execute the web interface and the proxy.
@@ -73,14 +73,14 @@ $ mitmweb
 
 Alternatively, you can also use the Docker image:
 
-```
+```bash
 $ docker run --rm -it -p 8080:8080 \
     -p 127.0.0.1:8081:8081 \
     --web-host 0.0.0.0 \
     mitmproxy/mitmproxy mitmweb
 ```
 
-After installing and running, open your browser and navigate to http://127.0.0.1:8081.
+After installing and running, open your browser and navigate to `http://127.0.0.1:8081`.
 
 #### OkHttp proxy setup
 Since most of the manga sources are going to use HTTPS, we need to disable SSL verification in order to use the web debugger. For that, add this code to inside your source class:
