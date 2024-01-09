@@ -10,9 +10,6 @@ function handleAnalytics() {
   })
 }
 
-const url = new URL('tachiyomi://add-repo')
-url.searchParams.append('url', 'https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json')
-
 const isAndroid = ref(true)
 
 onMounted(() => {
@@ -48,7 +45,7 @@ onMounted(() => {
       <div class="action-buttons">
         <a
           class="action-button primary"
-          :href="url"
+          href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json"
           @click="handleAnalytics()"
         >
           <IconDownload />
