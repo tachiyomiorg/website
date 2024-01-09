@@ -26,7 +26,9 @@ Once **Tachiyomi** is installed on your device, you can use various methods to g
 
 :::: tabs
 == Local source
-Please visit the [Local source](/docs/guides/local-source/) guide for instructions.
+Read content stored locally on your device.
+
+See the [Local source guide](/docs/guides/local-source/) for instructions.
 == External repositories
 You can add external repositiories by going to <nav to="browse"> and tapping **Extension repos**.
 
