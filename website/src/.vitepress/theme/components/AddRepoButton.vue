@@ -13,10 +13,32 @@ url.searchParams.append('url', 'https://raw.githubusercontent.com/tachiyomiorg/e
 </script>
 
 <template>
-  <div>
-    <div class="download-buttons">
+  <div v-if="!isAndroid">
+    <div class="action-buttons">
       <a
-        class="download-button primary"
+        class="action-button primary"
+        href="/docs/guides/getting-started"
+      >
+        Get started
+      </a>
+    </div>
+    <span class="version-disclaimer">
+      Requires <strong>Android 6.0</strong> or higher.
+    </span>
+    <div class="custom-block warning">
+      <p class="custom-block-title">
+        Unsupported operating system
+      </p>
+      <p>
+        <strong>Tachiyomi</strong> is an <strong>Android app</strong> only.
+        Use an <strong>Android device</strong> to download and install the app.
+      </p>
+    </div>
+  </div>
+  <div v-if="isAndroid">
+    <div class="action-buttons">
+      <a
+        class="action-button primary"
         :href="url"
         @click="handleAnalytics()"
       >
@@ -40,7 +62,7 @@ url.searchParams.append('url', 'https://raw.githubusercontent.com/tachiyomiorg/e
 </template>
 
 <style lang="stylus">
-.download-buttons {
+.action-buttons {
   display: flex
   gap: 0.75em
   justify-content: center
@@ -48,7 +70,7 @@ url.searchParams.append('url', 'https://raw.githubusercontent.com/tachiyomiorg/e
   margin: 0.75em auto
 }
 
-.download-button {
+.action-button {
   display: inline-block
   border: 1px solid transparent
   text-align: center

@@ -17,8 +17,8 @@ Essential information to help you get set up with Tachiyomi.
 ### Downloading Tachiyomi
 
 1. Visit our [download](/download/) page to get the latest version of **Tachiyomi**.
-1. After the download is complete, open the `tachiyomi-{{ release.stable.tag_name }}.apk` file.
-1. Proceed with the installation process.
+2. After the download is complete, open the `.apk` file.
+3. Proceed with the installation process.
 
 ### Adding sources
 
