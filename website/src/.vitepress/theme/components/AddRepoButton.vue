@@ -8,8 +8,8 @@ function handleAnalytics() {
   })
 }
 
-const protocol = 'tachiyomi://add-repo?url='
-const repo_url = 'https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json'
+const url = new URL('tachiyomi://add-repo')
+url.searchParams.append('url', 'https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json')
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const repo_url = 'https://raw.githubusercontent.com/tachiyomiorg/extensions/repo
     <div class="download-buttons">
       <a
         class="download-button primary"
-        :href="protocol + repo_url"
+        :href="url"
         @click="handleAnalytics()"
       >
         <IconDownload />
