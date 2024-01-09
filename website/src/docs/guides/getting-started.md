@@ -30,7 +30,7 @@ Read content stored locally on your device.
 
 See the [Local source guide](/docs/guides/local-source/) for instructions.
 == External repositories
-You can add external repositiories by going to <nav to="browse"> and tapping **Extension repos**.
+External repositories add additional sources to **Tachiyomi**. You can add external repositories by going to <nav to="browse"> and tapping **Extension repos**.
 
 Once there, you can add repositories by inputing URLs ending with `index.min.json`. A small set of extensions are available [here](/extensions/).
 
