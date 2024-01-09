@@ -32,7 +32,11 @@ See the [Local source guide](/docs/guides/local-source/) for instructions.
 == External repositories
 You can add external repositiories by going to <nav to="browse"> and tapping **Extension repos**.
 
-Once there, you can add repositiories, keep in mind that the URL needs to end with `index.min.json`.
+Once there, you can add repositories by inputing URLs ending with `index.min.json`. A small set of extensions are available [here](/extensions/).
+
+::: danger Caution
+Tachiyomi will not provide resources for any unofficial repositories. Beware that any third-party repositories or extensions will have full access to the app and may contain malware.
+:::
 
 Once you've added a repository, go to <nav to="extensions"> and refresh the extensions list.
 
