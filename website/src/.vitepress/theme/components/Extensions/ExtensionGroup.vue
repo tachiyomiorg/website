@@ -23,7 +23,7 @@ const { list } = toRefs(props)
 
     <ExtensionItem
       v-for="extension in list"
-      :id="extension.pkg.replace('eu.kanade.tachiyomi.extension.', '')"
+      :id="extension.pkg"
       :key="extension.apk"
       :item="extension"
     />
