@@ -6,7 +6,6 @@ import { computed, nextTick, onMounted, reactive, ref, watch } from 'vue'
 import { simpleLangName } from '../../../config/scripts/languages'
 import useExtensionsRepositoryQuery from '../../queries/useExtensionsRepositoryQuery'
 import type { Extension } from '../../queries/useExtensionsRepositoryQuery'
-import ExtensionFilters from './ExtensionFilters.vue'
 import ExtensionList from './ExtensionList.vue'
 import type { Sort } from './ExtensionFilters.vue'
 
@@ -102,12 +101,12 @@ watch([isLoading, loadingInstance], async ([newIsLoading]) => {
 </script>
 
 <template>
-  <ExtensionFilters
+  <!-- <ExtensionFilters
     v-model:search="filters.search"
     v-model:lang="filters.lang"
     v-model:sort="filters.sort"
     :extensions="extensions ?? []"
-  />
+  /> -->
   <div class="extensions">
     <ExtensionList v-if="!isLoading" :extensions="filteredExtensions" />
   </div>

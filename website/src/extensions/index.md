@@ -9,10 +9,16 @@ next: false
 
 # Extensions
 
-Extensions can also be installed directly from the app.
+By default, **Tachiyomi** comes without any extensions.
+You can choose to read local content, manually add extensions, or include an external repository.
+
+**Tachiyomi** maintains only one official repository; any other repositories are unofficial and have no affiliation with us.
+
+<AddRepoButton/>
 
 <ExtensionsWrapper/>
 
 <script setup>
+import AddRepoButton from '@theme/components/AddRepoButton.vue'
 import ExtensionsWrapper from '@theme/components/Extensions/ExtensionsWrapper.vue'
 </script>
