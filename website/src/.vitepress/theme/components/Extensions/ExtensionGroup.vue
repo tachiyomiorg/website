@@ -6,6 +6,13 @@ import ExtensionItem from './ExtensionItem.vue'
 const props = defineProps<{ list: Extension[], totalCount: number }>()
 const { list } = toRefs(props)
 
+/* const groupName = computed(() => {
+  const firstItem = list.value[0]
+
+  return firstItem.lang === 'en'
+    ? simpleLangName(firstItem.lang)
+    : langName(firstItem.lang)
+}) */
 </script>
 
 <template>

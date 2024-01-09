@@ -8,8 +8,8 @@ function handleAnalytics() {
   })
 }
 
-const protocol = "tachiyomi://add-repo?url="
-const repo_url = "https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json"
+const protocol = 'tachiyomi://add-repo?url='
+const repo_url = 'https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json'
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const repo_url = "https://raw.githubusercontent.com/tachiyomiorg/extensions/repo
         @click="handleAnalytics()"
       >
         <IconDownload />
-        <span class="text">Add Repository</span>
+        <span class="text">Add repository</span>
         <span class="version">Official</span>
       </a>
     </div>
@@ -30,7 +30,7 @@ const repo_url = "https://raw.githubusercontent.com/tachiyomiorg/extensions/repo
     </span>
     <div class="custom-block danger">
       <p class="custom-block-title">
-        CAUTION
+        Caution
       </p>
       <p>
         Beware that any third-party repository or extension can contain malware.
