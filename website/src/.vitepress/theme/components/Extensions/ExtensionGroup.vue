@@ -1,25 +1,17 @@
 <script setup lang="ts">
-import { computed, toRefs } from 'vue'
-import { langName, simpleLangName } from '../../../config/scripts/languages'
+import { toRefs } from 'vue'
 import type { Extension } from '../../queries/useExtensionsRepositoryQuery'
 import ExtensionItem from './ExtensionItem.vue'
 
 const props = defineProps<{ list: Extension[], totalCount: number }>()
 const { list } = toRefs(props)
 
-const groupName = computed(() => {
-  const firstItem = list.value[0]
-
-  return firstItem.lang === 'en'
-    ? simpleLangName(firstItem.lang)
-    : langName(firstItem.lang)
-})
 </script>
 
 <template>
   <div class="extension-group">
     <h2>
-      <span>{{ groupName }}</span>
+      <span>Official extensions</span>
 
       <span class="extensions-total">
         Total:

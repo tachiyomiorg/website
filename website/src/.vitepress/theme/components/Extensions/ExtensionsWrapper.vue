@@ -102,12 +102,12 @@ watch([isLoading, loadingInstance], async ([newIsLoading]) => {
 </script>
 
 <template>
-  <ExtensionFilters
+  <!--<ExtensionFilters
     v-model:search="filters.search"
     v-model:lang="filters.lang"
     v-model:sort="filters.sort"
     :extensions="extensions ?? []"
-  />
+  />-->
   <div class="extensions">
     <ExtensionList v-if="!isLoading" :extensions="filteredExtensions" />
   </div>
