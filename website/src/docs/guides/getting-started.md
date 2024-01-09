@@ -22,7 +22,7 @@ Essential information to help you get set up with Tachiyomi.
 
 ### Adding sources
 
-Once **Tachiyomi** is installed on your device, you can use various methods to get series.
+Once **Tachiyomi** is installed on your device, you can bring your own content to read from various sources:
 
 :::: tabs
 == Local source
