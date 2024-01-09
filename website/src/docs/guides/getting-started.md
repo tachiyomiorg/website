@@ -14,35 +14,47 @@ Essential information to help you get set up with Tachiyomi.
 
 ## Installation guide
 
-### 1. Downloading Tachiyomi
+### Downloading Tachiyomi
 
 1. Visit our [download](/download/) page to get the latest version of **Tachiyomi**.
 1. After the download is complete, open the `tachiyomi-{{ release.stable.tag_name }}.apk` file.
 1. Proceed with the installation process.
 
-### 2. Adding sources
+### Adding sources
 
-Once **Tachiyomi** is installed on your device, you can install extensions to access a wide range of sources.
+Once **Tachiyomi** is installed on your device, you can use various methods to get series.
 
-1. Open the **Tachiyomi** app.
-1. Navigate to the "**Browse**" section.
-1. Tap on the "**Extensions**" tab.
-1. Look for the extension you want to use and press the "**INSTALL**" button next to it.
-1. Proceed with the installation process.
+:::: tabs
+== Local source
+Please visit the [Local source](/docs/guides/local-source/) guide for instructions.
+== External repositories
+You can add external repositiories by going to <nav to="browse"> and tapping **Extension repos**.
 
-![Installing extensions](/docs/guides/getting-started/installing-extensions.light.webp#light =414x245)
+Once there, you can add repositiories, keep in mind that the URL needs to end with `index.min.json`.
 
-![Installing extensions](/docs/guides/getting-started/installing-extensions.dark.webp#dark =414x245)
+Once you've added a repository, go to <nav to="extensions"> and refresh the extensions list.
 
-::: tip INSTALL PERMISSION
-Depending on your device settings, you might need to grant **Tachiyomi** permission to install unknown apps.
+You can now tap the download button next to extensions to install them.
 
-![Security warning](/docs/guides/getting-started/security-warning.webp =546x165)
+> You may need to [enable third-party installations](/docs/faq/browse/extensions#enabling-third-party-installations).
 
-> Relevant guide: [Enabling Third-Party Installations](/docs/faq/browse/extensions#enabling-third-party-installations)
+::: tip Official repository
+Tachiyomi has an official extension repository, you can use the **Add repository** button on the [Extensions](/extensions/) page, or copy the url manually below.
+> `https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json`
 :::
 
-### 3. Adding series to your library
+::: danger Caution
+Beware that any third-party repository or extension can contain malware.
+:::
+== Manual extensions
+Extensions can be manually installed through `.apk` files.
+
+::: danger Caution
+Beware that any third-party repository or extension can contain malware.
+:::
+::::
+
+### Adding series to your library
 
 After installing the desired extension, you'll find it in the **Sources** tab.
 
