@@ -50,7 +50,7 @@ All secrets depends on a generated signed key which was described in the previou
 Under a terminal window in the path of the key, you can use the following command to convert the key and copy the value.
 
 ```bash
-$ base64 signingkey.jks | tr -d \\n | xclip -selection c
+base64 signingkey.jks | tr -d \\n | xclip -selection c
 ```
 
 The previous command depends on `xclip` installed to copy the contents of the conversion to the clipboard, but you can replace that last part with any other similar tool.
@@ -76,6 +76,7 @@ To create you can follow the standard flow of creating a `branch` named `repo` a
 
 If your repository is forked or cloned from the official extensions repository, you will need to change two checks under the `.github/workflows/build_push.yml` file.
 
+<!-- eslint-disable-next-line -->
 ```yml
 - name: Upload APKs
   uses: actions/upload-artifact@v4
@@ -83,6 +84,7 @@ If your repository is forked or cloned from the official extensions repository, 
   if: "github.repository == '[user]/[repository]'" # [!code ++]
 ```
 
+<!-- eslint-disable-next-line -->
 ```yml
 publish_repo:
   name: Publish repo
