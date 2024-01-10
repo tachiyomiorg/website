@@ -112,6 +112,10 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
               text: 'Compiling and running',
               link: '/docs/guides/creating-extensions/compiling',
             },
+            {
+              text: 'Signing and releasing',
+              link: '/docs/guides/creating-extensions/signing',
+            },
           ],
         },
         {
