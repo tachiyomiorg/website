@@ -10,9 +10,6 @@
 <p align="center">Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.</p>
 
 <p align="center">
-	<a title="Discord server" href="https://discord.gg/tachiyomi">
-		<img src="https://img.shields.io/discord/349436576037732353.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF">
-	</a>
 	<a title="GitHub downloads" href="https://github.com/tachiyomiorg/tachiyomi/releases">
 		<img src="https://img.shields.io/github/downloads/tachiyomiorg/tachiyomi/total?label=downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat">
 	</a>
@@ -35,7 +32,6 @@
 </p>
 
 <p align="center">Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
-<p align="center">If you got any questions, join our <a target="_blank" href="https://discord.gg/tachiyomi">Discord server</a>.</p>
 
 <h3 align="center">Repositories</h3>
 

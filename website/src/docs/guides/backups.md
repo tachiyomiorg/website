@@ -77,21 +77,4 @@ Users who are familiar with [FolderSync](https://play.google.com/store/apps/deta
 or [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) can setup auto sync of their backups similarly.
 
 ## Additional information for forks
-
-::: warning
-This section explores some extra details regarding [forks](/forks/).
-:::
-
-All [endorsed Tachiyomi forks](/forks/) support the `.tachibk`/`.proto.gz` format to backup/restore your library.
-
-In addition, some forks have specific limitations regarding backup restoration:
-
-- All forks have fork-specific settings and changes that might be saved in Backups.
-  Such settings are not restored in original Tachiyomi and will get lost when creating a new backup.
-  > For Example: [TachiyomiSY](/forks/TachiyomiSY/) has the option to backup/restore saved searches.
-
-  These will **NOT** be restored to original Tachiyomi or its forks.
-- Only [TachiyomiAZ](/forks/TachiyomiAZ/) supports creating/restoring both legacy `.json` backups and `.proto.gz` backups.
-  > Users are recommended to update their `.json` backups to use the improved and efficient `.tachibk`/`.proto.gz` backups.
-
-Be aware of these limitations when dealing with backups in different **Tachiyomi** forks.
+Most Tachiyomi forks support the `.tachibk`/`.proto.gz` format to backup/restore your library, but have specific limitations. Refer to their documentation for more information.

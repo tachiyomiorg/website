@@ -24,6 +24,6 @@ export default createContentLoader('news/*.md', {
             url,
           },
       )
-      .sort((a, b) => b.date.toString().localeCompare(a.date.toString()))
+      .sort((a, b) => a.date.toString().localeCompare(b.date.toString()))
   },
 })

@@ -32,11 +32,6 @@ Follow these steps to troubleshoot and find solutions.
 If any of these solutions help, go to [Personalized Issue](#personalized-issue).
 If it is not just you, go to [Widespread Issue](#widespread-issue).
 
-If none of these solutions help, try asking in our [Discord server](https://discord.gg/tachiyomi).
-
-Check [#status-updates](https://discord.com/channels/349436576037732353/738862409284059239) first to see if your issue is known.
-State your app version and the source, series, and chapter with the problem if it is not listed.
-
 ::: tip An extension update may fix your issue
 Wait or check for an extension update if you have not already.
 There are no ETAs for updates.

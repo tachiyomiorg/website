@@ -72,4 +72,4 @@ Refer to [this GitHub comment](https://github.com/tachiyomiorg/tachiyomi/issues/
 Projects using the **Tachiyomi** name for anime streaming aren't affiliated with the main project.
 
 ## What's a fork?
-Forks are alternate **Tachiyomi** versions with distinct features. Get more details [here](/forks/).
+Forks are alternate **Tachiyomi** versions with distinct features managed by other developers.

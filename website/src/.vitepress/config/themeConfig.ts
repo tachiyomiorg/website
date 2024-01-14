@@ -22,11 +22,6 @@ const themeConfig: DefaultTheme.Config = {
       ariaLabel: 'Project GitHub',
     },
     {
-      icon: 'discord',
-      link: 'https://discord.gg/tachiyomi',
-      ariaLabel: 'Discord Server',
-    },
-    {
       icon: 'x',
       link: 'https://twitter.com/tachiyomiorg',
       ariaLabel: 'X Page',
