@@ -8,7 +8,7 @@ date: 2023-09-10
 # Updated website
 
 We've launched a fully rewritten website with improved usability for both users
-and contributors. Some improvements include the [download](/download/) page,
+and contributors. Some improvements include a download page
 which now doesn't require any new additional requests, and a new [changelogs](/changelogs/)
 page to easily see historical app release notes.
 

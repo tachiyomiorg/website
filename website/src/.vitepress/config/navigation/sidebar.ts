@@ -1,7 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
 const sidebar: DefaultTheme.SidebarMulti = {
-  '/download/': defaultSidebar(),
   '/extensions/': defaultSidebar(),
   '/docs/': defaultSidebar(),
   '/changelogs/': defaultSidebar(),
@@ -13,10 +12,6 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
       items: [
-        {
-          text: 'Download',
-          link: '/download/',
-        },
         {
           text: 'Extensions',
           link: '/extensions/',

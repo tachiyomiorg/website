@@ -14,9 +14,6 @@ hero:
     - theme: brand
       text: Get started
       link: /docs/guides/getting-started
-    - theme: alt
-      text: Download
-      link: /download/
 
 customMetaTitle: Tachiyomi
 
